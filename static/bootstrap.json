@@ -30,6 +30,16 @@
     "Verify",
     "Document"
   ],
+  "active_rules": [
+    "gov-01-instructions",
+    "gov-02-workflow",
+    "gov-03-communication",
+    "gov-04-quality",
+    "gov-05-testing",
+    "gov-06-issues",
+    "gov-07-tasks",
+    "gov-08-exploratory-review"
+  ],
   "hard_gate_before_product_code": true,
   "pre_coding_required_outputs": [
     ".governance/project/PROJECT_INTENT.md",

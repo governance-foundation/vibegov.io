@@ -20,5 +20,8 @@ hard gate:
 delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document
 
+active rules:
+- GOV-01 through GOV-08 (including exploratory review behavior in GOV-08)
+
 completion rule:
 - each completed task must include verification evidence and traceability update
