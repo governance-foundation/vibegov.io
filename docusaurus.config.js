@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/vibegov-icon.svg',
 
   // Set the production url of your site here
-  url: 'https://vibegov.io',
+  url: 'https://governance-foundation.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/vibegov.io/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
