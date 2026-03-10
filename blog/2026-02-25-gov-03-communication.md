@@ -8,7 +8,7 @@ tags: [communication, gov-03, execution, reporting]
 Most AI delivery teams don’t fail from lack of output.
 They fail from unclear status, hidden blockers, and weak handoffs.
 
-GOV-03 is the communication layer that turns agent activity into decision-grade visibility.
+[GOV-03](/docs/published/gov-03-communication) is the communication layer that turns agent activity into decision-grade visibility.
 
 ## The real problem
 
@@ -21,9 +21,9 @@ Without communication rules, teams get:
 
 That creates management noise, not delivery clarity.
 
-## What GOV-03 changes
+## What [GOV-03](/docs/published/gov-03-communication) changes
 
-GOV-03 makes every update actionable.
+[GOV-03](/docs/published/gov-03-communication) makes every update actionable.
 
 A useful execution update should answer:
 
@@ -63,6 +63,7 @@ Read the canonical page:
 - [GOV-03 Communication](/docs/published/gov-03-communication)
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-03-communication.mdc
+
 
 
 

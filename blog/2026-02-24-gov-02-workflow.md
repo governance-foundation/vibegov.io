@@ -8,7 +8,7 @@ tags: [workflow, gov-02, sdlc, backlog]
 The biggest AI delivery bottleneck is not coding speed.
 It is workflow collapse after the first completed task.
 
-GOV-02 is designed to keep agents moving through backlog work without losing quality control.
+[GOV-02](/docs/published/gov-02-workflow) is designed to keep agents moving through backlog work without losing quality control.
 
 ## The recurring failure pattern
 
@@ -21,7 +21,7 @@ Teams often see this loop:
 
 That is not an execution problem. It is a workflow design problem.
 
-## What GOV-02 enforces
+## What [GOV-02](/docs/published/gov-02-workflow) enforces
 
 A repeatable loop:
 
@@ -59,6 +59,7 @@ Read the canonical page:
 - [GOV-02 Workflow](/docs/published/gov-02-workflow)
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc
+
 
 
 

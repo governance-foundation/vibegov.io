@@ -12,7 +12,7 @@ Agents execute one task, then stall.
 Or they cherry-pick easy work.
 Or they stop looking at backlog state entirely.
 
-GOV-07 is about enforcing repeatable backlog behavior so agents continuously deliver against real priorities.
+[GOV-07](/docs/published/gov-07-tasks) is about enforcing repeatable backlog behavior so agents continuously deliver against real priorities.
 
 ## The real process
 
@@ -103,6 +103,7 @@ Read the canonical page:
 - [GOV-07 Tasks](/docs/published/gov-07-tasks)
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-07-tasks.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-07-tasks.mdc
+
 
 
 
