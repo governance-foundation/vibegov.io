@@ -2,21 +2,58 @@
 slug: gov-02-workflow-release
 title: "AI Delivery Workflow: Keep Agents Moving Through Backlog Work"
 authors: [vibegov_team]
-tags: [workflow, gov-02, sdlc]
+tags: [workflow, gov-02, sdlc, backlog]
 ---
 
-Mapped rule: `GOV-02 Workflow`
+The biggest AI delivery bottleneck is not coding speed.
+It is workflow collapse after the first completed task.
 
-If your agent stops after one task, this is the rule set that fixes it.
+GOV-02 is designed to keep agents moving through backlog work without losing quality control.
 
-Published page:
+## The recurring failure pattern
 
-- [GOV-02 Workflow](https://governance-foundation.github.io/vibegov.io/docs/published/gov-02-workflow)
+Teams often see this loop:
 
-This page defines a strict delivery loop and continuous backlog behavior so work continues until no actionable tasks remain.
+- one issue gets done
+- no explicit continuation rule exists
+- work stalls until someone re-prompts the agent
+- backlog momentum dies
 
-Feedback request:
+That is not an execution problem. It is a workflow design problem.
 
-- Where is the workflow too strict or too loose in your environment?
-- [Create issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+## What GOV-02 enforces
 
+A repeatable loop:
+
+`Observe -> Plan -> Implement -> Verify -> Document`
+
+And a continuity contract:
+
+- after one item closes, move to next highest-priority unblocked item
+- stop only for explicit blockers or stop conditions
+
+## Why this is a growth lever
+
+This workflow discipline gives teams:
+
+- continuous backlog throughput
+- better prioritization compliance
+- less context reset between cycles
+- more reliable release forecasting
+
+## Practical adoption pattern
+
+- keep GitHub issues as the queue of truth
+- define readiness and done criteria clearly
+- enforce evidence before completion claims
+- enforce automatic next-item continuation
+
+This turns agent execution from bursts into a pipeline.
+
+## Social takeaway
+
+If your agent stops after one task, the fix is not more prompting.
+The fix is workflow governance.
+
+Read the canonical page:
+- [GOV-02 Workflow](/docs/published/gov-02-workflow)

@@ -2,21 +2,62 @@
 slug: gov-03-communication-release
 title: "Communication Rules That Make AI Agent Execution Clearer"
 authors: [vibegov_team]
-tags: [communication, gov-03, execution]
+tags: [communication, gov-03, execution, reporting]
 ---
 
-Mapped rule: `GOV-03 Communication`
+Most AI delivery teams don’t fail from lack of output.
+They fail from unclear status, hidden blockers, and weak handoffs.
 
-This page is for teams that want less status noise and clearer delivery reporting.
+GOV-03 is the communication layer that turns agent activity into decision-grade visibility.
 
-Published page:
+## The real problem
 
-- [GOV-03 Communication](https://governance-foundation.github.io/vibegov.io/docs/published/gov-03-communication)
+Without communication rules, teams get:
 
-This page defines practical communication defaults for scope handling, blocker clarity, and completion reporting.
+- "working on it" updates with no evidence
+- "done" claims with no verification context
+- blocker messages with no owner or next step
+- handoffs that lose scope and intent
 
-Feedback request:
+That creates management noise, not delivery clarity.
 
-- Which communication rules need clearer examples?
-- [Create issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+## What GOV-03 changes
 
+GOV-03 makes every update actionable.
+
+A useful execution update should answer:
+
+1. What changed?
+2. What proof exists?
+3. What is blocked (if anything)?
+4. What happens next?
+
+This is the minimum needed for reliable human oversight and multi-agent continuity.
+
+## Why this matters commercially
+
+Clear communication rules improve:
+
+- throughput predictability
+- confidence in delivery reporting
+- escalation speed when risk appears
+- onboarding speed for new contributors
+
+In short: better communication quality directly improves delivery quality.
+
+## Practical rollout in one day
+
+- standardize one checkpoint update format
+- require evidence links for completion claims
+- require explicit blocker owner + next action
+- reject vague status updates
+
+Small discipline, big clarity gain.
+
+## Social takeaway
+
+If your AI delivery feels busy but unclear, you don’t need more output.
+You need better communication contracts.
+
+Read the canonical page:
+- [GOV-03 Communication](/docs/published/gov-03-communication)
