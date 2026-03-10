@@ -4,8 +4,8 @@ sidebar_position: 3
 
 # GOV 03 COMMUNICATION
 
-- Source rule: [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-03-communication.mdc)
-- Download raw file: [gov-03-communication.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/gov-03-communication.mdc)
+- Source rule: [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc)
+- Download raw file: [gov-03-communication.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-03-communication.mdc)
 
 This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
 
@@ -176,3 +176,4 @@ After each completed task:
 - Maintain open, transparent communication
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+

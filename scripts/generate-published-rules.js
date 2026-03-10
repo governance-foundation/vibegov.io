@@ -49,12 +49,12 @@ function commentaryFor(heading) {
 function toPublishedDoc(sourceName, content, sidebarPosition) {
   const base = sourceName.replace(".mdc", "");
   const title = base.toUpperCase().replace(/-/g, " ");
-  const blobUrl = `https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/${sourceName}`;
-  const rawUrl = `https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/${sourceName}`;
+  const blobUrl = `https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/${sourceName}`;
+  const rawUrl = `https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/${sourceName}`;
 
   const stripped = stripFrontmatter(content).replace(
     /\(mdc:\.governance\/rules\/([^)]+)\)/g,
-    "(https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/$1)"
+    "(https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/$1)"
   );
   const lines = stripped.split(/\r?\n/);
 
@@ -117,3 +117,4 @@ for (const item of files) {
 }
 
 console.log("Published governance docs regenerated from canonical .mdc files.");
+

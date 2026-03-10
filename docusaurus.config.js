@@ -40,13 +40,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/governance-foundation/vibegov/tree/main/website/',
+            'https://github.com/governance-foundation/vibegov.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
           editUrl:
-            'https://github.com/governance-foundation/vibegov/tree/main/website/',
+            'https://github.com/governance-foundation/vibegov.io/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -87,7 +87,7 @@ const config = {
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/docs/contribute', label: 'Contribute', position: 'left'},
           {
-            href: 'https://github.com/governance-foundation/vibegov/issues/new/choose',
+            href: 'https://github.com/governance-foundation/vibegov.io/issues/new/choose',
             label: 'Open Issue',
             position: 'right',
           },
@@ -96,7 +96,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/governance-foundation/vibegov',
+            href: 'https://github.com/governance-foundation/vibegov.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -119,11 +119,11 @@ const config = {
             items: [
               {
                 label: 'Open an Issue',
-                href: 'https://github.com/governance-foundation/vibegov/issues/new/choose',
+                href: 'https://github.com/governance-foundation/vibegov.io/issues/new/choose',
               },
               {
                 label: 'View Issues',
-                href: 'https://github.com/governance-foundation/vibegov/issues',
+                href: 'https://github.com/governance-foundation/vibegov.io/issues',
               },
             ],
           },
@@ -132,11 +132,11 @@ const config = {
             items: [
               {
                 label: 'Changelog',
-                href: 'https://github.com/governance-foundation/vibegov/blob/main/CHANGELOG.md',
+                href: 'https://github.com/governance-foundation/vibegov.io/blob/main/CHANGELOG.md',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/governance-foundation/vibegov',
+                href: 'https://github.com/governance-foundation/vibegov.io',
               },
             ],
           },
@@ -151,4 +151,6 @@ const config = {
 };
 
 module.exports = config;
+
+
 

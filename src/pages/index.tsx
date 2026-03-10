@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--outline button--lg"
-            to="https://github.com/governance-foundation/vibegov/issues/new/choose">
+            to="https://github.com/governance-foundation/vibegov.io/issues/new/choose">
             Suggest via Issue
           </Link>
         </div>
@@ -37,11 +37,11 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  const quickStartPrompt = `Adopt vibegov governance from https://vibegov.io before any implementation.
+  const quickStartPrompt = `Adopt vibegov governance from https://governance-foundation.github.io/vibegov.io before any implementation.
 
 Read:
-- https://vibegov.io/agent.txt
-- https://vibegov.io/bootstrap.json
+- https://governance-foundation.github.io/vibegov.io/agent.txt
+- https://governance-foundation.github.io/vibegov.io/bootstrap.json
 
 Initialization contract:
 1) Ensure \`.governance/\` exists with:
@@ -87,3 +87,4 @@ Completion report:
     </Layout>
   );
 }
+

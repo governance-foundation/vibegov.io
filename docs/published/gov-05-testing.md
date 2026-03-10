@@ -4,8 +4,8 @@ sidebar_position: 5
 
 # GOV 05 TESTING
 
-- Source rule: [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-05-testing.mdc)
-- Download raw file: [gov-05-testing.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/gov-05-testing.mdc)
+- Source rule: [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-05-testing.mdc)
+- Download raw file: [gov-05-testing.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-05-testing.mdc)
 
 This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
 
@@ -264,3 +264,4 @@ This page embeds the canonical rule text and adds commentary after each section 
 - Review test quality regularly
 
 > Commentary: Defines quality gates to reduce regressions and maintenance risk.
+

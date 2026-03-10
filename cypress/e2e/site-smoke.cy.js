@@ -3,7 +3,7 @@ describe("vibegov site smoke test", () => {
     cy.visit("/");
     cy.contains("vibegov").should("be.visible");
     cy.contains("Quick Start Prompt").should("be.visible");
-    cy.contains("Please review and learn development practices from https://vibegov.io.")
+    cy.contains("Please review and learn development practices from https://governance-foundation.github.io/vibegov.io.")
       .should("be.visible");
     cy.contains("Read Docs").click();
     cy.url().should("include", "/docs/");
@@ -11,3 +11,4 @@ describe("vibegov site smoke test", () => {
     cy.contains("Contribute").should("be.visible");
   });
 });
+

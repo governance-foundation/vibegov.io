@@ -4,8 +4,8 @@ sidebar_position: 2
 
 # GOV 02 WORKFLOW
 
-- Source rule: [gov-02-workflow.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-02-workflow.mdc)
-- Download raw file: [gov-02-workflow.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/gov-02-workflow.mdc)
+- Source rule: [gov-02-workflow.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc)
+- Download raw file: [gov-02-workflow.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc)
 
 This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
 
@@ -236,11 +236,11 @@ When a new task is given:
 Project-specific intent should live in `.governance/project/PROJECT_TEMPLATE.md` and application feature/change specs under `.governance/specs/`.
 
 **Governance Rules (Universal):**
-- [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-03-communication.mdc) - Communication patterns
-- [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-04-quality.mdc) - Quality assurance standards
-- [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-05-testing.mdc) - Universal testing principles
-- [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-06-issues.mdc) - Issue management workflow
-- [gov-07-tasks.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-07-tasks.mdc) - Task management principles
+- [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc) - Communication patterns
+- [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-04-quality.mdc) - Quality assurance standards
+- [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-05-testing.mdc) - Universal testing principles
+- [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-06-issues.mdc) - Issue management workflow
+- [gov-07-tasks.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-07-tasks.mdc) - Task management principles
 
 **Project Templates:**
 - `.governance/project/PROJECT_TEMPLATE.md` - Project intent and constraints
@@ -249,3 +249,4 @@ Project-specific intent should live in `.governance/project/PROJECT_TEMPLATE.md`
 **Always consult the appropriate governance rule file for detailed guidance before implementing any feature or test.**
 
 > Commentary: Connects this rule to the rest of the governance system for reliable navigation.
+

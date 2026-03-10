@@ -4,8 +4,8 @@ sidebar_position: 4
 
 # GOV 04 QUALITY
 
-- Source rule: [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-04-quality.mdc)
-- Download raw file: [gov-04-quality.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/gov-04-quality.mdc)
+- Source rule: [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-04-quality.mdc)
+- Download raw file: [gov-04-quality.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-04-quality.mdc)
 
 This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
 
@@ -149,3 +149,4 @@ This page embeds the canonical rule text and adds commentary after each section 
 - All rule and documentation edits must be made below the frontmatter.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+

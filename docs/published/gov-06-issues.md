@@ -4,8 +4,8 @@ sidebar_position: 6
 
 # GOV 06 ISSUES
 
-- Source rule: [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov/blob/main/.governance/rules/gov-06-issues.mdc)
-- Download raw file: [gov-06-issues.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov/main/.governance/rules/gov-06-issues.mdc)
+- Source rule: [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-06-issues.mdc)
+- Download raw file: [gov-06-issues.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-06-issues.mdc)
 
 This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
 
@@ -279,3 +279,4 @@ Any other relevant information
 - Maintain clear scope boundaries
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+

@@ -42,8 +42,8 @@ Completion report:
 
 Machine-readable references:
 
-- `https://vibegov.io/agent.txt`
-- `https://vibegov.io/bootstrap.json`
+- `https://governance-foundation.github.io/vibegov.io/agent.txt`
+- `https://governance-foundation.github.io/vibegov.io/bootstrap.json`
 
 ## 1. Copy the governance folder
 
@@ -95,3 +95,4 @@ Read in this order:
   - issue/task traceability
 
 If these do not appear, rule activation is incomplete.
+

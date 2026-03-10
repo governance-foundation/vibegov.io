@@ -1,7 +1,7 @@
 {
   "name": "vibegov",
   "version": "1.0",
-  "source": "https://vibegov.io",
+  "source": "https://governance-foundation.github.io/vibegov.io",
   "folders": [
     ".governance/rules",
     ".governance/project",
@@ -42,3 +42,4 @@
     "traceability_update"
   ]
 }
+

@@ -61,8 +61,8 @@ See full rollout method: [Release Cadence](/docs/release-cadence).
 
 ## Give feedback
 
-- Open suggestions: [Create an issue](https://github.com/governance-foundation/vibegov/issues/new/choose)
-- View current discussions: [Issue log](https://github.com/governance-foundation/vibegov/issues)
+- Open suggestions: [Create an issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+- View current discussions: [Issue log](https://github.com/governance-foundation/vibegov.io/issues)
 
 ## Published governance pages
 
@@ -73,4 +73,5 @@ See full rollout method: [Release Cadence](/docs/release-cadence).
 - [GOV-05: Testing](/docs/published/gov-05-testing)
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
+
 

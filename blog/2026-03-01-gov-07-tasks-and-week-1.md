@@ -11,7 +11,7 @@ This page is focused on practical task progression so agents keep shipping inste
 
 Published page:
 
-- [GOV-07 Tasks](https://vibegov.io/docs/published/gov-07-tasks)
+- [GOV-07 Tasks](https://governance-foundation.github.io/vibegov.io/docs/published/gov-07-tasks)
 
 Week 1 status:
 
@@ -27,4 +27,5 @@ Next:
 
 Share feedback:
 
-- [Create issue](https://github.com/governance-foundation/vibegov/issues/new/choose)
+- [Create issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+

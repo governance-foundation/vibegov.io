@@ -11,11 +11,12 @@ If your agent stops after one task, this is the rule set that fixes it.
 
 Published page:
 
-- [GOV-02 Workflow](https://vibegov.io/docs/published/gov-02-workflow)
+- [GOV-02 Workflow](https://governance-foundation.github.io/vibegov.io/docs/published/gov-02-workflow)
 
 This page defines a strict delivery loop and continuous backlog behavior so work continues until no actionable tasks remain.
 
 Feedback request:
 
 - Where is the workflow too strict or too loose in your environment?
-- [Create issue](https://github.com/governance-foundation/vibegov/issues/new/choose)
+- [Create issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+

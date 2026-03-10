@@ -8,7 +8,7 @@ Feedback is managed in GitHub Issues so decisions stay public and traceable.
 
 ## Suggest an improvement
 
-1. Open an issue: [New issue](https://github.com/governance-foundation/vibegov/issues/new/choose)
+1. Open an issue: [New issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
 2. Use a clear issue title with the affected rule/page name.
 3. Link the specific page and section.
 4. Propose wording and expected outcome.
@@ -25,3 +25,4 @@ Feedback is managed in GitHub Issues so decisions stay public and traceable.
 - Preserve intent over wording.
 - Keep governance directional and reusable.
 - Avoid project-specific tool lock-in in core rules.
+
