@@ -17,7 +17,6 @@ const sidebars = {
     'intro',
     'bootstrap',
     'quickstart',
-    'release-cadence',
     'contribute',
     {
       type: 'category',

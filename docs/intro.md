@@ -57,7 +57,6 @@ Canonical-source model:
 2. Governance pages are published one page at a time.
 3. Each release is announced in the changelog and open for GitHub issue feedback.
 
-See full rollout method: [Release Cadence](/docs/release-cadence).
 
 ## Give feedback
 
