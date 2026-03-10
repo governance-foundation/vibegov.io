@@ -15,10 +15,10 @@ Feedback is managed in GitHub Issues so decisions stay public and traceable.
 
 ## Preferred issue types
 
-- Governance Suggestion
-- Clarity Gap / Ambiguity
-- Adoption Report
-- Website Bug
+- [Governance Suggestion](https://github.com/governance-foundation/vibegov.io/issues/new?template=governance-suggestion.yml)
+- [Clarity Gap / Ambiguity](https://github.com/governance-foundation/vibegov.io/issues/new?template=clarity-gap.yml)
+- [Adoption Report](https://github.com/governance-foundation/vibegov.io/issues/new?template=adoption-report.yml)
+- [Website Bug](https://github.com/governance-foundation/vibegov.io/issues/new?template=site-bug.yml)
 
 ## Contribution principles
 
