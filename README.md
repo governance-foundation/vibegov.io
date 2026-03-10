@@ -229,17 +229,13 @@ Why this layout:
 
 Canonical-source model:
 - `.governance/` is the single source of truth for governance.
-- Different agents/providers can share the same rules and link them through their native mechanism (for example `AGENTS.md` or `.cursor/rules/`).
+- Different agents/providers can share the same rules and link them through their native mechanism (for example `AGENTS.md` or a provider-native rules directory).
 
-For Cursor and similar IDE rule loaders, sync the active governance rules into:
-
-```
-.cursor/rules/
-```
+For any agent/IDE with its own rules location, sync active governance rules into that provider-native rules path.
 
 It becomes a **default reference** for both humans and AI agents — without special prompts or tooling.
 
-For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a root `AGENTS.md` that declares `.cursor/rules/*.mdc` as active instructions and defines precedence.
+For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a root `AGENTS.md` that declares `<provider-rules-path>/*.mdc` as active instructions and defines precedence.
 
 ---
 
@@ -262,3 +258,4 @@ All evolution remains anchored to a single principle:
 vibegov is intended to be **informative and directional**, not absolute.
 
 In cases of ambiguity, it offers a considered point of reference — one that teams and agents can choose to follow, adapt, or consciously diverge from, with awareness of the trade-offs involved.
+

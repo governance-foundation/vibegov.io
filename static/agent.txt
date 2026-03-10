@@ -8,7 +8,7 @@ required folders:
 scope rules:
 - rules are governance-only
 - specs are feature/change-only
-- if .cursor/rules/ exists, mirror .governance/rules/*.mdc into it
+- if <provider-rules-path>/ exists, mirror .governance/rules/*.mdc into it
 
 hard gate:
 - before writing any product code, create:
@@ -25,3 +25,4 @@ active rules:
 
 completion rule:
 - each completed task must include verification evidence and traceability update
+

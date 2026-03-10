@@ -2,7 +2,7 @@
 
 `.governance/` keeps delivery guidance isolated from product code.
 
-This prevents governance files from being mixed into app folders and makes adoption simple: copy one folder, then sync rules into `.cursor/rules/` for IDE loading.
+This prevents governance files from being mixed into app folders and makes adoption simple: copy one folder, then sync rules into `<provider-rules-path>/` for IDE loading.
 
 ## Folder Roles
 
@@ -114,3 +114,4 @@ vibegov exists to keep these two concerns **separate but connected**.
 
 If guidance would apply to *most* projects → it belongs in **governance**.  
 If guidance only makes sense *for this system* → it belongs in **project**.
+

@@ -50,7 +50,7 @@ Initialization contract:
    - \`.governance/specs/\`
 2) Treat \`.governance/rules/*.mdc\` as governance-only constraints.
 3) Treat \`.governance/specs/*\` as the only feature/change spec source.
-4) If \`.cursor/rules/\` exists, sync \`.governance/rules/*.mdc\` into it.
+4) If \`<provider-rules-path>/\` exists, sync \`.governance/rules/*.mdc\` into it.
 5) Before coding, create:
    - \`.governance/project/PROJECT_INTENT.md\`
    - \`.governance/specs/SPEC-001-<feature>.md\`
@@ -87,4 +87,5 @@ Completion report:
     </Layout>
   );
 }
+
 

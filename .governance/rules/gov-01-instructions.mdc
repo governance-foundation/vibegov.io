@@ -24,7 +24,7 @@ Apply these files in order:
 - Project intent: `.governance/project/PROJECT_TEMPLATE.md`
 - Feature/change intent: `.governance/specs/SPEC_TEMPLATE.md`
 
-If `.cursor/rules/` exists in a target project, keep it aligned with `.governance/rules/`.
+If `<provider-rules-path>/` exists in a target project, keep it aligned with `.governance/rules/`.
 
 ## Instruction Precedence
 
@@ -42,3 +42,4 @@ Intent should outlive implementation:
 - clarify why before changing how
 - keep decisions reviewable
 - maintain traceability between intent, change, verification, and outcomes
+

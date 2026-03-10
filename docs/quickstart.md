@@ -21,7 +21,7 @@ Initialization contract:
    - `.governance/project/`
    - `.governance/specs/`
 2) Copy/adopt vibegov canonical rules into `.governance/rules/*.mdc`.
-3) If `.cursor/rules/` exists, sync `.governance/rules/*.mdc` into `.cursor/rules/*.mdc`.
+3) If a provider-native rules path exists, sync `.governance/rules/*.mdc` into that path.
 4) Do not place governance files outside `.governance/` unless explicitly requested.
 5) Read `gov-01` through `gov-07` and extract required workflow, communication, quality, testing, issue, and task behavior.
 6) Confirm governance activation by listing active rule files you are using.
@@ -58,21 +58,15 @@ Copy these files into the target repo:
 
 ## 2. Activate rules for your agent
 
-For Cursor-style rule loading:
-
-```text
-.cursor/rules/*.mdc
-```
-
-Copy `.governance/rules/*.mdc` into `.cursor/rules/`.
+For any agent/IDE rule loader: mirror `.governance/rules/*.mdc` into the provider-native rules path.
 
 For agents that read `AGENTS.md`:
 - Add a root `AGENTS.md`.
-- Declare `.cursor/rules/*.mdc` and/or `.governance/rules/*.mdc` as active rule sources.
+- Declare `<provider-rules-path>/*.mdc` and/or `.governance/rules/*.mdc` as active rule sources.
 
 Canonical-source model:
 - Keep `.governance/` as the source of truth.
-- Let each agent/provider link to that source using its own structure (`AGENTS.md`, `.cursor/rules/`, or equivalent).
+- Let each agent/provider link to that source using its own structure (`AGENTS.md`, `<provider-rules-path>/`, or equivalent).
 
 ## 3. Fill project intent before coding
 
@@ -95,4 +89,5 @@ Read in this order:
   - issue/task traceability
 
 If these do not appear, rule activation is incomplete.
+
 

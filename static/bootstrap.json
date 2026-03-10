@@ -18,9 +18,9 @@
     "is_single_source_of_truth_for_features": true
   },
   "compatibility": {
-    "mirror_to_cursor_rules_if_present": true,
+    "mirror_to_provider_rules_if_present": true,
     "mirror_source_glob": ".governance/rules/*.mdc",
-    "mirror_target_glob": ".cursor/rules/*.mdc",
+    "mirror_target_glob": "<provider-rules-path>/*.mdc",
     "preserve_intent": true
   },
   "delivery_loop": [
@@ -52,4 +52,5 @@
     "traceability_update"
   ]
 }
+
 

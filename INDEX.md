@@ -1,4 +1,4 @@
-﻿# Index
+# Index
 
 This index lists the guidance files in this repository and when to use each.
 
@@ -42,8 +42,9 @@ This index lists the guidance files in this repository and when to use each.
 
 ## Recommended Install Layout (Target Projects)
 - Keep vibegov assets under `.governance/` in the target project.
-- Sync `.governance/rules/gov-*.mdc` into `.cursor/rules/` so rule-loading IDEs apply them.
-- Add a root `AGENTS.md` that declares `.cursor/rules/*.mdc` as active rule files for agents that use `AGENTS.md`.
+- Sync `.governance/rules/gov-*.mdc` into `<provider-rules-path>/` so rule-loading IDEs apply them.
+- Add a root `AGENTS.md` that declares `<provider-rules-path>/*.mdc` as active rule files for agents that use `AGENTS.md`.
+
 
 
 

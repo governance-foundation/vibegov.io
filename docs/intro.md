@@ -36,7 +36,7 @@ Folder roles:
 
 Canonical-source model:
 - `.governance/` is the single source of truth for governance.
-- Different agents/providers can use the same rules and link them via their native mechanism (for example `AGENTS.md` or `.cursor/rules/`).
+- Different agents/providers can use the same rules and link them via their native mechanism (for example `AGENTS.md` or a provider-native rules directory`).
 
 ## Install
 
@@ -73,5 +73,6 @@ Canonical-source model:
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
+
 
 

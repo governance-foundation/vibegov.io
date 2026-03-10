@@ -34,7 +34,7 @@ Apply these files in order:
 - Project intent: `.governance/project/PROJECT_TEMPLATE.md`
 - Feature/change intent: `.governance/specs/SPEC_TEMPLATE.md`
 
-If `.cursor/rules/` exists in a target project, keep it aligned with `.governance/rules/`.
+If `<provider-rules-path>/` exists in a target project, keep it aligned with `.governance/rules/`.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
@@ -58,3 +58,4 @@ Intent should outlive implementation:
 - maintain traceability between intent, change, verification, and outcomes
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+
