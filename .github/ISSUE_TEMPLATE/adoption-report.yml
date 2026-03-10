@@ -1,0 +1,30 @@
+name: Adoption Report
+description: Share how vibegov was used in a real project.
+title: "[adoption] "
+labels: ["adoption-story"]
+body:
+  - type: input
+    id: context
+    attributes:
+      label: Project context
+      placeholder: "Team size, product type, AI workflow"
+    validations:
+      required: true
+  - type: textarea
+    id: used
+    attributes:
+      label: What pages/rules did you use?
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Outcomes observed
+      description: What improved or regressed?
+    validations:
+      required: true
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Recommended changes
+      description: What should vibegov change based on your use?

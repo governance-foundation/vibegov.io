@@ -1,0 +1,30 @@
+name: Website Bug
+description: Report broken links, layout issues, or publishing defects on vibegov.io.
+title: "[site-bug] "
+labels: ["site-bug"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: URL or page
+      placeholder: "https://vibegov.io/docs/..."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is broken?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device
+      placeholder: "Chrome 122, macOS, mobile, etc."

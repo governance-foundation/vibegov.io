@@ -1,0 +1,34 @@
+name: Clarity Gap
+description: Report ambiguous, conflicting, or confusing rule text.
+title: "[clarity] "
+labels: ["page-feedback", "wording"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page / Rule
+      placeholder: "GOV-03 communication"
+    validations:
+      required: true
+  - type: textarea
+    id: ambiguity
+    attributes:
+      label: What is unclear or conflicting?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What wording would be clearer?
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      options:
+        - High (can cause wrong execution)
+        - Medium (causes confusion or rework)
+        - Low (wording polish)
+    validations:
+      required: true
