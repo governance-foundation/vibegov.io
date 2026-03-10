@@ -1,0 +1,24 @@
+vibegov agent bootstrap
+
+required folders:
+- .governance/rules/
+- .governance/project/
+- .governance/specs/
+
+scope rules:
+- rules are governance-only
+- specs are feature/change-only
+- if .cursor/rules/ exists, mirror .governance/rules/*.mdc into it
+
+hard gate:
+- before writing any product code, create:
+  - .governance/project/PROJECT_INTENT.md
+  - .governance/specs/SPEC-001-<feature>.md
+  - backlog mapped to spec sections
+- then stop
+
+delivery loop:
+- Observe -> Plan -> Implement -> Verify -> Document
+
+completion rule:
+- each completed task must include verification evidence and traceability update

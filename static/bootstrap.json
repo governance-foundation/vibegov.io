@@ -1,0 +1,44 @@
+{
+  "name": "vibegov",
+  "version": "1.0",
+  "source": "https://vibegov.io",
+  "folders": [
+    ".governance/rules",
+    ".governance/project",
+    ".governance/specs"
+  ],
+  "rules_policy": {
+    "scope": "governance_only",
+    "path_glob": ".governance/rules/*.mdc",
+    "forbid_feature_spec_content": true
+  },
+  "spec_policy": {
+    "scope": "feature_and_change_spec_only",
+    "path_glob": ".governance/specs/*",
+    "is_single_source_of_truth_for_features": true
+  },
+  "compatibility": {
+    "mirror_to_cursor_rules_if_present": true,
+    "mirror_source_glob": ".governance/rules/*.mdc",
+    "mirror_target_glob": ".cursor/rules/*.mdc",
+    "preserve_intent": true
+  },
+  "delivery_loop": [
+    "Observe",
+    "Plan",
+    "Implement",
+    "Verify",
+    "Document"
+  ],
+  "hard_gate_before_product_code": true,
+  "pre_coding_required_outputs": [
+    ".governance/project/PROJECT_INTENT.md",
+    ".governance/specs/SPEC-001-<feature>.md",
+    "backlog_mapped_to_spec_sections"
+  ],
+  "stop_after_pre_coding_outputs": true,
+  "task_completion_requirements": [
+    "verification_evidence",
+    "traceability_update"
+  ]
+}
