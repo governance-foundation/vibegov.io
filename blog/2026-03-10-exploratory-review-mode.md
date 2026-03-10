@@ -1,13 +1,13 @@
 ---
 slug: exploratory-review-mode-parallel-flow
-title: "Exploratory Review Mode: The Parallel Flow That Finds Gaps Before Release"
+title: "GOV-08: Exploratory Review — The Always-On Discovery Engine for Backlog Quality"
 authors: [vibegov_team]
 tags: [governance, quality, exploratory, backlog, tech-debt]
 ---
 
-VibeGov uses a typical stage-based delivery flow.
+Most teams only optimize build speed and miss the quality signal: continuous discovery.
 
-What improves outcomes further is running an **Exploratory Review Mode** in parallel.
+GOV-08 introduces Exploratory Review as an always-on discovery engine that continuously finds usability and spec gaps before they become release debt.
 
 This mode is designed to continuously inspect shipped outputs, identify uncovered behavior, and convert findings into actionable backlog work.
 
@@ -87,3 +87,10 @@ Start with a scoped surface, but keep the flow always active:
 - track issue conversion rate, closure time, and repeat-gap trends
 
 Then expand route coverage while preserving continuous backlog hydration.
+
+## Rule links
+
+- Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc
+- Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc
+
+

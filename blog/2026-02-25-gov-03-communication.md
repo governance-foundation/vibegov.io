@@ -61,3 +61,7 @@ You need better communication contracts.
 
 Read the canonical page:
 - [GOV-03 Communication](/docs/published/gov-03-communication)
+- Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc
+- Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-03-communication.mdc
+
+
