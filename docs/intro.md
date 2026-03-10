@@ -72,5 +72,6 @@ Canonical-source model:
 - [GOV-05: Testing](/docs/published/gov-05-testing)
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
+- [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
 
 

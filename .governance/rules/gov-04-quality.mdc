@@ -1,17 +1,9 @@
 ---
-sidebar_position: 4
+description: quality gates and acceptance expectations
+globs:
+alwaysApply: true
 ---
-
-# GOV 04 QUALITY
-
-- Source rule: [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-04-quality.mdc)
-- Download raw file: [gov-04-quality.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-04-quality.mdc)
-
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
-
-## Governance: Quality
-
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+# Governance: Quality
 
 ## Quality Gate Principle
 
@@ -22,8 +14,6 @@ Every meaningful change should satisfy:
 2. consistency (does it fit existing patterns/constraints?)
 3. maintainability (can another person safely evolve it?)
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
-
 ## Minimum Quality Checklist
 
 - Scope is explicit and respected
@@ -33,16 +23,12 @@ Every meaningful change should satisfy:
 - OpenSpec requirements are updated before claiming behavior changes complete
 - Known trade-offs are recorded
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
-
 ## Change Hygiene
 
 - Prefer minimal, cohesive diffs
 - Avoid unrelated refactors in feature/fix commits
 - Keep naming and structure stable unless change is intentional
 - Preserve frontmatter and metadata in `.mdc` files
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Verification Expectations
 
@@ -51,8 +37,6 @@ Run verification appropriate to risk:
 - behavior changes: targeted + regression checks
 - contract/API changes: contract verification + compatibility review
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Definition of Done (Quality View)
 
 Done means:
@@ -60,5 +44,3 @@ Done means:
 - verification evidence captured
 - docs/traceability updated
 - residual risks documented
-
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.

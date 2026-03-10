@@ -1,17 +1,9 @@
 ---
-sidebar_position: 5
+description: testing principles as proof of delivery claims
+globs:
+alwaysApply: true
 ---
-
-# GOV 05 TESTING
-
-- Source rule: [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-05-testing.mdc)
-- Download raw file: [gov-05-testing.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-05-testing.mdc)
-
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
-
-## Governance: Testing
-
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+# Governance: Testing
 
 ## Core Testing Principle
 
@@ -19,16 +11,12 @@ Tests are proof of claims, not ceremony.
 
 Each important claim should map to verifiable evidence.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
-
 ## Test Design Standards
 
 - prefer behavior-focused tests over implementation-detail tests
 - include success and failure paths
 - include edge cases for high-risk logic
 - keep tests deterministic and repeatable
-
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
 
 ## Testing Layers (use what fits scope)
 
@@ -38,8 +26,6 @@ Each important claim should map to verifiable evidence.
 - **Regression**: prevent behavior drift
 
 Not every change needs every layer, but critical paths must be covered.
-
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
 
 ## Test-to-Intent Traceability
 
@@ -51,8 +37,6 @@ For governed delivery, link tests back to:
 OpenSpec-first rule:
 - if required behavior is not represented in OpenSpec, add/update requirement IDs before marking coverage complete.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
-
 ## Execution Expectations
 
 - run targeted tests during iteration
@@ -60,13 +44,9 @@ OpenSpec-first rule:
 - capture failing output when blocked
 - avoid marking complete without evidence
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Test Quality Anti-Patterns
 
 - flaky tests accepted as "good enough"
 - broad snapshot assertions without intent
 - coverage metrics used without behavioral relevance
 - tests that pass but do not prove the requirement
-
-> Commentary: Ensures implementation is validated by evidence, not assumptions.

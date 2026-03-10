@@ -1,17 +1,9 @@
 ---
-sidebar_position: 2
+description: core delivery loop and execution boundaries
+globs:
+alwaysApply: true
 ---
-
-# GOV 02 WORKFLOW
-
-- Source rule: [gov-02-workflow.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc)
-- Download raw file: [gov-02-workflow.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc)
-
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
-
-## Governance: Core Workflow
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+# Governance: Core Workflow
 
 ## Delivery Loop
 
@@ -19,46 +11,29 @@ Follow this loop for meaningful changes:
 
 `Observe -> Plan -> Implement -> Verify -> Document`
 
-> Commentary: Establishes the default end-to-end execution pattern so delivery quality is repeatable.
-
 ### 1) Observe
-
 - Confirm the problem and affected scope.
 - Identify constraints and non-goals.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ### 2) Plan
-
 - Make intent explicit before implementation.
 - Define acceptance criteria and risks.
 - OpenSpec-first: bind work to requirement IDs before implementation starts.
 - If requirement coverage is missing, create/update spec requirements first.
 - If intake item is a one-liner, expand it to implementation-grade issue quality and flag it for review/confirmation before execution.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ### 3) Implement
-
 - Make the smallest coherent change.
 - Avoid unrelated cleanup unless explicitly approved.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ### 4) Verify
-
 - Provide evidence that intent is met (tests/checks/manual proof).
 - Capture failure behavior when relevant.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ### 5) Document
-
 - Record what changed, why, and how it was verified.
 - Keep handoff artifacts understandable by a new contributor.
 - Update traceability so requirement IDs map to verification evidence.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Autonomy Boundaries
 
@@ -70,15 +45,11 @@ Agents should proceed without micro-confirmations for routine steps, but must es
 - out-of-scope files are required
 - verification repeatedly fails
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Scope Discipline
 
 - Stay inside the agreed directories and task boundaries.
 - Do not expand scope silently.
 - If scope grows, document the reason and request explicit approval.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Completion Standard
 
@@ -87,8 +58,6 @@ A task is complete when:
 2. evidence is captured,
 3. documentation/traceability is updated,
 4. unresolved risks are explicitly listed.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Backlog Continuity
 
@@ -102,5 +71,3 @@ When stopping, report:
 - remaining backlog count,
 - next recommended item,
 - blockers and required decisions.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.

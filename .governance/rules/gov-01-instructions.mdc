@@ -1,19 +1,11 @@
 ---
-sidebar_position: 1
+description: vibegov entrypoint and rule precedence
+globs:
+alwaysApply: true
 ---
-
-# GOV 01 INSTRUCTIONS
-
-- Source rule: [gov-01-instructions.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-01-instructions.mdc)
-- Download raw file: [gov-01-instructions.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-01-instructions.mdc)
-
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
-
-## Governance: Instructions Entrypoint
+# Governance: Instructions Entrypoint
 
 This file is the root index for vibegov governance behavior.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Rule Loading Order
 
@@ -26,8 +18,6 @@ Apply these files in order:
 5. `gov-06-issues.mdc` (issue lifecycle)
 6. `gov-07-tasks.mdc` (task hygiene)
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Source-of-Truth Layout
 
 - Governance rules: `.governance/rules/gov-*.mdc`
@@ -35,8 +25,6 @@ Apply these files in order:
 - Feature/change intent: `.governance/specs/SPEC_TEMPLATE.md`
 
 If `.cursor/rules/` exists in a target project, keep it aligned with `.governance/rules/`.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Instruction Precedence
 
@@ -47,8 +35,6 @@ If `.cursor/rules/` exists in a target project, keep it aligned with `.governanc
 
 If guidance conflicts, choose the most specific project-scoped instruction and document the decision.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Operating Principle
 
 Intent should outlive implementation:
@@ -56,5 +42,3 @@ Intent should outlive implementation:
 - clarify why before changing how
 - keep decisions reviewable
 - maintain traceability between intent, change, verification, and outcomes
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.

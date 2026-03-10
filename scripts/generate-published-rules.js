@@ -1,10 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const repoRoot = path.resolve(__dirname, "..", "..");
-const websiteRoot = path.resolve(__dirname, "..");
+const repoRoot = path.resolve(__dirname, "..");
 const governanceDir = path.join(repoRoot, ".governance", "rules");
-const publishedDir = path.join(websiteRoot, "docs", "published");
+const publishedDir = path.join(repoRoot, "docs", "published");
 
 const files = [
   { file: "gov-01-instructions.mdc", out: "gov-01-instructions.md", pos: 1 },
@@ -14,6 +13,7 @@ const files = [
   { file: "gov-05-testing.mdc", out: "gov-05-testing.md", pos: 5 },
   { file: "gov-06-issues.mdc", out: "gov-06-issues.md", pos: 6 },
   { file: "gov-07-tasks.mdc", out: "gov-07-tasks.md", pos: 7 },
+  { file: "gov-08-exploratory-review.mdc", out: "gov-08-exploratory-review.md", pos: 8 },
 ];
 
 function stripFrontmatter(text) {

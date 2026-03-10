@@ -1,23 +1,13 @@
 ---
-sidebar_position: 6
+description: issue lifecycle and decision traceability
+globs:
+alwaysApply: true
 ---
-
-# GOV 06 ISSUES
-
-- Source rule: [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-06-issues.mdc)
-- Download raw file: [gov-06-issues.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-06-issues.mdc)
-
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
-
-## Governance: Issues
-
-> Commentary: Provides traceability and scope control so changes remain auditable.
+# Governance: Issues
 
 ## Purpose
 
 Issues are the durable record of intent, decisions, and outcomes.
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## When to Use an Issue
 
@@ -29,8 +19,6 @@ Create/update an issue for:
 
 Small typo-only docs fixes can be grouped where appropriate.
 
-> Commentary: Provides traceability and scope control so changes remain auditable.
-
 ## Minimum Issue Quality
 
 Each issue should include:
@@ -40,8 +28,6 @@ Each issue should include:
 - OpenSpec binding (requirement IDs and/or spec path, or explicit `SPEC_GAP`)
 - acceptance criteria
 - verification expectations
-
-> Commentary: Provides traceability and scope control so changes remain auditable.
 
 ## One-liner issue handling (mandatory)
 
@@ -55,16 +41,12 @@ Before execution, the agent must first:
 
 Only after review/confirmation can the issue enter active implementation.
 
-> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
-
 ## Lifecycle Expectations
 
 1. clarify and scope
 2. implement with evidence
 3. review outcomes and risks
 4. close with traceable resolution
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Closure Standard
 
@@ -74,13 +56,9 @@ Before closing, ensure:
 - OpenSpec/traceability references are updated or explicitly marked `SPEC_GAP` follow-up
 - follow-up items are captured (if any)
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
-
 ## Anti-Patterns
 
 - closing issues without evidence
 - mixing unrelated concerns in one issue
 - silent scope expansion without issue update
 - treating issue text as optional or disposable
-
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.

@@ -29,6 +29,7 @@ const sidebars = {
         'published/gov-05-testing',
         'published/gov-06-issues',
         'published/gov-07-tasks',
+        'published/gov-08-exploratory-review',
       ],
     },
   ],
