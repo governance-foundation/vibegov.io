@@ -17,6 +17,7 @@ Apply these files in order:
 4. `gov-05-testing.mdc` (testing proof standards)
 5. `gov-06-issues.mdc` (issue lifecycle)
 6. `gov-07-tasks.mdc` (task hygiene)
+7. `gov-08-exploratory-review.mdc` (continuous exploratory discovery + backlog hydration)
 
 ## Source-of-Truth Layout
 

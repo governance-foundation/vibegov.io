@@ -23,7 +23,7 @@ Initialization contract:
 2) Copy/adopt VibeGov canonical rules into `.governance/rules/*.mdc`.
 3) If a provider-native rules path exists, sync `.governance/rules/*.mdc` into that path.
 4) Do not place governance files outside `.governance/` unless explicitly requested.
-5) Read `gov-01` through `gov-07` and extract required workflow, communication, quality, testing, issue, and task behavior.
+5) Read `gov-01` through `gov-08` and extract required workflow, communication, quality, testing, issue, task, and exploratory behavior.
 6) Confirm governance activation by listing active rule files you are using.
 
 Execution gate:
@@ -79,6 +79,7 @@ Read in this order:
 1. `gov-01-instructions.mdc`
 2. `gov-02-workflow.mdc`
 3. `gov-03` to `gov-07`
+4. `gov-08-exploratory-review.mdc`
 
 ## 5. Validate installation
 
