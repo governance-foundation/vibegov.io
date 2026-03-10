@@ -30,6 +30,11 @@ function HomepageHeader() {
             Suggest via Issue
           </Link>
         </div>
+        <img
+          src="/img/vibegov-banner.svg"
+          alt="VibeGov banner"
+          className={styles.heroBannerImage}
+        />
       </div>
     </header>
   );
