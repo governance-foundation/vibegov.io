@@ -1,7 +1,7 @@
 ---
 slug: multi-agent-build-validate-loop
 title: "Getting Other Agents to Help Your Project (Without Losing Quality)"
-authors: [vibegov_team]
+authors: [VibeGov_team]
 tags: [multi-agent, execution, validation, backlog, specs]
 ---
 

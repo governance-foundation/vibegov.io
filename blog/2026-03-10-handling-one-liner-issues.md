@@ -1,7 +1,7 @@
 ---
 slug: handling-one-liner-issues
 title: "Handling One-Liner Issues Without Losing Delivery Speed"
-authors: [vibegov_team]
+authors: [VibeGov_team]
 tags: [issues, governance, backlog, specs, execution]
 ---
 
@@ -26,7 +26,7 @@ If one-liners go straight into implementation, teams usually get:
 
 In short: speed at intake, chaos at execution.
 
-## The vibegov approach
+## The VibeGov approach
 
 Keep one-liners for capture speed, but require **intake hardening** before execution.
 
@@ -83,3 +83,4 @@ This simple split prevents governance bypass while keeping momentum.
 One-liner issues are good for capture, not for execution.
 
 Treat them as raw intake, harden them through spec binding and issue-quality upgrades, then build with confidence.
+

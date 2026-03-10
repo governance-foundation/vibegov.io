@@ -250,4 +250,4 @@ What you’ve built is effectively a **modern SDLC designed for the age of AI**,
 - Systems remain explainable, auditable, and defensible
     
 
-This is the delivery posture vibegov aims to bootstrap by default.
+This is the delivery posture VibeGov aims to bootstrap by default.

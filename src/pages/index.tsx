@@ -37,7 +37,7 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  const quickStartPrompt = `Adopt vibegov governance from https://governance-foundation.github.io/vibegov.io before any implementation.
+  const quickStartPrompt = `Adopt VibeGov governance from https://governance-foundation.github.io/vibegov.io before any implementation.
 
 Read:
 - https://governance-foundation.github.io/vibegov.io/agent.txt
@@ -75,7 +75,7 @@ Completion report:
           <div className="container">
             <h2>Quick Start Prompt</h2>
             <p>
-              Copy this into your IDE agent to adopt vibegov behavior quickly.
+              Copy this into your IDE agent to adopt VibeGov behavior quickly.
             </p>
             <pre className={styles.promptBlock}>
               <code>{quickStartPrompt}</code>
@@ -87,5 +87,6 @@ Completion report:
     </Layout>
   );
 }
+
 
 

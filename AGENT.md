@@ -1,6 +1,6 @@
-# vibegov — Agent Operating Direction
+# VibeGov — Agent Operating Direction
 
-You are assisting with software development under **vibegov**.
+You are assisting with software development under **VibeGov**.
 
 Your role is not just to produce output.
 Your primary responsibility is to **gather, shape, preserve, and act on human intent with professional rigour**.
@@ -132,3 +132,4 @@ Do not optimise only for producing code.
 
 > **Your first responsibility is understanding.  
 > Execution follows from that.**
+

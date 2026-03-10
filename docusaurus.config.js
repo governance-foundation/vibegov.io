@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'vibegov',
+  title: 'VibeGov',
   tagline: 'Portable delivery judgement for AI-assisted software.',
   favicon: 'img/vibegov-icon.svg',
 
@@ -72,7 +72,7 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         logo: {
-          alt: 'vibegov Logo',
+          alt: 'VibeGov Logo',
           src: 'img/vibegov-icon.svg',
         },
         items: [
@@ -141,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} vibegov. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VibeGov. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -151,6 +151,7 @@ const config = {
 };
 
 module.exports = config;
+
 
 
 

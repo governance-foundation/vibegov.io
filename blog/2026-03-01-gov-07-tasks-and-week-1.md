@@ -1,7 +1,7 @@
 ---
 slug: gov-07-tasks-week-1
 title: "How to Keep AI Agents Moving Through Backlog Work"
-authors: [vibegov_team]
+authors: [VibeGov_team]
 tags: [tasks, gov-07, backlog, github-issues, scheduling]
 ---
 
@@ -103,5 +103,6 @@ Read the canonical page:
 - [GOV-07 Tasks](/docs/published/gov-07-tasks)
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-07-tasks.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-07-tasks.mdc
+
 
 

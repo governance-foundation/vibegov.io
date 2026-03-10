@@ -1,7 +1,7 @@
 ---
 slug: exploratory-review-mode-parallel-flow
 title: "GOV-08: Exploratory Review — The Always-On Discovery Engine for Backlog Quality"
-authors: [vibegov_team]
+authors: [VibeGov_team]
 tags: [governance, quality, exploratory, backlog, tech-debt]
 ---
 
@@ -92,6 +92,7 @@ Then expand route coverage while preserving continuous backlog hydration.
 
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc
+
 
 
 

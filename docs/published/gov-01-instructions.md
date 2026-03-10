@@ -11,7 +11,7 @@ This page embeds the canonical rule text and adds commentary after each section 
 
 ## Governance: Instructions Entrypoint
 
-This file is the root index for vibegov governance behavior.
+This file is the root index for VibeGov governance behavior.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
@@ -42,7 +42,7 @@ If `<provider-rules-path>/` exists in a target project, keep it aligned with `.g
 
 1. Human request in current session
 2. Project/feature intent docs (`.governance/project`, `.governance/specs`)
-3. vibegov rule files (`.governance/rules`)
+3. VibeGov rule files (`.governance/rules`)
 4. Tool/framework defaults
 
 If guidance conflicts, choose the most specific project-scoped instruction and document the decision.
@@ -58,4 +58,5 @@ Intent should outlive implementation:
 - maintain traceability between intent, change, verification, and outcomes
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+
 

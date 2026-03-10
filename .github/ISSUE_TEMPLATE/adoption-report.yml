@@ -1,5 +1,5 @@
 name: Adoption Report
-description: Share how vibegov was used in a real project.
+description: Share how VibeGov was used in a real project.
 title: "[adoption] "
 labels: ["adoption-story"]
 body:
@@ -27,4 +27,5 @@ body:
     id: recommendations
     attributes:
       label: Recommended changes
-      description: What should vibegov change based on your use?
+      description: What should VibeGov change based on your use?
+

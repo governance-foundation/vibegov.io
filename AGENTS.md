@@ -1,4 +1,4 @@
-# vibegov Agent Bootstrap
+# VibeGov Agent Bootstrap
 
 Use this file when your coding agent reads `AGENTS.md` as the top-level instruction source.
 
@@ -7,7 +7,7 @@ Use this file when your coding agent reads `AGENTS.md` as the top-level instruct
 Load and apply all rule files from:
 
 - `<provider-rules-path>/*.mdc` (if present in the target project)
-- `.governance/rules/*.mdc` (when using vibegov directly in-repo)
+- `.governance/rules/*.mdc` (when using VibeGov directly in-repo)
 
 ## Governance Folder Standard
 
@@ -36,4 +36,5 @@ If two instructions conflict, prefer the more specific, project-scoped guidance 
 Observe -> Plan -> Implement -> Verify -> Document
 
 Keep spec/intent as source of truth and keep issue/task/release artifacts traceable to that intent.
+
 

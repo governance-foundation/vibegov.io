@@ -7,7 +7,7 @@ sidebar_position: 2
 Copy this as message 1 in any coding agent.
 
 ```text
-Bootstrap this repo with vibegov.
+Bootstrap this repo with VibeGov.
 Read and follow:
 - https://governance-foundation.github.io/vibegov.io/agent.txt
 - https://governance-foundation.github.io/vibegov.io/bootstrap.json
@@ -39,4 +39,5 @@ Continue only if all are true:
 - no product code yet
 
 If any fail, rerun the same prompt.
+
 

@@ -33,7 +33,7 @@ This index lists the guidance files in this repository and when to use each.
 - `templates/cypress/fixtures/data-pack-template.json`: deterministic fixture data-pack starter.
 
 ## Smoke Testing
-- `SMOKE_TEST.md`: run/demo vibegov as a plain user on a target repo.
+- `SMOKE_TEST.md`: run/demo VibeGov as a plain user on a target repo.
 - `scripts/smoke-vibegov.ps1`: audit backlog mapping and optionally create missing GitHub issues.
 
 ## Template Operations
@@ -41,9 +41,10 @@ This index lists the guidance files in this repository and when to use each.
 - `CHANGELOG.md`: Record intent shifts and guidance updates over time.
 
 ## Recommended Install Layout (Target Projects)
-- Keep vibegov assets under `.governance/` in the target project.
+- Keep VibeGov assets under `.governance/` in the target project.
 - Sync `.governance/rules/gov-*.mdc` into `<provider-rules-path>/` so rule-loading IDEs apply them.
 - Add a root `AGENTS.md` that declares `<provider-rules-path>/*.mdc` as active rule files for agents that use `AGENTS.md`.
+
 
 
 

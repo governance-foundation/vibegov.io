@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Quick Start
 
-Use this to install vibegov into any project in under 5 minutes.
+Use this to install VibeGov into any project in under 5 minutes.
 
 URL-first users should start here first: [Bootstrap](/docs/bootstrap).
 
@@ -13,14 +13,14 @@ URL-first users should start here first: [Bootstrap](/docs/bootstrap).
 Paste this into your agent (it can learn from URL directly):
 
 ```text
-Adopt governance from vibegov before any implementation.
+Adopt governance from VibeGov before any implementation.
 
 Initialization contract:
 1) If `.governance/` does not exist, create:
    - `.governance/rules/`
    - `.governance/project/`
    - `.governance/specs/`
-2) Copy/adopt vibegov canonical rules into `.governance/rules/*.mdc`.
+2) Copy/adopt VibeGov canonical rules into `.governance/rules/*.mdc`.
 3) If a provider-native rules path exists, sync `.governance/rules/*.mdc` into that path.
 4) Do not place governance files outside `.governance/` unless explicitly requested.
 5) Read `gov-01` through `gov-07` and extract required workflow, communication, quality, testing, issue, and task behavior.
@@ -89,5 +89,6 @@ Read in this order:
   - issue/task traceability
 
 If these do not appear, rule activation is incomplete.
+
 
 

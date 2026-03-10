@@ -1,4 +1,4 @@
-vibegov agent bootstrap
+VibeGov agent bootstrap
 
 required folders:
 - .governance/rules/
@@ -25,4 +25,5 @@ active rules:
 
 completion rule:
 - each completed task must include verification evidence and traceability update
+
 

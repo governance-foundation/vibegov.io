@@ -6,7 +6,7 @@
 - Delivery model:
 
 ## Problem
-- What was broken/confusing before vibegov?
+- What was broken/confusing before VibeGov?
 
 ## Intervention
 - Which governance rules/patterns were applied?
@@ -25,3 +25,4 @@
 ## Lessons
 - What worked best?
 - What to improve next?
+

@@ -1,6 +1,6 @@
 # Vibegov Smoke Test (Plain User)
 
-Use this to demonstrate and validate a typical vibegov workflow on any target repo.
+Use this to demonstrate and validate a typical VibeGov workflow on any target repo.
 
 ## What it checks
 1. OpenSpec structure exists (`openspec/specs`, `openspec/traceability.md`)
@@ -39,3 +39,4 @@ pwsh .\scripts\smoke-vibegov.ps1 -RepoPath "C:\projects\softlystudio\scheduling-
    - `openspec/migration/vibegov-smoke-report.md`
 
 This makes backlog normalization visible, repeatable, and easy to verify.
+

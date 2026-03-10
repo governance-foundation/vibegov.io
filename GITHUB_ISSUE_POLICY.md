@@ -1,6 +1,6 @@
-﻿# GitHub Issue Policy (Mandatory)
+# GitHub Issue Policy (Mandatory)
 
-Use this policy when running vibegov in autonomous or assisted delivery.
+Use this policy when running VibeGov in autonomous or assisted delivery.
 
 ## 1) GitHub issue backlog is mandatory (single source of team alignment)
 - Maintain an explicit GitHub issue backlog for all planned and partial requirements.
@@ -83,3 +83,4 @@ Close an issue only when all are true:
 - `commandsRun[]`
 - `keyResults[]`
 - `blockers[]`
+

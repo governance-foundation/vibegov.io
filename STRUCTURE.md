@@ -12,7 +12,7 @@ This prevents governance files from being mixed into app folders and makes adopt
 
 ## Governance vs Project
 
-vibegov separates guidance into two complementary layers: **governance** and **project**.
+VibeGov separates guidance into two complementary layers: **governance** and **project**.
 
 This separation exists to keep delivery knowledge reusable, while allowing each project to remain grounded in its own context.
 
@@ -106,7 +106,7 @@ Both are needed.
 Without governance, projects reinvent delivery through trial and error.  
 Without project context, delivery becomes generic and detached from intent.
 
-vibegov exists to keep these two concerns **separate but connected**.
+VibeGov exists to keep these two concerns **separate but connected**.
 
 ---
 
@@ -114,4 +114,5 @@ vibegov exists to keep these two concerns **separate but connected**.
 
 If guidance would apply to *most* projects → it belongs in **governance**.  
 If guidance only makes sense *for this system* → it belongs in **project**.
+
 

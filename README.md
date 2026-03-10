@@ -1,4 +1,4 @@
-# vibegov
+# VibeGov
 
 Governed delivery bootstrap for AI-assisted teams.
 
@@ -25,7 +25,7 @@ We also recommend running an **Exploratory Review** flow in parallel to audit ou
 
 > **Software fails more often from forgotten intent than from bad code.**
 
-**vibegov** describes an opinionated approach to AI-assisted software delivery that helps people and AI agents work with professional judgement — even when working informally, iteratively, or without deep technical or process knowledge.
+**VibeGov** describes an opinionated approach to AI-assisted software delivery that helps people and AI agents work with professional judgement — even when working informally, iteratively, or without deep technical or process knowledge.
 
 You can vibe.  
 The delivery still behaves like a pro.
@@ -59,14 +59,14 @@ But without guidance, important things are often skipped:
 - nothing explains *why* decisions were made
 - future updates become harder than they should be
 
-**vibegov** helps by giving your AI the kind of **delivery instinct** experienced developers build over years — so you don’t need to know the process to get the benefit of it.
+**VibeGov** helps by giving your AI the kind of **delivery instinct** experienced developers build over years — so you don’t need to know the process to get the benefit of it.
 
 You focus on *what you want*.  
-vibegov helps the work happen in a way that’s more reliable, explainable, and easier to evolve.
+VibeGov helps the work happen in a way that’s more reliable, explainable, and easier to evolve.
 
 ---
 
-## Why vibegov Exists
+## Why VibeGov Exists
 
 Modern AI-assisted development makes it easy to produce code quickly.
 
@@ -81,7 +81,7 @@ Much of what makes software sustainable lives as tacit knowledge:
 Experienced developers apply this instinctively.  
 Less experienced developers — and AI agents — often don’t.
 
-vibegov exists to make that accumulated understanding **explicit, reusable, and discussable**, so intent is less likely to be lost as work moves fast.
+VibeGov exists to make that accumulated understanding **explicit, reusable, and discussable**, so intent is less likely to be lost as work moves fast.
 
 Not to remove judgement —  
 but to support it.
@@ -90,7 +90,7 @@ but to support it.
 
 ## Direction, Not Enforcement
 
-vibegov is intentionally **directional**, not prescriptive.
+VibeGov is intentionally **directional**, not prescriptive.
 
 It does not:
 - enforce compliance
@@ -112,19 +112,19 @@ they move into the system, where they support creative work instead of competing
 
 A common question is: "Why not just create skills?"
 
-Skills and vibegov solve different problems:
+Skills and VibeGov solve different problems:
 
 - **Skills** are task capabilities (how to do a specific action).
-- **vibegov** is delivery governance (how the whole system should behave over time).
+- **VibeGov** is delivery governance (how the whole system should behave over time).
 
 Skills help execute tasks faster.
-vibegov ensures those tasks stay aligned with intent, quality, traceability, and long-term maintainability.
+VibeGov ensures those tasks stay aligned with intent, quality, traceability, and long-term maintainability.
 
 In practice:
 - skills = tactical execution units
-- vibegov = operating model for end-to-end delivery
+- VibeGov = operating model for end-to-end delivery
 
-You can run many skills inside a vibegov-governed project.
+You can run many skills inside a VibeGov-governed project.
 But skills alone do not provide full delivery governance.
 
 ## Why Not Just Use a Framework?
@@ -142,7 +142,7 @@ There are excellent frameworks and tools that focus on:
 - generating plans, tasks, and artefacts
 - improving prompting and consistency
 
-These approaches are valuable, and vibegov assumes you may use them.
+These approaches are valuable, and VibeGov assumes you may use them.
 
 However, most frameworks focus on **how to build features**, not on **how software delivery behaves over time**.
 
@@ -152,7 +152,7 @@ They typically:
 - rely on tooling, commands, or workflow engines
 - stop once code is produced
 
-vibegov operates at a different level.
+VibeGov operates at a different level.
 
 It focuses on **end-to-end delivery**, including:
 - issue validation and triage
@@ -166,9 +166,9 @@ It focuses on **end-to-end delivery**, including:
 In short:
 
 > **Frameworks help you build features.  
-> vibegov helps the whole delivery behave professionally.**
+> VibeGov helps the whole delivery behave professionally.**
 
-vibegov is intentionally **tool-free** so it can:
+VibeGov is intentionally **tool-free** so it can:
 - outlive specific technologies
 - be shared across projects
 - evolve as lessons are learned
@@ -176,9 +176,9 @@ vibegov is intentionally **tool-free** so it can:
 
 ---
 
-## What vibegov Is
+## What VibeGov Is
 
-vibegov is:
+VibeGov is:
 
 - A **normative guide** for AI-assisted software delivery
 - A **codification of SDLC knowledge** accumulated through decades of practice
@@ -190,9 +190,9 @@ It encodes what software delivery has already learned so that it does not need t
 
 ---
 
-## What vibegov Is Not
+## What VibeGov Is Not
 
-vibegov is not:
+VibeGov is not:
 - a tool
 - a framework
 - a CLI
@@ -206,9 +206,9 @@ It provides **shared understanding**, not automation.
 
 ---
 
-## How vibegov Is Used
+## How VibeGov Is Used
 
-vibegov can be:
+VibeGov can be:
 - cloned into a project to stay up to date, or
 - downloaded as a release and used as a stable snapshot
 
@@ -241,7 +241,7 @@ For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a r
 
 ## Evolution
 
-vibegov is expected to evolve.
+VibeGov is expected to evolve.
 
 New guidance may emerge as new failure modes appear.  
 Existing guidance may be refined as understanding deepens.  
@@ -255,7 +255,8 @@ All evolution remains anchored to a single principle:
 
 ## Authority
 
-vibegov is intended to be **informative and directional**, not absolute.
+VibeGov is intended to be **informative and directional**, not absolute.
 
 In cases of ambiguity, it offers a considered point of reference — one that teams and agents can choose to follow, adapt, or consciously diverge from, with awareness of the trade-offs involved.
+
 

@@ -1,6 +1,6 @@
 # OpenSpec Rules (Use Immediately)
 
-These are the default rules when vibegov runs in OpenSpec-first mode.
+These are the default rules when VibeGov runs in OpenSpec-first mode.
 
 ## 1) Source of truth
 - Requirements live in `openspec/specs/*`
@@ -30,3 +30,4 @@ Every requirement must be testable:
 - run relevant tests
 - run `openspec validate --all`
 - fail closed on missing proof for claimed completion
+

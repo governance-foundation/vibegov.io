@@ -2,16 +2,16 @@
 sidebar_position: 1
 ---
 
-# vibegov
+# VibeGov
 
-vibegov is a portable layer of professional delivery judgement for AI-assisted software development.
+VibeGov is a portable layer of professional delivery judgement for AI-assisted software development.
 
 VibeGov uses a typical stage-based delivery flow.
 In parallel, teams can run an **Exploratory Review** mode to systematically find gaps, convert findings into backlog issues, and improve release quality.
 
 This site is published incrementally. Pages are released one at a time so guidance can evolve with clear intent and feedback.
 
-## Why vibegov Exists
+## Why VibeGov Exists
 
 AI-assisted delivery makes it easy to generate code quickly.
 
@@ -21,7 +21,7 @@ The failure mode is intent decay:
 - "done" collapses to code only
 - future change gets harder
 
-vibegov exists to make delivery judgement explicit and portable.
+VibeGov exists to make delivery judgement explicit and portable.
 
 It captures SDLC wisdom as directional guidance that teams can copy into any project so agents and humans inherit stronger delivery defaults without heavy process tooling.
 
@@ -43,7 +43,7 @@ Canonical-source model:
 - URL-first start: [Bootstrap](/docs/bootstrap)
 - Full setup details: [Quick Start](/docs/quickstart)
 
-## What changes when vibegov is present
+## What changes when VibeGov is present
 
 - agents ask better scoping questions
 - spec and intent are shaped before coding
@@ -73,6 +73,7 @@ Canonical-source model:
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
+
 
 
 

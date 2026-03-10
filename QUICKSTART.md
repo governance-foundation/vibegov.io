@@ -1,6 +1,6 @@
-﻿# QUICKSTART (10 Minutes)
+# QUICKSTART (10 Minutes)
 
-Get vibegov working on a real repo quickly.
+Get VibeGov working on a real repo quickly.
 
 ## 1) Copy governance scaffolding
 Add these into your project root:
@@ -54,4 +54,5 @@ You are now in governed delivery mode.
 ## 9) Make Cypress UI realistic
 - Apply 	hemes/testing/DEMO_DATA_ASSET_POLICY.md`r
 - Use fixture packs from 	emplates/cypress/fixtures/* for deterministic sample data + assets
+
 

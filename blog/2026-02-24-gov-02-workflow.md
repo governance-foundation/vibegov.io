@@ -1,7 +1,7 @@
 ---
 slug: gov-02-workflow-release
 title: "AI Delivery Workflow: Keep Agents Moving Through Backlog Work"
-authors: [vibegov_team]
+authors: [VibeGov_team]
 tags: [workflow, gov-02, sdlc, backlog]
 ---
 
@@ -59,5 +59,6 @@ Read the canonical page:
 - [GOV-02 Workflow](/docs/published/gov-02-workflow)
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc
+
 
 
