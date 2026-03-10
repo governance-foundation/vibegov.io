@@ -7,7 +7,7 @@ tags: [governance, quality, exploratory, backlog, tech-debt]
 
 Most teams only optimize build speed and miss the quality signal: continuous discovery.
 
-GOV-08 introduces Exploratory Review as an always-on discovery engine that continuously finds usability and spec gaps before they become release debt.
+[GOV-08](/docs/published/gov-08-exploratory-review) introduces Exploratory Review as an always-on discovery engine that continuously finds usability and spec gaps before they become release debt.
 
 This mode is designed to continuously inspect shipped outputs, identify uncovered behavior, and convert findings into actionable backlog work.
 
@@ -92,5 +92,6 @@ Then expand route coverage while preserving continuous backlog hydration.
 
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc
+
 
 
