@@ -1,0 +1,20 @@
+﻿{
+  "packName": "example-baseline-pack",
+  "scope": "<section>",
+  "seed": 42,
+  "requirements": ["<REQ-ID-001>", "<REQ-ID-002>"],
+  "entities": {
+    "users": [
+      { "id": "usr_001", "name": "Demo User", "role": "admin", "active": true }
+    ],
+    "items": [
+      { "id": "itm_001", "title": "Sample Item", "status": "active", "createdAt": "2026-01-01T00:00:00Z" }
+    ]
+  },
+  "assets": {
+    "avatars": ["avatar-01.png"],
+    "thumbnails": ["thumb-01.png"],
+    "icons": ["status-ok.svg"]
+  },
+  "notes": "Replace with section-specific deterministic fixture data."
+}
