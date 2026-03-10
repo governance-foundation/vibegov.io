@@ -4,12 +4,16 @@ sidebar_position: 1
 
 # VibeGov
 
-VibeGov is a portable layer of professional delivery judgement for AI-assisted software development.
+VibeGov is a practical governance layer for AI-assisted software delivery.
 
-VibeGov uses a typical stage-based delivery flow.
-In parallel, teams can run an **Exploratory Review** mode to systematically find gaps, convert findings into backlog issues, and improve release quality.
+It helps teams ship fast **without losing control** of intent, quality, and traceability.
 
-This site is published incrementally. Pages are released one at a time so guidance can evolve with clear intent and feedback.
+The model is simple:
+- use a stage-based delivery flow to execute work clearly,
+- keep an always-on **Exploratory Review** loop to find usability/spec gaps,
+- convert findings into high-quality backlog issues before they become release debt.
+
+This site is published incrementally so guidance can evolve in the open with real team feedback.
 
 ## Why VibeGov Exists
 
