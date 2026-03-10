@@ -1,12 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VibeGov icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <defs>
-    <linearGradient id="vgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f766e"/>
-      <stop offset="100%" stop-color="#0ea5a2"/>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2e"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
     </linearGradient>
+    <linearGradient id="vibeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="50%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#00e5ff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#vgGrad)"/>
-  <path d="M20 34l8 8 16-18" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="46" cy="18" r="4" fill="#ccfbf1"/>
-</svg>
 
+  <!-- Shield body -->
+  <path d="M50 8 L84 22 L84 52 C84 70 68 84 50 92 C32 84 16 70 16 52 L16 22 Z"
+        fill="url(#shieldGrad)"
+        stroke="#2a3147"
+        stroke-width="1.5"/>
+
+  <!-- Shield inner border -->
+  <path d="M50 14 L78 26 L78 52 C78 67 64 79 50 86 C36 79 22 67 22 52 L22 26 Z"
+        fill="none"
+        stroke="#2a3a5c"
+        stroke-width="1"/>
+
+  <!-- Vibe waveform pulse -->
+  <polyline
+    points="24,50 30,50 34,38 38,62 42,44 46,56 50,40 54,60 58,46 62,54 66,42 70,58 74,50 76,50"
+    fill="none"
+    stroke="url(#vibeGrad)"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#glow)"/>
+
+  <!-- Small governance dot indicators -->
+  <circle cx="50" cy="70" r="2" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="44" cy="70" r="1.5" fill="#00e5ff" opacity="0.5"/>
+  <circle cx="56" cy="70" r="1.5" fill="#00e5ff" opacity="0.5"/>
+</svg>
