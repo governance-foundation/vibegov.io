@@ -1,6 +1,6 @@
 ---
 slug: exploratory-review-mode-parallel-flow
-title: "GOV-08: Exploratory Review - The Always-On Discovery Engine for Backlog Quality"
+title: "How to Keep Your Backlog Hydrated"
 authors: [VibeGov_team]
 tags: [governance, quality, exploratory, backlog, tech-debt]
 ---
