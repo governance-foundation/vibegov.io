@@ -2,30 +2,102 @@
 slug: gov-07-tasks-week-1
 title: "How to Keep AI Agents Moving Through Backlog Work"
 authors: [vibegov_team]
-tags: [tasks, gov-07, week-1]
+tags: [tasks, gov-07, backlog, github-issues, scheduling]
 ---
 
-Mapped rule: `GOV-07 Tasks`
+Most teams do not have an "AI quality" problem.
+They have a **backlog behavior** problem.
 
-This page is focused on practical task progression so agents keep shipping instead of stopping after one item.
+Agents execute one task, then stall.
+Or they cherry-pick easy work.
+Or they stop looking at backlog state entirely.
 
-Published page:
+GOV-07 is about enforcing repeatable backlog behavior so agents continuously deliver against real priorities.
 
-- [GOV-07 Tasks](https://governance-foundation.github.io/vibegov.io/docs/published/gov-07-tasks)
+## The real process
 
-Week 1 status:
+The process is simple and strict:
 
-- GOV-01 through GOV-07 are now public.
-- Rule pages include canonical content plus section commentary.
-- Feedback loop is active through GitHub issues.
+1. Use GitHub Issues as the execution backlog.
+2. Keep agent attention anchored on backlog state.
+3. Run scheduled backlog monitoring.
+4. Convert monitoring into action on ready issues.
+5. Repeat continuously.
 
-Next:
+This creates a stable delivery loop instead of one-off bursts.
 
-- prioritize issue feedback
-- publish clarified wording where repeated ambiguity appears
-- add adoption examples from real teams
+## Operational pattern
 
-Share feedback:
+### 1) Backlog is the queue of truth
 
-- [Create issue](https://github.com/governance-foundation/vibegov.io/issues/new/choose)
+Agents should not invent side queues.
 
+Execution starts from:
+- issue priority
+- issue readiness
+- blockers/dependencies
+- explicit acceptance and verification expectations
+
+### 2) Agent behavior is repetitive by design
+
+For each cycle, agents should:
+
+- read current open issues
+- identify highest-priority unblocked ready item
+- execute or escalate
+- update issue with evidence/status
+- move to next ready item
+
+Consistency beats heroics.
+
+### 3) Monitoring must run on a schedule
+
+Do not rely on manual nudges.
+
+A scheduled monitor should regularly:
+
+- scan issue backlog state
+- detect stalled items
+- detect missing fields/spec binding
+- surface newly ready work
+- trigger next execution action
+
+This keeps throughput alive even when humans are busy.
+
+### 4) Action must be issue-driven
+
+When monitoring finds work:
+
+- if issue is ready: execute
+- if issue is under-specified: harden and flag for review
+- if blocked: annotate blocker and move to next item
+
+No silent waiting.
+
+## Why this works
+
+This model turns backlog from a passive list into an active control system.
+
+Benefits:
+
+- fewer stalled cycles
+- better priority compliance
+- less context loss between runs
+- clearer operational visibility
+- compounding delivery velocity over time
+
+## Minimal implementation checklist
+
+- GitHub issue-first execution policy enabled
+- readiness criteria defined
+- scheduled backlog monitor configured
+- issue status/evidence updates required
+- next-item continuation rule enforced
+
+## Bottom line
+
+If you want agents to keep shipping, stop treating backlog as documentation.
+Treat it as an operational loop the agent repeatedly reads, validates, and acts on.
+
+Read the canonical page:
+- [GOV-07 Tasks](/docs/published/gov-07-tasks)
