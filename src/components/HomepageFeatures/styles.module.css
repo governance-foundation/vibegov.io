@@ -12,3 +12,13 @@
   height: 100%;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
 }
+
+[data-theme='dark'] .features {
+  background: #111827;
+}
+
+[data-theme='dark'] .card {
+  background: #1f2937;
+  border-color: #334155;
+  box-shadow: 0 10px 25px rgba(2, 6, 23, 0.35);
+}
