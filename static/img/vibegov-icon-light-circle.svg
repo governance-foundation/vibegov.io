@@ -25,6 +25,9 @@
     </filter>
   </defs>
 
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgLight)" stroke="#dde4f5" stroke-width="1"/>
+
   <!-- Shield body -->
   <path d="M50 10 L84 24 L84 52 C84 70 68 84 50 92 C32 84 16 70 16 52 L16 24 Z"
         fill="url(#shieldLight)"
