@@ -35,6 +35,16 @@ function commentaryFor(heading) {
   if (h.includes("scope / audience / update cadence")) return "Defines ownership and maintenance boundaries to stop rule drift and accidental misuse.";
   if (h.includes("mandatory")) return "Marks non-optional behavior to reduce ambiguity during execution.";
   if (h.includes("delivery loop")) return "Establishes the default end-to-end execution pattern so delivery quality is repeatable.";
+  if (h.includes("execution modes")) return "Defines the allowed delivery postures so evidence and completion standards match the work being performed.";
+  if (h.includes("mode discipline")) return "Prevents silent workflow shifts that hide evidence gaps or mix incompatible completion standards.";
+  if (h.includes("backlog hydration")) return "Treats discovery as a required planning input instead of informal side notes.";
+  if (h.includes("blocker escalation")) return "Keeps delivery moving by turning blockers into tracked decisions instead of stalled work.";
+  if (h.includes("review posture")) return "Shifts exploratory work from surface browsing to goal-driven operational review.";
+  if (h.includes("scenario-matrix")) return "Forces complete coverage accounting so reviews do not stop at the happy path.";
+  if (h.includes("classification rules")) return "Standardizes outcomes so exploratory findings can be triaged and acted on consistently.";
+  if (h.includes("surface and state coverage")) return "Prevents teams from missing dialogs, errors, and other revealed behavior that changes real usability.";
+  if (h.includes("required follow-up artifacts")) return "Turns each finding into tracked engineering work so exploration actually hydrates the backlog.";
+  if (h.includes("artifact completeness rule")) return "Blocks ceremonial reporting by requiring every finding to be linked to follow-up artifacts.";
   if (h.includes("issue")) return "Provides traceability and scope control so changes remain auditable.";
   if (h.includes("tdd") || h.includes("test")) return "Ensures implementation is validated by evidence, not assumptions.";
   if (h.includes("commit")) return "Preserves change history and links implementation back to tracked intent.";
@@ -117,4 +127,3 @@ for (const item of files) {
 }
 
 console.log("Published governance docs regenerated from canonical .mdc files.");
-

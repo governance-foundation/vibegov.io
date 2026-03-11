@@ -20,6 +20,17 @@ const sidebars = {
     'contribute',
     {
       type: 'category',
+      label: 'Operational Guides',
+      items: [
+        'execution-modes',
+        'exploratory-review-mode',
+        'checkpoint-reporting',
+        'blocker-escalation',
+        'workflow-quality-rubric',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Published Governance Pages',
       items: [
         'published/gov-01-instructions',
@@ -36,6 +47,3 @@ const sidebars = {
 };
 
 module.exports = sidebars;
-
-
-
