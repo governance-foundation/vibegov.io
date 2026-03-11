@@ -35,7 +35,11 @@ Apply these files in order:
 - Project intent: `.governance/project/PROJECT_TEMPLATE.md`
 - Feature/change intent: `.governance/specs/SPEC_TEMPLATE.md`
 
-If `<provider-rules-path>/` exists in a target project, keep it aligned with `.governance/rules/`.
+Treat `.governance/rules/` as canonical.
+
+If a target project already contains a provider-native rules directory, detect it and keep its rule files aligned with `.governance/rules/`.
+
+Do not use placeholder paths. If no provider-native rules directory exists, continue with `.governance/rules/` only.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 

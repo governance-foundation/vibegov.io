@@ -2,7 +2,7 @@
 
 `.governance/` keeps delivery guidance isolated from product code.
 
-This prevents governance files from being mixed into app folders and makes adoption simple: copy one folder, then sync rules into `<provider-rules-path>/` for IDE loading.
+This prevents governance files from being mixed into app folders and makes adoption simple: copy one folder, then detect any existing provider-native rules directory and sync rules into it for IDE loading.
 
 ## Folder Roles
 

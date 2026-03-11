@@ -42,8 +42,9 @@ This index lists the guidance files in this repository and when to use each.
 
 ## Recommended Install Layout (Target Projects)
 - Keep VibeGov assets under `.governance/` in the target project.
-- Sync `.governance/rules/gov-*.mdc` into `<provider-rules-path>/` so rule-loading IDEs apply them.
-- Add a root `AGENTS.md` that declares `<provider-rules-path>/*.mdc` as active rule files for agents that use `AGENTS.md`.
+- Treat `.governance/rules/gov-*.mdc` as canonical.
+- Detect any existing provider-native rules directory in the repo and mirror `.governance/rules/gov-*.mdc` into it.
+- If no provider-native rules directory exists, do not invent one; continue with `.governance/rules/` and a root `AGENTS.md`.
 
 
 

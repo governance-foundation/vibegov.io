@@ -20,7 +20,10 @@
   "compatibility": {
     "mirror_to_provider_rules_if_present": true,
     "mirror_source_glob": ".governance/rules/*.mdc",
-    "mirror_target_glob": "<provider-rules-path>/*.mdc",
+    "mirror_target_strategy": "detect_existing_provider_native_rules_directories",
+    "use_placeholders": false,
+    "if_no_provider_directory_exists": "use_.governance/rules_only",
+    "report_detected_mirror_targets": true,
     "preserve_intent": true
   },
   "delivery_loop": [

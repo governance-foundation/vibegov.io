@@ -8,8 +8,8 @@ Use this checklist when creating a new project from this template.
 - Update any repository-specific references in `INDEX.md`.
 - Ensure `.governance/` exists with `rules/`, `project/`, and `specs/`.
 - Place governance assets under `.governance/` to keep them isolated from product folders.
-- Sync active governance rules from `.governance/rules/gov-*.mdc` into `<provider-rules-path>/` for IDE rule loading.
-- Add a root `AGENTS.md` that points to `<provider-rules-path>/*.mdc` as active rule sources for agents that read `AGENTS.md`.
+- Detect any existing provider-native rules directory and sync active governance rules from `.governance/rules/gov-*.mdc` into it for IDE rule loading.
+- Add a root `AGENTS.md` that points to `.governance/rules/*.mdc` and any detected provider-native mirror as active rule sources for agents that read `AGENTS.md`.
 
 ## Project Guidance
 - Create a project file from `.governance/project/PROJECT_TEMPLATE.md`.

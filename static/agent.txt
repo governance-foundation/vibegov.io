@@ -8,7 +8,8 @@ required folders:
 scope rules:
 - rules are governance-only
 - specs are feature/change-only
-- if <provider-rules-path>/ exists, mirror .governance/rules/*.mdc into it
+- detect any provider-native rules directory that already exists in the repo and mirror .governance/rules/*.mdc into it
+- if none exist, do not invent placeholder paths; use .governance/rules/*.mdc only
 
 hard gate:
 - before writing any product code, create:

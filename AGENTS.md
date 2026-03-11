@@ -6,8 +6,8 @@ Use this file when your coding agent reads `AGENTS.md` as the top-level instruct
 
 Load and apply all rule files from:
 
-- `<provider-rules-path>/*.mdc` (if present in the target project)
 - `.governance/rules/*.mdc` (when using VibeGov directly in-repo)
+- any existing provider-native rules files the agent detects in the target project and keeps aligned with `.governance/rules/*.mdc`
 
 ## Governance Folder Standard
 
@@ -19,7 +19,9 @@ If `.governance/` does not exist, create and maintain:
 
 Treat `.governance/rules/*.mdc` as canonical governance files.
 
-If `<provider-rules-path>/` exists, keep `<provider-rules-path>/*.mdc` aligned with `.governance/rules/*.mdc`.
+If a provider-native rules directory already exists in the target project, detect it and keep its `.mdc` files aligned with `.governance/rules/*.mdc`.
+
+Do not use placeholder paths. If no provider-native rules directory exists, continue with `.governance/rules/*.mdc` only.
 
 Do not place governance files outside `.governance/` unless explicitly requested by a human.
 
@@ -27,7 +29,7 @@ Do not place governance files outside `.governance/` unless explicitly requested
 
 1. Human intent in the current session
 2. Project and spec intent (`.governance/project`, `.governance/specs`)
-3. Governance rules (`.governance/rules` or a provider-native rules path)
+3. Governance rules (`.governance/rules` and any detected provider-native mirror)
 
 If two instructions conflict, prefer the more specific, project-scoped guidance and document the conflict explicitly.
 

@@ -75,6 +75,7 @@ const config = {
         logo: {
           alt: 'VibeGov Logo',
           src: 'img/vibegov-icon.svg',
+          srcDark: 'img/vibegov-icon-light.svg',
         },
         items: [
           {
@@ -152,7 +153,6 @@ const config = {
 };
 
 module.exports = config;
-
 
 
 

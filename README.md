@@ -229,13 +229,15 @@ Why this layout:
 
 Canonical-source model:
 - `.governance/` is the single source of truth for governance.
-- Different agents/providers can share the same rules and link them through their native mechanism (for example `AGENTS.md` or a provider-native rules directory).
+- Different agents/providers can share the same rules and link them through their native mechanism (for example `AGENTS.md` or an existing provider-native rules directory).
 
-For any agent/IDE with its own rules location, sync active governance rules into that provider-native rules path.
+During onboarding, detect any provider-native rules directory that already exists in the target repo and mirror active governance rules into it.
+
+If no provider-native rules directory exists, do not invent a placeholder path; use `.governance/rules/` as the only active rule source.
 
 It becomes a **default reference** for both humans and AI agents — without special prompts or tooling.
 
-For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a root `AGENTS.md` that declares `<provider-rules-path>/*.mdc` as active instructions and defines precedence.
+For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a root `AGENTS.md` that declares `.governance/rules/*.mdc` plus any detected provider-native mirror as active instructions and defines precedence.
 
 ---
 

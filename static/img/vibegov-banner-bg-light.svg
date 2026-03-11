@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f8ff"/>
+      <stop offset="50%" style="stop-color:#eef2fc"/>
+      <stop offset="100%" style="stop-color:#f0f4ff"/>
+    </linearGradient>
+
+    <linearGradient id="vibeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0099cc;stop-opacity:0"/>
+      <stop offset="20%" style="stop-color:#0099cc;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#7c3aed"/>
+      <stop offset="80%" style="stop-color:#0099cc;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:0"/>
+    </linearGradient>
+
+    <linearGradient id="vibeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0"/>
+      <stop offset="25%" style="stop-color:#7c3aed;stop-opacity:0.4"/>
+      <stop offset="50%" style="stop-color:#0099cc;stop-opacity:0.3"/>
+      <stop offset="75%" style="stop-color:#7c3aed;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </linearGradient>
+
+    <filter id="waveGlow" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#0a0f1c" stroke-width="0.3" opacity="0.06"/>
+    </pattern>
+
+    <radialGradient id="centerGlow" cx="30%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.08"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0"/>
+    </radialGradient>
+
+    <radialGradient id="rightGlow" cx="75%" cy="50%" r="35%">
+      <stop offset="0%" style="stop-color:#0099cc;stop-opacity:0.07"/>
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:0"/>
+    </radialGradient>
+
+    <clipPath id="bannerClip">
+      <rect width="1500" height="500"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bgGrad)"/>
+  <rect width="1500" height="500" fill="url(#grid)"/>
+  <rect width="1500" height="500" fill="url(#centerGlow)"/>
+  <rect width="1500" height="500" fill="url(#rightGlow)"/>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- Ghost waveform -->
+    <polyline
+      points="0,290 60,290 100,240 140,340 180,260 220,320 260,250 300,330 340,265 380,315 420,255 460,325 500,260 540,320 580,248 620,330 660,262 700,318 740,252 780,328 820,258 860,322 900,255 940,325 980,260 1020,318 1060,250 1100,330 1140,265 1180,315 1220,258 1260,322 1300,262 1340,318 1380,252 1420,328 1460,265 1500,290"
+      fill="none"
+      stroke="#7c3aed"
+      stroke-width="1"
+      opacity="0.08"/>
+
+    <!-- Main waveform -->
+    <polyline
+      points="0,250 80,250 130,200 180,310 230,220 280,295 330,210 380,300 430,215 480,295 530,205 580,305 630,215 680,298 730,208 780,302 830,212 880,298 930,210 980,300 1030,218 1080,295 1130,212 1180,298 1230,215 1280,300 1330,215 1380,298 1420,250 1500,250"
+      fill="none"
+      stroke="url(#vibeGrad)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.4"
+      filter="url(#waveGlow)"/>
+
+    <!-- Secondary waveform -->
+    <polyline
+      points="0,260 80,260 130,215 180,320 230,230 280,308 330,222 380,312 430,225 480,308 530,217 580,316 630,226 680,310 730,218 780,312 830,222 880,310 930,220 980,312 1030,228 1080,308 1130,224 1180,310 1230,225 1280,312 1330,225 1380,310 1420,260 1500,260"
+      fill="none"
+      stroke="url(#vibeGrad2)"
+      stroke-width="1"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      opacity="0.25"/>
+
+    <!-- Border lines -->
+    <line x1="0" y1="1" x2="1500" y2="1" stroke="#0099cc" stroke-width="2" opacity="0.35"/>
+    <line x1="0" y1="499" x2="1500" y2="499" stroke="#0099cc" stroke-width="2" opacity="0.35"/>
+  </g>
+</svg>

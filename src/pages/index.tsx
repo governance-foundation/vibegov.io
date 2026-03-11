@@ -50,12 +50,13 @@ Initialization contract:
    - \`.governance/specs/\`
 2) Treat \`.governance/rules/*.mdc\` as governance-only constraints.
 3) Treat \`.governance/specs/*\` as the only feature/change spec source.
-4) If \`<provider-rules-path>/\` exists, sync \`.governance/rules/*.mdc\` into it.
-5) Before coding, create:
+4) Detect any provider-native rules directory that already exists in the repo. If found, sync \`.governance/rules/*.mdc\` into it and report the exact target(s).
+5) If none exist, do not invent placeholder paths; continue with \`.governance/rules/*.mdc\` only.
+6) Before coding, create:
    - \`.governance/project/PROJECT_INTENT.md\`
    - \`.governance/specs/SPEC-001-<feature>.md\`
    - backlog/tasks mapped to spec sections.
-6) List active rule files before coding.
+7) List active rule files before coding.
 
 Execution gate:
 - Do not start coding until initialization is complete and reported.
@@ -87,6 +88,5 @@ Completion report:
     </Layout>
   );
 }
-
 
 
