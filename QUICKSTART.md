@@ -2,57 +2,82 @@
 
 Get VibeGov working on a real repo quickly.
 
-## 1) Copy governance scaffolding
-Add these into your project root:
+## 1) Create the governance scaffold
+Add these to the project root:
 - `.governance/rules/`
 - `.governance/project/`
 - `.governance/specs/`
 
-## 2) Choose your mode
-- **OpenSpec-first (recommended):** requirements live in `openspec/specs/*`
-- **Minimal mode:** keep existing docs, add traceability incrementally
-
-## 3) Define project intent
-Fill:
+Then copy in:
+- `.governance/rules/gov-*.mdc`
 - `.governance/project/PROJECT_TEMPLATE.md`
-
-## 4) Create first governed task
-Write one feature/change spec from:
 - `.governance/specs/SPEC_TEMPLATE.md`
 
-## 5) Build GitHub backlog first (mandatory)
-Before implementation, create/normalize GitHub issues for all planned/partial requirements.
-This backlog is the shared execution queue so all agents and humans stay aligned.
+## 2) Activate canonical governance
+- Treat `.governance/` as the source of truth.
+- If the repo already has a provider-native rules directory, mirror active rules into it.
+- If it does not, do not invent a placeholder path.
+- Add a root `AGENTS.md` or equivalent activation mechanism if your tooling needs one.
 
-## 6) Run delivery loop
-Follow: Observe -> Plan -> Implement -> Verify -> Document
+## 3) Choose the operating model
+VibeGov has three execution modes:
+- **Development** — change behavior with proof
+- **Exploration** — discover behavior and hydrate backlog
+- **Release / Verification** — confirm integrated confidence
 
-Policy gates:
-- GITHUB_ISSUE_POLICY.md (mandatory backlog + issue-first + commit/evidence discipline)
-- blocked work must be recorded on the issue, then next issue starts immediately
+Start by reading:
+1. `gov-01-instructions.mdc`
+2. `gov-02-workflow.mdc`
+3. `gov-03` through `gov-07`
+4. `gov-08-exploratory-review.mdc`
 
-## 7) Enforce proof
+## 4) Define project intent
+Create or update project intent from:
+- `.governance/project/PROJECT_TEMPLATE.md`
+
+## 5) Create the first governed spec
+Create your first feature/change spec from:
+- `.governance/specs/SPEC_TEMPLATE.md`
+
+## 6) Create or normalize the backlog first
+Before implementation:
+- create/normalize GitHub issues for planned/partial requirements
+- connect issue scope to spec intent
+- identify blockers early instead of hiding them in chat or notes
+
+This backlog becomes the shared execution queue for humans and agents.
+
+## 7) Run the workflow in the right mode
+Core loop:
+
+`Observe -> Plan -> Execute in the right mode -> Verify -> Document`
+
+Key expectations:
+- Development requires evidence before completion claims
+- Exploration requires scenario classification and tracked artifacts for every non-validated finding
+- Release / Verification requires integrated evidence and visible blocker/risk status
+
+## 8) Enforce proof, not vibes
 For user-facing changes:
-- E2E-first proof required
-- Traceability updated before marking complete
+- require evidence that matches the execution mode
+- require traceability updates before marking complete
+- verify persistence/mutation outcomes, not just UI confirmation
 
-## 8) Keep artifacts durable
-Store:
+## 9) Keep artifacts durable
+Store and report:
 - requirement IDs
-- test evidence
-- decisions
-- blockers/next actions
+- issue links
+- test/evidence outputs
+- decisions and confidence limits
+- blockers and next actions
+- exploratory completeness labels where applicable
 
 You are now in governed delivery mode.
 
-## 10) Run plain-user smoke test (recommended)
-- Use `scripts/smoke-vibegov.ps1` against your target repo.
+## 10) Run the plain-user smoke test (recommended)
+- Use `scripts/smoke-vibegov.ps1` against the target repo.
 - See `SMOKE_TEST.md` for audit/dry-run/create flows.
 
-
-
-## 9) Make Cypress UI realistic
-- Apply 	hemes/testing/DEMO_DATA_ASSET_POLICY.md`r
-- Use fixture packs from 	emplates/cypress/fixtures/* for deterministic sample data + assets
-
-
+## 11) Make UI testing realistic
+- Apply `themes/testing/DEMO_DATA_ASSET_POLICY.md`
+- Use fixture packs from `templates/cypress/fixtures/*` for deterministic sample data and assets

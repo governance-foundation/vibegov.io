@@ -1,65 +1,72 @@
 ---
 slug: gov-02-workflow-release
-title: "AI Delivery Workflow: Keep Agents Moving Through Backlog Work"
+title: "Execution Modes Keep Delivery Moving Without Faking Done"
 authors: [VibeGov_team]
-tags: [workflow, gov-02, sdlc, backlog]
+tags: [workflow, gov-02, evidence, blockers, backlog]
 ---
 
-The biggest AI delivery bottleneck is not coding speed.
-It is workflow collapse after the first completed task.
+The biggest delivery mistake is not forgetting the workflow loop.
+It is pretending every kind of work closes the same way.
 
-[GOV-02](/docs/published/gov-02-workflow) is designed to keep agents moving through backlog work without losing quality control.
+VibeGov's updated [GOV-02](/docs/published/gov-02-workflow) makes execution mode explicit so teams stop mixing exploration notes, implementation proof, and release verification into one blurry definition of done.
 
-## The recurring failure pattern
+## Mode clarity is a throughput tool
 
-Teams often see this loop:
+VibeGov uses three execution modes:
 
-- one issue gets done
-- no explicit continuation rule exists
-- work stalls until someone re-prompts the agent
-- backlog momentum dies
+- `exploratory`: what did we learn from real behavior, and what backlog work did that create?
+- `implementation`: what changed, and how do we know it works?
+- `release/verification`: is the accumulated work ready, shipped, or still behaving correctly?
 
-That is not an execution problem. It is a workflow design problem.
+The delivery loop does not change.
+The evidence standard does.
 
-## What [GOV-02](/docs/published/gov-02-workflow) enforces
+## Done requires mode-appropriate evidence
 
-A repeatable loop:
+Exploratory done is not a passing build. It is a fully classified review scope with tracked artifacts for everything non-validated.
 
-`Observe -> Plan -> Implement -> Verify -> Document`
+Implementation done is not a good intention. It is linked intent, changed artifacts, and recorded proof from checks, tests, or manual validation.
 
-And a continuity contract:
+Release or verification done is not "we already tested this earlier." It is verified scope, build or release outputs, post-release observations, and tracked follow-up for any new drift.
 
-- after one item closes, move to next highest-priority unblocked item
-- stop only for explicit blockers or stop conditions
+If the evidence does not match the mode, the work is not done yet.
 
-## Why this is a growth lever
+## Backlog hydration belongs inside the workflow
 
-This workflow discipline gives teams:
+Discovery is not separate from delivery discipline.
 
-- continuous backlog throughput
-- better prioritization compliance
-- less context reset between cycles
-- more reliable release forecasting
+- exploratory work hydrates backlog by design
+- release or verification work must feed newly observed drift back into tracked follow-up
+- implementation work must track adjacent gaps instead of silently absorbing them
 
-## Practical adoption pattern
+That keeps throughput honest. Teams can move quickly without hiding uncovered work inside status updates.
 
-- keep GitHub issues as the queue of truth
-- define readiness and done criteria clearly
-- enforce evidence before completion claims
-- enforce automatic next-item continuation
+## Blockers should redirect work, not freeze it
 
-This turns agent execution from bursts into a pipeline.
+A blocker pauses the current item. It should not pause the whole loop unless it removes every viable next step.
 
-## Social takeaway
+Strong blocker handling means:
 
-If your agent stops after one task, the fix is not more prompting.
-The fix is workflow governance.
+- confirm the blocker with bounded effort
+- record evidence and confidence limits
+- create or link a blocker artifact
+- recommend the next ready item or route
+- move on
 
-Read the canonical page:
-- [GOV-02 Workflow](/docs/published/gov-02-workflow)
-- Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc
-- Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc
+This is how backlog continuity becomes real instead of aspirational.
 
+## Practical takeaway
 
+If you want autonomous delivery, do not just tell contributors to continue.
+Tell them:
 
+- which mode they are in
+- what evidence closes that mode
+- how blockers should be escalated
+- what happens when the current item cannot advance
 
+Read the supporting pages:
+
+- [Execution Modes](/docs/execution-modes)
+- [Blocker Escalation](/docs/blocker-escalation)
+- [Published GOV-02](/docs/published/gov-02-workflow)

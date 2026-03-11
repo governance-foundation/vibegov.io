@@ -2,242 +2,182 @@
 
 Governed delivery bootstrap for AI-assisted teams.
 
-VibeGov uses a typical stage-based delivery flow.
-We also recommend running an **Exploratory Review** flow in parallel to audit outputs for gaps, create backlog items, and reduce tech debt before release.
+VibeGov helps teams move fast **without faking done**.
 
-## Start in 10 minutes
-1. Read `QUICKSTART.md`
-2. Create/normalize GitHub issue backlog from planned/partial requirements
-3. Choose **OpenSpec-first** mode
-4. Apply `OPENSPEC_RULES.md`
-5. Run your first governed task with traceable evidence
+It gives humans and agents a shared delivery model built around three execution modes:
+- **Development** — change reality
+- **Exploration** — discover reality
+- **Release / Verification** — confirm integrated reality
 
-## Who this is for
-- Teams using AI agents for real software delivery
-- Projects needing faster output without losing quality controls
-
-## Who this is not for
-- One-off throwaway scripts with no need for traceability
-- Teams unwilling to enforce testing/evidence gates
-
+The core idea is simple:
+- bind work to intent before implementation
+- require mode-appropriate evidence before completion claims
+- keep backlog hydration inside the delivery system
+- make blockers visible without freezing everything
 
 > **Put some governance into your vibing.**
 
 > **Software fails more often from forgotten intent than from bad code.**
 
-**VibeGov** describes an opinionated approach to AI-assisted software delivery that helps people and AI agents work with professional judgement — even when working informally, iteratively, or without deep technical or process knowledge.
+---
 
-You can vibe.  
-The delivery still behaves like a pro.
+## Start here
+
+If you are new to VibeGov, use this order:
+
+1. `QUICKSTART.md`
+2. `INDEX.md`
+3. `.governance/rules/gov-01-instructions.mdc`
+4. `.governance/rules/gov-02-workflow.mdc`
+5. `.governance/rules/gov-08-exploratory-review.mdc`
+
+Then review the operational docs on the site:
+- `docs/execution-modes.md`
+- `docs/exploratory-review-mode.md`
+- `docs/checkpoint-reporting.md`
+- `docs/blocker-escalation.md`
+- `docs/workflow-quality-rubric.md`
 
 ---
 
-## New Here? Start Here.
+## What VibeGov is for
 
-You don’t need to know how to code to build software anymore.
+VibeGov is for teams using AI agents for real software delivery who want:
+- faster execution without losing traceability
+- better issue/spec/test discipline
+- clearer completion standards
+- less shallow review and less fake confidence
+- a portable governance layer that works across tools and providers
 
-Expected onboarding path:
-- **Start here**: `README.md`
-- **Governance**: `.governance/rules/gov-01-instructions.mdc` and the other `.governance/rules/gov-*.mdc` files
-- **Project**: `.governance/project/PROJECT_TEMPLATE.md`
-- **Specs**: `.governance/specs/SPEC_TEMPLATE.md`
-- **Index**: `INDEX.md` for when to use each file
+## What it is not for
 
-What you *do* need is a way to make sure what gets built:
-- actually works
-- can be changed later
-- doesn’t quietly fall apart as things move fast
-
-When working with AI, it’s easy to get something that *looks* finished:
-- code exists
-- features appear
-- progress feels fast
-
-But without guidance, important things are often skipped:
-- problems aren’t fully understood before being “fixed”
-- changes aren’t checked properly
-- nothing explains *why* decisions were made
-- future updates become harder than they should be
-
-**VibeGov** helps by giving your AI the kind of **delivery instinct** experienced developers build over years — so you don’t need to know the process to get the benefit of it.
-
-You focus on *what you want*.  
-VibeGov helps the work happen in a way that’s more reliable, explainable, and easier to evolve.
+VibeGov is probably overkill for:
+- throwaway one-off scripts with no maintenance horizon
+- teams unwilling to require evidence for completion claims
+- projects that do not care about traceability, backlog quality, or long-term change safety
 
 ---
 
-## Why VibeGov Exists
+## Why VibeGov exists
 
-Modern AI-assisted development makes it easy to produce code quickly.
+AI-assisted development makes code generation cheap.
 
-What’s harder — for both people and agents — is preserving *why* software is built, not just *what* is built, across design, delivery, change, and maintenance.
+What stays expensive is delivery judgement:
+- knowing when intent is still unclear
+- knowing when a page was merely rendered instead of validated
+- knowing when a success toast is not proof that persistence worked
+- knowing when a blocker should redirect work instead of stalling the whole system
+- knowing when a review is partial instead of complete
 
-Much of what makes software sustainable lives as tacit knowledge:
-- when to stop and clarify
-- what “done” usually includes
-- how to avoid shallow fixes
-- how to support change over time
+VibeGov exists to make that judgement more explicit, reusable, and portable.
 
-Experienced developers apply this instinctively.  
-Less experienced developers — and AI agents — often don’t.
-
-VibeGov exists to make that accumulated understanding **explicit, reusable, and discussable**, so intent is less likely to be lost as work moves fast.
-
-Not to remove judgement —  
-but to support it.
+Not to remove human judgement.
+To support it.
 
 ---
 
-## Direction, Not Enforcement
+## The VibeGov operating model
 
-VibeGov is intentionally **directional**, not prescriptive.
+### 1. Development
+Use Development when the goal is to change behavior.
 
-It does not:
-- enforce compliance
-- lock you into workflows
-- assume every project is the same
+Typical outputs:
+- issue-to-spec binding
+- scoped implementation
+- validation evidence
+- traceability updates
+- commits or release artifacts
 
-Instead, it offers **professional defaults** — guidance shaped by decades of software delivery experience — that people and agents can choose to follow, adapt, or deliberately diverge from.
+### 2. Exploration
+Use Exploration when the goal is discovery, review, audit, or backlog hydration.
 
-Humans remain in the loop.  
-Deviation is expected.  
-Repetition is a signal to evolve the guidance.
+Typical outputs:
+- scenario classifications
+- focused issues for failures or uncovered contracts
+- spec links or `SPEC_GAP`
+- planned traceability/test follow-up
+- honest completeness label
 
-The boring parts of software delivery don’t disappear —  
-they move into the system, where they support creative work instead of competing with it.
+### 3. Release / Verification
+Use Release / Verification when the goal is integrated confidence.
 
----
+Typical outputs:
+- build/version under review
+- integrated validation evidence
+- blockers and residual risks
+- go/no-go or next-step recommendation
 
-## VibeGov vs Skills
-
-A common question is: "Why not just create skills?"
-
-Skills and VibeGov solve different problems:
-
-- **Skills** are task capabilities (how to do a specific action).
-- **VibeGov** is delivery governance (how the whole system should behave over time).
-
-Skills help execute tasks faster.
-VibeGov ensures those tasks stay aligned with intent, quality, traceability, and long-term maintainability.
-
-In practice:
-- skills = tactical execution units
-- VibeGov = operating model for end-to-end delivery
-
-You can run many skills inside a VibeGov-governed project.
-But skills alone do not provide full delivery governance.
-
-## Why Not Just Use a Framework?
-
-You might ask:
-
-> “Why not use an existing framework or tool?  
-> They already do specs, planning, and tasks.”
-
-That’s a fair question.
-
-There are excellent frameworks and tools that focus on:
-- writing better specifications
-- structuring agent workflows
-- generating plans, tasks, and artefacts
-- improving prompting and consistency
-
-These approaches are valuable, and VibeGov assumes you may use them.
-
-However, most frameworks focus on **how to build features**, not on **how software delivery behaves over time**.
-
-They typically:
-- optimise for feature construction
-- operate inside a single project
-- rely on tooling, commands, or workflow engines
-- stop once code is produced
-
-VibeGov operates at a different level.
-
-It focuses on **end-to-end delivery**, including:
-- issue validation and triage
-- capturing intent before implementation
-- planning with awareness of trade-offs
-- implementation with proof, not just output
-- tests, documentation, and showcases as part of “done”
-- deployment, verification, and release
-- change, maintenance, and long-term evolution
-
-In short:
-
-> **Frameworks help you build features.  
-> VibeGov helps the whole delivery behave professionally.**
-
-VibeGov is intentionally **tool-free** so it can:
-- outlive specific technologies
-- be shared across projects
-- evolve as lessons are learned
-- guide both humans and AI without locking either in
+The delivery loop does not disappear.
+The proof model changes with the mode.
 
 ---
 
-## What VibeGov Is
+## What changes when VibeGov is present
 
-VibeGov is:
-
-- A **normative guide** for AI-assisted software delivery
-- A **codification of SDLC knowledge** accumulated through decades of practice
-- A **living body of delivery guidance** that evolves as new lessons are learned
-- A **reference implementation of how to think**, not what to run
-
-The guidance here is opinionated by design.  
-It encodes what software delivery has already learned so that it does not need to be rediscovered through failure.
+- intent is shaped before coding
+- completion depends on evidence, not confidence
+- exploratory review becomes structured backlog hydration
+- blockers become routed work, not hidden stalls
+- issues, specs, tests, and delivery updates stay connected
+- future changes become safer because context survives
 
 ---
 
-## What VibeGov Is Not
-
-VibeGov is not:
-- a tool
-- a framework
-- a CLI
-- a workflow engine
-- a replacement for engineering judgement
-
-It does not run code.  
-It does not generate artefacts on its own.
-
-It provides **shared understanding**, not automation.
-
----
-
-## How VibeGov Is Used
-
-VibeGov can be:
-- cloned into a project to stay up to date, or
-- downloaded as a release and used as a stable snapshot
+## How VibeGov is used
 
 Recommended target layout inside a project:
 
-```
+```text
 .governance/
   rules/gov-*.mdc
   project/PROJECT_TEMPLATE.md
   specs/SPEC_TEMPLATE.md
 ```
 
-Why this layout:
-- `.governance/` keeps governance assets separated from product code.
-- `rules/` holds cross-project delivery rules.
-- `project/` holds system-level intent for this specific project.
-- `specs/` holds application feature/change specs.
-
 Canonical-source model:
 - `.governance/` is the single source of truth for governance.
-- Different agents/providers can share the same rules and link them through their native mechanism (for example `AGENTS.md` or an existing provider-native rules directory).
+- Different agents/providers can share the same rules and link them through their native mechanism.
+- If a provider-native rules directory already exists, mirror active rules into it.
+- If none exists, do not invent one; keep `.governance/rules/` canonical and declare active governance through `AGENTS.md` or equivalent.
 
-During onboarding, detect any provider-native rules directory that already exists in the target repo and mirror active governance rules into it.
+---
 
-If no provider-native rules directory exists, do not invent a placeholder path; use `.governance/rules/` as the only active rule source.
+## Why this is different from skills or frameworks
 
-It becomes a **default reference** for both humans and AI agents — without special prompts or tooling.
+- **Skills** tell an agent how to perform a task.
+- **Frameworks** often help structure feature construction.
+- **VibeGov** governs how delivery behaves over time.
 
-For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a root `AGENTS.md` that declares `.governance/rules/*.mdc` plus any detected provider-native mirror as active instructions and defines precedence.
+It is about:
+- issue quality
+- spec quality
+- evidence quality
+- checkpoint quality
+- blocker handling
+- exploratory rigor
+- release confidence
+
+In short:
+
+> **Frameworks help build features.**  
+> **VibeGov helps the whole delivery behave professionally.**
+
+---
+
+## Direction, not enforcement
+
+VibeGov is intentionally directional, not authoritarian.
+
+It does not replace engineering judgement.
+It does not require a specific toolchain.
+It does not assume every repo should behave identically.
+
+It provides strong defaults so humans and agents are less likely to drift into:
+- shallow fixes
+- weak issue quality
+- fake completion claims
+- undocumented decisions
+- review theater
 
 ---
 
@@ -245,20 +185,8 @@ For agents that prioritize `AGENTS.md` (for example Codex-style agents), add a r
 
 VibeGov is expected to evolve.
 
-New guidance may emerge as new failure modes appear.  
-Existing guidance may be refined as understanding deepens.  
-Guidance may be retired when its intent is preserved elsewhere.
+As new failure modes appear, the guidance should become clearer, sharper, and harder to game.
 
-All evolution remains anchored to a single principle:
+The anchor principle stays the same:
 
 > **Intent should outlive implementation.**
-
----
-
-## Authority
-
-VibeGov is intended to be **informative and directional**, not absolute.
-
-In cases of ambiguity, it offers a considered point of reference — one that teams and agents can choose to follow, adapt, or consciously diverge from, with awareness of the trade-offs involved.
-
-

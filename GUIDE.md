@@ -1,253 +1,233 @@
-## The Development Flow You’re Guiding
+# VibeGov Guide
 
-### 1. **Intent Before Action**
+This guide explains the operating model VibeGov is trying to install into a project.
 
-Everything starts with _why_ and _what_, never _how_.
+The short version:
 
-- A task must exist **because of a real problem or outcome**
-    
-- No coding, prompting, or tooling until intent is explicit
-    
-- AI is not allowed to “discover” requirements
-    
+> VibeGov is not mainly about generating code faster.  
+> It is about making delivery harder to execute badly.
 
-> _If intent isn’t written down, the work is not allowed to start._
+That means making intent, evidence, reporting, backlog hydration, and blocker handling explicit enough that both humans and AI agents can work quickly **without drifting into fake confidence**.
 
 ---
 
-### 2. **Specification as the Primary Artifact**
+## The three execution modes
 
-Specs are the centre of gravity — not code.
+### 1. Development
+Development changes reality.
 
-A spec must clearly define:
+Use it when the goal is to:
+- build
+- fix
+- refactor
+- close an issue with proof
 
-- Purpose and scope
-    
-- Inputs, outputs, constraints
-    
-- Non-goals and exclusions
-    
-- Success conditions
-    
-- Assumptions and risks
-    
+Development expects:
+- issue-to-spec binding
+- scoped implementation
+- validation evidence
+- traceability updates
+- commit/release artifacts
 
-The spec is:
+### 2. Exploration
+Exploration discovers reality.
 
-- Written for humans first
-    
-- Stable enough to audit
-    
-- The reference point for _all_ later decisions
-    
+Use it when the goal is to:
+- review live behavior
+- audit routes or feature slices
+- find drift between product and intent
+- hydrate backlog with tracked follow-up work
 
-> _Code is an implementation of the spec — never the other way around._
+Exploration expects:
+- scenario matrix
+- per-scenario classification
+- issue/spec/traceability artifacts for every non-validated finding
+- honest completeness label
 
----
+### 3. Release / Verification
+Release / Verification confirms integrated reality.
 
-### 3. **Task Decomposition (Human-Owned)**
+Use it when the goal is to:
+- validate a build or deployment
+- check post-merge or post-release behavior
+- produce a go/no-go recommendation
 
-Work is broken down _before_ execution.
-
-- Tasks are explicit, bounded, and reviewable
-    
-- Ownership is clear (human accountability is preserved)
-    
-- Tasks are sized to allow verification, not heroics
-    
-
-AI may **assist**, but:
-
-- It cannot decide task boundaries
-    
-- It cannot invent tasks
-    
-- It cannot silently merge concerns
-    
+Release / Verification expects:
+- build/version scope
+- integrated evidence
+- blocker/risk visibility
+- next-step recommendation
 
 ---
 
-### 4. **Controlled AI Engagement**
+## The workflow VibeGov wants
 
-AI is treated as a **tool under instruction**, not an agent.
+The generic loop is:
 
-Rules include:
+`Observe -> Plan -> Execute in the right mode -> Verify -> Document`
 
-- AI only works from provided specs and context
-    
-- No autonomous refactoring
-    
-- No “best practice” injection unless requested
-    
-- No scope expansion
-    
+The important part is not just the sequence.
+It is choosing the **right mode** and using the **right proof model**.
 
-Prompts are:
+A lot of bad delivery happens because teams blur these together:
+- exploratory notes get reported like implementation proof
+- implementation gets reported like it was release validation
+- partial review gets reported like completed review
 
-- Deterministic
-    
-- Context-bounded
-    
-- Reproducible
-    
-
-> _AI accelerates execution — it does not replace judgement._
+VibeGov exists to stop that blur.
 
 ---
 
-### 5. **Implementation With Traceability**
+## Intent before action
 
-All output must be traceable back to intent.
+Everything starts with intent.
 
-- Every code change maps to:
-    
-    - a spec section
-        
-    - a task
-        
-    - an explicit decision
-        
-- “Looks right” is not sufficient
-    
-- Convenience changes are rejected unless justified
-    
+Before meaningful implementation begins, the system should know:
+- what problem is being solved
+- what success looks like
+- what is out of scope
+- what constraints matter
+- what trade-offs are being accepted
 
-This preserves:
-
-- Legal defensibility
-    
-- Technical accountability
-    
-- Organisational memory
-    
+If intent is not written down, work should not quietly proceed as if it were clear.
 
 ---
 
-### 6. **Built-In Quality Gates**
+## Specification as the center of gravity
 
-Quality is not deferred to “later”.
+Specs are not paperwork around code.
+They are the stable reference point that explains why the code should exist and how success should be judged.
 
-Your flow enforces:
+A useful spec should make clear:
+- purpose
+- scope
+- inputs and outputs
+- constraints
+- assumptions and risks
+- non-goals
+- verification expectations
 
-- Clear acceptance criteria
-    
-- Structural correctness (not just “it works”)
-    
-- Alignment with constraints and non-goals
-    
-
-Quality checks answer:
-
-- Did we build _the right thing_?
-    
-- Did we build it _the agreed way_?
-    
-- Can someone else safely maintain this?
-    
+Code implements the spec.
+The spec should not be reverse-engineered from the code after the fact.
 
 ---
 
-### 7. **Explicit Testing as Proof, Not Hope**
+## Evidence before completion
 
-Testing exists to **prove claims**, not to feel safe.
+VibeGov treats "done" as an evidence claim, not a mood.
 
-- Tests map back to spec statements
-    
-- Edge cases are intentional, not accidental
-    
-- Failure modes are documented, not ignored
-    
+### Development evidence
+- requirement IDs
+- changed scope
+- commands/checks/tests run
+- pass/fail result
+- commit/artifact link
 
-Importantly:
+### Exploratory evidence
+- review unit purpose
+- preconditions
+- elements and revealed surfaces exercised
+- scenario classifications
+- expected vs actual notes
+- backlog/spec/traceability artifacts created
+- completeness label
 
-- AI-generated tests are reviewed like production code
-    
-- Coverage without intent is considered a failure
-    
+### Release / verification evidence
+- build/version under review
+- integrated scope covered
+- blocker/risk list
+- recommendation or decision
 
----
-
-### 8. **Issue Handling Without Blame or Drift**
-
-When things go wrong:
-
-- Issues are logged as _system facts_, not personal failures
-    
-- Root cause > quick fix
-    
-- Spec updates are allowed — silent behaviour changes are not
-    
-
-This prevents:
-
-- Spec rot
-    
-- “AI hallucination creep”
-    
-- Post-hoc rationalisation
-    
+If the evidence does not match the mode, the work is not done.
 
 ---
 
-### 9. **Communication as a First-Class System**
+## Exploration is structured backlog hydration
 
-Communication is governed, not informal.
+Exploration is not "poke around and report vibes."
 
-- Decisions are written down
-    
-- Changes are announced, not implied
-    
-- Ambiguity is resolved explicitly
-    
+A useful exploratory pass should:
+1. define the review unit
+2. define the user/operator goal
+3. record preconditions and confidence limits
+4. inventory elements and revealed surfaces
+5. execute a scenario matrix
+6. classify scenarios
+7. create durable artifacts for every invalidated, blocked, or uncovered item
+8. assign an honest completeness label
 
-This makes the system:
-
-- Scalable across people
-    
-- Defensible in disputes
-    
-- Resilient to personnel changes
-    
+This is how backlog quality improves instead of decaying.
 
 ---
 
-### 10. **Continuous Loop, Not a Waterfall**
+## Persistence matters more than UI confirmation
 
-The flow is cyclical but disciplined:
+One of the most common delivery failures is mistaking visible UI reaction for real success.
 
-`Intent   → Specification     → Tasks       → AI-assisted Execution         → Quality & Testing           → Review             → Learnings → Spec Update (if needed)`
+A toast, redirect, or green state is not proof that a mutation worked.
 
-Crucially:
+Whenever work claims to save, mutate, delete, sync, import, connect, or reconfigure something, review should verify the resulting state:
+- does it survive refresh?
+- is the downstream surface changed?
+- is the source-of-truth changed?
+- is the deleted thing actually gone?
 
-- The loop only moves forward with human sign-off
-    
-- Nothing auto-promotes itself
-    
+This rule matters in both Development and Exploration.
 
 ---
 
-## The Big Idea (What You’re Actually Teaching)
+## Blockers should redirect work, not freeze it
 
-You’re guiding people to understand that:
+A blocker should not become a black hole.
 
-> **AI does not reduce the need for governance — it increases it.**
+VibeGov wants blockers to be:
+- confirmed with reasonable effort
+- recorded with confidence limits
+- turned into durable artifacts
+- classified by impact
+- routed so unaffected work can continue
 
-And more sharply:
+The system should become more truthful when blocked, not less active.
 
-- Speed without intent is liability
-    
-- Output without ownership is risk
-    
-- Intelligence without structure is chaos
-    
+---
 
-What you’ve built is effectively a **modern SDLC designed for the age of AI**, where:
+## Reporting is part of governance
 
-- Humans remain accountable
-    
-- AI remains powerful but constrained
-    
-- Systems remain explainable, auditable, and defensible
-    
+Weak updates create false confidence.
 
-This is the delivery posture VibeGov aims to bootstrap by default.
+Good reporting should make clear:
+- what mode the work was in
+- what was actually exercised or changed
+- what evidence exists
+- what remains blocked or uncertain
+- what happens next
+
+This is why VibeGov cares about checkpoint shape, cadence, and examples.
+
+---
+
+## What VibeGov is teaching
+
+At the deepest level, VibeGov teaches this:
+
+- AI increases the need for governance
+- speed without intent is liability
+- output without traceability is risk
+- exploration without artifacts is theater
+- completion without evidence is fiction
+
+The goal is not bureaucracy.
+The goal is professional delivery behavior that survives speed.
+
+---
+
+## Recommended next reads
+
+- `README.md`
+- `INDEX.md`
+- `.governance/rules/gov-01-instructions.mdc`
+- `.governance/rules/gov-02-workflow.mdc`
+- `.governance/rules/gov-08-exploratory-review.mdc`
+- `docs/execution-modes.md`
+- `docs/checkpoint-reporting.md`
+- `docs/workflow-quality-rubric.md`

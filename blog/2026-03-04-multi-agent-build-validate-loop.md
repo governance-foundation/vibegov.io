@@ -7,6 +7,11 @@ tags: [multi-agent, execution, validation, backlog, specs]
 
 A pattern that works well in real project delivery is splitting responsibilities across agents with clear contracts.
 
+In current VibeGov terms, this is really a coordinated **Development + Exploration** operating model:
+- the builder primarily runs in **Development** mode
+- the validator primarily runs in **Exploration** mode
+- release handoff introduces **Release / Verification** checks
+
 ## The pattern
 
 Use two independent lanes:
@@ -55,8 +60,10 @@ No “done” without runnable proof.
 - action inventory (every clickable)
 - pass/fail per action
 - keyboard traversal evidence (`Tab`, `Shift+Tab`, `Enter`, `Space`)
+- persistence/mutation verification where actions claim to save, delete, sync, import, or reconfigure
 - issue files for failures with expected vs actual
 - spec coverage reconciliation notes
+- explicit completeness status for the validation scope
 
 ## Required issue fields (for validator-created backlog items)
 
@@ -113,4 +120,11 @@ This prevents false “done” states where code is pushed but release validatio
 - Treat spec drift as a first-class defect.
 - For release workflows, always include commit SHA + CI run URL in handoff comments.
 
-If you run this loop consistently, backlog quality improves while velocity stays high—because building and validating happen in parallel, not serially.
+If you run this loop consistently, backlog quality improves while velocity stays high—because Development and Exploration happen in parallel, not serially.
+
+## Related docs
+
+- [Execution Modes](/docs/execution-modes)
+- [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Workflow Quality Rubric](/docs/workflow-quality-rubric)

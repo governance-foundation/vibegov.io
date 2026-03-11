@@ -6,37 +6,41 @@ sidebar_position: 1
 
 VibeGov is a practical governance layer for AI-assisted software delivery.
 
-It helps teams ship fast **without losing control** of intent, quality, and traceability.
+It helps teams ship fast **without losing control** of intent, quality, evidence, and traceability.
 
 The model is simple:
-- use a stage-based delivery flow to execute work clearly,
-- keep an always-on **Exploratory Review** loop to find usability/spec gaps,
-- convert findings into high-quality backlog issues before they become release debt.
+- use **Development** to change reality with proof,
+- use **Exploration** to discover reality and hydrate backlog,
+- use **Release / Verification** to confirm integrated confidence,
+- keep `.governance/` as the canonical source of delivery guidance.
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
 
-## Why VibeGov Exists
+## Why VibeGov exists
 
 AI-assisted delivery makes it easy to generate code quickly.
 
-The failure mode is intent decay:
+The failure mode is not just bad code.
+It is delivery drift:
 - why something is being built gets blurred
 - constraints get skipped
-- "done" collapses to code only
-- future change gets harder
+- "done" collapses to output instead of evidence
+- partial review gets reported like full review
+- blockers stall work or disappear into chat
+- future change gets harder because intent and proof were not preserved
 
-VibeGov exists to make delivery foundation explicit and portable.
+VibeGov exists to make delivery judgement more explicit and portable.
 
-It captures SDLC wisdom as directional guidance that teams can copy into any project so agents and humans inherit stronger delivery defaults without heavy process tooling.
+It captures SDLC wisdom as reusable guidance so humans and agents inherit stronger defaults without heavy process tooling.
 
-## Why `.governance/` Exists
+## Why `.governance/` exists
 
 `.governance/` isolates delivery guidance from product code so it is easy to copy, version, and evolve.
 
 Folder roles:
 - `.governance/rules/`: cross-project governance rules (`gov-*.mdc`)
 - `.governance/project/`: project-level intent and constraints
-- `.governance/specs/`: app feature/change specs for scoped work
+- `.governance/specs/`: feature/change specs for scoped work
 
 Canonical-source model:
 - `.governance/` is the single source of truth for governance.
@@ -50,17 +54,20 @@ Canonical-source model:
 ## What changes when VibeGov is present
 
 - agents ask better scoping questions
-- spec and intent are shaped before coding
-- validation and traceability are expected
+- Development, Exploration, and Release / Verification stop being blurred together
+- evidence quality improves because proof is mode-aware
+- exploratory review becomes structured backlog hydration
+- blockers become visible routing events instead of hidden stalls
 - releases leave clearer artifacts
-- long-term evolution is safer
+- long-term evolution gets safer
 
-## How this site is released
+## Best next reads
 
-1. The site shell is always live.
-2. Governance pages are published one page at a time.
-3. Each release is announced in the changelog and open for GitHub issue feedback.
-
+- [Execution Modes](/docs/execution-modes)
+- [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Blocker Escalation](/docs/blocker-escalation)
+- [Workflow Quality Rubric](/docs/workflow-quality-rubric)
 
 ## Give feedback
 
@@ -77,8 +84,3 @@ Canonical-source model:
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
-
-
-
-
-

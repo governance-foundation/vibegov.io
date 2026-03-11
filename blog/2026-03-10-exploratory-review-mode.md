@@ -1,15 +1,15 @@
 ---
 slug: exploratory-review-mode-parallel-flow
-title: "How to Keep Your Backlog Hydrated"
+title: "Exploratory Review Is Structured Backlog Hydration"
 authors: [VibeGov_team]
-tags: [governance, quality, exploratory, backlog, tech-debt]
+tags: [governance, quality, exploratory, backlog, review]
 ---
 
 Most teams only optimize build speed and miss the quality signal: continuous discovery.
 
-[GOV-08](/docs/published/gov-08-exploratory-review) introduces Exploratory Review as an always-on discovery engine that continuously finds usability and spec gaps before they become release debt.
+[GOV-08](/docs/published/gov-08-exploratory-review) introduces Exploratory Review as the **Exploration** side of the VibeGov operating model: a structured discovery engine that finds usability and spec gaps before they become release debt.
 
-This mode is designed to continuously inspect shipped outputs, identify uncovered behavior, and convert findings into actionable backlog work.
+This mode is designed to inspect shipped outputs, identify uncovered behavior, and convert findings into actionable backlog work.
 
 ## The core idea
 
@@ -18,40 +18,68 @@ This mode is designed to continuously inspect shipped outputs, identify uncovere
 
 Both are needed for sustainable quality.
 
-## What exploratory review does
+## Exploration is not QA theater
+
+A weak exploratory pass sounds like this:
+
+- "I clicked around a bit"
+- "nothing obvious broke"
+- "there are probably some issues"
+
+That is not governance. That is drift with a progress accent.
+
+A strong exploratory pass should:
+
+1. define the review unit purpose,
+2. record preconditions,
+3. inventory elements and revealed surfaces,
+4. execute a scenario matrix,
+5. classify outcomes explicitly,
+6. convert every uncovered or failing behavior into tracked work.
+
+If no durable artifacts come out of the pass, the pass was incomplete.
+
+## Review like an operator, not a tourist
+
+Tourist review checks whether a page loads.
+
+Operator review checks whether a user can actually complete work across:
+- primary actions,
+- secondary actions,
+- edge and error paths,
+- keyboard flows,
+- state transitions,
+- newly revealed surfaces like dialogs, drawers, menus, and validation messages.
+
+This is where many teams discover that a route that looked fine on first render actually fails in the real workflow.
+
+## The scenario matrix matters
+
+Per route or feature, classify scenarios as:
+
+- **Validated**
+- **Invalidated**
+- **Blocked**
+- **Uncovered / spec gap**
+
+This is much better than a generic "reviewed" label because it preserves the actual state of knowledge.
+
+And whenever a route claims to save, mutate, delete, sync, import, connect, or reconfigure something, the review must verify the resulting persistence or contract outcome — not just visible UI confirmation.
+
+## What exploratory review does in practice
 
 Exploratory review runs continuously alongside normal delivery to keep backlog hydration active.
 
 For each route or feature area:
 
 1. Inventory elements and states actually visible in the product.
-2. Validate behavior from an end-user perspective (can users actually complete intended tasks?).
+2. Validate behavior from an end-user perspective.
 3. Compare observed behavior with current specs and test coverage.
-4. Open focused issues for each uncovered contract/gap.
-5. Feed those issues back into the normal delivery flow.
+4. Open focused issues for each uncovered contract or failure.
+5. Attach spec links or mark `SPEC_GAP`.
+6. Feed those issues back into the normal delivery flow.
 
 Exploratory execution is analysis-first: it reuses governance rules, but does not write production code or run automation tests as part of the exploratory pass itself.
-
-## High-level benefit
-
-Exploratory Review Mode is a quality and sustainability amplifier for modern delivery teams.
-
-At a high level, it:
-
-- checks real product behavior against intended behavior
-- turns hidden gaps into tracked backlog work
-- keeps specs, tests, and implementation aligned over time
-- continuously validates whether built functionality is actually usable by end users
-
-## Additional benefits teams see in practice
-
-- early usability issue detection before release
-- reduced release risk through ongoing gap discovery
-- higher backlog quality (evidence-backed, implementation-ready issues)
-- clearer prioritization of recurring product pain points
-- faster onboarding through better issue and context history
-- lower rework costs by catching gaps earlier
-- stronger governance outcomes ("done" means usable, not just merged)
 
 ## Why this reduces technical debt
 
@@ -59,24 +87,44 @@ Technical debt grows when known gaps are informal, untracked, or postponed witho
 
 Exploratory Review Mode prevents that by forcing every discovered gap to become a concrete backlog artifact with ownership and traceability.
 
-## How it helps long-term projects
+That is why backlog hydration matters: it turns product reality into engineering reality before drift hardens.
 
-Long-term, this creates compounding benefits:
-
-- fewer unknowns during future changes
-- clearer historical intent and decision trail
-- stronger release confidence through continuous gap discovery
-- better planning because backlog quality improves each cycle
-
-## Practical output standard
+## What good output looks like
 
 Per page/feature review, publish:
 
-- elements found
-- uncovered elements/contracts
+- review purpose
+- preconditions affecting confidence
+- elements and revealed surfaces found
+- scenario classifications
+- expected vs actual notes
 - issue links created
+- spec links or `SPEC_GAP`
+- next recommended backlog action
+- completeness label: Complete / Complete-with-blockers / Partial / Invalid-review
 
-If gaps are found but no issues are created, the review is not complete.
+If gaps are found but no artifacts are created, the review is not complete.
+
+## Blockers should redirect work, not freeze it
+
+A blocked route does not mean the entire exploratory loop stops.
+
+When exploratory work hits a blocker:
+- confirm it,
+- capture evidence,
+- open a blocker issue,
+- record confidence limits,
+- move to the next ready review unit.
+
+This preserves flow without hiding the problem.
+
+## Related guidance
+
+- [Execution Modes](/docs/execution-modes)
+- [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Workflow Quality Rubric](/docs/workflow-quality-rubric)
+- [Published GOV-08](/docs/published/gov-08-exploratory-review)
 
 ## Adoption tip
 
@@ -86,14 +134,11 @@ Start with a scoped surface, but keep the flow always active:
 - run exploratory continuously on a schedule that fits team capacity
 - track issue conversion rate, closure time, and repeat-gap trends
 
-Then expand route coverage while preserving continuous backlog hydration.
+Then expand route coverage while preserving disciplined backlog hydration.
 
 ## Rule links
 
 - Source rule file: https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc
 - Raw rule file: https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc
-
-
-
-
-
+- Supporting doc: /docs/exploratory-review-mode
+- Supporting doc: /docs/checkpoint-reporting

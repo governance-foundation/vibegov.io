@@ -12,9 +12,16 @@ Read and follow:
 - https://governance-foundation.github.io/vibegov.io/agent.txt
 - https://governance-foundation.github.io/vibegov.io/bootstrap.json
 
-Before writing any product code, create .governance/rules/, .governance/project/PROJECT_INTENT.md, .governance/specs/SPEC-001-<feature>.md, and a spec-mapped backlog. Then stop.
+Before writing any product code:
+1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
+2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
+3. Create project intent from `PROJECT_TEMPLATE.md`.
+4. Create the first feature/change spec from `SPEC_TEMPLATE.md`.
+5. Create or normalize a spec-mapped backlog.
+6. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the target path. If none exists, keep `.governance/` canonical and do not invent a mirror path.
+7. Report the active governance sources you are using.
 
-Active governance set must include GOV-01 through GOV-08.
+Then stop before product-code implementation.
 ```
 
 ## Governance Rules Navigation
@@ -33,11 +40,11 @@ Active governance set must include GOV-01 through GOV-08.
 Continue only if all are true:
 
 - `.governance/rules/` exists
-- `.governance/project/PROJECT_INTENT.md` exists
-- `.governance/specs/SPEC-001-<feature>.md` exists
-- backlog maps to spec sections
-- no product code yet
+- active governance set includes `GOV-01` through `GOV-08`
+- `.governance/project/` exists with project intent created from the template
+- `.governance/specs/` exists with the first feature/change spec created from the template
+- backlog maps to spec scope
+- active governance sources were reported
+- no product code has been written yet
 
 If any fail, rerun the same prompt.
-
-

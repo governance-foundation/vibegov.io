@@ -1,52 +1,79 @@
 # Index
 
-This index lists the guidance files in this repository and when to use each.
+This index lists the main VibeGov guidance files and when to use each.
 
-## Start Here
-- GITHUB_ISSUE_POLICY.md: mandatory GitHub backlog creation + issue-first + blocker-recording + commit/evidence/close rules.
-- ISSUE_BODY_TEMPLATE.md: mandatory implementation-grade issue description template.
-- `QUICKSTART.md`: fastest path to first governed run.
-- `OPENSPEC_RULES.md`: default OpenSpec-first execution rules.
-- `README.md`: Purpose, positioning, and onboarding path.
-- `STRUCTURE.md`: How governance and project guidance relate.
-- `AGENT_TOPOLOGY.md`: Recommended multi-agent operating model (orchestrator + per-project agents).
+## Start here
+- `README.md`: positioning, operating model, and onboarding path
+- `QUICKSTART.md`: fastest path to first governed run
+- `GUIDE.md`: deeper explanation of the VibeGov operating model
+- `INDEX.md`: this map of the guidance set
 
-## Governance Guidance (`.governance/rules/gov-*.mdc`)
-- `.governance/rules/gov-01-instructions.mdc`: Entry point and links to the full guidance set.
-- `.governance/rules/gov-02-workflow.mdc`: End-to-end delivery workflow expectations.
-- `.governance/rules/gov-03-communication.mdc`: Communication defaults during delivery.
-- `.governance/rules/gov-04-quality.mdc`: Quality gates and documentation expectations.
-- `.governance/rules/gov-05-testing.mdc`: Testing philosophy and expectations.
-- `.governance/rules/gov-06-issues.mdc`: Issue management workflow and templates.
-- `.governance/rules/gov-07-tasks.mdc`: Task list usage and status management.
-- `.governance/rules/gov-08-exploratory-review.mdc`: Always-on exploratory flow for end-user validation and continuous backlog hydration (follows gov-01..07 except no code changes or automation test execution in exploratory pass).
+## Canonical governance source
+- `.governance/rules/gov-*.mdc`: canonical rule set
+- `.governance/project/PROJECT_TEMPLATE.md`: project intent template
+- `.governance/specs/SPEC_TEMPLATE.md`: feature/change spec template
 
-## Project Templates
-- `.governance/project/PROJECT_TEMPLATE.md`: Create or update the project-specific intent.
+`.governance/` is the source of truth.
+If a provider-native rules directory already exists, mirror active rules into it.
+If no provider-native rules directory exists, do not invent one.
 
-## Spec Templates
-- `.governance/specs/SPEC_TEMPLATE.md`: Capture intent and delivery expectations for an application feature/change.
+## Core governance rules
+- `.governance/rules/gov-01-instructions.mdc`: entry point and activation contract for the governance set
+- `.governance/rules/gov-02-workflow.mdc`: core workflow, execution modes, evidence expectations, backlog hydration, blocker routing
+- `.governance/rules/gov-03-communication.mdc`: communication defaults during delivery
+- `.governance/rules/gov-04-quality.mdc`: quality gates and documentation expectations
+- `.governance/rules/gov-05-testing.mdc`: testing philosophy and evidence expectations
+- `.governance/rules/gov-06-issues.mdc`: issue management workflow and templates
+- `.governance/rules/gov-07-tasks.mdc`: task list usage and status management
+- `.governance/rules/gov-08-exploratory-review.mdc`: structured exploratory review, scenario classification, artifact completeness, backlog hydration
 
-## Testing Data & Assets
-- `themes/testing/DEMO_DATA_ASSET_POLICY.md`: mandatory demo/sample data + synthetic asset policy for Cypress UI quality.
-- `templates/cypress/fixtures/README_TEMPLATE.md`: fixture-pack documentation template.
-- `templates/cypress/fixtures/data-pack-template.json`: deterministic fixture data-pack starter.
+## Public operational guides (`docs/`)
+- `docs/intro.md`: public overview of VibeGov
+- `docs/bootstrap.md`: copy-paste bootstrap prompt for a fresh repo
+- `docs/quickstart.md`: public quick-start page
+- `docs/contribute.md`: how to contribute governance/site improvements
+- `docs/execution-modes.md`: Development vs Exploration vs Release / Verification
+- `docs/exploratory-review-mode.md`: how exploratory review works in practice
+- `docs/checkpoint-reporting.md`: checkpoint structure, cadence, and examples
+- `docs/blocker-escalation.md`: blocker handling and routing model
+- `docs/workflow-quality-rubric.md`: how to judge whether a workflow is actually strong
+- `docs/published/gov-01-instructions.md` ... `docs/published/gov-08-exploratory-review.md`: published commentary versions of the canonical rules
 
-## Smoke Testing
-- `SMOKE_TEST.md`: run/demo VibeGov as a plain user on a target repo.
-- `scripts/smoke-vibegov.ps1`: audit backlog mapping and optionally create missing GitHub issues.
+## Key supporting repo docs
+- `OPENSPEC_RULES.md`: OpenSpec-first execution rules
+- `GITHUB_ISSUE_POLICY.md`: backlog creation, issue-first, blocker-recording, commit/evidence/close rules
+- `ISSUE_BODY_TEMPLATE.md`: implementation-grade issue description template
+- `STRUCTURE.md`: how governance and project guidance relate
+- `AGENT_TOPOLOGY.md`: recommended multi-agent operating model
+- `CHANGELOG.md`: governance evolution log
+- `TEMPLATE_CHECKLIST.md`: template/repo setup checklist
+- `SMOKE_TEST.md`: plain-user demo/smoke instructions
 
-## Template Operations
-- `TEMPLATE_CHECKLIST.md`: Steps for creating a new project from this template.
-- `CHANGELOG.md`: Record intent shifts and guidance updates over time.
+## Testing data and assets
+- `themes/testing/DEMO_DATA_ASSET_POLICY.md`: demo/sample data and synthetic asset policy for UI quality
+- `templates/cypress/fixtures/README_TEMPLATE.md`: fixture-pack documentation template
+- `templates/cypress/fixtures/data-pack-template.json`: deterministic fixture starter
 
-## Recommended Install Layout (Target Projects)
-- Keep VibeGov assets under `.governance/` in the target project.
-- Treat `.governance/rules/gov-*.mdc` as canonical.
-- Detect any existing provider-native rules directory in the repo and mirror `.governance/rules/gov-*.mdc` into it.
-- If no provider-native rules directory exists, do not invent one; continue with `.governance/rules/` and a root `AGENTS.md`.
+## Scripts
+- `scripts/smoke-vibegov.ps1`: audits backlog mapping and optionally creates missing GitHub issues
+- `scripts/generate-published-rules.js`: regenerates published governance pages from canonical `.mdc` rules
 
+## Recommended reading paths
 
+### I want to bootstrap a repo quickly
+1. `README.md`
+2. `QUICKSTART.md`
+3. `docs/bootstrap.md`
+4. `.governance/rules/gov-01-instructions.mdc`
+5. `.governance/rules/gov-02-workflow.mdc`
+6. `.governance/rules/gov-08-exploratory-review.mdc`
 
+### I want to understand the operating model
+1. `GUIDE.md`
+2. `docs/execution-modes.md`
+3. `docs/exploratory-review-mode.md`
+4. `docs/checkpoint-reporting.md`
+5. `docs/workflow-quality-rubric.md`
 
-
+### I want the full public rule set
+- `docs/published/gov-01-instructions.md` through `docs/published/gov-08-exploratory-review.md`
