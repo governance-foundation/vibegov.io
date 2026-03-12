@@ -21,4 +21,6 @@ yarn-error.log*
 
 # Governance local/internal artifacts
 .internal/
+internal/
 dist/
+
