@@ -41,7 +41,16 @@ Each issue should include:
 - acceptance criteria
 - verification expectations
 
-> Commentary: Provides traceability and scope control so changes remain auditable.
+For exploratory findings, issues should also include:
+- exact route/page/feature under review
+- affected scenario class (for example: invalid input, keyboard, persistence, role variance)
+- expected behavior
+- actual behavior
+- reproducible steps
+- lightweight evidence notes
+- planned spec/traceability/test follow-up
+
+> Commentary: Exploratory review only hydrates the backlog well when the resulting issues are implementation-ready rather than vague memory aids.
 
 ## One-liner issue handling (mandatory)
 

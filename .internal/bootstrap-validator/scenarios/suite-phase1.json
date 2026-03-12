@@ -1,0 +1,8 @@
+{
+  "id": "phase1",
+  "description": "Runnable phase-1 bootstrap validator MVP scenarios",
+  "scenarios": [
+    "empty-repo-bootstrap",
+    "bootstrap-gate"
+  ]
+}

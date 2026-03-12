@@ -131,6 +131,21 @@ Classify blockers before deciding how to respond:
 
 The response should scale with the blocker, but the default remains: make it visible, bound its impact, and keep unaffected work moving.
 
+## Route-order heuristic
+
+When reviewing many routes and no stronger product-specific dependency exists, use this default order:
+
+1. **Entry routes**
+   - landing, auth, onboarding, first-run, and public entry surfaces
+2. **Core workflow routes**
+   - the main product paths users depend on most
+3. **Settings/admin/configuration routes**
+   - billing, permissions, integrations, policy, account, and operational setup
+4. **Edge/special/fallback routes**
+   - empty states, error states, redirects, exception paths, and rarely used operational surfaces
+
+If a product-specific dependency order is stronger, use that instead — but make the ordering logic explicit.
+
 ## Required exploratory output (per review unit)
 
 - review unit and user/operator goal
@@ -140,6 +155,8 @@ The response should scale with the blocker, but the default remains: make it vis
 - expected vs actual evidence notes
 - issues/tasks/spec-gap artifacts created or linked
 - next recommended backlog action or next route
+
+For single-route or single-URL review, prefer the dedicated exploratory route report template so checkpoints remain uniform, artifact-complete, and comparable across runs.
 
 ## Artifact completeness rule
 

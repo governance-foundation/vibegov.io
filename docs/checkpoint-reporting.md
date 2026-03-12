@@ -21,10 +21,33 @@ Use this when the pass is analysis-first.
 - **Purpose:** what the user is trying to achieve
 - **Preconditions:** auth/data/runtime limits affecting confidence
 - **Elements / revealed surfaces:** what was actually exercised
+- **Uncovered elements:** controls/states/contracts still not adequately covered
 - **Scenario status:** Validated / Invalidated / Blocked / Uncovered-spec-gap
 - **Expected vs actual:** concise notes for failed or interesting paths
 - **Artifacts created:** issue links, spec links, `SPEC_GAP`, traceability notes
+- **Residual scope:** what remains, if anything
 - **Next action:** next route, next issue, or blocker recovery step
+
+For route-by-route execution, use the dedicated [Exploratory Route Report Template](/docs/exploratory-route-report-template).
+
+## Operator copy/paste block
+
+Use this compact form in chat, threads, standups, or agent checkpoints when you need consistency without the full expanded template.
+
+```text
+Route: </url>
+Purpose: <goal>
+Preconditions: <auth/data/env>
+Elements: <key surfaces exercised>
+Uncovered: <none | list>
+Validated: <summary>
+Invalidated: <summary + issue IDs>
+Blocked: <summary + issue IDs>
+Spec gap: <none | gap + artifact>
+Residual: <none | what remains>
+Completeness: <Complete | Complete with blockers | Partial | Invalid review>
+Next: <next route or action>
+```
 
 ## Implementation checkpoint template
 

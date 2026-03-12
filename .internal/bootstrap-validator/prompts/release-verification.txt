@@ -1,0 +1,2 @@
+Run a release / verification checkpoint for the current build.
+Report build/version, integrated scope, blockers or residual risks, and a go/no-go or next-step recommendation.

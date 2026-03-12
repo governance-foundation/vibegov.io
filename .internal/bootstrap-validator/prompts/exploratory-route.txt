@@ -1,0 +1,4 @@
+Use VibeGov exploratory mode.
+Review exactly one route.
+Do not implement fixes.
+Report with route purpose, preconditions, elements found, scenario classifications, artifacts created, residual scope, completeness label, and next route.

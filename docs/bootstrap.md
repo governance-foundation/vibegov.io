@@ -24,6 +24,8 @@ Before writing any product code:
 Then stop before product-code implementation.
 ```
 
+Need a repeatable way to prove bootstrap works? See [Bootstrap Validation](/docs/bootstrap-validation) and the [Bootstrap Validator Harness](/docs/bootstrap-validator-harness).
+
 ## Governance Rules Navigation
 
 - [GOV-01: Instructions](/docs/published/gov-01-instructions)

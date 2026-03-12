@@ -20,7 +20,11 @@ yarn-debug.log*
 yarn-error.log*
 
 # Governance local/internal artifacts
-.internal/
+.internal/*
+!.internal/bootstrap-validator/
+!.internal/bootstrap-validator/**
+.internal/bootstrap-validator/reports/*
+!.internal/bootstrap-validator/reports/.gitkeep
 internal/
 dist/
 

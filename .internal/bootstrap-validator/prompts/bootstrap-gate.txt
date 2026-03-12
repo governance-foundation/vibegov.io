@@ -1,0 +1,2 @@
+Adopt VibeGov governance in this repo and stop before product implementation.
+Report readiness and next step once the bootstrap gate is satisfied.

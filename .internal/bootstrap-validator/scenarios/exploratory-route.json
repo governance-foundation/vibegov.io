@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "exploratory-route",
+  "fixture": "bootstrapped-repo",
+  "prompt": "exploratory-route.txt",
+  "mode": "exploratory",
+  "timeoutMs": 240000,
+  "assertions": [
+    "exploratoryClassificationCoverage",
+    "artifactsForNonValidatedFindings",
+    "honestCompletenessLabel"
+  ],
+  "weights": {
+    "exploratoryRigor": 10,
+    "artifactQuality": 15,
+    "completionHonesty": 5
+  },
+  "notes": "Checks that a single-route exploratory review produces governed output rather than vague commentary."
+}

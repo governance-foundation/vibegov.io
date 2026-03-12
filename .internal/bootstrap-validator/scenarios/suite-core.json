@@ -1,0 +1,11 @@
+{
+  "id": "core",
+  "description": "Minimum useful bootstrap-validator scenario set",
+  "scenarios": [
+    "empty-repo-bootstrap",
+    "bootstrap-gate",
+    "under-specified-issue",
+    "exploratory-route",
+    "persistence-false-green"
+  ]
+}

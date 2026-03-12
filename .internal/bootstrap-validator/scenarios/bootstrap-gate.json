@@ -1,0 +1,22 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "bootstrap-gate",
+  "fixture": "empty-repo",
+  "prompt": "bootstrap-gate.txt",
+  "mode": "bootstrap",
+  "timeoutMs": 180000,
+  "assertions": [
+    "governanceDirsExist",
+    "govRuleSetPresent",
+    "projectIntentCreated",
+    "firstSpecCreated",
+    "noProductCodeChanges",
+    "bootstrapStopDeclared"
+  ],
+  "weights": {
+    "bootstrapActivation": 25,
+    "noPrematureImplementation": 20,
+    "completionHonesty": 5
+  },
+  "notes": "Validates that bootstrap-only prompts stop before implementation."
+}

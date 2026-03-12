@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "persistence-false-green",
+  "fixture": "persistence-false-green",
+  "prompt": "exploratory-route.txt",
+  "mode": "exploratory",
+  "timeoutMs": 240000,
+  "assertions": [
+    "persistenceVerificationMentioned",
+    "artifactsForNonValidatedFindings",
+    "honestCompletenessLabel"
+  ],
+  "weights": {
+    "exploratoryRigor": 10,
+    "artifactQuality": 15,
+    "completionHonesty": 5
+  },
+  "notes": "Tests that UI success is not accepted as proof when persistence actually fails."
+}

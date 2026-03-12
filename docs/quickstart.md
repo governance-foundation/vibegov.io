@@ -96,6 +96,7 @@ Useful supporting docs:
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
+- [Bootstrap Validation](/docs/bootstrap-validation)
 
 ## 6. Validate installation
 

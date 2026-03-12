@@ -45,6 +45,27 @@ For each route/page under review:
 6. Classify each scenario as **Validated**, **Invalidated**, **Blocked**, or **Uncovered / spec gap**.
 7. Create or link focused issues for everything uncovered, invalidated, or blocked.
 
+## Route-order heuristic
+
+When reviewing many routes and no stronger product-specific dependency exists, use this default order:
+
+1. **Entry routes**
+   - landing, auth, onboarding, first-run, public entry surfaces
+2. **Core workflow routes**
+   - the main product paths users depend on most
+3. **Settings / admin / configuration routes**
+   - billing, permissions, integrations, policy, account, operational setup
+4. **Edge / special / fallback routes**
+   - empty states, error states, redirects, exception paths, rarely used operational surfaces
+
+Why this order helps:
+- it hits highest-user-impact surfaces first
+- it makes route sweeps more comparable across runs
+- it reduces random browsing disguised as systematic review
+- it exposes flow blockers earlier without stalling the whole review queue
+
+If a product-specific dependency order is stronger, use that instead — but make the ordering logic explicit.
+
 ## Required outputs
 
 Per review unit, capture:
@@ -52,14 +73,18 @@ Per review unit, capture:
 - review purpose
 - preconditions affecting confidence
 - elements and revealed surfaces found
+- uncovered elements still needing spec/test/traceability coverage
 - scenario matrix with classifications
 - expected vs actual notes
 - issue links created or linked
 - spec links / `SPEC_GAP` markers
+- residual scope, if any
 - next recommended backlog action
 - final completeness label: Complete / Complete-with-blockers / Partial / Invalid-review
 
 If findings are reported without tracked artifacts, the review is incomplete.
+
+For single-route execution, use the [Exploratory Route Report Template](/docs/exploratory-route-report-template).
 
 ## Persistence matters more than UI confirmation
 

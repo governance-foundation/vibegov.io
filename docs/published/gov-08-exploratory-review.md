@@ -161,6 +161,23 @@ The response should scale with the blocker, but the default remains: make it vis
 
 > Commentary: Not every blocker deserves the same response. Severity helps preserve flow without hiding risk.
 
+## Route-order heuristic
+
+When reviewing many routes and no stronger product-specific dependency exists, use this default order:
+
+1. **Entry routes**
+   - landing, auth, onboarding, first-run, and public entry surfaces
+2. **Core workflow routes**
+   - the main product paths users depend on most
+3. **Settings/admin/configuration routes**
+   - billing, permissions, integrations, policy, account, and operational setup
+4. **Edge/special/fallback routes**
+   - empty states, error states, redirects, exception paths, and rarely used operational surfaces
+
+If a product-specific dependency order is stronger, use that instead — but make the ordering logic explicit.
+
+> Commentary: A default route order gives exploratory sweeps a predictable shape without pretending every product has the same dependency graph.
+
 ## Required exploratory output (per review unit)
 
 - review unit and user/operator goal
@@ -172,6 +189,8 @@ The response should scale with the blocker, but the default remains: make it vis
 - next recommended backlog action or next route
 
 > Commentary: Standard output structure makes exploratory reporting comparable, reviewable, and reusable.
+
+> Commentary: For route-by-route execution, teams should use the dedicated [Exploratory Route Report Template](/docs/exploratory-route-report-template) to keep checkpoints uniform and artifact-complete.
 
 ## Artifact completeness rule
 
