@@ -20,10 +20,11 @@ Then copy in:
 - Add a root `AGENTS.md` or equivalent activation mechanism if your tooling needs one.
 
 ## 3) Choose the operating model
-VibeGov has three execution modes:
-- **Development** — change behavior with proof
+VibeGov has two operating modes:
+- **Development** — change behavior with proof, release-readiness checks, and shipping discipline
 - **Exploration** — discover behavior and hydrate backlog
-- **Release / Verification** — confirm integrated confidence
+
+Release verification is part of Development, not a third peer mode.
 
 Start by reading:
 1. `gov-01-instructions.mdc`
@@ -54,8 +55,8 @@ Core loop:
 
 Key expectations:
 - Development requires evidence before completion claims
+- Development owns release-readiness and shipping evidence when a candidate artifact is being promoted
 - Exploration requires scenario classification and tracked artifacts for every non-validated finding
-- Release / Verification requires integrated evidence and visible blocker/risk status
 
 ## 8) Enforce proof, not vibes
 For user-facing changes:

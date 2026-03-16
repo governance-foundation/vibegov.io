@@ -4,10 +4,11 @@ Governed delivery bootstrap for AI-assisted teams.
 
 VibeGov helps teams move fast **without faking done**.
 
-It gives humans and agents a shared delivery model built around three execution modes:
-- **Development** — change reality
+It gives humans and agents a shared delivery model built around two operating modes:
+- **Development** — build, validate, and ship reality
 - **Exploration** — discover reality
-- **Release / Verification** — confirm integrated reality
+
+Release verification is part of Development's delivery path, not a third peer mode.
 
 The core idea is simple:
 - bind work to intent before implementation
@@ -79,14 +80,17 @@ To support it.
 ## The VibeGov operating model
 
 ### 1. Development
-Use Development when the goal is to change behavior.
+Use Development when the goal is to change behavior and carry that change through release readiness and shipping.
 
 Typical outputs:
 - issue-to-spec binding
 - scoped implementation
 - validation evidence
+- release-readiness and shipping evidence where applicable
 - traceability updates
 - commits or release artifacts
+
+Development also owns the machinery that proves a candidate artifact is safe to release: build checks, startup/bootstrap validation, smoke coverage, deployment checks, and release gating.
 
 ### 2. Exploration
 Use Exploration when the goal is discovery, review, audit, or backlog hydration.
@@ -97,15 +101,6 @@ Typical outputs:
 - spec links or `SPEC_GAP`
 - planned traceability/test follow-up
 - honest completeness label
-
-### 3. Release / Verification
-Use Release / Verification when the goal is integrated confidence.
-
-Typical outputs:
-- build/version under review
-- integrated validation evidence
-- blockers and residual risks
-- go/no-go or next-step recommendation
 
 The delivery loop does not disappear.
 The proof model changes with the mode.

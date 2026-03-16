@@ -49,14 +49,15 @@ Completeness: <Complete | Complete with blockers | Partial | Invalid review>
 Next: <next route or action>
 ```
 
-## Implementation checkpoint template
+## Development checkpoint template
 
-Use this when behavior changed.
+Use this when behavior changed or when Development is running release-readiness/shipping checks.
 
 - **Active issue:** ID + title
 - **Requirement IDs:** bound requirements
 - **Scope:** what changed
 - **Validation:** commands/checks/tests run + pass/fail
+- **Release readiness:** build/startup/deploy/smoke/version checks when applicable
 - **Artifacts:** commit hash, PR/release artifact if applicable
 - **Residual risk:** anything known but unresolved
 - **Next action:** validate further, merge, release, or continue backlog
@@ -73,9 +74,9 @@ Use this when work cannot meaningfully advance.
 - **Redirected work:** what you moved to next
 - **Recovery condition:** what must become true to resume
 
-## Release / verification checkpoint template
+## Release verification checkpoint template
 
-Use this when checking integrated readiness.
+Use this as a Development sub-template when checking integrated readiness.
 
 - **Build/version:** what was reviewed
 - **Covered scope:** what was in/out
@@ -112,7 +113,7 @@ Before claiming completion, ask:
 - Did every finding become an artifact?
 - Did I record confidence limits honestly?
 - Did I move on from blockers correctly?
-- Did I distinguish exploratory from implementation evidence?
+- Did I distinguish exploratory from Development evidence?
 
 ## Why this matters
 

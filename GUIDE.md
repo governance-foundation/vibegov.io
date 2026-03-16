@@ -11,7 +11,7 @@ That means making intent, evidence, reporting, backlog hydration, and blocker ha
 
 ---
 
-## The three execution modes
+## The two operating modes
 
 ### 1. Development
 Development changes reality.
@@ -21,6 +21,8 @@ Use it when the goal is to:
 - fix
 - refactor
 - close an issue with proof
+- validate release readiness
+- ship a candidate safely
 
 Development expects:
 - issue-to-spec binding
@@ -28,6 +30,9 @@ Development expects:
 - validation evidence
 - traceability updates
 - commit/release artifacts
+- release-readiness evidence when shipping is in scope
+
+Development also includes the machinery that proves a candidate is releasable: build checks, packaging, startup/bootstrap validation, smoke checks, deployment checks, and shipping gates.
 
 ### 2. Exploration
 Exploration discovers reality.
@@ -44,20 +49,6 @@ Exploration expects:
 - issue/spec/traceability artifacts for every non-validated finding
 - honest completeness label
 
-### 3. Release / Verification
-Release / Verification confirms integrated reality.
-
-Use it when the goal is to:
-- validate a build or deployment
-- check post-merge or post-release behavior
-- produce a go/no-go recommendation
-
-Release / Verification expects:
-- build/version scope
-- integrated evidence
-- blocker/risk visibility
-- next-step recommendation
-
 ---
 
 ## The workflow VibeGov wants
@@ -70,8 +61,8 @@ The important part is not just the sequence.
 It is choosing the **right mode** and using the **right proof model**.
 
 A lot of bad delivery happens because teams blur these together:
-- exploratory notes get reported like implementation proof
-- implementation gets reported like it was release validation
+- exploratory notes get reported like development proof
+- development gets reported like it was automatically shippable without release-readiness evidence
 - partial review gets reported like completed review
 
 VibeGov exists to stop that blur.
@@ -122,6 +113,7 @@ VibeGov treats "done" as an evidence claim, not a mood.
 - commands/checks/tests run
 - pass/fail result
 - commit/artifact link
+- release-readiness or shipping evidence when applicable
 
 ### Exploratory evidence
 - review unit purpose
@@ -131,12 +123,6 @@ VibeGov treats "done" as an evidence claim, not a mood.
 - expected vs actual notes
 - backlog/spec/traceability artifacts created
 - completeness label
-
-### Release / verification evidence
-- build/version under review
-- integrated scope covered
-- blocker/risk list
-- recommendation or decision
 
 If the evidence does not match the mode, the work is not done.
 

@@ -303,7 +303,7 @@ Examples:
 ### Heuristic checks
 - did the transcript report governance sources clearly?
 - did the route review include all required classifications?
-- did the output use a release/verification shape rather than exploratory shape?
+- did the output use a release-verification shape inside Development rather than exploratory shape?
 
 For heuristic checks, prefer:
 1. exact phrase lists where possible
@@ -353,7 +353,7 @@ Add:
 - provider-native mirror scenario
 - blocker routing
 - partial-coverage honesty
-- release/verification distinction
+- release-verification-inside-Development distinction
 - rebootstrap consistency
 
 ### Phase 3 — Cross-provider matrix

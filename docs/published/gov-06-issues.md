@@ -50,7 +50,7 @@ For exploratory findings, issues should also include:
 - lightweight evidence notes
 - planned spec/traceability/test follow-up
 
-> Commentary: Exploratory review only hydrates the backlog well when the resulting issues are implementation-ready rather than vague memory aids.
+> Commentary: Provides traceability and scope control so changes remain auditable.
 
 ## One-liner issue handling (mandatory)
 

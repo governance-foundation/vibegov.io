@@ -10,7 +10,7 @@ A pattern that works well in real project delivery is splitting responsibilities
 In current VibeGov terms, this is really a coordinated **Development + Exploration** operating model:
 - the builder primarily runs in **Development** mode
 - the validator primarily runs in **Exploration** mode
-- release handoff introduces **Release / Verification** checks
+- release verification stays inside the **Development** delivery path as a shipping gate
 
 ## The pattern
 
@@ -94,7 +94,7 @@ If any layering issue is found, file a dedicated issue (don’t bury it under ge
 
 ## CI handoff pattern (dev bot → validator bot)
 
-A robust release handoff for bot teams:
+A robust release handoff for bot teams, with release verification treated as part of Development:
 
 1. **Dev bot pushes issue-linked commit**.
 2. **Dev bot monitors pipeline trigger for up to 30 seconds**.

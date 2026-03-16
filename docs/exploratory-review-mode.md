@@ -8,9 +8,8 @@ Exploratory Review Mode is a parallel quality loop used to find delivery gaps be
 
 It does not replace your normal delivery lifecycle.
 
-- **Implementation flow** changes behavior.
+- **Development flow** changes behavior and carries it through release readiness.
 - **Exploratory flow** audits real behavior and turns gaps into tracked work.
-- **Release / verification flow** checks integrated behavior and handoff confidence.
 
 ## Why run it in parallel
 
@@ -94,7 +93,7 @@ A toast, redirect, or green visual state is not enough.
 
 ## Relationship to execution modes
 
-Exploratory mode is one execution mode inside the broader VibeGov workflow.
+Exploration is one of the two VibeGov operating modes.
 
 Use it when the goal is:
 - discovery,
@@ -102,9 +101,9 @@ Use it when the goal is:
 - backlog hydration,
 - end-user validation.
 
-Do **not** treat exploration as implementation by default.
+Do **not** treat exploration as Development by default.
 
-Move to build/fix mode only when explicitly requested or when your workflow has formally switched into implementation mode.
+Move to build/fix mode only when explicitly requested or when your workflow has formally switched into Development.
 
 ## Blockers should redirect work, not freeze it
 
