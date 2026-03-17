@@ -11,7 +11,7 @@ This page embeds the canonical rule text and adds commentary after each section 
 
 ## GOV-08 — Exploratory Review
 
-> Commentary: Exploratory review is where VibeGov turns observed product reality into durable engineering work instead of informal feedback.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Purpose
 
@@ -24,7 +24,7 @@ Its job is to continuously:
 
 Exploratory review is not a substitute for implementation or release verification. Its primary output is evidence-backed backlog hydration.
 
-> Commentary: The goal is not to "have a look." The goal is to reduce unknowns and convert them into governed backlog artifacts.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Execution constraints
 
@@ -42,7 +42,7 @@ During exploratory execution:
 
 Exploratory output feeds normal delivery flow for implementation, automated validation, and release decisions.
 
-> Commentary: Exploratory mode stays high-signal by focusing on live behavior, evidence notes, and artifacts rather than pretending to be implementation or CI.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Operating model
 
@@ -51,7 +51,7 @@ Exploratory output feeds normal delivery flow for implementation, automated vali
 - It is parallel to normal delivery behavior, not a replacement lifecycle.
 - A review unit can be a route, page, feature slice, API surface, or operational workflow, but the scope must be explicit.
 
-> Commentary: Treat exploratory review as an operating discipline, not a sporadic ritual.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Review anti-patterns to prevent
 
@@ -61,7 +61,7 @@ Exploratory output feeds normal delivery flow for implementation, automated vali
 - Do not report findings without backlog/spec/traceability artifacts.
 - Do not allow a local blocker to freeze a whole review queue.
 
-> Commentary: Naming the common failure modes makes them easier to prevent during real execution.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Review posture
 
@@ -75,7 +75,7 @@ For each review unit:
 
 Revealed surfaces/states include, at minimum, dialogs, drawers, menus, validation surfaces, loading/empty/error/success states, disabled/enabled transitions, post-action controls, redirects, and follow-on states reached after interaction.
 
-> Commentary: Good review posture means operating the system through realistic work, not skimming the happy path.
+> Commentary: Shifts exploratory work from surface browsing to goal-driven operational review.
 
 ## Scenario-matrix review (mandatory)
 
@@ -103,7 +103,7 @@ For each scenario:
    - `Blocked`
    - `Uncovered-spec-gap`
 
-> Commentary: A required scenario grid prevents reviews from stopping at "I clicked around and it seemed okay."
+> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
 
 ## Persistence and mutation verification rule
 
@@ -111,7 +111,7 @@ Any action that claims to save, mutate, delete, sync, submit, import, connect, o
 
 Acceptable verification includes refresh checks, downstream-state checks, source-of-truth checks, or other evidence that the claimed mutation actually took effect.
 
-> Commentary: This is one of the most important anti-false-green rules in the whole governance stack.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Classification rules
 
@@ -123,7 +123,7 @@ Use these classifications precisely:
 
 A scenario that is only partially exercised must still end in one of the classifications above, with the evidence note explaining the limit.
 
-> Commentary: Richer classifications create more honest backlog truth than a generic "reviewed" status.
+> Commentary: Standardizes outcomes so exploratory findings can be triaged and acted on consistently.
 
 ## Surface and state coverage (mandatory)
 
@@ -134,7 +134,7 @@ A page, route, or feature review is incomplete until all meaningful elements, co
 - Do not batch unrelated uncovered contracts into one vague finding.
 - Do not report completion while any explored surface remains unclassified or untracked.
 
-> Commentary: This is what keeps exploratory review from degrading into shallow browsing.
+> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
 
 ## Required follow-up artifacts
 
@@ -147,7 +147,7 @@ Required follow-up by classification:
 
 If multiple scenarios expose different contracts, create or link separate artifacts for each distinct contract.
 
-> Commentary: Exploration only hydrates the backlog when each distinct finding survives as a durable artifact.
+> Commentary: Turns each finding into tracked engineering work so exploration actually hydrates the backlog.
 
 ## Blocker severity model
 
@@ -159,7 +159,7 @@ Classify blockers before deciding how to respond:
 
 The response should scale with the blocker, but the default remains: make it visible, bound its impact, and keep unaffected work moving.
 
-> Commentary: Not every blocker deserves the same response. Severity helps preserve flow without hiding risk.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Route-order heuristic
 
@@ -176,7 +176,7 @@ When reviewing many routes and no stronger product-specific dependency exists, u
 
 If a product-specific dependency order is stronger, use that instead — but make the ordering logic explicit.
 
-> Commentary: A default route order gives exploratory sweeps a predictable shape without pretending every product has the same dependency graph.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Required exploratory output (per review unit)
 
@@ -188,9 +188,9 @@ If a product-specific dependency order is stronger, use that instead — but mak
 - issues/tasks/spec-gap artifacts created or linked
 - next recommended backlog action or next route
 
-> Commentary: Standard output structure makes exploratory reporting comparable, reviewable, and reusable.
+For single-route or single-URL review, prefer the dedicated exploratory route report template so checkpoints remain uniform, artifact-complete, and comparable across runs.
 
-> Commentary: For route-by-route execution, teams should use the dedicated [Exploratory Route Report Template](/docs/exploratory-route-report-template) to keep checkpoints uniform and artifact-complete.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Artifact completeness rule
 
@@ -198,7 +198,7 @@ Findings without tracked artifacts are incomplete.
 
 A note, screenshot, or verbal summary is not a completed exploratory result unless the corresponding follow-up work is linked in the backlog and its spec/traceability impact is recorded.
 
-> Commentary: This blocks ceremonial reporting and forces durable follow-through.
+> Commentary: Blocks ceremonial reporting by requiring every finding to be linked to follow-up artifacts.
 
 ## Review completeness rubric
 
@@ -208,7 +208,7 @@ Every review unit should end with one explicit completeness label:
 - `Partial` — intentionally stopped; residual scope listed
 - `Invalid-review` — insufficient coverage/evidence; must be redone
 
-> Commentary: A completeness label makes partial work visible instead of letting it masquerade as finished.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Done criteria
 
@@ -219,7 +219,7 @@ Exploratory work is complete for a review unit only when:
 - the next recommended backlog action is stated,
 - the final completeness label is recorded honestly.
 
-> Commentary: Completion means ambiguity was reduced, artifacts were created, and the remaining state of knowledge is explicit.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Self-check before claiming completion
 
@@ -229,4 +229,4 @@ Exploratory work is complete for a review unit only when:
 - Did I record confidence limits honestly?
 - Did I move on from blockers correctly?
 
-> Commentary: A short self-check catches workflow drift before a weak update becomes accepted status.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.

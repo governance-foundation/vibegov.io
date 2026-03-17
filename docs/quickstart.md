@@ -85,10 +85,11 @@ Read in this order:
 
 ## 5. Understand the execution modes
 
-VibeGov works through three execution modes:
-- **Development** — change behavior with proof
+VibeGov works through two operating modes:
+- **Development** — change behavior with proof, release-readiness checks, and shipping discipline
 - **Exploration** — discover behavior and hydrate backlog
-- **Release / Verification** — confirm integrated confidence
+
+Release verification is part of Development, not a third peer mode.
 
 Useful supporting docs:
 - [Execution Modes](/docs/execution-modes)

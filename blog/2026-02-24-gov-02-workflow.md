@@ -1,6 +1,6 @@
 ---
 slug: gov-02-workflow-release
-title: "Execution Modes Keep Delivery Moving Without Faking Done"
+title: "Two Operating Modes Keep Delivery Moving Without Faking Done"
 authors: [VibeGov_team]
 tags: [workflow, gov-02, evidence, blockers, backlog]
 ---
@@ -8,26 +8,23 @@ tags: [workflow, gov-02, evidence, blockers, backlog]
 The biggest delivery mistake is not forgetting the workflow loop.
 It is pretending every kind of work closes the same way.
 
-VibeGov's updated [GOV-02](/docs/published/gov-02-workflow) makes execution mode explicit so teams stop mixing exploration notes, implementation proof, and release verification into one blurry definition of done.
+VibeGov's updated [GOV-02](/docs/published/gov-02-workflow) makes execution mode explicit so teams stop mixing exploration notes and development proof into one blurry definition of done.
 
 ## Mode clarity is a throughput tool
 
-VibeGov uses three execution modes:
+VibeGov uses two operating modes:
 
-- `exploratory`: what did we learn from real behavior, and what backlog work did that create?
-- `implementation`: what changed, and how do we know it works?
-- `release/verification`: is the accumulated work ready, shipped, or still behaving correctly?
+- `exploration`: what did we learn from real behavior, and what backlog work did that create?
+- `development`: what changed, how do we know it works, and can it ship safely?
 
 The delivery loop does not change.
 The evidence standard does.
 
 ## Done requires mode-appropriate evidence
 
-Exploratory done is not a passing build. It is a fully classified review scope with tracked artifacts for everything non-validated.
+Exploration done is not a passing build. It is a fully classified review scope with tracked artifacts for everything non-validated.
 
-Implementation done is not a good intention. It is linked intent, changed artifacts, and recorded proof from checks, tests, or manual validation.
-
-Release or verification done is not "we already tested this earlier." It is verified scope, build or release outputs, post-release observations, and tracked follow-up for any new drift.
+Development done is not a good intention. It is linked intent, changed artifacts, recorded proof from checks, tests, or manual validation, and release-readiness evidence when shipping is in scope.
 
 If the evidence does not match the mode, the work is not done yet.
 
@@ -35,9 +32,9 @@ If the evidence does not match the mode, the work is not done yet.
 
 Discovery is not separate from delivery discipline.
 
-- exploratory work hydrates backlog by design
-- release or verification work must feed newly observed drift back into tracked follow-up
-- implementation work must track adjacent gaps instead of silently absorbing them
+- exploration work hydrates backlog by design
+- development release-readiness checks must feed newly observed drift back into tracked follow-up
+- development work must track adjacent gaps instead of silently absorbing them
 
 That keeps throughput honest. Teams can move quickly without hiding uncovered work inside status updates.
 

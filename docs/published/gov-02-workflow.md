@@ -25,7 +25,7 @@ Follow this loop for meaningful changes:
 
 - Confirm the problem, affected scope, and current operating mode.
 - Identify constraints, dependencies, and non-goals.
-- Note whether the work is exploratory, implementation, or release/verification.
+- Note whether the work is development or exploration, and whether release-readiness checks are in scope.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
@@ -63,15 +63,36 @@ Follow this loop for meaningful changes:
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
+## Explicit Orchestration and Bounded Work Units
+
+Governed agent execution should use explicit orchestration and bounded work units.
+
+- `GOV-02-ORCH-001` The parent orchestration context must select one tracked unit of work before delegation starts.
+- `GOV-02-ORCH-002` The selected unit must have an explicit owner, intent, and expected evidence bundle.
+- `GOV-02-ORCH-003` The parent should announce delegation, receive a visible result, and only then proceed to the next unit by default.
+- `GOV-02-ORCH-004` Hidden nested worker-coordinator chains should be avoided by default because they reduce visibility, weaken accountability, and complicate recovery.
+- `GOV-02-ORCH-005` Prefer sequential bounded stages when they improve observability, recoverability, or handoff clarity.
+- `GOV-02-ORCH-006` Parallel lanes are allowed only when each lane still has explicit ownership, bounded scope, visible checkpoints, and recoverable failure handling.
+
+This section governs work structure, not implementation details. It does not prescribe specific runtimes, queue settings, model choices, shell commands, or machine-local paths.
+
+> Commentary: Defines the default shape of governed multi-agent execution so coordination stays visible, auditable, and recoverable.
+
 ## Execution Modes
 
 All meaningful work must declare an active execution mode. Silent mode mixing produces weak evidence and false completion claims.
 
+VibeGov uses two operating modes:
+- **Development**
+- **Exploration**
+
+Release verification is not a third peer mode. It is part of Development's delivery path and release-readiness checks.
+
 > Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed.
 
-### Exploratory mode
+### Exploration mode
 
-Use when the objective is discovery, validation, or backlog hydration rather than immediate code change.
+Use when the objective is discovery, validation, or backlog hydration rather than immediate product change.
 
 Allowed work:
 - inspect live behavior from an end-user or operator perspective
@@ -87,46 +108,51 @@ Required evidence:
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
-### Implementation mode
+### Development mode
 
-Use when code, spec, content, or automation changes are being made to satisfy tracked intent.
+Use when code, spec, content, automation, release-readiness checks, or shipping mechanics are being changed or executed to satisfy tracked intent.
 
 Allowed work:
 - update the smallest coherent set of artifacts needed for the scoped change
 - add or adjust automated/manual verification needed to prove the change
+- add or maintain build, packaging, deploy, startup, smoke, and release-readiness machinery
+- execute release-readiness checks against a candidate artifact or target environment
 - repair discovered regressions only when they are inside the approved scope or explicitly re-scoped
 
 Required evidence:
 - linked issue/task and requirement IDs
 - changed artifacts
 - executed checks/tests/manual proof with outcomes
+- release-readiness or shipping evidence when applicable
 - any failure behavior or residual risk that still matters
 - updated documentation and traceability
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
-### Release/verification mode
+## Release Verification Within Development
 
-Use when the objective is to confirm a collection of completed work is shippable, shipped, or still behaving correctly after release.
+Release verification is part of Development, not a separate operating mode.
 
-Allowed work:
-- run build/release verification steps
-- validate release notes, deployment state, or runtime behavior
-- perform post-release sweeps that may hydrate backlog without reopening closed implementation items
+Use it when Development needs to confirm a candidate artifact is safe to release, safe to promote, or behaving correctly after ship/deploy.
 
-Required evidence:
-- build/release verification outputs
-- released or verified scope
-- post-release observations and any newly created backlog artifacts
-- known risks, rollback constraints, or next checkpoint decision
+Typical checks include:
+- build/release verification steps
+- artifact startup/bootstrap validation
+- deployment state or environment validation
+- version/build confirmation in the target environment
+- critical route/workflow smoke checks
+- post-release checks that capture regressions, drift, rollout issues, or broken integrations as tracked follow-up work
+
+If required release-readiness checks fail, release creation or promotion must stop until Development resolves the gap.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Mode Discipline
 
 - Choose the execution mode during planning and state it in checkpoints and handoffs.
-- If work shifts from exploration to implementation, or from implementation to release verification, announce the mode change before continuing.
-- Do not use implementation evidence standards to judge exploratory work, and do not use exploratory notes as a substitute for implementation or release evidence.
+- If work shifts between Exploration and Development, announce the mode change before continuing.
+- If Development enters release verification or shipping checks, state that checkpoint explicitly even though the mode remains Development.
+- Do not use Development evidence standards to judge exploratory work, and do not use exploratory notes as a substitute for Development or release-readiness evidence.
 
 > Commentary: Prevents silent workflow shifts that hide evidence gaps or mix incompatible completion standards.
 
@@ -134,9 +160,9 @@ Required evidence:
 
 Backlog hydration is part of the core workflow, not a side activity.
 
-- Exploratory mode must convert discovered gaps into tracked backlog artifacts before the reviewed scope can be considered complete.
-- Release/verification mode must capture new regressions, drift, or rollout gaps as tracked follow-up work.
-- Implementation mode may surface adjacent gaps, but those gaps must be tracked separately unless scope is explicitly expanded.
+- Exploration mode must convert discovered gaps into tracked backlog artifacts before the reviewed scope can be considered complete.
+- Development release-readiness and post-ship checks must capture new regressions, drift, rollout gaps, or integration failures as tracked follow-up work.
+- Development may surface adjacent gaps, but those gaps must be tracked separately unless scope is explicitly expanded.
 
 > Commentary: Treats discovery as a required planning input instead of informal side notes.
 

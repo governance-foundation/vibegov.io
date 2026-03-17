@@ -18,9 +18,9 @@ A blocker means the current item cannot advance with useful confidence right now
 It does not mean the whole loop stops.
 
 In VibeGov terms, blockers should be handled inside the active execution mode:
-- Development blockers should redirect implementation work
+- Development blockers should redirect implementation or release-readiness work
 - Exploration blockers should redirect review scope
-- Release / Verification blockers should reduce confidence and shape the go/no-go recommendation
+- Development release-verification blockers should reduce confidence and shape the go/no-go recommendation
 
 That distinction matters because one blocked path should not erase all other ready work.
 

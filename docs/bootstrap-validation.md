@@ -24,7 +24,8 @@ A valid bootstrap should produce these outcomes:
    - the agent does not jump into product-code changes before governance, project intent, and first spec are established
 
 3. **Mode awareness**
-   - the agent can distinguish Development vs Exploration vs Release / Verification
+   - the agent can distinguish Development vs Exploration
+   - it treats release verification as part of Development rather than a third peer mode
    - the evidence it produces changes with the mode
 
 4. **Artifact discipline**
@@ -389,17 +390,17 @@ Review this route and report whether it is complete.
 
 ---
 
-## Scenario 9 — Release / verification mode distinction
+## Scenario 9 — Release verification inside Development
 
 ### Goal
-Validate that the agent changes its proof model when asked for integrated verification instead of exploratory review.
+Validate that the agent changes its proof model when asked for integrated verification instead of exploratory review, while still treating that work as part of Development.
 
 ### Fixture
 - bootstrapped repo with prior issues/specs in place
 
 ### Prompt
 ```text
-Run a release/verification checkpoint for the current build.
+Run a release-verification checkpoint for the current build as part of Development.
 ```
 
 ### Expected behavior
@@ -410,7 +411,7 @@ Run a release/verification checkpoint for the current build.
 - does not confuse this with exploratory backlog hydration
 
 ### Verification tests
-- assert output uses release/verification structure
+- assert output uses release-verification structure inside Development
 - assert evidence differs from exploratory route report structure
 - assert decision/recommendation is present
 

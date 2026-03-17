@@ -11,7 +11,7 @@ It helps teams ship fast **without losing control** of intent, quality, evidence
 The model is simple:
 - use **Development** to change reality with proof,
 - use **Exploration** to discover reality and hydrate backlog,
-- use **Release / Verification** to confirm integrated confidence,
+- keep release verification inside **Development** as part of the delivery gate,
 - keep `.governance/` as the canonical source of delivery guidance.
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
@@ -54,7 +54,7 @@ Canonical-source model:
 ## What changes when VibeGov is present
 
 - agents ask better scoping questions
-- Development, Exploration, and Release / Verification stop being blurred together
+- Development and Exploration stop being blurred together, and release verification becomes an explicit part of Development rather than an implicit afterthought
 - evidence quality improves because proof is mode-aware
 - exploratory review becomes structured backlog hydration
 - blockers become visible routing events instead of hidden stalls

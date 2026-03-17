@@ -25,7 +25,8 @@ A good workflow should actively prevent:
 
 ### 1. Mode clarity
 Questions:
-- Does the workflow clearly distinguish exploratory, implementation, and release/verification work?
+- Does the workflow clearly distinguish Exploration from Development?
+- Does it make release verification explicit as part of Development rather than leaving it implicit?
 - Are the outputs and evidence expectations different per mode?
 
 Weak signal:
