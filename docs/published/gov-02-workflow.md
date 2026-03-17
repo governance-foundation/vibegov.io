@@ -63,6 +63,21 @@ Follow this loop for meaningful changes:
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
+## Explicit Orchestration and Bounded Work Units
+
+Governed agent execution should use explicit orchestration and bounded work units.
+
+- `GOV-02-ORCH-001` The parent orchestration context must select one tracked unit of work before delegation starts.
+- `GOV-02-ORCH-002` The selected unit must have an explicit owner, intent, and expected evidence bundle.
+- `GOV-02-ORCH-003` The parent should announce delegation, receive a visible result, and only then proceed to the next unit by default.
+- `GOV-02-ORCH-004` Hidden nested worker-coordinator chains should be avoided by default because they reduce visibility, weaken accountability, and complicate recovery.
+- `GOV-02-ORCH-005` Prefer sequential bounded stages when they improve observability, recoverability, or handoff clarity.
+- `GOV-02-ORCH-006` Parallel lanes are allowed only when each lane still has explicit ownership, bounded scope, visible checkpoints, and recoverable failure handling.
+
+This section governs work structure, not implementation details. It does not prescribe specific runtimes, queue settings, model choices, shell commands, or machine-local paths.
+
+> Commentary: Defines the default shape of governed multi-agent execution so coordination stays visible, auditable, and recoverable.
+
 ## Execution Modes
 
 All meaningful work must declare an active execution mode. Silent mode mixing produces weak evidence and false completion claims.
