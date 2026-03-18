@@ -73,10 +73,14 @@ Governed agent execution should use explicit orchestration and bounded work unit
 - `GOV-02-ORCH-004` Hidden nested worker-coordinator chains should be avoided by default because they reduce visibility, weaken accountability, and complicate recovery.
 - `GOV-02-ORCH-005` Prefer sequential bounded stages when they improve observability, recoverability, or handoff clarity.
 - `GOV-02-ORCH-006` Parallel lanes are allowed only when each lane still has explicit ownership, bounded scope, visible checkpoints, and recoverable failure handling.
+- `GOV-02-ORCH-007` Delegation does not end parent orchestration accountability. The parent remains responsible for visible ownership of the delegated unit until completion, blocker, or explicit handoff.
+- `GOV-02-ORCH-008` Long-running delegated work must have visible follow-through checkpoints rather than silent fire-and-forget waiting.
+- `GOV-02-ORCH-009` Governed systems should define an early-follow-up checkpoint window and an ongoing cadence for delegated work supervision.
+- `GOV-02-ORCH-010` Governance should require the existence of follow-through cadence, while runtime, project, or operating docs may define the exact timing thresholds appropriate to the environment.
 
-This section governs work structure, not implementation details. It does not prescribe specific runtimes, queue settings, model choices, shell commands, or machine-local paths.
+This section governs work structure, not implementation details. It does not prescribe specific runtimes, queue settings, model choices, shell commands, or machine-local paths. It defines the accountability shape of delegation, while project/runbook docs may specify concrete supervision timings.
 
-> Commentary: Defines the default shape of governed multi-agent execution so coordination stays visible, auditable, and recoverable.
+> Commentary: Defines the default shape of governed multi-agent execution so coordination stays visible, auditable, recoverable, and visibly supervised after delegation.
 
 ## Execution Modes
 
