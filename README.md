@@ -33,6 +33,7 @@ If you are new to VibeGov, use this order:
 5. `.governance/rules/gov-08-exploratory-review.mdc`
 
 Then review the operational docs on the site:
+- `docs/vibegov-sdlc.md`
 - `docs/execution-modes.md`
 - `docs/exploratory-review-mode.md`
 - `docs/checkpoint-reporting.md`

@@ -31,6 +31,7 @@ If no provider-native rules directory exists, do not invent one.
 - `docs/intro.md`: public overview of VibeGov
 - `docs/bootstrap.md`: copy-paste bootstrap prompt for a fresh repo
 - `docs/quickstart.md`: public quick-start page
+- `docs/vibegov-sdlc.md`: concise explanation of the VibeGov SDLC, lifecycle flow, and comparison against vague/default SDLC behavior
 - `docs/contribute.md`: how to contribute governance/site improvements
 - `docs/execution-modes.md`: Development vs Exploration, plus release verification inside Development
 - `docs/exploratory-review-mode.md`: how exploratory review works in practice
