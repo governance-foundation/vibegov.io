@@ -17,6 +17,7 @@ const sidebars = {
     'intro',
     'bootstrap',
     'quickstart',
+    'vibegov-sdlc',
     'contribute',
     {
       type: 'category',
