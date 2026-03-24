@@ -16,6 +16,7 @@ const sidebars = {
   docsSidebar: [
     'intro',
     'bootstrap',
+    'bootstrap-foundation',
     'quickstart',
     'vibegov-sdlc',
     'contribute',
@@ -26,6 +27,7 @@ const sidebars = {
         'execution-modes',
         'exploratory-review-mode',
         'checkpoint-reporting',
+        'acp-validation',
         'blocker-escalation',
         'workflow-quality-rubric',
       ],

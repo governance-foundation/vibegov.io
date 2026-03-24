@@ -4,10 +4,12 @@ required folders:
 - .governance/rules/
 - .governance/project/
 - .governance/specs/
+- openspec/specs/
 
 scope rules:
 - rules are governance-only
 - specs are feature/change-only
+- raw user requests must be translated into structured requirements before implementation
 - detect any provider-native rules directory that already exists in the repo and mirror .governance/rules/*.mdc into it
 - if none exist, do not invent placeholder paths; use .governance/rules/*.mdc only
 
@@ -15,7 +17,11 @@ hard gate:
 - before writing any product code, create:
   - .governance/project/PROJECT_INTENT.md
   - .governance/specs/SPEC-001-<feature>.md
+  - openspec/specs/...
+  - openspec/traceability.md (or equivalent traceability entrypoint)
   - backlog mapped to spec sections
+- ensure the first spec has explicit requirement IDs, acceptance criteria, and verification intent
+- establish a polished SDLC foundation proportionate to the repo context
 - then stop
 
 delivery loop:

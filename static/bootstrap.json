@@ -5,7 +5,8 @@
   "folders": [
     ".governance/rules",
     ".governance/project",
-    ".governance/specs"
+    ".governance/specs",
+    "openspec/specs"
   ],
   "rules_policy": {
     "scope": "governance_only",
@@ -16,6 +17,14 @@
     "scope": "feature_and_change_spec_only",
     "path_glob": ".governance/specs/*",
     "is_single_source_of_truth_for_features": true
+  },
+  "openspec_policy": {
+    "translate_raw_requests_before_code": true,
+    "specs_path_glob": "openspec/specs/*",
+    "traceability_entrypoint": "openspec/traceability.md",
+    "changes_path_glob": "openspec/changes/*",
+    "migration_path_glob": "openspec/migration/*",
+    "requirements_must_define_acceptance_and_verification": true
   },
   "compatibility": {
     "mirror_to_provider_rules_if_present": true,
@@ -47,13 +56,39 @@
   "pre_coding_required_outputs": [
     ".governance/project/PROJECT_INTENT.md",
     ".governance/specs/SPEC-001-<feature>.md",
-    "backlog_mapped_to_spec_sections"
+    "openspec/specs/...",
+    "openspec/traceability.md",
+    "backlog_mapped_to_spec_sections",
+    "repo_sdlc_foundation_proportionate_to_context"
   ],
   "stop_after_pre_coding_outputs": true,
   "task_completion_requirements": [
     "verification_evidence",
     "traceability_update"
-  ]
+  ],
+  "bootstrap_foundation_expectations": {
+    "goal": "enterprise_ready_sdlc_foundation",
+    "include": [
+      "structured_requirements_before_code",
+      "explicit_acceptance_criteria",
+      "verification_and_test_intent",
+      "traceability_entrypoint",
+      "backlog_or_task_mapping",
+      "onboarding_or_readme_entrypoint",
+      "delivery_workflow_guidance"
+    ],
+    "host_specific_when_appropriate": [
+      "issue_templates",
+      "ci_workflows",
+      "pr_templates",
+      "codeowners"
+    ],
+    "external_mutations_not_implied": [
+      "push_to_remote",
+      "cloud_provisioning",
+      "org_level_repo_setting_changes"
+    ]
+  }
 }
 
 

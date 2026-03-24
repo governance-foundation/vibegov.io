@@ -30,12 +30,14 @@ If no provider-native rules directory exists, do not invent one.
 ## Public operational guides (`docs/`)
 - `docs/intro.md`: public overview of VibeGov
 - `docs/bootstrap.md`: copy-paste bootstrap prompt for a fresh repo
+- `docs/bootstrap-foundation.md`: enterprise-ready SDLC foundation expected from bootstrap
 - `docs/quickstart.md`: public quick-start page
 - `docs/vibegov-sdlc.md`: concise explanation of the VibeGov SDLC, lifecycle flow, and comparison against vague/default SDLC behavior
 - `docs/contribute.md`: how to contribute governance/site improvements
 - `docs/execution-modes.md`: Development vs Exploration, plus release verification inside Development
 - `docs/exploratory-review-mode.md`: how exploratory review works in practice
 - `docs/checkpoint-reporting.md`: checkpoint structure, cadence, and examples
+- `docs/acp-validation.md`: real ACP worker validation prompt and supervision caveats
 - `docs/blocker-escalation.md`: blocker handling and routing model
 - `docs/workflow-quality-rubric.md`: how to judge whether a workflow is actually strong
 - `docs/published/gov-01-instructions.md` ... `docs/published/gov-08-exploratory-review.md`: published commentary versions of the canonical rules
@@ -65,9 +67,10 @@ If no provider-native rules directory exists, do not invent one.
 1. `README.md`
 2. `QUICKSTART.md`
 3. `docs/bootstrap.md`
-4. `.governance/rules/gov-01-instructions.mdc`
-5. `.governance/rules/gov-02-workflow.mdc`
-6. `.governance/rules/gov-08-exploratory-review.mdc`
+4. `docs/bootstrap-foundation.md`
+5. `.governance/rules/gov-01-instructions.mdc`
+6. `.governance/rules/gov-02-workflow.mdc`
+7. `.governance/rules/gov-08-exploratory-review.mdc`
 
 ### I want to understand the operating model
 1. `GUIDE.md`

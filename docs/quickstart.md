@@ -29,6 +29,8 @@ Initialization contract:
 
 Execution gate:
 - Do not start product-code implementation until steps 1-7 are completed and reported.
+- Translate the raw request into structured requirements, acceptance criteria, and verification intent before coding.
+- Establish the OpenSpec/traceability foundation needed for governed delivery before coding.
 
 During delivery:
 - Keep project intent in `.governance/project/`.
@@ -74,6 +76,8 @@ Canonical-source model:
 
 - Create/update project intent from `.governance/project/PROJECT_TEMPLATE.md`.
 - Create feature/change specs from `.governance/specs/SPEC_TEMPLATE.md` when needed.
+- Translate the raw request into OpenSpec-aligned requirements before implementation begins.
+- Create a traceability entrypoint and initial verification intent before implementation begins.
 
 ## 4. Start with the governance set
 
@@ -103,6 +107,8 @@ Useful supporting docs:
 
 Confirm the agent can read active rule files and that prompts/outputs reflect:
 - spec-first behavior
+- raw-request translation into structured requirements before code
+- explicit acceptance criteria and verification intent before code
 - evidence-driven validation
 - issue/task traceability
 - exploratory artifact creation for non-validated findings
