@@ -1,0 +1,14 @@
+Bootstrap this repo with VibeGov using the local source made available to you.
+
+Before writing any product code:
+1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/` in the current repo.
+2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
+3. Create `.governance/project/PROJECT.md` from the local `PROJECT_TEMPLATE.md`.
+4. Create `.governance/specs/bootstrap-governance-setup.md` from the local `SPEC_TEMPLATE.md`.
+5. End your final report with the exact sentence: `Stopping before product implementation.`
+6. Include one final-report line that starts exactly with: `Active governance sources:` followed by the source(s) you used.
+7. Stop before implementation.
+
+Do not ask follow-up questions.
+Do not implement product code.
+At the end, provide a short plain-text report of what you created and the next step after the bootstrap gate.

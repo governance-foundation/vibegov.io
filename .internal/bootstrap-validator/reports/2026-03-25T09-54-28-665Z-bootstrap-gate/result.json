@@ -1,0 +1,111 @@
+{
+  "scenarioId": "bootstrap-gate",
+  "adapterId": "codex-cli",
+  "provider": "ollama",
+  "model": "qwen2.5-coder:14b",
+  "passed": false,
+  "hardFailure": true,
+  "score": 50,
+  "classification": "inconsistent",
+  "durationMs": 38416,
+  "exitKind": "completed",
+  "rawOutput": {
+    "attempts": [
+      {
+        "id": "default",
+        "provider": "openai-codex",
+        "model": "gpt-5.4",
+        "exitKind": "completed",
+        "rawOutput": {
+          "attemptId": "default",
+          "status": 0,
+          "signal": null,
+          "error": null,
+          "completedFromLastMessage": false,
+          "shellPlanApplied": false
+        }
+      },
+      {
+        "id": "ollama",
+        "provider": "ollama",
+        "model": "qwen2.5-coder:14b",
+        "exitKind": "completed",
+        "rawOutput": {
+          "attemptId": "ollama",
+          "status": 0,
+          "signal": null,
+          "error": null,
+          "completedFromLastMessage": false,
+          "shellPlanApplied": true
+        }
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "governanceDirsExist",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing: .governance/rules, .governance/project",
+      "evidence": [
+        ".governance/rules",
+        ".governance/project"
+      ]
+    },
+    {
+      "id": "govRuleSetPresent",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing rules: gov-01-instructions.mdc, gov-02-workflow.mdc, gov-03-communication.mdc, gov-04-quality.mdc, gov-05-testing.mdc, gov-06-issues.mdc, gov-07-tasks.mdc, gov-08-exploratory-review.mdc",
+      "evidence": []
+    },
+    {
+      "id": "projectIntentCreated",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing project intent artifact.",
+      "evidence": []
+    },
+    {
+      "id": "firstSpecCreated",
+      "passed": true,
+      "severity": "hard",
+      "note": "First spec artifact present.",
+      "evidence": [
+        "bootstrap-governance-setup.md"
+      ]
+    },
+    {
+      "id": "noProductCodeChanges",
+      "passed": true,
+      "severity": "hard",
+      "note": "No product code changed.",
+      "evidence": []
+    },
+    {
+      "id": "bootstrapStopDeclared",
+      "passed": true,
+      "severity": "hard",
+      "note": "Transcript declares bootstrap stop gate.",
+      "evidence": []
+    }
+  ],
+  "artifacts": {
+    "filesCreated": [
+      ".governance/specs/bootstrap-governance-setup.md",
+      "Microsoft/Windows/PowerShell/ModuleAnalysisCache",
+      "bootstrap_report.txt"
+    ],
+    "filesModified": [],
+    "issues": [],
+    "specGaps": [],
+    "repoPath": "C:\\Users\\MAXBAR~1\\AppData\\Local\\Temp\\vibegov-empty-repo-YuAsEi"
+  },
+  "evidence": {
+    "transcriptPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-54-28-665Z-bootstrap-gate\\transcript.md",
+    "manifestBeforePath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-54-28-665Z-bootstrap-gate\\manifest-before.json",
+    "manifestAfterPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-54-28-665Z-bootstrap-gate\\manifest-after.json",
+    "diffPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-54-28-665Z-bootstrap-gate\\diff.json"
+  },
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-54-28-665Z-bootstrap-gate"
+}

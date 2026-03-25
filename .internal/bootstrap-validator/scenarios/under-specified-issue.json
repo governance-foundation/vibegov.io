@@ -1,0 +1,19 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "under-specified-issue",
+  "fixture": "bootstrapped-repo",
+  "prompt": "under-specified-issue.txt",
+  "mode": "development",
+  "timeoutMs": 240000,
+  "assertions": [
+    "specGapOrRequirementBinding",
+    "issueQualitySufficient",
+    "noProductCodeChanges"
+  ],
+  "weights": {
+    "artifactQuality": 15,
+    "modeCorrectness": 15,
+    "noPrematureImplementation": 20
+  },
+  "notes": "Ensures a vague implementation request is hardened before code changes begin."
+}

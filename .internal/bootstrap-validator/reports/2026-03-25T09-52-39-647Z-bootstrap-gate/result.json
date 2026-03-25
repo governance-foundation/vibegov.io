@@ -1,0 +1,125 @@
+{
+  "scenarioId": "bootstrap-gate",
+  "adapterId": "codex-cli",
+  "provider": "ollama",
+  "model": "qwen2.5-coder:14b",
+  "passed": false,
+  "hardFailure": true,
+  "score": 17,
+  "classification": "untrusted",
+  "durationMs": 40464,
+  "exitKind": "completed",
+  "rawOutput": {
+    "attempts": [
+      {
+        "id": "default",
+        "provider": "openai-codex",
+        "model": "gpt-5.4",
+        "exitKind": "completed",
+        "rawOutput": {
+          "attemptId": "default",
+          "status": 0,
+          "signal": null,
+          "error": null,
+          "completedFromLastMessage": false,
+          "shellPlanApplied": false
+        }
+      },
+      {
+        "id": "ollama",
+        "provider": "ollama",
+        "model": "qwen2.5-coder:14b",
+        "exitKind": "completed",
+        "rawOutput": {
+          "attemptId": "ollama",
+          "status": 0,
+          "signal": null,
+          "error": null,
+          "completedFromLastMessage": false,
+          "shellPlanApplied": true
+        }
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "governanceDirsExist",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing: .governance/rules, .governance/project, .governance/specs",
+      "evidence": [
+        ".governance/rules",
+        ".governance/project",
+        ".governance/specs"
+      ]
+    },
+    {
+      "id": "govRuleSetPresent",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing rules: gov-01-instructions.mdc, gov-02-workflow.mdc, gov-03-communication.mdc, gov-04-quality.mdc, gov-05-testing.mdc, gov-06-issues.mdc, gov-07-tasks.mdc, gov-08-exploratory-review.mdc",
+      "evidence": []
+    },
+    {
+      "id": "projectIntentCreated",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing project intent artifact.",
+      "evidence": []
+    },
+    {
+      "id": "firstSpecCreated",
+      "passed": false,
+      "severity": "hard",
+      "note": "Missing first spec artifact.",
+      "evidence": []
+    },
+    {
+      "id": "noProductCodeChanges",
+      "passed": true,
+      "severity": "hard",
+      "note": "No product code changed.",
+      "evidence": []
+    },
+    {
+      "id": "bootstrapStopDeclared",
+      "passed": false,
+      "severity": "hard",
+      "note": "Transcript missing stop declaration.",
+      "evidence": []
+    }
+  ],
+  "artifacts": {
+    "filesCreated": [
+      "Microsoft/Windows/PowerShell/ModuleAnalysisCache",
+      "tmp/bootstrap-repo/.governance/project/PROJECT_TEMPLATE.md",
+      "tmp/bootstrap-repo/.governance/rules/gov-01-instructions.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-02-workflow.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-03-communication.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-04-quality.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-05-testing.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-06-issues.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-07-tasks.mdc",
+      "tmp/bootstrap-repo/.governance/rules/gov-08-exploratory-review.mdc",
+      "tmp/bootstrap-repo/.governance/specs/SPEC_TEMPLATE.md",
+      "tmp/bootstrap-repo/.governance/specs/bootstrap-governance-setup.md",
+      "tmp/bootstrap-repo/.governance/specs/bootstrap-validator-live-adapter.md",
+      "tmp/bootstrap-repo/.governance/specs/bootstrap-validator-phase-1.md",
+      "tmp/bootstrap-repo/.governance/specs/explicit-orchestration-bounded-work.md",
+      "tmp/bootstrap-repo/.governance/specs/ownership-continuity-and-follow-through.md",
+      "tmp/bootstrap-repo/.governance/specs/vibegov-sdlc-explainer.md",
+      "tmp/bootstrap-repo/README.md"
+    ],
+    "filesModified": [],
+    "issues": [],
+    "specGaps": [],
+    "repoPath": "C:\\Users\\MAXBAR~1\\AppData\\Local\\Temp\\vibegov-empty-repo-Eersh7"
+  },
+  "evidence": {
+    "transcriptPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-52-39-647Z-bootstrap-gate\\transcript.md",
+    "manifestBeforePath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-52-39-647Z-bootstrap-gate\\manifest-before.json",
+    "manifestAfterPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-52-39-647Z-bootstrap-gate\\manifest-after.json",
+    "diffPath": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-52-39-647Z-bootstrap-gate\\diff.json"
+  },
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov-issue-9\\.internal\\bootstrap-validator\\reports\\2026-03-25T09-52-39-647Z-bootstrap-gate"
+}

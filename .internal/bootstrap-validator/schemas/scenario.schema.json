@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://governance-foundation.github.io/vibegov.io/schemas/bootstrap-validator/scenario.schema.json",
+  "title": "Bootstrap Validator Scenario",
+  "type": "object",
+  "required": ["id", "fixture", "prompt", "mode", "assertions"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "fixture": { "type": "string", "minLength": 1 },
+    "prompt": { "type": "string", "minLength": 1 },
+    "mode": { "type": "string", "enum": ["bootstrap", "exploratory", "development", "release-verification"] },
+    "timeoutMs": { "type": "integer", "minimum": 1 },
+    "assertions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "weights": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0 }
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://governance-foundation.github.io/vibegov.io/schemas/bootstrap-validator/result.schema.json",
+  "title": "Bootstrap Validator Result",
+  "type": "object",
+  "required": ["scenarioId", "passed", "hardFailure", "score", "assertions"],
+  "properties": {
+    "scenarioId": { "type": "string" },
+    "provider": { "type": "string" },
+    "model": { "type": "string" },
+    "passed": { "type": "boolean" },
+    "hardFailure": { "type": "boolean" },
+    "score": { "type": "number", "minimum": 0, "maximum": 100 },
+    "classification": { "type": "string" },
+    "durationMs": { "type": "integer", "minimum": 0 },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "passed", "severity"],
+        "properties": {
+          "id": { "type": "string" },
+          "passed": { "type": "boolean" },
+          "severity": { "type": "string", "enum": ["hard", "soft"] },
+          "note": { "type": "string" },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "filesCreated": { "type": "array", "items": { "type": "string" } },
+        "filesModified": { "type": "array", "items": { "type": "string" } },
+        "issues": { "type": "array", "items": { "type": "string" } },
+        "specGaps": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
