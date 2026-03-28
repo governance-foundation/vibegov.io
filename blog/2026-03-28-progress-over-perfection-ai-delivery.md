@@ -9,7 +9,7 @@ This is the operating-discipline piece in the series. Once throughput, budget, a
 
 AI has made one old delivery weakness much more dangerous.
 
-Teams can now generate enough visible activity to look productive long before they have produced trustworthy progress.
+Teams can now generate enough visible activity to look productive long before they have produced trustworthy progress. That makes bad management easier, not harder, because dashboards and updates can look healthy while delivery quality quietly rots.
 
 That is why **progress over perfection** matters so much in AI-native delivery.
 Not because standards should drop.
@@ -256,6 +256,14 @@ If the answer is yes, progress is happening.
 If the answer is no, the team may just be producing better-looking ambiguity.
 
 That is the difference governance helps make visible.
+
+## Series navigation
+
+- [1. From Token Burn to Governed Throughput](/blog/token-burn-to-governed-throughput)
+- [2. AI Budgets Are Part of Delivery Infrastructure](/blog/ai-budgets-delivery-infrastructure)
+- [3. Company Work Should Run on Company-Governed AI](/blog/company-governed-ai-runtime)
+- **4. Progress Over Perfection in AI Delivery** ← you are here
+- [5. Unbudgeted AI Is Unmanaged Production Capacity](/blog/unbudgeted-ai-unmanaged-production-capacity)
 
 And once organizations start depending on that governed movement, one final management question appears: what happens when the capacity behind it is real, but still unofficial and unbudgeted? That is the final piece in the set.
 

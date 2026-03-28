@@ -9,7 +9,7 @@ This is the management conclusion of the series. If throughput is real, budgets 
 
 A lot of organizations still talk about AI as if it is an optional productivity layer floating around the edges of real work.
 
-That framing is becoming dangerously outdated.
+That framing is becoming dangerously outdated. In some teams it is already a form of management self-deception: the organization benefits from AI-shaped throughput while pretending the capacity behind it is still informal and optional.
 
 Once AI starts materially influencing how teams clarify issues, write specs, implement changes, run validation, prepare reviews, or move release candidates forward, AI is no longer just a convenience.
 It is part of production capacity.
@@ -194,6 +194,14 @@ If it is part of the production system, it should not stay invisible, unofficial
 
 And if it is still unbudgeted, the organization should stop pretending that means it is low-risk.
 Usually it means the opposite.
+
+## Series navigation
+
+- [1. From Token Burn to Governed Throughput](/blog/token-burn-to-governed-throughput)
+- [2. AI Budgets Are Part of Delivery Infrastructure](/blog/ai-budgets-delivery-infrastructure)
+- [3. Company Work Should Run on Company-Governed AI](/blog/company-governed-ai-runtime)
+- [4. Progress Over Perfection in AI Delivery](/blog/progress-over-perfection-ai-delivery)
+- **5. Unbudgeted AI Is Unmanaged Production Capacity** ← you are here
 
 Unbudgeted AI is unmanaged production capacity.
 That is the frame leaders should take seriously.

@@ -15,7 +15,7 @@ It is part of the delivery system.
 That is the shift many organizations have not absorbed yet.
 They still talk about AI as if it belongs in the same category as a personal note-taking app, a nice-to-have editor plugin, or a sidecar productivity preference.
 
-That framing stops making sense the moment AI contributes meaningfully to production work.
+That framing stops making sense the moment AI contributes meaningfully to production work. At that point, calling it a personal productivity preference is just a cleaner way of saying the organization has not caught up with its own operating model.
 
 If developers are using models to:
 - clarify issues
@@ -201,6 +201,14 @@ It does mean every team should stop pretending that meaningful AI-assisted deliv
 If AI is truly increasing throughput, then AI budget is not just an innovation line item.
 It is part of delivery infrastructure.
 And organizations should govern it that way.
+
+## Series navigation
+
+- [1. From Token Burn to Governed Throughput](/blog/token-burn-to-governed-throughput)
+- **2. AI Budgets Are Part of Delivery Infrastructure** ← you are here
+- [3. Company Work Should Run on Company-Governed AI](/blog/company-governed-ai-runtime)
+- [4. Progress Over Perfection in AI Delivery](/blog/progress-over-perfection-ai-delivery)
+- [5. Unbudgeted AI Is Unmanaged Production Capacity](/blog/unbudgeted-ai-unmanaged-production-capacity)
 
 That still leaves a harder governance question: even if the organization is willing to fund AI capacity, who controls the runtime doing the work? That is the next layer.
 

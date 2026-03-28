@@ -20,7 +20,7 @@ If models are doing more work, then token usage should tell us how much extra th
 
 That sounds reasonable for about five minutes.
 
-After that, the holes show up.
+After that, it collapses.
 
 A team can burn through huge amounts of context and still produce:
 - unclear issues
@@ -298,6 +298,14 @@ Just a clearer model:
 - delivered outcome
 
 That is a better foundation for the next stage of AI-native delivery.
+
+## Series navigation
+
+- **1. From Token Burn to Governed Throughput** ← you are here
+- [2. AI Budgets Are Part of Delivery Infrastructure](/blog/ai-budgets-delivery-infrastructure)
+- [3. Company Work Should Run on Company-Governed AI](/blog/company-governed-ai-runtime)
+- [4. Progress Over Perfection in AI Delivery](/blog/progress-over-perfection-ai-delivery)
+- [5. Unbudgeted AI Is Unmanaged Production Capacity](/blog/unbudgeted-ai-unmanaged-production-capacity)
 
 The next pieces in this series take that model outward:
 - budgets as delivery infrastructure

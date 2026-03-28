@@ -11,7 +11,7 @@ Once AI becomes part of how a company produces real work, a deeper governance qu
 
 Who controls the runtime that produced that work?
 
-That question matters more than a lot of organizations seem to realize.
+That question matters more than a lot of organizations seem to realize, and most teams asking it late are already behind. By the time company work depends on AI, the runtime question is no longer theoretical.
 Too many teams are still treating AI usage as an informal layer sitting somewhere between personal preference and clever improvisation.
 That might feel harmless during experimentation.
 It stops being harmless once real delivery starts depending on it.
@@ -196,6 +196,14 @@ And that gives organizations a much stronger foundation for:
 As AI becomes more embedded in delivery, this will stop feeling like an advanced governance opinion and start feeling like basic professional hygiene.
 
 Because it is.
+
+## Series navigation
+
+- [1. From Token Burn to Governed Throughput](/blog/token-burn-to-governed-throughput)
+- [2. AI Budgets Are Part of Delivery Infrastructure](/blog/ai-budgets-delivery-infrastructure)
+- **3. Company Work Should Run on Company-Governed AI** ← you are here
+- [4. Progress Over Perfection in AI Delivery](/blog/progress-over-perfection-ai-delivery)
+- [5. Unbudgeted AI Is Unmanaged Production Capacity](/blog/unbudgeted-ai-unmanaged-production-capacity)
 
 After control comes operating discipline: once the runtime is inside the governance perimeter, teams still need a better way to measure progress than polished activity. That is where progress over perfection matters.
 
