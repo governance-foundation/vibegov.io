@@ -5,6 +5,8 @@ authors: [VibeGov_team]
 tags: [governance, ai, security, accountability]
 ---
 
+This is the governance-control extension of the series: once an organization admits AI is part of delivery capacity and starts budgeting for it, the next question is who actually controls the runtime producing company work.
+
 Once AI becomes part of how a company produces real work, a deeper governance question appears.
 
 Who controls the runtime that produced that work?
@@ -194,6 +196,8 @@ And that gives organizations a much stronger foundation for:
 As AI becomes more embedded in delivery, this will stop feeling like an advanced governance opinion and start feeling like basic professional hygiene.
 
 Because it is.
+
+After control comes operating discipline: once the runtime is inside the governance perimeter, teams still need a better way to measure progress than polished activity. That is where progress over perfection matters.
 
 ## Related docs
 

@@ -5,6 +5,8 @@ authors: [VibeGov_team]
 tags: [governance, ai, budget, delivery]
 ---
 
+This is the economic follow-up to the throughput model: once tokens are treated as fuel and governed movement is treated as throughput, budgeting stops looking like a side conversation and starts looking like delivery design.
+
 Once a team starts claiming AI is materially increasing developer throughput, a budgeting question appears almost immediately.
 
 If the leverage is real, then the spend behind that leverage is not just discretionary tooling spend anymore.
@@ -199,6 +201,8 @@ It does mean every team should stop pretending that meaningful AI-assisted deliv
 If AI is truly increasing throughput, then AI budget is not just an innovation line item.
 It is part of delivery infrastructure.
 And organizations should govern it that way.
+
+That still leaves a harder governance question: even if the organization is willing to fund AI capacity, who controls the runtime doing the work? That is the next layer.
 
 ## Related docs
 

@@ -7,6 +7,9 @@ tags: [governance, ai, throughput, metrics]
 
 AI is producing a weird measurement problem.
 
+This is the first piece in a short VibeGov series about AI throughput, governance, budgets, and organizational control.
+It sets the foundation for the rest: tokens, governance movement, and delivered value are different layers, and teams get into trouble when they treat them as the same thing.
+
 A lot of people now casually claim that AI gives developers 10x leverage.
 Maybe it does in some contexts.
 Maybe it does not in others.
@@ -295,6 +298,12 @@ Just a clearer model:
 - delivered outcome
 
 That is a better foundation for the next stage of AI-native delivery.
+
+The next pieces in this series take that model outward:
+- budgets as delivery infrastructure
+- company-governed runtime as a delivery requirement
+- progress over perfection as an operating discipline
+- unbudgeted AI as unmanaged production capacity
 
 ## Related docs
 

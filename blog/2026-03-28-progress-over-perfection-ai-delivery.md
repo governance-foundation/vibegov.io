@@ -5,6 +5,8 @@ authors: [VibeGov_team]
 tags: [governance, ai, delivery, workflow]
 ---
 
+This is the operating-discipline piece in the series. Once throughput, budget, and runtime control are all in view, teams still need a practical rule for day-to-day execution: reward governed movement, not polished activity.
+
 AI has made one old delivery weakness much more dangerous.
 
 Teams can now generate enough visible activity to look productive long before they have produced trustworthy progress.
@@ -254,6 +256,8 @@ If the answer is yes, progress is happening.
 If the answer is no, the team may just be producing better-looking ambiguity.
 
 That is the difference governance helps make visible.
+
+And once organizations start depending on that governed movement, one final management question appears: what happens when the capacity behind it is real, but still unofficial and unbudgeted? That is the final piece in the set.
 
 ## Related docs
 
