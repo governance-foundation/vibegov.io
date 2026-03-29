@@ -51,6 +51,13 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-007` Hotfix work must branch from `main`, merge back to `main` through an explicit hotfix pull request, and then be back-merged or otherwise reconciled into `develop` immediately so the branches do not drift.
 - `GOV-02-GIT-008` Repositories adopting VibeGov should document branch protection expectations for `main` and `develop`, including required pull requests, review gates, status checks, and restricted direct pushes.
 - `GOV-02-GIT-009` Bootstrap and adoption guidance should install the branch/pull-request workflow, review template, and protection checklist before product-code implementation begins.
+- `GOV-02-GIT-010` For GitHub-hosted repositories, bootstrap should also check whether `git` and `gh` are available and whether GitHub authentication/project access is available before attempting board automation.
+- `GOV-02-GIT-011` When GitHub project automation is available, bootstrap should create, adopt, or normalize a canonical project board and report the board URL plus any fallback limitations.
+- `GOV-02-GIT-012` Canonical GitHub board workflow should include `Status` values `Backlog`, `Ready`, `In progress`, `In review`, `Done`, and `Blocked`.
+- `GOV-02-GIT-013` Canonical GitHub board planning fields should include `Priority` (`P0`, `P1`, `P2`) and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GOV-02-GIT-014` Existing open issues should be imported or attached to the GitHub board during adoption/bootstrap when project automation is available.
+- `GOV-02-GIT-015` Issue state on the GitHub board must move with actual delivery state rather than remaining static: `Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, with `Blocked` used for proven blockers.
+- `GOV-02-GIT-016` If GitHub prerequisites or auth are missing, bootstrap should report the exact missing capability and degrade gracefully instead of pretending project-board setup succeeded.
 
 This section defines the governance shape of repository flow. Platform-specific docs may describe the exact GitHub or Git-provider settings used to enforce it.
 

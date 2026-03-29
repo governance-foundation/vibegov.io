@@ -39,10 +39,16 @@ Initialization contract:
    - require explicit promotion from `develop` to `main`
    - require hotfix branches from `main` with reconciliation back into `develop`
    - add a repo-local pull-request template and branch protection checklist
-10) Confirm governance activation by listing active rule files, active governance sources, and the installed Git workflow artifacts.
+10) If the repo is GitHub-hosted, verify `git` and `gh` are installed and `gh auth status` succeeds with project-capable access.
+11) If GitHub automation is available, create, adopt, or normalize a project board with:
+   - `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
+   - `Priority`: `P0`, `P1`, `P2`
+   - `Size`: `XS`, `S`, `M`, `L`, `XL`
+   - add/import existing open issues
+12) Confirm governance activation by listing active rule files, active governance sources, installed Git workflow artifacts, and GitHub board status (URL or missing prerequisite).
 
 Execution gate:
-- Do not start product-code implementation until steps 1-10 are completed and reported.
+- Do not start product-code implementation until steps 1-12 are completed and reported.
 - Do not use AI only to accelerate implementation while skipping tests, specs, docs, traceability, validation evidence, or delivery clarity.
 
 During delivery:
@@ -97,6 +103,8 @@ Canonical-source model:
 - Promote `develop` to `main` through an explicit promotion pull request.
 - Run hotfixes from `main`, then back-merge or otherwise reconcile them into `develop`.
 - For GitHub repos, add `.github/pull_request_template.md` and follow the [Branch Protection Checklist](/docs/branch-protection-checklist).
+- For GitHub repos, create or adopt a project board with canonical `Status`, `Priority`, and `Size` fields, then import existing open issues.
+- Keep issue status synchronized with actual work state (`Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, or `Blocked` when a blocker is proven).
 
 ## 4. Fill project intent before coding
 
