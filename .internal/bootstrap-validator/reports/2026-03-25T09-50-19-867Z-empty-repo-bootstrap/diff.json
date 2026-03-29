@@ -1,0 +1,17 @@
+{
+  "created": [
+    "Microsoft/Windows/PowerShell/ModuleAnalysisCache"
+  ],
+  "modified": [],
+  "deleted": [],
+  "categories": {
+    "created": [
+      {
+        "path": "Microsoft/Windows/PowerShell/ModuleAnalysisCache",
+        "category": "other"
+      }
+    ],
+    "modified": [],
+    "deleted": []
+  }
+}

@@ -1,0 +1,86 @@
+{
+  ".git/config": {
+    "size": 198,
+    "hash": "7afa364c6485b5400aa6de67a4ec7107180d4cc8"
+  },
+  ".git/description": {
+    "size": 73,
+    "hash": "9635f1b7e12c045212819dd934d809ef07efa2f4"
+  },
+  ".git/HEAD": {
+    "size": 21,
+    "hash": "9f1df7eea4156be8a871c292b549b3325e425aa2"
+  },
+  ".git/hooks/applypatch-msg.sample": {
+    "size": 478,
+    "hash": "4de88eb95a5e93fd27e78b5fb3b5231a8d8917dd"
+  },
+  ".git/hooks/commit-msg.sample": {
+    "size": 896,
+    "hash": "ee1ed5aad98a435f2020b6de35c173b75d9affac"
+  },
+  ".git/hooks/fsmonitor-watchman.sample": {
+    "size": 4726,
+    "hash": "0ec0ec9ac11111433d17ea79e0ae8cec650dcfa4"
+  },
+  ".git/hooks/post-update.sample": {
+    "size": 189,
+    "hash": "b614c2f63da7dca9f1db2e7ade61ef30448fc96c"
+  },
+  ".git/hooks/pre-applypatch.sample": {
+    "size": 424,
+    "hash": "f208287c1a92525de9f5462e905a9d31de1e2d75"
+  },
+  ".git/hooks/pre-commit.sample": {
+    "size": 1649,
+    "hash": "8093d68e142db52dcab2215e770ba0bbe4cfbf24"
+  },
+  ".git/hooks/pre-merge-commit.sample": {
+    "size": 416,
+    "hash": "04c64e58bc25c149482ed45dbd79e40effb89eb7"
+  },
+  ".git/hooks/pre-push.sample": {
+    "size": 1374,
+    "hash": "a599b773b930ca83dbc3a5c7c13059ac4a6eaedc"
+  },
+  ".git/hooks/pre-rebase.sample": {
+    "size": 4898,
+    "hash": "288efdc0027db4cfd8b7c47c4aeddba09b6ded12"
+  },
+  ".git/hooks/pre-receive.sample": {
+    "size": 544,
+    "hash": "705a17d259e7896f0082fe2e9f2c0c3b127be5ac"
+  },
+  ".git/hooks/prepare-commit-msg.sample": {
+    "size": 1492,
+    "hash": "2584806ba147152ae005cb675aa4f01d5d068456"
+  },
+  ".git/hooks/push-to-checkout.sample": {
+    "size": 2783,
+    "hash": "508240328c8b55f8157c93c43bf5e291e5d2fbcb"
+  },
+  ".git/hooks/sendemail-validate.sample": {
+    "size": 2308,
+    "hash": "74cf1d5415a5c03c110240f749491297d65c4c98"
+  },
+  ".git/hooks/update.sample": {
+    "size": 3650,
+    "hash": "730e6bd5225478bab6147b7a62a6e2ae21d40507"
+  },
+  ".git/info/exclude": {
+    "size": 240,
+    "hash": "c879df015d97615050afa7b9641e3352a1e701ac"
+  },
+  ".gitkeep": {
+    "size": 12,
+    "hash": "12abdd31cf62e1aa0544a8ee68e9bddeef51ff5f"
+  },
+  "README.md": {
+    "size": 21,
+    "hash": "691182258b53156ed45c753aa9a1c0e99d949283"
+  },
+  "src/app.js": {
+    "size": 28,
+    "hash": "4afda54707202f7bc7b0af8b8e14004e232c2946"
+  }
+}

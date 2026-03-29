@@ -1,0 +1,27 @@
+{
+  "created": [
+    ".governance/specs/bootstrap-governance-setup.md",
+    "Microsoft/Windows/PowerShell/ModuleAnalysisCache",
+    "bootstrap_report.txt"
+  ],
+  "modified": [],
+  "deleted": [],
+  "categories": {
+    "created": [
+      {
+        "path": ".governance/specs/bootstrap-governance-setup.md",
+        "category": "governance"
+      },
+      {
+        "path": "Microsoft/Windows/PowerShell/ModuleAnalysisCache",
+        "category": "other"
+      },
+      {
+        "path": "bootstrap_report.txt",
+        "category": "other"
+      }
+    ],
+    "modified": [],
+    "deleted": []
+  }
+}
