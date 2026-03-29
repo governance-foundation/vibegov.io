@@ -16,7 +16,7 @@ function parseArgs(argv) {
 }
 
 function printHelp() {
-  console.log(`VibeGov Bootstrap Validator\n\nUsage:\n  npm run bootstrap-validator -- --scenario <id> [--adapter local-stub|codex-cli]\n  npm run bootstrap-validator -- --suite <id> [--adapter local-stub|codex-cli]\n  npm run bootstrap-validator -- --list\n\nExamples:\n  npm run bootstrap-validator -- --scenario empty-repo-bootstrap\n  npm run bootstrap-validator -- --scenario bootstrap-gate\n  npm run bootstrap-validator -- --scenario empty-repo-bootstrap --adapter codex-cli\n  npm run bootstrap-validator -- --suite phase1\n`);
+  console.log(`VibeGov Bootstrap Validator\n\nUsage:\n  npm run bootstrap-validator -- --scenario <id> [--adapter local-stub|codex-cli]\n  npm run bootstrap-validator -- --suite <id> [--adapter local-stub|codex-cli]\n  npm run bootstrap-validator -- --list\n\nExamples:\n  npm run bootstrap-validator -- --scenario empty-repo-bootstrap\n  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session\n  npm run bootstrap-validator -- --scenario bootstrap-gate\n  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli\n  npm run bootstrap-validator -- --suite phase1\n`);
 }
 
 async function main() {

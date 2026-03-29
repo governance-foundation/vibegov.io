@@ -11,6 +11,8 @@ In scope:
 - `BV-LA-004` prepare temporary fixture repos so the chosen live agent can execute safely
 - `BV-LA-005` document how to run the validator with the live adapter
 - `BV-LA-006` validate at least one real-agent bootstrap scenario and preserve evidence under `.internal/bootstrap-validator/reports/`
+- `BV-CS-002` execute a real-agent bootstrap scenario against explicit clean-session conditions using an isolated temporary session home
+- `BV-CS-003` document the clean-session validation command and evidence contract truthfully
 
 Out of scope:
 - multi-provider orchestration
@@ -25,10 +27,13 @@ Out of scope:
 - `BV-LA-004` temporary fixture repos are initialized in a way compatible with the chosen agent runtime.
 - `BV-LA-005` `.internal/bootstrap-validator/README.md` documents live-adapter execution and limitations.
 - `BV-LA-006` a successful real-agent report bundle is generated and referenced in issue evidence.
+- `BV-CS-002` the live adapter records the isolated temp repo/session-home boundaries used for a clean-session run.
+- `BV-CS-003` README and public validation docs name the clean-session command/path and its `session.json` evidence contract.
 
 ## Tests and Evidence
 - `npm run bootstrap-validator -- --scenario empty-repo-bootstrap --adapter codex-cli`
 - `npm run bootstrap-validator -- --scenario bootstrap-gate --adapter codex-cli`
+- `npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli`
 - `npm run bootstrap-validator -- --suite phase1 --adapter local-stub`
 - `npm run typecheck`
 - `npm run build`

@@ -165,11 +165,28 @@ Report what governance sources are active when done.
 - assert no product code files were changed
 - assert transcript includes governance-source report
 
+### Clean-session contract
+For first-run bootstrap confidence, this scenario also needs an explicit fresh-session path.
+
+A **clean session** means:
+- the repo under test is a newly prepared temporary fixture repo
+- the live adapter runs with an isolated temporary session home instead of reusing the caller's warmed runtime state
+- only minimal runtime bootstrap material needed to authenticate/configure the agent may be copied in
+- the evidence bundle records those session-isolation conditions for audit
+
+Recommended live command:
+- `npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli`
+
+Expected clean-session evidence:
+- report directory contains `session.json`
+- `session.json` records temp repo path, isolated temp home path, and the overridden home/session environment variables
+
 ### Fail conditions
 - product code edited
 - missing rule files
 - no spec/project artifact
 - governance sources not reported
+- clean-session run reuses an unbounded prior session home without recording the isolation boundary
 
 ---
 

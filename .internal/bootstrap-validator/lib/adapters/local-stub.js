@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 const { ensureDir, writeText } = require('../fs-utils');
 
 function copyFile(src, dest) {
@@ -38,15 +39,28 @@ function buildTranscript(scenarioId) {
 }
 
 async function run({ rootDir, repoPath, scenario }) {
-  if (!['empty-repo-bootstrap', 'bootstrap-gate'].includes(scenario.id)) {
+  if (!['empty-repo-bootstrap', 'bootstrap-gate', 'empty-repo-bootstrap-clean-session'].includes(scenario.id)) {
     throw new Error(`local-stub adapter does not support scenario: ${scenario.id}`);
   }
   installGovernance(rootDir, repoPath);
+  const sessionEvidence = scenario.cleanSession
+    ? {
+        requested: true,
+        adapter: 'local-stub',
+        repoPath,
+        repoPathIsTemp: repoPath.startsWith(os.tmpdir()),
+        isolatedHomePath: path.join(os.tmpdir(), 'local-stub-clean-session'),
+        isolatedHomeIsTemp: true,
+        homeEnvOverrides: ['CODEX_HOME', 'HOME', 'USERPROFILE'],
+        note: 'local-stub models clean-session evidence deterministically for harness coverage.',
+      }
+    : null;
   return {
     transcript: buildTranscript(scenario.id),
     rawOutput: { adapter: 'local-stub', scenarioId: scenario.id },
     exitKind: 'completed',
     durationMs: 25,
+    sessionEvidence,
   };
 }
 

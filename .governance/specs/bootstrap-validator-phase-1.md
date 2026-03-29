@@ -13,6 +13,7 @@ In scope:
 - `BV-P1-006` core assertion engine for bootstrap-only checks
 - `BV-P1-007` result JSON plus evidence bundle output under `.internal/bootstrap-validator/reports/`
 - `BV-P1-008` npm scripts and internal run documentation
+- `BV-CS-001` explicit clean-session bootstrap scenario metadata and report evidence for fresh-session validation
 
 Out of scope:
 - real external provider execution
@@ -29,10 +30,12 @@ Out of scope:
 - `BV-P1-006` assertions cover governance directories, rule set presence, project intent creation, first spec creation, product-code protection, governance source reporting, and bootstrap stop declaration.
 - `BV-P1-007` each run writes a normalized result object and transcript/evidence files below `.internal/bootstrap-validator/reports/`.
 - `BV-P1-008` execution steps are documented in `.internal/bootstrap-validator/README.md`.
+- `BV-CS-001` the harness can load a clean-session bootstrap scenario and emit explicit `session.json` evidence alongside the standard report bundle.
 
 ## Tests and Evidence
 - `npm run bootstrap-validator -- --scenario empty-repo-bootstrap`
 - `npm run bootstrap-validator -- --scenario bootstrap-gate`
+- `npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session`
 - `npm run bootstrap-validator -- --suite phase1`
 - `npm run typecheck`
 

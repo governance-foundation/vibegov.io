@@ -203,6 +203,7 @@ Suggested scenario JSON shape:
   "prompt": "canonical-bootstrap.txt",
   "mode": "bootstrap",
   "timeoutMs": 300000,
+  "cleanSession": false,
   "assertions": [
     "governanceDirsExist",
     "govRuleSetPresent",
@@ -217,6 +218,8 @@ Suggested scenario JSON shape:
   }
 }
 ```
+
+For live-agent bootstrap confidence, `cleanSession: true` means the adapter must prove it used a fresh temporary fixture repo plus an isolated temporary session home, then write that proof into the evidence bundle.
 
 ## Result schema
 
@@ -256,7 +259,8 @@ Suggested shape:
     "transcriptPath": "reports/.../transcript.md",
     "diffPath": "reports/.../diff.json",
     "manifestBeforePath": "reports/.../before.json",
-    "manifestAfterPath": "reports/.../after.json"
+    "manifestAfterPath": "reports/.../after.json",
+    "sessionPath": "reports/.../session.json"
   }
 }
 ```
@@ -283,6 +287,9 @@ These are the first assertions worth implementing:
 - `honestCompletenessLabel`
 - `releaseDecisionPresent`
 - `blockerClassificationPresent`
+
+### Session isolation
+- `cleanSessionIsolationConfirmed`
 
 ### Artifact quality
 - `exploratoryArtifactsLinked`
@@ -370,6 +377,7 @@ A lightweight CLI could look like this:
 
 ```text
 npm run bootstrap-validator -- --scenario empty-repo-bootstrap
+npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli
 npm run bootstrap-validator -- --suite core
 npm run bootstrap-validator -- --suite full --provider openclaw-main
 npm run bootstrap-validator -- --scenario exploratory-route --report

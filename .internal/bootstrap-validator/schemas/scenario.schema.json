@@ -10,6 +10,7 @@
     "prompt": { "type": "string", "minLength": 1 },
     "mode": { "type": "string", "enum": ["bootstrap", "exploratory", "development", "release-verification"] },
     "timeoutMs": { "type": "integer", "minimum": 1 },
+    "cleanSession": { "type": "boolean" },
     "assertions": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 },

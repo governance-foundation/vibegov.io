@@ -29,6 +29,7 @@ async function executeScenario({ validatorDir, rootDir, scenario, adapterId }) {
     const adapter = getAdapter(adapterId);
     const runResult = await adapter.run({ rootDir, validatorDir, repoPath, scenario });
     transcript = runResult.transcript || '';
+    const sessionEvidence = runResult.sessionEvidence || null;
     const manifestAfter = createManifest(repoPath);
     const diff = diffManifests(manifestBefore, manifestAfter);
     const assertions = runAssertions(scenario.assertions, {
@@ -38,6 +39,7 @@ async function executeScenario({ validatorDir, rootDir, scenario, adapterId }) {
       manifestAfter,
       diff,
       scenario,
+      sessionEvidence,
     });
     return writeReport({
       validatorDir,
@@ -54,6 +56,7 @@ async function executeScenario({ validatorDir, rootDir, scenario, adapterId }) {
       model: runResult.model || 'n/a',
       exitKind: runResult.exitKind,
       rawOutput: runResult.rawOutput || null,
+      sessionEvidence,
     });
   } finally {
     removeDir(repoPath);

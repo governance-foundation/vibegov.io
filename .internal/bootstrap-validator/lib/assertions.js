@@ -26,6 +26,10 @@ function makeResult(id, passed, severity, note, evidence) {
   return { id, passed, severity, note, evidence };
 }
 
+function isTruthyPath(value) {
+  return typeof value === 'string' && value.length > 0;
+}
+
 const handlers = {
   governanceDirsExist(ctx) {
     const required = ['.governance/rules', '.governance/project', '.governance/specs'];
@@ -60,6 +64,28 @@ const handlers = {
   bootstrapStopDeclared(ctx) {
     const ok = /stopping before product implementation|stopped before product-code implementation/i.test(ctx.transcript);
     return makeResult('bootstrapStopDeclared', ok, 'hard', ok ? 'Transcript declares bootstrap stop gate.' : 'Transcript missing stop declaration.', []);
+  },
+  cleanSessionIsolationConfirmed(ctx) {
+    if (!ctx.scenario.cleanSession) {
+      return makeResult('cleanSessionIsolationConfirmed', true, 'soft', 'Scenario does not request clean-session validation.', []);
+    }
+    const evidence = ctx.sessionEvidence || {};
+    const checks = [
+      ['requested', evidence.requested === true],
+      ['repoPath', isTruthyPath(evidence.repoPath)],
+      ['repoPathIsTemp', evidence.repoPathIsTemp === true],
+      ['isolatedHomePath', isTruthyPath(evidence.isolatedHomePath)],
+      ['isolatedHomeIsTemp', evidence.isolatedHomeIsTemp === true],
+      ['homeEnvOverrides', Array.isArray(evidence.homeEnvOverrides) && evidence.homeEnvOverrides.includes('CODEX_HOME') && evidence.homeEnvOverrides.includes('HOME') && evidence.homeEnvOverrides.includes('USERPROFILE')],
+    ];
+    const missing = checks.filter(([, passed]) => !passed).map(([name]) => name);
+    return makeResult(
+      'cleanSessionIsolationConfirmed',
+      missing.length === 0,
+      'hard',
+      missing.length ? `Missing clean-session evidence: ${missing.join(', ')}` : 'Clean-session isolation evidence recorded.',
+      Object.entries(evidence).map(([key, value]) => `${key}=${Array.isArray(value) ? value.join(',') : value}`),
+    );
   },
 };
 
