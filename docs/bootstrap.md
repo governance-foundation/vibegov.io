@@ -22,13 +22,23 @@ Before writing any product code:
    - `main` is promotion/release only
    - `develop` is the pull-request integration branch
    - issue-scoped `feature/`, `fix/`, `docs/`, and `chore/` branches start from `develop`
+   - normal issue branches must not be created from another working branch
+   - non-`main` / non-`develop` branches are work units, not reusable parent branches
    - agents never commit directly to `main` or `develop`
    - normal work enters `develop` through pull request
    - `develop` promotes to `main` through an explicit pull request
    - hotfixes branch from `main` and must be reconciled back into `develop`
+   - stacked-branch exceptions require explicit human approval and a reconciliation plan
    - add a repo-local pull-request template and branch-protection checklist
-7. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the exact target path(s). If none exists, keep `.governance/` canonical and do not invent a mirror path.
-8. Report the active governance sources you are using and the Git workflow artifacts you installed.
+7. If the repo is GitHub-hosted, check whether `git` and `gh` are installed and whether GitHub auth/project access is available.
+8. If GitHub automation is available, create, adopt, or normalize a GitHub project board with canonical fields:
+   - `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
+   - `Priority`: `P0`, `P1`, `P2`
+   - `Size`: `XS`, `S`, `M`, `L`, `XL`
+   - import or attach existing open issues
+9. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the exact target path(s). If none exists, keep `.governance/` canonical and do not invent a mirror path.
+10. Report the active governance sources you are using, the Git workflow artifacts you installed, and the GitHub board status (URL or missing prerequisite).
+11. State the expected default issue-pickup flow for normal work: choose from `Backlog`/`Ready`, clarify + spec-bind, branch from `develop`, move to `In progress`, verify, open PR into `develop`, move to `In review`, then `Done` or `Blocked`.
 
 Then stop before product-code implementation.
 
@@ -74,8 +84,11 @@ Continue only if all are true:
 - `.governance/specs/` contains a first feature/change spec matching `SPEC-001-<feature>.md`
 - backlog maps to spec scope
 - strict `main`/`develop` roles and pull-request flow are documented before implementation begins
+- if the repo uses GitHub, prerequisite checks for `git`/`gh`/auth were completed and reported
+- if GitHub automation is available, a project board exists with canonical workflow/planning fields and imported open issues
 - if the repo uses GitHub, a pull-request template exists and branch protection expectations are documented
-- active governance sources and Git workflow artifacts were reported
+- active governance sources, Git workflow artifacts, and GitHub board status were reported
+- the default issue-pickup flow for normal work was reported
 - no product code has been written yet
 
 If any fail, rerun the same prompt.
