@@ -3,6 +3,7 @@
   "description": "Runnable phase-1 bootstrap validator MVP scenarios",
   "scenarios": [
     "empty-repo-bootstrap",
+    "empty-repo-bootstrap-clean-session",
     "bootstrap-gate"
   ]
 }

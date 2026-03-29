@@ -18,7 +18,7 @@ function computeScore(assertions) {
   return Math.round((passed / assertions.length) * 100);
 }
 
-function writeReport({ validatorDir, scenarioId, transcript, manifestBefore, manifestAfter, diff, assertions, artifacts, durationMs, adapterId, provider, model, exitKind, rawOutput }) {
+function writeReport({ validatorDir, scenarioId, transcript, manifestBefore, manifestAfter, diff, assertions, artifacts, durationMs, adapterId, provider, model, exitKind, rawOutput, sessionEvidence }) {
   const reportDir = path.join(validatorDir, 'reports', `${nowStamp()}-${scenarioId}`);
   ensureDir(reportDir);
   const score = computeScore(assertions);
@@ -42,6 +42,7 @@ function writeReport({ validatorDir, scenarioId, transcript, manifestBefore, man
       manifestBeforePath: path.join(reportDir, 'manifest-before.json'),
       manifestAfterPath: path.join(reportDir, 'manifest-after.json'),
       diffPath: path.join(reportDir, 'diff.json'),
+      ...(sessionEvidence ? { sessionPath: path.join(reportDir, 'session.json') } : {}),
     },
     reportDir,
   };
@@ -49,6 +50,7 @@ function writeReport({ validatorDir, scenarioId, transcript, manifestBefore, man
   writeJson(path.join(reportDir, 'manifest-before.json'), manifestBefore);
   writeJson(path.join(reportDir, 'manifest-after.json'), manifestAfter);
   writeJson(path.join(reportDir, 'diff.json'), diff);
+  if (sessionEvidence) writeJson(path.join(reportDir, 'session.json'), sessionEvidence);
   writeJson(path.join(reportDir, 'result.json'), result);
   return result;
 }

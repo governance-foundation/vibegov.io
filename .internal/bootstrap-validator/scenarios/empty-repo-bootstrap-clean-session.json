@@ -1,0 +1,24 @@
+{
+  "$schema": "../schemas/scenario.schema.json",
+  "id": "empty-repo-bootstrap-clean-session",
+  "fixture": "empty-repo",
+  "prompt": "canonical-bootstrap.txt",
+  "mode": "bootstrap",
+  "timeoutMs": 300000,
+  "cleanSession": true,
+  "assertions": [
+    "governanceDirsExist",
+    "govRuleSetPresent",
+    "projectIntentCreated",
+    "firstSpecCreated",
+    "noProductCodeChanges",
+    "governanceSourcesReported",
+    "cleanSessionIsolationConfirmed"
+  ],
+  "weights": {
+    "bootstrapActivation": 25,
+    "noPrematureImplementation": 20,
+    "governanceSourceHandling": 10
+  },
+  "notes": "Runs empty-repo bootstrap with explicit clean-session isolation evidence and reporting. Prefer --adapter codex-cli for live validation."
+}

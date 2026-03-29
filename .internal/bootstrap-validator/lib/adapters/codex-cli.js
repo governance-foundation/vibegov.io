@@ -345,16 +345,18 @@ function resolveCodexRuntime() {
 function createIsolatedCodexHome(sourceHome) {
   const isolatedHome = path.join(os.tmpdir(), `vibegov-codex-home-${randomUUID()}`);
   ensureDir(isolatedHome);
-  if (!sourceHome || !fs.existsSync(sourceHome)) return isolatedHome;
+  const copiedFiles = [];
+  if (!sourceHome || !fs.existsSync(sourceHome)) return { isolatedHome, copiedFiles };
 
   for (const fileName of ['config.toml', 'auth.json']) {
     const sourceFile = path.join(sourceHome, fileName);
     if (fs.existsSync(sourceFile)) {
       fs.copyFileSync(sourceFile, path.join(isolatedHome, fileName));
+      copiedFiles.push(fileName);
     }
   }
 
-  return isolatedHome;
+  return { isolatedHome, copiedFiles };
 }
 
 function hasAuth(sourceHome) {
@@ -411,7 +413,7 @@ function hasBootstrapArtifacts(repoPath) {
 }
 
 async function runCodexAttempt({ runtime, prompt, rootDir, repoPath, scenario, attempt, timeoutMs }) {
-  const isolatedHome = createIsolatedCodexHome(runtime.codexHome);
+  const { isolatedHome, copiedFiles } = createIsolatedCodexHome(runtime.codexHome);
   const lastMessagePath = path.join(os.tmpdir(), `vibegov-codex-${randomUUID()}-last-message.txt`);
   const promptPath = path.join(os.tmpdir(), `vibegov-codex-${randomUUID()}-prompt.txt`);
   const scriptPath = path.join(os.tmpdir(), `vibegov-codex-${randomUUID()}-runner.ps1`);
@@ -529,6 +531,17 @@ async function runCodexAttempt({ runtime, prompt, rootDir, repoPath, scenario, a
       transcript,
       shellPlanApplied,
       hasBootstrapArtifacts: hasBootstrapArtifacts(repoPath),
+      sessionEvidence: {
+        requested: Boolean(scenario.cleanSession),
+        adapter: 'codex-cli',
+        repoPath,
+        repoPathIsTemp: repoPath.startsWith(os.tmpdir()),
+        isolatedHomePath: isolatedHome,
+        isolatedHomeIsTemp: isolatedHome.startsWith(os.tmpdir()),
+        sourceCodexHome: runtime.codexHome || null,
+        copiedFiles,
+        homeEnvOverrides: ['CODEX_HOME', 'HOME', 'USERPROFILE'],
+      },
       rawOutput: {
         attemptId: attempt.id,
         status: exitInfo.exitCode,
@@ -600,6 +613,7 @@ async function run({ rootDir, validatorDir, repoPath, scenario }) {
         adapterId: 'codex-cli',
         provider: result.provider,
         model: result.model,
+        sessionEvidence: result.sessionEvidence,
       };
     }
   }
@@ -617,6 +631,7 @@ async function run({ rootDir, validatorDir, repoPath, scenario }) {
     adapterId: 'codex-cli',
     provider: fallback.provider,
     model: fallback.model,
+    sessionEvidence: attemptResults[attemptResults.length - 1]?.sessionEvidence || null,
   };
 }
 

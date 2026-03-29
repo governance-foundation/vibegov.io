@@ -14,6 +14,7 @@ It validates bootstrap behavior programmatically using:
 
 Runnable now:
 - `empty-repo-bootstrap`
+- `empty-repo-bootstrap-clean-session`
 - `bootstrap-gate`
 - suite: `phase1`
 
@@ -33,9 +34,11 @@ From repo root:
 ```bash
 npm run bootstrap-validator -- --list
 npm run bootstrap-validator -- --scenario empty-repo-bootstrap
+npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session
 npm run bootstrap-validator -- --scenario bootstrap-gate
 npm run bootstrap-validator -- --suite phase1
 npm run bootstrap-validator -- --scenario empty-repo-bootstrap --adapter codex-cli
+npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli
 npm run bootstrap-validator -- --scenario bootstrap-gate --adapter codex-cli
 ```
 
@@ -46,8 +49,9 @@ For each runnable scenario, the harness:
 2. captures a pre-run manifest
 3. runs the selected adapter (`local-stub` or `codex-cli` today)
 4. captures a post-run manifest and diff
-5. executes core assertions
-6. writes an evidence bundle under `.internal/bootstrap-validator/reports/`
+5. for `cleanSession: true` scenarios, records explicit session-isolation evidence
+6. executes core assertions
+7. writes an evidence bundle under `.internal/bootstrap-validator/reports/`
 
 ## Evidence bundle contents
 
@@ -57,6 +61,7 @@ Each run writes a timestamped report directory containing:
 - `manifest-after.json`
 - `diff.json`
 - `result.json`
+- `session.json` for clean-session scenarios
 
 ## Assertion coverage in phase 1
 
@@ -68,6 +73,7 @@ Implemented assertions:
 - `noProductCodeChanges`
 - `governanceSourcesReported`
 - `bootstrapStopDeclared`
+- `cleanSessionIsolationConfirmed`
 
 ## Layout
 
@@ -85,6 +91,7 @@ Implemented assertions:
 - `codex-cli` is the first live adapter, but scope is still bootstrap-only
 - bootstrap-only scenarios are the only supported live flows today
 - live-agent behavior can vary by model/runtime availability and prompt fidelity
+- clean-session validation proves only fresh-session bootstrap conditions encoded by the harness today: temp fixture repo plus isolated temp `CODEX_HOME`/`HOME`/`USERPROFILE`, with `session.json` written as evidence
 - `codex-cli` may retry against a local Ollama runtime when the default provider cannot complete the bootstrap run
 - no advanced schema validation or HTML reporting yet
 
