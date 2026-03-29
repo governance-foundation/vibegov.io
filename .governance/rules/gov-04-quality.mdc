@@ -37,6 +37,12 @@ Run verification appropriate to risk:
 - behavior changes: targeted + regression checks
 - contract/API changes: contract verification + compatibility review
 
+Verification review should also make explicit:
+- which scenario classes were exercised
+- what proof is direct vs surrogate-only
+- what remains unverified, blocked, or deferred
+- what follow-up artifact was created for missing completeness
+
 ## Definition of Done (Quality View)
 
 Done means:
