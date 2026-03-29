@@ -17,6 +17,7 @@ const sidebars = {
     'intro',
     'bootstrap',
     'quickstart',
+    'branch-protection-checklist',
     'vibegov-sdlc',
     'contribute',
     {

@@ -18,8 +18,17 @@ Before writing any product code:
 3. Create project intent from `PROJECT_TEMPLATE.md`.
 4. Create the first feature/change spec from `SPEC_TEMPLATE.md`.
 5. Create or normalize a spec-mapped backlog.
-6. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the target path. If none exists, keep `.governance/` canonical and do not invent a mirror path.
-7. Report the active governance sources you are using.
+6. Install the strict Git workflow for agents:
+   - `main` is promotion/release only
+   - `develop` is the pull-request integration branch
+   - issue-scoped `feature/`, `fix/`, `docs/`, and `chore/` branches start from `develop`
+   - agents never commit directly to `main` or `develop`
+   - normal work enters `develop` through pull request
+   - `develop` promotes to `main` through an explicit pull request
+   - hotfixes branch from `main` and must be reconciled back into `develop`
+   - add a repo-local pull-request template and branch-protection checklist
+7. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the target path. If none exists, keep `.governance/` canonical and do not invent a mirror path.
+8. Report the active governance sources you are using and the Git workflow artifacts you installed.
 
 Then stop before product-code implementation.
 
@@ -30,6 +39,8 @@ Quality expectation:
 ```
 
 Need a repeatable way to prove bootstrap works? See [Bootstrap Validation](/docs/bootstrap-validation) and the [Bootstrap Validator Harness](/docs/bootstrap-validator-harness).
+
+Strict Git workflow reference: [Branch Protection Checklist](/docs/branch-protection-checklist).
 
 ## Governance Rules Navigation
 
@@ -62,7 +73,9 @@ Continue only if all are true:
 - `.governance/project/` exists with project intent created from the template
 - `.governance/specs/` exists with the first feature/change spec created from the template
 - backlog maps to spec scope
-- active governance sources were reported
+- strict `main`/`develop` roles and pull-request flow are documented before implementation begins
+- if the repo uses GitHub, a pull-request template exists and branch protection expectations are documented
+- active governance sources and Git workflow artifacts were reported
 - no product code has been written yet
 
 If any fail, rerun the same prompt.

@@ -38,6 +38,22 @@ Follow this loop for meaningful changes:
 - Keep handoff artifacts understandable by a new contributor.
 - Update traceability so requirement IDs map to evidence and follow-up work.
 
+## Branch and Pull Request Workflow
+
+Governed repositories should install a strict Git workflow during bootstrap so protected branches stay promotion surfaces instead of scratch space.
+
+- `GOV-02-GIT-001` `main` is the promotion/release branch. It accepts only explicit promotions from `develop` and urgent hotfix pull requests that originate from `main`.
+- `GOV-02-GIT-002` `develop` is the integration branch for normal work. Agent-authored feature, fix, docs, and chore changes must land in `develop` through pull request.
+- `GOV-02-GIT-003` Normal work must start from an issue-scoped branch created from `develop` using a typed prefix such as `feature/`, `fix/`, `docs/`, or `chore/`, plus the governing issue ID and short slug.
+- `GOV-02-GIT-004` Agents must not commit or push directly to `main` or `develop`.
+- `GOV-02-GIT-005` Every agent-authored non-hotfix change must use a pull request into `develop` that links the governing issue/spec and records verification evidence.
+- `GOV-02-GIT-006` Promotion from `develop` to `main` must be explicit and reviewable. Release or promotion pull requests should state what is being promoted and what release-readiness evidence supports the move.
+- `GOV-02-GIT-007` Hotfix work must branch from `main`, merge back to `main` through an explicit hotfix pull request, and then be back-merged or otherwise reconciled into `develop` immediately so the branches do not drift.
+- `GOV-02-GIT-008` Repositories adopting VibeGov should document branch protection expectations for `main` and `develop`, including required pull requests, review gates, status checks, and restricted direct pushes.
+- `GOV-02-GIT-009` Bootstrap and adoption guidance should install the branch/pull-request workflow, review template, and protection checklist before product-code implementation begins.
+
+This section defines the governance shape of repository flow. Platform-specific docs may describe the exact GitHub or Git-provider settings used to enforce it.
+
 ## Explicit Orchestration and Bounded Work Units
 
 Governed agent execution should use explicit orchestration and bounded work units.
