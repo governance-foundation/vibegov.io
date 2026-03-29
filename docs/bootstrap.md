@@ -22,6 +22,11 @@ Before writing any product code:
 7. Report the active governance sources you are using.
 
 Then stop before product-code implementation.
+
+Quality expectation:
+- Use AI to help raise delivery completeness, not just implementation speed.
+- Treat tests, specs, documentation, validation evidence, traceability, and delivery clarity as first-class delivery artifacts.
+- Do not use AI only to accelerate code changes while skipping the quality scaffolding around those changes.
 ```
 
 Need a repeatable way to prove bootstrap works? See [Bootstrap Validation](/docs/bootstrap-validation) and the [Bootstrap Validator Harness](/docs/bootstrap-validator-harness).
@@ -36,6 +41,17 @@ Need a repeatable way to prove bootstrap works? See [Bootstrap Validation](/docs
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
+
+## Quality expectation after bootstrap
+
+Bootstrap is not only about installing governance files. It is also about installing a higher standard for done.
+
+VibeGov already pushes this through:
+- **GOV-04 Quality** — evidence, maintainability, docs/spec updates, and residual-risk honesty
+- **GOV-05 Testing** — tests as proof of claims, traceable to requirements or acceptance criteria
+- **GOV-06 Issues** — implementation-grade issue quality, verification expectations, and traceable closure
+
+The AI-enabled implication is straightforward: as tests, specs, documentation, traceability, and delivery clarity become cheaper to maintain, they become less optional to skip. AI should help teams deliver to the highest standards they expect, not just help them ship faster.
 
 ## Pass Gate #1
 

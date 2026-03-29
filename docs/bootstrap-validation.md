@@ -39,6 +39,10 @@ A valid bootstrap should produce these outcomes:
 6. **Completion honesty**
    - the agent does not claim done without evidence appropriate to the mode
 
+7. **Quality and completeness discipline**
+   - the agent uses AI to strengthen tests, specs, documentation, traceability, and delivery clarity rather than merely accelerate implementation
+   - the agent does not treat quality scaffolding as optional when the cost of maintaining it is low
+
 ## Validation strategy
 
 Treat bootstrap validation like a fixture-driven contract test suite.
