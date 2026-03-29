@@ -22,6 +22,7 @@ Follow this loop for meaningful changes:
 - Spec-first: bind work to requirement IDs before implementation starts.
 - If requirement coverage is missing, create/update spec requirements first.
 - If intake item is under-defined, expand it to implementation-grade issue quality before execution.
+- If the item came from backlog, confirm the issue is in the correct board state before work starts (`Backlog` or `Ready`) and move it to `Ready` once the issue is clear enough to execute.
 
 ### 3) Implement
 - Apply the smallest coherent action that matches the active mode.
@@ -182,6 +183,25 @@ A blocker pauses the current item. It does not pause delivery unless it removes 
 - Stay inside the agreed directories and task boundaries.
 - Do not expand scope silently.
 - If scope grows, document the reason and request explicit approval.
+
+## Typical Issue Pickup Flow
+
+For normal backlog-driven work, the default governed pickup flow is:
+1. choose the next highest-priority unblocked issue from backlog or `Ready`
+2. clarify the issue until it reaches implementation-grade quality
+3. bind the issue to the governing spec/requirement IDs before implementation
+4. move the issue to `Ready` if clarification/spec binding was required
+5. create a new issue-scoped branch from `develop`
+6. move the issue to `In progress` when active work starts
+7. implement the smallest coherent scoped change
+8. verify with mode-appropriate evidence
+9. update docs/specs/traceability as needed
+10. open a pull request into `develop`
+11. move the issue to `In review` while the PR is active
+12. merge, verify post-merge/release-readiness as needed, then move the issue to `Done`
+13. if a proven blocker stops progress, move the issue to `Blocked` with evidence instead of leaving it stale
+
+This flow defines the default governed lifecycle for normal work. Hotfix flow remains the exception path from `main`.
 
 ## Completion Standard
 

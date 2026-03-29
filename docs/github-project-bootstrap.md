@@ -110,6 +110,21 @@ Expected state movement:
 - merged and verified complete -> **Done**
 - proven blocker with evidence -> **Blocked**
 
+## Typical issue pickup flow
+
+For normal backlog-driven work, agents should follow this sequence:
+1. pick the next issue from `Backlog` or `Ready`
+2. clarify it until it is implementation-grade
+3. bind it to spec/requirement IDs
+4. move it to `Ready` if clarification/spec binding was needed
+5. branch from `develop`
+6. move it to `In progress` when work starts
+7. verify with evidence
+8. open PR into `develop`
+9. move it to `In review`
+10. after merge and verification, move it to `Done`
+11. if blocked, move it to `Blocked` with evidence instead of leaving status stale
+
 ## Existing project adoption
 
 For an existing repo with open issues, bootstrap should not require a clean slate.

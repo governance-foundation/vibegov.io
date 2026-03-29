@@ -18,10 +18,11 @@ Feedback is managed in GitHub Issues so decisions stay public, reviewable, and t
 
 1. Start from a GitHub issue or clearly linked governed task.
 2. Create an issue-scoped `feature/`, `fix/`, `docs/`, or `chore/` branch from `develop`.
-3. Do not let agents commit directly to `main` or `develop`.
-4. Move the governing issue to the correct project-board state as work advances (`Ready` before start, `In progress` during active work, `In review` once the PR is open, `Done` after merge/verification, or `Blocked` with evidence when stalled).
-5. Open a pull request into `develop` and complete the repo pull-request template with issue/spec/evidence links.
-6. Keep validation evidence in the pull request so promotion reviewers can reuse it.
+3. Do not create a new normal work branch from another working branch; non-`main` / non-`develop` branches are work units, not parent branches.
+4. Do not let agents commit directly to `main` or `develop`.
+5. Move the governing issue to the correct project-board state as work advances (`Ready` before start, `In progress` during active work, `In review` once the PR is open, `Done` after merge/verification, or `Blocked` with evidence when stalled).
+6. Open a pull request into `develop` and complete the repo pull-request template with issue/spec/evidence links.
+7. Keep validation evidence in the pull request so promotion reviewers can reuse it.
 
 Use the [Branch Protection Checklist](/docs/branch-protection-checklist) when setting up or reviewing repo protections.
 

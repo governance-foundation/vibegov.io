@@ -38,6 +38,7 @@ Before writing any product code:
    - import or attach existing open issues
 9. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the exact target path(s). If none exists, keep `.governance/` canonical and do not invent a mirror path.
 10. Report the active governance sources you are using, the Git workflow artifacts you installed, and the GitHub board status (URL or missing prerequisite).
+11. State the expected default issue-pickup flow for normal work: choose from `Backlog`/`Ready`, clarify + spec-bind, branch from `develop`, move to `In progress`, verify, open PR into `develop`, move to `In review`, then `Done` or `Blocked`.
 
 Then stop before product-code implementation.
 
@@ -87,6 +88,7 @@ Continue only if all are true:
 - if GitHub automation is available, a project board exists with canonical workflow/planning fields and imported open issues
 - if the repo uses GitHub, a pull-request template exists and branch protection expectations are documented
 - active governance sources, Git workflow artifacts, and GitHub board status were reported
+- the default issue-pickup flow for normal work was reported
 - no product code has been written yet
 
 If any fail, rerun the same prompt.
