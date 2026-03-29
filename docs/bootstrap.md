@@ -22,10 +22,13 @@ Before writing any product code:
    - `main` is promotion/release only
    - `develop` is the pull-request integration branch
    - issue-scoped `feature/`, `fix/`, `docs/`, and `chore/` branches start from `develop`
+   - normal issue branches must not be created from another working branch
+   - non-`main` / non-`develop` branches are work units, not reusable parent branches
    - agents never commit directly to `main` or `develop`
    - normal work enters `develop` through pull request
    - `develop` promotes to `main` through an explicit pull request
    - hotfixes branch from `main` and must be reconciled back into `develop`
+   - stacked-branch exceptions require explicit human approval and a reconciliation plan
    - add a repo-local pull-request template and branch-protection checklist
 7. If the repo is GitHub-hosted, check whether `git` and `gh` are installed and whether GitHub auth/project access is available.
 8. If GitHub automation is available, create, adopt, or normalize a GitHub project board with canonical fields:

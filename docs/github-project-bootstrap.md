@@ -87,6 +87,17 @@ For GitHub-hosted repos, bootstrap should:
 8. import or attach all existing open issues
 9. report the board URL and the canonical statuses/fields present
 
+## Branch source invariant
+
+The board workflow only stays trustworthy if branch sources are disciplined too.
+
+Required invariant:
+- normal `feature/`, `fix/`, `docs/`, and `chore/` branches must start from `develop`
+- hotfix branches must start from `main`
+- agents must not create a new normal work branch from another working branch
+- non-`main` / non-`develop` branches are governed work units, not reusable parent branches
+- any stacked-branch exception requires explicit human approval and a reconciliation plan
+
 ## Issue movement contract
 
 The board is not static metadata. It should move with the work.
