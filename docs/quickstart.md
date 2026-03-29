@@ -29,11 +29,14 @@ Initialization contract:
 
 Execution gate:
 - Do not start product-code implementation until steps 1-7 are completed and reported.
+- Do not use AI only to accelerate implementation while skipping tests, specs, docs, traceability, validation evidence, or delivery clarity.
 
 During delivery:
 - Keep project intent in `.governance/project/`.
 - Keep app feature/change specs in `.governance/specs/`.
 - Choose the correct execution mode before acting.
+- Use AI to increase completeness, not just speed.
+- Treat tests, specs, docs, validation evidence, traceability, and delivery clarity as first-class delivery artifacts.
 - Apply rules proportionally, but do not skip mandatory governance requirements.
 
 Completion report:
@@ -99,7 +102,18 @@ Useful supporting docs:
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
 - [Bootstrap Validation](/docs/bootstrap-validation)
 
-## 6. Validate installation
+## 6. Quality and completeness expectation
+
+Bootstrap should not only create governance files. It should also raise the expected standard of done.
+
+That expectation is already reinforced by:
+- [Published GOV-04 Quality](/docs/published/gov-04-quality)
+- [Published GOV-05 Testing](/docs/published/gov-05-testing)
+- [Published GOV-06 Issues](/docs/published/gov-06-issues)
+
+The practical implication is that AI should help teams maintain the quality scaffolding around a change — tests, specs, docs, traceability, and delivery clarity — rather than simply producing code faster.
+
+## 7. Validate installation
 
 Confirm the agent can read active rule files and that prompts/outputs reflect:
 - spec-first behavior
