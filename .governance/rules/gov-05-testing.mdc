@@ -43,6 +43,8 @@ OpenSpec-first rule:
 - run appropriate regression checks before completion
 - capture failing output when blocked
 - avoid marking complete without evidence
+- generated tests only count when they actually prove the intended behavior or requirement
+- passing tests are evidence only when the asserted behavior matches the governed claim
 
 ## Test Quality Anti-Patterns
 
