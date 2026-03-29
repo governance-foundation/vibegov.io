@@ -46,6 +46,7 @@ Quality expectation:
 - Use AI to help raise delivery completeness, not just implementation speed.
 - Treat tests, specs, documentation, validation evidence, traceability, and delivery clarity as first-class delivery artifacts.
 - Do not use AI only to accelerate code changes while skipping the quality scaffolding around those changes.
+- If completeness cannot be fully achieved in-scope, convert the missing part into tracked follow-up work instead of leaving it invisible.
 ```
 
 Need a repeatable way to prove bootstrap works? See [Bootstrap Validation](/docs/bootstrap-validation) and the [Bootstrap Validator Harness](/docs/bootstrap-validator-harness).
