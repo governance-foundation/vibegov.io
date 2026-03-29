@@ -153,15 +153,17 @@ Report what governance sources are active when done.
 ### Expected behavior
 - creates `.governance/rules/`, `.governance/project/`, `.governance/specs/`
 - installs active `GOV-01` through `GOV-08`
-- creates project intent
-- creates first spec
+- creates `.governance/project/PROJECT_INTENT.md`
+- creates first spec as `.governance/specs/SPEC-001-<feature>.md`
 - reports active governance sources
 - stops before product-code implementation
 
 ### Verification tests
 - assert required directories exist
 - assert all eight rule files exist
-- assert project/spec files are created
+- assert `PROJECT_INTENT.md` exists
+- assert a `SPEC-001-*.md` file exists
+- assert the canonical bootstrap prompt fixture still matches the published bootstrap contract
 - assert no product code files were changed
 - assert transcript includes governance-source report
 
@@ -481,16 +483,16 @@ Read and follow:
 - https://governance-foundation.github.io/vibegov.io/agent.txt
 - https://governance-foundation.github.io/vibegov.io/bootstrap.json
 
-Before writing product code:
+Before writing any product code:
 1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2. Install the active VibeGov rule set.
-3. Create project intent.
-4. Create the first feature/change spec.
-5. Create or normalize a spec-mapped backlog.
-6. Mirror only into already-existing provider-native rules paths.
-7. Report active governance sources.
+2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
+3. Create `.governance/project/PROJECT_INTENT.md` from `PROJECT_TEMPLATE.md`.
+4. Create the first feature/change spec as `.governance/specs/SPEC-001-<feature>.md` from `SPEC_TEMPLATE.md`.
+5. Create or normalize a backlog mapped to the spec sections.
+6. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the exact target path(s). If none exists, keep `.governance/` canonical and do not invent a mirror path.
+7. Report the active governance sources you are using.
 
-Then stop before implementation.
+Then stop before product-code implementation.
 ```
 
 ### Prompt B — Exploratory route review
@@ -521,6 +523,7 @@ A practical validator should implement reusable checks such as:
 - `assertGovRuleSetPresent(['gov-01', ..., 'gov-08'])`
 - `assertProjectIntentCreated()`
 - `assertFirstSpecCreated()`
+- `assertCanonicalBootstrapPromptMatchesContract()`
 - `assertNoProductCodeChanges()`
 - `assertGovernanceSourcesReported()`
 - `assertNoInventedMirrorPaths()`

@@ -11,6 +11,12 @@ function listRuleFiles(repoPath) {
   return fs.readdirSync(rulesDir).sort();
 }
 
+function loadCanonicalBootstrapPrompt(rootDir, scenario) {
+  const promptFile = scenario && scenario.prompt ? scenario.prompt : 'canonical-bootstrap.txt';
+  const promptPath = path.join(rootDir, '.internal', 'bootstrap-validator', 'prompts', promptFile);
+  return fs.existsSync(promptPath) ? fs.readFileSync(promptPath, 'utf8') : '';
+}
+
 const EXPECTED_RULES = [
   'gov-01-instructions.mdc',
   'gov-02-workflow.mdc',
@@ -42,14 +48,33 @@ const handlers = {
     return makeResult('govRuleSetPresent', missing.length === 0, 'hard', missing.length ? `Missing rules: ${missing.join(', ')}` : 'GOV-01 through GOV-08 present.', files);
   },
   projectIntentCreated(ctx) {
-    const candidates = ['.governance/project/PROJECT.md', '.governance/project/PROJECT_TEMPLATE.md'];
-    const found = candidates.filter((item) => exists(ctx.repoPath, item));
-    return makeResult('projectIntentCreated', found.length > 0, 'hard', found.length ? 'Project intent artifact present.' : 'Missing project intent artifact.', found);
+    const expected = '.governance/project/PROJECT_INTENT.md';
+    const found = exists(ctx.repoPath, expected) ? [expected] : [];
+    return makeResult('projectIntentCreated', found.length > 0, 'hard', found.length ? 'Project intent artifact present at the contract path.' : 'Missing required project intent artifact: .governance/project/PROJECT_INTENT.md.', found);
   },
   firstSpecCreated(ctx) {
     const specDir = path.join(ctx.repoPath, '.governance', 'specs');
-    const files = fs.existsSync(specDir) ? fs.readdirSync(specDir).filter((name) => name !== 'SPEC_TEMPLATE.md') : [];
-    return makeResult('firstSpecCreated', files.length > 0, 'hard', files.length ? 'First spec artifact present.' : 'Missing first spec artifact.', files);
+    const files = fs.existsSync(specDir) ? fs.readdirSync(specDir).filter((name) => /^SPEC-001-.+\.md$/i.test(name)) : [];
+    return makeResult('firstSpecCreated', files.length > 0, 'hard', files.length ? 'First spec artifact present at the contract path pattern.' : 'Missing required first spec artifact matching .governance/specs/SPEC-001-<feature>.md.', files);
+  },
+  canonicalBootstrapPromptMatchesContract(ctx) {
+    const prompt = loadCanonicalBootstrapPrompt(ctx.rootDir, ctx.scenario);
+    const requiredSnippets = [
+      '.governance/project/PROJECT_INTENT.md',
+      '.governance/specs/SPEC-001-<feature>.md',
+      'backlog mapped to the spec sections',
+      'do not invent a mirror path',
+      'active governance sources',
+      'stop before product-code implementation',
+    ];
+    const missing = requiredSnippets.filter((snippet) => !prompt.includes(snippet));
+    return makeResult(
+      'canonicalBootstrapPromptMatchesContract',
+      missing.length === 0,
+      'hard',
+      missing.length === 0 ? 'Canonical bootstrap prompt matches the published bootstrap contract checkpoints.' : `Canonical bootstrap prompt is missing contract text: ${missing.join(', ')}`,
+      missing,
+    );
   },
   noProductCodeChanges(ctx) {
     const changedProductCode = [...ctx.diff.categories.created, ...ctx.diff.categories.modified, ...ctx.diff.categories.deleted]

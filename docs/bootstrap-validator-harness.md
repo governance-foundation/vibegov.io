@@ -209,6 +209,7 @@ Suggested scenario JSON shape:
     "govRuleSetPresent",
     "projectIntentCreated",
     "firstSpecCreated",
+    "canonicalBootstrapPromptMatchesContract",
     "noProductCodeChanges",
     "governanceSourcesReported"
   ],
@@ -281,6 +282,7 @@ These are the first assertions worth implementing:
 ### Transcript
 - `governanceSourcesReported`
 - `bootstrapStopDeclared`
+- `canonicalBootstrapPromptMatchesContract`
 - `specGapOrRequirementBinding`
 - `exploratoryClassificationCoverage`
 - `persistenceVerificationMentioned`

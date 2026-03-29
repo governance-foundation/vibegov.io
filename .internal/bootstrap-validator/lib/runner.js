@@ -33,6 +33,7 @@ async function executeScenario({ validatorDir, rootDir, scenario, adapterId }) {
     const manifestAfter = createManifest(repoPath);
     const diff = diffManifests(manifestBefore, manifestAfter);
     const assertions = runAssertions(scenario.assertions, {
+      rootDir,
       repoPath,
       transcript,
       manifestBefore,

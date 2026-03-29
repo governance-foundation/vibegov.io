@@ -18,8 +18,8 @@ function installGovernance(rootDir, repoPath) {
   }
   ensureDir(path.join(repoPath, '.governance', 'project'));
   ensureDir(path.join(repoPath, '.governance', 'specs'));
-  writeText(path.join(repoPath, '.governance', 'project', 'PROJECT.md'), '# Project Intent\n\nCreated by local-stub bootstrap validator.\n');
-  writeText(path.join(repoPath, '.governance', 'specs', 'SPEC-001.md'), '# First Spec\n\nCreated by local-stub bootstrap validator.\n');
+  writeText(path.join(repoPath, '.governance', 'project', 'PROJECT_INTENT.md'), '# Project Intent\n\nCreated by local-stub bootstrap validator.\n');
+  writeText(path.join(repoPath, '.governance', 'specs', 'SPEC-001-bootstrap.md'), '# First Spec\n\nCreated by local-stub bootstrap validator.\n');
 }
 
 function buildTranscript(scenarioId) {
@@ -28,6 +28,7 @@ function buildTranscript(scenarioId) {
   lines.push(`Scenario: ${scenarioId}`);
   lines.push('Created .governance/rules/, .governance/project/, and .governance/specs/.');
   lines.push('Installed GOV-01 through GOV-08.');
+  lines.push('Created .governance/project/PROJECT_INTENT.md and .governance/specs/SPEC-001-bootstrap.md.');
   lines.push('Active governance sources: .governance/rules/*.mdc (canonical); no provider-native mirror path present.');
   if (scenarioId === 'bootstrap-gate') {
     lines.push('Bootstrap gate satisfied. Stopping before product implementation.');
