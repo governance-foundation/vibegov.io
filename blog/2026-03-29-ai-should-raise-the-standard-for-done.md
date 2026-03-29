@@ -213,6 +213,21 @@ then AI can become a multiplier on quality rather than just a multiplier on volu
 
 That is the organizational choice.
 
+## VibeGov already points in this direction
+
+This quality argument is not being imported from nowhere.
+VibeGov bootstrap already pushes teams toward it.
+
+Bootstrap requires governance before implementation: install the rule set, create project intent, create the first feature/change spec, normalize the backlog, and stop before product code until those foundations exist.
+
+The rules then reinforce the same pattern:
+- `GOV-04 Quality` makes evidence, documentation/spec updates, and maintainability part of delivery rather than optional cleanup
+- `GOV-05 Testing` treats tests as proof of claims and requires traceable evidence rather than testing theater
+- `GOV-06 Issues` requires implementation-grade issue quality, verification expectations, and traceable closure
+
+So the underlying shape is already there.
+The stronger claim in this series is that AI lowers the cost of maintaining those artifacts, which means teams should expect to uphold them more consistently.
+
 ## AI can help teams meet the standards they already claim to believe in
 
 This is why the best version of the argument is not really about novelty.
