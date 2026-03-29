@@ -10,6 +10,7 @@
     "govRuleSetPresent",
     "projectIntentCreated",
     "firstSpecCreated",
+    "canonicalBootstrapPromptMatchesContract",
     "noProductCodeChanges",
     "governanceSourcesReported"
   ],

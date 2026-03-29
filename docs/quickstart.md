@@ -13,7 +13,10 @@ URL-first users should start here first: [Bootstrap](/docs/bootstrap).
 Paste this into your agent:
 
 ```text
-Adopt governance from VibeGov before any implementation.
+Bootstrap this repo with VibeGov.
+Read and follow:
+- https://governance-foundation.github.io/vibegov.io/agent.txt
+- https://governance-foundation.github.io/vibegov.io/bootstrap.json
 
 Initialization contract:
 1) If `.governance/` does not exist, create:
@@ -25,7 +28,9 @@ Initialization contract:
 4) If no provider-native rules directory exists, do not invent placeholder paths; use `.governance/rules/*.mdc` as canonical.
 5) Do not place governance files outside `.governance/` unless explicitly requested.
 6) Read `gov-01` through `gov-08` and extract the active workflow, communication, quality, testing, issue, task, and exploratory rules.
-7) Install a strict Git workflow before implementation:
+7) Create `.governance/project/PROJECT_INTENT.md` from `PROJECT_TEMPLATE.md`.
+8) Create the first feature/change spec as `.governance/specs/SPEC-001-<feature>.md` from `SPEC_TEMPLATE.md`.
+9) Install a strict Git workflow before implementation:
    - treat `main` as promotion/release only
    - treat `develop` as the pull-request integration branch
    - create issue-scoped `feature/`, `fix/`, `docs/`, and `chore/` branches from `develop`
@@ -34,14 +39,14 @@ Initialization contract:
    - require explicit promotion from `develop` to `main`
    - require hotfix branches from `main` with reconciliation back into `develop`
    - add a repo-local pull-request template and branch protection checklist
-8) Confirm governance activation by listing active rule files, active governance sources, and the installed Git workflow artifacts.
+10) Confirm governance activation by listing active rule files, active governance sources, and the installed Git workflow artifacts.
 
 Execution gate:
-- Do not start product-code implementation until steps 1-8 are completed and reported.
+- Do not start product-code implementation until steps 1-10 are completed and reported.
 - Do not use AI only to accelerate implementation while skipping tests, specs, docs, traceability, validation evidence, or delivery clarity.
 
 During delivery:
-- Keep project intent in `.governance/project/`.
+- Keep project intent in `.governance/project/PROJECT_INTENT.md`.
 - Keep app feature/change specs in `.governance/specs/`.
 - Choose the correct execution mode before acting.
 - Use AI to increase completeness, not just speed.
@@ -95,8 +100,8 @@ Canonical-source model:
 
 ## 4. Fill project intent before coding
 
-- Create/update project intent from `.governance/project/PROJECT_TEMPLATE.md`.
-- Create feature/change specs from `.governance/specs/SPEC_TEMPLATE.md` when needed.
+- Create/update project intent from `.governance/project/PROJECT_TEMPLATE.md` as `.governance/project/PROJECT_INTENT.md`.
+- Create feature/change specs from `.governance/specs/SPEC_TEMPLATE.md` as `.governance/specs/SPEC-001-<feature>.md` and later numbered spec files when needed.
 
 ## 5. Start with the governance set
 

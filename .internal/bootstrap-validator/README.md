@@ -70,6 +70,7 @@ Implemented assertions:
 - `govRuleSetPresent`
 - `projectIntentCreated`
 - `firstSpecCreated`
+- `canonicalBootstrapPromptMatchesContract`
 - `noProductCodeChanges`
 - `governanceSourcesReported`
 - `bootstrapStopDeclared`
@@ -105,4 +106,3 @@ Implemented assertions:
 See also:
 - `docs/bootstrap-validation.md`
 - `docs/bootstrap-validator-harness.md`
-

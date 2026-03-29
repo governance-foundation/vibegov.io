@@ -15,9 +15,9 @@ Read and follow:
 Before writing any product code:
 1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
 2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
-3. Create project intent from `PROJECT_TEMPLATE.md`.
-4. Create the first feature/change spec from `SPEC_TEMPLATE.md`.
-5. Create or normalize a spec-mapped backlog.
+3. Create `.governance/project/PROJECT_INTENT.md` from `PROJECT_TEMPLATE.md`.
+4. Create the first feature/change spec as `.governance/specs/SPEC-001-<feature>.md` from `SPEC_TEMPLATE.md`.
+5. Create or normalize a backlog mapped to the spec sections.
 6. Install the strict Git workflow for agents:
    - `main` is promotion/release only
    - `develop` is the pull-request integration branch
@@ -27,7 +27,7 @@ Before writing any product code:
    - `develop` promotes to `main` through an explicit pull request
    - hotfixes branch from `main` and must be reconciled back into `develop`
    - add a repo-local pull-request template and branch-protection checklist
-7. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the target path. If none exists, keep `.governance/` canonical and do not invent a mirror path.
+7. Detect any existing provider-native rules directory in the repo. If one exists, mirror the active `.governance/rules/*.mdc` files into it and report the exact target path(s). If none exists, keep `.governance/` canonical and do not invent a mirror path.
 8. Report the active governance sources you are using and the Git workflow artifacts you installed.
 
 Then stop before product-code implementation.
@@ -70,8 +70,8 @@ Continue only if all are true:
 
 - `.governance/rules/` exists
 - active governance set includes `GOV-01` through `GOV-08`
-- `.governance/project/` exists with project intent created from the template
-- `.governance/specs/` exists with the first feature/change spec created from the template
+- `.governance/project/PROJECT_INTENT.md` exists
+- `.governance/specs/` contains a first feature/change spec matching `SPEC-001-<feature>.md`
 - backlog maps to spec scope
 - strict `main`/`develop` roles and pull-request flow are documented before implementation begins
 - if the repo uses GitHub, a pull-request template exists and branch protection expectations are documented
