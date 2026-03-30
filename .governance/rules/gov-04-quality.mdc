@@ -68,6 +68,12 @@ Do not confuse these with trustworthy completion:
 
 AI makes it easier to generate the appearance of completeness. Governance must distinguish appearance-of-completion from trustworthy completion.
 
+Verification review should also make explicit:
+- which scenario classes were exercised
+- what proof is direct vs surrogate-only
+- what remains unverified, blocked, or deferred
+- what follow-up artifact was created for missing completeness
+
 ## Definition of Done (Quality View)
 
 Done means:

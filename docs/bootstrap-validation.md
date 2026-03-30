@@ -108,6 +108,14 @@ Check that issues/specs/tasks include:
 - verification path
 - explicit `SPEC_GAP` when contract is missing
 
+### 5. Test-execution assertions
+Check that meaningful validation output can answer:
+- what exact claim/requirement was under test
+- which scenario classes were exercised
+- which scenario classes were blocked, deferred, or not applicable
+- whether the proof is direct or only a proxy
+- what remains unverified and what follow-up artifact was created
+
 ## Scoring model
 
 Use a simple weighted score:
