@@ -39,6 +39,7 @@ Strong signal:
 Questions:
 - Does the workflow require a scenario matrix or only suggest one?
 - Are minimum scenario categories explicit?
+- Does test execution record which scenario classes were verified, blocked, deferred, or not applicable?
 
 Weak signal:
 - "test the main flow"
@@ -50,6 +51,7 @@ Strong signal:
 Questions:
 - Does the workflow require verification of resulting state after save/mutate/delete/sync actions?
 - Does it prevent UI-only success claims?
+- Does it distinguish direct proof from surrogate-only proof?
 
 Weak signal:
 - success toast treated as proof
