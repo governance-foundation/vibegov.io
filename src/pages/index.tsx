@@ -35,7 +35,7 @@ const promptCards: PromptCard[] = [
   {
     title: 'Bootstrap Feedback Prompt',
     description:
-      'Use this after bootstrap/init or bootstrap/update to learn what VibeGov still underspecified.',
+      'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
     prompt: `Review the bootstrap/setup process you just executed for this repo.\nRead and follow:\n- https://governance-foundation.github.io/vibegov.io/docs/bootstrap-feedback-prompt`,
     href: '/docs/bootstrap-feedback-prompt',
   },
@@ -60,7 +60,7 @@ const faqItems: FaqItem[] = [
   {
     question: 'When do I use the feedback prompt?',
     answer:
-      'Use the feedback prompt after a bootstrap run when you want the agent to tell you what was underspecified, awkward, or missing so VibeGov can improve.',
+      'Use the feedback prompt after a bootstrap run when you want the agent to tell you what was underspecified, awkward, or missing. Then raise a scrubbed GitHub issue so the feedback becomes durable and actionable.',
   },
 ];
 

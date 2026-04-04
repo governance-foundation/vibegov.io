@@ -35,7 +35,9 @@ Use the [Branch Protection Checklist](/docs/branch-protection-checklist) when se
 
 ## Bootstrap adoption feedback
 
-If you have just run a fresh bootstrap or an update/remediation pass, use the [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt) and paste the result into an issue.
+If you have just run a fresh bootstrap or an update/remediation pass, use the [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt) and raise a GitHub issue with the scrubbed result.
+
+Before posting, remove or obfuscate PII, secrets, tokens, emails, usernames, IDs, URLs, and environment-specific sensitive details.
 
 That feedback is especially useful when it captures:
 - what was underspecified or ambiguous
