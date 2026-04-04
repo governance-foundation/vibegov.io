@@ -82,6 +82,7 @@ Before closing, ensure:
 - verification evidence exists
 - OpenSpec/traceability references are updated or explicitly marked `SPEC_GAP` follow-up
 - follow-up items are captured (if any)
+- missing completeness is converted into explicit follow-up work rather than silently carried forward
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 

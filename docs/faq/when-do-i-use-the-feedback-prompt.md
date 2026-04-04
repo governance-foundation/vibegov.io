@@ -6,11 +6,10 @@ question: When do I use the feedback prompt?
 
 # When do I use the feedback prompt?
 
-Use the **bootstrap feedback prompt** after a bootstrap init or bootstrap update run when you want the agent to tell you what VibeGov still underspecified.
+Use the **bootstrap feedback prompt** after bootstrap init/update when you want durable, scrubbed feedback.
 
-Then raise a **GitHub issue** with the scrubbed result so the feedback becomes durable, reviewable, and actionable.
+Expected output:
+1. local file: `.governance/project/BOOTSTRAP_FEEDBACK.md`
+2. issue-ready title/body for `governance-foundation/vibegov.io`
 
-Before posting, remove or obfuscate PII, secrets, tokens, emails, usernames, IDs, URLs, and environment-specific sensitive details.
-
-Use the canonical doc:
-- [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt)
+If asked to file automatically, file and return the created issue URL.

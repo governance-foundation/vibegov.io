@@ -63,6 +63,14 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-014` Existing open issues should be imported or attached to the GitHub board during adoption/bootstrap when project automation is available.
 - `GOV-02-GIT-015` Issue state on the GitHub board must move with actual delivery state rather than remaining static: `Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, with `Blocked` used for proven blockers.
 - `GOV-02-GIT-016` If GitHub prerequisites or auth are missing, bootstrap should report the exact missing capability and degrade gracefully instead of pretending project-board setup succeeded.
+- `GOV-02-GIT-017` For GitHub-hosted repos, bootstrap must classify each board preflight dependency using explicit outcome states: `configured`, `blocked-with-tracked-issue`, or `not-applicable`.
+- `GOV-02-GIT-018` Bootstrap must choose one canonical board target and follow explicit phase order: adopt or create, then normalize.
+- `GOV-02-GIT-019` If duplicate empty boards were created during retries, bootstrap should keep one canonical board, clean the accidental duplicates, and report that cleanup.
+- `GOV-02-GIT-020` Bootstrap must ensure repository linkage to the canonical board before claiming completion.
+- `GOV-02-GIT-021` GitHub built-in `Status` should be normalized in place when needed; bootstrap should not assume replacement via create/delete flows.
+- `GOV-02-GIT-022` If the repository has no issues, board setup may still be complete, but bootstrap must report the board as intentionally empty.
+- `GOV-02-GIT-023` Bootstrap must emit durable local status artifacts (for example `BOOTSTRAP_STATUS.md` and `BOOTSTRAP_FEEDBACK.md`) even when commit mode forbids committing.
+- `GOV-02-GIT-024` Bootstrap is incomplete until generated docs/artifacts are reconciled against final live git/GitHub state after any auth refresh, board mutation, or cleanup action.
 
 This section defines the governance shape of repository flow. Platform-specific docs may describe the exact GitHub or Git-provider settings used to enforce it.
 
