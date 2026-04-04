@@ -30,7 +30,8 @@ Before finalizing:
 - keep the feedback useful for a public issue
 
 Then produce BOTH:
-1) a local feedback artifact at `.governance/project/BOOTSTRAP_FEEDBACK.md`
+1) a local feedback artifact at `.governance/project/bootstrap-runs/<timestamp>-feedback.md`
+   - optional stable top-level summary/pointer: `.governance/project/BOOTSTRAP_FEEDBACK.md`
 2) a GitHub issue-ready payload:
    - title
    - body
@@ -44,6 +45,6 @@ If issue filing is explicitly requested:
 ## What to do next
 
 1. Run the prompt.
-2. Review the generated local feedback artifact.
+2. Review the generated timestamped local feedback artifact.
 3. Open/file the GitHub issue using the scrubbed title/body.
 4. Link affected page/rule/prompt sections.

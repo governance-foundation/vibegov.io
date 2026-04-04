@@ -77,10 +77,13 @@
       ".github/branch-protection-checklist.md"
     ],
     "requiredStatusArtifacts": [
-      ".governance/project/BOOTSTRAP_STATUS.md",
-      ".governance/project/BOOTSTRAP_FEEDBACK.md"
+      ".governance/project/bootstrap-runs/<timestamp>-status.md",
+      ".governance/project/bootstrap-runs/<timestamp>-feedback.md"
     ],
     "optionalStatusArtifacts": [
+      ".governance/project/bootstrap-runs/<timestamp>-blockers.md",
+      ".governance/project/BOOTSTRAP_STATUS.md",
+      ".governance/project/BOOTSTRAP_FEEDBACK.md",
       ".governance/project/BOOTSTRAP_BLOCKERS.md",
       ".governance/project/GIT_WORKFLOW.md",
       ".governance/project/GITHUB_PROJECT_STATUS.md",
@@ -137,6 +140,7 @@
   },
   "feedback_flow": {
     "mustWriteLocalFeedbackFile": true,
+    "localFeedbackRunHistoryPath": ".governance/project/bootstrap-runs/<timestamp>-feedback.md",
     "writeBeforeOrAlongsidePublicIssueFiling": true,
     "mustScrubSensitiveData": true
   },
