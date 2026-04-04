@@ -29,6 +29,7 @@ const sidebars = {
         'checkpoint-reporting',
         'blocker-escalation',
         'workflow-quality-rubric',
+        'release-artifact-and-test-prep',
       ],
     },
     {
