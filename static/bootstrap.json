@@ -6,6 +6,19 @@
     "agent": "https://vibegov.io/agent.txt",
     "bootstrap": "https://vibegov.io/bootstrap.json"
   },
+  "modes": {
+    "canonicalContractDoc": "/docs/bootstrap",
+    "supported": [
+      "init",
+      "update",
+      "review"
+    ],
+    "behavior": {
+      "init": "create_missing_bootstrap_state",
+      "update": "repair_or_normalize_existing_bootstrap_state",
+      "review": "audit_against_same_contract_without_claiming_missing_work_completed"
+    }
+  },
   "folders": [
     ".governance/rules",
     ".governance/project",

@@ -4,29 +4,45 @@ sidebar_position: 2
 
 # Bootstrap
 
-Copy this as message 1 in any coding agent.
+This is the **canonical bootstrap contract** for VibeGov.
+
+Use the same contract in one of three explicit modes:
+- `init`
+- `update`
+- `review`
+
+Mode differences are behavioral only:
+- `init` creates missing bootstrap state
+- `update` repairs/normalizes existing bootstrap state
+- `review` audits against the same contract without claiming missing work was completed
+
+## Canonical bootstrap prompt
 
 ```text
-Bootstrap this repo with VibeGov.
+Run VibeGov bootstrap in mode: <init|update|review>.
 Read and follow:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json
+- https://vibegov.io/docs/bootstrap/
 
-Before writing any product code:
-1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
+Use the same canonical bootstrap contract for all modes.
+Do not fork or weaken the pass gate by mode.
+
+Before writing any product code (or before claiming bootstrap review is complete):
+1. Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/` as needed for the selected mode.
+2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-08`) is installed in `.governance/rules/`.
 3. Detect existing provider-native rules directories and mirror `.governance/rules/*.mdc` only when they already exist.
 4. Create or normalize `.governance/project/PROJECT_INTENT.md`.
 5. Create `SPEC-001` as either:
    - `.governance/specs/SPEC-001-<feature>.md`, or
    - a bootstrap/governance-setup spec when product intent is still too vague.
 6. Create or normalize a backlog mapped to the spec sections.
-7. Install strict Git workflow artifacts before implementation:
+7. Install or verify strict Git workflow artifacts before implementation:
    - `AGENTS.md`
    - `.github/pull_request_template.md`
    - `.github/branch-protection-checklist.md`
    - documented default issue-pickup flow
-8. Classify starting repo state before edits:
+8. Classify starting repo state before edits or review conclusions:
    - current branch
    - clean/dirty working tree
    - untracked files
@@ -56,6 +72,11 @@ Before writing any product code:
    - stable top-level files may exist only as latest-run summaries/pointers
 15. Reconcile generated docs against final live git/GitHub state before claiming completion.
 
+Mode-specific behavior:
+- `init`: create the missing bootstrap state required by the contract
+- `update`: preserve valid existing artifacts and repair stale/missing/contradictory ones until the same contract is satisfied
+- `review`: audit the repo against the same contract, write findings and blockers, and do not claim missing work was completed
+
 Then stop before product-code implementation.
 ```
 
@@ -76,4 +97,6 @@ Continue only if all are true:
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
 
-If any fail, rerun bootstrap/update with remediation mode.
+If any fail:
+- `init` and `update` are incomplete
+- `review` must report the exact gaps and blockers without pretending the repo is bootstrapped

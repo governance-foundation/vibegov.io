@@ -6,10 +6,17 @@ sidebar_position: 3
 
 Use this to install VibeGov quickly with the hardened bootstrap contract.
 
+Bootstrap now uses one canonical contract with explicit modes:
+- `init`
+- `update`
+- `review`
+
+Use [Bootstrap](/docs/bootstrap) as the canonical contract surface.
+
 ## Copy-paste bootstrap prompt
 
 ```text
-Bootstrap this repo with VibeGov.
+Run VibeGov bootstrap in mode: <init|update|review>.
 Read and follow:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json

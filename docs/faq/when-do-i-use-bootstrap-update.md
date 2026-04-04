@@ -6,6 +6,11 @@ question: When do I use bootstrap update?
 
 # When do I use bootstrap update?
 
-Use **bootstrap update** when a repo already has partial VibeGov state and needs repair/normalization.
+Use **bootstrap update** when a repo already has partial bootstrap state and needs repair/normalization.
 
-Update mode should preserve valid artifacts and repair stale/missing/contradictory state, then revalidate docs against final live git/GitHub state before claiming completion.
+This is the canonical bootstrap contract run in **`update` mode**.
+It uses the same completion bar as `init`; it just preserves valid artifacts and repairs missing or weak ones.
+
+Canonical docs:
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Update](/docs/bootstrap-update)
