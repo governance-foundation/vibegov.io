@@ -14,7 +14,13 @@ scope rules:
 bootstrap contract:
 - use https://vibegov.io/agent.txt and https://vibegov.io/bootstrap.json as the canonical bootstrap sources
 - do not rely on redirected or stale bootstrap sources
+- bootstrap must use one canonical contract with explicit mode selection: init, update, or review
 - bootstrap is not complete for a GitHub-hosted repo when only the .governance scaffold exists
+
+mode behavior:
+- init: create missing bootstrap state using the canonical contract
+- update: repair or normalize existing bootstrap state using the same canonical contract
+- review: audit the repo against the same canonical contract, write findings and blockers, and do not claim missing work was completed
 
 hard gate before product code:
 - create or normalize:
