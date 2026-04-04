@@ -16,7 +16,9 @@ const sidebars = {
   docsSidebar: [
     'intro',
     'bootstrap',
+    'bootstrap-update',
     'quickstart',
+    'bootstrap-feedback-prompt',
     'branch-protection-checklist',
     'vibegov-sdlc',
     'contribute',

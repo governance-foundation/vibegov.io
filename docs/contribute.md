@@ -33,6 +33,17 @@ Use the [Branch Protection Checklist](/docs/branch-protection-checklist) when se
 - After a hotfix lands in `main`, back-merge or otherwise reconcile it into `develop` immediately.
 - Record promotion scope, hotfix reason, and any back-merge reference in the related pull request.
 
+## Bootstrap adoption feedback
+
+If you have just run a fresh bootstrap or an update/remediation pass, use the [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt) and paste the result into an issue.
+
+That feedback is especially useful when it captures:
+- what was underspecified or ambiguous
+- what files should have been created earlier
+- what GitHub scopes or permissions were missing
+- what branch / board / PR behavior was unclear
+- what exact wording would have made bootstrap smoother
+
 ## Strong contribution targets
 
 Especially useful contributions include:
