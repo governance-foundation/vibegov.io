@@ -49,10 +49,11 @@ Before writing any product code:
    - if no issues exist, report board as intentionally empty
    - clean accidental duplicate empty boards and report cleanup
 13. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
-14. Write durable local output artifacts:
-   - `.governance/project/BOOTSTRAP_STATUS.md`
-   - `.governance/project/BOOTSTRAP_FEEDBACK.md`
-   - optional `.governance/project/BOOTSTRAP_BLOCKERS.md`
+14. Write durable local output artifacts into `.governance/project/bootstrap-runs/`:
+   - `<timestamp>-status.md`
+   - `<timestamp>-feedback.md`
+   - optional `<timestamp>-blockers.md`
+   - stable top-level files may exist only as latest-run summaries/pointers
 15. Reconcile generated docs against final live git/GitHub state before claiming completion.
 
 Then stop before product-code implementation.
@@ -71,7 +72,7 @@ Continue only if all are true:
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`)
 - for GitHub repos with automation, canonical board target is adopted/created/normalized and repo-link status is reported
-- bootstrap status + feedback artifacts are written
+- timestamped bootstrap status + feedback artifacts are written under `.governance/project/bootstrap-runs/`
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
 

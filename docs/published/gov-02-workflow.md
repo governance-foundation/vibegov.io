@@ -94,7 +94,7 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-020` Bootstrap must ensure repository linkage to the canonical board before claiming completion.
 - `GOV-02-GIT-021` GitHub built-in `Status` should be normalized in place when needed; bootstrap should not assume replacement via create/delete flows.
 - `GOV-02-GIT-022` If the repository has no issues, board setup may still be complete, but bootstrap must report the board as intentionally empty.
-- `GOV-02-GIT-023` Bootstrap must emit durable local status artifacts (for example `BOOTSTRAP_STATUS.md` and `BOOTSTRAP_FEEDBACK.md`) even when commit mode forbids committing.
+- `GOV-02-GIT-023` Bootstrap must emit durable local run-history artifacts under a timestamped path such as `.governance/project/bootstrap-runs/<timestamp>-status.md` and `.governance/project/bootstrap-runs/<timestamp>-feedback.md` even when commit mode forbids committing.
 - `GOV-02-GIT-024` Bootstrap is incomplete until generated docs/artifacts are reconciled against final live git/GitHub state after any auth refresh, board mutation, or cleanup action.
 
 This section defines the governance shape of repository flow. Platform-specific docs may describe the exact GitHub or Git-provider settings used to enforce it.

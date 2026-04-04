@@ -24,10 +24,11 @@ Before writing any product code:
 6. For GitHub repos, run capability preflight before board mutation and report each dependency as `configured`, `blocked-with-tracked-issue`, or `not-applicable`.
 7. Choose exactly one canonical board target (adopt/create/normalize), normalize fields, ensure repo linkage, handle duplicate empty board cleanup if needed, and report final board state.
 8. If no issues exist, still create/normalize/report board and mark intentionally empty.
-9. Write durable output artifacts:
-   - `.governance/project/BOOTSTRAP_STATUS.md`
-   - `.governance/project/BOOTSTRAP_FEEDBACK.md`
-   - optional `.governance/project/BOOTSTRAP_BLOCKERS.md`
+9. Write durable output artifacts into `.governance/project/bootstrap-runs/`:
+   - `<timestamp>-status.md`
+   - `<timestamp>-feedback.md`
+   - optional `<timestamp>-blockers.md`
+   - stable top-level files may exist only as latest-run summaries/pointers
 10. Reconcile all generated docs against final live git/GitHub state before claiming completion.
 
 Then stop before product-code implementation.
