@@ -14,6 +14,17 @@ Feedback is managed in GitHub Issues so decisions stay public, reviewable, and t
 4. Describe the current problem, the expected improvement, and why it matters.
 5. If relevant, include a concrete wording proposal.
 
+## Bootstrap adoption feedback
+
+If you have just run a fresh bootstrap or an adoption/update pass, use the [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt) and paste the result into an issue.
+
+That feedback is especially useful when it captures:
+- what was underspecified or ambiguous
+- what files should have been created earlier
+- what GitHub scopes or permissions were missing
+- what board / branch / PR behavior was unclear
+- what exact wording would have made bootstrap smoother
+
 ## Branching and pull requests
 
 1. Start from a GitHub issue or clearly linked governed task.

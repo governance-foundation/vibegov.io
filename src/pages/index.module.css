@@ -1,8 +1,3 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
   padding: 5rem 0 4rem;
   text-align: left;
@@ -39,13 +34,6 @@
   line-height: 1.6;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-    text-align: center;
-  }
-}
-
 .actions {
   display: flex;
   gap: 0.8rem;
@@ -53,32 +41,75 @@
   margin-top: 1.3rem;
 }
 
-
-.quickStart {
-  padding: 2.5rem 0;
-  background: #ffffff;
+.section,
+.sectionAlt {
+  padding: 4rem 0;
 }
 
-[data-theme='dark'] .quickStart {
-  background: #0f172a;
+.sectionAlt {
+  background: var(--ifm-color-emphasis-100);
 }
 
-.promptBlock {
-  margin-top: 1rem;
-  background: #0b1220;
-  color: #dbeafe;
-  border-radius: 0.7rem;
-  padding: 1rem;
-  border: 1px solid #1e293b;
-  overflow-x: auto;
+.sectionHeader {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader h2 {
+  margin-bottom: 0.5rem;
+}
+
+.sectionHeader p {
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.cardGrid,
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.card,
+.featureCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  padding: 1.25rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.card h3,
+.featureCard h3 {
+  margin-bottom: 0.75rem;
+}
+
+.card p,
+.featureCard p {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.codeBlock {
+  min-height: 148px;
   white-space: pre-wrap;
+  word-break: break-word;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 12px;
+  padding: 0.9rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 0 3rem;
+    text-align: center;
+  }
+
   .actions {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
-
 }
