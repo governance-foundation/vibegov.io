@@ -17,6 +17,8 @@ const sidebars = {
     'intro',
     'bootstrap',
     'quickstart',
+    'bootstrap-prompt-template',
+    'github-project-bootstrap',
     'branch-protection-checklist',
     'vibegov-sdlc',
     'contribute',
