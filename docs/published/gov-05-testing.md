@@ -57,7 +57,7 @@ Unit tests are not sufficient by themselves when the governed claim depends on:
 
 When unit tests are the right layer, they should be preferred over slower broad tests for proving isolated logic. When the claim extends beyond isolated logic, pair unit coverage with the higher-layer evidence the claim actually needs.
 
-> Commentary: Clarifies when unit tests are expected, and prevents them from being overclaimed as full proof for broader behavioral changes.
+> Commentary: Ensures implementation is validated by evidence, not assumptions.
 
 ## Test-to-Intent Traceability
 
@@ -81,7 +81,7 @@ For each meaningful test run, explicitly consider:
 - whether the evidence directly proves the claim or only a proxy
 - what remains unverified and what follow-up artifact was created
 
-> Commentary: Makes the execution record show what was actually proved, what was skipped, and where evidence is weak or incomplete.
+> Commentary: Ensures implementation is validated by evidence, not assumptions.
 
 ## Scenario Coverage Expectations
 
@@ -99,7 +99,7 @@ Consider these scenario classes where relevant:
 
 Not every change needs every scenario class, but the execution record should make coverage boundaries visible.
 
-> Commentary: Prevents vague "tested it" reporting by making the scenario envelope explicit.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Result Classification
 
@@ -112,7 +112,7 @@ Meaningful test outcomes should be classifiable as:
 
 This helps prevent weak “green enough” reporting.
 
-> Commentary: Forces honest status labels instead of collapsing everything into pass/fail hand-waving.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Proof Strength
 
@@ -123,7 +123,7 @@ Evidence should be judged honestly:
 
 Passing build output, a success toast, or a 200 response is not always direct proof of the intended behavior.
 
-> Commentary: Stops proxy evidence from being reported as if it fully proved the governed claim.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Persistence and Post-Action Proof
 
@@ -136,7 +136,7 @@ When work changes persisted, synced, deleted, or otherwise durable state, verifi
 
 UI-only success must not be treated as sufficient proof for mutation-heavy work.
 
-> Commentary: Reinforces that durable state changes need durable proof, not just a transient success signal.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Execution Expectations
 
@@ -150,7 +150,7 @@ UI-only success must not be treated as sufficient proof for mutation-heavy work.
 - passing tests are evidence only when the asserted behavior matches the governed claim
 - if meaningful coverage is missing, create follow-up work instead of silently treating the gap as acceptable
 
-> Commentary: Clarifies that unit tests are expected for isolated logic changes, but are not a free pass for broader behavior claims.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Test Quality Anti-Patterns
 

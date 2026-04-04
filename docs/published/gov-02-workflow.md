@@ -36,6 +36,7 @@ Follow this loop for meaningful changes:
 - Spec-first: bind work to requirement IDs before implementation starts.
 - If requirement coverage is missing, create/update spec requirements first.
 - If intake item is under-defined, expand it to implementation-grade issue quality before execution.
+- If the item came from backlog, confirm the issue is in the correct board state before work starts (`Backlog` or `Ready`) and move it to `Ready` once the issue is clear enough to execute.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
@@ -71,11 +72,30 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-002` `develop` is the integration branch for normal work. Agent-authored feature, fix, docs, and chore changes must land in `develop` through pull request.
 - `GOV-02-GIT-003` Normal work must start from an issue-scoped branch created from `develop` using a typed prefix such as `feature/`, `fix/`, `docs/`, or `chore/`, plus the governing issue ID and short slug.
 - `GOV-02-GIT-004` Agents must not commit or push directly to `main` or `develop`.
+- `GOV-02-GIT-004A` Normal issue branches must be created from `develop` only. Agents must not create a new `feature/`, `fix/`, `docs/`, or `chore/` branch from another working branch.
+- `GOV-02-GIT-004B` A non-`main` / non-`develop` branch is a governed work unit, not a reusable parent branch.
+- `GOV-02-GIT-004C` Hotfix branches must be created from `main` only.
+- `GOV-02-GIT-004D` Any stacked-branch exception requires explicit human approval, a bounded reason, and an explicit reconciliation plan.
 - `GOV-02-GIT-005` Every agent-authored non-hotfix change must use a pull request into `develop` that links the governing issue/spec and records verification evidence.
 - `GOV-02-GIT-006` Promotion from `develop` to `main` must be explicit and reviewable. Release or promotion pull requests should state what is being promoted and what release-readiness evidence supports the move.
 - `GOV-02-GIT-007` Hotfix work must branch from `main`, merge back to `main` through an explicit hotfix pull request, and then be back-merged or otherwise reconciled into `develop` immediately so the branches do not drift.
 - `GOV-02-GIT-008` Repositories adopting VibeGov should document branch protection expectations for `main` and `develop`, including required pull requests, review gates, status checks, and restricted direct pushes.
 - `GOV-02-GIT-009` Bootstrap and adoption guidance should install the branch/pull-request workflow, review template, and protection checklist before product-code implementation begins.
+- `GOV-02-GIT-010` For GitHub-hosted repositories, bootstrap should also check whether `git` and `gh` are available and whether GitHub authentication/project access is available before attempting board automation.
+- `GOV-02-GIT-011` When GitHub project automation is available, bootstrap should create, adopt, or normalize a canonical project board and report the board URL plus any fallback limitations.
+- `GOV-02-GIT-012` Canonical GitHub board workflow should include `Status` values `Backlog`, `Ready`, `In progress`, `In review`, `Done`, and `Blocked`.
+- `GOV-02-GIT-013` Canonical GitHub board planning fields should include `Priority` (`P0`, `P1`, `P2`) and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GOV-02-GIT-014` Existing open issues should be imported or attached to the GitHub board during adoption/bootstrap when project automation is available.
+- `GOV-02-GIT-015` Issue state on the GitHub board must move with actual delivery state rather than remaining static: `Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, with `Blocked` used for proven blockers.
+- `GOV-02-GIT-016` If GitHub prerequisites or auth are missing, bootstrap should report the exact missing capability and degrade gracefully instead of pretending project-board setup succeeded.
+- `GOV-02-GIT-017` For GitHub-hosted repos, bootstrap must classify each board preflight dependency using explicit outcome states: `configured`, `blocked-with-tracked-issue`, or `not-applicable`.
+- `GOV-02-GIT-018` Bootstrap must choose one canonical board target and follow explicit phase order: adopt or create, then normalize.
+- `GOV-02-GIT-019` If duplicate empty boards were created during retries, bootstrap should keep one canonical board, clean the accidental duplicates, and report that cleanup.
+- `GOV-02-GIT-020` Bootstrap must ensure repository linkage to the canonical board before claiming completion.
+- `GOV-02-GIT-021` GitHub built-in `Status` should be normalized in place when needed; bootstrap should not assume replacement via create/delete flows.
+- `GOV-02-GIT-022` If the repository has no issues, board setup may still be complete, but bootstrap must report the board as intentionally empty.
+- `GOV-02-GIT-023` Bootstrap must emit durable local status artifacts (for example `BOOTSTRAP_STATUS.md` and `BOOTSTRAP_FEEDBACK.md`) even when commit mode forbids committing.
+- `GOV-02-GIT-024` Bootstrap is incomplete until generated docs/artifacts are reconciled against final live git/GitHub state after any auth refresh, board mutation, or cleanup action.
 
 This section defines the governance shape of repository flow. Platform-specific docs may describe the exact GitHub or Git-provider settings used to enforce it.
 
@@ -98,7 +118,7 @@ Governed agent execution should use explicit orchestration and bounded work unit
 
 This section governs work structure, not implementation details. It does not prescribe specific runtimes, queue settings, model choices, shell commands, or machine-local paths. It defines the accountability shape of delegation, while project/runbook docs may specify concrete supervision timings.
 
-> Commentary: Defines the default shape of governed multi-agent execution so coordination stays visible, auditable, recoverable, and visibly supervised after delegation.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ## Execution Modes
 
@@ -216,6 +236,27 @@ A blocker pauses the current item. It does not pause delivery unless it removes 
 - If scope grows, document the reason and request explicit approval.
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+
+## Typical Issue Pickup Flow
+
+For normal backlog-driven work, the default governed pickup flow is:
+1. choose the next highest-priority unblocked issue from backlog or `Ready`
+2. clarify the issue until it reaches implementation-grade quality
+3. bind the issue to the governing spec/requirement IDs before implementation
+4. move the issue to `Ready` if clarification/spec binding was required
+5. create a new issue-scoped branch from `develop`
+6. move the issue to `In progress` when active work starts
+7. implement the smallest coherent scoped change
+8. verify with mode-appropriate evidence
+9. update docs/specs/traceability as needed
+10. open a pull request into `develop`
+11. move the issue to `In review` while the PR is active
+12. merge, verify post-merge/release-readiness as needed, then move the issue to `Done`
+13. if a proven blocker stops progress, move the issue to `Blocked` with evidence instead of leaving it stale
+
+This flow defines the default governed lifecycle for normal work. Hotfix flow remains the exception path from `main`.
+
+> Commentary: Provides traceability and scope control so changes remain auditable.
 
 ## Completion Standard
 

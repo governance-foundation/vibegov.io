@@ -4,16 +4,13 @@ sidebar_position: 5
 
 # Bootstrap Feedback Prompt
 
-Use this after a fresh bootstrap or bootstrap-update run when you want an agent to tell you what VibeGov still underspecified.
+Use this after a bootstrap or bootstrap-update run when you want durable, scrubbed feedback.
 
-After you get the result, raise a GitHub issue with the feedback so it becomes durable, reviewable, and actionable.
-
-Before sharing anything publicly, remove or obfuscate:
+Before public sharing, remove or obfuscate:
 - PII
 - secrets/tokens/keys
-- emails, usernames, IDs, chat handles, and personal URLs
-- internal hostnames, private repo URLs, tenant IDs, or environment-specific sensitive details
-- any customer/user/project data that should not be public
+- emails, usernames, IDs, chat handles, personal URLs
+- internal hostnames, private repo URLs, tenant IDs, environment-specific sensitive details
 
 ```text
 Please review the bootstrap/setup process you just executed for this repo and tell me what VibeGov could do better.
@@ -28,20 +25,25 @@ Focus on:
 - what should be mandatory next time
 - what exact wording or rules would have made bootstrap smoother
 
-Before returning the feedback:
-- remove or obfuscate any PII, secrets, tokens, keys, emails, usernames, IDs, URLs, and environment-specific sensitive details
-- keep the feedback useful, but make it safe to share in a public GitHub issue
+Before finalizing:
+- scrub sensitive details (PII/secrets/tokens/IDs/URLs/environment-specific details)
+- keep the feedback useful for a public issue
 
-Return:
-1. a short summary of the biggest problems
-2. a bullet list of concrete improvements VibeGov should make
-3. any exact prompt/rule wording you recommend
-4. a short suggested GitHub issue title the user can use when filing the feedback
+Then produce BOTH:
+1) a local feedback artifact at `.governance/project/BOOTSTRAP_FEEDBACK.md`
+2) a GitHub issue-ready payload:
+   - title
+   - body
+   - suggested issue type/labels
+
+If issue filing is explicitly requested:
+- file to `governance-foundation/vibegov.io`
+- return the created issue URL
 ```
 
 ## What to do next
 
 1. Run the prompt.
-2. Review the result for anything sensitive the agent missed.
-3. Open a GitHub issue and paste the scrubbed feedback there.
-4. Link the affected page, prompt, or rule if you know it.
+2. Review the generated local feedback artifact.
+3. Open/file the GitHub issue using the scrubbed title/body.
+4. Link affected page/rule/prompt sections.

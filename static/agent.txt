@@ -11,12 +11,48 @@ scope rules:
 - detect any provider-native rules directory that already exists in the repo and mirror .governance/rules/*.mdc into it
 - if none exist, do not invent placeholder paths; use .governance/rules/*.mdc only
 
-hard gate:
-- before writing any product code, create:
+bootstrap contract:
+- use https://vibegov.io/agent.txt and https://vibegov.io/bootstrap.json as the canonical bootstrap sources
+- do not rely on redirected or stale bootstrap sources
+- bootstrap is not complete for a GitHub-hosted repo when only the .governance scaffold exists
+
+hard gate before product code:
+- create or normalize:
   - .governance/project/PROJECT_INTENT.md
-  - .governance/specs/SPEC-001-<feature>.md
+  - .governance/specs/SPEC-001-<feature>.md or a bootstrap/governance setup spec when product intent is still too vague
   - backlog mapped to spec sections
+- install or report the Git workflow artifacts required before implementation:
+  - AGENTS.md
+  - pull request template
+  - branch-protection checklist
+  - documented default issue-pickup flow
+- if the repo is GitHub-hosted, run GitHub preflight before project-board mutation:
+  - git available
+  - gh available
+  - GitHub auth available
+  - project read access
+  - project write access
+  - repo access
+- if GitHub automation is available, create, adopt, or normalize one canonical board target, link the repo, normalize the canonical fields, and report the final live board state
+- if GitHub automation is unavailable, report the exact missing capability and leave a tracked blocker or equivalent durable blocker note instead of silently treating bootstrap as complete
 - then stop
+
+empty-repo fallback:
+- if the repository does not contain a validated product brief, do not infer product scope from the repository name or placeholder README
+- in that case, SPEC-001 may be the bootstrap/governance setup spec itself and project intent must be marked provisional
+
+repo-state discipline:
+- before modifying files, classify the starting repo state: branch, clean/dirty tree, untracked files, and uncommitted changes
+- bootstrap must run with an explicit commit policy: required, allowed, or forbidden
+- if the repo is dirty, bootstrap must resolve the existing work first, stop and report blocked, or continue only in explicit review mode
+
+durable output artifacts:
+- every bootstrap run must leave durable local output artifacts even when commits are forbidden
+- expected review artifacts include:
+  - .governance/project/BOOTSTRAP_STATUS.md
+  - .governance/project/BOOTSTRAP_FEEDBACK.md
+  - optional: .governance/project/BOOTSTRAP_BLOCKERS.md
+- bootstrap feedback should be written to a local file before or alongside any public GitHub issue filing
 
 delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document
@@ -26,5 +62,4 @@ active rules:
 
 completion rule:
 - each completed task must include verification evidence and traceability update
-
-
+- bootstrap completion must reflect the final live git/GitHub state, not a stale intermediate state
