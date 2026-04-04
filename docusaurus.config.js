@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VibeGov',
-  tagline: 'Portable delivery judgement for AI-assisted software.',
+  tagline: 'Governance for AI-assisted software delivery.',
   favicon: 'img/vibegov-icon.svg',
 
   // Set the production url of your site here
