@@ -19,6 +19,16 @@ const sidebars = {
     'bootstrap-update',
     'quickstart',
     'bootstrap-feedback-prompt',
+    {
+      type: 'category',
+      label: 'FAQ',
+      items: [
+        'faq/what-is-vibegov',
+        'faq/when-do-i-use-bootstrap-init',
+        'faq/when-do-i-use-bootstrap-update',
+        'faq/when-do-i-use-the-feedback-prompt',
+      ],
+    },
     'branch-protection-checklist',
     'vibegov-sdlc',
     'contribute',

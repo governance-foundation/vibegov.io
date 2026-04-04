@@ -95,6 +95,16 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+.cardActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.copyButton {
+  cursor: pointer;
+}
+
 .codeBlock {
   min-height: 112px;
   white-space: pre-wrap;
@@ -116,5 +126,9 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .cardActions {
+    justify-content: center;
   }
 }

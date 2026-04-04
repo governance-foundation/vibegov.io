@@ -1,9 +1,26 @@
-import React from 'react';
+import React, {useMemo, useState} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
+import {
+  frontMatter as whatIsFrontMatter,
+  metadata as whatIsMetadata,
+} from '@site/docs/faq/what-is-vibegov.md';
+import {
+  frontMatter as bootstrapInitFrontMatter,
+  metadata as bootstrapInitMetadata,
+} from '@site/docs/faq/when-do-i-use-bootstrap-init.md';
+import {
+  frontMatter as bootstrapUpdateFrontMatter,
+  metadata as bootstrapUpdateMetadata,
+} from '@site/docs/faq/when-do-i-use-bootstrap-update.md';
+import {
+  frontMatter as feedbackFrontMatter,
+  metadata as feedbackMetadata,
+} from '@site/docs/faq/when-do-i-use-the-feedback-prompt.md';
 
 import styles from './index.module.css';
 
@@ -16,7 +33,9 @@ type PromptCard = {
 
 type FaqItem = {
   question: string;
-  answer: string;
+  href: string;
+  summary: string;
+  homepage: boolean;
 };
 
 const promptCards: PromptCard[] = [
@@ -41,28 +60,32 @@ const promptCards: PromptCard[] = [
   },
 ];
 
-const faqItems: FaqItem[] = [
+const faqSource = [
   {
-    question: 'What is VibeGov?',
-    answer:
-      'VibeGov gives AI coding agents clearer rules, specs, and workflow guidance so software work is more traceable, reviewable, and less hand-wavey.',
+    frontMatter: whatIsFrontMatter,
+    metadata: whatIsMetadata,
+    summary:
+      'VibeGov gives humans and AI coding agents a shared governance layer so software delivery is more traceable, reviewable, and honest about done.',
   },
   {
-    question: 'When do I use bootstrap init?',
-    answer:
-      'Use bootstrap init when a repo does not have VibeGov installed yet and you want the agent to set up the initial governance structure.',
+    frontMatter: bootstrapInitFrontMatter,
+    metadata: bootstrapInitMetadata,
+    summary:
+      'Use bootstrap init for a repo that does not have VibeGov installed yet.',
   },
   {
-    question: 'When do I use bootstrap update?',
-    answer:
-      'Use bootstrap update when a repo already has some bootstrap state and you want the agent to repair, normalize, or tighten it instead of starting over.',
+    frontMatter: bootstrapUpdateFrontMatter,
+    metadata: bootstrapUpdateMetadata,
+    summary:
+      'Use bootstrap update when a repo already has partial bootstrap state and needs repair or normalization.',
   },
   {
-    question: 'When do I use the feedback prompt?',
-    answer:
-      'Use the feedback prompt after a bootstrap run when you want the agent to tell you what was underspecified, awkward, or missing. Then raise a scrubbed GitHub issue so the feedback becomes durable and actionable.',
+    frontMatter: feedbackFrontMatter,
+    metadata: feedbackMetadata,
+    summary:
+      'Use the feedback prompt after bootstrap work, then raise a scrubbed GitHub issue with the result.',
   },
-];
+] as const;
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -91,6 +114,14 @@ function HomepageHeader() {
 }
 
 function PromptSection() {
+  const [copiedTitle, setCopiedTitle] = useState<string | null>(null);
+
+  async function handleCopy(card: PromptCard) {
+    await navigator.clipboard.writeText(card.prompt);
+    setCopiedTitle(card.title);
+    window.setTimeout(() => setCopiedTitle((current) => (current === card.title ? null : current)), 1500);
+  }
+
   return (
     <section className={styles.section}>
       <div className="container">
@@ -109,9 +140,17 @@ function PromptSection() {
               <pre className={styles.codeBlock}>
                 <code>{card.prompt}</code>
               </pre>
-              <Link className="button button--primary button--sm" to={card.href}>
-                Open doc
-              </Link>
+              <div className={styles.cardActions}>
+                <Link className="button button--primary button--sm" to={card.href}>
+                  Open doc
+                </Link>
+                <button
+                  type="button"
+                  className={clsx('button button--secondary button--sm', styles.copyButton)}
+                  onClick={() => void handleCopy(card)}>
+                  {copiedTitle === card.title ? 'Copied' : 'Copy prompt'}
+                </button>
+              </div>
             </article>
           ))}
         </div>
@@ -121,18 +160,36 @@ function PromptSection() {
 }
 
 function FaqSection() {
+  const faqItems = useMemo<FaqItem[]>(
+    () =>
+      faqSource
+        .map(({frontMatter, metadata, summary}) => ({
+          question: String(frontMatter.question ?? metadata.title),
+          href: metadata.permalink,
+          summary,
+          homepage: Boolean(frontMatter.homepage),
+        }))
+        .filter((item) => item.homepage),
+    [],
+  );
+
   return (
     <section className={styles.sectionAlt}>
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2>FAQ</h2>
-          <p>Short answers for the basic questions a human will ask first.</p>
+          <p>
+            FAQ items live as docs pages. Mark them for homepage surfacing and
+            they appear here automatically.
+          </p>
         </div>
         <div className={styles.faqList}>
           {faqItems.map((item) => (
             <article key={item.question} className={styles.faqItem}>
-              <h3>{item.question}</h3>
-              <p>{item.answer}</p>
+              <h3>
+                <Link to={item.href}>{item.question}</Link>
+              </h3>
+              <p>{item.summary}</p>
             </article>
           ))}
         </div>
