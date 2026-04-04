@@ -41,6 +41,24 @@ Not every change needs every layer, but critical paths must be covered.
 
 > Commentary: Ensures implementation is validated by evidence, not assumptions.
 
+## Unit-Test Expectations
+
+Unit tests are expected when the scoped behavior can be proved meaningfully at the isolated-logic layer, especially for:
+- pure functions, transforms, selectors, parsers, validators, and mappers
+- branching business logic with clear input/output behavior
+- bug fixes where the failure can be reproduced below the integration/UI layer
+- boundary conditions and edge cases in deterministic code paths
+
+Unit tests are not sufficient by themselves when the governed claim depends on:
+- persistence, refresh, sync, or deletion behavior
+- cross-component or cross-service contracts
+- user-visible workflows, permissions, or navigation
+- environment/runtime wiring, startup, deployment, or release-readiness behavior
+
+When unit tests are the right layer, they should be preferred over slower broad tests for proving isolated logic. When the claim extends beyond isolated logic, pair unit coverage with the higher-layer evidence the claim actually needs.
+
+> Commentary: Clarifies when unit tests are expected, and prevents them from being overclaimed as full proof for broader behavioral changes.
+
 ## Test-to-Intent Traceability
 
 For governed delivery, link tests back to:
@@ -57,10 +75,12 @@ OpenSpec-first rule:
 
 - run targeted tests during iteration
 - run appropriate regression checks before completion
+- add or update unit tests when isolated logic is changed and unit coverage is the right proving layer
+- do not treat unit tests as sufficient when the governed claim depends on higher-layer behavior
 - capture failing output when blocked
 - avoid marking complete without evidence
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Clarifies that unit tests are expected for isolated logic changes, but are not a free pass for broader behavior claims.
 
 ## Test Quality Anti-Patterns
 
