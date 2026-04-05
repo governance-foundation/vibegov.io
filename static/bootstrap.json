@@ -85,7 +85,7 @@
       "not-applicable"
     ],
     "requiredWorkflowArtifacts": [
-      "AGENTS.md",
+      "AGENTS.md_early_repo_entrypoint",
       ".github/pull_request_template.md",
       ".github/branch-protection-checklist.md"
     ],
@@ -104,6 +104,7 @@
     ],
     "board": {
       "mustChooseSingleCanonicalTarget": true,
+      "mustExplainCanonicalSelectionWhenMultipleMatchesExist": true,
       "allowedActions": [
         "adopt",
         "create",
@@ -135,7 +136,8 @@
       "mustLinkRepo": true,
       "allowIntentionallyEmptyBoardWhenNoIssuesExist": true,
       "cleanupDuplicateEmptyBoards": true,
-      "finalLiveStateReconciliationRequired": true
+      "finalLiveStateReconciliationRequired": true,
+      "mustDistinguishHistoricalEvidenceFromCurrentState": true
     }
   },
   "bootstrap_commit_policy": {

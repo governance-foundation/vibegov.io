@@ -21,16 +21,20 @@ Required checks:
 - project read access
 - project write access
 
-If any required capability is missing, report exact missing capability and stop board mutation.
+If any required capability is missing, report the exact missing capability and stop board mutation.
 
 ## Canonical board decision flow
 
-Bootstrap must choose exactly one canonical board target:
-1. **adopt** an existing suitable board, or
-2. **create** a new dedicated board when none is suitable,
+Bootstrap must choose exactly one canonical board target and follow this order:
+1. **adopt** an existing suitable board if one clean match exists,
+2. otherwise **create** a new dedicated board,
 3. then **normalize** canonical fields/options in place.
 
-Do not leave multiple competing board targets unresolved.
+If multiple matching boards exist:
+- choose one canonical board explicitly
+- prefer the board already linked to the repo when present
+- otherwise prefer the cleanest dedicated board with the expected canonical fields
+- do not leave multiple competing board targets unresolved
 
 If retries produced duplicate empty boards:
 - keep one canonical board
@@ -55,13 +59,29 @@ Repo linkage rule:
 No-issues fallback:
 - if repo has no issues, board can still be complete and should be reported as intentionally empty.
 
+## Branch/bootstrap expectations
+
+- `AGENTS.md` should be created early during bootstrap so future agents have a repo-local entrypoint into the canonical `.governance/` sources and current board state.
+- Bootstrap should create `develop` locally when the strict Git workflow is being installed, unless explicitly blocked.
+- Remote push/protection state for `develop` should be reported separately instead of being silently assumed.
+
+## Current state vs historical evidence
+
+Bootstrap reports should distinguish:
+- **current state** — the final live git/GitHub state after the run finishes
+- **historical evidence** — what was observed or repaired earlier in the run
+
+Do not leave stale intermediate state described as if it were still current after auth refreshes, board mutations, or cleanup actions.
+
 ## Completion evidence
 
 For GitHub-hosted bootstrap, report:
 - canonical board URL
 - board action path used (`adopt/create/normalize`)
+- why that board was selected when multiple matches existed
 - repo-link status
 - field/status normalization result
 - issue import/attach result (or intentionally empty)
 - any blockers/missing capabilities
+- `develop` branch local/remote/protection status
 - final live-state reconciliation result
