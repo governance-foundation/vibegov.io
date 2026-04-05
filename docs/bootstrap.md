@@ -59,6 +59,7 @@ Before writing any product code (or before claiming bootstrap review is complete
    - project write access
    - branch-protection/admin capability when relevant
    - if any required capability is missing, record it in `INIT-TODO.md` with the exact remediation command or next action before proceeding
+   - if branch-protection verification is unavailable only because of a known hosted-feature/private-repo limitation, record it as degraded verification with exact evidence and next action rather than pretending the repo normalization failed
 12. If GitHub automation is available, create/adopt/normalize one canonical board target:
    - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
@@ -97,7 +98,7 @@ Continue only if all are true:
 - `INIT-TODO.md` exists for bootstrap/adoption/remediation work and records any missing prerequisite with exact remediation when relevant
 - strict Git workflow artifacts exist
 - starting repo state and commit-policy mode are reported
-- for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`)
+- for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
 - for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
 - timestamped bootstrap status + feedback artifacts are written under `.governance/project/bootstrap-runs/`
 - if update cannot complete all gaps, timestamped blocker/status artifacts make the incomplete state explicit with exact next actions

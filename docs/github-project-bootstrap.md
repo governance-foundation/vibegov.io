@@ -65,6 +65,7 @@ No-issues fallback:
 - `INIT-TODO.md` should be created/updated early during bootstrap so prerequisite failures and exact GitHub remediation steps are durable.
 - Bootstrap should create `develop` locally when the strict Git workflow is being installed, unless explicitly blocked.
 - Remote push/protection state for `develop` should be reported separately instead of being silently assumed.
+- If live branch-protection verification is unavailable only because of a known hosted-feature/private-repo limitation, report that as degraded verification/warning with exact evidence and next action instead of treating the whole bootstrap run as a failed normalization.
 
 ## Current state vs historical evidence
 
@@ -84,5 +85,6 @@ For GitHub-hosted bootstrap, report:
 - field/status normalization result
 - issue import/attach result (or intentionally empty)
 - any blockers/missing capabilities
+- any degraded-verification warnings caused by hosted-feature limits, with exact evidence and next action
 - `develop` branch local/remote/protection status
 - final live-state reconciliation result
