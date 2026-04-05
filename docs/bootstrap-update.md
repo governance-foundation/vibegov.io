@@ -18,7 +18,8 @@ Use the canonical bootstrap contract at [Bootstrap](/docs/bootstrap).
 - create/update `INIT-TODO.md` early and record any missing prerequisite with exact remediation
 - if the repo still fails the contract, report exact blockers/gaps instead of claiming partial completion
 - do not leave the repo in ambiguous drift: classify the end state as committed/pushed, pending-review, or blocked
-- when update cannot complete all gaps, emit explicit status/blocker artifacts instead of only chat output
+- emit explicit status, analysis, and feedback artifacts instead of relying only on chat output
+- when update cannot complete all gaps, emit explicit blocker artifacts too
 - if a private-repo hosted-feature limit prevents live branch-protection verification but the rest of bootstrap normalization succeeds, report it as degraded verification/warning with exact evidence and next action rather than treating the whole run as a hard blocker
 
 ## Update prompt
@@ -38,6 +39,7 @@ Use the canonical bootstrap contract.
 Do not restart from scratch when valid artifacts already exist.
 Repair or normalize the repo until the same bootstrap contract is satisfied, including missing operational bootstrap artifacts, or report exact blockers.
 Do not stop in an ambiguous local end state; classify the result as committed/pushed, pending-review, or blocked.
-If update cannot complete all gaps, write explicit status/blocker artifacts describing what remains and the exact next actions.
+Write explicit status, analysis, and feedback artifacts for the run.
+If update cannot complete all gaps, write explicit blocker artifacts describing what remains and the exact next actions.
 If a known private-repo hosted-feature limit blocks branch-protection verification, record that as a warning/degraded verification note with exact evidence and next action.
 ```

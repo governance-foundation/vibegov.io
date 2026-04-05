@@ -59,10 +59,11 @@ durable output artifacts:
 - every bootstrap run must leave durable local output artifacts even when commits are forbidden
 - write per-run artifacts into:
   - .governance/project/bootstrap-runs/<timestamp>-status.md
+  - .governance/project/bootstrap-runs/<timestamp>-analysis.md
   - .governance/project/bootstrap-runs/<timestamp>-feedback.md
   - optional: .governance/project/bootstrap-runs/<timestamp>-blockers.md
-- stable top-level files such as BOOTSTRAP_STATUS.md / BOOTSTRAP_FEEDBACK.md may exist only as latest-run summaries or pointers
-- bootstrap feedback should be written to the timestamped local run-history file before or alongside any public GitHub issue filing
+- stable top-level files such as BOOTSTRAP_STATUS.md / BOOTSTRAP_ANALYSIS.md / BOOTSTRAP_FEEDBACK.md may exist only as latest-run summaries or pointers
+- bootstrap feedback and analysis should be written to the timestamped local run-history files before or alongside any public GitHub issue filing
 
 delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document

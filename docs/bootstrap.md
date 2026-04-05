@@ -72,9 +72,10 @@ Before writing any product code (or before claiming bootstrap review is complete
 13. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
 14. Write durable local output artifacts into `.governance/project/bootstrap-runs/`:
    - `<timestamp>-status.md`
+   - `<timestamp>-analysis.md`
    - `<timestamp>-feedback.md`
    - optional `<timestamp>-blockers.md`
-   - stable top-level files may exist only as latest-run summaries/pointers
+   - stable top-level files may exist only as latest-run summaries/pointers (`BOOTSTRAP_STATUS.md`, `BOOTSTRAP_ANALYSIS.md`, `BOOTSTRAP_FEEDBACK.md`, `BOOTSTRAP_BLOCKERS.md`)
 15. Reconcile generated docs against final live git/GitHub state before claiming completion.
 16. Distinguish final current state from historical evidence gathered earlier in the run.
 
@@ -100,8 +101,8 @@ Continue only if all are true:
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
 - for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
-- timestamped bootstrap status + feedback artifacts are written under `.governance/project/bootstrap-runs/`
-- if update cannot complete all gaps, timestamped blocker/status artifacts make the incomplete state explicit with exact next actions
+- timestamped bootstrap status + analysis + feedback artifacts are written under `.governance/project/bootstrap-runs/`
+- if update cannot complete all gaps or only reaches degraded verification, timestamped blocker artifacts make the incomplete state explicit with exact next actions
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
 
