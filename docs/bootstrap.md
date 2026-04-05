@@ -6,6 +6,11 @@ sidebar_position: 2
 
 This is the **canonical bootstrap contract** for VibeGov.
 
+Shorthand refs used in docs and chat:
+- `BI` = bootstrap init
+- `BU` = bootstrap update
+- `BF` = bootstrap feedback
+
 Use the same contract in one of three explicit modes:
 - `init`
 - `update`

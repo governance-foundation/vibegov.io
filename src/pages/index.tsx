@@ -40,19 +40,19 @@ type FaqItem = {
 
 const promptCards: PromptCard[] = [
   {
-    title: 'Bootstrap Init Prompt',
+    title: 'Bootstrap Init Prompt (BI)',
     description: 'Use this when a repo does not have VibeGov installed yet.',
     prompt: `Run VibeGov bootstrap in mode: init.\nRead and follow:\n- https://vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap',
   },
   {
-    title: 'Bootstrap Update Prompt',
+    title: 'Bootstrap Update Prompt (BU)',
     description: 'Use this when a repo already has some bootstrap state.',
     prompt: `Run VibeGov bootstrap in mode: update.\n\nBefore doing anything else, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap-update',
   },
   {
-    title: 'Bootstrap Feedback Prompt',
+    title: 'Bootstrap Feedback Prompt (BF)',
     description:
       'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
     prompt: `Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this feedback run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen read and follow:\n- https://vibegov.io/docs/bootstrap-feedback-prompt`,
