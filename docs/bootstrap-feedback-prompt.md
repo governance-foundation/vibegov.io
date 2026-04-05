@@ -4,7 +4,9 @@ sidebar_position: 5
 
 # Bootstrap Feedback Prompt
 
-Use this after a bootstrap or bootstrap-update run when you want durable, scrubbed feedback.
+Use this after a bootstrap or bootstrap-update run when you want deeper, standalone durable feedback.
+
+Note: bootstrap init and bootstrap update should already emit default feedback artifacts as part of their normal run bundle. This prompt is for an extra dedicated feedback pass when you want more reflection or a cleaner issue-ready writeup.
 
 Before public sharing, remove or obfuscate:
 - PII
@@ -40,7 +42,9 @@ Before finalizing:
 Then produce BOTH:
 1) a local feedback artifact at `.governance/project/bootstrap-runs/<timestamp>-feedback.md`
    - optional stable top-level summary/pointer: `.governance/project/BOOTSTRAP_FEEDBACK.md`
-2) a GitHub issue-ready payload:
+2) a companion local analysis artifact at `.governance/project/bootstrap-runs/<timestamp>-analysis.md`
+   - optional stable top-level summary/pointer: `.governance/project/BOOTSTRAP_ANALYSIS.md`
+3) a GitHub issue-ready payload:
    - title
    - body
    - suggested issue type/labels

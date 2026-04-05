@@ -93,11 +93,13 @@
     ],
     "requiredStatusArtifacts": [
       ".governance/project/bootstrap-runs/<timestamp>-status.md",
+      ".governance/project/bootstrap-runs/<timestamp>-analysis.md",
       ".governance/project/bootstrap-runs/<timestamp>-feedback.md"
     ],
     "optionalStatusArtifacts": [
       ".governance/project/bootstrap-runs/<timestamp>-blockers.md",
       ".governance/project/BOOTSTRAP_STATUS.md",
+      ".governance/project/BOOTSTRAP_ANALYSIS.md",
       ".governance/project/BOOTSTRAP_FEEDBACK.md",
       ".governance/project/BOOTSTRAP_BLOCKERS.md",
       ".governance/project/GIT_WORKFLOW.md",
@@ -157,6 +159,7 @@
   },
   "feedback_flow": {
     "mustWriteLocalFeedbackFile": true,
+    "localAnalysisRunHistoryPath": ".governance/project/bootstrap-runs/<timestamp>-analysis.md",
     "localFeedbackRunHistoryPath": ".governance/project/bootstrap-runs/<timestamp>-feedback.md",
     "writeBeforeOrAlongsidePublicIssueFiling": true,
     "mustScrubSensitiveData": true
