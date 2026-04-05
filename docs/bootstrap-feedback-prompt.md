@@ -13,6 +13,14 @@ Before public sharing, remove or obfuscate:
 - internal hostnames, private repo URLs, tenant IDs, environment-specific sensitive details
 
 ```text
+Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:
+- https://vibegov.io/agent.txt
+- https://vibegov.io/bootstrap.json
+- https://vibegov.io/docs/bootstrap/
+
+Treat those live sources as authoritative for this feedback run.
+Do not rely on previously cached bootstrap text, earlier chat summaries, or older copied instructions if they differ.
+
 Please review the bootstrap/setup process you just executed for this repo and tell me what VibeGov could do better.
 
 Focus on:

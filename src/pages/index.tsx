@@ -55,7 +55,7 @@ const promptCards: PromptCard[] = [
     title: 'Bootstrap Feedback Prompt',
     description:
       'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
-    prompt: `Review the bootstrap/setup process you just executed for this repo.\nRead and follow:\n- https://vibegov.io/docs/bootstrap-feedback-prompt`,
+    prompt: `Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this feedback run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen read and follow:\n- https://vibegov.io/docs/bootstrap-feedback-prompt`,
     href: '/docs/bootstrap-feedback-prompt',
   },
 ];
