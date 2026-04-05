@@ -6,6 +6,9 @@ sidebar_position: 3
 
 `bootstrap update` is **bootstrap run in `update` mode**.
 
+Shorthand ref:
+- `BU` = bootstrap update
+
 It does **not** use a weaker or different contract.
 Use the canonical bootstrap contract at [Bootstrap](/docs/bootstrap).
 
