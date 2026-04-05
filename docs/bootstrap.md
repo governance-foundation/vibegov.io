@@ -79,7 +79,7 @@ Before writing any product code (or before claiming bootstrap review is complete
 
 Mode-specific behavior:
 - `init`: create the missing bootstrap state required by the contract
-- `update`: preserve valid existing artifacts and repair stale/missing/contradictory ones until the same contract is satisfied
+- `update`: preserve valid existing artifacts and repair stale/missing/contradictory ones, including missing operational bootstrap artifacts, until the same contract is satisfied; if that cannot be done, leave explicit status/blocker artifacts plus a settled end-state classification (`committed/pushed`, `pending-review`, or `blocked`)
 - `review`: audit the repo against the same contract, write findings and blockers, and do not claim missing work was completed
 
 Then stop before product-code implementation.
@@ -100,6 +100,7 @@ Continue only if all are true:
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`)
 - for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
 - timestamped bootstrap status + feedback artifacts are written under `.governance/project/bootstrap-runs/`
+- if update cannot complete all gaps, timestamped blocker/status artifacts make the incomplete state explicit with exact next actions
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
 
