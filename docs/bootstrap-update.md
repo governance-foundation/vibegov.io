@@ -21,10 +21,14 @@ Use the canonical bootstrap contract at [Bootstrap](/docs/bootstrap).
 
 ```text
 Run VibeGov bootstrap in mode: update.
-Read and follow:
+
+Before doing anything else, fresh-read the latest live canonical bootstrap sources:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json
 - https://vibegov.io/docs/bootstrap/
+
+Treat those live sources as authoritative for this run.
+Do not rely on previously cached bootstrap text, earlier chat summaries, or older copied instructions if they differ.
 
 Use the canonical bootstrap contract.
 Do not restart from scratch when valid artifacts already exist.
