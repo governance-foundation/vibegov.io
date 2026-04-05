@@ -28,7 +28,7 @@ hard gate before product code:
   - .governance/specs/SPEC-001-<feature>.md or a bootstrap/governance setup spec when product intent is still too vague
   - backlog mapped to spec sections
 - install or report the Git workflow artifacts required before implementation:
-  - AGENTS.md
+  - AGENTS.md (create this early)
   - pull request template
   - branch-protection checklist
   - documented default issue-pickup flow
@@ -39,7 +39,7 @@ hard gate before product code:
   - project read access
   - project write access
   - repo access
-- if GitHub automation is available, create, adopt, or normalize one canonical board target, link the repo, normalize the canonical fields, and report the final live board state
+- if GitHub automation is available, create, adopt, or normalize one canonical board target, explain canonical-board selection when multiple matches exist, link the repo, normalize the canonical fields, and report the final live board state
 - if GitHub automation is unavailable, report the exact missing capability and leave a tracked blocker or equivalent durable blocker note instead of silently treating bootstrap as complete
 - then stop
 
@@ -70,3 +70,4 @@ active rules:
 completion rule:
 - each completed task must include verification evidence and traceability update
 - bootstrap completion must reflect the final live git/GitHub state, not a stale intermediate state
+- reports must distinguish historical evidence from current final state when the run repaired or mutated GitHub state mid-flight

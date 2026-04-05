@@ -38,7 +38,7 @@ Before writing any product code (or before claiming bootstrap review is complete
    - a bootstrap/governance-setup spec when product intent is still too vague.
 6. Create or normalize a backlog mapped to the spec sections.
 7. Install or verify strict Git workflow artifacts before implementation:
-   - `AGENTS.md`
+   - `AGENTS.md` (create this early so future agents have a repo-local entrypoint)
    - `.github/pull_request_template.md`
    - `.github/branch-protection-checklist.md`
    - documented default issue-pickup flow
@@ -57,6 +57,7 @@ Before writing any product code (or before claiming bootstrap review is complete
    - project read access
    - project write access
 12. If GitHub automation is available, create/adopt/normalize one canonical board target:
+   - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
    - normalize `Priority`: `P0`, `P1`, `P2`
    - normalize `Size`: `XS`, `S`, `M`, `L`, `XL`
@@ -71,6 +72,7 @@ Before writing any product code (or before claiming bootstrap review is complete
    - optional `<timestamp>-blockers.md`
    - stable top-level files may exist only as latest-run summaries/pointers
 15. Reconcile generated docs against final live git/GitHub state before claiming completion.
+16. Distinguish final current state from historical evidence gathered earlier in the run.
 
 Mode-specific behavior:
 - `init`: create the missing bootstrap state required by the contract
@@ -92,7 +94,7 @@ Continue only if all are true:
 - strict Git workflow artifacts exist
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`)
-- for GitHub repos with automation, canonical board target is adopted/created/normalized and repo-link status is reported
+- for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
 - timestamped bootstrap status + feedback artifacts are written under `.governance/project/bootstrap-runs/`
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
