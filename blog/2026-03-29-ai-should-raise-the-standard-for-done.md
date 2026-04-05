@@ -272,7 +272,7 @@ That is the version of AI leverage worth building toward.
 ## Series navigation
 
 - **1. AI Should Raise the Standard for Done** ← you are here
-- 2. AI Should Increase Completeness, Not Just Speed *(planned)*
+- 2. [AI Should Increase Completeness, Not Just Speed](/blog/ai-should-increase-completeness-not-just-speed)
 - 3. AI Makes Quality More Affordable, So Expectations Should Rise *(planned)*
 - 4. Tests, Specs, and Docs Are No Longer Cheap Excuses to Skip *(planned)*
 - 5. AI-Native Contribution Should Be Measured in Completeness *(planned)*
