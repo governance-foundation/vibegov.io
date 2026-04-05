@@ -39,6 +39,7 @@ Before writing any product code (or before claiming bootstrap review is complete
 6. Create or normalize a backlog mapped to the spec sections.
 7. Install or verify strict Git workflow artifacts before implementation:
    - `AGENTS.md` (create this early so future agents have a repo-local entrypoint)
+   - `INIT-TODO.md` (create/update this early during bootstrap/adoption/remediation work)
    - `.github/pull_request_template.md`
    - `.github/branch-protection-checklist.md`
    - documented default issue-pickup flow
@@ -56,6 +57,8 @@ Before writing any product code (or before claiming bootstrap review is complete
    - repo access
    - project read access
    - project write access
+   - branch-protection/admin capability when relevant
+   - if any required capability is missing, record it in `INIT-TODO.md` with the exact remediation command or next action before proceeding
 12. If GitHub automation is available, create/adopt/normalize one canonical board target:
    - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
@@ -91,6 +94,7 @@ Continue only if all are true:
 - `.governance/specs/` has `SPEC-001` (feature spec or bootstrap-setup spec for vague repos)
 - backlog maps to spec scope
 - `AGENTS.md` exists and points to canonical governance sources
+- `INIT-TODO.md` exists for bootstrap/adoption/remediation work and records any missing prerequisite with exact remediation when relevant
 - strict Git workflow artifacts exist
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`)

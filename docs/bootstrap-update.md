@@ -14,6 +14,7 @@ Use the canonical bootstrap contract at [Bootstrap](/docs/bootstrap).
 - preserve valid existing artifacts
 - repair stale, missing, contradictory, or weak artifacts
 - keep the same pass gate as `init`
+- create/update `INIT-TODO.md` early and record any missing prerequisite with exact remediation
 - if the repo still fails the contract, report exact blockers/gaps instead of claiming partial completion
 
 ## Update prompt

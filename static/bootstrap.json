@@ -77,7 +77,8 @@
       "github_auth_available",
       "repo_access",
       "project_read_access",
-      "project_write_access"
+      "project_write_access",
+      "branch_protection_or_admin_access_when_relevant"
     ],
     "preflightOutcomeStates": [
       "configured",
@@ -86,6 +87,7 @@
     ],
     "requiredWorkflowArtifacts": [
       "AGENTS.md_early_repo_entrypoint",
+      "INIT-TODO.md_early_setup_tracker",
       ".github/pull_request_template.md",
       ".github/branch-protection-checklist.md"
     ],

@@ -29,6 +29,7 @@ hard gate before product code:
   - backlog mapped to spec sections
 - install or report the Git workflow artifacts required before implementation:
   - AGENTS.md (create this early)
+  - INIT-TODO.md (create/update this early during bootstrap/adoption/remediation work)
   - pull request template
   - branch-protection checklist
   - documented default issue-pickup flow
@@ -39,6 +40,8 @@ hard gate before product code:
   - project read access
   - project write access
   - repo access
+  - branch-protection/admin capability when relevant
+- if any required capability is missing, record the exact remediation command or next action in INIT-TODO.md before proceeding
 - if GitHub automation is available, create, adopt, or normalize one canonical board target, explain canonical-board selection when multiple matches exist, link the repo, normalize the canonical fields, and report the final live board state
 - if GitHub automation is unavailable, report the exact missing capability and leave a tracked blocker or equivalent durable blocker note instead of silently treating bootstrap as complete
 - then stop

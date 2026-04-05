@@ -21,7 +21,7 @@ Required checks:
 - project read access
 - project write access
 
-If any required capability is missing, report the exact missing capability and stop board mutation.
+If any required capability is missing, report the exact missing capability, record it in `INIT-TODO.md` with the exact remediation command or next action, and stop board mutation.
 
 ## Canonical board decision flow
 
@@ -62,6 +62,7 @@ No-issues fallback:
 ## Branch/bootstrap expectations
 
 - `AGENTS.md` should be created early during bootstrap so future agents have a repo-local entrypoint into the canonical `.governance/` sources and current board state.
+- `INIT-TODO.md` should be created/updated early during bootstrap so prerequisite failures and exact GitHub remediation steps are durable.
 - Bootstrap should create `develop` locally when the strict Git workflow is being installed, unless explicitly blocked.
 - Remote push/protection state for `develop` should be reported separately instead of being silently assumed.
 

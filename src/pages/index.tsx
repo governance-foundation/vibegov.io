@@ -42,20 +42,20 @@ const promptCards: PromptCard[] = [
   {
     title: 'Bootstrap Init Prompt',
     description: 'Use this when a repo does not have VibeGov installed yet.',
-    prompt: `Bootstrap this repo with VibeGov.\nRead and follow:\n- https://governance-foundation.github.io/vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
+    prompt: `Run VibeGov bootstrap in mode: init.\nRead and follow:\n- https://vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap',
   },
   {
     title: 'Bootstrap Update Prompt',
     description: 'Use this when a repo already has some bootstrap state.',
-    prompt: `Update this repo's VibeGov bootstrap state.\nRead and follow:\n- https://governance-foundation.github.io/vibegov.io/docs/bootstrap-update\n\nThen stop before product-code implementation.`,
+    prompt: `Run VibeGov bootstrap in mode: update.\nRead and follow:\n- https://vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap-update',
   },
   {
     title: 'Bootstrap Feedback Prompt',
     description:
       'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
-    prompt: `Review the bootstrap/setup process you just executed for this repo.\nRead and follow:\n- https://governance-foundation.github.io/vibegov.io/docs/bootstrap-feedback-prompt`,
+    prompt: `Review the bootstrap/setup process you just executed for this repo.\nRead and follow:\n- https://vibegov.io/docs/bootstrap-feedback-prompt`,
     href: '/docs/bootstrap-feedback-prompt',
   },
 ];
