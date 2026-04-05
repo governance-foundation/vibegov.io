@@ -48,7 +48,7 @@ const promptCards: PromptCard[] = [
   {
     title: 'Bootstrap Update Prompt',
     description: 'Use this when a repo already has some bootstrap state.',
-    prompt: `Run VibeGov bootstrap in mode: update.\nRead and follow:\n- https://vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
+    prompt: `Run VibeGov bootstrap in mode: update.\n\nBefore doing anything else, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap-update',
   },
   {
