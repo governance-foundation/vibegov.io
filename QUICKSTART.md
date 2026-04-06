@@ -31,6 +31,7 @@ Start by reading:
 2. `gov-02-workflow.mdc`
 3. `gov-03` through `gov-07`
 4. `gov-08-exploratory-review.mdc`
+5. `gov-09-agent-continuity-bootstrap.mdc`
 
 ## 4) Define project intent
 Create or update project intent from:
@@ -72,6 +73,14 @@ Store and report:
 - decisions and confidence limits
 - blockers and next actions
 - exploratory completeness labels where applicable
+
+Also install a continuity model early:
+- session/thread continuity
+- recent/daily continuity
+- project continuity
+- durable global/operator continuity when that scope exists
+
+Agents should checkpoint decisions, blockers, and compaction-sensitive state during work, not only at the end.
 
 You are now in governed delivery mode.
 

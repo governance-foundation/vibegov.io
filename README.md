@@ -31,6 +31,7 @@ If you are new to VibeGov, use this order:
 3. `.governance/rules/gov-01-instructions.mdc`
 4. `.governance/rules/gov-02-workflow.mdc`
 5. `.governance/rules/gov-08-exploratory-review.mdc`
+6. `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`
 
 Then review the operational docs on the site:
 - `docs/vibegov-sdlc.md`
@@ -116,6 +117,7 @@ The proof model changes with the mode.
 - blockers become routed work, not hidden stalls
 - issues, specs, tests, and delivery updates stay connected
 - future changes become safer because context survives
+- continuity becomes a governed artifact instead of depending on chat memory
 
 ---
 

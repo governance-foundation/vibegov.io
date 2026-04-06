@@ -85,3 +85,4 @@ Canonical-source model:
 - [GOV-06: Issues](/docs/published/gov-06-issues)
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
+- [GOV-09: Agent Continuity Bootstrap](/docs/published/gov-09-agent-continuity-bootstrap)

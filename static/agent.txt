@@ -32,6 +32,12 @@ hard gate before product code:
   - INIT-TODO.md (create/update this early during bootstrap/adoption/remediation work)
   - pull request template
   - branch-protection checklist
+- install or report continuity bootstrap guidance before implementation:
+  - documented continuity layers
+  - repo-local continuity paths or equivalent scaffolding
+  - checkpoint triggers for instructions, decisions, blockers, phase changes, and compaction risk
+  - session-diary guidance for recurring threads/contexts
+  - promotion guidance between continuity layers
   - documented default issue-pickup flow
 - if the repo is GitHub-hosted, run GitHub preflight before project-board mutation:
   - git available
@@ -69,7 +75,7 @@ delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document
 
 active rules:
-- GOV-01 through GOV-08 (including exploratory review behavior in GOV-08)
+- GOV-01 through GOV-09 (including continuity bootstrap behavior in GOV-09)
 
 completion rule:
 - each completed task must include verification evidence and traceability update

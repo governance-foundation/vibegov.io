@@ -20,6 +20,7 @@ This repository uses VibeGov with `.governance/` as the governance source of tru
 6. `.governance/rules/gov-06-issues.mdc`
 7. `.governance/rules/gov-07-tasks.mdc`
 8. `.governance/rules/gov-08-exploratory-review.mdc`
+9. `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`
 
 ## Repo Defaults
 - Source of truth: `.governance/`
@@ -32,6 +33,12 @@ This repository uses VibeGov with `.governance/` as the governance source of tru
 - Record prerequisite checks and blockers there before continuing.
 - Do not treat partial bootstrap as complete.
 - Keep bootstrap run-history artifacts under `.governance/project/bootstrap-runs/`.
+
+## Continuity Discipline
+- Install and use a repo-local continuity model (for example session, daily, and project continuity layers).
+- Checkpoint important instructions, decisions, blockers, and phase changes during work, not only at the end.
+- Maintain concise session/thread diaries for recurring operating contexts.
+- Promote durable continuity upward deliberately instead of relying on transcript archaeology.
 ```
 
 ## Notes

@@ -14,6 +14,7 @@ const files = [
   { file: "gov-06-issues.mdc", out: "gov-06-issues.md", pos: 6 },
   { file: "gov-07-tasks.mdc", out: "gov-07-tasks.md", pos: 7 },
   { file: "gov-08-exploratory-review.mdc", out: "gov-08-exploratory-review.md", pos: 8 },
+  { file: "gov-09-agent-continuity-bootstrap.mdc", out: "gov-09-agent-continuity-bootstrap.md", pos: 9 },
 ];
 
 function stripFrontmatter(text) {

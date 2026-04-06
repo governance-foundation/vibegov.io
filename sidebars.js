@@ -31,6 +31,7 @@ const sidebars = {
     },
     'branch-protection-checklist',
     'vibegov-sdlc',
+    'agent-continuity-bootstrap',
     'contribute',
     {
       type: 'category',
@@ -56,6 +57,7 @@ const sidebars = {
         'published/gov-06-issues',
         'published/gov-07-tasks',
         'published/gov-08-exploratory-review',
+        'published/gov-09-agent-continuity-bootstrap',
       ],
     },
   ],

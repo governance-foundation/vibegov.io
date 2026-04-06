@@ -214,6 +214,7 @@ The goal is professional delivery behavior that survives speed.
 - `.governance/rules/gov-01-instructions.mdc`
 - `.governance/rules/gov-02-workflow.mdc`
 - `.governance/rules/gov-08-exploratory-review.mdc`
+- `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`
 - `docs/execution-modes.md`
 - `docs/checkpoint-reporting.md`
 - `docs/workflow-quality-rubric.md`

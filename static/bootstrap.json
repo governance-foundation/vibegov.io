@@ -59,7 +59,8 @@
     "gov-05-testing",
     "gov-06-issues",
     "gov-07-tasks",
-    "gov-08-exploratory-review"
+    "gov-08-exploratory-review",
+    "gov-09-agent-continuity-bootstrap"
   ],
   "hard_gate_before_product_code": true,
   "pre_coding_required_outputs": [
@@ -67,9 +68,23 @@
     ".governance/specs/SPEC-001-<feature>.md_or_bootstrap_setup_spec",
     "backlog_mapped_to_spec_sections",
     "AGENTS.md",
+    "continuity_structure_and_checkpoint_guidance",
     "git_workflow_artifacts",
     "documented_default_issue_pickup_flow"
   ],
+  "continuity_bootstrap": {
+    "required": true,
+    "layers": [
+      "session_or_thread_continuity",
+      "recent_or_daily_continuity",
+      "project_continuity",
+      "durable_global_or_operator_continuity_when_applicable"
+    ],
+    "mustDefineCheckpointTriggers": true,
+    "mustDocumentPromotionFlow": true,
+    "mustInstallSessionDiaryGuidance": true,
+    "preferConciseStructuredArtifactsOverTranscriptDumps": true
+  },
   "github_hosted_bootstrap": {
     "preflightChecks": [
       "git_available",

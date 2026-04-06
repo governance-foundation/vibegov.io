@@ -26,6 +26,7 @@ If no provider-native rules directory exists, do not invent one.
 - `.governance/rules/gov-06-issues.mdc`: issue management workflow and templates
 - `.governance/rules/gov-07-tasks.mdc`: task list usage and status management
 - `.governance/rules/gov-08-exploratory-review.mdc`: structured exploratory review, scenario classification, artifact completeness, backlog hydration
+- `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`: continuity layers, checkpoint triggers, session diaries, and bootstrap memory discipline
 
 ## Public operational guides (`docs/`)
 - `docs/intro.md`: public overview of VibeGov
@@ -38,7 +39,8 @@ If no provider-native rules directory exists, do not invent one.
 - `docs/checkpoint-reporting.md`: checkpoint structure, cadence, and examples
 - `docs/blocker-escalation.md`: blocker handling and routing model
 - `docs/workflow-quality-rubric.md`: how to judge whether a workflow is actually strong
-- `docs/published/gov-01-instructions.md` ... `docs/published/gov-08-exploratory-review.md`: published commentary versions of the canonical rules
+- `docs/agent-continuity-bootstrap.md`: continuity model, checkpoint triggers, and bootstrap expectations
+- `docs/published/gov-01-instructions.md` ... `docs/published/gov-09-agent-continuity-bootstrap.md`: published commentary versions of the canonical rules
 
 ## Key supporting repo docs
 - `OPENSPEC_RULES.md`: OpenSpec-first execution rules
@@ -68,6 +70,7 @@ If no provider-native rules directory exists, do not invent one.
 4. `.governance/rules/gov-01-instructions.mdc`
 5. `.governance/rules/gov-02-workflow.mdc`
 6. `.governance/rules/gov-08-exploratory-review.mdc`
+7. `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`
 
 ### I want to understand the operating model
 1. `GUIDE.md`
@@ -77,4 +80,4 @@ If no provider-native rules directory exists, do not invent one.
 5. `docs/workflow-quality-rubric.md`
 
 ### I want the full public rule set
-- `docs/published/gov-01-instructions.md` through `docs/published/gov-08-exploratory-review.md`
+- `docs/published/gov-01-instructions.md` through `docs/published/gov-09-agent-continuity-bootstrap.md`

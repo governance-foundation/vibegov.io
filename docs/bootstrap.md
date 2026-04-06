@@ -35,7 +35,7 @@ Do not fork or weaken the pass gate by mode.
 
 Before writing any product code (or before claiming bootstrap review is complete):
 1. Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/` as needed for the selected mode.
-2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-08`) is installed in `.governance/rules/`.
+2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-09`) is installed in `.governance/rules/`.
 3. Detect existing provider-native rules directories and mirror `.governance/rules/*.mdc` only when they already exist.
 4. Create or normalize `.governance/project/PROJECT_INTENT.md`.
 5. Create `SPEC-001` as either:
@@ -48,14 +48,20 @@ Before writing any product code (or before claiming bootstrap review is complete
    - `.github/pull_request_template.md`
    - `.github/branch-protection-checklist.md`
    - documented default issue-pickup flow
-8. Classify starting repo state before edits or review conclusions:
+8. Install or verify continuity bootstrap artifacts before implementation:
+   - documented continuity layers (session/thread, recent/daily, project, and durable global/operator continuity when that scope exists)
+   - repo-local continuity paths or equivalent scaffolding
+   - checkpoint trigger guidance for instructions, decisions, blockers, phase changes, and compaction risk
+   - session-diary guidance for recurring threads/contexts
+   - promotion guidance between continuity layers
+9. Classify starting repo state before edits or review conclusions:
    - current branch
    - clean/dirty working tree
    - untracked files
    - uncommitted changes
-9. Run with explicit commit policy: `required`, `allowed`, or `forbidden`.
-10. If repo is dirty, do exactly one: resolve first, stop blocked, or continue in explicit review mode.
-11. If GitHub-hosted, run preflight before board mutation:
+10. Run with explicit commit policy: `required`, `allowed`, or `forbidden`.
+11. If repo is dirty, do exactly one: resolve first, stop blocked, or continue in explicit review mode.
+12. If GitHub-hosted, run preflight before board mutation:
    - `git` available
    - `gh` available
    - GitHub auth
@@ -65,7 +71,7 @@ Before writing any product code (or before claiming bootstrap review is complete
    - branch-protection/admin capability when relevant
    - if any required capability is missing, record it in `INIT-TODO.md` with the exact remediation command or next action before proceeding
    - if branch-protection verification is unavailable only because of a known hosted-feature/private-repo limitation, record it as degraded verification with exact evidence and next action rather than pretending the repo normalization failed
-12. If GitHub automation is available, create/adopt/normalize one canonical board target:
+13. If GitHub automation is available, create/adopt/normalize one canonical board target:
    - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
    - normalize `Priority`: `P0`, `P1`, `P2`
@@ -74,15 +80,15 @@ Before writing any product code (or before claiming bootstrap review is complete
    - import/attach existing issues
    - if no issues exist, report board as intentionally empty
    - clean accidental duplicate empty boards and report cleanup
-13. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
-14. Write durable local output artifacts into `.governance/project/bootstrap-runs/`:
+14. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
+15. Write durable local output artifacts into `.governance/project/bootstrap-runs/`:
    - `<timestamp>-status.md`
    - `<timestamp>-analysis.md`
    - `<timestamp>-feedback.md`
    - optional `<timestamp>-blockers.md`
    - stable top-level files may exist only as latest-run summaries/pointers (`BOOTSTRAP_STATUS.md`, `BOOTSTRAP_ANALYSIS.md`, `BOOTSTRAP_FEEDBACK.md`, `BOOTSTRAP_BLOCKERS.md`)
-15. Reconcile generated docs against final live git/GitHub state before claiming completion.
-16. Distinguish final current state from historical evidence gathered earlier in the run.
+16. Reconcile generated docs against final live git/GitHub state before claiming completion.
+17. Distinguish final current state from historical evidence gathered earlier in the run.
 
 Mode-specific behavior:
 - `init`: create the missing bootstrap state required by the contract
@@ -96,13 +102,14 @@ Then stop before product-code implementation.
 
 Continue only if all are true:
 
-- `.governance/rules/` exists with `GOV-01` through `GOV-08`
+- `.governance/rules/` exists with `GOV-01` through `GOV-09`
 - `.governance/project/PROJECT_INTENT.md` exists
 - `.governance/specs/` has `SPEC-001` (feature spec or bootstrap-setup spec for vague repos)
 - backlog maps to spec scope
 - `AGENTS.md` exists and points to canonical governance sources
 - `INIT-TODO.md` exists for bootstrap/adoption/remediation work and records any missing prerequisite with exact remediation when relevant
 - strict Git workflow artifacts exist
+- continuity structure and continuity operating guidance exist
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
 - for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
