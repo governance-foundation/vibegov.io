@@ -38,6 +38,7 @@ const sidebars = {
       label: 'Operational Guides',
       items: [
         'execution-modes',
+        'harness-profile-minimal-claude',
         'exploratory-review-mode',
         'checkpoint-reporting',
         'blocker-escalation',
@@ -58,6 +59,10 @@ const sidebars = {
         'published/gov-07-tasks',
         'published/gov-08-exploratory-review',
         'published/gov-09-agent-continuity-bootstrap',
+        'published/gov-10-agent-state-closure-git-hygiene',
+        'published/gov-11-agent-legibility-in-repo-truth',
+        'published/gov-12-drift-control-garbage-collection',
+        'published/gov-13-review-loops-completion-discipline',
       ],
     },
   ],
