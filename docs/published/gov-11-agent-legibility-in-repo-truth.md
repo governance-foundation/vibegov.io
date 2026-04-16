@@ -1,0 +1,70 @@
+---
+sidebar_position: 11
+---
+
+# GOV 11 AGENT LEGIBILITY AND IN-REPO TRUTH
+
+- Source rule: [gov-11-agent-legibility-in-repo-truth.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-11-agent-legibility-in-repo-truth.mdc)
+- Download raw file: [gov-11-agent-legibility-in-repo-truth.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-11-agent-legibility-in-repo-truth.mdc)
+
+This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+
+## Governance: Agent Legibility and In-Repo Truth
+
+If durable operating knowledge is not discoverable in repository artifacts, it is not reliable system knowledge.
+
+Governed systems should optimize for agent legibility by making intent, constraints, invariants, and prior decisions discoverable in versioned repo truth.
+
+> Commentary: Makes discoverable repo truth the default memory model for repeatable agent execution.
+
+## Core Principle
+
+- `GOV-11-LEG-001` Governed repositories should treat repo-local, versioned artifacts as the primary operating memory for agents.
+- `GOV-11-LEG-002` Durable decisions, constraints, invariants, and execution norms should be promoted into repository truth instead of remaining trapped in chat, review comments, or private human memory.
+- `GOV-11-LEG-003` Agents should prefer discoverable repo truth over transcript archaeology or informal conversational recall when both exist.
+
+> Commentary: Establishes where trustworthy knowledge should live and what should take precedence.
+
+## Reliable Knowledge Rules
+
+- `GOV-11-LEG-004` If an instruction or decision is important enough to affect future work repeatedly, it should be encoded into a durable repo artifact.
+- `GOV-11-LEG-005` Acceptable durable artifacts include governance rules, architecture docs, project intent docs, feature specs, execution plans, reference docs, templates, tests, and lint/config enforcement.
+- `GOV-11-LEG-006` Knowledge that exists only in transient chat history should be treated as fragile until promoted.
+- `GOV-11-LEG-007` Agents should not assume hidden human context, unwritten team norms, or remembered chat context will still be available on the next run.
+
+> Commentary: Turns “we talked about this before” into explicit promotion duties.
+
+## Promotion Expectations
+
+- `GOV-11-LEG-008` Repeated human corrections should trigger promotion into durable repo truth when they describe reusable behavior rather than one-off preference.
+- `GOV-11-LEG-009` Durable promotion should happen at the narrowest authoritative layer that fits the fact, for example spec, project doc, governance rule, reference doc, test, or lint rule.
+- `GOV-11-LEG-010` When promotion does not happen immediately, the missing promotion path should be tracked explicitly rather than assumed away.
+
+> Commentary: Ensures feedback compounds into system memory instead of resetting each run.
+
+## Discoverability Expectations
+
+- `GOV-11-LEG-011` Important repository knowledge should be organized so a future agent can find it without reading the full repository or relying on external narration.
+- `GOV-11-LEG-012` Entry-point files should act as maps to deeper source-of-truth artifacts rather than attempting to be giant manuals.
+- `GOV-11-LEG-013` Knowledge architecture should support progressive disclosure: brief entry points, structured deeper docs, and stable canonical locations.
+- `GOV-11-LEG-014` When durable knowledge moves, links and references should be updated so discoverability does not silently degrade.
+
+> Commentary: Keeps knowledge legible at scale instead of collapsing into one stale instruction blob.
+
+## Enforcement Orientation
+
+- `GOV-11-LEG-015` When a repeated rule or invariant is mechanically enforceable, governed systems should prefer enforcing it through code, tests, or linting over relying only on prose reminders.
+- `GOV-11-LEG-016` Human review should be treated as a source of new invariants to encode, not only as a one-time correction channel.
+
+> Commentary: Pushes repeatable human taste from comments into enforceable controls.
+
+## Anti-Patterns
+
+Avoid these failure modes:
+- relying on chat logs as the main system of record
+- leaving architectural decisions only in pull request discussion
+- expecting future agents to infer unwritten norms from scattered examples
+- storing critical intent in one giant unstructured instruction file
+- keeping durable rules in people’s heads instead of repo artifacts
+
+> Commentary: Calls out the exact hidden-knowledge patterns that break agent reliability.
