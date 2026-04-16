@@ -93,6 +93,27 @@ Runtime-specific harnesses should be profile/adaptor layers, not the core govern
 
 That allows multiple runtimes to satisfy the same governance contract.
 
+## General approach across tools
+
+The practical rule is:
+- keep core controls stable,
+- adapt runtime behavior through profiles,
+- verify outcomes against the same evidence standards.
+
+That lets teams run Claude-oriented, Codex-oriented, or mixed setups without rewriting governance every time tooling changes.
+
+## Process hardening is the point
+
+Hardening means replacing "good intentions" with explicit controls:
+- state closure rules at work-unit boundaries,
+- durable in-repo truth instead of transcript dependence,
+- recurring drift cleanup,
+- explicit review-loop completion discipline,
+- and issue-visible evidence trails.
+
+This is where many harnesses stop too early.
+A loop is useful, but a hardened loop is dependable.
+
 ## "And beyond" means system-level reliability
 
 Beyond harness engineering means adding the controls needed for durable operations:
