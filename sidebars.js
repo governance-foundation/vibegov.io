@@ -39,6 +39,7 @@ const sidebars = {
       items: [
         'execution-modes',
         'harness-profile-minimal-claude',
+        'harness-profile-codex',
         'exploratory-review-mode',
         'checkpoint-reporting',
         'blocker-escalation',
