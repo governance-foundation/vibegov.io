@@ -6,6 +6,8 @@ sidebar_position: 4
 
 VibeGov is a governed SDLC for AI-assisted software delivery. It starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
 
+Its default posture is also simplicity-first: use the smallest coherent workflow that can do the job, keep ownership singular as long as possible, and add orchestration only when the need is real and visible.
+
 ## Lifecycle flow
 
 ```text
@@ -93,10 +95,25 @@ If you want the shortest possible version:
 
 > Bootstrap governance, turn requests into issue/spec-bound work, choose Development or Exploration explicitly, execute one bounded unit at a time, require evidence, report honestly, feed findings back into backlog/specs/traceability, and repeat.
 
+## Why simplicity-first matters too
+
+VibeGov is not trying to maximize visible complexity.
+
+It is trying to maximize governed throughput and honest control.
+
+That means the default progression should be:
+- workflow before agent
+- single owner before multi-agent
+- evaluation and verification before orchestration sprawl
+- proven need before permanent complexity
+
+When teams skip that progression, they often create systems that look advanced but are harder to supervise, harder to close, and easier to misunderstand.
+
 ## Related docs
 
 - [VibeGov](/docs/intro)
 - [Bootstrap](/docs/bootstrap)
 - [Execution Modes](/docs/execution-modes)
+- [Simplicity-First Guidance](/docs/simplicity-first)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [GOV 02 Workflow](/docs/published/gov-02-workflow)

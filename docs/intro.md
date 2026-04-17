@@ -65,6 +65,7 @@ Canonical-source model:
 
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
+- [Simplicity-First Guidance](/docs/simplicity-first)
 - [Execution Modes](/docs/execution-modes)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

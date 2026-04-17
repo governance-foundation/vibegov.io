@@ -39,6 +39,7 @@ const sidebars = {
       items: [
         'execution-modes',
         'quick-decisions',
+        'simplicity-first',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
         'exploratory-review-mode',
