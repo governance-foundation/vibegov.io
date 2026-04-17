@@ -64,6 +64,7 @@ Canonical-source model:
 ## Best next reads
 
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
+- [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Execution Modes](/docs/execution-modes)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
