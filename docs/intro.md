@@ -63,6 +63,7 @@ Canonical-source model:
 
 ## Best next reads
 
+- [Start Here](/docs/start-here)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Simplicity-First Guidance](/docs/simplicity-first)
