@@ -40,6 +40,7 @@ const sidebars = {
         'execution-modes',
         'quick-decisions',
         'simplicity-first',
+        'output-quality-and-anti-slop',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
         'exploratory-review-mode',

@@ -71,3 +71,5 @@ When changing governance/project docs:
 - note migration or compatibility impact
 
 > Commentary: Makes delivery communication actionable, concise, and consistent.
+
+For a more operator-facing practical guide on reducing generic AI writing habits, see [Output Quality and Anti-Slop Guidance](/docs/output-quality-and-anti-slop).
