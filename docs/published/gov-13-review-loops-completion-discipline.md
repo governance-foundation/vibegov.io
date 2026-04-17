@@ -46,18 +46,27 @@ Governed agent work should close the loop through review, evidence, and feedback
 
 > Commentary: Turns review comments into an execution loop and a governance learning loop.
 
+## Feedback Assimilation and Self-Improvement
+
+- `GOV-13-REV-010` When approved or edited feedback reveals a reusable lesson, the agent should compare the original draft with the approved or edited version and identify the concrete pattern of change.
+- `GOV-13-REV-011` That pattern should be translated into a short future rule, drafting rule, governance rule, or harness adjustment when the lesson is durable enough to matter again.
+- `GOV-13-REV-012` Material feedback lessons should be persisted to the relevant governed artifact before long posting phases, long continuation phases, or likely context-loss transitions when practical.
+- `GOV-13-REV-013` New learned rules should be checked against existing rules for contradiction, overlap, or duplication and then merged or reconciled instead of appended blindly.
+
+> Commentary: Makes review-driven learning explicit so approved edits improve the future system, not just the current artifact.
+
 ## Completion Semantics
 
-- `GOV-13-REV-010` Completion claims should distinguish clearly between implemented, verified, reviewed, and released states rather than collapsing them into one vague "done".
-- `GOV-13-REV-011` A governed work unit is not complete if review, evidence, or follow-up handling is still materially open.
-- `GOV-13-REV-012` If confidence is partial, the claimed state should say so explicitly, for example blocked, partial, scoped-complete, or awaiting review.
+- `GOV-13-REV-014` Completion claims should distinguish clearly between implemented, verified, reviewed, and released states rather than collapsing them into one vague "done".
+- `GOV-13-REV-015` A governed work unit is not complete if review, evidence, or follow-up handling is still materially open.
+- `GOV-13-REV-016` If confidence is partial, the claimed state should say so explicitly, for example blocked, partial, scoped-complete, or awaiting review.
 
 > Commentary: Improves handoff clarity and reduces false certainty in progress reporting.
 
 ## Escalation and Stop Conditions
 
-- `GOV-13-REV-013` When repeated review/fix loops stop producing clear progress, the agent should escalate the blocker, ambiguity, or missing capability instead of performing aimless churn.
-- `GOV-13-REV-014` When judgment is required beyond the current governance and evidence, the agent should make the decision boundary visible instead of silently guessing.
+- `GOV-13-REV-017` When repeated review/fix loops stop producing clear progress, the agent should escalate the blocker, ambiguity, or missing capability instead of performing aimless churn.
+- `GOV-13-REV-018` When judgment is required beyond the current governance and evidence, the agent should make the decision boundary visible instead of silently guessing.
 
 > Commentary: Prevents endless churn loops and forces explicit escalation boundaries.
 
@@ -67,6 +76,8 @@ Avoid these failure modes:
 - equating implementation with completion
 - claiming done immediately after the first passing check
 - leaving review comments or feedback themes unincorporated without explicit state change
+- treating approved edits as one-off fixes with no learning loop when they reveal a reusable pattern
+- adding duplicate learned rules without contradiction checking
 - using a summary as a substitute for a real review loop
 - moving on while material review debt remains hidden
 

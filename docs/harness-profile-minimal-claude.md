@@ -69,6 +69,7 @@ When adopting this profile in a target repo:
 
 8. **Promote repeated feedback into controls**
    - convert recurring review comments into docs/rules/tests/lints.
+   - when approved edits reveal a reusable lesson, run a feedback-assimilation step so the pattern is persisted before the next long continuation.
 
 ## Minimum quality bar for this profile
 
@@ -109,6 +110,7 @@ Prefer:
 
 - [Execution Modes](/docs/execution-modes)
 - [Simplicity-First Guidance](/docs/simplicity-first)
+- [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
 - [GOV 10 Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene)

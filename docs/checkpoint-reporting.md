@@ -125,8 +125,11 @@ Strong reporting creates:
 - faster review,
 - cleaner governance history.
 
+When checkpoint/reporting feedback is materially edited by a human or reviewer, that can also become input to the [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern) so the system learns from the change instead of only applying it once.
+
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
 - [Blocker Escalation](/docs/blocker-escalation)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)

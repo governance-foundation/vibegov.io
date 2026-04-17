@@ -42,6 +42,7 @@ const sidebars = {
         'quick-decisions',
         'simplicity-first',
         'output-quality-and-anti-slop',
+        'feedback-assimilation-pattern',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
         'exploratory-review-mode',
