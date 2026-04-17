@@ -6,6 +6,8 @@ sidebar_position: 3
 
 Use this to install VibeGov quickly with the hardened bootstrap contract.
 
+If you are not sure whether Quick Start is the right entry point yet, read [Start Here](/docs/start-here) first.
+
 Bootstrap now uses one canonical contract with explicit modes:
 - `init`
 - `update`

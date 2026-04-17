@@ -63,6 +63,7 @@ Canonical-source model:
 
 ## Best next reads
 
+- [Start Here](/docs/start-here)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [Execution Modes](/docs/execution-modes)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
