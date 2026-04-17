@@ -8,6 +8,8 @@ This profile integrates a minimal generator/evaluator harness pattern into VibeG
 
 Use this when you want autonomous multi-session delivery with explicit quality gates and durable state, while still keeping VibeGov portable.
 
+It should be adopted with a simplicity-first bias: do not add harness layers faster than the real failure modes justify.
+
 ## Why this is a profile, not the core runtime
 
 VibeGov governs behavior and evidence standards across tools.
@@ -93,9 +95,20 @@ Avoid these when implementing the profile:
 - Strengthen enforcement before adding orchestration complexity.
 - Reassess complexity each model/runtime upgrade and remove stale scaffolding.
 
+## Simplicity-first reminder
+
+This profile is a way to apply VibeGov controls, not a requirement to start with a heavy harness.
+
+Prefer:
+- the smallest coherent loop first,
+- one responsible worker before many,
+- stronger verification/evaluation before added coordination,
+- and removal of stale scaffolding when simpler paths become good enough.
+
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Simplicity-First Guidance](/docs/simplicity-first)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
 - [GOV 10 Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene)
