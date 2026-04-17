@@ -38,6 +38,7 @@ const sidebars = {
       label: 'Operational Guides',
       items: [
         'execution-modes',
+        'quick-decisions',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
         'exploratory-review-mode',
