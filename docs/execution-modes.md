@@ -56,6 +56,20 @@ What not to do:
 - collapse multiple unrelated findings into one vague change
 - claim done without proof
 
+## Evaluation lives inside a mode
+
+Evaluation is not a third peer mode either. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
+
+Typical evaluation work includes:
+- judging a bounded artifact against a rubric
+- running a skeptical reviewer pass over a scoped result
+- deciding whether a report, draft, or validator result satisfies an explicit contract
+
+What evaluation does **not** mean:
+- replacing Exploration when the goal is surface discovery
+- replacing Development evidence when behavior changed
+- creating a vague "reviewed" state with no criteria or verdict
+
 ## Release verification lives inside Development
 
 Release verification is not a third peer mode. It is part of Development's delivery path.
@@ -73,6 +87,7 @@ Typical release-verification work includes:
 Without explicit mode selection, teams produce confusing status:
 
 - exploratory notes presented as development proof
+- evaluation language used where no real criteria/verdict exists
 - development updates without enough evidence
 - release confidence claimed from isolated ticket checks instead of encoded delivery gates
 
@@ -107,6 +122,7 @@ That answer should determine the mode.
 
 - [Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Evaluation Pattern](/docs/evaluation-pattern)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)

@@ -54,6 +54,7 @@ When adopting this profile in a target repo:
 
 3. **Define evaluator contract**
    - ensure evaluator role is separate from generator role and has explicit verdict schema.
+   - keep the evaluator framed as a bounded control inside the current Development or Exploration flow, not as a separate peer operating mode.
 
 4. **Define state model**
    - set plan/task/progress artifacts and enforce append/update rules mechanically where possible.
@@ -109,6 +110,7 @@ Prefer:
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Evaluation Pattern](/docs/evaluation-pattern)
 - [Simplicity-First Guidance](/docs/simplicity-first)
 - [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

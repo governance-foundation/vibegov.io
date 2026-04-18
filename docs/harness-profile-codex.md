@@ -28,6 +28,7 @@ A Codex harness loop should explicitly provide:
 
 3. **Evaluator contract**
    - separate skeptical evaluation path with explicit pass/fail output.
+   - treat that evaluator path as a bounded control inside the active Development or Exploration flow, not as a third top-level mode.
 
 4. **State artifacts**
    - durable plan/progress/evidence artifacts in repo.
@@ -92,6 +93,7 @@ This Codex profile is an adapter layer that helps teams implement the same gover
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Evaluation Pattern](/docs/evaluation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Published GOV 02 Workflow](/docs/published/gov-02-workflow)
 - [Published GOV 05 Testing](/docs/published/gov-05-testing)
