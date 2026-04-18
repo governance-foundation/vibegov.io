@@ -70,6 +70,7 @@ Canonical-source model:
 - [Simplicity-First Guidance](/docs/simplicity-first)
 - [Output Quality and Anti-Slop Guidance](/docs/output-quality-and-anti-slop)
 - [Execution Modes](/docs/execution-modes)
+- [Evaluation Pattern](/docs/evaluation-pattern)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)

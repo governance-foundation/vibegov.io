@@ -137,6 +137,7 @@ If the answers are blurry, the mode is probably blurry too.
 
 - [Quick Decisions](/docs/quick-decisions)
 - [Execution Modes](/docs/execution-modes)
+- [Evaluation Pattern](/docs/evaluation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
