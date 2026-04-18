@@ -1,34 +1,17 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const crypto = require('crypto');
 const cp = require('child_process');
+const {
+  REPO_ROOT,
+  RELEASE_FILE_MAP,
+  RELEASE_TIMEZONE,
+  SOURCE_REPO,
+  getGitMetadata,
+  getReleaseVersion,
+} = require('./release-utils');
 
-const repoRoot = path.resolve(__dirname, '..');
-const buildDir = path.join(repoRoot, 'build');
-const artifactsRoot = path.join(repoRoot, 'artifacts', 'release');
-
-function run(command, args, options = {}) {
-  cp.execFileSync(command, args, {
-    cwd: repoRoot,
-    stdio: 'inherit',
-    shell: process.platform === 'win32',
-    ...options,
-  });
-}
-
-function capture(command, args, fallback = '') {
-  try {
-    return cp.execFileSync(command, args, {
-      cwd: repoRoot,
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'ignore'],
-      shell: process.platform === 'win32',
-    }).trim();
-  } catch {
-    return fallback;
-  }
-}
+const artifactsRoot = path.join(REPO_ROOT, 'artifacts', 'release');
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -40,82 +23,102 @@ function removeDir(dir) {
   }
 }
 
-function copyDir(src, dest) {
-  ensureDir(dest);
-  fs.cpSync(src, dest, { recursive: true, force: true });
-}
+function copyEntry(sourceRelative, targetRelative, bundleDir) {
+  const sourcePath = path.join(REPO_ROOT, sourceRelative);
+  const targetPath = path.join(bundleDir, targetRelative);
 
-function sha256File(filePath) {
-  const hash = crypto.createHash('sha256');
-  hash.update(fs.readFileSync(filePath));
-  return hash.digest('hex');
-}
-
-function walkFiles(dir, baseDir = dir) {
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
-  const files = [];
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      files.push(...walkFiles(fullPath, baseDir));
-    } else {
-      files.push({
-        fullPath,
-        relativePath: path.relative(baseDir, fullPath).replace(/\\/g, '/'),
-      });
-    }
+  if (!fs.existsSync(sourcePath)) {
+    throw new Error(`Missing release source: ${sourceRelative}`);
   }
-  return files;
+
+  ensureDir(path.dirname(targetPath));
+  fs.cpSync(sourcePath, targetPath, { recursive: true, force: true });
 }
 
-function checksumDirectory(dir) {
-  return walkFiles(dir).map(({ fullPath, relativePath }) => ({
-    path: relativePath,
-    sha256: sha256File(fullPath),
-    bytes: fs.statSync(fullPath).size,
-  }));
+function createZip(bundleDir, zipPath) {
+  if (fs.existsSync(zipPath)) {
+    fs.rmSync(zipPath, { force: true });
+  }
+
+  if (process.platform === 'win32') {
+    cp.execFileSync(
+      'pwsh',
+      [
+        '-NoLogo',
+        '-NoProfile',
+        '-Command',
+        `Compress-Archive -Path '${bundleDir.replace(/'/g, "''")}\\*' -DestinationPath '${zipPath.replace(/'/g, "''")}' -Force`,
+      ],
+      { cwd: REPO_ROOT, stdio: 'inherit' }
+    );
+    return;
+  }
+
+  const pythonZip = [
+    'import os, sys, zipfile',
+    'bundle_dir = sys.argv[1]',
+    'zip_path = sys.argv[2]',
+    'root_name = os.path.basename(bundle_dir)',
+    'with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:',
+    '    for current_root, _, files in os.walk(bundle_dir):',
+    '        for file_name in files:',
+    '            full_path = os.path.join(current_root, file_name)',
+    '            rel_path = os.path.relpath(full_path, os.path.dirname(bundle_dir))',
+    '            zf.write(full_path, rel_path)',
+  ].join('; ');
+
+  cp.execFileSync('python3', ['-c', pythonZip, bundleDir, zipPath], {
+    cwd: REPO_ROOT,
+    stdio: 'inherit',
+  });
 }
 
 function main() {
-  const commitSha = capture('git', ['rev-parse', 'HEAD'], 'unknown');
-  const shortSha = capture('git', ['rev-parse', '--short', 'HEAD'], 'unknown');
-  const branch = capture('git', ['rev-parse', '--abbrev-ref', 'HEAD'], 'unknown');
-  const timestamp = new Date().toISOString();
+  const version = getReleaseVersion();
+  const { commitSha, shortSha, branch } = getGitMetadata();
+  const createdAt = new Date().toISOString();
+  const releaseDir = path.join(artifactsRoot, version);
+  const bundleName = `vibegov-${version}`;
+  const bundleDir = path.join(releaseDir, bundleName);
+  const zipPath = path.join(releaseDir, `${bundleName}.zip`);
 
-  run('npm', ['run', 'build']);
+  removeDir(releaseDir);
+  ensureDir(bundleDir);
 
-  if (!fs.existsSync(buildDir)) {
-    throw new Error('Expected build/ directory was not produced by npm run build.');
+  for (const entry of RELEASE_FILE_MAP) {
+    copyEntry(entry.source, entry.target, bundleDir);
   }
 
-  const releaseDir = path.join(artifactsRoot, shortSha);
-  const artifactDir = path.join(releaseDir, 'artifact');
-  removeDir(releaseDir);
-  ensureDir(releaseDir);
-  copyDir(buildDir, artifactDir);
+  const versionFile = [
+    `version=${version}`,
+    `commit=${commitSha}`,
+    `shortSha=${shortSha}`,
+    `branch=${branch}`,
+    `sourceRepo=${SOURCE_REPO}`,
+    `createdAt=${createdAt}`,
+    `timeZone=${RELEASE_TIMEZONE}`,
+    '',
+  ].join('\n');
+  fs.writeFileSync(path.join(bundleDir, 'VERSION.txt'), versionFile);
 
-  const checksums = checksumDirectory(artifactDir);
-  const manifest = {
-    kind: 'vibegov-release-artifact',
-    createdAt: timestamp,
-    sourceRepo: 'governance-foundation/vibegov.io',
+  const releaseInfo = {
+    kind: 'vibegov-agent-release',
+    version,
+    bundleName,
+    bundleDir,
+    zipPath,
+    createdAt,
     branch,
     commitSha,
     shortSha,
-    buildCommand: 'npm run build',
-    artifactRoot: 'artifact',
-    artifactType: 'docusaurus-static-site',
-    artifactFileCount: checksums.length,
-    artifactFiles: checksums,
+    sourceRepo: SOURCE_REPO,
+    includedPaths: RELEASE_FILE_MAP.map((entry) => entry.target.replace(/\\/g, '/')).concat('VERSION.txt'),
   };
+  fs.writeFileSync(path.join(releaseDir, 'release-info.json'), JSON.stringify(releaseInfo, null, 2));
 
-  fs.writeFileSync(path.join(releaseDir, 'artifact-manifest.json'), JSON.stringify(manifest, null, 2));
-  fs.writeFileSync(
-    path.join(releaseDir, 'checksums.txt'),
-    checksums.map((item) => `${item.sha256}  artifact/${item.path}`).join('\n') + '\n'
-  );
+  createZip(bundleDir, zipPath);
 
-  console.log(`Release artifact created: ${releaseDir}`);
+  console.log(`Created VibeGov release bundle: ${zipPath}`);
 }
 
 main();

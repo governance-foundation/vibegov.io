@@ -1,0 +1,63 @@
+name: Create VibeGov GitHub release
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Optional git ref to release (defaults to the current default branch ref)
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.ref }}
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compute release version
+        id: version
+        run: echo "version=$(node scripts/print-release-version.js)" >> "$GITHUB_OUTPUT"
+
+      - name: Build release bundle
+        run: npm run release:build
+
+      - name: Create git tag if missing
+        env:
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          if git rev-parse "$VERSION" >/dev/null 2>&1; then
+            echo "Tag $VERSION already exists"
+          else
+            git tag "$VERSION"
+            git push origin "$VERSION"
+          fi
+
+      - name: Publish GitHub release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.version.outputs.version }}
+        run: |
+          ASSET="artifacts/release/$VERSION/vibegov-$VERSION.zip"
+          if gh release view "$VERSION" >/dev/null 2>&1; then
+            gh release upload "$VERSION" "$ASSET" --clobber
+          else
+            gh release create "$VERSION" "$ASSET" --title "$VERSION" --generate-notes
+          fi

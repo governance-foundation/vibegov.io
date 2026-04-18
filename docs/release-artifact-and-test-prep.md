@@ -4,67 +4,106 @@ sidebar_position: 10
 
 # Release Artifact and Test Prep
 
-VibeGov now uses two linked scripts for release validation:
+VibeGov now separates two concerns clearly:
 
-1. **build the release artifact**
-2. **prepare a governed test-run folder from that artifact**
+1. **GitHub Pages deployment** builds the docs site
+2. **GitHub release packaging** bundles the main VibeGov files agents actually use
 
-The goal is simple: the candidate you test locally should come from the same build path used by CI, and the test run should start with enough context to be trustworthy and repeatable.
+The release bundle is not the built static site.
+It is the agent-consumable VibeGov surface.
 
-## Scripts
+## Release packaging
 
-### Build release artifact
+### Build release bundle
 
 ```bash
 npm run release:build
 ```
 
-This script:
-- runs the site build
-- packages the built artifact under `artifacts/release/<short-sha>/artifact/`
-- generates `artifact-manifest.json`
-- generates `checksums.txt`
+This script creates a versioned release bundle using the canonical format:
 
-### Prepare test run
+```text
+yyyy.m.d-<shortsha>
+```
+
+Example:
+
+```text
+2026.4.19-55b47ec
+```
+
+### What the release bundle contains
+
+The bundle is intentionally narrow.
+It includes the main files agents/runtime actually use:
+
+- `agent.txt`
+- `bootstrap.json`
+- canonical `.governance/rules/`
+- canonical bootstrap/use docs:
+  - `docs/bootstrap.md`
+  - `docs/quickstart.md`
+  - `docs/bootstrap-update.md`
+  - `docs/bootstrap-review.md`
+  - `docs/bootstrap-feedback-prompt.md`
+  - `docs/github-project-bootstrap.md`
+  - `docs/init-todo.md`
+- `VERSION.txt`
+
+### Release output
+
+```text
+artifacts/
+  release/
+    <version>/
+      vibegov-<version>/
+        agent.txt
+        bootstrap.json
+        .governance/
+          rules/
+        docs/
+          bootstrap.md
+          quickstart.md
+          bootstrap-update.md
+          bootstrap-review.md
+          bootstrap-feedback-prompt.md
+          github-project-bootstrap.md
+          init-todo.md
+        VERSION.txt
+      vibegov-<version>.zip
+      release-info.json
+```
+
+Notes:
+- `vibegov-<version>.zip` is the GitHub release asset.
+- `release-info.json` is local build metadata used by automation.
+- the Docusaurus `build/` output is for Pages deployment, not the GitHub release asset.
+
+## Test prep
+
+### Prepare a release test run
 
 ```bash
 npm run test:prepare
 ```
 
 This script:
-- locates the latest release artifact (or accepts an explicit one)
+- locates the latest packaged release bundle
 - creates a timestamp + SHA folder under `artifacts/test-runs/`
-- copies the release artifact into that folder
-- copies governance references and checklists
-- creates result/log/screenshot placeholders for the run
+- copies the release folder and zip asset into the test run
+- creates execution/evidence scaffolding for validating the release contents
 
-## Output structure
-
-### Release artifact output
-
-```text
-artifacts/
-  release/
-    <short-sha>/
-      artifact/
-      artifact-manifest.json
-      checksums.txt
-```
-
-### Test run output
+### Test-run output
 
 ```text
 artifacts/
   test-runs/
     <timestamp>_<short-sha>/
-      artifact/
-      governance/
-        artifact-manifest.json
-        checksums.txt
-        specs/
-        test-execution-expectations.md
-        quality-scaffolding-and-completeness-rubric.md
-        change-summary.md
+      release/
+        vibegov-<version>/
+        vibegov-<version>.zip
+        release-info.json
+      change-summary.md
       evidence/
         prior-validation/
           validation-summary.md
@@ -76,31 +115,17 @@ artifacts/
       run-manifest.json
 ```
 
-## What gets copied into the test folder
-
-The prepared folder copies:
-- the built release artifact
-- artifact identity metadata
-- checksums
-- `.governance/specs/`
-- testing expectations reference
-- quality/completeness rubric reference
-- a test execution checklist template
-- prior validation summary placeholder
-- empty result/log/screenshot folders
-
-This gives the test runner four immediate answers:
-1. what exact candidate is being tested
-2. what it is supposed to do
-3. what governance/testing context applies
-4. where to record the test run
-
 ## CI alignment
 
-The GitHub Pages workflow should call the same release-artifact build script rather than duplicating build logic. That keeps local and CI candidates aligned.
+- **Pages deploy** should run `npm run build` and publish the built docs site.
+- **GitHub release** should run `npm run release:build` and upload the versioned VibeGov bundle zip.
+
+Do not treat those as the same artifact boundary.
 
 ## Related docs
 
 - [Bootstrap](/docs/bootstrap)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
 - [Test Execution Expectations](/docs/test-execution-expectations)
 - [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)

@@ -1,24 +1,10 @@
 #!/usr/bin/env node
 const fs = require('fs');
 const path = require('path');
-const cp = require('child_process');
+const { REPO_ROOT } = require('./release-utils');
 
-const repoRoot = path.resolve(__dirname, '..');
-const releaseRoot = path.join(repoRoot, 'artifacts', 'release');
-const testRoot = path.join(repoRoot, 'artifacts', 'test-runs');
-
-function capture(command, args, fallback = '') {
-  try {
-    return cp.execFileSync(command, args, {
-      cwd: repoRoot,
-      encoding: 'utf8',
-      stdio: ['ignore', 'pipe', 'ignore'],
-      shell: process.platform === 'win32',
-    }).trim();
-  } catch {
-    return fallback;
-  }
-}
+const releaseRoot = path.join(REPO_ROOT, 'artifacts', 'release');
+const testRoot = path.join(REPO_ROOT, 'artifacts', 'test-runs');
 
 function ensureDir(dir) {
   fs.mkdirSync(dir, { recursive: true });
@@ -51,60 +37,55 @@ function latestReleaseDir() {
 }
 
 function main() {
-  const releaseDir = process.argv[2] ? path.resolve(repoRoot, process.argv[2]) : latestReleaseDir();
-  const manifestPath = path.join(releaseDir, 'artifact-manifest.json');
+  const releaseDir = process.argv[2] ? path.resolve(REPO_ROOT, process.argv[2]) : latestReleaseDir();
+  const releaseInfoPath = path.join(releaseDir, 'release-info.json');
 
-  if (!fs.existsSync(manifestPath)) {
-    throw new Error(`Missing artifact-manifest.json in release dir: ${releaseDir}`);
+  if (!fs.existsSync(releaseInfoPath)) {
+    throw new Error(`Missing release-info.json in release dir: ${releaseDir}`);
   }
 
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  const releaseInfo = JSON.parse(fs.readFileSync(releaseInfoPath, 'utf8'));
   const ts = new Date().toISOString().replace(/[:]/g, '-').replace(/\..+$/, '');
-  const runDirName = `${ts}_${manifest.shortSha}`;
+  const runDirName = `${ts}_${releaseInfo.shortSha}`;
   const runDir = path.join(testRoot, runDirName);
 
-  ensureDir(runDir);
-  ensureDir(path.join(runDir, 'artifact'));
-  ensureDir(path.join(runDir, 'governance', 'specs'));
+  ensureDir(path.join(runDir, 'release'));
   ensureDir(path.join(runDir, 'evidence', 'prior-validation'));
   ensureDir(path.join(runDir, 'execution', 'results'));
   ensureDir(path.join(runDir, 'execution', 'logs'));
   ensureDir(path.join(runDir, 'execution', 'screenshots'));
 
-  copyIfExists(path.join(releaseDir, 'artifact'), path.join(runDir, 'artifact'));
-  copyIfExists(path.join(releaseDir, 'artifact-manifest.json'), path.join(runDir, 'governance', 'artifact-manifest.json'));
-  copyIfExists(path.join(releaseDir, 'checksums.txt'), path.join(runDir, 'governance', 'checksums.txt'));
-  copyIfExists(path.join(repoRoot, '.governance', 'specs'), path.join(runDir, 'governance', 'specs'));
-  copyIfExists(path.join(repoRoot, 'docs', 'test-execution-expectations.md'), path.join(runDir, 'governance', 'test-execution-expectations.md'));
-  copyIfExists(path.join(repoRoot, 'docs', 'quality-scaffolding-and-completeness-rubric.md'), path.join(runDir, 'governance', 'quality-scaffolding-and-completeness-rubric.md'));
+  copyIfExists(path.join(releaseDir, releaseInfo.bundleName), path.join(runDir, 'release', releaseInfo.bundleName));
+  copyIfExists(releaseInfo.zipPath, path.join(runDir, 'release', path.basename(releaseInfo.zipPath)));
+  copyIfExists(releaseInfoPath, path.join(runDir, 'release', 'release-info.json'));
 
-  const issueSummary = [
-    '# Test Run Summary',
+  const changeSummary = [
+    '# Release Test Run Summary',
     '',
-    `- Source repo: governance-foundation/vibegov.io`,
-    `- Commit SHA: ${manifest.commitSha}`,
-    `- Short SHA: ${manifest.shortSha}`,
-    `- Branch: ${manifest.branch}`,
-    `- Release artifact source: ${releaseDir}`,
+    `- Source repo: ${releaseInfo.sourceRepo}`,
+    `- Version: ${releaseInfo.version}`,
+    `- Commit SHA: ${releaseInfo.commitSha}`,
+    `- Short SHA: ${releaseInfo.shortSha}`,
+    `- Branch: ${releaseInfo.branch}`,
+    `- Release bundle source: ${releaseInfo.zipPath}`,
     '',
     '## Testing focus',
-    '- Verify the candidate against the intended change set and relevant governance/spec expectations.',
-    '- Record verified, invalidated, blocked, deferred, and not-applicable results explicitly.',
-    '- Convert missing completeness into tracked follow-up work instead of leaving it invisible.',
+    '- Verify that the packaged agent-consumable files are present and readable.',
+    '- Verify that the release bundle matches the intended VibeGov bootstrap/governance surface.',
+    '- Record any missing, stale, or contradictory release contents as tracked follow-up work.',
     '',
   ].join('\n');
 
   const checklist = [
-    '# Test Execution Checklist',
+    '# Release Test Execution Checklist',
     '',
-    '- Claim under test:',
-    '- Requirement / acceptance criterion:',
-    '- Scenario classes exercised:',
-    '- Scenario classes blocked / deferred / not applicable:',
-    '- Evidence type:',
+    '- Version under test:',
+    '- Expected release files present:',
+    '- bootstrap entrypoints readable:',
+    '- governance rules included:',
+    '- bootstrap docs included:',
+    '- Missing or stale files:',
     '- Result classification (Verified / Invalidated / Blocked / Deferred / Not applicable):',
-    '- Proof strength (direct / partial / surrogate-only):',
-    '- Persistence / post-action checks:',
     '- Residual risks / unverified items:',
     '- Follow-up artifact(s) created:',
     '',
@@ -113,21 +94,21 @@ function main() {
   const validationSummary = [
     '# Prior Validation Summary',
     '',
-    `- Build command: ${manifest.buildCommand}`,
-    '- Copy any existing test/build/bootstrap validation evidence into this folder if you want it bundled with the run.',
+    '- Copy any existing validation/build/release evidence into this folder if you want it bundled with the run.',
     '',
   ].join('\n');
 
-  fs.writeFileSync(path.join(runDir, 'governance', 'change-summary.md'), issueSummary);
+  fs.writeFileSync(path.join(runDir, 'change-summary.md'), changeSummary);
   fs.writeFileSync(path.join(runDir, 'evidence', 'prior-validation', 'validation-summary.md'), validationSummary);
   fs.writeFileSync(path.join(runDir, 'execution', 'test-execution-checklist.md'), checklist);
 
   const metadata = {
-    kind: 'vibegov-test-run',
+    kind: 'vibegov-release-test-run',
     createdAt: new Date().toISOString(),
-    commitSha: manifest.commitSha,
-    shortSha: manifest.shortSha,
-    branch: manifest.branch,
+    version: releaseInfo.version,
+    commitSha: releaseInfo.commitSha,
+    shortSha: releaseInfo.shortSha,
+    branch: releaseInfo.branch,
     releaseDir,
     runDir,
   };
