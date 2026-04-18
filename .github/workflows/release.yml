@@ -50,14 +50,15 @@ jobs:
             git push origin "$VERSION"
           fi
 
-      - name: Publish GitHub release asset
+      - name: Publish GitHub release assets
         env:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ steps.version.outputs.version }}
         run: |
-          ASSET="artifacts/release/$VERSION/vibegov-$VERSION.zip"
+          ZIP_ASSET="artifacts/release/$VERSION/vibegov-$VERSION.zip"
+          FLAT_DIR="artifacts/release/$VERSION/flat"
           if gh release view "$VERSION" >/dev/null 2>&1; then
-            gh release upload "$VERSION" "$ASSET" --clobber
+            gh release upload "$VERSION" "$ZIP_ASSET" "$FLAT_DIR"/* --clobber
           else
-            gh release create "$VERSION" "$ASSET" --title "$VERSION" --generate-notes
+            gh release create "$VERSION" "$ZIP_ASSET" "$FLAT_DIR"/* --title "$VERSION" --generate-notes
           fi

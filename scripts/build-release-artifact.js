@@ -23,9 +23,9 @@ function removeDir(dir) {
   }
 }
 
-function copyEntry(sourceRelative, targetRelative, bundleDir) {
+function copyEntry(sourceRelative, targetRelative, destinationRoot) {
   const sourcePath = path.join(REPO_ROOT, sourceRelative);
-  const targetPath = path.join(bundleDir, targetRelative);
+  const targetPath = path.join(destinationRoot, targetRelative);
 
   if (!fs.existsSync(sourcePath)) {
     throw new Error(`Missing release source: ${sourceRelative}`);
@@ -58,7 +58,6 @@ function createZip(bundleDir, zipPath) {
     'import os, sys, zipfile',
     'bundle_dir = sys.argv[1]',
     'zip_path = sys.argv[2]',
-    'root_name = os.path.basename(bundle_dir)',
     'with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:',
     '    for current_root, _, files in os.walk(bundle_dir):',
     '        for file_name in files:',
@@ -73,6 +72,59 @@ function createZip(bundleDir, zipPath) {
   });
 }
 
+function walkFiles(dir, baseDir = dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files = [];
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...walkFiles(fullPath, baseDir));
+    } else {
+      files.push({
+        fullPath,
+        relativePath: path.relative(baseDir, fullPath).replace(/\\/g, '/'),
+      });
+    }
+  }
+  return files;
+}
+
+function flattenAssetName(targetPath, fileRelativePath = '') {
+  const normalizedTarget = targetPath.replace(/\\/g, '/');
+  if (normalizedTarget === 'agent.txt' || normalizedTarget === 'bootstrap.json') return normalizedTarget;
+  if (normalizedTarget === '.governance/rules') return path.posix.basename(fileRelativePath);
+  if (normalizedTarget.startsWith('docs/')) return path.posix.basename(normalizedTarget);
+  return normalizedTarget.replace(/[\\/]/g, '-');
+}
+
+function writeFlatAssets(flatDir) {
+  const seen = new Set();
+
+  for (const entry of RELEASE_FILE_MAP) {
+    const sourcePath = path.join(REPO_ROOT, entry.source);
+    const stat = fs.statSync(sourcePath);
+
+    if (stat.isDirectory()) {
+      for (const file of walkFiles(sourcePath)) {
+        const flatName = flattenAssetName(entry.target, file.relativePath);
+        if (seen.has(flatName)) {
+          throw new Error(`Duplicate flat asset name generated: ${flatName}`);
+        }
+        seen.add(flatName);
+        fs.copyFileSync(file.fullPath, path.join(flatDir, flatName));
+      }
+      continue;
+    }
+
+    const flatName = flattenAssetName(entry.target);
+    if (seen.has(flatName)) {
+      throw new Error(`Duplicate flat asset name generated: ${flatName}`);
+    }
+    seen.add(flatName);
+    fs.copyFileSync(sourcePath, path.join(flatDir, flatName));
+  }
+}
+
 function main() {
   const version = getReleaseVersion();
   const { commitSha, shortSha, branch } = getGitMetadata();
@@ -80,14 +132,18 @@ function main() {
   const releaseDir = path.join(artifactsRoot, version);
   const bundleName = `vibegov-${version}`;
   const bundleDir = path.join(releaseDir, bundleName);
+  const flatDir = path.join(releaseDir, 'flat');
   const zipPath = path.join(releaseDir, `${bundleName}.zip`);
 
   removeDir(releaseDir);
   ensureDir(bundleDir);
+  ensureDir(flatDir);
 
   for (const entry of RELEASE_FILE_MAP) {
     copyEntry(entry.source, entry.target, bundleDir);
   }
+
+  writeFlatAssets(flatDir);
 
   const versionFile = [
     `version=${version}`,
@@ -99,13 +155,18 @@ function main() {
     `timeZone=${RELEASE_TIMEZONE}`,
     '',
   ].join('\n');
+
   fs.writeFileSync(path.join(bundleDir, 'VERSION.txt'), versionFile);
+  fs.writeFileSync(path.join(flatDir, 'VERSION.txt'), versionFile);
+
+  const flatAssets = fs.readdirSync(flatDir).sort();
 
   const releaseInfo = {
     kind: 'vibegov-agent-release',
     version,
     bundleName,
     bundleDir,
+    flatDir,
     zipPath,
     createdAt,
     branch,
@@ -113,12 +174,14 @@ function main() {
     shortSha,
     sourceRepo: SOURCE_REPO,
     includedPaths: RELEASE_FILE_MAP.map((entry) => entry.target.replace(/\\/g, '/')).concat('VERSION.txt'),
+    flatAssets,
   };
   fs.writeFileSync(path.join(releaseDir, 'release-info.json'), JSON.stringify(releaseInfo, null, 2));
 
   createZip(bundleDir, zipPath);
 
   console.log(`Created VibeGov release bundle: ${zipPath}`);
+  console.log(`Prepared flat release assets: ${flatDir}`);
 }
 
 main();
