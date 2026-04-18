@@ -7,7 +7,7 @@ sidebar_position: 10
 VibeGov now separates two concerns clearly:
 
 1. **GitHub Pages deployment** builds the docs site
-2. **GitHub release packaging** bundles the main VibeGov files agents actually use
+2. **GitHub release packaging** prepares the main VibeGov files agents actually use
 
 The release bundle is not the built static site.
 It is the agent-consumable VibeGov surface.
@@ -20,7 +20,7 @@ It is the agent-consumable VibeGov surface.
 npm run release:build
 ```
 
-This script creates a versioned release bundle using the canonical format:
+This script creates a versioned release package using the canonical format:
 
 ```text
 yyyy.m.d-<shortsha>
@@ -32,9 +32,9 @@ Example:
 2026.4.19-55b47ec
 ```
 
-### What the release bundle contains
+### What the release package contains
 
-The bundle is intentionally narrow.
+The package is intentionally narrow.
 It includes the main files agents/runtime actually use:
 
 - `agent.txt`
@@ -70,14 +70,39 @@ artifacts/
           github-project-bootstrap.md
           init-todo.md
         VERSION.txt
+      flat/
+        agent.txt
+        bootstrap.json
+        gov-01-instructions.mdc
+        ...
+        gov-13-review-loops-completion-discipline.mdc
+        bootstrap.md
+        quickstart.md
+        bootstrap-update.md
+        bootstrap-review.md
+        bootstrap-feedback-prompt.md
+        github-project-bootstrap.md
+        init-todo.md
+        VERSION.txt
       vibegov-<version>.zip
       release-info.json
 ```
 
 Notes:
-- `vibegov-<version>.zip` is the GitHub release asset.
+- `vibegov-<version>.zip` remains available as a convenience bundle.
+- `flat/` contains the upload-ready individual GitHub release assets.
 - `release-info.json` is local build metadata used by automation.
-- the Docusaurus `build/` output is for Pages deployment, not the GitHub release asset.
+- the Docusaurus `build/` output is for Pages deployment, not the GitHub release assets.
+
+## GitHub release behavior
+
+The release workflow now uploads **both**:
+- the zip bundle
+- the flat individual files as separate release assets
+
+That means agents can either:
+- fetch the exact files directly from the release, or
+- download the zip bundle if that is easier for transport.
 
 ## Test prep
 
@@ -118,7 +143,7 @@ artifacts/
 ## CI alignment
 
 - **Pages deploy** should run `npm run build` and publish the built docs site.
-- **GitHub release** should run `npm run release:build` and upload the versioned VibeGov bundle zip.
+- **GitHub release** should run `npm run release:build` and upload both the versioned zip and flat VibeGov files.
 
 Do not treat those as the same artifact boundary.
 
