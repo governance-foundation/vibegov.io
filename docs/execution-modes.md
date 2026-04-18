@@ -105,6 +105,8 @@ That answer should determine the mode.
 
 ## Related docs
 
+- [Quick Decisions](/docs/quick-decisions)
+- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)
