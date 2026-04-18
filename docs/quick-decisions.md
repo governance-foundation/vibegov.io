@@ -90,7 +90,22 @@ You still need:
 | **Release verification** | build/version reviewed, integrated results, known blockers/risks, go/no-go style decision |
 | **Blocker checkpoint** | exact blocker, attempted actions, confidence limits, blocker artifact, redirected next work |
 
-## 8. Should this become a rule, or just a note?
+## 8. Before I delete, archive, or clean up, what should I do?
+
+| Situation | Default choice |
+| --- | --- |
+| the state is meaningful and may need to be understood later | **preserve it first in a traceable form** |
+| it is disposable generated noise or reproducible cache | **clean it up directly** |
+| it contains secrets or unsafe material | **use a separate safe-handling path, do not casually commit it** |
+| you want old behavior back | **bring it back in a new traceable change** |
+| you are about to archive/retire a work branch | **land the intended result first, or preserve the retained state with explicit follow-up** |
+
+Fast rule:
+- preserve before destructive change when the state matters
+- cleanup should not erase rationale
+- archive after safe landing, not instead of it
+
+## 9. Should this become a rule, or just a note?
 
 | If the learning is... | Put it in... |
 | --- | --- |
@@ -102,7 +117,7 @@ Fast rule:
 - not every lesson deserves a rule
 - repeated durable failures usually do
 
-## 9. What are the most common failure modes?
+## 10. What are the most common failure modes?
 
 - exploratory findings with no artifacts
 - development claims with no direct proof
@@ -110,6 +125,8 @@ Fast rule:
 - delegating without supervision or closure
 - blocker claims with no blocker artifact
 - treating chat memory as durable state
+- deleting meaningful state before preserving it
+- archiving a branch as a substitute for landing traceable work
 - promoting every tiny preference into bloated governance
 
 ## Start here if you are unsure

@@ -77,6 +77,7 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-004C` Hotfix branches must be created from `main` only.
 - `GOV-02-GIT-004D` Any stacked-branch exception requires explicit human approval, a bounded reason, and an explicit reconciliation plan.
 - `GOV-02-GIT-005` Every agent-authored non-hotfix change must use a pull request into `develop` that links the governing issue/spec and records verification evidence.
+- `GOV-02-GIT-005A` Branch cleanup, retirement, deletion, or archival must not substitute for landing the intended result. A governed work branch should only be retired once the desired preserved outcome is safely landed through the repository's governed flow, or the retained state has been deliberately preserved elsewhere with an explicit follow-up path.
 - `GOV-02-GIT-006` Promotion from `develop` to `main` must be explicit and reviewable. Release or promotion pull requests should state what is being promoted and what release-readiness evidence supports the move.
 - `GOV-02-GIT-007` Hotfix work must branch from `main`, merge back to `main` through an explicit hotfix pull request, and then be back-merged or otherwise reconciled into `develop` immediately so the branches do not drift.
 - `GOV-02-GIT-008` Repositories adopting VibeGov should document branch protection expectations for `main` and `develop`, including required pull requests, review gates, status checks, and restricted direct pushes.

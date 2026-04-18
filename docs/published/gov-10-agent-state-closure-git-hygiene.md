@@ -56,11 +56,23 @@ Governed repositories should treat repository state as a control surface for age
 
 > Commentary: Keeps git history meaningful while preventing recurring local noise from leaking across work units.
 
+## Preserve Before Destructive Change
+
+- `GOV-10-GIT-016` Meaningful state includes kept code, docs, specs, notes, captured investigation output, and generated artifacts that are intentionally being preserved as evidence or deliverable state.
+- `GOV-10-GIT-017` Disposable cache, build output, or other reproducible noise is not meaningful state unless the current work unit explicitly depends on it as evidence or deliverable content.
+- `GOV-10-GIT-018` Before deleting, overwriting, archiving, or otherwise destructively changing meaningful state, the agent should preserve that state in a traceable form when safe to do so, normally through a commit or another durable governed artifact.
+- `GOV-10-GIT-019` If material is secret, unsafe, or otherwise inappropriate to preserve in normal history, the agent should use a separate safe-handling path and record the exception explicitly instead of silently discarding context.
+- `GOV-10-GIT-020` Cleanup, rollback, and archival actions must not silently erase why a change existed, what was learned, or what state is being retired.
+- `GOV-10-GIT-021` If old behavior or prior content needs to return, it should come back through a new traceable change rather than hidden history surgery or convenience-driven destructive rollback.
+- `GOV-10-GIT-022` This preservation rule does not require noisy micro-commits for trivial or disposable edits, but it does require a deliberate preservation boundary before meaningful destructive change.
+
+> Commentary: Makes destructive actions reviewable and recoverable by requiring preservation before erasure, while keeping safe exceptions and disposable noise separate.
+
 ## Completion and Handoff Rules
 
-- `GOV-10-GIT-016` Completion claims are invalid if the repository state that remains is unexplained.
-- `GOV-10-GIT-017` A blocked or deferred work unit must still leave the repository in a classified state, even when implementation is incomplete.
-- `GOV-10-GIT-018` Handoff artifacts should state any intentionally deferred files or branches explicitly rather than relying on a future reader to infer them from git status.
+- `GOV-10-GIT-023` Completion claims are invalid if the repository state that remains is unexplained.
+- `GOV-10-GIT-024` A blocked or deferred work unit must still leave the repository in a classified state, even when implementation is incomplete.
+- `GOV-10-GIT-025` Handoff artifacts should state any intentionally deferred files or branches explicitly rather than relying on a future reader to infer them from git status.
 
 > Commentary: Extends state-closure discipline beyond successful completion into blockers, deferrals, and handoffs.
 
@@ -68,9 +80,11 @@ Governed repositories should treat repository state as a control surface for age
 
 Avoid these failure modes:
 - letting partial experiments silently roll into later commits
+- deleting or overwriting meaningful state before it has a traceable preservation boundary
 - treating untracked temp files as harmless background clutter
 - leaving generated noise unignored across repeated runs
 - carrying mixed unrelated diffs across work units
 - using dirty state as a substitute for real tracking
+- using cleanup, archival, or rollback to erase rationale instead of preserving it
 
 > Commentary: Names the residue patterns this rule is designed to eliminate.
