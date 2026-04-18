@@ -114,6 +114,7 @@ When teams skip that progression, they often create systems that look advanced b
 - [VibeGov](/docs/intro)
 - [Bootstrap](/docs/bootstrap)
 - [Execution Modes](/docs/execution-modes)
+- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Simplicity-First Guidance](/docs/simplicity-first)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [GOV 02 Workflow](/docs/published/gov-02-workflow)

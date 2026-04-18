@@ -40,6 +40,7 @@ const sidebars = {
       items: [
         'execution-modes',
         'quick-decisions',
+        'mode-selection-and-evidence-closing',
         'simplicity-first',
         'output-quality-and-anti-slop',
         'feedback-assimilation-pattern',

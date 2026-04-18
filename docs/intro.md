@@ -66,6 +66,7 @@ Canonical-source model:
 - [Start Here](/docs/start-here)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
+- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Simplicity-First Guidance](/docs/simplicity-first)
 - [Output Quality and Anti-Slop Guidance](/docs/output-quality-and-anti-slop)
 - [Execution Modes](/docs/execution-modes)
