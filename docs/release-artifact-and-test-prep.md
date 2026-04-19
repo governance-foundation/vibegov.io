@@ -96,7 +96,9 @@ Notes:
 
 ## GitHub release behavior
 
-The release workflow now uploads **both**:
+The GitHub release workflow should run on **every `main` push** and may also be run manually when needed.
+
+The release workflow uploads **both**:
 - the zip bundle
 - the flat individual files as separate release assets
 
