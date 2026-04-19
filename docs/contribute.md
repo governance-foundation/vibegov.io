@@ -38,8 +38,8 @@ Use the [Branch Protection Checklist](/docs/branch-protection-checklist) when se
 If you have just run a fresh bootstrap or an update/remediation pass, use the [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt).
 
 Expected feedback flow:
-1. write scrubbed feedback to `.governance/project/bootstrap-runs/<timestamp>-feedback.md`
-2. optionally update `.governance/project/BOOTSTRAP_FEEDBACK.md` as the latest summary/pointer
+1. write scrubbed feedback to `.governance/project/bootstrap/history/<timestamp>/feedback.md`
+2. refresh `.governance/project/bootstrap/FEEDBACK.md` as the current reporting surface
 3. then raise a GitHub issue with the scrubbed result (or auto-file when requested)
 
 Before posting, remove or obfuscate PII, secrets, tokens, emails, usernames, IDs, URLs, and environment-specific sensitive details.

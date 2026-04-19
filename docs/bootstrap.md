@@ -81,14 +81,22 @@ Before writing any product code (or before claiming bootstrap review is complete
    - if no issues exist, report board as intentionally empty
    - clean accidental duplicate empty boards and report cleanup
 14. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
-15. Write durable local output artifacts into `.governance/project/bootstrap-runs/`:
-   - `<timestamp>-status.md`
-   - `<timestamp>-analysis.md`
-   - `<timestamp>-feedback.md`
-   - optional `<timestamp>-blockers.md`
-   - stable top-level files may exist only as latest-run summaries/pointers (`BOOTSTRAP_STATUS.md`, `BOOTSTRAP_ANALYSIS.md`, `BOOTSTRAP_FEEDBACK.md`, `BOOTSTRAP_BLOCKERS.md`)
+15. Write durable local bootstrap reporting artifacts using a two-surface layout:
+   - current reporting surface: `.governance/project/bootstrap/`
+     - `STATUS.md`
+     - `ANALYSIS.md`
+     - `FEEDBACK.md`
+     - optional `BLOCKERS.md`
+   - historical run bundles: `.governance/project/bootstrap/history/<timestamp>/`
+     - `status.md`
+     - `analysis.md`
+     - `feedback.md`
+     - optional `blockers.md`
+   - current files should act as the latest current reporting surface
+   - history folders should preserve the per-run bundle as historical evidence
 16. Reconcile generated docs against final live git/GitHub state before claiming completion.
 17. Distinguish final current state from historical evidence gathered earlier in the run.
+18. If migrating a repo from the older flat layout (`BOOTSTRAP_*.md` and `bootstrap-runs/<timestamp>-*.md`), normalize it into the current-surface plus historical-run-bundle structure instead of extending the legacy shape.
 
 Mode-specific behavior:
 - `init`: create the missing bootstrap state required by the contract
@@ -113,11 +121,56 @@ Continue only if all are true:
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
 - for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
-- timestamped bootstrap status + analysis + feedback artifacts are written under `.governance/project/bootstrap-runs/`
-- if update cannot complete all gaps or only reaches degraded verification, timestamped blocker artifacts make the incomplete state explicit with exact next actions
+- current bootstrap reporting artifacts exist under `.governance/project/bootstrap/`
+- historical bootstrap run bundles are written under `.governance/project/bootstrap/history/<timestamp>/`
+- if update cannot complete all gaps or only reaches degraded verification, blocker reporting makes the incomplete state explicit with exact next actions
 - final docs are reconciled with final live git/GitHub state
 - no product code was written
 
 If any fail:
 - `init` and `update` are incomplete
 - `review` must report the exact gaps and blockers without pretending the repo is bootstrapped
+
+## Reporting structure
+
+Bootstrap reporting should separate current state from history.
+
+### Current reporting surface
+
+Use `.governance/project/bootstrap/` for the current bootstrap reporting surface:
+- `STATUS.md`
+- `ANALYSIS.md`
+- `FEEDBACK.md`
+- optional `BLOCKERS.md`
+
+These files should describe or point to the current settled bootstrap picture, not act as a pile of historical reruns.
+
+### Historical run bundles
+
+Use `.governance/project/bootstrap/history/<timestamp>/` for historical bootstrap run evidence.
+
+Each run bundle should group the run’s artifacts together:
+- `status.md`
+- `analysis.md`
+- `feedback.md`
+- optional `blockers.md`
+
+One folder per run is preferred because it makes each bootstrap/reporting pass legible as a single reporting bundle.
+
+### Migration guidance
+
+If a repo still uses the older flat layout:
+- `.governance/project/BOOTSTRAP_STATUS.md`
+- `.governance/project/BOOTSTRAP_ANALYSIS.md`
+- `.governance/project/BOOTSTRAP_FEEDBACK.md`
+- `.governance/project/BOOTSTRAP_BLOCKERS.md`
+- `.governance/project/bootstrap-runs/<timestamp>-*.md`
+
+normalize it toward:
+- `.governance/project/bootstrap/STATUS.md`
+- `.governance/project/bootstrap/ANALYSIS.md`
+- `.governance/project/bootstrap/FEEDBACK.md`
+- `.governance/project/bootstrap/BLOCKERS.md`
+- `.governance/project/bootstrap/history/<timestamp>/...`
+
+During transition, older flat artifacts may remain as legacy history, but new bootstrap work should use the structured reporting layout.

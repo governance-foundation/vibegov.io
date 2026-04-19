@@ -39,11 +39,17 @@ Initialization contract:
    - `Priority`: P0, P1, P2
    - `Size`: XS, S, M, L, XL
 12) Import/attach existing issues; if none exist, report intentionally empty board.
-13) Write durable output artifacts into `.governance/project/bootstrap-runs/`:
-   - `<timestamp>-status.md`
-   - `<timestamp>-feedback.md`
-   - optional `<timestamp>-blockers.md`
-   - stable top-level files may exist only as latest-run summaries/pointers
+13) Write durable bootstrap reporting artifacts using:
+   - current reporting surface: `.governance/project/bootstrap/`
+     - `STATUS.md`
+     - `ANALYSIS.md`
+     - `FEEDBACK.md`
+     - optional `BLOCKERS.md`
+   - historical run bundle: `.governance/project/bootstrap/history/<timestamp>/`
+     - `status.md`
+     - `analysis.md`
+     - `feedback.md`
+     - optional `blockers.md`
 14) Reconcile docs against final live git/GitHub state.
 
 Then stop before product-code implementation.

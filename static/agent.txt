@@ -63,13 +63,20 @@ repo-state discipline:
 
 durable output artifacts:
 - every bootstrap run must leave durable local output artifacts even when commits are forbidden
-- write per-run artifacts into:
-  - .governance/project/bootstrap-runs/<timestamp>-status.md
-  - .governance/project/bootstrap-runs/<timestamp>-analysis.md
-  - .governance/project/bootstrap-runs/<timestamp>-feedback.md
-  - optional: .governance/project/bootstrap-runs/<timestamp>-blockers.md
-- stable top-level files such as BOOTSTRAP_STATUS.md / BOOTSTRAP_ANALYSIS.md / BOOTSTRAP_FEEDBACK.md may exist only as latest-run summaries or pointers
-- bootstrap feedback and analysis should be written to the timestamped local run-history files before or alongside any public GitHub issue filing
+- keep the current reporting surface under:
+  - .governance/project/bootstrap/STATUS.md
+  - .governance/project/bootstrap/ANALYSIS.md
+  - .governance/project/bootstrap/FEEDBACK.md
+  - optional: .governance/project/bootstrap/BLOCKERS.md
+- keep per-run historical bundles under:
+  - .governance/project/bootstrap/history/<timestamp>/status.md
+  - .governance/project/bootstrap/history/<timestamp>/analysis.md
+  - .governance/project/bootstrap/history/<timestamp>/feedback.md
+  - optional: .governance/project/bootstrap/history/<timestamp>/blockers.md
+- current reporting should describe the current settled bootstrap picture
+- historical bundles should preserve the per-run evidence bundle
+- bootstrap feedback and analysis should be written to the historical run bundle before or alongside any public GitHub issue filing
+- when normalizing older repos, prefer the structured bootstrap/ + bootstrap/history/ layout over the older flat BOOTSTRAP_* plus bootstrap-runs/ layout
 
 delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document
