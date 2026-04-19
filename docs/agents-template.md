@@ -32,7 +32,8 @@ This repository uses VibeGov with `.governance/` as the governance source of tru
 - Create or update `INIT-TODO.md` early during bootstrap or major remediation work.
 - Record prerequisite checks and blockers there before continuing.
 - Do not treat partial bootstrap as complete.
-- Keep bootstrap run-history artifacts under `.governance/project/bootstrap-runs/`.
+- Keep current bootstrap reporting under `.governance/project/bootstrap/`.
+- Keep historical bootstrap run bundles under `.governance/project/bootstrap/history/`.
 
 ## Continuity Discipline
 - Install and use a repo-local continuity model (for example session, daily, and project continuity layers).

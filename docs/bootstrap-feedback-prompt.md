@@ -43,10 +43,10 @@ Before finalizing:
 - keep the feedback useful for a public issue
 
 Then produce BOTH:
-1) a local feedback artifact at `.governance/project/bootstrap-runs/<timestamp>-feedback.md`
-   - optional stable top-level summary/pointer: `.governance/project/BOOTSTRAP_FEEDBACK.md`
-2) a companion local analysis artifact at `.governance/project/bootstrap-runs/<timestamp>-analysis.md`
-   - optional stable top-level summary/pointer: `.governance/project/BOOTSTRAP_ANALYSIS.md`
+1) a local feedback artifact in the historical run bundle at `.governance/project/bootstrap/history/<timestamp>/feedback.md`
+   - refresh the current reporting surface at `.governance/project/bootstrap/FEEDBACK.md`
+2) a companion local analysis artifact in the historical run bundle at `.governance/project/bootstrap/history/<timestamp>/analysis.md`
+   - refresh the current reporting surface at `.governance/project/bootstrap/ANALYSIS.md`
 3) a GitHub issue-ready payload:
    - title
    - body
@@ -60,6 +60,6 @@ If issue filing is explicitly requested:
 ## What to do next
 
 1. Run the prompt.
-2. Review the generated timestamped local feedback artifact.
+2. Review the generated historical-run feedback artifact and the refreshed current reporting surface.
 3. Open/file the GitHub issue using the scrubbed title/body.
 4. Link affected page/rule/prompt sections.

@@ -107,16 +107,16 @@
       ".github/branch-protection-checklist.md"
     ],
     "requiredStatusArtifacts": [
-      ".governance/project/bootstrap-runs/<timestamp>-status.md",
-      ".governance/project/bootstrap-runs/<timestamp>-analysis.md",
-      ".governance/project/bootstrap-runs/<timestamp>-feedback.md"
+      ".governance/project/bootstrap/STATUS.md",
+      ".governance/project/bootstrap/ANALYSIS.md",
+      ".governance/project/bootstrap/FEEDBACK.md",
+      ".governance/project/bootstrap/history/<timestamp>/status.md",
+      ".governance/project/bootstrap/history/<timestamp>/analysis.md",
+      ".governance/project/bootstrap/history/<timestamp>/feedback.md"
     ],
     "optionalStatusArtifacts": [
-      ".governance/project/bootstrap-runs/<timestamp>-blockers.md",
-      ".governance/project/BOOTSTRAP_STATUS.md",
-      ".governance/project/BOOTSTRAP_ANALYSIS.md",
-      ".governance/project/BOOTSTRAP_FEEDBACK.md",
-      ".governance/project/BOOTSTRAP_BLOCKERS.md",
+      ".governance/project/bootstrap/BLOCKERS.md",
+      ".governance/project/bootstrap/history/<timestamp>/blockers.md",
       ".governance/project/GIT_WORKFLOW.md",
       ".governance/project/GITHUB_PROJECT_STATUS.md",
       ".governance/project/BOOTSTRAP_REPORT.md"
@@ -174,8 +174,10 @@
   },
   "feedback_flow": {
     "mustWriteLocalFeedbackFile": true,
-    "localAnalysisRunHistoryPath": ".governance/project/bootstrap-runs/<timestamp>-analysis.md",
-    "localFeedbackRunHistoryPath": ".governance/project/bootstrap-runs/<timestamp>-feedback.md",
+    "currentAnalysisPath": ".governance/project/bootstrap/ANALYSIS.md",
+    "currentFeedbackPath": ".governance/project/bootstrap/FEEDBACK.md",
+    "localAnalysisRunHistoryPath": ".governance/project/bootstrap/history/<timestamp>/analysis.md",
+    "localFeedbackRunHistoryPath": ".governance/project/bootstrap/history/<timestamp>/feedback.md",
     "writeBeforeOrAlongsidePublicIssueFiling": true,
     "mustScrubSensitiveData": true
   },

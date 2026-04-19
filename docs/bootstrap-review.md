@@ -29,13 +29,19 @@ Do not fork the contract.
 Do not claim missing work was completed.
 
 Review the repo against the canonical bootstrap contract.
-Write timestamped run-history artifacts under `.governance/project/bootstrap-runs/`.
+Write current reporting artifacts under `.governance/project/bootstrap/` and a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
 Report:
 - what already satisfies the contract
 - what is missing or weak
 - what is blocked
 - what exact next fixes are required
 ```
+
+## Reporting shape
+
+Review mode should use the same reporting structure as init/update:
+- current reporting under `.governance/project/bootstrap/`
+- historical run bundles under `.governance/project/bootstrap/history/<timestamp>/`
 
 ## Rule
 
