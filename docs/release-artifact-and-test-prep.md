@@ -32,6 +32,16 @@ Example:
 2026.4.19-55b47ec
 ```
 
+Why this format:
+- keeps the label human-readable by date,
+- keeps it traceable to an exact commit,
+- avoids ambiguous split schemes by default,
+- and gives one canonical build/release label shape unless a project explicitly chooses otherwise.
+
+Default rule:
+- do **not** invent separate date-only "stable" labels and date+SHA prerelease labels unless the project has explicitly chosen that distinction.
+- use the same canonical format for build/release labels by default.
+
 ### What the release package contains
 
 The package is intentionally narrow.
