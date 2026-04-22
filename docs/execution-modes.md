@@ -11,7 +11,7 @@ A review pass and a delivery pass are not interchangeable. They need different o
 ## The two operating modes
 
 ### 1) Exploration mode
-Use Exploration mode when the goal is discovery.
+Use Exploration mode when the goal is discovery, review, judgment, or backlog hydration on non-delivery surfaces.
 
 Typical use-cases:
 - route/page review
@@ -19,6 +19,10 @@ Typical use-cases:
 - end-user validation
 - backlog hydration
 - drift detection
+- UI/spec/issue exploration
+- exploratory report generation
+- planner-style scoping of a review surface
+- evaluator-style judgment of exploratory artifacts or coverage
 
 Expected outputs:
 - scenario classifications
@@ -26,6 +30,7 @@ Expected outputs:
 - focused issues
 - spec links or `SPEC_GAP`
 - planned traceability/test follow-up
+- coverage/confidence notes
 
 What not to do:
 - claim a fix was delivered
@@ -59,6 +64,8 @@ What not to do:
 ## Evaluation lives inside a mode
 
 Evaluation is not a third peer mode either. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
+
+In practice, exploratory work will often use planner and evaluator roles heavily. That does not make evaluation a separate mode. It means Exploration can contain planning and judgment activity when the work is still non-delivery discovery.
 
 Typical evaluation work includes:
 - judging a bounded artifact against a rubric
@@ -120,6 +127,7 @@ That answer should determine the mode.
 
 ## Related docs
 
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Evaluation Pattern](/docs/evaluation-pattern)
