@@ -136,6 +136,7 @@ If harness engineering made agent work possible, governance is what makes it dep
 
 ## Related reading
 
+- [Reference Reading](/docs/reference-reading)
 - [Published GOV 02 Workflow](/docs/published/gov-02-workflow)
 - [Published GOV 04 Quality](/docs/published/gov-04-quality)
 - [Published GOV 09 Agent Continuity Bootstrap](/docs/published/gov-09-agent-continuity-bootstrap)
