@@ -76,6 +76,9 @@ Minimum closure:
 - blockers/risks recorded explicitly
 - go / no-go / conditional decision
 
+Version-label guidance:
+- when naming the reviewed candidate, prefer the canonical format `yyyy.m.d-<shortsha>` by default so the artifact is both human-readable and commit-traceable.
+
 ### Blocker checkpoint
 Use when work cannot meaningfully advance.
 
