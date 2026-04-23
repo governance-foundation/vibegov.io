@@ -9,6 +9,10 @@ Use this when a repo already has some bootstrap state and you want to **audit it
 This is **not** a separate bootstrap contract.
 It is the same contract from [Bootstrap](/docs/bootstrap), run in **`review` mode**.
 
+When review work touches GitHub bootstrap behavior or durable prerequisite capture, use these support docs directly:
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
+
 ## Mode behavior
 
 - `init` — create missing bootstrap state
@@ -46,3 +50,11 @@ Review mode should use the same reporting structure as init/update:
 ## Rule
 
 If a repo fails bootstrap review, the next remediation pass should use **bootstrap update** against the same canonical contract.
+
+## Related docs
+
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Update](/docs/bootstrap-update)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
+- [Quick Start](/docs/quickstart)

@@ -6,6 +6,9 @@ sidebar_position: 12
 
 Use `INIT-TODO.md` as the durable setup/remediation scratchpad during bootstrap and major adoption/update work.
 
+This is a bootstrap support page, not a separate contract.
+Start with [Bootstrap](/docs/bootstrap) or [Quick Start](/docs/quickstart), then use this page when prerequisites, blockers, or exact remediation steps need durable capture.
+
 It is for things the agent discovered during setup that must be reported or resolved before bootstrap can be considered complete.
 
 ## Record here
@@ -37,3 +40,11 @@ It is for things the agent discovered during setup that must be reported or reso
 ## Rule
 
 If bootstrap depends on a missing prerequisite, record it in `INIT-TODO.md` with the exact remediation step instead of leaving the gap only in chat.
+
+## Related docs
+
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Update](/docs/bootstrap-update)
+- [Bootstrap Review](/docs/bootstrap-review)
+- [Quick Start](/docs/quickstart)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)

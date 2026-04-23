@@ -15,6 +15,15 @@ Bootstrap now uses one canonical contract with explicit modes:
 
 Use [Bootstrap](/docs/bootstrap) as the canonical contract surface.
 
+## If you need the support docs
+
+Quick Start is the short path, not the whole support surface.
+When those topics come up, jump directly to:
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap) for GitHub preflight, board setup, repo linkage, and GitHub-state reconciliation
+- [INIT-TODO.md](/docs/init-todo) for durable prerequisite/remediation capture
+- [Bootstrap Update](/docs/bootstrap-update) if the repo already has bootstrap state and needs normalization
+- [Bootstrap Review](/docs/bootstrap-review) if you need an audit against the same contract without claiming missing work was completed
+
 ## Copy-paste bootstrap prompt
 
 ```text
@@ -65,3 +74,13 @@ Then stop before product-code implementation.
 - Scaffold-only output is incomplete for GitHub-hosted repos unless missing operational pieces are explicitly blocked and reported.
 - If product intent is unclear, do not invent domain direction from repo name.
 - Prefer bootstrap/update remediation that preserves valid artifacts and only repairs weak/missing/contradictory state.
+- If you hit GitHub board/preflight questions, jump to [GitHub Project Bootstrap](/docs/github-project-bootstrap).
+- If you need durable prerequisite or remediation capture, jump to [INIT-TODO](/docs/init-todo).
+
+## Related docs
+
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Update](/docs/bootstrap-update)
+- [Bootstrap Review](/docs/bootstrap-review)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO](/docs/init-todo)

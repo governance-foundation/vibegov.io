@@ -18,8 +18,18 @@ const sidebars = {
     'start-here',
     'bootstrap',
     'bootstrap-update',
+    'bootstrap-review',
     'quickstart',
     'bootstrap-feedback-prompt',
+    {
+      type: 'category',
+      label: 'Bootstrap Support',
+      items: [
+        'github-project-bootstrap',
+        'init-todo',
+        'agents-template',
+      ],
+    },
     {
       type: 'category',
       label: 'FAQ',

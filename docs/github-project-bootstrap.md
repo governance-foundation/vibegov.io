@@ -6,6 +6,9 @@ sidebar_position: 9
 
 Use this when adopting VibeGov in a GitHub-hosted repository.
 
+This is a bootstrap support page, not a separate contract.
+Start with [Bootstrap](/docs/bootstrap) or [Quick Start](/docs/quickstart), then use this page when GitHub preflight, board normalization, repo linkage, or final GitHub-state reconciliation becomes relevant.
+
 ## Mandatory preflight before any board mutation
 
 Check and classify each dependency as one of:
@@ -88,3 +91,11 @@ For GitHub-hosted bootstrap, report:
 - any degraded-verification warnings caused by hosted-feature limits, with exact evidence and next action
 - `develop` branch local/remote/protection status
 - final live-state reconciliation result
+
+## Related docs
+
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Update](/docs/bootstrap-update)
+- [Bootstrap Review](/docs/bootstrap-review)
+- [Quick Start](/docs/quickstart)
+- [INIT-TODO.md](/docs/init-todo)
