@@ -62,7 +62,16 @@ const sidebars = {
         'checkpoint-reporting',
         'blocker-escalation',
         'workflow-quality-rubric',
+        'bootstrap-validation',
         'release-artifact-and-test-prep',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Testing and Completeness',
+      items: [
+        'test-execution-expectations',
+        'quality-scaffolding-and-completeness-rubric',
       ],
     },
     {

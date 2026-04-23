@@ -45,6 +45,10 @@ A valid bootstrap should produce these outcomes:
 
 ## Validation strategy
 
+When this page pushes you into more detailed testing or completeness review, continue with:
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
+
 Treat bootstrap validation like a fixture-driven contract test suite.
 
 Each test should define:
@@ -109,6 +113,8 @@ Check that issues/specs/tasks include:
 - explicit `SPEC_GAP` when contract is missing
 
 ### 5. Test-execution assertions
+For detailed guidance on what those test runs should actually capture, use [Test Execution Expectations](/docs/test-execution-expectations).
+
 Check that meaningful validation output can answer:
 - what exact claim/requirement was under test
 - which scenario classes were exercised
@@ -613,6 +619,8 @@ This gives you regression detection for governance behavior, not just for produc
 - [Bootstrap Validator Harness](/docs/bootstrap-validator-harness)
 - [Bootstrap](/docs/bootstrap)
 - [Quick Start](/docs/quickstart)
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)

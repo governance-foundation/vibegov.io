@@ -4,6 +4,9 @@ sidebar_position: 11
 
 # Quality Scaffolding and Completeness Rubric
 
+This is a testing/completeness support page.
+Use it when you need a practical way to judge whether work is genuinely complete or only looks complete.
+
 This rubric exists to make quality more structured and harder to fake.
 
 AI can now help teams produce more artifacts, more summaries, more tests, and more implementation in less time. That does **not** automatically mean delivery is becoming more complete or more trustworthy.
@@ -159,9 +162,11 @@ Missing completeness must not remain an invisible compromise.
 
 ## Related docs
 
-- [Bootstrap](/docs/bootstrap)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Release Artifact and Test Prep](/docs/release-artifact-and-test-prep)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Bootstrap](/docs/bootstrap)
 - [Published GOV-04 Quality](/docs/published/gov-04-quality)
 - [Published GOV-05 Testing](/docs/published/gov-05-testing)
 - [Published GOV-06 Issues](/docs/published/gov-06-issues)
