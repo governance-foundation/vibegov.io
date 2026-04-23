@@ -4,6 +4,10 @@ sidebar_position: 10
 
 # Release Artifact and Test Prep
 
+When this page pushes you into deeper test-review or completeness-review questions, continue with:
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
+
 VibeGov now separates two concerns clearly:
 
 1. **GitHub Pages deployment** builds the docs site
@@ -164,5 +168,6 @@ Do not treat those as the same artifact boundary.
 - [Bootstrap](/docs/bootstrap)
 - [GitHub Project Bootstrap](/docs/github-project-bootstrap)
 - [INIT-TODO.md](/docs/init-todo)
+- [Workflow Quality Rubric](/docs/workflow-quality-rubric)
 - [Test Execution Expectations](/docs/test-execution-expectations)
 - [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)

@@ -4,6 +4,10 @@ sidebar_position: 10
 
 # Workflow Quality Rubric
 
+When this rubric points to weak testing evidence or fake completeness risk, continue with:
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
+
 This rubric exists for one reason:
 
 A workflow can sound strict and still be easy to execute lazily.
@@ -130,6 +134,8 @@ A 10/10 workflow:
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Test Execution Expectations](/docs/test-execution-expectations)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)

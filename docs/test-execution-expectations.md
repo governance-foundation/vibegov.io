@@ -4,6 +4,9 @@ sidebar_position: 11
 
 # Test Execution Expectations
 
+This is a testing/completeness support page.
+Use it from the normal operational path when you need to make test evidence more legible and harder to overclaim.
+
 This doc exists to answer a simple question:
 
 > When we execute a test, what exactly are we supposed to look for?
@@ -139,6 +142,8 @@ Use this template when reviewing a meaningful test run:
 ## Related docs
 
 - [Bootstrap Validation](/docs/bootstrap-validation)
+- [Release Artifact and Test Prep](/docs/release-artifact-and-test-prep)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)
+- [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
 - [Published GOV-05 Testing](/docs/published/gov-05-testing)
 - [Published GOV-04 Quality](/docs/published/gov-04-quality)
