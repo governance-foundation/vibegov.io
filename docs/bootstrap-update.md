@@ -12,6 +12,10 @@ Shorthand ref:
 It does **not** use a weaker or different contract.
 Use the canonical bootstrap contract at [Bootstrap](/docs/bootstrap).
 
+When update work hits GitHub preflight/board questions or missing prerequisite capture, use these support docs directly:
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
+
 ## Update behavior
 
 - preserve valid existing artifacts
@@ -57,3 +61,11 @@ Preferred shape:
 - `.governance/project/bootstrap/history/<timestamp>/` = the historical run bundle for this pass
 
 When migrating a repo that still uses the older flat bootstrap layout, BU should normalize reporting into the structured layout instead of extending the old pattern.
+
+## Related docs
+
+- [Bootstrap](/docs/bootstrap)
+- [Bootstrap Review](/docs/bootstrap-review)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
+- [Quick Start](/docs/quickstart)

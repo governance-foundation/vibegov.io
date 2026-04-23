@@ -21,6 +21,14 @@ Mode differences are behavioral only:
 - `update` repairs/normalizes existing bootstrap state
 - `review` audits against the same contract without claiming missing work was completed
 
+## Bootstrap support docs
+
+Use the canonical contract here, then branch into the support docs when those topics first matter:
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap) for GitHub preflight, canonical board selection, repo linkage, and final GitHub-state reconciliation
+- [INIT-TODO.md](/docs/init-todo) for durable prerequisite/remediation capture during bootstrap and adoption/update work
+- [Bootstrap Update](/docs/bootstrap-update) for repair/normalization runs against an already bootstrapped repo
+- [Bootstrap Review](/docs/bootstrap-review) for audit-only runs against the same contract
+
 ## Canonical bootstrap prompt
 
 ```text
@@ -98,6 +106,12 @@ Before writing any product code (or before claiming bootstrap review is complete
 17. Distinguish final current state from historical evidence gathered earlier in the run.
 18. If migrating a repo from the older flat layout (`BOOTSTRAP_*.md` and `bootstrap-runs/<timestamp>-*.md`), normalize it into the current-surface plus historical-run-bundle structure instead of extending the legacy shape.
 
+Support docs for this contract:
+- use [GitHub Project Bootstrap](/docs/github-project-bootstrap) when the repo is GitHub-hosted and board/project setup is in scope
+- use [INIT-TODO.md](/docs/init-todo) when prerequisites, blockers, or exact remediation steps need durable capture
+- use [Bootstrap Update](/docs/bootstrap-update) for remediation/normalization runs
+- use [Bootstrap Review](/docs/bootstrap-review) for audit-only runs against the same contract
+
 Mode-specific behavior:
 - `init`: create the missing bootstrap state required by the contract
 - `update`: preserve valid existing artifacts and repair stale/missing/contradictory ones, including missing operational bootstrap artifacts, until the same contract is satisfied; if that cannot be done, leave explicit status/blocker artifacts plus a settled end-state classification (`committed/pushed`, `pending-review`, or `blocked`)
@@ -174,3 +188,14 @@ normalize it toward:
 - `.governance/project/bootstrap/history/<timestamp>/...`
 
 During transition, older flat artifacts may remain as legacy history, but new bootstrap work should use the structured reporting layout.
+
+## Related docs
+
+- [Quick Start](/docs/quickstart)
+- [Bootstrap Update](/docs/bootstrap-update)
+- [Bootstrap Review](/docs/bootstrap-review)
+- [GitHub Project Bootstrap](/docs/github-project-bootstrap)
+- [INIT-TODO.md](/docs/init-todo)
+- [Bootstrap Feedback Prompt](/docs/bootstrap-feedback-prompt)
+- [FAQ: When do I use Bootstrap Init?](/docs/faq/when-do-i-use-bootstrap-init)
+- [FAQ: When do I use Bootstrap Update?](/docs/faq/when-do-i-use-bootstrap-update)
