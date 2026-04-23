@@ -31,37 +31,38 @@ Run VibeGov bootstrap in mode: <init|update|review>.
 Read and follow:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json
+- https://vibegov.io/docs/bootstrap/
 
-Initialization contract:
-1) Create/normalize `.governance/rules/`, `.governance/project/`, `.governance/specs/`.
-2) Install `GOV-01` through `GOV-08` in `.governance/rules/`.
-3) Detect existing provider-native rules dirs; mirror only if present.
+Use the same canonical bootstrap contract for all modes.
+Do not fork or weaken the pass gate by mode.
+
+Fast contract summary:
+1) Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
+2) Install the active VibeGov rule set (`GOV-01` through `GOV-09`) in `.governance/rules/`.
+3) Detect existing provider-native rules dirs and mirror only when already present.
 4) Create/normalize `PROJECT_INTENT.md`.
-5) Create `SPEC-001` (feature spec, or bootstrap-setup spec when product intent is still vague).
+5) Create `SPEC-001` (feature spec, or bootstrap/governance-setup spec when product intent is still vague).
 6) Map backlog to spec sections.
-7) Install workflow artifacts: `AGENTS.md`, PR template, branch-protection checklist, default issue-pickup flow.
-8) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
-9) For GitHub repos, preflight `git`, `gh`, auth, repo access, project read/write.
-10) If preflight is configured, adopt/create/normalize one canonical board target and link repo.
-11) Normalize board fields:
-   - `Status`: Backlog, Ready, In progress, In review, Done, Blocked
-   - `Priority`: P0, P1, P2
-   - `Size`: XS, S, M, L, XL
-12) Import/attach existing issues; if none exist, report intentionally empty board.
-13) Write durable bootstrap reporting artifacts using:
-   - current reporting surface: `.governance/project/bootstrap/`
-     - `STATUS.md`
-     - `ANALYSIS.md`
-     - `FEEDBACK.md`
-     - optional `BLOCKERS.md`
-   - historical run bundle: `.governance/project/bootstrap/history/<timestamp>/`
-     - `status.md`
-     - `analysis.md`
-     - `feedback.md`
-     - optional `blockers.md`
-14) Reconcile docs against final live git/GitHub state.
+7) Install/verify early bootstrap artifacts before implementation:
+   - `AGENTS.md`
+   - `INIT-TODO.md`
+   - PR template
+   - branch-protection checklist
+   - documented default issue-pickup flow
+8) Install/verify continuity bootstrap expectations before implementation:
+   - documented continuity layers
+   - repo-local continuity paths or equivalent scaffolding
+   - checkpoint trigger guidance
+   - session-diary guidance for recurring contexts
+   - promotion guidance between continuity layers
+9) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
+10) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
+11) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Priority`/`Size`, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
+12) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
+13) Reconcile docs/artifacts against final live git/GitHub state.
+14) Then stop before product-code implementation.
 
-Then stop before product-code implementation.
+Use [Bootstrap](/docs/bootstrap) as the canonical full contract when any detail matters.
 ```
 
 ## Canonical URLs
@@ -71,11 +72,13 @@ Then stop before product-code implementation.
 
 ## Notes
 
+- Quick Start is a compressed path into the current bootstrap contract, not a separate weaker contract.
 - Scaffold-only output is incomplete for GitHub-hosted repos unless missing operational pieces are explicitly blocked and reported.
 - If product intent is unclear, do not invent domain direction from repo name.
 - Prefer bootstrap/update remediation that preserves valid artifacts and only repairs weak/missing/contradictory state.
 - If you hit GitHub board/preflight questions, jump to [GitHub Project Bootstrap](/docs/github-project-bootstrap).
 - If you need durable prerequisite or remediation capture, jump to [INIT-TODO](/docs/init-todo).
+- If any detail matters, defer to [Bootstrap](/docs/bootstrap) as the canonical full contract.
 
 ## Related docs
 
