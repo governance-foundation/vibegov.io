@@ -123,7 +123,7 @@ This section governs work structure, not implementation details. It does not pre
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
-## Execution Modes
+## Execution Modes and Parallel Loops
 
 All meaningful work must declare an active execution mode. Silent mode mixing produces weak evidence and false completion claims.
 
@@ -133,16 +133,29 @@ VibeGov uses two operating modes:
 
 Release verification is not a third peer mode. It is part of Development's delivery path and release-readiness checks.
 
-> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed.
+These modes often run inside a broader parallel loop model:
+- a **Build Loop** that consumes governed scoped work from the repo/backlog and writes clear delivery outputs back,
+- an **Exploratory Loop** that inspects UI/spec/issue reality and feeds governed backlog/spec work into delivery,
+- and a **Human Feedback Loop** that injects approval, correction, judgment, taste, and reprioritisation.
+
+The Build Loop must not recursively self-source its own next work from its own outputs. It should consume governed input and produce governed output.
+
+Exploratory work is the non-delivery discovery/analysis lane. It may include planner-style scoping and evaluator-style judgment when those roles are being used to explore, review, classify, and hydrate backlog work rather than deliver the product change itself.
+
+Human feedback should be first-class, but not automatically global. When human input is needed, the system should prefer scoped blocking over stop-the-world blocking whenever unrelated ready work can continue.
+
+> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed, while clarifying how build, exploratory, and human-feedback loops coexist.
 
 ### Exploration mode
 
-Use when the objective is discovery, validation, or backlog hydration rather than immediate product change.
+Use when the objective is discovery, validation, review, judgment, or backlog hydration rather than immediate product change.
 
 Allowed work:
 - inspect live behavior from an end-user or operator perspective
 - compare observed behavior with specs, traceability, and existing test intent
 - create or refine backlog items, spec gaps, and planned verification follow-up
+- perform planner-style scoping of a review surface, route set, issue set, or analysis slice
+- perform evaluator-style judgment of exploratory artifacts, coverage, or review completeness
 
 Required evidence:
 - reviewed scope and scenarios exercised
@@ -150,8 +163,9 @@ Required evidence:
 - per-scenario classification: `Validated`, `Invalidated`, `Blocked`, or `Uncovered-spec-gap`
 - tracked follow-up artifacts for every invalidated, blocked, or uncovered item
 - next recommended backlog action
+- coverage or confidence limits when relevant
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Clarifies that exploratory work can contain planner/evaluator behavior when the goal is non-delivery discovery rather than implementation.
 
 ### Development mode
 
@@ -211,7 +225,7 @@ Backlog hydration is part of the core workflow, not a side activity.
 
 > Commentary: Treats discovery as a required planning input instead of informal side notes.
 
-## Blocker Escalation and Move-On Behavior
+## Scoped Blocking, Blocker Escalation, and Move-On Behavior
 
 Autonomy is expected, not unrestricted.
 
@@ -230,7 +244,13 @@ When blocked:
 
 A blocker pauses the current item. It does not pause delivery unless it removes all viable next work or requires a human decision.
 
-> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work.
+Prefer scoped blocking over global blocking:
+- only the lane that truly requires the missing approval, decision, or dependency should pause,
+- unrelated build work may continue,
+- unrelated exploratory work may continue,
+- and the blocked boundary should be made explicit in checkpoints or handoffs.
+
+> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work, and prevents one unanswered question from freezing all other loops.
 
 ## Scope Discipline
 

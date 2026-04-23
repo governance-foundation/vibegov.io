@@ -11,7 +11,7 @@ A review pass and a delivery pass are not interchangeable. They need different o
 ## The two operating modes
 
 ### 1) Exploration mode
-Use Exploration mode when the goal is discovery.
+Use Exploration mode when the goal is discovery, review, judgment, or backlog hydration on non-delivery surfaces.
 
 Typical use-cases:
 - route/page review
@@ -19,6 +19,10 @@ Typical use-cases:
 - end-user validation
 - backlog hydration
 - drift detection
+- UI/spec/issue exploration
+- exploratory report generation
+- planner-style scoping of a review surface
+- evaluator-style judgment of exploratory artifacts or coverage
 
 Expected outputs:
 - scenario classifications
@@ -26,6 +30,7 @@ Expected outputs:
 - focused issues
 - spec links or `SPEC_GAP`
 - planned traceability/test follow-up
+- coverage/confidence notes
 
 What not to do:
 - claim a fix was delivered
@@ -58,7 +63,9 @@ What not to do:
 
 ## Evaluation lives inside a mode
 
-Evaluation is not a third peer mode either. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
+Evaluation is not a third peer mode. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
+
+In practice, exploratory work will often use planner and evaluator roles heavily. That does not make evaluation a separate mode. It means Exploration can contain planning and judgment activity when the work is still non-delivery discovery.
 
 Typical evaluation work includes:
 - judging a bounded artifact against a rubric
@@ -73,6 +80,11 @@ What evaluation does **not** mean:
 ## Release verification lives inside Development
 
 Release verification is not a third peer mode. It is part of Development's delivery path.
+
+This is also where loops and modes meet cleanly:
+- release verification usually sits inside the **Build Loop**,
+- exploratory review usually sits inside the **Exploratory Loop**,
+- and human feedback can reshape either one without becoming a separate execution mode.
 
 Typical release-verification work includes:
 - confirming the build succeeded
@@ -120,6 +132,7 @@ That answer should determine the mode.
 
 ## Related docs
 
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Evaluation Pattern](/docs/evaluation-pattern)

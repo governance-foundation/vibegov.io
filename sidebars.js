@@ -39,6 +39,7 @@ const sidebars = {
       label: 'Operational Guides',
       items: [
         'execution-modes',
+        'build-exploratory-human-feedback-loops',
         'quick-decisions',
         'mode-selection-and-evidence-closing',
         'simplicity-first',
@@ -52,6 +53,13 @@ const sidebars = {
         'blocker-escalation',
         'workflow-quality-rubric',
         'release-artifact-and-test-prep',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Reference Reading',
+      items: [
+        'reference-reading',
       ],
     },
     {

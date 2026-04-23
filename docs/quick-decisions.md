@@ -105,7 +105,67 @@ Fast rule:
 - cleanup should not erase rationale
 - archive after safe landing, not instead of it
 
-## 9. Should this become a rule, or just a note?
+## 9. What exactly makes a turn substantive?
+
+| If the turn... | Treat it as... |
+| --- | --- |
+| leaves kept repo or issue state behind | **substantive** |
+| changes code, docs, specs, tests, config, workflows, or issue metadata | **substantive** |
+| changes ticket status, closure state, validation state, or branch state | **substantive** |
+| would be risky to leave dirty for the next turn | **substantive** |
+| is only discussion, reading, or ephemeral probing with no kept state | **not substantive** |
+
+Fast rule:
+- if it changed durable state or ticket state, it was substantive
+- if it would be dangerous to leave dirty, it was substantive
+- substantive turns require git closure, not just a chat checkpoint
+
+## 10. What closes git hygiene for a substantive turn?
+
+| Required end-state | Why it matters |
+| --- | --- |
+| kept work committed | creates a real tracking boundary |
+| unresolved junk reverted or ignored explicitly | prevents residue from leaking forward |
+| if not finished, a focused follow-up ticket exists | prevents ambiguous carry-over |
+| original ticket merged into `develop` | closes the governed landing path |
+| working branch archived as `archive/<branch>` | preserves branch history cleanly |
+| local repo returned to `develop` | resets the next execution starting point |
+
+Fast rule:
+- git hygiene is mandatory
+- done means committed, merged to `develop`, archived, and back on `develop`
+- not done means follow-up ticket, not ambiguity
+
+## 11. What must be true before new governed work starts?
+
+| Start condition | Default rule |
+| --- | --- |
+| local repo is on `develop` | **start is allowed** |
+| local repo is on an issue branch, archive branch, or detached state | **do not start new work** |
+| repo is off `develop` because of recovery/debug/escalation work | **only proceed with explicit exception note** |
+| branch state is unclear | **stop and normalize first** |
+
+Fast rule:
+- normal governed work starts from `develop`
+- if you are not on `develop`, you are not ready to start
+- exceptions must be explicit, not implied
+
+## 12. What if I inherit repo state when I start?
+
+| Situation | Default choice |
+| --- | --- |
+| there are modified/untracked files or branch residue | **assess and classify it before new work** |
+| the inherited state is clear and attributable | **decide whether to land, defer, archive, or follow up** |
+| the inherited state is mixed or unclear | **stop and escalate before starting a new slice** |
+| you are tempted to reset/delete just to get clean | **do not do that by default** |
+| the material is clearly disposable generated noise | **clean it up directly if that classification is explicit** |
+
+Fast rule:
+- inherited state must be assessed, not ignored
+- preserve, land, archive, defer, or escalate before destructive cleanup
+- reset/delete is last resort after discussion unless it is obvious generated noise
+
+## 13. Should this become a rule, or just a note?
 
 | If the learning is... | Put it in... |
 | --- | --- |
@@ -117,7 +177,7 @@ Fast rule:
 - not every lesson deserves a rule
 - repeated durable failures usually do
 
-## 10. What are the most common failure modes?
+## 14. What are the most common failure modes?
 
 - exploratory findings with no artifacts
 - development claims with no direct proof
@@ -127,6 +187,8 @@ Fast rule:
 - treating chat memory as durable state
 - deleting meaningful state before preserving it
 - archiving a branch as a substitute for landing traceable work
+- skipping inherited-state assessment and starting anyway
+- force-cleaning or deleting inherited state before deciding what it is
 - promoting every tiny preference into bloated governance
 
 ## Start here if you are unsure
@@ -141,8 +203,10 @@ Fast rule:
 
 - [Execution Modes](/docs/execution-modes)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Reference Reading](/docs/reference-reading)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)

@@ -44,11 +44,13 @@ VibeGov has two primary operating modes:
 Evaluation fits **inside** one of those modes when bounded judgment is useful.
 
 Examples:
-- in **Exploration**, an evaluator may judge whether a route report is artifact-complete
+- in **Exploration**, an evaluator may judge whether a route report is artifact-complete, whether a review surface was covered adequately, or whether a backlog-hydration pass met its contract
 - in **Development**, an evaluator may judge whether an implementation result meets quality criteria
 - in **release verification**, an evaluator may help apply go/no-go criteria to a candidate inside Development
 
 That makes evaluation a **control pattern**, not a separate top-level lane.
+
+In other words: exploratory work may use evaluator behavior heavily without ceasing to be exploratory.
 
 ## Evaluation requires an explicit contract
 
@@ -115,6 +117,7 @@ Ask:
 
 ## Related docs
 
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Execution Modes](/docs/execution-modes)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)

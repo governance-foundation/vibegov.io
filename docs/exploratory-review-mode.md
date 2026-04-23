@@ -11,6 +11,8 @@ It does not replace your normal delivery lifecycle.
 - **Development flow** changes behavior and carries it through release readiness.
 - **Exploratory flow** audits real behavior and turns gaps into tracked work.
 
+In VibeGov terms, exploratory work is the broader non-delivery intelligence lane. That means it can include planner and evaluator behavior when the work is aimed at UI/spec/issue exploration, coverage judgment, review quality, and backlog hydration rather than direct product delivery.
+
 ## Why run it in parallel
 
 Running exploratory review in parallel helps teams:
@@ -99,9 +101,13 @@ Use it when the goal is:
 - discovery,
 - audit,
 - backlog hydration,
-- end-user validation.
+- end-user validation,
+- UI/spec/issue exploration,
+- exploratory judgment of coverage or report completeness.
 
 Do **not** treat exploration as Development by default.
+
+Planner/evaluator roles may live inside Exploration when they support non-delivery discovery.
 
 Move to build/fix mode only when explicitly requested or when your workflow has formally switched into Development.
 
@@ -129,6 +135,7 @@ Over time, this mode helps teams:
 
 ## Next reads
 
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)
