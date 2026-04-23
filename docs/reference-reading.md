@@ -14,6 +14,27 @@ Use this page for three things:
 - record what is genuinely useful,
 - make clear what VibeGov should borrow, adapt, or reject.
 
+## How to use this page
+
+Do not treat this page as a second canon.
+Use it as a translation layer between influential outside writing and the actual VibeGov rules/docs.
+
+A practical reading order is:
+1. read the external source,
+2. note the useful idea,
+3. map that idea into the VibeGov docs where it actually landed,
+4. prefer the VibeGov rule/doc when making decisions.
+
+## Where these ideas landed in VibeGov
+
+| External pressure | Where it shows up in VibeGov |
+| --- | --- |
+| loop-based operating model | [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops), [Published GOV 02 Workflow](/docs/published/gov-02-workflow) |
+| exploration vs evaluation separation | [Execution Modes](/docs/execution-modes), [Evaluation Pattern](/docs/evaluation-pattern), [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing) |
+| in-repo truth, harness engineering, drift control | [Published GOV 10 Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene), [Published GOV 11 Agent Legibility and In-Repo Truth](/docs/published/gov-11-agent-legibility-in-repo-truth), [Published GOV 12 Drift Control and Garbage Collection](/docs/published/gov-12-drift-control-garbage-collection) |
+| human feedback as a first-class loop | [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern), [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops) |
+| bounded skeptical judgment | [Evaluation Pattern](/docs/evaluation-pattern), [Published GOV 13 Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline) |
+
 ## Current reading set
 
 | Source | Main contribution | Best VibeGov use |
@@ -308,6 +329,9 @@ These references support a stronger VibeGov framing built around:
 
 ## Related VibeGov pages
 
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
+- [Execution Modes](/docs/execution-modes)
+- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Harness Engineering and What VibeGov Does With It](/blog/harness-engineering-what-we-do-with-it)
 - [Governance from Harness Engineering and Beyond](/blog/governance-from-harness-engineering-and-beyond)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)

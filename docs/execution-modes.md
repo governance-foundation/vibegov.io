@@ -63,7 +63,7 @@ What not to do:
 
 ## Evaluation lives inside a mode
 
-Evaluation is not a third peer mode either. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
+Evaluation is not a third peer mode. It is a bounded judgment pattern used inside Exploration or Development when explicit criteria-based review is needed.
 
 In practice, exploratory work will often use planner and evaluator roles heavily. That does not make evaluation a separate mode. It means Exploration can contain planning and judgment activity when the work is still non-delivery discovery.
 
@@ -80,6 +80,11 @@ What evaluation does **not** mean:
 ## Release verification lives inside Development
 
 Release verification is not a third peer mode. It is part of Development's delivery path.
+
+This is also where loops and modes meet cleanly:
+- release verification usually sits inside the **Build Loop**,
+- exploratory review usually sits inside the **Exploratory Loop**,
+- and human feedback can reshape either one without becoming a separate execution mode.
 
 Typical release-verification work includes:
 - confirming the build succeeded

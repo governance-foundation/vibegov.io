@@ -203,8 +203,10 @@ Fast rule:
 
 - [Execution Modes](/docs/execution-modes)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Reference Reading](/docs/reference-reading)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)
 - [Workflow Quality Rubric](/docs/workflow-quality-rubric)

@@ -15,6 +15,22 @@ A healthy agent-enabled system usually has at least three loops running in paral
 These loops should not be collapsed into one vague idea of "the agent is working."
 They have different jobs, different sources, and different outputs.
 
+## Loop model vs mode model
+
+This page describes **loops**, not operating modes.
+That distinction matters.
+
+- a **loop** tells you where work sits in the wider system and how work enters or leaves it,
+- a **mode** tells you what kind of work you are doing right now and what evidence closes it.
+
+In practice:
+- the **Build Loop** usually runs **Development** work,
+- the **Exploratory Loop** usually runs **Exploration** work,
+- the **Human Feedback Loop** can reshape either one,
+- and the **Evaluation pattern** may appear inside either mode when bounded judgment is needed.
+
+That is why loops and modes should support each other, not compete with each other.
+
 ## 1) Build Loop
 
 The Build Loop is the delivery loop.
@@ -267,8 +283,9 @@ Ask four questions:
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
-- [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Reference Reading](/docs/reference-reading)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

@@ -26,7 +26,22 @@ Fast rule:
 - **Evaluation** judges a bounded unit.
 - **Release verification** closes a Development-ready candidate.
 
-## 2. Do not let evidence shapes drift
+## 2. Work shape is not the same thing as loop placement
+
+A lot of confusion disappears once these are kept separate.
+
+- **mode / work shape** answers: what kind of work is this, and what evidence closes it?
+- **loop placement** answers: where does this work sit in the wider operating system?
+
+Typical mapping:
+- **Build Loop** mostly contains **Development** work
+- **Exploratory Loop** mostly contains **Exploration** work
+- **Human Feedback Loop** injects judgment, approval, correction, and reprioritisation into either one
+- **Evaluation** may be used inside any of those when a bounded verdict is needed
+
+So if you are unsure, choose the **mode** first, then describe the surrounding **loop** second.
+
+## 3. Do not let evidence shapes drift
 
 | If you are doing this... | You need this evidence shape |
 | --- | --- |
@@ -40,7 +55,7 @@ Anti-rule:
 - development diff/test proof does **not** replace release-readiness evidence
 - a blocker claim without a blocker artifact is not closure
 
-## 3. Minimum evidence by work shape
+## 4. Minimum evidence by work shape
 
 ### Exploration
 Use when the goal is discovery.
@@ -89,7 +104,7 @@ Minimum closure:
 - blocker artifact
 - redirected next work or recovery condition
 
-## 4. Which checkpoint/report shape should I use?
+## 5. Which checkpoint/report shape should I use?
 
 | Situation | Report shape |
 | --- | --- |
@@ -101,7 +116,7 @@ Minimum closure:
 Fast rule:
 - choose the checkpoint shape that matches the work, not the one that sounds most impressive.
 
-## 5. Where evaluation fits
+## 6. Where evaluation fits
 
 Evaluation is useful when the work needs a skeptical or criteria-based judgment.
 
@@ -115,7 +130,7 @@ What evaluation is **not**:
 - not a substitute for Development proof when behavior changed
 - not a free-floating third operating mode
 
-## 6. Common mode-mixing failures
+## 7. Common mode-mixing failures
 
 Avoid these:
 - exploratory findings presented as if they prove a fix shipped
@@ -125,7 +140,7 @@ Avoid these:
 - evaluation language used to hide missing scope or missing evidence
 - a vague "done" that collapses implemented, verified, reviewed, and released into one word
 
-## 7. The 20-second selection rule
+## 8. The 20-second selection rule
 
 Before starting or reporting, ask:
 
@@ -140,9 +155,11 @@ If the answers are blurry, the mode is probably blurry too.
 
 - [Quick Decisions](/docs/quick-decisions)
 - [Execution Modes](/docs/execution-modes)
+- [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
+- [Reference Reading](/docs/reference-reading)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [Published GOV 02 Workflow](/docs/published/gov-02-workflow)
 - [Published GOV 13 Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline)
