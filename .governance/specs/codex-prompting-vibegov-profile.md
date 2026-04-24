@@ -1,13 +1,14 @@
 # Codex Prompting Through a VibeGov Lens
 
 ## Intent
-Capture the useful parts of Codex-oriented prompting and harness style without importing Codex performance heuristics wholesale into VibeGov.
+Translate strong execution patterns from Codex-oriented prompting and harness style into native VibeGov artifacts without keeping the outcome trapped in comparative meta-language.
 
 ## Scope
 In scope:
-- define what VibeGov should borrow from Codex prompting
-- define what VibeGov should reject or constrain
-- add a formal public doc page that explains the resulting governed stance
+- translate the strongest execution patterns into native VibeGov guidance
+- tighten the public doc page so it reads as direct VibeGov guidance rather than comparison commentary
+- add a companion public article version
+- add a minimal practical snippet for harness use
 - add a focused GOV rule addition for bounded autonomy and operator-legible execution
 - update the Codex harness profile so it reflects the governed profile concretely
 
@@ -35,7 +36,9 @@ Out of scope:
 - run `npm run build`
 
 ## Documentation Impact
-- add `docs/codex-prompting-through-vibegov.md`
+- update `docs/codex-prompting-through-vibegov.md`
+- add `docs/minimal-vibegov-execution-profile-snippet.md`
+- add `blog/2026-04-24-execution-sharpness-and-governed-closure.md`
 - update `docs/harness-profile-codex.md`
 - update `docs/published/gov-11-agent-legibility-in-repo-truth.md`
 - update `sidebars.js`
@@ -44,5 +47,5 @@ Out of scope:
 Verification is docs/build driven. Success requires a coherent public explanation, a concrete harness-profile update, an aligned canonical/published GOV rule update, discoverable navigation, and a passing site build.
 
 ## Change Notes
-- This slice should sharpen VibeGov’s Codex adapter stance without weakening tool-agnostic governance.
-- The resulting profile should preserve Codex’s execution energy while keeping VibeGov’s stronger closure, oversight, and traceability model.
+- This slice should sharpen VibeGov’s execution guidance without weakening tool-agnostic governance.
+- The resulting profile should preserve execution energy while keeping VibeGov’s stronger closure, oversight, and traceability model.
