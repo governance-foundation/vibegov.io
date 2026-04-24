@@ -4,7 +4,7 @@ sidebar_position: 13
 
 # Harness Profile: Codex
 
-This profile shows how to run a Codex-centered delivery loop inside VibeGov without letting Codex's speed-oriented prompting become the whole governance model.
+This profile shows how to run a Codex-centered delivery loop inside VibeGov without letting runtime speed become the whole governance model.
 
 It is a profile, not a core-governance replacement.
 
@@ -20,12 +20,14 @@ Use this when your team runs implementation loops primarily through Codex sessio
 
 ## Profile stance
 
-This profile intentionally combines two different strengths:
+This profile keeps a strong implementation posture inside firm governance boundaries.
 
-- **Codex contribution:** tool-first execution, strong implementation momentum, low tolerance for empty planning chatter, and a bias toward verification.
-- **VibeGov contribution:** bounded autonomy, governed artifacts, operator-legible checkpoints, state closure, and accountability at work-unit boundaries.
-
-Do not adopt Codex prompting wholesale. Adopt the useful execution posture and keep the stronger governance layer around it.
+The intended operating shape is:
+- move directly on clear bounded work
+- stay tool-first instead of terminal-first
+- keep progress visible at meaningful checkpoints
+- verify before claiming completion
+- close the governed landing path fully
 
 ## Profile contract
 
@@ -59,24 +61,27 @@ A Codex harness loop should explicitly provide:
    - clear, reversible internal work may proceed without waiting.
    - destructive, external, privacy-sensitive, irreversible, or judgment-dependent actions should surface a visible decision boundary.
 
-## What to borrow from Codex prompting
+## Execution pattern
 
-Borrow these parts aggressively:
-- tool-first work over raw terminal drift
-- completion bias instead of plan theater
-- reading enough context before editing
-- repo-convention reuse before invention
-- verification before completion claims
-- concise communication instead of ceremonial narration
+A healthy run should look like this:
+- orient on issue, spec, and inherited repo state
+- classify residue before starting fresh work
+- run baseline verifier
+- implement the scoped change only
+- run post-change verifier
+- run skeptical evaluator pass when the slice warrants it
+- loop on fixes only while the loop is producing real progress
+- close state through commit, merge-path, archive-path, or explicit follow-up handling
+- record evidence and residual risk truthfully
 
-## What to reject or constrain
+## Non-negotiable guardrails
 
-Do not import these as hard rules:
-- maximize parallelism at all times
-- suppress progress updates just because silence benchmarks well
-- treat dirty or inherited repo state as a simplistic stop signal instead of a classification problem
-- optimize rollout speed above closure, accountability, or recoverability
-- treat edited files as an adequate completion boundary
+Do not treat these as optional:
+- inherited repo state must be classified before new governed work starts
+- meaningful risk and uncertainty must stay visible
+- low narration does not justify low legibility
+- passing build output alone does not close a slice
+- rollout momentum does not outrank closure, accountability, or recoverability
 
 ## Mapping to VibeGov controls
 
@@ -92,20 +97,6 @@ Do not import these as hard rules:
 | Recurring cleanup and anti-slop | GOV-12 drift control |
 | Blocked/retry/stop behavior | GOV-02 escalation and move-on behavior |
 
-## Recommended Codex session pattern
-
-For each work unit:
-
-1. orient on issue, spec, and inherited repo state
-2. classify any residue before starting fresh work
-3. run baseline verifier
-4. implement the scoped change only
-5. run post-change verifier
-6. run skeptical evaluator pass when the slice warrants it
-7. loop on fixes only while the loop is producing real progress
-8. close state through commit, merge-path, archive-path, or explicit follow-up handling
-9. record evidence and any residual risks truthfully
-
 ## Adoption checklist
 
 When adopting this profile in a repo:
@@ -118,6 +109,14 @@ When adopting this profile in a repo:
 - enforce git-state closure at work-unit boundaries
 - require evidence links in issue and PR checkpoints
 - decide which actions require visible human decision boundaries
+- keep the prompt/profile small enough that operators can actually inspect it
+
+## Minimal prompt/profile snippet
+
+For a compact starting point, see:
+- [Minimal VibeGov Execution Profile Snippet](/docs/minimal-vibegov-execution-profile-snippet)
+
+Use it as a small harness seed, then add repo-specific verifier/evaluator/artifact details around it.
 
 ## Minimum quality bar for this profile
 
@@ -156,7 +155,8 @@ This Codex profile is an adapter layer that helps teams apply the same governanc
 
 ## Related docs
 
-- [Codex Prompting Through a VibeGov Lens](/docs/codex-prompting-through-vibegov)
+- [Execution Sharpness and Governed Closure](/docs/codex-prompting-through-vibegov)
+- [Minimal VibeGov Execution Profile Snippet](/docs/minimal-vibegov-execution-profile-snippet)
 - [Harness Profile: Minimal Claude Harness](/docs/harness-profile-minimal-claude)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
