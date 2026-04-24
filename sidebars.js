@@ -58,6 +58,7 @@ const sidebars = {
         'evaluation-pattern',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
+        'codex-prompting-through-vibegov',
         'exploratory-review-mode',
         'checkpoint-reporting',
         'blocker-escalation',
