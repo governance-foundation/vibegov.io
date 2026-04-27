@@ -8,6 +8,12 @@ VibeGov should encode strong execution behavior directly into its own rules, doc
 
 That means keeping the useful execution patterns that help agents move cleanly from intent to verified result while expressing them in native VibeGov language.
 
+It also means being explicit about scope.
+
+The canonical bootstrap contract is still about installing governed repo structure, continuity, issue/spec discipline, and reporting surfaces.
+
+The second-pass Codex lessons mostly improve the execution and harness layer around that contract: tool surface design, output shaping, commentary mechanics, instruction layering, and governed self-improvement.
+
 ## The execution stance
 
 A strong VibeGov execution profile should behave like this:
@@ -41,6 +47,24 @@ If behavior changed, the closing state should include direct evidence: checks, t
 Keep updates concise and high-signal.
 
 Silence is not the goal. Constant narration is not the goal either. The goal is legible execution with minimal wasted interruption.
+
+### Tool surface and output shaping
+
+Prompt quality is only part of the harness.
+
+The tool surface itself matters. A strong coding-agent harness should expose purpose-fit tools with obvious semantics, stable argument shapes, and readable result formats. Large tool outputs should be intentionally shaped or truncated so they preserve decision-useful signal instead of drowning the transcript in noise.
+
+### Instruction layering
+
+Top-level agent instruction files should behave like maps.
+
+A short `AGENTS.md` that points clearly to deeper canonical sources is usually better than a giant top-level encyclopedia. Progressive disclosure improves both discoverability and compliance.
+
+### Governed self-improvement
+
+Metaprompting can be useful.
+
+But if a harness or prompt lesson proves durable, it should be promoted into a governed artifact rather than left as one clever conversation or hidden operator habit.
 
 ## The guardrails
 
@@ -82,10 +106,12 @@ The close should include the expected issue, spec, evidence, git-state, merge-pa
 A strong implementation profile inside VibeGov should:
 - act directly on clear bounded work
 - prefer tool-first execution
+- shape tools and outputs so the model can work legibly
 - reuse repo patterns before inventing new ones
 - verify before claiming success
 - keep checkpoints concise but visible
 - classify inherited state before continuing
+- keep top-level instruction layers short and discoverable
 - stop hiding uncertainty behind momentum
 - close the governed landing path fully
 
@@ -95,6 +121,8 @@ Avoid these patterns:
 - treating maximal parallelism as a rule instead of a heuristic
 - suppressing all progress updates in the name of efficiency
 - treating dirty or inherited repo state as background noise
+- treating tool design as an implementation detail instead of a primary harness lever
+- dumping huge raw outputs into the transcript without shaping
 - optimizing rollout speed above accountability or recoverability
 - using passing build output as a substitute for true closure
 - claiming low narration while actually running as an opaque black box

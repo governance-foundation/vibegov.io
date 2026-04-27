@@ -58,6 +58,7 @@ Then wrap it with repo-specific details such as:
 - canonical verifier commands
 - evaluator expectations
 - issue/spec/traceability locations
+- tool-surface and output-shaping expectations
 - merge and branch-closure rules
 - release verification steps
 - environment- or project-specific safety boundaries
@@ -82,6 +83,7 @@ If the repo has meaningful delivery machinery, release rules, review gates, or i
 
 - [Execution Sharpness and Governed Closure](/docs/codex-prompting-through-vibegov)
 - [Harness Profile: Codex](/docs/harness-profile-codex)
+- [Harness Builder Checklist](/docs/harness-builder-checklist)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Published GOV 10 Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene)
