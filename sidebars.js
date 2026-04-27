@@ -50,6 +50,7 @@ const sidebars = {
       items: [
         'execution-modes',
         'build-exploratory-human-feedback-loops',
+        'feedback-intake',
         'quick-decisions',
         'mode-selection-and-evidence-closing',
         'simplicity-first',

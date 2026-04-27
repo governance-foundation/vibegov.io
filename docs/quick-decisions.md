@@ -13,10 +13,12 @@ Use it when you need a practical answer quickly, then follow the linked deeper d
 | If the goal is... | Use this | What closes it |
 | --- | --- | --- |
 | discover reality, inspect behavior, find gaps, hydrate backlog | **Exploration** | reviewed scope, scenario classifications, artifact links for every real finding |
+| turn human feedback into governed ready work without implementing yet | **Feedback Intake** | issue/spec updates, split/dedupe decisions, readiness/dependency notes |
 | change behavior and carry the change toward release safely | **Development** | issue/spec binding, changed artifacts, validation evidence, traceability updates |
 
 Fast rule:
 - **Exploration** discovers.
+- **Feedback Intake** captures and shapes human feedback into ready work.
 - **Development** changes.
 
 ## 2. Am I exploring or just avoiding proof?
@@ -24,6 +26,7 @@ Fast rule:
 | Signal | Likely answer |
 | --- | --- |
 | you are reviewing routes, flows, UX, gaps, or product reality | **Exploration** |
+| you are reacting to existing work and want proper issues/spec updates before coding | **Feedback Intake** |
 | you changed code, docs, config, content, or delivery machinery | **Development** |
 | you are claiming something works now | **Development evidence required** |
 
@@ -193,8 +196,8 @@ Fast rule:
 
 ## Start here if you are unsure
 
-1. Ask: **Am I discovering, or changing?**
-2. Choose **Exploration** or **Development**.
+1. Ask: **Am I discovering, capturing human feedback into ready work, or changing?**
+2. Choose **Exploration**, **Feedback Intake**, or **Development**.
 3. If you need a bounded judgment, apply the **evaluation pattern** inside that mode.
 4. Keep the execution shape as simple as possible.
 5. Do not claim done until the evidence matches the work shape.
@@ -202,6 +205,7 @@ Fast rule:
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Feedback Intake](/docs/feedback-intake)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)
