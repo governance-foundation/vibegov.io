@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: Bootstrap
+description: Use the canonical VibeGov bootstrap contract to install or normalize governance, specs, workflow rules, and reporting before product-code implementation.
 ---
 
 # Bootstrap

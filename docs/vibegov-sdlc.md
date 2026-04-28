@@ -1,5 +1,7 @@
 ---
 sidebar_position: 4
+title: The VibeGov SDLC
+description: See the governed VibeGov SDLC from bootstrap through issue/spec binding, execution mode selection, validation, reporting, and backlog feedback loops.
 ---
 
 # The VibeGov SDLC
