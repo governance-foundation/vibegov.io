@@ -199,10 +199,9 @@ function FaqSection() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
+      title="Governance for AI-assisted software delivery"
       description="Governance for AI-assisted software delivery.">
       <HomepageHeader />
       <main>
