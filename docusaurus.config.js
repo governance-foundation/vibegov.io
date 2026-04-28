@@ -46,6 +46,9 @@ const config = {
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
+          blogTitle: 'VibeGov Blog',
+          blogDescription:
+            'Governance notes, release updates, and practical patterns for AI-assisted software delivery.',
           editUrl:
             'https://github.com/governance-foundation/vibegov.io/tree/main/',
         },
@@ -70,7 +73,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/vibegov-banner.svg',
+      image: 'img/vibegov-social-card.png',
       colorMode: {
         defaultMode: 'light',
         respectPrefersColorScheme: true,

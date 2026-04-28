@@ -1,8 +1,8 @@
 ---
 sidebar_position: 1
+title: Start Here
+description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
 ---
-
-# VibeGov
 
 VibeGov is a practical governance layer for AI-assisted software delivery.
 
