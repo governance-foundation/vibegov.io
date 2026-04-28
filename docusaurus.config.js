@@ -4,6 +4,31 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://vibegov.io/#organization',
+    name: 'VibeGov',
+    url: 'https://vibegov.io/',
+    logo: 'https://vibegov.io/img/vibegov-icon.svg',
+    description: 'Governance for AI-assisted software delivery.',
+    sameAs: ['https://github.com/governance-foundation/vibegov.io'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': 'https://vibegov.io/#website',
+    url: 'https://vibegov.io/',
+    name: 'VibeGov',
+    description: 'Governance for AI-assisted software delivery.',
+    inLanguage: 'en',
+    publisher: {
+      '@id': 'https://vibegov.io/#organization',
+    },
+  },
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VibeGov',
@@ -58,6 +83,14 @@ const config = {
       }),
     ],
   ],
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify(structuredData),
+    },
+  ],
+
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),

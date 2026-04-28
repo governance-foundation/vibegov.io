@@ -1,5 +1,7 @@
 ---
 sidebar_position: 6
+title: Execution Modes
+description: Learn when to use Development, Exploration, Feedback Intake, and evaluation patterns so AI-assisted delivery stays mode-correct and evidence-honest.
 ---
 
 # Execution Modes
