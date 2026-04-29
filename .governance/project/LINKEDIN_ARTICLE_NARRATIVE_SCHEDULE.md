@@ -4,6 +4,8 @@ Issue: #136
 Status: draft canonical planning artifact
 Purpose: define a coherent article sequence that starts with the original VibeGov foundations and builds forward into the current continuity, harness, exploratory, and execution-sharpness work.
 
+Operational companion: `.governance/project/LINKEDIN_DAILY_POSTING_QUEUE.md`
+
 ## Working assumptions
 
 - This is an internal editorial plan, not a public page.
