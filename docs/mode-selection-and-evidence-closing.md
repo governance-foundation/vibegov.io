@@ -16,12 +16,14 @@ This is the compact operator guide for choosing the right VibeGov work shape wit
 | If the real goal is... | Work shape | What closes it |
 | --- | --- | --- |
 | inspect behavior, discover gaps, understand reality, hydrate backlog | **Exploration** | reviewed scope, scenario classifications, expected vs actual notes, linked issues/spec gaps |
+| turn human feedback into governed ready work without implementing yet | **Feedback Intake** | issue/spec updates, split/dedupe decisions, readiness/dependency notes, recommended next order |
 | change behavior and carry the change toward safe delivery | **Development** | issue/spec binding, changed artifacts, validation evidence, traceability/docs updates |
 | judge a bounded unit against explicit criteria | **Evaluation pattern** inside the current mode | explicit criteria, bounded judgment, pass/fail or scored result |
 | decide whether a built candidate is safe to promote or ship | **Release verification** inside Development | build/version reviewed, integrated checks, go/no-go decision, blockers/risks made visible |
 
 Fast rule:
 - **Exploration** discovers.
+- **Feedback Intake** captures and shapes human feedback into ready work.
 - **Development** changes.
 - **Evaluation** judges a bounded unit.
 - **Release verification** closes a Development-ready candidate.
@@ -36,7 +38,7 @@ A lot of confusion disappears once these are kept separate.
 Typical mapping:
 - **Build Loop** mostly contains **Development** work
 - **Exploratory Loop** mostly contains **Exploration** work
-- **Human Feedback Loop** injects judgment, approval, correction, and reprioritisation into either one
+- **Human Feedback Loop** often uses **Feedback Intake** to inject judgment, approval, correction, and reprioritisation into either one
 - **Evaluation** may be used inside any of those when a bounded verdict is needed
 
 So if you are unsure, choose the **mode** first, then describe the surrounding **loop** second.
@@ -67,6 +69,17 @@ Minimum closure:
 - expected vs actual notes for failures or interesting findings
 - linked issue/spec/traceability artifacts for each real finding
 - residual scope noted honestly
+
+### Feedback Intake
+Use when the goal is to capture human feedback as governed ready work.
+
+Minimum closure:
+- feedback source or reviewed target identified
+- created or updated issue IDs
+- spec binding or `SPEC_GAP`
+- split/dedupe decisions made visible
+- readiness/blocker/dependency notes captured
+- no false implication that implementation already happened
 
 ### Development
 Use when behavior changed.
@@ -155,6 +168,7 @@ If the answers are blurry, the mode is probably blurry too.
 
 - [Quick Decisions](/docs/quick-decisions)
 - [Execution Modes](/docs/execution-modes)
+- [Feedback Intake](/docs/feedback-intake)
 - [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

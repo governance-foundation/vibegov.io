@@ -26,7 +26,7 @@ That distinction matters.
 In practice:
 - the **Build Loop** usually runs **Development** work,
 - the **Exploratory Loop** usually runs **Exploration** work,
-- the **Human Feedback Loop** can reshape either one,
+- the **Human Feedback Loop** often uses **Feedback Intake** to reshape either one,
 - and the **Evaluation pattern** may appear inside either mode when bounded judgment is needed.
 
 That is why loops and modes should support each other, not compete with each other.
@@ -134,6 +134,20 @@ The Human Feedback Loop should feed back into the system by:
 - creating or reshaping governed work,
 - changing acceptance criteria,
 - or explicitly blocking/unblocking a specific path.
+
+### Feedback Intake inside the Human Feedback Loop
+
+The most common governed work shape inside this loop is **Feedback Intake**.
+
+That means the agent should often:
+- capture the feedback cleanly,
+- check for existing related issues/specs,
+- split broad feedback into the right work units,
+- bind or create the right issue/spec artifacts,
+- classify readiness/dependencies,
+- and stop before implementation unless the human explicitly switches modes.
+
+This is how human feedback becomes governed backlog/spec state instead of evaporating into chat or immediately collapsing into ad hoc implementation.
 
 ## 4) Scoped Blocking
 
@@ -278,11 +292,13 @@ Ask four questions:
 1. Am I consuming governed work and changing reality? → **Build Loop**
 2. Am I reviewing reality and feeding new governed work? → **Exploratory Loop**
 3. Am I injecting human judgment, approval, or reprioritisation? → **Human Feedback Loop**
-4. Does this input block everything, or only one specific lane? → apply **Scoped Blocking**
+4. Am I capturing that input into governed ready work without implementing yet? → **Feedback Intake**
+5. Does this input block everything, or only one specific lane? → apply **Scoped Blocking**
 
 ## Related docs
 
 - [Execution Modes](/docs/execution-modes)
+- [Feedback Intake](/docs/feedback-intake)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Evaluation Pattern](/docs/evaluation-pattern)

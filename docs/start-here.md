@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+title: Start Here
+description: Get oriented in VibeGov quickly and choose the right next doc for bootstrap, execution modes, operator guidance, or the broader SDLC model.
 ---
 
 # Start Here

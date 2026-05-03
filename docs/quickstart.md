@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+title: Quick Start
+description: Install VibeGov quickly with the hardened bootstrap contract and the shortest practical path into governed AI-assisted delivery.
 ---
 
 # Quick Start

@@ -58,6 +58,16 @@ Governed systems should optimize for agent legibility by making intent, constrai
 
 > Commentary: Pushes repeatable human taste from comments into enforceable controls.
 
+## Legible Execution and Bounded Autonomy
+
+- `GOV-11-LEG-017` High-agency execution profiles should optimize for interrupt-efficient legibility: enough visible state for an operator to understand progress, risk, and decision boundaries without forcing the agent into constant narration.
+- `GOV-11-LEG-018` Meaningful execution checkpoints should surface start or resume, major plan change, blocker or risk state, validation outcome, and closure outcome when those states occur.
+- `GOV-11-LEG-019` Agents should act autonomously on clear, reversible internal work, but decision boundaries must remain visible for destructive, external, privacy-sensitive, irreversible, or judgment-dependent actions.
+- `GOV-11-LEG-020` Silence is not inherently better than chatter. The governed target is concise, high-signal visibility rather than either status spam or opaque black-box execution.
+- `GOV-11-LEG-021` Throughput-oriented prompting or harness design must not suppress the visibility needed for accountability, recoverability, or safe interruption.
+
+> Commentary: Converts "talk less" into a governed rule about showing the right state at the right time instead of choosing between noise and opacity.
+
 ## Anti-Patterns
 
 Avoid these failure modes:
@@ -66,5 +76,8 @@ Avoid these failure modes:
 - expecting future agents to infer unwritten norms from scattered examples
 - storing critical intent in one giant unstructured instruction file
 - keeping durable rules in people’s heads instead of repo artifacts
+- treating silence as superior to operator-legible checkpoints
+- optimizing throughput by hiding meaningful risk, validation, or decision-boundary state
+- applying high autonomy to destructive or externally consequential actions without making the decision boundary visible
 
-> Commentary: Calls out the exact hidden-knowledge patterns that break agent reliability.
+> Commentary: Calls out the exact hidden-knowledge and hidden-state patterns that break agent reliability.

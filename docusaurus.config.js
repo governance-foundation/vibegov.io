@@ -4,11 +4,36 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const structuredData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': 'https://vibegov.io/#organization',
+    name: 'VibeGov',
+    url: 'https://vibegov.io/',
+    logo: 'https://vibegov.io/img/vibegov-icon-light.svg',
+    description: 'Governance for AI-assisted software delivery.',
+    sameAs: ['https://github.com/governance-foundation/vibegov.io'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': 'https://vibegov.io/#website',
+    url: 'https://vibegov.io/',
+    name: 'VibeGov',
+    description: 'Governance for AI-assisted software delivery.',
+    inLanguage: 'en',
+    publisher: {
+      '@id': 'https://vibegov.io/#organization',
+    },
+  },
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VibeGov',
   tagline: 'Governance for AI-assisted software delivery.',
-  favicon: 'img/vibegov-icon.svg',
+  favicon: 'img/vibegov-icon-light.svg',
 
   // Set the production url of your site here
   url: 'https://vibegov.io',
@@ -46,6 +71,9 @@ const config = {
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
+          blogTitle: 'VibeGov Blog',
+          blogDescription:
+            'Governance notes, release updates, and practical patterns for AI-assisted software delivery.',
           editUrl:
             'https://github.com/governance-foundation/vibegov.io/tree/main/',
         },
@@ -55,6 +83,14 @@ const config = {
       }),
     ],
   ],
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {type: 'application/ld+json'},
+      innerHTML: JSON.stringify(structuredData),
+    },
+  ],
+
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -70,7 +106,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/vibegov-banner.svg',
+      image: 'img/vibegov-social-card.png',
       colorMode: {
         defaultMode: 'light',
         respectPrefersColorScheme: true,
@@ -78,7 +114,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'VibeGov Logo',
-          src: 'img/vibegov-icon.svg',
+          src: 'img/vibegov-icon-light.svg',
           srcDark: 'img/vibegov-icon-light.svg',
         },
         items: [

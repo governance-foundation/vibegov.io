@@ -50,6 +50,7 @@ const sidebars = {
       items: [
         'execution-modes',
         'build-exploratory-human-feedback-loops',
+        'feedback-intake',
         'quick-decisions',
         'mode-selection-and-evidence-closing',
         'simplicity-first',
@@ -58,6 +59,9 @@ const sidebars = {
         'evaluation-pattern',
         'harness-profile-minimal-claude',
         'harness-profile-codex',
+        'codex-prompting-through-vibegov',
+        'harness-builder-checklist',
+        'minimal-vibegov-execution-profile-snippet',
         'exploratory-review-mode',
         'checkpoint-reporting',
         'blocker-escalation',
