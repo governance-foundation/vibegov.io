@@ -12,6 +12,58 @@ Operational companion: `.governance/project/LINKEDIN_DAILY_POSTING_QUEUE.md`
 - The narrative should explain **why VibeGov exists**, then **what rules it introduced**, then **how those rules matured under real agent work**.
 - Prefer adapting already-published VibeGov blog posts first, then fill obvious bridge gaps with a small number of net-new articles.
 - Default cadence: **1 LinkedIn post per week**. Faster posting is possible, but the sequence is designed to read well even if someone discovers it later as a thread of ideas.
+- Real-world publishing pattern now validated: **Governance Foundation page posts first, then Max reposts/shares from his personal profile with a short personal take**.
+
+## Posting process
+
+1. Publish the article post on the **Governance Foundation** page first.
+2. Repost/share that Governance Foundation post from **Max's personal profile** instead of creating a disconnected second original post.
+3. Keep the Governance Foundation copy more institutional and brand-framed.
+4. Keep the personal repost copy broader, more audience-facing, slightly more reach-oriented, and explicitly written as repost/share commentary rather than duplicated company-post body text.
+5. After both are live, mark the queue item as posted in `.governance/project/LINKEDIN_DAILY_POSTING_QUEUE.md`.
+
+## Copy-shaping rules
+
+- **Governance Foundation page** copy should:
+  - sound institutional, clear, and concise
+  - introduce the idea or rule without sounding too personal
+  - usually stay close to the article's core thesis
+- **Max personal profile** copy should:
+  - optimize for reach and shareability
+  - sound more human and opinionated
+  - add a short "why this matters" framing beyond the page copy
+  - work well as repost/share commentary on the Governance Foundation post
+  - avoid reading like the same company-page body pasted a second time onto a personal profile
+
+## Tag strategy
+
+### Stable core tags
+
+Use these on most posts unless there is a strong reason not to:
+
+`#AIGovernance #AIEngineering #SoftwareDelivery #VibeGov`
+
+### Common secondary tags
+
+Rotate these based on topic:
+
+- `#AgentOps`
+- `#AIAgents`
+- `#SoftwareEngineering`
+- `#DevOps`
+- `#TechLeadership`
+- `#WorkflowDesign`
+- `#QualityEngineering`
+- `#Testing`
+- `#EnterpriseAI`
+- `#Automation`
+- `#SDLC`
+
+### Tag-use rule
+
+- Default practical set: **4-6 tags**
+- Personal-profile reach variant: **broader 8-10 tag set is acceptable when intentionally pushing reach**
+- Keep `#VibeGov` on all posts
 
 ## Narrative phases
 
@@ -91,6 +143,9 @@ These are the only net-new posts currently recommended as high-value gaps:
   1. name one delivery failure pattern,
   2. state the governing rule/response,
   3. point to the fuller VibeGov article/site artifact.
+- For personal reposts, add a fourth layer when helpful:
+  4. state why the idea matters to real teams working with AI now.
+- For live repost help in chat, assume Max wants a true personal repost caption unless he explicitly asks for identical company-post text.
 - The March 28 runtime-economics cluster may work better as either:
   - a 3-part micro-series, or
   - one larger article plus 2-3 supporting LinkedIn posts.
@@ -99,4 +154,4 @@ These are the only net-new posts currently recommended as high-value gaps:
 
 - When a new major VibeGov article lands, do not just append it blindly.
 - Re-check whether it belongs in an existing phase, creates a new phase, or replaces a weaker planned bridge article.
-- If LinkedIn publishing begins, add a `Published` column with actual dates and URLs rather than creating a separate shadow schedule.
+- If LinkedIn publishing begins, update the queue rather than creating a separate shadow posting tracker.
