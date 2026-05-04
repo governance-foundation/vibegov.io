@@ -3,7 +3,10 @@ slug: how-to-avoid-death-by-1000-prompts
 title: "How to avoid Death by 1000 prompts"
 authors: [VibeGov_team]
 tags: [governance, prompting, agents, delivery, workflow]
+image: /img/blog/death-by-1000-prompts-hero.png
 ---
+
+![Death by 1000 prompts hero image](/img/blog/death-by-1000-prompts-hero.png)
 
 Most AI teams do not fail because one prompt was bad.
 
