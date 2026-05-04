@@ -79,7 +79,7 @@ Rotate these based on topic:
 
 | Order | Theme | Source status | Canonical source | LinkedIn angle |
 |---|---|---|---|---|
-| 1 | Why VibeGov exists: AI work needs governance, not just prompts | **Proposed new** | New article needed | Start with the core problem: uncontrolled AI work creates invisible state, vague completion, and unowned risk |
+| 1 | How to avoid Death by 1000 prompts | Existing article | `blog/2026-05-04-how-to-avoid-death-by-1000-prompts.md` | Start with the core problem: teams keep patching recurring failures with more prompts instead of converting them into governed rules, workflow, memory, and closure |
 | 2 | GOV-01: instructions are part of the product | Existing article | `blog/2026-02-23-launch-gov-01.md` | Explain that execution quality starts with explicit operational rules |
 | 3 | GOV-02: workflow must be explicit | Existing article | `blog/2026-02-24-gov-02-workflow.md` | Show that governed work needs a visible sequence, not ad-hoc motion |
 | 4 | GOV-03: communication is execution infrastructure | Existing article | `blog/2026-02-25-gov-03-communication.md` | Good communication is not softness; it is traceability and recovery infrastructure |
@@ -129,11 +129,9 @@ Goal: crystallize the strongest current insight emerging from practice: canonica
 
 ## Proposed net-new bridge articles
 
-These are the only net-new posts currently recommended as high-value gaps:
+These are the remaining net-new posts currently recommended as high-value gaps:
 
-1. **Why VibeGov exists: AI work needs governance, not just prompts**
-   - Opens the narrative cleanly for LinkedIn readers who were not present for the earliest repo/rule work.
-2. **Canonical truth vs transient handover state**
+1. **Canonical truth vs transient handover state**
    - Captures the newest insight from continuity, resumability, and issue-scoped execution discipline.
 
 ## Editorial notes for adaptation
