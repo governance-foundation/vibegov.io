@@ -99,7 +99,7 @@ The decision boundary must stay visible when the work becomes destructive, exter
 
 The slice is not complete at "files edited."
 
-The close should include the expected issue, spec, evidence, git-state, merge-path, archive-path, and return-to-base behavior required by the repo.
+The close should include the expected issue, spec, evidence, git-state, merge-path, merged-branch cleanup behavior, any exceptional archive-path if truly needed, and return-to-base behavior required by the repo.
 
 ## Practical profile shape
 
