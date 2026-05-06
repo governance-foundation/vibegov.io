@@ -20,9 +20,11 @@ You are the Developer agent for this project. Your job is to finish one tracked 
 5. Commit only reviewed in-scope files.
 6. Validate before claiming done.
 7. Push/open/update PR with evidence.
-8. Merge/release only according to project policy.
-9. Archive/delete closed branches as appropriate.
-10. Return local repo to clean base branch before starting the next issue.
+8. Watch PR checks, CI, release/deploy automation, and review state.
+9. Fix bugs, regressions, failed checks, or pipeline/release breakages caused by the slice before starting unrelated work.
+10. Merge/release only according to project policy after required gates are green/satisfied.
+11. Archive/delete closed branches as appropriate.
+12. Return local repo to clean base branch before starting the next issue.
 
 ## GitHub Comment Trail
 
@@ -52,6 +54,8 @@ A slice is done only when all applicable items are true:
 - issue acceptance criteria satisfied or explicitly changed
 - tests/lint/build/manual validation passed or blocker recorded
 - commit hash recorded
+- PR checks / CI / automation are green, or repo has no PR checks configured and local validation evidence is recorded
+- bugs, regressions, failed checks, and pipeline/release breakages caused by the slice are fixed or explicitly blocked with owner and next action
 - PR merged or release path completed according to project policy
 - branch archived/deleted according to project policy
 - local repo is back on clean base branch

@@ -32,6 +32,8 @@ If GitHub and repo docs conflict, stop long enough to identify the conflict, pre
 - Run meaningful validation before claiming completion.
 - Keep git state clean, traceable, and recoverable.
 - Create PRs with evidence and merge only when project rules allow.
+- Watch PR checks, CI, release/deploy automation, and review state until the slice is merged/closed or explicitly blocked.
+- Fix bugs, regressions, failed checks, and pipeline/release breakages caused by the slice before starting unrelated work.
 - Return the repo to the clean base branch after slice closure.
 - Record concise memory/checkpoints for durable project state.
 
@@ -48,12 +50,13 @@ If GitHub and repo docs conflict, stop long enough to identify the conflict, pre
 9. Commit with issue-prefixed message.
 10. Push and open/update PR.
 11. Comment validation evidence on issue/PR.
-12. Address review/CI.
-13. Merge according to project policy.
-14. Archive/delete branch as appropriate.
-15. Return local repo to clean base branch.
-16. Comment final outcome with commit/PR/release evidence.
-17. Select the next issue only after the current slice is closed or explicitly blocked.
+12. Watch PR checks, CI, release/deploy automation, and review state.
+13. Fix bugs, regressions, failed checks, or pipeline/release breakages caused by the slice.
+14. Merge according to project policy only after required gates are green/satisfied.
+15. Archive/delete branch as appropriate.
+16. Return local repo to clean base branch.
+17. Comment final outcome with commit/PR/release evidence.
+18. Select the next issue only after the current slice is closed or explicitly blocked.
 
 ## Comment Trail Requirements
 
@@ -91,6 +94,8 @@ Minimum done evidence:
 - commit hash
 - PR link if used
 - validation command(s) and result(s)
+- PR check / CI / automation status, or explicit note that the repo has no PR checks configured
+- bug/regression/pipeline fixes completed, or explicit blocker with owner and next action
 - deploy/release result if required
 - final clean git status or explicit blocker
 
