@@ -125,6 +125,7 @@ const config = {
             label: 'Docs',
           },
           {to: '/docs/bootstrap', label: 'Bootstrap', position: 'left'},
+          {to: '/roles', label: 'Roles', position: 'left'},
           {to: '/docs/quickstart', label: 'Quick Start', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/docs/contribute', label: 'Contribute', position: 'left'},

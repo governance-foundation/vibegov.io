@@ -92,6 +92,7 @@ function walkFiles(dir, baseDir = dir) {
 function flattenAssetName(targetPath, fileRelativePath = '') {
   const normalizedTarget = targetPath.replace(/\\/g, '/');
   if (normalizedTarget === 'agent.txt' || normalizedTarget === 'bootstrap.json') return normalizedTarget;
+  if (normalizedTarget === 'roles') return `roles-${fileRelativePath.replace(/[\\/]/g, '-')}`;
   if (normalizedTarget === '.governance/rules') return path.posix.basename(fileRelativePath);
   if (normalizedTarget.startsWith('docs/')) return path.posix.basename(normalizedTarget);
   return normalizedTarget.replace(/[\\/]/g, '-');

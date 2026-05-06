@@ -9,6 +9,7 @@ const SOURCE_REPO = 'governance-foundation/vibegov.io';
 const RELEASE_FILE_MAP = [
   { source: path.join('static', 'agent.txt'), target: 'agent.txt' },
   { source: path.join('static', 'bootstrap.json'), target: 'bootstrap.json' },
+  { source: path.join('static', 'roles'), target: 'roles' },
   { source: path.join('.governance', 'rules'), target: path.join('.governance', 'rules') },
   { source: path.join('docs', 'bootstrap.md'), target: path.join('docs', 'bootstrap.md') },
   { source: path.join('docs', 'quickstart.md'), target: path.join('docs', 'quickstart.md') },

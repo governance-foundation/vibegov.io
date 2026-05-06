@@ -1,0 +1,116 @@
+{
+  "schema": "https://vibegov.io/schemas/agent-role-manifest.v1.json",
+  "role": "documenter",
+  "version": "2026.5.6-local",
+  "entrypoint": "BOOTSTRAP.md",
+  "summary": "Documenter / Comms role pack for READMEs, install guides, changelogs, user docs, release summaries, and public-facing explanations.",
+  "install": {
+    "defaultMode": "merge",
+    "neverBlindOverwrite": [
+      "MEMORY.md",
+      "USER.md",
+      "TOOLS.md",
+      "AGENTS.md"
+    ],
+    "requiresBootstrapReport": true
+  },
+  "files": [
+    {
+      "path": "BOOTSTRAP.md",
+      "purpose": "self-bootstrap entrypoint",
+      "merge": "replace-from-role-pack-ok"
+    },
+    {
+      "path": "ROLE.md",
+      "purpose": "role contract",
+      "merge": "replace-from-role-pack-ok"
+    },
+    {
+      "path": "MANIFEST.md",
+      "purpose": "human manifest/checklist",
+      "merge": "replace-from-role-pack-ok"
+    },
+    {
+      "path": "files/AGENTS.md",
+      "dest": "AGENTS.md",
+      "purpose": "operational rules",
+      "merge": "preserve-local-rules"
+    },
+    {
+      "path": "files/SOUL.md",
+      "dest": "SOUL.md",
+      "purpose": "role persona",
+      "merge": "create-if-missing-or-append-role"
+    },
+    {
+      "path": "files/TOOLS.md",
+      "dest": "TOOLS.md",
+      "purpose": "local tooling notes",
+      "merge": "preserve-local-facts"
+    },
+    {
+      "path": "files/IDENTITY.md",
+      "dest": "IDENTITY.md",
+      "purpose": "role identity",
+      "merge": "create-if-missing"
+    },
+    {
+      "path": "files/USER.md",
+      "dest": "USER.md",
+      "purpose": "stakeholder/project context",
+      "merge": "preserve-local-facts"
+    },
+    {
+      "path": "files/HEARTBEAT.md",
+      "dest": "HEARTBEAT.md",
+      "purpose": "proactive/checkpoint duties",
+      "merge": "merge-checklists"
+    },
+    {
+      "path": "files/MEMORY.md",
+      "dest": "MEMORY.md",
+      "purpose": "initial durable memory",
+      "merge": "preserve-local-facts"
+    }
+  ],
+  "overlays": [
+    {
+      "path": "overlays/readme-install.md",
+      "mode": "role-specific"
+    },
+    {
+      "path": "overlays/release-notes.md",
+      "mode": "role-specific"
+    },
+    {
+      "path": "overlays/api-docs.md",
+      "mode": "role-specific"
+    },
+    {
+      "path": "overlays/user-guides.md",
+      "mode": "role-specific"
+    },
+    {
+      "path": "overlays/public-comms.md",
+      "mode": "role-specific"
+    }
+  ],
+  "requiredReportFields": [
+    "role",
+    "initMode",
+    "repo",
+    "sourceOfTruth",
+    "filesChanged",
+    "validationCommands",
+    "gitStatusOrProjectState",
+    "firstActionOrBlocker"
+  ],
+  "common": [
+    "../_common/BOOTSTRAP-CHECKLIST.md",
+    "../_common/source-of-truth-policy.md",
+    "../_common/authority-and-escalation.md",
+    "../_common/heartbeat-orchestration.md",
+    "../_common/INSTALL-CHECKLIST.md",
+    "../_common/squad-operating-model.md"
+  ]
+}
