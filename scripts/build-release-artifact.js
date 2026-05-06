@@ -64,7 +64,7 @@ function createZip(bundleDir, zipPath) {
     '            full_path = os.path.join(current_root, file_name)',
     '            rel_path = os.path.relpath(full_path, os.path.dirname(bundle_dir))',
     '            zf.write(full_path, rel_path)',
-  ].join('; ');
+  ].join('\n');
 
   cp.execFileSync('python3', ['-c', pythonZip, bundleDir, zipPath], {
     cwd: REPO_ROOT,
