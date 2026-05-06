@@ -319,10 +319,18 @@
     ]
   },
   "operatingPrinciples": [
-    "Ready is the contract",
-    "Develop is the integration truth",
-    "Automation is the gate",
-    "No wild forks"
+    "Planner owns flow and issue quality",
+    "Architect owns shape and technical direction",
+    "Designer owns UI/UX intent and the Design Language System",
+    "Developer owns delivery of Ready work",
+    "Automation owns objective proof",
+    "develop is the integration truth",
+    "main is the release truth",
+    "Ready means clear, scoped, risk-classified, and releasable",
+    "Done means integrated, green, and closure criteria met",
+    "Branches are temporary implementation workspaces, not product states",
+    "Toggles are configuration and product controls, not unfinished-code hiding places",
+    "Agents may propose broadly but act only within their authority"
   ],
   "routingLabels": [
     "project:needs-analysis",
@@ -335,6 +343,62 @@
     "project:ready-for-dev",
     "project:blocked",
     "project:cross-repo",
-    "project:parking-lot"
-  ]
+    "project:parking-lot",
+    "risk:low",
+    "risk:medium",
+    "risk:high",
+    "type:bug",
+    "type:feature",
+    "type:refactor",
+    "type:docs",
+    "type:test",
+    "type:security",
+    "type:research",
+    "type:exploration",
+    "type:chore",
+    "type:release",
+    "area:frontend",
+    "area:backend",
+    "area:api",
+    "area:infra",
+    "area:auth",
+    "area:docs",
+    "area:tests",
+    "area:deps",
+    "area:ui",
+    "area:data",
+    "area:ci",
+    "ops:stale",
+    "ops:needs-owner",
+    "ops:needs-follow-up",
+    "ops:blocked-check",
+    "ops:ready-queue-low",
+    "ops:handoff-needed",
+    "ops:waiting-review"
+  ],
+  "sourceOfTruth": {
+    "operationalState": "Project board or repo-declared equivalent",
+    "workContract": "Issue",
+    "requirementsAndAcceptance": "OpenSpec, spec, or issue brief",
+    "technicalDirection": "ADRs / architecture notes",
+    "designIntent": "Design brief, DLS contract, component/flow spec",
+    "integrationState": "develop or configured integration branch",
+    "releaseState": "main or configured release branch",
+    "objectiveQualityProof": "CI / automation pipeline",
+    "followUpAndUnresolvedWork": "Linked issues"
+  },
+  "boardColumns": [
+    "No status",
+    "Backlog",
+    "Ready",
+    "In Progress - In Dev",
+    "In Review - In Test",
+    "Done",
+    "Blocked",
+    "Parking Lot"
+  ],
+  "definitions": {
+    "ready": "Issue is clear, scoped, risk-classified, required inputs are complete or explicitly not applicable, and it can land as a releasable increment.",
+    "done": "Change is integrated into the configured integration branch, objective gates are green, acceptance criteria are met, docs/tests/config are updated where required, and follow-ups are linked."
+  }
 }
