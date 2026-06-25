@@ -1,0 +1,22 @@
+Issue: #138 Bootstrap should initialize git early and preserve pre-init state
+Branch: issue-138-bootstrap-git-init-preflight
+Run: 2026-06-26 04:03 Australia/Sydney
+
+Resume state:
+- No open vibegov.io PRs were active.
+- Existing issue branch had committed docs/spec work but no PR.
+- Branch was rebased onto current develop at a3d7657158e578118d7d7609a4b0e3ee166b2388.
+
+Files in issue diff:
+- .governance/specs/bootstrap-git-init-preflight.md
+- docs/bootstrap.md
+- docs/faq/when-do-i-use-bootstrap-init.md
+- docs/github-project-bootstrap.md
+- docs/quickstart.md
+
+Validation:
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+
+Next action:
+- Push refreshed branch and open PR for review/validation.
