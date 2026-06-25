@@ -1,0 +1,29 @@
+VibeGov developer cron run 2026-06-26 03:07 Australia/Sydney
+
+Issue/PR:
+- Promotion PR: #163, develop -> main
+- Reconciliation PR merged first: #165
+
+Actions:
+- Merged PR #165 into develop with merge commit 68c8141ec5122fde8f2668cc70577367407109b7.
+- Re-checked PR #163 after the reconciliation; it became mergeable at develop head 68c8141ec5122fde8f2668cc70577367407109b7.
+- Found promotion diff-check whitespace failures in the latest committed PR #165 proof logs.
+- Created branch chore/163-promotion-log-whitespace from develop.
+- Normalized the affected proof logs.
+- Updated Cypress smoke expectations to match the current homepage copy and docs route.
+
+Validation:
+- git diff --check origin/main: initially failed; see git-diff-check-origin-main.log.
+- git diff --check origin/main: passed after log normalization and smoke test update.
+- npm run typecheck: passed; see npm-run-typecheck.log.
+- npm run build: passed; see npm-run-build.log.
+- npm run release:build: passed; see npm-run-release-build.log.
+- npm run test:e2e: failed against occupied localhost:3000; see npm-run-test-e2e.log and serve-test.* logs.
+- npx cypress run --spec cypress/e2e/site-smoke.cy.js --config baseUrl=http://localhost:3005: initially reached VibeGov and failed on stale "Quick Start Prompt"; see npx-cypress-site-smoke-port-3005.log.
+- npx cypress run --spec cypress/e2e/site-smoke.cy.js --config baseUrl=http://localhost:3005: passed after the smoke assertion update; see npx-cypress-site-smoke-port-3005-after-smoke-fix.log.
+
+Notes:
+- Port 3000 was already occupied by a non-VibeGov Scheduling Assistant app during this run.
+- The VibeGov built-site server was run on port 3005 for the successful smoke test and stopped before commit.
+
+
