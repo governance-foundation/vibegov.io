@@ -76,6 +76,8 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-004B` A non-`main` / non-`develop` branch is a governed work unit, not a reusable parent branch.
 - `GOV-02-GIT-004C` Hotfix branches must be created from `main` only.
 - `GOV-02-GIT-004D` Any stacked-branch exception requires explicit human approval, a bounded reason, and an explicit reconciliation plan.
+- `GOV-02-GIT-004E` A governed work turn is not complete while the local repo remains parked on a non-`main` / non-`develop` branch after the bounded slice is finished. The work must be reconciled through the governed landing path and the repo returned to its canonical resting branch: `develop` for normal work, `main` for `main`-sourced hotfix or release work.
+- `GOV-02-GIT-004F` Leaving the repo stranded on a stray issue/work branch at turn end without explicit justification and handoff state is a failed work turn, because it blocks or contaminates the next governed work unit.
 - `GOV-02-GIT-005` Every agent-authored non-hotfix change must use a pull request into `develop` that links the governing issue/spec and records verification evidence.
 - `GOV-02-GIT-005A` Branch cleanup, retirement, deletion, or archival must not substitute for landing the intended result. A governed work branch should only be retired once the desired preserved outcome is safely landed through the repository's governed flow, or the retained state has been deliberately preserved elsewhere with an explicit follow-up path.
 - `GOV-02-GIT-006` Promotion from `develop` to `main` must be explicit and reviewable. Release or promotion pull requests should state what is being promoted and what release-readiness evidence supports the move.

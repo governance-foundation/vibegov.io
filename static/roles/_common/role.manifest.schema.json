@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vibegov.io/schemas/agent-role-manifest.v1.json",
+  "title": "Agent Role Manifest",
+  "type": "object",
+  "required": ["schema", "role", "version", "entrypoint", "summary", "install", "files", "overlays", "common"],
+  "properties": {
+    "schema": { "type": "string" },
+    "role": { "type": "string" },
+    "version": { "type": "string" },
+    "entrypoint": { "type": "string" },
+    "summary": { "type": "string" },
+    "common": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "install": {
+      "type": "object",
+      "required": ["defaultMode", "neverBlindOverwrite", "requiresBootstrapReport"],
+      "properties": {
+        "defaultMode": { "type": "string" },
+        "neverBlindOverwrite": { "type": "array", "items": { "type": "string" } },
+        "requiresBootstrapReport": { "type": "boolean" }
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "purpose", "merge"],
+        "properties": {
+          "path": { "type": "string" },
+          "dest": { "type": "string" },
+          "purpose": { "type": "string" },
+          "merge": { "type": "string" }
+        }
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "mode"],
+        "properties": {
+          "path": { "type": "string" },
+          "mode": { "type": "string" }
+        }
+      }
+    },
+    "requiredReportFields": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

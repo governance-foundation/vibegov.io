@@ -102,11 +102,13 @@ Governed repositories should treat repository state as a control surface for age
 - `GOV-10-GIT-036` A blocked or deferred substantive turn or work unit must still leave the repository in a classified state, even when implementation is incomplete.
 - `GOV-10-GIT-037` If the intended work is not actually complete by turn end, a focused follow-up ticket must be created rather than carrying unresolved branch or dirty-state ambiguity forward.
 - `GOV-10-GIT-038` A slice is not closed until the original ticket is merged into `develop`.
-- `GOV-10-GIT-039` After closure, the branch where the work was done must be archived under an `archive/`-prefixed branch name.
-- `GOV-10-GIT-040` After merge and archival, the local working repo should be returned to `develop`.
+- `GOV-10-GIT-039` After a PR is merged, the merged work branch should normally be deleted locally and remotely as part of the same closure routine.
+- `GOV-10-GIT-039A` `archive/` branches are for stale, unmerged, or intentionally preserved branches that still need history retention. Do not archive a branch by default when its PR is already merged and the landed history is preserved in the target branch.
+- `GOV-10-GIT-040` After merge and branch cleanup, the local working repo must be returned to the lane's canonical resting branch: `develop` for normal work, `main` for `main`-sourced hotfix or release work.
+- `GOV-10-GIT-040A` If a bounded work turn finishes but the repo is still left on a stray issue/work branch, the turn is not merely untidy; it is failed closure because it blocks or contaminates the next work unit.
 - `GOV-10-GIT-041` Handoff artifacts should state any intentionally deferred files, branches, or follow-up tickets explicitly rather than relying on a future reader to infer them from git status.
 
-> Commentary: Turns closure into a concrete end-state: committed, merged into `develop`, archived, and back on `develop`, with follow-up tickets when needed.
+> Commentary: Turns closure into a concrete end-state: committed, merged through the governed flow, merged branches deleted by default, archive reserved for exceptional preservation cases, and the repo returned to the correct resting branch rather than stranded on a work branch.
 
 ## Anti-Patterns
 
@@ -121,6 +123,7 @@ Avoid these failure modes:
 - auto-resetting, deleting, or force-cleaning inherited state to feel clean without first classifying it
 - using dirty state as a substitute for real tracking
 - marking a slice done before the original ticket is merged into `develop`
+- archiving a merged work branch by default when simple branch deletion was the correct closure path
 - archiving a work branch without first closing the governed landing path
 - failing to create a follow-up ticket when the current turn cannot honestly close the slice
 - using cleanup, archival, or rollback to erase rationale instead of preserving it

@@ -1,0 +1,2 @@
+Command: git diff --check origin/develop
+Result: exit 0

@@ -92,7 +92,7 @@ A healthy run should look like this:
 - run skeptical evaluator pass when the slice warrants it
 - shape large outputs so they remain readable and decision-useful
 - loop on fixes only while the loop is producing real progress
-- close state through commit, merge-path, archive-path, or explicit follow-up handling
+- close state through commit, merge-path, merged-branch deletion by default, exceptional archive-path only when preservation is needed, or explicit follow-up handling
 - record evidence and residual risk truthfully
 
 ## Non-negotiable guardrails
