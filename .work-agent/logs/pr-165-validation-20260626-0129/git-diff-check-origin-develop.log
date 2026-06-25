@@ -1,0 +1,116 @@
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:1: trailing whitespace.
++git diff --check origin/develop
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:2: trailing whitespace.
++Started: 2026-06-26T00:06:17.8092830+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:5: trailing whitespace.
++Finished: 2026-06-26T00:06:17.9681535+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/git-diff-check-origin-develop.log:6: trailing whitespace.
++Exit code: 0
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:1: trailing whitespace.
++npm run build
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:2: trailing whitespace.
++Started: 2026-06-26T00:06:26.5795771+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:5: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:6: trailing whitespace.
++> docusaurus build
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:8: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:9: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:10: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:11: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:12: trailing whitespace.
++i Compiling Client
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:13: trailing whitespace.
++i Compiling Server
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:14: trailing whitespace.
++√ Client: Compiled successfully in 856.25ms
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:15: trailing whitespace.
++√ Server: Compiled successfully in 13.34s
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:16: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:17: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:18: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:19: trailing whitespace.
++Finished: 2026-06-26T00:06:47.0187363+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-build.log:20: trailing whitespace.
++Exit code: 0
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:1: trailing whitespace.
++npm run release:build
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:2: trailing whitespace.
++Started: 2026-06-26T00:06:47.0261698+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:5: trailing whitespace.
++> website@0.0.0 release:build
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:6: trailing whitespace.
++> node scripts/build-release-artifact.js
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:8: trailing whitespace.
++Created VibeGov release bundle: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.6.26-c6a811e\vibegov-2026.6.26-c6a811e.zip
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:9: trailing whitespace.
++Prepared flat release assets: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.6.26-c6a811e\flat
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:10: trailing whitespace.
++(node:43880) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:11: trailing whitespace.
++(Use `node --trace-deprecation ...` to show where the warning was created)
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:12: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:13: trailing whitespace.
++Finished: 2026-06-26T00:06:55.0412304+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-release-build.log:14: trailing whitespace.
++Exit code: 0
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:1: trailing whitespace.
++npm run typecheck
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:2: trailing whitespace.
++Started: 2026-06-26T00:06:17.9720455+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:5: trailing whitespace.
++> website@0.0.0 typecheck
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:6: trailing whitespace.
++> tsc
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:8: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:9: trailing whitespace.
++Finished: 2026-06-26T00:06:26.5725273+10:00
+.work-agent/logs/pr-165-validation-20260626-0003/npm-run-typecheck.log:10: trailing whitespace.
++Exit code: 0
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:1: trailing whitespace.
++PR #165 validation refresh for cron run 2026-06-26 00:03 Australia/Sydney
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:2: trailing whitespace.
++Head: c6a811e4d4589d02777906051d524b818f26d77d
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:3: trailing whitespace.
++Branch: chore/163-main-develop-reconcile
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:5: trailing whitespace.
++git diff --check origin/develop => exit 0 (.work-agent\logs\pr-165-validation-20260626-0003\git-diff-check-origin-develop.log)
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:6: trailing whitespace.
++npm run typecheck => exit 0 (.work-agent\logs\pr-165-validation-20260626-0003\npm-run-typecheck.log)
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:7: trailing whitespace.
++npm run build => exit 0 (.work-agent\logs\pr-165-validation-20260626-0003\npm-run-build.log)
+.work-agent/logs/pr-165-validation-20260626-0003/summary.txt:8: trailing whitespace.
++npm run release:build => exit 0 (.work-agent\logs\pr-165-validation-20260626-0003\npm-run-release-build.log)

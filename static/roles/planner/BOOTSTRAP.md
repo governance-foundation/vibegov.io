@@ -65,4 +65,3 @@ Optional:
 - Do not create duplicate issues without checking existing backlog.
 - Do not use private chain-of-thought in comments. Publish concise rationale, decisions, issue links, and next actions.
 - Do not let planning become endless. Keep backlog ready for one-feature-at-a-time developer execution.
-

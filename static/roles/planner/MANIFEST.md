@@ -51,4 +51,3 @@ All role installs also inherit:
 - [ ] Existing issues searched before creating new work.
 - [ ] Developer handoff format identified.
 - [ ] First backlog hygiene actions identified.
-

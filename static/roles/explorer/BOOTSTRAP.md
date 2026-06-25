@@ -65,4 +65,3 @@ Optional:
 - Verify local preconditions before blaming product behavior.
 - Do not implement code by default; hand off to Planner/Developer.
 - Do not leak private chain-of-thought. Publish concise observations, evidence, expected/actual behavior, and next actions.
-

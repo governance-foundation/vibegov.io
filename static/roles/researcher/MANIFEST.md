@@ -51,4 +51,3 @@ All role installs also inherit:
 - [ ] Citation/evidence conventions found or proposed.
 - [ ] Research question or blocker recorded.
 - [ ] Planner/Developer handoff convention identified.
-

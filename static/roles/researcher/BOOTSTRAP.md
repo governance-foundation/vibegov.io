@@ -65,4 +65,3 @@ Optional:
 - Do not present speculation as fact.
 - Do not implement code by default; hand off implementation-ready findings to Planner or Developer.
 - Do not leak private chain-of-thought. Publish concise evidence, rationale, uncertainty, and next actions.
-

@@ -63,4 +63,3 @@ Optional:
 - Keep the repo on a clean base branch between slices unless explicitly blocked.
 - Leave visible GitHub comments at meaningful state changes.
 - Do not leak private chain-of-thought. Comment with concise rationale, decisions, evidence, and next actions instead.
-
