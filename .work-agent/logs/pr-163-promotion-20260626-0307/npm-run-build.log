@@ -12,5 +12,3 @@ i Compiling Server
 √ Server: Compiled successfully in 3.85s
 [SUCCESS] Generated static files in "build".
 [INFO] Use `npm run serve` command to test your build locally.
-
-

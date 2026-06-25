@@ -25,5 +25,4 @@ Validation:
 Notes:
 - Port 3000 was already occupied by a non-VibeGov Scheduling Assistant app during this run.
 - The VibeGov built-site server was run on port 3005 for the successful smoke test and stopped before commit.
-
-
+- Follow-up log hygiene normalized captured terminal padding and blank EOF lines so `git diff --check origin/main` remains clean.
