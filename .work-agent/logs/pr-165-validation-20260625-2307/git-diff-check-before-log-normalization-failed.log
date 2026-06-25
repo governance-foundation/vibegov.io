@@ -1,0 +1,71 @@
+Running: git diff --check origin/develop
+.work-agent/logs/pr-165-validation-20260625-2207/git-diff-check.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/git-diff-check.log:6: trailing whitespace.
++Finished: 2026-06-25T22:13:23.1057795+10:00
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:5: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:6: trailing whitespace.
++> docusaurus build
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:8: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:9: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:10: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:11: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:12: trailing whitespace.
++i Compiling Client
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:13: trailing whitespace.
++i Compiling Server
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:14: trailing whitespace.
++√ Client: Compiled successfully in 22.18s
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:15: trailing whitespace.
++√ Server: Compiled successfully in 33.24s
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:16: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:17: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/pr-165-validation-20260625-2207/npm-build.log:20: trailing whitespace.
++Finished: 2026-06-25T22:14:09.4242632+10:00
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:5: trailing whitespace.
++> website@0.0.0 release:build
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:6: trailing whitespace.
++> node scripts/build-release-artifact.js
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:8: trailing whitespace.
++Created VibeGov release bundle: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.6.25-9ef2f44\vibegov-2026.6.25-9ef2f44.zip
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:9: trailing whitespace.
++Prepared flat release assets: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.6.25-9ef2f44\flat
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:10: trailing whitespace.
++(node:43096) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:11: trailing whitespace.
++(Use `node --trace-deprecation ...` to show where the warning was created)
+.work-agent/logs/pr-165-validation-20260625-2207/npm-release-build.log:14: trailing whitespace.
++Finished: 2026-06-25T22:14:16.0321451+10:00
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:3: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:4: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:5: trailing whitespace.
++> website@0.0.0 typecheck
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:6: trailing whitespace.
++> tsc
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:7: trailing whitespace.
++
+.work-agent/logs/pr-165-validation-20260625-2207/npm-typecheck.log:10: trailing whitespace.
++Finished: 2026-06-25T22:13:27.8635097+10:00
+.work-agent/logs/pr-165-validation-20260625-2207/summary.txt:10: trailing whitespace.
++- npm run release:build
