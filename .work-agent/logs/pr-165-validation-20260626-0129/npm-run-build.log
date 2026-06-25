@@ -1,6 +1,3 @@
-npm run build
-Started: 2026-06-26T00:06:26.5795771+10:00
-
 
 > website@0.0.0 build
 > docusaurus build
@@ -11,10 +8,7 @@ Started: 2026-06-26T00:06:26.5795771+10:00
 [INFO] [en] Creating an optimized production build...
 i Compiling Client
 i Compiling Server
-√ Client: Compiled successfully in 856.25ms
-√ Server: Compiled successfully in 13.34s
+√ Client: Compiled successfully in 1.18s
+√ Server: Compiled successfully in 5.60s
 [SUCCESS] Generated static files in "build".
 [INFO] Use `npm run serve` command to test your build locally.
-
-Finished: 2026-06-26T00:06:47.0187363+10:00
-Exit code: 0
