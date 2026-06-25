@@ -2,12 +2,13 @@ describe("VibeGov site smoke test", () => {
   it("loads homepage and core docs links", () => {
     cy.visit("/");
     cy.contains("VibeGov").should("be.visible");
-    cy.contains("Quick Start Prompt").should("be.visible");
-    cy.contains("Please review and learn development practices from https://governance-foundation.github.io/vibegov.io.")
+    cy.contains("Quick paths").should("be.visible");
+    cy.contains("Bootstrap Init Prompt (BI)").should("be.visible");
+    cy.contains("Run VibeGov bootstrap in mode: init.")
       .should("be.visible");
     cy.contains("Read Docs").click();
-    cy.url().should("include", "/docs/");
-    cy.contains("Why VibeGov Exists").should("be.visible");
+    cy.url().should("include", "/docs/intro");
+    cy.contains("Why VibeGov exists").should("be.visible");
     cy.contains("Contribute").should("be.visible");
   });
 });

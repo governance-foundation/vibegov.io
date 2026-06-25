@@ -1,19 +1,10 @@
-COMMAND: npm-run-build-rerun.log
-START: 2026-06-26T02:10:54.1913033+10:00
-END: 2026-06-26T02:11:05.4223850+10:00
-EXIT_CODE: 0
 
-
-> website@0.0.0 build
-> docusaurus build
+> website@0.0.0 serve:test
+> docusaurus serve --host localhost --port 3000
 
 
 ╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
 
-[INFO] [en] Creating an optimized production build...
-i Compiling Client
-i Compiling Server
-√ Client: Compiled successfully in 1.23s
-√ Server: Compiled successfully in 6.90s
-[SUCCESS] Generated static files in "build".
-[INFO] Use `npm run serve` command to test your build locally.
+[SUCCESS] Serving "build" directory at: http://localhost:3000/
+
+
