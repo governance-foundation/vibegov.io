@@ -131,12 +131,13 @@ Fast rule:
 | unresolved junk reverted or ignored explicitly | prevents residue from leaking forward |
 | if not finished, a focused follow-up ticket exists | prevents ambiguous carry-over |
 | original ticket merged into `develop` | closes the governed landing path |
-| working branch archived as `archive/<branch>` | preserves branch history cleanly |
+| merged work branch deleted locally and remotely | removes stale branch carry-over after landing |
 | local repo returned to `develop` | resets the next execution starting point |
 
 Fast rule:
 - git hygiene is mandatory
-- done means committed, merged to `develop`, archived, and back on `develop`
+- done means committed, merged to `develop`, merged branch deleted, and back on `develop`
+- archive only stale/unmerged or intentionally preserved branches
 - not done means follow-up ticket, not ambiguity
 
 ## 11. What must be true before new governed work starts?

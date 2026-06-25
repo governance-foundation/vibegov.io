@@ -11,7 +11,7 @@ const structuredData = [
     '@id': 'https://vibegov.io/#organization',
     name: 'VibeGov',
     url: 'https://vibegov.io/',
-    logo: 'https://vibegov.io/img/vibegov-icon.svg',
+    logo: 'https://vibegov.io/img/vibegov-icon-light.svg',
     description: 'Governance for AI-assisted software delivery.',
     sameAs: ['https://github.com/governance-foundation/vibegov.io'],
   },
@@ -33,7 +33,7 @@ const structuredData = [
 const config = {
   title: 'VibeGov',
   tagline: 'Governance for AI-assisted software delivery.',
-  favicon: 'img/vibegov-icon.svg',
+  favicon: 'img/vibegov-icon-light.svg',
 
   // Set the production url of your site here
   url: 'https://vibegov.io',
@@ -114,7 +114,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'VibeGov Logo',
-          src: 'img/vibegov-icon.svg',
+          src: 'img/vibegov-icon-light.svg',
           srcDark: 'img/vibegov-icon-light.svg',
         },
         items: [
@@ -125,6 +125,7 @@ const config = {
             label: 'Docs',
           },
           {to: '/docs/bootstrap', label: 'Bootstrap', position: 'left'},
+          {to: '/roles', label: 'Roles', position: 'left'},
           {to: '/docs/quickstart', label: 'Quick Start', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/docs/contribute', label: 'Contribute', position: 'left'},
@@ -193,6 +194,5 @@ const config = {
 };
 
 module.exports = config;
-
 
 

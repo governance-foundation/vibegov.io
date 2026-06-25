@@ -4,7 +4,8 @@
   "source": "https://vibegov.io",
   "canonicalBootstrapSources": {
     "agent": "https://vibegov.io/agent.txt",
-    "bootstrap": "https://vibegov.io/bootstrap.json"
+    "bootstrap": "https://vibegov.io/bootstrap.json",
+    "roles": "https://vibegov.io/roles/index.json"
   },
   "modes": {
     "canonicalContractDoc": "/docs/bootstrap",
@@ -186,5 +187,33 @@
     "verification_evidence",
     "traceability_update",
     "final_state_reconciliation"
-  ]
+  ],
+  "role_bootstrap": {
+    "catalog": "https://vibegov.io/roles/index.json",
+    "page": "https://vibegov.io/roles",
+    "roleEntrypointPattern": "https://vibegov.io/roles/{role}/BOOTSTRAP.md",
+    "roleManifestPattern": "https://vibegov.io/roles/{role}/{role}.manifest.json",
+    "supportedRoles": [
+      "developer",
+      "planner",
+      "researcher",
+      "explorer",
+      "designer",
+      "verifier",
+      "maintainer",
+      "operator",
+      "architect",
+      "security",
+      "documenter"
+    ],
+    "requiredBehavior": [
+      "fresh-read role catalog and selected role BOOTSTRAP.md",
+      "follow selected role manifest exactly",
+      "inspect project before writing",
+      "select fresh-bootstrap, existing-repo-init, or recovery-update",
+      "merge role files safely without blindly overwriting local memory or project rules",
+      "apply relevant overlays",
+      "validate install and return bootstrap report"
+    ]
+  }
 }

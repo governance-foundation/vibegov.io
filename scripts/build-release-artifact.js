@@ -64,7 +64,7 @@ function createZip(bundleDir, zipPath) {
     '            full_path = os.path.join(current_root, file_name)',
     '            rel_path = os.path.relpath(full_path, os.path.dirname(bundle_dir))',
     '            zf.write(full_path, rel_path)',
-  ].join('; ');
+  ].join('\n');
 
   cp.execFileSync('python3', ['-c', pythonZip, bundleDir, zipPath], {
     cwd: REPO_ROOT,
@@ -92,6 +92,7 @@ function walkFiles(dir, baseDir = dir) {
 function flattenAssetName(targetPath, fileRelativePath = '') {
   const normalizedTarget = targetPath.replace(/\\/g, '/');
   if (normalizedTarget === 'agent.txt' || normalizedTarget === 'bootstrap.json') return normalizedTarget;
+  if (normalizedTarget === 'roles') return `roles-${fileRelativePath.replace(/[\\/]/g, '-')}`;
   if (normalizedTarget === '.governance/rules') return path.posix.basename(fileRelativePath);
   if (normalizedTarget.startsWith('docs/')) return path.posix.basename(normalizedTarget);
   return normalizedTarget.replace(/[\\/]/g, '-');
