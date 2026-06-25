@@ -21,7 +21,7 @@ DevTools listening on ws://127.0.0.1:64935/devtools/browser/610b9b08-957c-497c-b
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                    
+
   Running:  site-smoke.cy.js                                                                (1 of 1)
 Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
@@ -61,7 +61,7 @@ Browserslist: caniuse-lite is outdated. Please run:
   (Screenshots)
 
   -  C:\projects\governance-foundation\vibegov.io\cypress\screenshots\site-smoke.cy.j     (1280x720)
-     s\VibeGov site smoke test -- loads homepage and core docs links (failed).png                   
+     s\VibeGov site smoke test -- loads homepage and core docs links (failed).png
 
 
 ====================================================================================================
@@ -69,11 +69,8 @@ Browserslist: caniuse-lite is outdated. Please run:
   (Run Finished)
 
 
-       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ ×  site-smoke.cy.js                         00:04        1        -        1        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    ×  1 of 1 failed (100%)                     00:04        1        -        1        -        -  
-
-
-
+    ×  1 of 1 failed (100%)                     00:04        1        -        1        -        -

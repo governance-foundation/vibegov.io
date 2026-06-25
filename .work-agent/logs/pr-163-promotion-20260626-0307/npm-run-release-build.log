@@ -6,5 +6,3 @@ Created VibeGov release bundle: C:\projects\governance-foundation\vibegov.io\art
 Prepared flat release assets: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.6.26-68c8141\flat
 (node:46164) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-
-
