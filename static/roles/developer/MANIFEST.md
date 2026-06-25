@@ -52,4 +52,3 @@ All role installs also inherit:
 - [ ] Test/build/lint commands identified or blocker recorded.
 - [ ] Current git status recorded.
 - [ ] First issue selected or backlog blocker recorded.
-

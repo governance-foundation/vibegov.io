@@ -40,5 +40,3 @@ Observe -> Plan -> Implement -> Verify -> Document
 Keep spec/intent as source of truth and keep issue/task/release artifacts traceable to that intent.
 
 A governed work turn is not successfully closed if the repo is left parked on a stray issue/work branch after the bounded slice is finished. Return the local repo to `develop` for normal work, or to `main` for `main`-sourced hotfix/release work; otherwise treat the turn as failed closure, not minor untidiness.
-
-

@@ -29,4 +29,3 @@ Heartbeat is an orchestrator, not the full workflow spec. Read the role contract
 - `roles/_common/source-of-truth-policy.md`
 
 Update the source of truth before sending any proactive report.
-

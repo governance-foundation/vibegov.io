@@ -9,7 +9,7 @@ Fill this during bootstrap. Preserve local facts.
 
 ## Project Goals
 
-- 
+-
 
 ## Things That Annoy The Owner
 
@@ -20,4 +20,4 @@ Fill this during bootstrap. Preserve local facts.
 
 ## Durable Preferences
 
-- 
+-
