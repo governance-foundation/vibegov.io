@@ -1,0 +1,5 @@
+git-status-before-validation=0
+git-head-before-validation=0
+git-diff-check=0
+git-diff-check-origin-develop=0
+npm-run-build=0
