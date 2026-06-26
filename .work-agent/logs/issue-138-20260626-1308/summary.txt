@@ -1,0 +1,11 @@
+# PR #181 / issue #138 current-run validation
+Run: 2026-06-26 13:08 Australia/Sydney (2026-06-26 03:08 UTC)
+Branch: issue-138-bootstrap-git-init-preflight
+PR: https://github.com/governance-foundation/vibegov.io/pull/181
+Issue: https://github.com/governance-foundation/vibegov.io/issues/138
+git fetch exit: 0
+git status exit: 0
+git diff --check exit: 0
+git diff --check origin/develop...HEAD exit: 0
+npm run build exit: 0
+Proof log line endings normalized to LF before commit; cached git diff --check passed.
