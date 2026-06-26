@@ -1,0 +1,8 @@
+git fetch origin develop issue-138-bootstrap-git-init-preflight => exit 0
+git status --short --branch => exit 0
+git rev-parse HEAD => exit 0
+git rev-parse origin/develop => exit 0
+git diff --check => exit 0
+git diff --check origin/develop...HEAD => exit 0
+npm run build (logging wrapper invocation passed "run build" as one argument) => exit 1
+npm run build (rerun with corrected argument handling) => exit 0
