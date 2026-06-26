@@ -1,0 +1,13 @@
+issue: #138
+pr: #181
+branch: issue-138-bootstrap-git-init-preflight
+head_before_validation: c19219b5f6395e074c2d937412a5bfc4336da508
+origin_develop: a3d7657158e578118d7d7609a4b0e3ee166b2388
+run: 2026-06-26 23:15 Australia/Sydney / 13:15 UTC
+commands:
+- git diff --check: exit 0
+- git diff --check origin/develop...HEAD: exit 0
+- npm run build: exit 0
+finding: PR #181 is open, non-draft, mergeable, and has no GitHub status checks/reviews/review threads in current metadata.
+note: the first validation wrapper exit was non-zero because PowerShell captured command output into the exit variable; saved command logs show all underlying validation commands exited 0.
+next_action: validator review of PR #181.
