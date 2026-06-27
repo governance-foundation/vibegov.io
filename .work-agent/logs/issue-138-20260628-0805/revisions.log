@@ -1,0 +1,7 @@
+git diff --cached --check initially failed on generated empty-output logs:
+- .work-agent/logs/issue-138-20260628-0805/git-diff-check.log
+- .work-agent/logs/issue-138-20260628-0805/git-diff-check-origin-develop.log
+
+Correction:
+- Removed the extra blank line from each empty-output log.
+- Updated summary.txt to record the proof-log normalization.
