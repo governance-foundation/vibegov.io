@@ -9,6 +9,18 @@ Use this when adopting VibeGov in a GitHub-hosted repository.
 This is a bootstrap support page, not a separate contract.
 Start with [Bootstrap](/docs/bootstrap) or [Quick Start](/docs/quickstart), then use this page when GitHub preflight, board normalization, repo linkage, or final GitHub-state reconciliation becomes relevant.
 
+## Repo-initialization preflight before GitHub preflight
+
+Before GitHub/board preflight, first classify whether the current folder is already an initialized git repo.
+
+If `git` is available but the folder is not yet an initialized repo:
+- run `git init` first
+- preserve/report the pre-init local state before broader bootstrap mutation
+- do **not** require remote setup for this pre-step
+- only then continue into GitHub-hosted preflight when GitHub state is actually relevant
+
+If `git` is unavailable, record that explicitly as a bootstrap blocker rather than pretending the folder is a normal repo.
+
 ## Mandatory preflight before any board mutation
 
 Check and classify each dependency as one of:

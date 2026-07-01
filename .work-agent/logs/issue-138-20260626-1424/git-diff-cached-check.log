@@ -1,0 +1,17 @@
+## git diff --cached --check after staging proof logs
+Started: 2026-06-26T14:28:17.6973280+10:00
+
+Initial staged check before proof-log newline normalization reported:
+.work-agent/logs/issue-138-20260626-1424/git-diff-cached-check.log:12: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/git-diff-check-origin-develop.log:6: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/git-diff-check.log:6: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/git-fetch.log:9: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/git-status-before-validation.log:8: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/npm-run-build.log:20: new blank line at EOF.
+.work-agent/logs/issue-138-20260626-1424/revisions.log:9: new blank line at EOF.
+
+Fresh staged check after normalization:
+(no output)
+
+Exit: 0
+Finished: 2026-06-26T14:28:17.7008236+10:00

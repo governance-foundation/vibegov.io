@@ -1,0 +1,30 @@
+.work-agent/logs/issue-138-20260626-0403/git-status-before-validation.log:1: trailing whitespace.
++## issue-138-bootstrap-git-init-preflight...origin/issue-138-bootstrap-git-init-preflight [ahead 36, behind 1]
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:1: trailing whitespace.
++
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:2: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:3: trailing whitespace.
++> docusaurus build
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:4: trailing whitespace.
++
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:5: trailing whitespace.
++
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:6: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:7: trailing whitespace.
++
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:8: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:9: trailing whitespace.
++i Compiling Client
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:10: trailing whitespace.
++i Compiling Server
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:11: trailing whitespace.
++√ Client: Compiled successfully in 3.06s
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:12: trailing whitespace.
++√ Server: Compiled successfully in 6.22s
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:13: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/issue-138-20260626-0403/npm-run-build.log:14: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.

@@ -1,0 +1,1 @@
+git diff --cached --check passed after proof-log normalization.

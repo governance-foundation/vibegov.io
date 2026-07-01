@@ -1,0 +1,4 @@
+git diff --check=0
+git diff --check origin/develop...HEAD=0
+npm run build=0
+wrapper_note=initial wrapper returned non-zero because command output was captured with the exit code variable; command logs show each underlying command exited 0.

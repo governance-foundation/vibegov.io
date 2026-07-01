@@ -1,0 +1,6 @@
+git-fetch.log=0
+git-status-before-validation.log=0
+git-head-before-validation.log=0
+git-diff-check.log=0
+git-diff-check-origin-develop.log=0
+npm-run-build.log=0
