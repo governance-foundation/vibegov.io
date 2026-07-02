@@ -1,0 +1,9 @@
+git-diff-check=0
+git-diff-check-pr-range=0
+git-fetch-origin=0
+git-status-before-validation=0
+npm-run-build=0
+pr-checks=1
+role-url-pattern-check=0
+git-diff-check-post-commit=0
+git-diff-check-pr-range-post-commit=0
