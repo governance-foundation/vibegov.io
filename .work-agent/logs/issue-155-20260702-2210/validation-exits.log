@@ -1,0 +1,10 @@
+git-diff-check-pr-range: exit=0
+git-diff-check: exit=0
+git-fetch-origin: exit=0
+git-status-before-validation: exit=0
+npm-run-build: exit=0
+pr-checks: exit=1
+pr-state: exit=0
+project-items-after-status-update: exit=0
+project-status-update: exit=0
+role-url-pattern-check: exit=0
