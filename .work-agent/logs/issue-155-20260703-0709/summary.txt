@@ -1,0 +1,24 @@
+Issue #155 / PR #182 resume pass - 2026-07-03 07:09 Australia/Sydney
+
+Branch: issue-155-agent-txt-role-url
+PR: https://github.com/governance-foundation/vibegov.io/pull/182
+Starting head: 1286314ba2ecd128801efcc2ea7a5a2b52221b41
+
+Project status update:
+- Project status update failed: gh project item-edit returned GraphQL API rate limit already exceeded for user ID 170312 (exit 1).
+- Project item inspection failed with the same GraphQL rate-limit error (exit 1).
+- Prior durable evidence from the 2026-07-03 06:08 run showed the existing Governance Foundation Work project #2 item was In Progress; this run could not re-apply or verify it.
+
+Validation results:
+- git fetch origin --prune: passed
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed, returning only expected {role} entries in static/agent.txt and static/bootstrap.json
+- gh pr checks 182: failed because GitHub GraphQL rate limit was already exceeded for user ID 170312
+- REST combined commit status for starting head 1286314ba2ecd128801efcc2ea7a5a2b52221b41: total_count 0, no statuses reported
+
+State:
+- PR #182 was reported by the GitHub connector as open, mergeable, and non-draft at resume.
+- No source changes were required beyond refreshed evidence logs.
+- Next action: validator review PR #182 after this evidence bundle is committed and pushed; project/check GraphQL calls may need retry after rate limit reset.
