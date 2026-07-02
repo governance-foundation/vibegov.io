@@ -1,0 +1,25 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 10:09 Australia/Sydney
+Head before evidence commit: ad9f2c582f516056036b079757e1739ab9f04539
+
+Outcome:
+- Refreshed validation for the active #155 PR branch.
+- No source changes were required.
+- The role bootstrap URL pattern remains explicit as https://vibegov.io/roles/{role}/BOOTSTRAP.md.
+- The old angle-placeholder pattern and broken double-slash pattern were not present in the checked static sources.
+
+Validation:
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json: passed, returning only expected {role} entries
+
+Evidence files:
+- git-status-before-validation.log
+- git-diff-check.log
+- git-diff-check-pr-range.log
+- npm-run-build.log
+- role-url-pattern-check.log
+- validation-exits.log
