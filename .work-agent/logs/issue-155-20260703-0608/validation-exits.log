@@ -1,0 +1,13 @@
+
+Command
+-------
+git fetch origin --prune
+git status --short --branch
+gh issue view 155 --repo governance-foundation/vibegov.io --json title,state,projectItems,url
+gh pr view 182 --repo governance-foundation/vibegov.io --json number,title,state,headRefName,baseRefName,isDraft,mergeS…
+gh pr checks 182 --repo governance-foundation/vibegov.io
+gh api repos/governance-foundation/vibegov.io/commits/9eec24a8c764e2433d70c7e6cb45fb201d108b29/status
+git diff --check
+git diff --check origin/develop...HEAD
+npm run build
+rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json
