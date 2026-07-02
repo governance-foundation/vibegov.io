@@ -1,0 +1,8 @@
+Issue #155 / PR #182 resume validation, 2026-07-02 20:10 Australia/Sydney
+
+Project status: In Progress; re-applied via gh project item-edit to the existing Governance Foundation Work project #2 item.
+In review unavailable because project #2 only has Todo, In Progress, and Done status options.
+PR state: open, mergeable, non-draft, merge state CLEAN at head a16076bddfe0fcd451a7c31dcc8fa9fb715562b3.
+Validation passed: git diff --check, git diff --check origin/develop...HEAD, npm run build, and role URL pattern check.
+External checks: gh pr checks 182 reported no checks for this branch; absence recorded in pr-checks.log.
+Next action: validator review PR #182 at head a16076bddfe0fcd451a7c31dcc8fa9fb715562b3.
