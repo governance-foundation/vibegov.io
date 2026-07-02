@@ -17,6 +17,7 @@ Validation:
 - npm run build: exit 0
 - rg role URL pattern check: exit 0, returning only expected {role} entries in static/agent.txt and static/bootstrap.json.
 - gh pr checks 182: exit 1 because no checks are reported on the issue branch.
+- Post-commit git diff --check origin/develop...HEAD initially failed because generated evidence logs used CRLF line endings; normalized the 16:09 log files to LF and re-ran the whitespace checks successfully.
 
 State:
 - PR #182 is open, mergeable, and non-draft.
