@@ -1,0 +1,24 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 23:02 Australia/Sydney
+
+Project status update failed: GraphQL: API rate limit already exceeded for user ID 170312.
+The previous committed project evidence shows issue #155 already on Governance Foundation Work project #2 with Status In Progress, but this run could not re-apply the mutation or re-read projectItems through gh because the GitHub GraphQL rate limit was exhausted.
+In review remains unavailable from prior project evidence: project #2 has Todo, In Progress, and Done status options, with no In review option.
+
+Head at resume: 3dbfe89e8b1170926824bc87af6c5539786d1138
+
+Validation:
+- git fetch origin: passed
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries were returned in static/agent.txt and static/bootstrap.json
+- gh project item-edit / gh issue view / gh pr view / gh pr checks: failed with GraphQL rate limit exceeded for user ID 170312
+
+State:
+- Local branch was clean before adding this evidence log bundle.
+- PR #182 was previously confirmed open, mergeable, non-draft, with no review threads or submitted reviews in this run through the GitHub connector.
+
+Next action: validator review PR #182 after this evidence bundle is committed and pushed.
