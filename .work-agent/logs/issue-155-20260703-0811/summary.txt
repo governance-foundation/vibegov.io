@@ -1,0 +1,24 @@
+Issue #155 / PR #182 resume pass
+Run time: 2026-07-03 08:11 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Head at resume: cc0a8caa0f195e300b92ba74d8518ef24665b001
+
+Project Status transition result:
+- Project status update failed. gh project item-edit returned: GraphQL: API rate limit already exceeded for user ID 170312.
+- Follow-up issue project item inspection failed with the same GraphQL rate-limit error.
+- Prior durable evidence from the 2026-07-03 06:08 run showed the existing Governance Foundation Work project #2 item was In Progress.
+
+PR state:
+- GitHub connector reported PR #182 open, mergeable, non-draft before validation.
+- gh pr view and gh pr checks failed in this run because GitHub GraphQL rate limit was already exceeded for user ID 170312.
+- REST combined status for the resume head returned total_count 0 and no statuses.
+
+Validation:
+- git fetch origin --prune: passed
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries were present in static/agent.txt and static/bootstrap.json.
+
+Next action:
+- Validator review PR #182 after this evidence commit is pushed.

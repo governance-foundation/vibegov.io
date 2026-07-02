@@ -1,0 +1,3 @@
+COMMAND: gh issue view 155 --repo governance-foundation/vibegov.io --json title,state,projectItems,url
+GraphQL: API rate limit already exceeded for user ID 170312.
+EXIT: 1

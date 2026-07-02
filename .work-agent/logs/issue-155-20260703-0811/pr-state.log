@@ -1,0 +1,3 @@
+COMMAND: gh pr view 182 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeable,mergeStateStatus,headRefName,headRefOid,baseRefName,url
+GraphQL: API rate limit already exceeded for user ID 170312.
+EXIT: 1
