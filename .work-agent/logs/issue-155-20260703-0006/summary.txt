@@ -8,7 +8,7 @@ Project status: In Progress. Re-applied to Governance Foundation Work project #2
 Outcome:
 - Refreshed developer evidence for the already-open PR #182.
 - No source changes were required beyond evidence logs.
-- Evidence commit pushed: 9e53d80b56de19d2d6c010b8f3d2f4378ee71c6a.
+- Evidence commits were pushed for the refreshed logs and this compact summary; the final exact head is recorded in the issue/PR comments and validator handoff.
 
 Validation:
 - git fetch origin: passed
@@ -23,4 +23,4 @@ State:
 - No submitted reviews were present in the inspected PR state.
 - Local branch is clean and aligned with origin/issue-155-agent-txt-role-url after push.
 
-Next action: validator review PR #182 at head 9e53d80b56de19d2d6c010b8f3d2f4378ee71c6a.
+Next action: validator review PR #182 at the final head recorded in the issue/PR comments and validator handoff.
