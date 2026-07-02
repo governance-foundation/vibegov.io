@@ -1,0 +1,20 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 11:12 Australia/Sydney
+Head under validation: 427ef0d15a86d01d0fe53134496b2b04ada0998b
+
+Project status:
+- Added issue #155 to Governance Foundation Work project #2 after gh issue view reported no existing projectItems.
+- Set Status to In Progress using field PVTSSF_lADOA_2mn84BW-uRzhSOz5g and option 47fc9ee4.
+- In review transition unavailable: project #2 Status options are Todo, In Progress, Done; no In review option exists.
+
+Validation:
+- git diff --check: see validation-exits.log
+- git diff --check origin/develop...HEAD: see validation-exits.log
+- npm run build: see validation-exits.log
+- role URL pattern check: see validation-exits.log
+
+Outcome:
+- No source changes were required in this resume run.
+- PR #182 remains open and ready for validator review at the current head.
