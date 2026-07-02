@@ -1,0 +1,24 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 19:05 Australia/Sydney
+Head before evidence commit: be752a92044ce645b5bc6ecf6f7efbbaf685809d
+
+Outcome:
+- Resumed the active issue branch before selecting any new backlog work.
+- Re-applied Governance Foundation Work project #2 Status to In Progress for issue #155.
+- In review status remains unavailable on project #2; available Status options are Todo, In Progress, and Done.
+- No source changes were required.
+- Refreshed validation evidence for the current PR head.
+
+Validation:
+- git fetch origin: passed
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed, returning only expected {role} entries in static/agent.txt and static/bootstrap.json
+- gh pr checks 182: no checks reported for this branch
+
+Residual risk:
+- Docs/static asset only. No TypeScript or runtime behavior changed.
+- PR #182 still needs validator review.
