@@ -1,0 +1,5 @@
+Run directory: .work-agent\logs\issue-155-20260704-0319
+Head before evidence: 5bf1d1f30617a513bc021ecd2e646bb2b0f9a3c5
+Validation captured at: 2026-07-04T03:23:13.2715764+10:00
+Project status: In Progress (re-applied).
+In review unavailable: Governance Foundation Work project #2 status options are Todo, In Progress, Done.
