@@ -1,0 +1,36 @@
+Issue #155 / PR #182 validation refresh for 2026-07-03 23:06 Australia/Sydney.
+
+Branch: issue-155-agent-txt-role-url
+Pre-validation head: 53d4f3bd623af5a182f231efbd260954f9066af4
+Project status: In Progress on Governance Foundation Work project #2; status re-applied with gh project item-edit.
+In review status: unavailable because the project only has Todo, In Progress, and Done.
+
+Validation results:
+- git fetch origin --prune: passed
+- gh pr view 182: passed; PR is open, non-draft, mergeStateStatus CLEAN
+- gh pr checks 182: no checks for this branch (gh exits 1 for empty checks)
+- gh pr review/review comment checks: no review submissions or inline review comments reported
+- GitHub combined status for head: no statuses reported
+- gh run list for head: no workflow runs reported
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries are present in static/agent.txt and static/bootstrap.json
+
+Evidence logs in this directory:
+- project-status-update.log
+- issue-project-items.log
+- head-before-validation.log
+- git-fetch-origin.log
+- git-status-before-validation.log
+- pr-state.log
+- pr-checks.log
+- pr-reviews.log
+- pr-review-comments.log
+- combined-status.log
+- workflow-runs.log
+- git-diff-check.log
+- git-diff-check-pr-range.log
+- npm-run-build.log
+- role-url-pattern-check.log
+- validation-exits.json

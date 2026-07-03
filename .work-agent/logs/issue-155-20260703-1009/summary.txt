@@ -1,0 +1,31 @@
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Branch: issue-155-agent-txt-role-url
+Run time: 2026-07-03 10:09 Australia/Sydney
+Head under validation: 5b62ab93d352c1f7b5280f0ac3626d9dcccd0c91
+
+Resume state:
+- Active local branch was issue-155-agent-txt-role-url and clean before this run's evidence logs.
+- PR #182 was open, mergeable, and non-draft from GitHub connector metadata.
+- GitHub connector reported no review submissions, no review threads, no commit statuses, and no workflow runs for the current head.
+
+Project Status transition result:
+- Project status update failed: gh project item-edit returned GraphQL: API rate limit already exceeded for user ID 170312. with exit 1.
+- Project item inspection failed with the same GitHub GraphQL rate-limit error.
+- Prior durable evidence from the 2026-07-03 09:07 run showed the issue was already on Governance Foundation Work project #2 with Status In Progress.
+- In review remains unavailable from prior durable evidence because project #2 only has Todo, In Progress, and Done.
+
+Validation:
+- git fetch origin --prune: exit 0
+- git diff --check: exit 0
+- git diff --check origin/develop...HEAD: exit 0
+- npm run build: exit 0
+- role URL pattern check: exit 0, returning only expected {role} entries in static/agent.txt and static/bootstrap.json
+- gh pr view 182: exit 1 due to GitHub GraphQL rate limit
+- gh pr checks 182: exit 1 due to GitHub GraphQL rate limit
+- REST combined status: exit 0, total_count 0 and no statuses
+- GitHub connector workflow lookup: no workflow runs for the head commit
+
+Result:
+- No source changes were required beyond refreshed evidence logs.
+- Next action: validator review PR #182 at head 5b62ab93d352c1f7b5280f0ac3626d9dcccd0c91; project/check GraphQL calls should be retried after the rate limit resets.

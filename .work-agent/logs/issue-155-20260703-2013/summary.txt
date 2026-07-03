@@ -1,0 +1,27 @@
+VibeGov developer run: issue #155 / PR #182
+Run time: 2026-07-03 20:13 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Head before validation evidence commit: 7596b6fdfa9013e1b15c522983504e9680e84177
+
+Resume state:
+- PR #182 was open, mergeable, and non-draft.
+- Project status: In Progress on Governance Foundation Work project #2; re-applied via gh project item-edit and confirmed by gh issue view 155 --json projectItems.
+- In review is unavailable on project #2; available Status options are Todo, In Progress, and Done.
+- PR review submissions and review comments were checked; none requiring action are present in the saved logs.
+
+Validation refreshed:
+- git fetch origin --prune: exit 0
+- gh pr view 182: exit 0
+- gh pr checks 182: exit 1 because no checks are reported for this branch
+- GitHub combined status for the checked head: exit 0, total_count 0 with no statuses
+- gh run list for the checked head: exit 0, no workflow runs listed
+- git diff --check: exit 0
+- git diff --check origin/develop...HEAD: exit 0
+- npm run build: exit 0
+- role URL pattern check: exit 0, returning only expected {role} entries in static/agent.txt and static/bootstrap.json
+
+Outcome:
+- No source changes were required.
+- This commit adds refreshed validation and project-status evidence logs for PR #182.
+- Generated evidence logs were normalized to LF so PR-range whitespace validation stays clean.
+- Next action: validator review PR #182 at the post-evidence head.

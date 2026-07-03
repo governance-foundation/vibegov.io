@@ -1,0 +1,38 @@
+[
+  {
+    "name": "git-fetch-origin",
+    "code": 0
+  },
+  {
+    "name": "git-status-before-validation",
+    "code": 0
+  },
+  {
+    "name": "git-diff-check",
+    "code": 0
+  },
+  {
+    "name": "git-diff-check-pr-range",
+    "code": 0
+  },
+  {
+    "name": "npm-run-build",
+    "code": 0
+  },
+  {
+    "name": "role-url-pattern-check",
+    "code": 0
+  },
+  {
+    "name": "pr-state",
+    "code": 0
+  },
+  {
+    "name": "pr-checks",
+    "code": 1
+  },
+  {
+    "name": "issue-project-items",
+    "code": 0
+  }
+]

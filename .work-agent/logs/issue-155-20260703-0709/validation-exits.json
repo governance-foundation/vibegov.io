@@ -1,0 +1,9 @@
+{
+  "git_status_before_validation": 0,
+  "git_diff_check": 0,
+  "git_diff_check_pr_range": 0,
+  "npm_run_build": 0,
+  "role_url_pattern_check": 0,
+  "gh_pr_checks": 1,
+  "combined_status": 0
+}

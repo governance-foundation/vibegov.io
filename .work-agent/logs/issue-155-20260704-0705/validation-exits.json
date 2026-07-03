@@ -1,0 +1,14 @@
+{
+  "git-fetch-origin-prune.log": 0,
+  "git-status-before-validation.log": 0,
+  "pr-state.log": 0,
+  "pr-checks.log": 1,
+  "combined-status.log": 0,
+  "workflow-runs.log": 0,
+  "pr-reviews.log": 0,
+  "git-diff-check.log": 0,
+  "git-diff-check-pr-range.log": 0,
+  "npm-run-build.log": 0,
+  "role-url-pattern-check.log": 0,
+  "role-url-bad-pattern-check.log": 1
+}

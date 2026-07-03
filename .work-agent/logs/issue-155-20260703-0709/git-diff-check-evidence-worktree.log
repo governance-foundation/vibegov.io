@@ -1,0 +1,2 @@
+PS> git diff --check -- .work-agent/logs/issue-155-20260703-0709
+exit=0

@@ -1,0 +1,21 @@
+Issue #155 / PR #182 resume validation - 2026-07-03 15:08 Australia/Sydney
+
+Branch: issue-155-agent-txt-role-url
+PR: https://github.com/governance-foundation/vibegov.io/pull/182
+Head before evidence commit: 87192fa37e1142b1a56539bf3ccb535328a61bd0
+Project status: In Progress; re-applied via gh project item-edit and confirmed by issue project item inspection.
+In review transition: unavailable; Governance Foundation Work project #2 has Todo, In Progress, and Done only.
+
+Validation results:
+- git fetch origin --prune: exit 0
+- gh project item-edit Status In Progress: exit 0
+- gh issue view 155 --json projectItems: exit 0
+- gh pr view 182: exit 0
+- gh pr checks 182: exit 1 (no checks reported is expected for this branch)
+- GitHub combined status for HEAD: exit 0
+- git diff --check: exit 0
+- git diff --check origin/develop...HEAD: exit 0
+- npm run build: exit 0
+- role URL pattern check: exit 0; expected {role} entries only in static/agent.txt and static/bootstrap.json
+
+No source changes were required beyond refreshed evidence logs.

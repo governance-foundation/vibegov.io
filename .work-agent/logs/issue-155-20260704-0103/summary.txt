@@ -1,0 +1,8 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-04 01:03 Australia/Sydney
+Head at validation start: dd26a679ea7ce1b7d068742842e84947141ee666
+Project status: In Progress re-applied using existing Governance Foundation Work project item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+In review unavailable: project Status options are Todo, In Progress, Done.
+Validation commands captured in this directory. gh pr checks exits 1 because no checks are configured/reported for this branch.

@@ -1,0 +1,5 @@
+COMMAND: rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json
+START: 2026-07-04T01:07:22.4602663+10:00
+static\bootstrap.json:194:    "roleEntrypointPattern": "https://vibegov.io/roles/{role}/BOOTSTRAP.md",
+static\agent.txt:16:- use https://vibegov.io/roles/index.json and https://vibegov.io/roles/{role}/BOOTSTRAP.md for role-specific agent bootstrap
+EXIT: 0

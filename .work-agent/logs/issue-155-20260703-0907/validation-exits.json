@@ -1,0 +1,13 @@
+{
+  "git_fetch_origin_prune": 0,
+  "project_status_update": 0,
+  "issue_project_items": 0,
+  "git_status_before_validation": 0,
+  "pr_state": 0,
+  "pr_checks": 1,
+  "git_diff_check": 0,
+  "git_diff_check_pr_range": 0,
+  "role_url_pattern_check": 0,
+  "npm_run_build": 0,
+  "combined_status": 0
+}

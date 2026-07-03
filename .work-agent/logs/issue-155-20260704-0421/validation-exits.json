@@ -1,0 +1,14 @@
+{
+  "git-status-before-validation": 0,
+  "issue-project-items-after-status-update": 0,
+  "pr-state": 0,
+  "pr-checks": 1,
+  "combined-status": 0,
+  "workflow-runs": 0,
+  "pr-reviews": 0,
+  "pr-review-comments": 0,
+  "git-diff-check": 0,
+  "git-diff-check-pr-range": 0,
+  "npm-run-build": 0,
+  "role-url-pattern-check": 0
+}

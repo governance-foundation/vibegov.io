@@ -1,0 +1,46 @@
+[
+  {
+    "command": "combined-status",
+    "exit": "0"
+  },
+  {
+    "command": "git-diff-check-pr-range",
+    "exit": "0"
+  },
+  {
+    "command": "git-diff-check",
+    "exit": "0"
+  },
+  {
+    "command": "git-fetch-origin",
+    "exit": "0"
+  },
+  {
+    "command": "git-status-before-validation",
+    "exit": "0"
+  },
+  {
+    "command": "issue-project-items",
+    "exit": "0"
+  },
+  {
+    "command": "npm-run-build",
+    "exit": "0"
+  },
+  {
+    "command": "pr-checks",
+    "exit": "1"
+  },
+  {
+    "command": "pr-state",
+    "exit": "0"
+  },
+  {
+    "command": "project-status-update",
+    "exit": "0"
+  },
+  {
+    "command": "role-url-pattern-check",
+    "exit": "0"
+  }
+]

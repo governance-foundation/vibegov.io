@@ -1,0 +1,31 @@
+VibeGov developer resume pass for issue #155 / PR #182
+Run: 2026-07-04 02:34 Australia/Sydney
+
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Branch: issue-155-agent-txt-role-url
+Head before validation: 6ad3623abfb9251e556b9139c3f4f4b688adf5ec
+
+Project Status transition result:
+- Project status: In Progress.
+- Re-applied to the existing Governance Foundation Work project item with gh project item-edit.
+- Confirmed by gh issue view 155 --json projectItems.
+- In review remains unavailable because the project only exposes Todo, In Progress, and Done.
+
+Validation refreshed:
+- git fetch origin --prune passed.
+- gh pr view 182 passed and reported PR open, mergeable, non-draft, mergeStateStatus CLEAN.
+- gh pr checks 182 reported no checks for this branch and exited 1.
+- GitHub combined status for head 6ad3623abfb9251e556b9139c3f4f4b688adf5ec reported no statuses.
+- GitHub workflow run lookup for the head returned no runs.
+- PR reviews and review comments are empty.
+- git diff --check passed.
+- git diff --check origin/develop...HEAD passed.
+- npm run build passed.
+- Role URL pattern check passed, returning only the expected {role} entries in static/agent.txt and static/bootstrap.json.
+
+Durable GitHub evidence:
+- Issue resume comment: https://github.com/governance-foundation/vibegov.io/issues/155#issuecomment-4878078153
+
+Next action:
+- Commit and push this evidence log, comment on PR #182, then hand off to validator for review at the new evidence head.
