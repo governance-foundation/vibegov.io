@@ -1,0 +1,4 @@
+COMMAND: gh issue view 155 --repo governance-foundation/vibegov.io --json projectItems,number,state,title,url
+START: 2026-07-04T01:07:00.4225666+10:00
+{"number":155,"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Governance Foundation Work"}],"state":"OPEN","title":"Fix agent.txt formatting and role bootstrap URL","url":"https://github.com/governance-foundation/vibegov.io/issues/155"}
+EXIT: 0
