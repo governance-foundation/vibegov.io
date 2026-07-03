@@ -1,0 +1,31 @@
+Issue #155 / PR #182 developer resume pass
+Run: 2026-07-03 21:18 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Pre-evidence head: d2df7a2976bce51c238fd2c2d33b63606c28ca5f
+PR: https://github.com/governance-foundation/vibegov.io/pull/182
+
+Project Status transition result:
+- Project status: In Progress; re-applied via gh project item-edit to Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+- Issue project item inspection confirmed Status In Progress.
+- In review remains unavailable because project #2 only has Todo, In Progress, and Done.
+
+Validation:
+- git fetch origin --prune passed.
+- gh pr view 182 passed and reported PR open, mergeable, non-draft, mergeStateStatus CLEAN.
+- gh pr checks 182 reported no checks for this branch (exit 1).
+- GitHub combined status for the pre-evidence head reported no statuses.
+- gh run list reported no workflow runs for the pre-evidence head.
+- gh pr view reviews and pull review comments returned empty results.
+- git diff --check passed before the evidence commit.
+- git diff --check origin/develop...HEAD passed before the evidence commit.
+- npm run build passed.
+- role URL pattern check passed, returning only expected {role} entries in static/agent.txt and static/bootstrap.json.
+- Initial staged evidence check caught CRLF log line endings; logs were normalized to LF.
+- Final staged evidence check passed.
+
+Changed files in this run:
+- Added evidence logs under .work-agent/logs/issue-155-20260703-2118/.
+- No source changes were required beyond refreshed evidence logs.
+
+Next action:
+- Validator review PR #182 at the final pushed head for this run.

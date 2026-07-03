@@ -1,0 +1,4 @@
+COMMAND: gh run list --repo governance-foundation/vibegov.io --commit $(git rev-parse HEAD) --limit 20 --json databaseId,status,conclusion,displayTitle,event,workflowName,headSha,url
+START: 2026-07-03T21:20:44.4499796+10:00
+[]
+EXIT: 0
