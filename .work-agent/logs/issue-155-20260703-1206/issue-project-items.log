@@ -1,0 +1,6 @@
+COMMAND: gh issue view 155 --repo governance-foundation/vibegov.io --json projectItems
+START: 2026-07-03T12:10:36.9330913+10:00
+
+{"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Governance Foundation Work"}]}
+
+EXIT: 0
