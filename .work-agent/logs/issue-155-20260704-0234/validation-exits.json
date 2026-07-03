@@ -1,0 +1,72 @@
+[
+  {
+    "name": "git-fetch-origin",
+    "command": "git fetch origin --prune",
+    "exit": 0
+  },
+  {
+    "name": "git-status-before-validation",
+    "command": "git status --short --branch",
+    "exit": 0
+  },
+  {
+    "name": "pr-state",
+    "command": "gh pr view 182 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeable,mergeStateStatus,headRefOid,baseRefName,headRefName,closingIssuesReferences,url",
+    "exit": 0
+  },
+  {
+    "name": "pr-checks",
+    "command": "gh pr checks 182 --repo governance-foundation/vibegov.io",
+    "exit": 1
+  },
+  {
+    "name": "combined-status",
+    "command": "gh api repos/governance-foundation/vibegov.io/commits/6ad3623abfb9251e556b9139c3f4f4b688adf5ec/status",
+    "exit": 0
+  },
+  {
+    "name": "workflow-runs",
+    "command": "gh run list --repo governance-foundation/vibegov.io --commit 6ad3623abfb9251e556b9139c3f4f4b688adf5ec --limit 20",
+    "exit": 0
+  },
+  {
+    "name": "pr-reviews",
+    "command": "gh api repos/governance-foundation/vibegov.io/pulls/182/reviews",
+    "exit": 0
+  },
+  {
+    "name": "pr-review-comments",
+    "command": "gh api repos/governance-foundation/vibegov.io/pulls/182/comments?per_page=100",
+    "exit": 0
+  },
+  {
+    "name": "issue-project-items",
+    "command": "gh issue view 155 --repo governance-foundation/vibegov.io --json projectItems,number,state,title,url",
+    "exit": 0
+  },
+  {
+    "name": "git-diff-check",
+    "command": "git diff --check",
+    "exit": 0
+  },
+  {
+    "name": "git-diff-check-pr-range",
+    "command": "git diff --check origin/develop...HEAD",
+    "exit": 0
+  },
+  {
+    "name": "npm-run-build",
+    "command": "npm run build",
+    "exit": 0
+  },
+  {
+    "name": "role-url-pattern-check",
+    "command": "rg -n \"roles//BOOTSTRAP|roles/\\{role\\}/BOOTSTRAP|roles/<role>/BOOTSTRAP\" static\\agent.txt static\\bootstrap.json",
+    "exit": 0
+  },
+  {
+    "name": "git-status-after-validation",
+    "command": "git status --short --branch",
+    "exit": 0
+  }
+]
