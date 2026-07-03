@@ -1,0 +1,6 @@
+COMMAND: git diff --cached --check
+START: 2026-07-03T18:12:58.7913483+10:00
+
+
+
+EXIT: 0
