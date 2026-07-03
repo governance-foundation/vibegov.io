@@ -1,0 +1,5 @@
+## git check-ignore for Windows cache artifacts
+.gitignore:13:Thumbs.db	Thumbs.db
+.gitignore:13:Thumbs.db	static/img/Thumbs.db
+.gitignore:14:ehthumbs.db	ehthumbs.db
+.gitignore:15:Desktop.ini	Desktop.ini
