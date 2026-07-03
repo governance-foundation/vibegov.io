@@ -1,0 +1,4 @@
+PS> git status --short --branch
+## issue-155-agent-txt-role-url...origin/issue-155-agent-txt-role-url
+?? .work-agent/logs/issue-155-20260704-0507/
+EXIT_CODE=0
