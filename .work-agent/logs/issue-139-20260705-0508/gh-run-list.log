@@ -1,0 +1,2 @@
+COMMAND: gh run list --repo governance-foundation/vibegov.io --branch issue-139-ignore-windows-cache-artifacts --limit 10
+exit=0
