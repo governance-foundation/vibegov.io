@@ -1,0 +1,9 @@
+git-fetch-develop exit=0
+git-status-before-validation exit=0
+git-diff-check exit=0
+git-diff-develop-check exit=0
+git-check-ignore exit=0
+gh-pr-view exit=0
+gh-pr-checks exit=1
+npm-run-build exit=0
+git-status-after-validation exit=0
