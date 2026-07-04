@@ -1,0 +1,6 @@
+COMMAND: gh run list --repo governance-foundation/vibegov.io --commit 5fe884609265f737332302f0d0809bb5a40d793a --limit 10 --json databaseId,status,conclusion,name,event,headSha,displayTitle,workflowName
+START: 2026-07-04T20:12:06.6989394+10:00
+[]
+
+EXIT: 0
+END: 2026-07-04T20:12:07.2640884+10:00
