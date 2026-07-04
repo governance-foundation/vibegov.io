@@ -1,0 +1,11 @@
+0	.work-agent\logs\issue-139-20260704-2303\git-status-before-validation.log	git status --short --branch
+1	.work-agent\logs\issue-139-20260704-2303\project-status-update.log	gh api graphql -f itemId="PVTI_lADOA_2mn84BW-uRzgxtN2M" -f projectId="PVT_kwDOA_2mn84BW-uR" -f fieldId="PVTSSF_lADOA_2mn84BW-uRzhSOz5g" -f optionId="47fc9ee4" -f query="mutation($projectId:ID!, $itemId:ID!, $fieldId:ID!, $optionId:String!) { updateProjectV2ItemFieldValue(input:{projectId:$projectId,itemId:$itemId,fieldId:$fieldId,value:{singleSelectOptionId:$optionId}}) { projectV2Item { id } } }"
+0	.work-agent\logs\issue-139-20260704-2303\gh-issue-view-project.log	gh issue view 139 --repo governance-foundation/vibegov.io --json projectItems
+0	.work-agent\logs\issue-139-20260704-2303\gh-pr-view.log	gh pr view 183 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,mergeable,reviewDecision,statusCheckRollup,latestReviews,headRefOid,url
+1	.work-agent\logs\issue-139-20260704-2303\gh-pr-checks.log	gh pr checks 183 --repo governance-foundation/vibegov.io
+0	.work-agent\logs\issue-139-20260704-2303\git-diff-check.log	git diff --check
+0	.work-agent\logs\issue-139-20260704-2303\git-diff-develop-check.log	git diff origin/develop...HEAD --check
+0	.work-agent\logs\issue-139-20260704-2303\git-check-ignore.log	git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini
+0	.work-agent\logs\issue-139-20260704-2303\npm-run-build.log	npm run build
+0	.work-agent\logs\issue-139-20260704-2303\git-status-after-validation.log	git status --short --branch
+0	.work-agent\logs\issue-139-20260704-2303\project-status-update-retry.log	gh api graphql project status retry

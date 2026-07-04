@@ -1,0 +1,52 @@
+[
+  {
+    "command": "git status --short --branch",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\git-status-before-validation.log",
+    "exit": 0
+  },
+  {
+    "command": "gh api graphql -f itemId=\"PVTI_lADOA_2mn84BW-uRzgxtN2M\" -f projectId=\"PVT_kwDOA_2mn84BW-uR\" -f fieldId=\"PVTSSF_lADOA_2mn84BW-uRzhSOz5g\" -f optionId=\"47fc9ee4\" -f query=\"mutation($projectId:ID!, $itemId:ID!, $fieldId:ID!, $optionId:String!) { updateProjectV2ItemFieldValue(input:{projectId:$projectId,itemId:$itemId,fieldId:$fieldId,value:{singleSelectOptionId:$optionId}}) { projectV2Item { id } } }\"",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\project-status-update.log",
+    "exit": 1
+  },
+  {
+    "command": "gh issue view 139 --repo governance-foundation/vibegov.io --json projectItems",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\gh-issue-view-project.log",
+    "exit": 0
+  },
+  {
+    "command": "gh pr view 183 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,mergeable,reviewDecision,statusCheckRollup,latestReviews,headRefOid,url",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\gh-pr-view.log",
+    "exit": 0
+  },
+  {
+    "command": "gh pr checks 183 --repo governance-foundation/vibegov.io",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\gh-pr-checks.log",
+    "exit": 1
+  },
+  {
+    "command": "git diff --check",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\git-diff-check.log",
+    "exit": 0
+  },
+  {
+    "command": "git diff origin/develop...HEAD --check",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\git-diff-develop-check.log",
+    "exit": 0
+  },
+  {
+    "command": "git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\git-check-ignore.log",
+    "exit": 0
+  },
+  {
+    "command": "npm run build",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\npm-run-build.log",
+    "exit": 0
+  },
+  {
+    "command": "git status --short --branch",
+    "log": ".work-agent\\logs\\issue-139-20260704-2303\\git-status-after-validation.log",
+    "exit": 0
+  }
+]

@@ -1,0 +1,12 @@
+Issue #139 resume validation, 2026-07-04 23:03 Australia/Sydney
+
+- Active PR: #183, issue-139-ignore-windows-cache-artifacts -> develop
+- Head at resume: 0a4f8229cacf2d73959062c179b430bd3d63fa2f
+- PR state: open, non-draft, mergeable/CLEAN; no reviews or status-check rollup entries reported.
+- Project status: In progress. Initial GraphQL mutation failed because shell quoting stripped variables from the query; retry succeeded and returned item PVTI_lADOA_2mn84BW-uRzgxtN2M for Status In Progress option 47fc9ee4.
+- In review remains unavailable because Governance Foundation Work project #2 only has Todo, In Progress, and Done.
+- gh pr checks returned exit 1 with "no checks reported on the 'issue-139-ignore-windows-cache-artifacts' branch", matching the empty status rollup rather than a failing check.
+- Validation passed: git diff --check; git diff origin/develop...HEAD --check; git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini; npm run build.
+- Cleanup target after this evidence commit: local branch clean and synchronized with origin/issue-139-ignore-windows-cache-artifacts.
+
+Next action: validator review PR #183.
