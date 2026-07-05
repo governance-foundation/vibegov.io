@@ -1,0 +1,15 @@
+git fetch origin exit=0
+gh issue view projectItems exit=0
+gh pr view status exit=0
+gh project fields query exit=0
+project status mutation initial exit=1
+project status mutation retry exit=0
+git diff --check exit=0
+git diff origin/develop...HEAD --check exit=0
+git diff --cached --check exit=0
+git check-ignore exit=0
+gh commit combined status exit=0 total_count=0
+gh run list exit=0 no runs reported
+gh pr checks exit=1 no checks reported
+gh reviewThreads query exit=0 no nodes
+npm run build exit=0
