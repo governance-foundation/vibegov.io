@@ -1,0 +1,2 @@
+PS> gh api graphql <reviewThreads query> -f owner=governance-foundation -f repo=vibegov.io -F number=183
+{"data":{"repository":{"pullRequest":{"reviewThreads":{"nodes":[]}}}}}

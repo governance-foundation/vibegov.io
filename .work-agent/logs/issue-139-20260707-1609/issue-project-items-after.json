@@ -1,0 +1,2 @@
+PS> gh issue view 139 --repo governance-foundation/vibegov.io --json projectItems
+{"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Governance Foundation Work"}]}
