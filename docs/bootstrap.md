@@ -84,8 +84,11 @@ Before writing any product code (or before claiming bootstrap review is complete
 13. If GitHub automation is available, create/adopt/normalize one canonical board target:
    - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
-   - normalize `Priority`: `P0`, `P1`, `P2`
+   - normalize `Project Priority`: `P0`, `P1`, `P2`, `P3`, `P4`, `P5`
+   - normalize `Order`: number
+   - normalize `Priority`: `Urgent`, `High`, `Medium`, `Low`
    - normalize `Size`: `XS`, `S`, `M`, `L`, `XL`
+   - document backlog automation ordering as `Project Priority` group then `Order` inside the group
    - link the repo
    - import/attach existing issues
    - if no issues exist, report board as intentionally empty
@@ -136,7 +139,7 @@ Continue only if all are true:
 - continuity structure and continuity operating guidance exist
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
-- for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
+- for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, multiple-match selection is explained when relevant, and backlog ordering is documented through `Project Priority` plus `Order`
 - current bootstrap reporting artifacts exist under `.governance/project/bootstrap/`
 - historical bootstrap run bundles are written under `.governance/project/bootstrap/history/<timestamp>/`
 - if update cannot complete all gaps or only reaches degraded verification, blocker reporting makes the incomplete state explicit with exact next actions
