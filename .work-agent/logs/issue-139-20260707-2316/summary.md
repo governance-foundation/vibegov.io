@@ -3,7 +3,7 @@
 - Run timestamp: 2026-07-07 23:16 Australia/Sydney / 2026-07-07 13:16 UTC
 - Branch: issue-139-ignore-windows-cache-artifacts
 - PR: https://github.com/governance-foundation/vibegov.io/pull/183
-- Head commit: 17d2e8544c0eaff960746bf9a28d88af49d5013e
+- Head commit before evidence commit: 17d2e8544c0eaff960746bf9a28d88af49d5013e
 - Project Status mutation: succeeded; item PVTI_lADOA_2mn84BW-uRzgxtN2M set to In Progress using option 47fc9ee4.
 
 ## Command Results
