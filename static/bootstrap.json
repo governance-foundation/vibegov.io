@@ -139,10 +139,20 @@
           "Done",
           "Blocked"
         ],
-        "Priority": [
+        "Project Priority": [
           "P0",
           "P1",
-          "P2"
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ],
+        "Order": "number",
+        "Priority": [
+          "Urgent",
+          "High",
+          "Medium",
+          "Low"
         ],
         "Size": [
           "XS",
@@ -151,6 +161,17 @@
           "L",
           "XL"
         ]
+      },
+      "automationOrdering": {
+        "sourceOfTruth": [
+          "Project Priority",
+          "Order"
+        ],
+        "projectPriorityHighest": "P0",
+        "projectPriorityLowest": "P5",
+        "orderDirection": "ascending",
+        "doNotUseVisualProjectOrder": true,
+        "priorityFieldPurpose": "human_urgency_signal"
       },
       "normalizeBuiltInStatusFieldInPlace": true,
       "mustLinkRepo": true,
