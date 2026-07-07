@@ -1,0 +1,15 @@
+git fetch exit=0
+gh issue view exit=0
+project status mutation exit=0
+gh issue view projectItems after exit=0 allowFailure=False
+git status before exit=0 allowFailure=False
+git diff --check exit=0 allowFailure=False
+git diff origin/develop...HEAD --check exit=0 allowFailure=False
+git diff --cached --check exit=0 allowFailure=False
+git check-ignore exit=0 allowFailure=False
+gh pr view exit=0 allowFailure=False
+gh run list exit=0 allowFailure=False
+gh pr checks exit=1 allowFailure=True
+npm run build exit=0 allowFailure=False
+git status after exit=0 allowFailure=False
+gh combined status before evidence commit exit=0
