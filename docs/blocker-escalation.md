@@ -30,7 +30,7 @@ When work is blocked:
    - State the recovery condition clearly.
 
 5. **Redirect flow**
-   - Continue with the next highest-priority unblocked item unless a true stop condition applies.
+   - Continue with the next unblocked item by `Project Priority` group and `Order` when those board fields are available, unless a true stop condition applies.
 
 ## Common blocker types
 
