@@ -1,0 +1,61 @@
+
+===== git diff --check =====
+> git diff --check
+[exit 0]
+
+===== git diff origin/develop...HEAD --check =====
+> git diff origin/develop...HEAD --check
+[exit 0]
+
+===== git diff --cached --check =====
+> git diff --cached --check
+[exit 0]
+
+===== git check-ignore cache artifacts =====
+> git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini
+.gitignore:13:Thumbs.db	Thumbs.db
+.gitignore:13:Thumbs.db	static/img/Thumbs.db
+.gitignore:14:ehthumbs.db	ehthumbs.db
+.gitignore:15:Desktop.ini	Desktop.ini
+[exit 0]
+
+===== gh pr view status =====
+> gh pr view 183 --repo governance-foundation/vibegov.io --json statusCheckRollup,mergeStateStatus,isDraft,reviewDecision,latestReviews,reviewRequests,headRefOid,state,url,mergeable
+{"headRefOid":"17d2e8544c0eaff960746bf9a28d88af49d5013e","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","reviewDecision":"","reviewRequests":[],"state":"OPEN","statusCheckRollup":[],"url":"https://github.com/governance-foundation/vibegov.io/pull/183"}
+[exit 0]
+
+===== gh run list branch =====
+> gh run list --repo governance-foundation/vibegov.io --branch issue-139-ignore-windows-cache-artifacts --limit 10
+[exit 0]
+
+===== gh pr checks =====
+> gh pr checks 183 --repo governance-foundation/vibegov.io
+[exit 1]
+
+===== npm run build =====
+> npm run build
+
+> website@0.0.0 build
+> docusaurus build
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+[INFO] [en] Creating an optimized production build...
+i Compiling Client
+i Compiling Server
+√ Client: Compiled successfully in 918.70ms
+√ Server: Compiled successfully in 14.87s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+[exit 0]
+
+===== final git diff --check =====
+> git diff --check
+[exit 0]
+
+===== final git status =====
+> git status --short --branch
+## issue-139-ignore-windows-cache-artifacts...origin/issue-139-ignore-windows-cache-artifacts
+?? .work-agent/logs/issue-139-20260707-2316/
+[exit 0]
