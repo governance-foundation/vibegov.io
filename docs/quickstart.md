@@ -59,7 +59,7 @@ Fast contract summary:
    - promotion guidance between continuity layers
 9) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
 10) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
-11) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Priority`/`Size`, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
+11) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Project Priority`/`Order`/`Priority`/`Size`, document backlog pickup as `Project Priority` group then `Order` inside the group, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
 12) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
 13) Reconcile docs/artifacts against final live git/GitHub state.
 14) Then stop before product-code implementation.
