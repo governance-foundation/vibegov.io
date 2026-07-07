@@ -42,7 +42,9 @@ over
 ## Backlog Hygiene
 
 - keep status current (`todo`, `in_progress`, `blocked`, `done`)
-- prioritize unblocked high-impact work
+- prioritize unblocked high-impact work using the canonical board ordering fields when present
+- use `Project Priority` for backlog groups and `Order` for deterministic in-group ordering
+- use `Priority` (`Urgent`, `High`, `Medium`, `Low`) for human urgency/impact signalling
 - record blockers with required decisions
 - avoid duplicate or stale tasks
 
@@ -52,7 +54,7 @@ over
 
 - complete one scoped task with evidence
 - update task status immediately
-- move to next highest-priority unblocked item
+- move to the next unblocked item by `Project Priority` group and `Order` when those fields are available
 - stop only for blockers, empty backlog, or defined limits
 
 > Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
