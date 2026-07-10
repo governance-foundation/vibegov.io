@@ -27,7 +27,7 @@ function buildTranscript(scenarioId) {
   lines.push('Bootstrap validator local-stub run');
   lines.push(`Scenario: ${scenarioId}`);
   lines.push('Created .governance/rules/, .governance/project/, and .governance/specs/.');
-  lines.push('Installed GOV-01 through GOV-08.');
+  lines.push('Installed GOV-01 through GOV-13.');
   lines.push('Created .governance/project/PROJECT_INTENT.md and .governance/specs/SPEC-001-bootstrap.md.');
   lines.push('Active governance sources: .governance/rules/*.mdc (canonical); no provider-native mirror path present.');
   if (scenarioId === 'bootstrap-gate') {

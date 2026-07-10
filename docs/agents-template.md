@@ -21,6 +21,10 @@ This repository uses VibeGov with `.governance/` as the governance source of tru
 7. `.governance/rules/gov-07-tasks.mdc`
 8. `.governance/rules/gov-08-exploratory-review.mdc`
 9. `.governance/rules/gov-09-agent-continuity-bootstrap.mdc`
+10. `.governance/rules/gov-10-agent-state-closure-git-hygiene.mdc`
+11. `.governance/rules/gov-11-agent-legibility-in-repo-truth.mdc`
+12. `.governance/rules/gov-12-drift-control-garbage-collection.mdc`
+13. `.governance/rules/gov-13-review-loops-completion-discipline.mdc`
 
 ## Repo Defaults
 - Source of truth: `.governance/`

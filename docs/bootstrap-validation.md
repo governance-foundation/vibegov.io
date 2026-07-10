@@ -85,7 +85,7 @@ Check for:
 - `.governance/rules/`
 - `.governance/project/`
 - `.governance/specs/`
-- active `gov-01` through `gov-08`
+- active `gov-01` through `gov-13`
 - project intent created from template
 - first feature/change spec created from template
 - provider-native mirror only when pre-existing path is present
@@ -166,7 +166,7 @@ Report what governance sources are active when done.
 
 ### Expected behavior
 - creates `.governance/rules/`, `.governance/project/`, `.governance/specs/`
-- installs active `GOV-01` through `GOV-08`
+- installs active `GOV-01` through `GOV-13`
 - creates `.governance/project/PROJECT_INTENT.md`
 - creates first spec as `.governance/specs/SPEC-001-<feature>.md`
 - reports active governance sources
@@ -499,7 +499,7 @@ Read and follow:
 
 Before writing any product code:
 1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2. Install the active VibeGov rule set (`GOV-01` through `GOV-09`) into `.governance/rules/`.
+2. Install the active VibeGov rule set (`GOV-01` through `GOV-13`) into `.governance/rules/`.
 3. Create `.governance/project/PROJECT_INTENT.md` from `PROJECT_TEMPLATE.md`.
 4. Create the first feature/change spec as `.governance/specs/SPEC-001-<feature>.md` from `SPEC_TEMPLATE.md`.
 5. Create or normalize a backlog mapped to the spec sections.
@@ -535,7 +535,7 @@ Review the next ready routes and keep unaffected work moving when a blocker is l
 A practical validator should implement reusable checks such as:
 
 - `assertGovernanceDirsExist()`
-- `assertGovRuleSetPresent(['gov-01', ..., 'gov-08'])`
+- `assertGovRuleSetPresent(['gov-01', ..., 'gov-13'])`
 - `assertProjectIntentCreated()`
 - `assertFirstSpecCreated()`
 - `assertCanonicalBootstrapPromptMatchesContract()`

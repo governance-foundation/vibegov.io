@@ -306,7 +306,7 @@ Examples:
 
 ### Deterministic checks
 - does `.governance/rules/` exist?
-- are `gov-01` through `gov-08` present?
+- are `gov-01` through `gov-13` present?
 - were any product code files edited?
 
 ### Heuristic checks

@@ -1,0 +1,20 @@
+npm warn "empty-repo-bootstrap" is being parsed as a normal command line argument.
+npm warn Unknown cli config "--scenario". This will stop working in the next major version of npm.
+
+> website@0.0.0 bootstrap-validator
+> node .internal/bootstrap-validator/index.js empty-repo-bootstrap
+
+VibeGov Bootstrap Validator
+
+Usage:
+  npm run bootstrap-validator -- --scenario <id> [--adapter local-stub|codex-cli]
+  npm run bootstrap-validator -- --suite <id> [--adapter local-stub|codex-cli]
+  npm run bootstrap-validator -- --list
+
+Examples:
+  npm run bootstrap-validator -- --scenario empty-repo-bootstrap
+  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session
+  npm run bootstrap-validator -- --scenario bootstrap-gate
+  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli
+  npm run bootstrap-validator -- --suite phase1
+

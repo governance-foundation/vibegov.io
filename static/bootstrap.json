@@ -61,7 +61,11 @@
     "gov-06-issues",
     "gov-07-tasks",
     "gov-08-exploratory-review",
-    "gov-09-agent-continuity-bootstrap"
+    "gov-09-agent-continuity-bootstrap",
+    "gov-10-agent-state-closure-git-hygiene",
+    "gov-11-agent-legibility-in-repo-truth",
+    "gov-12-drift-control-garbage-collection",
+    "gov-13-review-loops-completion-discipline"
   ],
   "hard_gate_before_product_code": true,
   "pre_coding_required_outputs": [

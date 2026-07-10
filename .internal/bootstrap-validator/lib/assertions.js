@@ -26,6 +26,11 @@ const EXPECTED_RULES = [
   'gov-06-issues.mdc',
   'gov-07-tasks.mdc',
   'gov-08-exploratory-review.mdc',
+  'gov-09-agent-continuity-bootstrap.mdc',
+  'gov-10-agent-state-closure-git-hygiene.mdc',
+  'gov-11-agent-legibility-in-repo-truth.mdc',
+  'gov-12-drift-control-garbage-collection.mdc',
+  'gov-13-review-loops-completion-discipline.mdc',
 ];
 
 function makeResult(id, passed, severity, note, evidence) {
@@ -45,7 +50,7 @@ const handlers = {
   govRuleSetPresent(ctx) {
     const files = listRuleFiles(ctx.repoPath);
     const missing = EXPECTED_RULES.filter((item) => !files.includes(item));
-    return makeResult('govRuleSetPresent', missing.length === 0, 'hard', missing.length ? `Missing rules: ${missing.join(', ')}` : 'GOV-01 through GOV-08 present.', files);
+    return makeResult('govRuleSetPresent', missing.length === 0, 'hard', missing.length ? `Missing rules: ${missing.join(', ')}` : 'GOV-01 through GOV-13 present.', files);
   },
   projectIntentCreated(ctx) {
     const expected = '.governance/project/PROJECT_INTENT.md';

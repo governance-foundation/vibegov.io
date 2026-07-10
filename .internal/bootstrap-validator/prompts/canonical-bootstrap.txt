@@ -5,7 +5,7 @@ Read and follow:
 
 Before writing any product code:
 1. Create `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2. Install the active VibeGov rule set (`GOV-01` through `GOV-08`) into `.governance/rules/`.
+2. Install the active VibeGov rule set (`GOV-01` through `GOV-13`) into `.governance/rules/`.
 3. Create `.governance/project/PROJECT_INTENT.md` from `PROJECT_TEMPLATE.md`.
 4. Create the first feature/change spec as `.governance/specs/SPEC-001-<feature>.md` from `SPEC_TEMPLATE.md`.
 5. Create or normalize a backlog mapped to the spec sections.

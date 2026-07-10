@@ -89,7 +89,7 @@ delivery loop:
 - Observe -> Plan -> Implement -> Verify -> Document
 
 active rules:
-- GOV-01 through GOV-09 (including continuity bootstrap behavior in GOV-09)
+- GOV-01 through GOV-13 (including continuity bootstrap behavior in GOV-09, state-closure/git hygiene in GOV-10, in-repo truth in GOV-11, drift control in GOV-12, and review-loop completion discipline in GOV-13)
 
 completion rule:
 - each completed task must include verification evidence and traceability update
