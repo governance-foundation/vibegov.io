@@ -147,7 +147,7 @@ Exploratory work is the non-delivery discovery/analysis lane. It may include pla
 
 Human feedback should be first-class, but not automatically global. When human input is needed, the system should prefer scoped blocking over stop-the-world blocking whenever unrelated ready work can continue.
 
-> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed, while clarifying how build, exploratory, and human-feedback loops coexist.
+> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed.
 
 ### Exploration mode
 
@@ -168,7 +168,7 @@ Required evidence:
 - next recommended backlog action
 - coverage or confidence limits when relevant
 
-> Commentary: Clarifies that exploratory work can contain planner/evaluator behavior when the goal is non-delivery discovery rather than implementation.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ### Development mode
 
@@ -253,7 +253,7 @@ Prefer scoped blocking over global blocking:
 - unrelated exploratory work may continue,
 - and the blocked boundary should be made explicit in checkpoints or handoffs.
 
-> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work, and prevents one unanswered question from freezing all other loops.
+> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work.
 
 ## Scope Discipline
 
