@@ -1,0 +1,10 @@
+name\texit\tlog\tcommand
+git status before validation\t0\tgit-status-before-validation.log\tgit status --short --branch
+git diff --check\t0\tgit-diff-check.log\tgit diff --check
+git diff origin/develop...HEAD --check\t0\tgit-diff-develop-check.log\tgit diff origin/develop...HEAD --check
+git check-ignore\t0\tgit-check-ignore.log\tgit check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini
+gh pr view\t0\tgh-pr-view.log\tgh pr view 183 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,reviewDecision,latestReviews,statusCheckRollup,headRefOid
+gh pr checks\t1\tgh-pr-checks.log\tgh pr checks 183 --repo governance-foundation/vibegov.io
+gh run list\t0\tgh-workflow-runs.log\tgh run list --repo governance-foundation/vibegov.io --branch issue-139-ignore-windows-cache-artifacts --json databaseId,name,status,conclusion,headSha,url --limit 20
+npm run build\t0\tnpm-run-build.log\tnpm run build
+git status after validation\t0\tgit-status-after-validation.log\tgit status --short --branch

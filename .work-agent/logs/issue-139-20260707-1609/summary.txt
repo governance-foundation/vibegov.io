@@ -1,0 +1,28 @@
+Issue #139 / PR #183 resume validation, 2026-07-07 16:09 Australia/Sydney
+
+Branch: issue-139-ignore-windows-cache-artifacts
+Head commit: c39f392598ab24634edc8cf3b1e87cc7703d578b
+PR: https://github.com/governance-foundation/vibegov.io/pull/183
+
+Project status:
+- Re-applied Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxtN2M to Status In Progress.
+- Mutation succeeded with project PVT_kwDOA_2mn84BW-uR, Status field PVTSSF_lADOA_2mn84BW-uRzhSOz5g, option 47fc9ee4.
+- Follow-up issue project item view confirms In Progress.
+- In review remains unavailable on this board because the configured status options are Todo, In Progress, and Done.
+
+Validation:
+- git fetch --all --prune: passed.
+- git diff --check: passed.
+- git diff origin/develop...HEAD --check: passed.
+- git diff --cached --check: passed.
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: passed.
+- PR status view: open, non-draft, mergeable/CLEAN, no latest reviews, no review requests, empty statusCheckRollup.
+- Review-thread inspection: passed on rerun after an initial PowerShell quoting error; no unresolved review-thread blocker reported.
+- gh run list for the PR branch: passed; no workflow runs reported.
+- Combined commit status for c39f392598ab24634edc8cf3b1e87cc7703d578b: no status contexts, total_count 0.
+- gh pr checks 183: exit 1 with "no checks reported on the 'issue-139-ignore-windows-cache-artifacts' branch"; treated as no configured checks, not a failing check.
+- npm run build: passed.
+- Final git status: clean except for this new evidence log directory before evidence commit.
+
+Next action:
+- Commit and push this evidence log, update issue/PR comments, then hand off PR #183 to validator review.

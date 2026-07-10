@@ -1,0 +1,2 @@
+gh: Expected VAR_SIGN, actual: BANG ("!") at [1, 10]
+{"errors":[{"message":"Expected VAR_SIGN, actual: BANG (\"!\") at [1, 10]","locations":[{"line":1,"column":10}]}]}

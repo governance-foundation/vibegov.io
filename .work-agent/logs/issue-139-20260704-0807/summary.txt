@@ -1,0 +1,10 @@
+## issue #139 validation log
+Run: 2026-07-04 08:07 Australia/Sydney
+Branch: issue-139-ignore-windows-cache-artifacts
+
+Outcome summary:
+- Added explicit Windows Explorer/cache ignores to .gitignore: Thumbs.db, ehthumbs.db, Desktop.ini.
+- Verified git check-ignore covers root and nested Thumbs.db paths.
+- Created a temporary static/img/Thumbs.db probe; git status reported it as ignored (!!), then the probe was removed.
+- npm run build passed.
+- Evidence logs were normalized to UTF-8 LF after an initial cached diff check exposed PowerShell CRLF/log whitespace noise; final cached diff check passed.

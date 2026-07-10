@@ -1,0 +1,2 @@
+COMMAND: git diff origin/develop...HEAD --check
+exit=0

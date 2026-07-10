@@ -1,0 +1,24 @@
+Issue: #139 Ignore Windows Thumbs.db repo-noise artifacts
+Run: 2026-07-04 20:06 Australia/Sydney
+Branch: issue-139-ignore-windows-cache-artifacts
+PR: #183 https://github.com/governance-foundation/vibegov.io/pull/183
+Head before this evidence commit: 5fe884609265f737332302f0d0809bb5a40d793a
+
+Resume result:
+- Open PR #183 was resumed before selecting new work.
+- Durable resume-start comment posted: https://github.com/governance-foundation/vibegov.io/pull/183#issuecomment-4881575449
+- Project status: In progress. Re-applied Status In Progress on Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxtN2M using field PVTSSF_lADOA_2mn84BW-uRzhSOz5g and option 47fc9ee4.
+- In review remains unavailable because project #2 only has Todo, In Progress, and Done.
+- PR state before validation: open, non-draft, mergeable/MERGEABLE, mergeStateStatus CLEAN, no reviews, empty statusCheckRollup.
+
+Validation:
+- git diff --check: see git-diff-check.log
+- git diff origin/develop...HEAD --check: see git-diff-develop-check.log
+- git diff --cached --check before staging logs: see git-diff-cached-check-initial.log
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: see git-check-ignore.log
+- gh pr checks 183: see gh-pr-checks.log; no checks reported is expected for this branch and not a failing CI result.
+- gh run list for the head commit: see gh-run-list-head.log
+- npm run build: see npm-run-build.log
+
+Next action:
+- Commit and push this evidence directory, then request validator review for PR #183.

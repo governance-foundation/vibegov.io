@@ -1,0 +1,12 @@
+Post-normalization checks for issue #139 / PR #183, 2026-07-05 01:07 Australia/Sydney.
+
+Reason: the first 20260705-0107 evidence commit was pushed after a staged whitespace check reported CRLF/trailing-whitespace noise in newly captured log files.
+Corrective action: normalized the 20260705-0107 evidence logs to UTF-8 LF and pushed commit ca9a59d1b868cefea5cffb656e2adef9f70cd978.
+
+Checks after normalization:
+- git status --short --branch: clean on issue-139-ignore-windows-cache-artifacts tracking origin/issue-139-ignore-windows-cache-artifacts.
+- git diff --check: passed.
+- git diff origin/develop...HEAD --check: passed.
+- gh pr view 183: open, non-draft, mergeStateStatus CLEAN, no statusCheckRollup entries, head ca9a59d1b868cefea5cffb656e2adef9f70cd978.
+
+This follow-up log records the corrective validation evidence for the final run handoff.

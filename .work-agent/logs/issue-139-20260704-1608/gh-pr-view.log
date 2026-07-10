@@ -1,0 +1,4 @@
+# gh-pr-view.log
+# Started: 2026-07-04T16:15:09.0280456+10:00
+{"baseRefName":"develop","headRefName":"issue-139-ignore-windows-cache-artifacts","headRefOid":"7bfa7f02126a95d5e23a48b3810f496689dc5622","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","reviewDecision":"","statusCheckRollup":[],"url":"https://github.com/governance-foundation/vibegov.io/pull/183"}
+# Exit: 0

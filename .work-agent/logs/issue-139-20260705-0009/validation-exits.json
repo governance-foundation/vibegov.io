@@ -1,0 +1,56 @@
+[
+  {
+    "name": "git status before validation",
+    "exit": 0,
+    "command": "git status --short --branch",
+    "log": "git-status-before-validation.log"
+  },
+  {
+    "name": "git diff --check",
+    "exit": 0,
+    "command": "git diff --check",
+    "log": "git-diff-check.log"
+  },
+  {
+    "name": "git diff origin/develop...HEAD --check",
+    "exit": 0,
+    "command": "git diff origin/develop...HEAD --check",
+    "log": "git-diff-develop-check.log"
+  },
+  {
+    "name": "git check-ignore",
+    "exit": 0,
+    "command": "git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini",
+    "log": "git-check-ignore.log"
+  },
+  {
+    "name": "gh pr view",
+    "exit": 0,
+    "command": "gh pr view 183 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,reviewDecision,latestReviews,statusCheckRollup,headRefOid",
+    "log": "gh-pr-view.log"
+  },
+  {
+    "name": "gh pr checks",
+    "exit": 1,
+    "command": "gh pr checks 183 --repo governance-foundation/vibegov.io",
+    "log": "gh-pr-checks.log"
+  },
+  {
+    "name": "gh run list",
+    "exit": 0,
+    "command": "gh run list --repo governance-foundation/vibegov.io --branch issue-139-ignore-windows-cache-artifacts --json databaseId,name,status,conclusion,headSha,url --limit 20",
+    "log": "gh-workflow-runs.log"
+  },
+  {
+    "name": "npm run build",
+    "exit": 0,
+    "command": "npm run build",
+    "log": "npm-run-build.log"
+  },
+  {
+    "name": "git status after validation",
+    "exit": 0,
+    "command": "git status --short --branch",
+    "log": "git-status-after-validation.log"
+  }
+]

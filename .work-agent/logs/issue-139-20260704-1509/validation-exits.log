@@ -1,0 +1,13 @@
+2026-07-04 15:09 Australia/Sydney issue #139 PR #183 resume validation
+
+project status graphql mutation: exit 0
+gh pr view 183: exit 0
+gh pr checks 183: exit 1, no checks reported on branch
+git status --short --branch: exit 0
+git diff --check: exit 0
+git diff origin/develop...HEAD --check: exit 0
+git diff --cached --check before staging logs: exit 0
+git diff --cached --check after staging logs: initial exit 1 due generated log CRLF/trailing-whitespace normalization need
+git diff --cached --check after log normalization: exit 0
+git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: exit 0
+npm run build: exit 0

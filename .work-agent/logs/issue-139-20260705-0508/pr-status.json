@@ -1,0 +1,3 @@
+COMMAND: gh pr view 183 --repo governance-foundation/vibegov.io --json statusCheckRollup,mergeStateStatus,isDraft,reviewDecision,latestReviews,headRefOid,baseRefOid,changedFiles,reviewRequests
+{"baseRefOid":"160ae611c20e1abc9eab5616bd52e5b9c7f79c03","changedFiles":190,"headRefOid":"4381d561bdc86e00518d3a2f433f2a1cb96bfa7f","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","reviewDecision":"","reviewRequests":[],"statusCheckRollup":[]}
+exit=0
