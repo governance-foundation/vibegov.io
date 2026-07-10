@@ -1,0 +1,47 @@
+[
+  {
+    "command": "git-fetch-origin",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-fetch-origin.log"
+  },
+  {
+    "command": "git-status-before-validation",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-status-before-validation.log"
+  },
+  {
+    "command": "git-diff-check",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-diff-check.log"
+  },
+  {
+    "command": "git-diff-develop-check",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-diff-develop-check.log"
+  },
+  {
+    "command": "git-check-ignore",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-check-ignore.log"
+  },
+  {
+    "command": "gh-pr-view-status",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\gh-pr-view-status.log"
+  },
+  {
+    "command": "gh-pr-checks",
+    "exit": 1,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\gh-pr-checks.log"
+  },
+  {
+    "command": "npm-run-build",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\npm-run-build.log"
+  },
+  {
+    "command": "git-status-after-validation",
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-139-20260704-1907\\git-status-after-validation.log"
+  }
+]

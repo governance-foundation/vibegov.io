@@ -57,12 +57,13 @@ Fast contract summary:
    - checkpoint trigger guidance
    - session-diary guidance for recurring contexts
    - promotion guidance between continuity layers
-9) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
-10) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
-11) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Project Priority`/`Order`/`Priority`/`Size`, document backlog pickup as `Project Priority` group then `Order` inside the group, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
-12) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
-13) Reconcile docs/artifacts against final live git/GitHub state.
-14) Then stop before product-code implementation.
+9) If `git` is available but the current folder is not yet an initialized repo, run `git init` first and record the pre-init local state you are preserving; remote setup is not required for that pre-step.
+10) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
+11) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
+12) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Project Priority`/`Order`/`Priority`/`Size`, document backlog pickup as `Project Priority` group then `Order` inside the group, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
+13) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
+14) Reconcile docs/artifacts against final live git/GitHub state.
+15) Then stop before product-code implementation.
 
 Use [Bootstrap](/docs/bootstrap) as the canonical full contract when any detail matters.
 ```

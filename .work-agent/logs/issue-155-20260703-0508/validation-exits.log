@@ -1,0 +1,11 @@
+project-status-update=0
+git-fetch-origin.log=0
+git-status-before-validation.log=0
+issue-project-items.log=0
+pr-state.log=0
+pr-checks.log=1
+combined-status.log=0
+git-diff-check.log=0
+git-diff-check-pr-range.log=0
+npm-run-build.log=0
+role-url-pattern-check.log=0

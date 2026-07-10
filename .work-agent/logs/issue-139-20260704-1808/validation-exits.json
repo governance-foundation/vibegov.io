@@ -1,0 +1,47 @@
+[
+  {
+    "command": "git fetch origin develop issue-139-ignore-windows-cache-artifacts",
+    "exitCode": 0,
+    "log": "git-fetch-origin.log"
+  },
+  {
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "log": "git-status-before-validation.log"
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log"
+  },
+  {
+    "command": "git diff origin/develop...HEAD --check",
+    "exitCode": 0,
+    "log": "git-diff-develop-check.log"
+  },
+  {
+    "command": "git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini",
+    "exitCode": 0,
+    "log": "git-check-ignore.log"
+  },
+  {
+    "command": "gh pr view 183 --repo governance-foundation/vibegov.io --json statusCheckRollup,mergeStateStatus,isDraft,reviewDecision,latestReviews,headRefOid",
+    "exitCode": 0,
+    "log": "gh-pr-view-status.log"
+  },
+  {
+    "command": "gh pr checks 183 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": "gh-pr-checks.log"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "npm-run-build.log"
+  },
+  {
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "log": "git-status-after-validation.log"
+  }
+]

@@ -1,0 +1,20 @@
+Issue #155 / PR #182 resume validation evidence
+Run: 2026-07-03 16:10 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Head before evidence commit: 7f78fd7bb897bb0df893a38dc062c91a34ef6ab4
+Project status: In Progress (re-applied to Governance Foundation Work project #2)
+In review status: unavailable; project #2 only has Todo, In Progress, Done
+
+Validation commands:
+- git fetch origin --prune
+- gh pr view 182 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeable,headRefName,headRefOid,baseRefName,updatedAt
+- gh pr checks 182 --repo governance-foundation/vibegov.io
+- gh api repos/governance-foundation/vibegov.io/commits/HEAD/status
+- git diff --check
+- git diff --check origin/develop...HEAD
+- npm run build
+- rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json
+
+Notes:
+- gh pr checks reports no checks for this branch and exits non-zero.
+- role URL pattern check is expected to return the {role} entries only.

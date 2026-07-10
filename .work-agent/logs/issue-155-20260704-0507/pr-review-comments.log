@@ -1,0 +1,3 @@
+PS> gh api repos/governance-foundation/vibegov.io/pulls/182/comments
+[]
+EXIT_CODE=0

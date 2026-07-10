@@ -1,0 +1,8 @@
+ignore-inspection exit=0
+git-check-ignore exit=0
+thumbs-db-probe-status exit=0
+git-status-after-probe-cleanup exit=0
+git-diff-check exit=0
+npm-run-build exit=0
+git-diff-check-final exit=0
+git-diff-cached-check-after-lf-normalize exit=0

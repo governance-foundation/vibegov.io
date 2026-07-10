@@ -1,0 +1,35 @@
+Issue: #139 Ignore Windows Thumbs.db repo-noise artifacts
+PR: #183 Fix #139 ignore Windows cache artifacts
+Run: 2026-07-05 13:08 Australia/Sydney
+Branch: issue-139-ignore-windows-cache-artifacts
+Starting head: d570b65b0db2b38d39a928f4f19ce071d9530b84
+
+Resume decision:
+- Local repo was already on active issue branch issue-139-ignore-windows-cache-artifacts.
+- PR #183 is open, non-draft, and targets develop.
+- No new issue was selected while this open active PR remains in progress.
+
+Project status:
+- Re-applied Status In Progress on Governance Foundation Work project #2.
+- Mutation succeeded for item PVTI_lADOA_2mn84BW-uRzgxtN2M using field PVTSSF_lADOA_2mn84BW-uRzhSOz5g and option 47fc9ee4.
+- gh issue view 139 confirms project item status In Progress.
+- In review remains unavailable because project #2 only exposes Todo, In Progress, and Done.
+
+PR state before evidence commit:
+- PR #183 was open, non-draft, mergeStateStatus CLEAN.
+- latestReviews, reviewRequests, reviewThreads, and statusCheckRollup were empty.
+- gh run list for the branch returned no runs.
+- Combined commit status for d570b65b0db2b38d39a928f4f19ce071d9530b84 returned total_count 0.
+- gh pr checks returned exit 1 with: no checks reported on the 'issue-139-ignore-windows-cache-artifacts' branch.
+
+Validation:
+- git diff --check passed.
+- git diff origin/develop...HEAD --check passed.
+- git diff --cached --check passed.
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini passed.
+- npm run build passed.
+
+Outcome:
+- No product code changes were needed.
+- This run added evidence logs only.
+- Next action remains validator review for PR #183.

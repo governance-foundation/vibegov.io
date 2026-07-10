@@ -1,0 +1,7 @@
+# git-check-ignore.log
+# Started: 2026-07-04T16:15:08.9216563+10:00
+.gitignore:13:Thumbs.db	Thumbs.db
+.gitignore:13:Thumbs.db	static/img/Thumbs.db
+.gitignore:14:ehthumbs.db	ehthumbs.db
+.gitignore:15:Desktop.ini	Desktop.ini
+# Exit: 0

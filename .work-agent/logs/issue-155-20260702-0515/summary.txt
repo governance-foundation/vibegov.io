@@ -1,0 +1,21 @@
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+Branch: issue-155-agent-txt-role-url
+Run time: 2026-07-02 05:15 Australia/Sydney
+
+Starting state:
+- develop was clean and current with origin/develop before branch creation.
+- No open governance-foundation/vibegov.io PRs were found before selecting this queued issue.
+
+Change:
+- Updated static/agent.txt to advertise the explicit role bootstrap URL pattern:
+  https://vibegov.io/roles/{role}/BOOTSTRAP.md
+- Added a role bootstrap note explaining that {role} is replaced with the selected supported role slug.
+- Verified there is no roles//BOOTSTRAP.md or roles/<role>/BOOTSTRAP.md pattern in the checked canonical static sources.
+
+Validation:
+- git diff --check: passed
+- npm run build: passed
+- role URL pattern check: passed
+
+Residual risk:
+- Docs/static asset only. No TypeScript or runtime behavior changed.

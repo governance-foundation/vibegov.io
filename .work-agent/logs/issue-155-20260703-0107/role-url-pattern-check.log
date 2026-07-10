@@ -1,0 +1,3 @@
+PS> rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json
+static\agent.txt:16:- use https://vibegov.io/roles/index.json and https://vibegov.io/roles/{role}/BOOTSTRAP.md for role-specific agent bootstrap
+static\bootstrap.json:194:    "roleEntrypointPattern": "https://vibegov.io/roles/{role}/BOOTSTRAP.md",

@@ -1,0 +1,2 @@
+PS> gh pr view 182 --json url,state,isDraft,mergeable,mergeStateStatus,headRefOid,baseRefName,reviewDecision,reviewRequests,latestReviews,statusCheckRollup
+{"baseRefName":"develop","headRefOid":"ed0251357cc70493a12d5fa4ceea43e6dbf04c8b","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","reviewDecision":"","reviewRequests":[],"state":"OPEN","statusCheckRollup":[],"url":"https://github.com/governance-foundation/vibegov.io/pull/182"}

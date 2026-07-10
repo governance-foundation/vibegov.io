@@ -1,0 +1,16 @@
+
+name                   exit log
+----                   ---- ---
+git-fetch                 0 git-fetch.log
+git-status-before         0 git-status-before.log
+project-status-update     0 project-status-update.log
+issue-project-items       0 issue-project-items.log
+pr-status                 0 pr-status.json
+review-threads            0 review-threads.json
+workflow-runs             0 gh-run-list.log
+pr-checks                 1 pr-checks.log
+git-diff-check            0 git-diff-check.log
+git-diff-develop-check    0 git-diff-develop-check.log
+git-check-ignore          0 git-check-ignore.log
+npm-run-build             0 npm-run-build.log
+git-status-after          0 git-status-after.log

@@ -1,0 +1,6 @@
+Issue #155 / PR #182 refreshed validation run
+Timestamp: 2026-07-02 14:08 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Project status: In Progress re-applied with gh project item-edit before validation.
+In review status: unavailable on Governance Foundation Work project #2; available statuses are Todo, In Progress, Done.
+No source changes were intended; this run refreshes evidence for the open PR.

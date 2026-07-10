@@ -1,0 +1,6 @@
+COMMAND: gh pr view 182 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeable,headRefOid,baseRefName,headRefName,url
+START: 2026-07-03T15:12:25.2370299+10:00
+
+{"baseRefName":"develop","headRefName":"issue-155-agent-txt-role-url","headRefOid":"87192fa37e1142b1a56539bf3ccb535328a61bd0","isDraft":false,"mergeable":"MERGEABLE","number":182,"state":"OPEN","url":"https://github.com/governance-foundation/vibegov.io/pull/182"}
+
+EXIT: 0

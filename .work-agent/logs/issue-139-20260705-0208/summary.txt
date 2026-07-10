@@ -1,0 +1,25 @@
+Issue #139 / PR #183 resume validation, 2026-07-05 02:08 Australia/Sydney
+
+Scope:
+- Resumed active branch issue-139-ignore-windows-cache-artifacts for open PR #183.
+- Re-applied Governance Foundation Work project #2 Status In Progress to item PVTI_lADOA_2mn84BW-uRzgxtN2M.
+- Did not select a new issue because PR #183 remains open and awaiting validator review.
+
+PR state:
+- Head before validation: 3c946e84d0888e092804a03bc3f1e223e6801d15.
+- PR is open, non-draft, mergeable/CLEAN.
+- No submitted reviews, review threads, commit statuses, workflow runs, or status-check rollup entries were reported for the current head.
+- gh pr checks returned exit 1 with "no checks reported on the 'issue-139-ignore-windows-cache-artifacts' branch"; this matches the empty status rollup and is not treated as a failing check.
+
+Validation:
+- git status --short --branch: clean before generated run logs.
+- git diff --check: passed.
+- git diff origin/develop...HEAD --check: passed.
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: passed.
+- gh pr view status inspection: passed.
+- gh run list for branch: passed; no runs reported.
+- npm run build: passed.
+
+Cleanup:
+- Generated evidence is stored in .work-agent/logs/issue-139-20260705-0208/.
+- Next action: validator review PR #183.

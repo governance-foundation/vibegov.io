@@ -1,0 +1,15 @@
+2026-07-05 13:08 Australia/Sydney validation exits
+
+git fetch origin develop issue-139-ignore-windows-cache-artifacts: exit 0
+Project Status mutation to In Progress: exit 0
+gh issue view 139 --json projectItems: exit 0; confirmed In Progress
+git diff --check: exit 0
+git diff origin/develop...HEAD --check: exit 0
+git diff --cached --check: exit 0
+git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: exit 0
+gh pr view 183 --json PR state/status fields: exit 0; open, non-draft, CLEAN, empty statusCheckRollup
+gh api graphql reviewThreads query: exit 0; no reviewThreads
+gh run list --branch issue-139-ignore-windows-cache-artifacts --limit 10: exit 0; no runs returned
+gh api repos/governance-foundation/vibegov.io/commits/d570b65b0db2b38d39a928f4f19ce071d9530b84/status: exit 0; total_count 0
+npm run build: exit 0
+gh pr checks 183: exit 1; no checks reported on the branch

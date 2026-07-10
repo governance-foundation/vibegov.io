@@ -1,0 +1,26 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-03 00:06 Australia/Sydney
+
+Project status: In Progress. Re-applied to Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8. The first local project item-edit attempt used a truncated item id and failed; the corrected mutation succeeded immediately after. In review remains unavailable because the project status options are Todo, In Progress, and Done.
+
+Outcome:
+- Refreshed developer evidence for the already-open PR #182.
+- No source changes were required beyond evidence logs.
+- Evidence commits were pushed for the refreshed logs and this compact summary; the final exact head is recorded in the issue/PR comments and validator handoff.
+
+Validation:
+- git fetch origin: passed
+- git diff --check: passed before commit and after commit
+- git diff --check origin/develop...HEAD: passed before commit and after commit
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries were returned in static/agent.txt and static/bootstrap.json
+- gh pr checks 182: no checks reported for this branch
+
+State:
+- PR #182 is open, mergeable, non-draft, and merge state is CLEAN.
+- No submitted reviews were present in the inspected PR state.
+- Local branch is clean and aligned with origin/issue-155-agent-txt-role-url after push.
+
+Next action: validator review PR #182 at the final head recorded in the issue/PR comments and validator handoff.

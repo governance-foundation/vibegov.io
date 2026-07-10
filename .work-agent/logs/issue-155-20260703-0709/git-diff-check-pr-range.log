@@ -1,0 +1,2 @@
+PS> git diff --check origin/develop...HEAD
+exit=0

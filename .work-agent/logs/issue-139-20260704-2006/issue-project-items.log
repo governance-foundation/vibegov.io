@@ -1,0 +1,6 @@
+COMMAND: gh issue view 139 --repo governance-foundation/vibegov.io --json number,title,state,url,projectItems
+START: 2026-07-04T20:12:02.8984398+10:00
+{"number":139,"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Governance Foundation Work"}],"state":"OPEN","title":"Ignore Windows Thumbs.db repo-noise artifacts","url":"https://github.com/governance-foundation/vibegov.io/issues/139"}
+
+EXIT: 0
+END: 2026-07-04T20:12:03.8842806+10:00

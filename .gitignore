@@ -10,6 +10,9 @@
 
 # Misc
 .DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 .env.local
 .env.development.local
 .env.test.local
@@ -24,4 +27,3 @@ yarn-error.log*
 internal/
 dist/
 artifacts/
-

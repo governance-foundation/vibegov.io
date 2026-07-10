@@ -1,0 +1,27 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-03 02:09 Australia/Sydney
+Start/resume issue comment: https://github.com/governance-foundation/vibegov.io/issues/155#issuecomment-4867835604
+
+Project status: In Progress. Re-applied to Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8 before validation. In review remains unavailable because the project status options are Todo, In Progress, and Done.
+
+Outcome:
+- Refreshed developer validation evidence for already-open PR #182.
+- No source changes were required beyond the evidence logs in this directory.
+
+Validation:
+- git fetch origin --prune: passed
+- git diff --check: passed before commit
+- git diff --check origin/develop...HEAD: passed before commit
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries were returned in static/agent.txt and static/bootstrap.json
+- gh pr checks 182: no checks reported for this branch (exit 1, empty output)
+- GitHub combined statuses for ed0251357cc70493a12d5fa4ceea43e6dbf04c8b: empty/no statuses reported
+
+State:
+- PR #182 is open, mergeable, non-draft, and merge state is CLEAN at head ed0251357cc70493a12d5fa4ceea43e6dbf04c8b before this evidence commit.
+- No submitted reviews were present in the inspected PR state.
+- Local branch was clean and aligned with origin/issue-155-agent-txt-role-url before creating this evidence bundle.
+
+Next action: validator review PR #182 at the final head after this evidence bundle is committed and pushed.

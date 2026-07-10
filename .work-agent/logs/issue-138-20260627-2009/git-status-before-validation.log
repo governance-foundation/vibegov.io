@@ -1,0 +1,5 @@
+Command: git status --short --branch
+Exit code: 0
+Output:
+## issue-138-bootstrap-git-init-preflight...origin/issue-138-bootstrap-git-init-preflight
+?? .work-agent/logs/issue-138-20260627-2009/

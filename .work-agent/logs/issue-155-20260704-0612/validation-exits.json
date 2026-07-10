@@ -1,0 +1,26 @@
+{
+    "run":  "20260704-0612",
+    "issue":  155,
+    "pr":  182,
+    "branch":  "issue-155-agent-txt-role-url",
+    "head_before_evidence":  "65a45a78ef1988433b36d5eaff02d2690c6cd6f7",
+    "exits":  {
+                  "git-fetch.log":  0,
+                  "project-status-update.log":  0,
+                  "issue-project-items-after-status-update.log":  0,
+                  "issue-resume-comment.log":  0,
+                  "pr-state.log":  0,
+                  "pr-checks.log":  1,
+                  "pr-reviews.log":  0,
+                  "pr-review-comments.log":  0,
+                  "combined-status.log":  0,
+                  "workflow-runs.log":  0,
+                  "git-status-before-validation.log":  0,
+                  "git-diff-check.log":  0,
+                  "git-diff-check-pr-range.log":  0,
+                  "npm-run-build.log":  0,
+                  "role-url-pattern-check.log":  0
+              },
+    "project_items_before":  "{\"projectItems\":[{\"status\":{\"optionId\":\"47fc9ee4\",\"name\":\"In Progress\"},\"title\":\"Governance Foundation Work\"}]}",
+    "project_items_after":  "{\"projectItems\":[{\"status\":{\"optionId\":\"47fc9ee4\",\"name\":\"In Progress\"},\"title\":\"Governance Foundation Work\"}]}"
+}

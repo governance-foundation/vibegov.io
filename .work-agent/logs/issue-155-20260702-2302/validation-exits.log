@@ -1,0 +1,10 @@
+git fetch origin=0
+git status --short --branch=0
+gh project item-edit --id PVTI_lADOA_2mn84BW-uRzgxeXa8 --project-id PVT_kwDOA_2mn84BW-uR --field-id PVTSSF_lADOA_2mn84BW-uRzhSOz5g --single-select-option-id 47fc9ee4 --format json=1
+gh issue view 155 --repo governance-foundation/vibegov.io --json number,title,state,projectItems,url=1
+gh pr view 182 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeable,headRefName,headRefOid,baseRefName,baseRefOid,url,statusCheckRollup=1
+gh pr checks 182 --repo governance-foundation/vibegov.io=1
+git diff --check=0
+git diff --check origin/develop...HEAD=0
+npm run build=0
+rg -n "roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP" static\agent.txt static\bootstrap.json=0

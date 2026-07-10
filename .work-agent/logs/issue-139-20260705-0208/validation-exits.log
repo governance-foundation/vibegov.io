@@ -1,0 +1,9 @@
+git-status-before-validation.log exit=0
+git-diff-check.log exit=0
+git-diff-develop-check.log exit=0
+git-check-ignore.log exit=0
+pr-status.json exit=0
+pr-checks.log exit=1
+gh-run-list.log exit=0
+npm-run-build.log exit=0
+git-status-after-validation.log exit=0

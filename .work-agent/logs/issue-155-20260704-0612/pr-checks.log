@@ -1,0 +1,6 @@
+gh : no checks reported on the 'issue-155-agent-txt-role-url' branch
+At line:1 char:30
++ Run-Logged 'pr-checks.log' { gh pr checks 182 --repo $repo } @(0,1)
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (no checks repor...ole-url' branch:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError

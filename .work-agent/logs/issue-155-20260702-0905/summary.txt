@@ -1,0 +1,15 @@
+VibeGov developer run: issue #155 / PR #182
+Run time: 2026-07-02 09:05 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Head before validation: 84a531fd9a0ee5d2c87b8419b563d8537a289316
+
+Commands:
+- git status --short --branch => exit 0
+- git diff --check => exit 0
+- git diff --check origin/develop...HEAD => exit 0
+- npm run build => exit 0
+- rg -n 'roles//BOOTSTRAP|roles/\{role\}/BOOTSTRAP|roles/<role>/BOOTSTRAP' static\agent.txt static\bootstrap.json => exit 0
+
+Outcome:
+- Local validation refresh completed for current PR head.
+- Pattern check should return only the expected {role} role bootstrap URL entries and no broken double-slash or angle-placeholder role URL entries.

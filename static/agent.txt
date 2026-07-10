@@ -13,7 +13,7 @@ scope rules:
 
 bootstrap contract:
 - use https://vibegov.io/agent.txt and https://vibegov.io/bootstrap.json as the canonical bootstrap sources
-- use https://vibegov.io/roles/index.json and https://vibegov.io/roles/<role>/BOOTSTRAP.md for role-specific agent bootstrap
+- use https://vibegov.io/roles/index.json and https://vibegov.io/roles/{role}/BOOTSTRAP.md for role-specific agent bootstrap
 - do not rely on redirected or stale bootstrap sources
 - bootstrap must use one canonical contract with explicit mode selection: init, update, or review
 - bootstrap is not complete for a GitHub-hosted repo when only the .governance scaffold exists
@@ -25,6 +25,7 @@ mode behavior:
 
 role bootstrap:
 - when bootstrapping a role-specific agent, fresh-read the role catalog and the selected role entrypoint before writing files
+- replace {role} with the selected supported role slug in role bootstrap URLs
 - supported roles: developer, planner, researcher, explorer, designer, verifier, maintainer, operator, architect, security, documenter
 - each role must inspect the project first, select fresh-bootstrap/existing-repo-init/recovery-update, merge files safely, apply relevant overlays, validate the install, and return a bootstrap report
 

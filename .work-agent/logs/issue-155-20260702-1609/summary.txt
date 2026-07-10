@@ -1,0 +1,28 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 16:09 Australia/Sydney
+Head under validation: fd453d75ac6ef456bafe9c9659171a177f8190ab
+
+Project status:
+- Re-applied Status In Progress via gh project item-edit for Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+- Status field option: In Progress, option id 47fc9ee4.
+- In review transition unavailable: project #2 Status options are Todo, In Progress, Done; no In review option exists.
+
+Validation:
+- git fetch origin: exit 0
+- git status --short --branch: exit 0
+- git diff --check: exit 0
+- git diff --check origin/develop...HEAD: exit 0
+- npm run build: exit 0
+- rg role URL pattern check: exit 0, returning only expected {role} entries in static/agent.txt and static/bootstrap.json.
+- gh pr checks 182: exit 1 because no checks are reported on the issue branch.
+- Post-commit git diff --check origin/develop...HEAD initially failed because generated evidence logs used CRLF line endings; normalized the 16:09 log files to LF and re-ran the whitespace checks successfully.
+
+State:
+- PR #182 is open, mergeable, and non-draft.
+- No status check rollup entries are reported for the current head.
+- No source changes were required in this resume run.
+
+Next action:
+- Validator review PR #182 at head fd453d75ac6ef456bafe9c9659171a177f8190ab.

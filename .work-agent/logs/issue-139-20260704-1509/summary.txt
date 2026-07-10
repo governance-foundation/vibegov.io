@@ -1,0 +1,38 @@
+VibeGov developer resume check for issue #139, 2026-07-04 15:09 Australia/Sydney.
+
+Issue: #139 Ignore Windows Thumbs.db repo-noise artifacts
+PR: #183 https://github.com/governance-foundation/vibegov.io/pull/183
+Branch: issue-139-ignore-windows-cache-artifacts
+Base: develop
+Head before this evidence commit: 6cb2bf343b13039210399c5566adba77fc3d0d0b
+
+Resume gate:
+- Active local branch was issue-139-ignore-windows-cache-artifacts, tracking origin/issue-139-ignore-windows-cache-artifacts.
+- Open PR #183 remained open, non-draft, mergeable/CLEAN.
+- No reviews, review requests, or status-check rollup entries were reported.
+- gh pr checks reported no checks on the branch.
+
+Project Status transition result:
+- Project status: In Progress.
+- Re-applied Status In Progress on Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxtN2M.
+- Mutation used project id PVT_kwDOA_2mn84BW-uR, field id PVTSSF_lADOA_2mn84BW-uRzhSOz5g, option id 47fc9ee4.
+- In review remains unavailable because the board only has Todo, In Progress, and Done.
+
+Validation:
+- git diff --check passed.
+- git diff origin/develop...HEAD --check passed.
+- git diff --cached --check passed.
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini passed.
+- npm run build passed.
+
+Evidence logs:
+- .work-agent/logs/issue-139-20260704-1509/git-status-before-validation.log
+- .work-agent/logs/issue-139-20260704-1509/git-diff-check.log
+- .work-agent/logs/issue-139-20260704-1509/git-diff-develop-check.log
+- .work-agent/logs/issue-139-20260704-1509/git-diff-cached-check.log
+- .work-agent/logs/issue-139-20260704-1509/git-check-ignore.log
+- .work-agent/logs/issue-139-20260704-1509/gh-pr-view.log
+- .work-agent/logs/issue-139-20260704-1509/npm-run-build.log
+- .work-agent/logs/issue-139-20260704-1509/validation-exits.log
+
+Next action: validator review PR #183.

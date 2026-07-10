@@ -1,0 +1,10 @@
+Issue #139 resume validation evidence, 2026-07-04 19:07 Australia/Sydney.
+
+Active PR: #183 issue-139-ignore-windows-cache-artifacts -> develop
+Project status: In progress. Re-applied Status In Progress on Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxtN2M using field PVTSSF_lADOA_2mn84BW-uRzhSOz5g and option 47fc9ee4.
+In review unavailable: project #2 only has Todo, In Progress, and Done.
+PR state before evidence commit: open, non-draft, mergeable/CLEAN, no reviews, no status-check rollup entries.
+gh pr checks exit 1 with no checks reported on the branch; treated as no CI configured/reported, not a failing check.
+Validation passed: git diff --check, git diff origin/develop...HEAD --check, git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini, npm run build.
+Cleanup before commit: local repo only had this evidence log directory untracked.
+Next action: validator review PR #183.

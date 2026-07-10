@@ -1,0 +1,26 @@
+## issue #139 PR resume validation
+Run: 2026-07-04 09:09 Australia/Sydney
+Branch: issue-139-ignore-windows-cache-artifacts
+PR: #183 https://github.com/governance-foundation/vibegov.io/pull/183
+
+Resume state:
+- Local repo resumed on issue-139-ignore-windows-cache-artifacts, tracking origin/issue-139-ignore-windows-cache-artifacts.
+- PR #183 is open, non-draft, mergeable, and has no review comments or review submissions at resume time.
+- GitHub reported no commit statuses or workflow runs for head c0b5f268294bfdccf12b1858ada811f1ead1838a at resume time.
+
+Project Status transition result:
+- Project: Governance Foundation Work #2.
+- Project item: PVTI_lADOA_2mn84BW-uRzgxtN2M.
+- Project status: In Progress; the run explicitly re-applied the Status option In Progress (option id 47fc9ee4).
+- In review unavailable: project #2 Status options are Todo, In Progress, and Done only.
+
+Validation:
+- Initial logging wrapper attempt failed before validation commands ran because of a PowerShell redirection parser error; the wrapper was corrected and validation was rerun.
+- git status --short --branch passed.
+- git diff --check passed.
+- git diff origin/develop...HEAD --check passed.
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini passed.
+- npm run build passed.
+- Final git status after validation showed only this new evidence directory before it was committed.
+
+Next action: validator review PR #183.

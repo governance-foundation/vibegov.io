@@ -1,0 +1,7 @@
+git fetch origin develop issue-138-bootstrap-git-init-preflight => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-fetch.log)
+git status --short --branch => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-status-before-validation.log)
+git rev-parse HEAD => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-head.log)
+git rev-parse origin/develop => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-origin-develop.log)
+git diff --check => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-diff-check.log)
+git diff --check origin/develop...HEAD => exit 0 (.work-agent/logs/issue-138-20260628-0608/git-diff-check-origin-develop.log)
+npm run build => exit 0 (.work-agent/logs/issue-138-20260628-0608/npm-run-build.log)
