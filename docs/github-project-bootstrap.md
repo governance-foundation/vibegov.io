@@ -62,8 +62,16 @@ Required workflow field:
 - `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
 
 Required planning fields:
-- `Priority`: `P0`, `P1`, `P2`
+- `Project Priority`: `P0`, `P1`, `P2`, `P3`, `P4`, `P5`
+- `Order`: number
+- `Priority`: `Urgent`, `High`, `Medium`, `Low`
 - `Size`: `XS`, `S`, `M`, `L`, `XL`
+
+Backlog automation ordering rule:
+- use `Project Priority` to keep backlog groups explicit (`P0` is highest, `P5` is lowest)
+- use `Order` as the deterministic in-group sort value; lower numbers are picked first
+- do not depend on the GitHub project view's visual ordering as the automation source of truth
+- use `Priority` for human urgency/impact signalling, not as a replacement for `Project Priority` + `Order`
 
 Normalization rule:
 - update GitHub built-in `Status` in place when needed; do not assume create/delete replacement flows are available.
@@ -97,7 +105,8 @@ For GitHub-hosted bootstrap, report:
 - board action path used (`adopt/create/normalize`)
 - why that board was selected when multiple matches existed
 - repo-link status
-- field/status normalization result
+- field/status normalization result, including `Project Priority`, `Order`, and `Priority`
+- backlog automation ordering result (`Project Priority` groups plus `Order` values)
 - issue import/attach result (or intentionally empty)
 - any blockers/missing capabilities
 - any degraded-verification warnings caused by hosted-feature limits, with exact evidence and next action

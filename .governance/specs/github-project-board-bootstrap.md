@@ -1,7 +1,7 @@
 # GitHub Project Board Bootstrap
 
 ## Intent
-Make Git/GitHub backlog bootstrap a first-class part of VibeGov setup for GitHub-hosted repositories. Bootstrap should detect Git/GitHub prerequisites, establish or adopt a canonical project board, import existing open issues, and keep issue status synchronized with actual delivery state while work is in progress.
+Make Git/GitHub backlog bootstrap a first-class part of VibeGov setup for GitHub-hosted repositories. Bootstrap should detect Git/GitHub prerequisites, establish or adopt a canonical project board, import existing open issues, keep issue status synchronized with actual delivery state while work is in progress, and preserve deterministic backlog pickup order for automation.
 
 ## Scope
 In scope:
@@ -9,6 +9,7 @@ In scope:
 - define a canonical GitHub project board structure for VibeGov adoption
 - require bootstrap to create, adopt, or normalize a project board when GitHub support is available
 - require importing or attaching existing open issues to the board
+- require script-safe backlog grouping and in-group ordering fields
 - require issue-state movement as work progresses
 - update bootstrap-facing docs and governance rules to make the behavior explicit
 
@@ -22,7 +23,8 @@ Out of scope:
 - `GH-PROJ-002` Bootstrap explicitly checks `gh auth status` and requires the ability to read/write project and repo data before board automation proceeds.
 - `GH-PROJ-003` For GitHub-hosted repos, bootstrap creates, adopts, or normalizes a project board with canonical fields/statuses.
 - `GH-PROJ-004` Canonical status workflow is defined as `Backlog`, `Ready`, `In progress`, `In review`, `Done`, and `Blocked`.
-- `GH-PROJ-005` Canonical planning fields include `Priority` (`P0`, `P1`, `P2`) and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GH-PROJ-005` Canonical planning fields include `Project Priority` (`P0`, `P1`, `P2`, `P3`, `P4`, `P5`), `Order` (number), `Priority` (`Urgent`, `High`, `Medium`, `Low`), and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GH-PROJ-005A` Backlog pickup automation uses `Project Priority` for groups and `Order` for in-group ordering instead of relying on GitHub project visual order.
 - `GH-PROJ-006` Existing open issues are imported or attached to the project board during setup when GitHub automation is available.
 - `GH-PROJ-007` Governance explicitly requires issue state to move with actual delivery progress: `Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, with `Blocked` used for proven blockers.
 - `GH-PROJ-008` If prerequisites or auth are missing, bootstrap reports the exact missing capability and degrades gracefully instead of pretending the board is configured.
@@ -30,7 +32,7 @@ Out of scope:
 
 ## Tests and Evidence
 - inspect `.governance/specs/github-project-board-bootstrap.md`
-- inspect updated workflow/bootstrap docs for prerequisite and board-state language
+- inspect updated workflow/bootstrap docs for prerequisite, board-state, and backlog-ordering language
 - run `npm run build`
 
 ## Canonical Board Shape
@@ -44,10 +46,20 @@ Required workflow field:
   - `Blocked`
 
 Required planning fields:
-- `Priority`
+- `Project Priority`
   - `P0`
   - `P1`
   - `P2`
+  - `P3`
+  - `P4`
+  - `P5`
+- `Order`
+  - number
+- `Priority`
+  - `Urgent`
+  - `High`
+  - `Medium`
+  - `Low`
 - `Size`
   - `XS`
   - `S`
@@ -57,14 +69,24 @@ Required planning fields:
 
 Useful inherited/built-in fields may also be present, including title, assignees, labels, linked pull requests, reviewers, milestones, parent issue, sub-issue progress, start date, target date, and estimate.
 
+## Backlog Pickup Ordering
+Backlog pickup automation must not rely on GitHub project visual order as the source of truth.
+
+Automation should select unblocked backlog candidates by:
+1. `Project Priority` group, with `P0` highest and `P5` lowest
+2. `Order` ascending inside the selected `Project Priority` group
+
+`Priority` is reserved for human urgency/impact signalling (`Urgent`, `High`, `Medium`, `Low`). It does not replace `Project Priority` + `Order` as the deterministic backlog pickup contract unless a repository-specific policy explicitly extends the selection logic.
+
 ## Operational Behavior
 When GitHub automation is available, bootstrap should:
 1. detect whether the repo is GitHub-hosted
 2. verify `git` and `gh` availability
 3. verify `gh auth status` and project-capable scopes
 4. create, adopt, or normalize the project board
-5. import or attach existing open issues
-6. report the board URL, canonical statuses, and any fallback/limitations
+5. normalize `Project Priority`, `Order`, `Priority`, `Size`, and `Status`
+6. import or attach existing open issues
+7. report the board URL, canonical statuses, ordering fields, and any fallback/limitations
 
 During delivery, issue state should track real work:
 - newly discovered or imported work -> `Backlog`

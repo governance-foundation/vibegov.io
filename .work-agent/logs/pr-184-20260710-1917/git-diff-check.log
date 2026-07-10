@@ -1,0 +1,95 @@
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:1: trailing whitespace.
++{
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:2: trailing whitespace.
++  "scenarioId": "bootstrap-gate",
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:3: trailing whitespace.
++  "passed": true,
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:4: trailing whitespace.
++  "score": 100,
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:5: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-10T08-12-27-397Z-bootstrap-gate"
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate-direct.log:6: trailing whitespace.
++}
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:1: trailing whitespace.
++npm warn "bootstrap-gate" is being parsed as a normal command line argument.
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:2: trailing whitespace.
++npm warn Unknown cli config "--scenario". This will stop working in the next major version of npm.
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:3: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:4: trailing whitespace.
++> website@0.0.0 bootstrap-validator
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:5: trailing whitespace.
++> node .internal/bootstrap-validator/index.js bootstrap-gate
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:6: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:7: trailing whitespace.
++VibeGov Bootstrap Validator
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:8: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:9: trailing whitespace.
++Usage:
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:10: trailing whitespace.
++  npm run bootstrap-validator -- --scenario <id> [--adapter local-stub|codex-cli]
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:11: trailing whitespace.
++  npm run bootstrap-validator -- --suite <id> [--adapter local-stub|codex-cli]
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:12: trailing whitespace.
++  npm run bootstrap-validator -- --list
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:13: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:14: trailing whitespace.
++Examples:
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:15: trailing whitespace.
++  npm run bootstrap-validator -- --scenario empty-repo-bootstrap
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:16: trailing whitespace.
++  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:17: trailing whitespace.
++  npm run bootstrap-validator -- --scenario bootstrap-gate
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:18: trailing whitespace.
++  npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:19: trailing whitespace.
++  npm run bootstrap-validator -- --suite phase1
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:20: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/bootstrap-gate.log:20: new blank line at EOF.
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:1: trailing whitespace.
++{
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:2: trailing whitespace.
++  "scenarioId": "empty-repo-bootstrap",
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:3: trailing whitespace.
++  "passed": true,
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:4: trailing whitespace.
++  "score": 100,
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:5: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-10T08-12-27-459Z-empty-repo-bootstrap"
+.work-agent/logs/pr-184-20260710-1808/empty-repo-bootstrap-direct.log:6: trailing whitespace.
++}
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:1: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:2: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:3: trailing whitespace.
++> docusaurus build
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:4: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:5: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:6: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.1                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:7: trailing whitespace.
++
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:8: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:9: trailing whitespace.
++i Compiling Client
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:10: trailing whitespace.
++i Compiling Server
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:11: trailing whitespace.
++√ Client: Compiled successfully in 1.17s
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:12: trailing whitespace.
++√ Server: Compiled successfully in 13.58s
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:13: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/pr-184-20260710-1808/npm-build.log:14: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/pr-184-20260710-1808/published-rules-check.log:1: trailing whitespace.
++Published governance docs regenerated from canonical .mdc files.

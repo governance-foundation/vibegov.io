@@ -87,7 +87,8 @@ Governed repositories should install a strict Git workflow during bootstrap so p
 - `GOV-02-GIT-010` For GitHub-hosted repositories, bootstrap should also check whether `git` and `gh` are available and whether GitHub authentication/project access is available before attempting board automation.
 - `GOV-02-GIT-011` When GitHub project automation is available, bootstrap should create, adopt, or normalize a canonical project board and report the board URL plus any fallback limitations.
 - `GOV-02-GIT-012` Canonical GitHub board workflow should include `Status` values `Backlog`, `Ready`, `In progress`, `In review`, `Done`, and `Blocked`.
-- `GOV-02-GIT-013` Canonical GitHub board planning fields should include `Priority` (`P0`, `P1`, `P2`) and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GOV-02-GIT-013` Canonical GitHub board planning fields should include `Project Priority` (`P0`, `P1`, `P2`, `P3`, `P4`, `P5`), `Order` (number), `Priority` (`Urgent`, `High`, `Medium`, `Low`), and `Size` (`XS`, `S`, `M`, `L`, `XL`).
+- `GOV-02-GIT-013A` Automated issue pickup should use `Project Priority` for backlog groups and `Order` for in-group ordering, rather than depending on the GitHub project view's visual order.
 - `GOV-02-GIT-014` Existing open issues should be imported or attached to the GitHub board during adoption/bootstrap when project automation is available.
 - `GOV-02-GIT-015` Issue state on the GitHub board must move with actual delivery state rather than remaining static: `Backlog` -> `Ready` -> `In progress` -> `In review` -> `Done`, with `Blocked` used for proven blockers.
 - `GOV-02-GIT-016` If GitHub prerequisites or auth are missing, bootstrap should report the exact missing capability and degrade gracefully instead of pretending project-board setup succeeded.
@@ -146,7 +147,7 @@ Exploratory work is the non-delivery discovery/analysis lane. It may include pla
 
 Human feedback should be first-class, but not automatically global. When human input is needed, the system should prefer scoped blocking over stop-the-world blocking whenever unrelated ready work can continue.
 
-> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed, while clarifying how build, exploratory, and human-feedback loops coexist.
+> Commentary: Defines the allowed delivery postures so evidence and completion standards match the work being performed.
 
 ### Exploration mode
 
@@ -167,7 +168,7 @@ Required evidence:
 - next recommended backlog action
 - coverage or confidence limits when relevant
 
-> Commentary: Clarifies that exploratory work can contain planner/evaluator behavior when the goal is non-delivery discovery rather than implementation.
+> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
 
 ### Development mode
 
@@ -252,7 +253,7 @@ Prefer scoped blocking over global blocking:
 - unrelated exploratory work may continue,
 - and the blocked boundary should be made explicit in checkpoints or handoffs.
 
-> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work, and prevents one unanswered question from freezing all other loops.
+> Commentary: Keeps delivery moving by turning blockers into tracked decisions instead of stalled work.
 
 ## Scope Discipline
 
@@ -265,7 +266,7 @@ Prefer scoped blocking over global blocking:
 ## Typical Issue Pickup Flow
 
 For normal backlog-driven work, the default governed pickup flow is:
-1. choose the next highest-priority unblocked issue from backlog or `Ready`
+1. choose the next unblocked issue from backlog or `Ready` using `Project Priority` group first, then `Order` ascending inside the group
 2. clarify the issue until it reaches implementation-grade quality
 3. bind the issue to the governing spec/requirement IDs before implementation
 4. move the issue to `Ready` if clarification/spec binding was required
@@ -298,7 +299,7 @@ Claims of `done` without mode-appropriate evidence are incomplete.
 
 ## Backlog Continuity
 
-After finishing one item, continue to the next highest-priority unblocked item until:
+After finishing one item, continue to the next unblocked item by `Project Priority` group and `Order` until:
 - backlog is exhausted,
 - a hard blocker removes all ready work,
 - a human decision is required,

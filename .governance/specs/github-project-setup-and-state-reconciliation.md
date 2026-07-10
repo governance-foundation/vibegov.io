@@ -1,7 +1,7 @@
 # GitHub Project Setup and State Reconciliation
 
 ## Intent
-Make GitHub project setup during bootstrap explicit enough that real bootstrap/update runs can complete without ambiguous board selection, duplicate-board drift, stale reporting, or half-configured GitHub state. This matters because GitHub-hosted bootstrap is stateful and mutation-heavy, and weak sequencing or weak reporting causes retries, confusion, and false completion claims.
+Make GitHub project setup during bootstrap explicit enough that real bootstrap/update runs can complete without ambiguous board selection, duplicate-board drift, stale reporting, half-configured GitHub state, or automation that depends on project view ordering. This matters because GitHub-hosted bootstrap is stateful and mutation-heavy, and weak sequencing, weak reporting, or ambiguous backlog ordering causes retries, confusion, and false completion claims.
 
 ## Scope
 In scope:
@@ -11,6 +11,7 @@ In scope:
 - duplicate empty-board cleanup behavior
 - repo-to-board linking as a completion requirement
 - built-in `Status` normalization guidance
+- canonical project fields for priority grouping, in-group order, human urgency, and size
 - early `AGENTS.md` creation during bootstrap
 - explicit `develop` branch expectation guidance
 - final live-state reconciliation after GitHub mutations
@@ -28,6 +29,8 @@ Out of scope:
 - `GH-SETUP-004` Bootstrap docs define duplicate empty-board cleanup behavior explicitly.
 - `GH-SETUP-005` Bootstrap docs require repo-to-board linking before bootstrap is complete.
 - `GH-SETUP-006` Bootstrap docs define built-in `Status` normalization in place.
+- `GH-SETUP-006A` Bootstrap docs require `Project Priority` (`P0` through `P5`), `Order` (number), `Priority` (`Urgent`, `High`, `Medium`, `Low`), and `Size` (`XS`, `S`, `M`, `L`, `XL`) as canonical board fields.
+- `GH-SETUP-006B` Bootstrap docs state that backlog automation uses `Project Priority` for grouping and `Order` for in-group ordering instead of GitHub project visual order.
 - `GH-SETUP-007` Bootstrap docs require `AGENTS.md` early as part of initial bootstrap, not only as remediation.
 - `GH-SETUP-008` Bootstrap docs state whether `develop` must be created locally during bootstrap and whether remote/protection expectations should be reported separately.
 - `GH-SETUP-009` Bootstrap docs require a final live-state reconciliation pass and distinguish current state from historical evidence.
@@ -42,4 +45,4 @@ Out of scope:
 - run `npm run build`
 
 ## Verification
-Verification is documentation-driven. Success requires GitHub bootstrap behavior to be explicit enough that a bootstrap run can determine one canonical board target, normalize it, link the repo, report current state accurately, and distinguish repaired history from final live state.
+Verification is documentation-driven. Success requires GitHub bootstrap behavior to be explicit enough that a bootstrap run can determine one canonical board target, normalize it, link the repo, report current state accurately, distinguish repaired history from final live state, and leave backlog ordering explicit for automation through `Project Priority` and `Order`.
