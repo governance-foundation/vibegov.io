@@ -1,0 +1,9 @@
+{
+  "git-diff-check-origin-develop-head-before": 0,
+  "npm-build": 0,
+  "published-rules-generate": 0,
+  "published-rules-diff": 0,
+  "bootstrap-gate": 0,
+  "empty-repo-bootstrap": 0,
+  "git-status-short": 0
+}
