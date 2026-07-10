@@ -1,0 +1,37 @@
+[
+  {
+    "name": "git-diff-check-origin-develop-head.log",
+    "command": "git diff --check origin/develop...HEAD",
+    "exit_code": 0
+  },
+  {
+    "name": "npm-build.log",
+    "command": "npm run build",
+    "exit_code": 0
+  },
+  {
+    "name": "published-rules-generate.log",
+    "command": "node scripts/generate-published-rules.js",
+    "exit_code": 0
+  },
+  {
+    "name": "published-rules-diff.log",
+    "command": "git diff --exit-code -- docs/published",
+    "exit_code": 0
+  },
+  {
+    "name": "bootstrap-gate.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exit_code": 0
+  },
+  {
+    "name": "empty-repo-bootstrap.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exit_code": 0
+  },
+  {
+    "name": "git-status-short.log",
+    "command": "git status --short --branch",
+    "exit_code": 0
+  }
+]
