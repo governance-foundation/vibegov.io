@@ -17,4 +17,3 @@ Examples:
   npm run bootstrap-validator -- --scenario bootstrap-gate
   npm run bootstrap-validator -- --scenario empty-repo-bootstrap-clean-session --adapter codex-cli
   npm run bootstrap-validator -- --suite phase1
-
