@@ -1,0 +1,8 @@
+2026-07-11 14:08 Australia/Sydney
+
+Command:
+gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4
+
+Result:
+Project status: In Progress
+Project #3 exposes Todo, In Progress, and Done. No In review option is available, so PR #185 remains represented by the issue item in In Progress while awaiting validator review.

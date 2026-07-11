@@ -1,0 +1,52 @@
+{
+  "git-diff-check": {
+    "command": "git diff --check",
+    "log": "git-diff-check.log",
+    "exitCode": 0
+  },
+  "generate-published-rules": {
+    "command": "node scripts/generate-published-rules.js",
+    "log": "generate-published-rules.log",
+    "exitCode": 0
+  },
+  "published-rules-diff": {
+    "command": "git diff --exit-code -- docs/published",
+    "log": "published-rules-diff.log",
+    "exitCode": 0
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "log": "bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "log": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0
+  },
+  "npm-typecheck": {
+    "command": "npm run typecheck",
+    "log": "npm-typecheck.log",
+    "exitCode": 0
+  },
+  "npm-build": {
+    "command": "npm run build",
+    "log": "npm-build.log",
+    "exitCode": 0
+  },
+  "gh-pr-checks": {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "log": "gh-pr-checks.log",
+    "exitCode": 1
+  },
+  "git-status-after": {
+    "command": "git status --short --branch",
+    "log": "git-status-after.txt",
+    "exitCode": 0
+  },
+  "head-commit": {
+    "command": "git rev-parse HEAD",
+    "log": "head-commit.txt",
+    "exitCode": 0
+  }
+}
