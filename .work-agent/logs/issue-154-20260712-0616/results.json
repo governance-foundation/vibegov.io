@@ -1,0 +1,56 @@
+{
+  "git-fetch-prune": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:07.9523221+10:00",
+    "finishedAt": "2026-07-12T06:18:08.9361955+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\git-fetch-prune.log"
+  },
+  "git-diff-check": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:08.9397458+10:00",
+    "finishedAt": "2026-07-12T06:18:09.0619940+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:09.0625921+10:00",
+    "finishedAt": "2026-07-12T06:18:09.1652873+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:09.1657411+10:00",
+    "finishedAt": "2026-07-12T06:18:09.3095463+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:09.3100551+10:00",
+    "finishedAt": "2026-07-12T06:18:09.7805408+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:09.7810201+10:00",
+    "finishedAt": "2026-07-12T06:18:10.2384747+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:10.2388842+10:00",
+    "finishedAt": "2026-07-12T06:18:14.8408016+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\npm-typecheck.log"
+  },
+  "npm-build": {
+    "exitCode": 0,
+    "startedAt": "2026-07-12T06:18:14.8411519+10:00",
+    "finishedAt": "2026-07-12T06:18:23.5314516+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\npm-build.log"
+  },
+  "gh-pr-checks": {
+    "exitCode": 1,
+    "startedAt": "2026-07-12T06:18:23.5323457+10:00",
+    "finishedAt": "2026-07-12T06:18:24.8704442+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-0616\\gh-pr-checks.log"
+  }
+}
