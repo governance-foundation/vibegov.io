@@ -1,0 +1,8 @@
+git diff --check => exit 0
+node scripts/generate-published-rules.js => exit 0
+git diff --exit-code -- docs/published => exit 0
+node .internal/bootstrap-validator/index.js --scenario bootstrap-gate => exit 0, passed true, score 100
+node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap => exit 0, passed true, score 100
+npm run typecheck => exit 0
+npm run build => exit 0
+gh pr checks 185 => exit 1, no checks reported on branch
