@@ -1,0 +1,10 @@
+project-status-update: exit 0
+git-fetch-prune: exit 0
+git-diff-check: exit 0
+generate-published-rules: exit 0
+published-rules-diff: exit 0
+bootstrap-validator-bootstrap-gate: exit 0, passed true, score 100
+bootstrap-validator-empty-repo-bootstrap: exit 0, passed true, score 100
+npm-typecheck: exit 0
+npm-build: exit 0
+gh-pr-checks: exit 1, no checks reported on the branch
