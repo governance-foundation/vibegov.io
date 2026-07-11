@@ -1,0 +1,72 @@
+[
+  {
+    "name": "git-fetch.log",
+    "command": "git fetch origin",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\git-fetch.log"
+  },
+  {
+    "name": "git-diff-check.log",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules.log",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\generate-published-rules.log"
+  },
+  {
+    "name": "published-diff-check.log",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\published-diff-check.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\bootstrap-validator-empty-repo.log"
+  },
+  {
+    "name": "npm-typecheck.log",
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\npm-typecheck.log"
+  },
+  {
+    "name": "npm-build.log",
+    "command": "npm run build",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\npm-build.log"
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\gh-pr-checks.log"
+  },
+  {
+    "name": "git-status-after.txt",
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "status": "passed",
+    "log": ".work-agent\\logs\\issue-154-20260711-2305\\git-status-after.txt"
+  }
+]

@@ -1,0 +1,3 @@
+$ git status --short --branch
+## issue-154-active-rule-set-alignment...origin/issue-154-active-rule-set-alignment
+?? .work-agent/logs/issue-154-20260711-2305/
