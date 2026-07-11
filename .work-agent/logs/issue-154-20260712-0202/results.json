@@ -1,0 +1,80 @@
+{
+  "project-status-update": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\project-status-update.log",
+    "started": "2026-07-12T02:04:32.7808333+10:00",
+    "ended": "2026-07-12T02:04:33.6127993+10:00"
+  },
+  "git-fetch": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\git-fetch.log",
+    "started": "2026-07-12T02:04:33.6261068+10:00",
+    "ended": "2026-07-12T02:04:34.5833024+10:00"
+  },
+  "git-status-before": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\git-status-before.log",
+    "started": "2026-07-12T02:04:34.5849665+10:00",
+    "ended": "2026-07-12T02:04:34.6688911+10:00"
+  },
+  "head-commit": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\head-commit.log",
+    "started": "2026-07-12T02:04:34.6781343+10:00",
+    "ended": "2026-07-12T02:04:34.7586010+10:00"
+  },
+  "ahead-behind": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\ahead-behind.log",
+    "started": "2026-07-12T02:04:34.7600494+10:00",
+    "ended": "2026-07-12T02:04:34.8656616+10:00"
+  },
+  "git-diff-check": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\git-diff-check.log",
+    "started": "2026-07-12T02:04:34.8672003+10:00",
+    "ended": "2026-07-12T02:04:34.9819546+10:00"
+  },
+  "generate-published-rules": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\generate-published-rules.log",
+    "started": "2026-07-12T02:04:34.9833439+10:00",
+    "ended": "2026-07-12T02:04:35.0818616+10:00"
+  },
+  "published-rules-diff": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\published-rules-diff.log",
+    "started": "2026-07-12T02:04:35.0836746+10:00",
+    "ended": "2026-07-12T02:04:35.2054667+10:00"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\bootstrap-validator-bootstrap-gate.log",
+    "started": "2026-07-12T02:04:35.2067734+10:00",
+    "ended": "2026-07-12T02:04:35.8172860+10:00"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\bootstrap-validator-empty-repo-bootstrap.log",
+    "started": "2026-07-12T02:04:35.8198750+10:00",
+    "ended": "2026-07-12T02:04:36.2855516+10:00"
+  },
+  "npm-typecheck": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\npm-typecheck.log",
+    "started": "2026-07-12T02:04:36.2869019+10:00",
+    "ended": "2026-07-12T02:04:40.9375103+10:00"
+  },
+  "npm-build": {
+    "exit": 0,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\npm-build.log",
+    "started": "2026-07-12T02:04:40.9398478+10:00",
+    "ended": "2026-07-12T02:04:50.1425468+10:00"
+  },
+  "gh-pr-checks": {
+    "exit": 1,
+    "log": ".work-agent\\logs\\issue-154-20260712-0202\\gh-pr-checks.log",
+    "started": "2026-07-12T02:04:50.1441024+10:00",
+    "ended": "2026-07-12T02:04:51.1687964+10:00"
+  }
+}

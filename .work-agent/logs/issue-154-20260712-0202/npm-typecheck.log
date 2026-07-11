@@ -1,0 +1,8 @@
+# npm-typecheck
+started=2026-07-12T02:04:36.2869019+10:00
+ended=2026-07-12T02:04:40.9375103+10:00
+exit=0
+
+
+> website@0.0.0 typecheck
+> tsc

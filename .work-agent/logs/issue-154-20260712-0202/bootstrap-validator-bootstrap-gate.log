@@ -1,0 +1,11 @@
+# bootstrap-validator-bootstrap-gate
+started=2026-07-12T02:04:35.2067734+10:00
+ended=2026-07-12T02:04:35.8172860+10:00
+exit=0
+
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-11T16-04-35-799Z-bootstrap-gate"
+}

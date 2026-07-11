@@ -1,0 +1,11 @@
+# bootstrap-validator-empty-repo-bootstrap
+started=2026-07-12T02:04:35.8198750+10:00
+ended=2026-07-12T02:04:36.2855516+10:00
+exit=0
+
+{
+  "scenarioId": "empty-repo-bootstrap",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-11T16-04-36-265Z-empty-repo-bootstrap"
+}
