@@ -25,6 +25,7 @@
 - `node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap` passed, score 100.
 - `npm run typecheck` passed.
 - `npm run build` passed.
+- `git diff --check --cached` passed after normalizing proof logs to LF.
 
 ## Cleanup State
 
