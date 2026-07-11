@@ -1,0 +1,1 @@
+passed: git diff --check produced no output
