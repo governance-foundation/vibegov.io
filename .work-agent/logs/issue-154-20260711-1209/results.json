@@ -1,0 +1,42 @@
+[
+  {
+    "name": "git-diff-check.log",
+    "command": "git diff --check",
+    "exit": 0
+  },
+  {
+    "name": "generate-published-rules.log",
+    "command": "node scripts/generate-published-rules.js",
+    "exit": 0
+  },
+  {
+    "name": "published-rules-diff.log",
+    "command": "git diff --exit-code -- docs/published",
+    "exit": 0
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exit": 0
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exit": 0
+  },
+  {
+    "name": "npm-typecheck.log",
+    "command": "npm run typecheck",
+    "exit": 0
+  },
+  {
+    "name": "npm-build.log",
+    "command": "npm run build",
+    "exit": 0
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exit": 1
+  }
+]
