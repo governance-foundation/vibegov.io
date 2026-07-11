@@ -1,0 +1,57 @@
+{
+  "pr": 185,
+  "results": [
+    {
+      "name": "git-diff-check.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:07.1392363+10:00",
+      "endedAt": "2026-07-11T22:07:07.2387609+10:00"
+    },
+    {
+      "name": "generate-published-rules.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:07.2443405+10:00",
+      "endedAt": "2026-07-11T22:07:07.3585316+10:00"
+    },
+    {
+      "name": "published-diff-check.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:07.3592815+10:00",
+      "endedAt": "2026-07-11T22:07:07.4478116+10:00"
+    },
+    {
+      "name": "bootstrap-validator-bootstrap-gate.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:07.4484820+10:00",
+      "endedAt": "2026-07-11T22:07:07.9816852+10:00"
+    },
+    {
+      "name": "bootstrap-validator-empty-repo.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:07.9827341+10:00",
+      "endedAt": "2026-07-11T22:07:08.4413158+10:00"
+    },
+    {
+      "name": "npm-typecheck.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:08.4422598+10:00",
+      "endedAt": "2026-07-11T22:07:13.0103945+10:00"
+    },
+    {
+      "name": "npm-build.log",
+      "exitCode": 0,
+      "startedAt": "2026-07-11T22:07:13.0110971+10:00",
+      "endedAt": "2026-07-11T22:07:20.9949332+10:00"
+    },
+    {
+      "name": "gh-pr-checks.log",
+      "exitCode": 1,
+      "startedAt": "2026-07-11T22:07:20.9956306+10:00",
+      "endedAt": "2026-07-11T22:07:22.0625807+10:00"
+    }
+  ],
+  "projectStatusUpdate": "explicitly re-applied In Progress on Governance Foundation Project #3",
+  "issue": 154,
+  "projectStatus": "In Progress",
+  "branch": "issue-154-active-rule-set-alignment"
+}
