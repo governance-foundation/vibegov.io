@@ -1,0 +1,52 @@
+{
+  "project-status-update": {
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0,
+    "log": "project-status-update.log"
+  },
+  "git-fetch": {
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "log": "git-fetch.log"
+  },
+  "git-diff-check": {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": "generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": "published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "log": "bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "npm-typecheck.log"
+  },
+  "npm-build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "npm-build.log"
+  },
+  "gh-pr-checks": {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": "gh-pr-checks.log"
+  }
+}

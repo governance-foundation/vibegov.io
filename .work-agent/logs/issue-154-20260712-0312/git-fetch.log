@@ -1,0 +1,1 @@
+COMMAND: git fetch origin --prune
