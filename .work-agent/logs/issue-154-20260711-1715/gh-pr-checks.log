@@ -1,0 +1,3 @@
+Command: gh pr checks 185 --repo governance-foundation/vibegov.io
+no checks reported on the 'issue-154-active-rule-set-alignment' branch
+Result: no checks reported (acceptable for this branch)
