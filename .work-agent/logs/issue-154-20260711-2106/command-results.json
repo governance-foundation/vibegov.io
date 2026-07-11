@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "git-diff-check",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\git-diff-check.log"
+  },
+  {
+    "Name": "generate-published-rules",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\generate-published-rules.log"
+  },
+  {
+    "Name": "published-diff-check",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\published-diff-check.log"
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\bootstrap-validator-empty-repo.log"
+  },
+  {
+    "Name": "npm-typecheck",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\npm-typecheck.log"
+  },
+  {
+    "Name": "npm-build",
+    "ExitCode": 0,
+    "Log": ".work-agent\\logs\\issue-154-20260711-2106\\npm-build.log"
+  }
+]
