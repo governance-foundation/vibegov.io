@@ -1,0 +1,30 @@
+[
+  {
+    "Step": "git-diff-check",
+    "ExitCode": 0
+  },
+  {
+    "Step": "generate-published-rules",
+    "ExitCode": 0
+  },
+  {
+    "Step": "published-rules-diff",
+    "ExitCode": 0
+  },
+  {
+    "Step": "bootstrap-validator-bootstrap-gate",
+    "ExitCode": 0
+  },
+  {
+    "Step": "bootstrap-validator-empty-repo-bootstrap",
+    "ExitCode": 0
+  },
+  {
+    "Step": "npm-typecheck",
+    "ExitCode": 0
+  },
+  {
+    "Step": "npm-build",
+    "ExitCode": 0
+  }
+]

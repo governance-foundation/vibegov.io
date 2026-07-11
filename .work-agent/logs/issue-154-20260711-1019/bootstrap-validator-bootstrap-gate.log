@@ -1,0 +1,12 @@
+# bootstrap-validator-bootstrap-gate
+# Started 2026-07-11T10:22:15.1871615+10:00
+
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-11T00-22-15-613Z-bootstrap-gate"
+}
+
+# Finished 2026-07-11T10:22:15.6372936+10:00
+# ExitCode 0
