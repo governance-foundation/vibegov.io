@@ -1,0 +1,1 @@
+Initial run found CRLF/trailing-whitespace in generated command logs. After normalizing this run's proof logs to LF and trimming trailing whitespace, `git diff --check --cached` exited 0 with no output.
