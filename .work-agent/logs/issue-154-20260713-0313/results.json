@@ -1,0 +1,121 @@
+{
+  "git-fetch": {
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\git-fetch.log"
+  },
+  "git-diff-check": {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\npm-typecheck.log"
+  },
+  "npm-typecheck-wrapper-failed": {
+    "command": "npm run typecheck",
+    "exitCode": 1,
+    "allowed": [
+      0
+    ],
+    "passed": false,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\npm-typecheck-wrapper-failed.log",
+    "note": "PowerShell wrapper passed run typecheck as one npm argument; corrected rerun follows."
+  },
+  "npm-build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\npm-build.log"
+  },
+  "gh-pr-checks": {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "allowed": [
+      0,
+      1
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\gh-pr-checks.log"
+  },
+  "git-diff-cached-check": {
+    "command": "git diff --cached --check",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\git-diff-cached-check.log"
+  },
+  "git-status-after": {
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\git-status-after.log"
+  },
+  "head-commit": {
+    "command": "git rev-parse HEAD",
+    "exitCode": 0,
+    "allowed": [
+      0
+    ],
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260713-0313\\head-commit.log"
+  }
+}
