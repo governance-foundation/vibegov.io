@@ -1,0 +1,4 @@
+COMMAND: git diff --exit-code -- docs/published
+START: 2026-07-12T18:05:09.0182050+10:00
+EXIT: 0
+END: 2026-07-12T18:05:09.4183561+10:00
