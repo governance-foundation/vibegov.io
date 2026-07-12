@@ -1,0 +1,52 @@
+{
+  "project-status-update": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\project-status-update.log"
+  },
+  "git-fetch": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\git-fetch.log"
+  },
+  "git-diff-check": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\npm-typecheck.log"
+  },
+  "npm-build": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\npm-build.log"
+  },
+  "gh-pr-checks": {
+    "exitCode": 1,
+    "passed": true,
+    "log": ".work-agent\\logs\\issue-154-20260712-2005\\gh-pr-checks.log"
+  }
+}
