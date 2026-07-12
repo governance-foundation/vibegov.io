@@ -1,0 +1,74 @@
+[
+  {
+    "name": "project-status-update.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:45.2875453+10:00",
+    "endedAt": "2026-07-12T17:06:46.0821676+10:00"
+  },
+  {
+    "name": "git-fetch.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:46.0841397+10:00",
+    "endedAt": "2026-07-12T17:06:47.3710619+10:00"
+  },
+  {
+    "name": "git-diff-check.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:47.3717237+10:00",
+    "endedAt": "2026-07-12T17:06:47.5236745+10:00"
+  },
+  {
+    "name": "generate-published-rules.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:47.5243086+10:00",
+    "endedAt": "2026-07-12T17:06:47.6561286+10:00"
+  },
+  {
+    "name": "published-rules-diff.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:47.6565480+10:00",
+    "endedAt": "2026-07-12T17:06:47.7926953+10:00"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:47.7930530+10:00",
+    "endedAt": "2026-07-12T17:06:48.3781340+10:00"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:48.3784209+10:00",
+    "endedAt": "2026-07-12T17:06:48.9616950+10:00"
+  },
+  {
+    "name": "npm-typecheck.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:48.9620155+10:00",
+    "endedAt": "2026-07-12T17:06:53.7073220+10:00"
+  },
+  {
+    "name": "npm-build.log",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:06:53.7078998+10:00",
+    "endedAt": "2026-07-12T17:07:03.4032273+10:00"
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "commandExitCode": 1,
+    "startedAt": "2026-07-12T17:07:03.4035023+10:00",
+    "endedAt": "2026-07-12T17:07:05.3129575+10:00"
+  },
+  {
+    "name": "head-commit.txt",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:07:05.3132008+10:00",
+    "endedAt": "2026-07-12T17:07:05.4005188+10:00"
+  },
+  {
+    "name": "git-status-after.txt",
+    "commandExitCode": 0,
+    "startedAt": "2026-07-12T17:07:05.4007384+10:00",
+    "endedAt": "2026-07-12T17:07:05.5401774+10:00"
+  }
+]
