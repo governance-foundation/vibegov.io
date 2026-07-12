@@ -1,0 +1,54 @@
+{
+  "project-status-update.log": {
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0
+  },
+  "git-fetch.log": {
+    "command": "git fetch origin --prune",
+    "exitCode": 0
+  },
+  "git-diff-check.log": {
+    "command": "git diff --check",
+    "exitCode": 0
+  },
+  "generate-published-rules.log": {
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0
+  },
+  "published-rules-diff.log": {
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0
+  },
+  "bootstrap-validator-bootstrap-gate.log": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0
+  },
+  "bootstrap-validator-empty-repo-bootstrap.log": {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0
+  },
+  "npm-typecheck.log": {
+    "command": "npm run typecheck",
+    "exitCode": 0
+  },
+  "npm-build.log": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "gh-pr-checks.log": {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1
+  },
+  "git-status-after-validation.txt": {
+    "command": "git status --short --branch",
+    "exitCode": 0
+  },
+  "head-commit.txt": {
+    "command": "git rev-parse HEAD",
+    "exitCode": 0
+  },
+  "pr-state.json": {
+    "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefName,baseRefName,url",
+    "exitCode": 0
+  }
+}
