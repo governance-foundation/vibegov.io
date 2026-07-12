@@ -1,0 +1,4 @@
+# git diff --exit-code -- docs/published
+started=2026-07-12T23:07:57.7243966+10:00
+exit_code=0
+finished=2026-07-12T23:07:57.8694109+10:00
