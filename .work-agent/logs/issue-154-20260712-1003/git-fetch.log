@@ -1,0 +1,2 @@
+PS> git fetch origin --prune
+exit=0

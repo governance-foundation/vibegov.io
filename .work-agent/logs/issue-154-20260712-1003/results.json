@@ -1,0 +1,79 @@
+[
+  {
+    "name": "project-status-in-progress",
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0,
+    "log": "project-status-update.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "git-fetch-prune",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "log": "git-fetch.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "git-diff-check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "generate-published-rules",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": "generate-published-rules.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "published-rules-diff",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": "published-rules-diff.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "log": "bootstrap-validator-bootstrap-gate.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "npm-typecheck",
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "npm-typecheck.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "npm-build",
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "npm-build.log",
+    "allowedFailure": false
+  },
+  {
+    "name": "gh-pr-checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": "gh-pr-checks.log",
+    "allowedFailure": true
+  },
+  {
+    "name": "git-status-after-validation",
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "log": "git-status-after-validation.txt",
+    "allowedFailure": false
+  }
+]
