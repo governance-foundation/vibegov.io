@@ -1,0 +1,68 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedLocal": "2026-07-12T11:15:00+10:00",
+  "headBeforeProofLogCommit": "233ca5dcc86c724c165da57da3f99e49ae2fd63a",
+  "projectStatus": {
+    "target": "In Progress",
+    "result": "passed",
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4"
+  },
+  "validation": [
+    {
+      "command": "git fetch origin --prune",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/git-fetch.log"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "result": "passed",
+      "score": 100,
+      "log": ".work-agent/logs/issue-154-20260712-1115/bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "result": "passed",
+      "score": 100,
+      "log": ".work-agent/logs/issue-154-20260712-1115/bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/npm-build.log"
+    },
+    {
+      "command": "git diff --check --cached",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-1115/git-diff-check-cached.log"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "result": "no checks reported",
+      "exitCode": 1,
+      "log": ".work-agent/logs/issue-154-20260712-1115/gh-pr-checks.log"
+    }
+  ],
+  "nextAction": "validator review PR #185"
+}
