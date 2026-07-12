@@ -1,0 +1,1 @@
+git diff --check --cached passed after normalizing this run's proof logs to LF and trimming trailing blank lines.

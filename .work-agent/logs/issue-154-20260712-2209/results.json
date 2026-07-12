@@ -1,0 +1,67 @@
+{
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedAt": "2026-07-12T22:09:00+10:00",
+  "previousHead": "b1239cfa275e372cfa33fffd2b3b50d234c2c6a7",
+  "projectStatus": {
+    "status": "In Progress",
+    "updateResult": "passed",
+    "reviewStatusNote": "Project #3 has no In review option; issue remains In Progress for review."
+  },
+  "validation": [
+    {
+      "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/project-status-update.log"
+    },
+    {
+      "command": "git fetch origin --prune",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/git-fetch.log"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "result": "passed",
+      "score": 100,
+      "log": ".work-agent/logs/issue-154-20260712-2209/bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "result": "passed",
+      "score": 100,
+      "log": ".work-agent/logs/issue-154-20260712-2209/bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "result": "passed",
+      "log": ".work-agent/logs/issue-154-20260712-2209/npm-build.log"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "result": "no-checks-reported",
+      "log": ".work-agent/logs/issue-154-20260712-2209/gh-pr-checks.log"
+    }
+  ],
+  "nextAction": "validator review PR #185 after this proof-log commit"
+}
