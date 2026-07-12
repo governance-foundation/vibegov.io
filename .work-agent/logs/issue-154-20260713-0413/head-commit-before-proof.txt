@@ -1,0 +1,4 @@
+COMMAND: head-commit-before-proof.txt
+EXIT: 0
+
+922545fc2ed26cdc5a8c7e72e04600a605e4ee2a

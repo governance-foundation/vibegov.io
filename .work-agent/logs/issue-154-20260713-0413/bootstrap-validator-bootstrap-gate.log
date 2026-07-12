@@ -1,0 +1,9 @@
+COMMAND: bootstrap-validator-bootstrap-gate.log
+EXIT: 0
+
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-12T18-17-11-111Z-bootstrap-gate"
+}

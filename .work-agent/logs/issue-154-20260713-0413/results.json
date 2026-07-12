@@ -1,0 +1,62 @@
+{
+  "project-status-update.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/project-status-update.log"
+  },
+  "git-fetch-origin-prune.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/git-fetch-origin-prune.log"
+  },
+  "git-diff-check.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/git-diff-check.log"
+  },
+  "generate-published-rules.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/generate-published-rules.log"
+  },
+  "published-rules-diff.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/npm-typecheck.log"
+  },
+  "npm-build.log": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/npm-build.log"
+  },
+  "gh-pr-checks.log": {
+    "exitCode": 1,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/gh-pr-checks.log"
+  },
+  "git-status-after-validation.txt": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/git-status-after-validation.txt"
+  },
+  "head-commit-before-proof.txt": {
+    "exitCode": 0,
+    "passed": true,
+    "log": ".work-agent/logs/issue-154-20260713-0413/head-commit-before-proof.txt"
+  }
+}
