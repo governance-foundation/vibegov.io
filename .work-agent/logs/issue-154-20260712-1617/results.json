@@ -1,0 +1,110 @@
+[
+  {
+    "name": "git-fetch-prune",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:09.3783884+10:00",
+    "endedAt": "2026-07-12T16:21:10.9483478+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\git-fetch-prune.log"
+  },
+  {
+    "name": "git-diff-check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:10.9547149+10:00",
+    "endedAt": "2026-07-12T16:21:11.1149097+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:11.1158460+10:00",
+    "endedAt": "2026-07-12T16:21:11.2427862+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\generate-published-rules.log"
+  },
+  {
+    "name": "published-rules-diff",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:11.2434574+10:00",
+    "endedAt": "2026-07-12T16:21:11.3614188+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:11.3620563+10:00",
+    "endedAt": "2026-07-12T16:21:11.8770127+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:11.8779699+10:00",
+    "endedAt": "2026-07-12T16:21:12.3561032+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm-typecheck",
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:12.3564153+10:00",
+    "endedAt": "2026-07-12T16:21:17.3895795+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\npm-typecheck.log"
+  },
+  {
+    "name": "npm-build",
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:17.3900804+10:00",
+    "endedAt": "2026-07-12T16:21:26.2745401+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\npm-build.log"
+  },
+  {
+    "name": "gh-pr-checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "allowedFailure": true,
+    "startedAt": "2026-07-12T16:21:26.2750479+10:00",
+    "endedAt": "2026-07-12T16:21:27.7180119+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\gh-pr-checks.log"
+  },
+  {
+    "name": "git-status-after-validation",
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:27.7189447+10:00",
+    "endedAt": "2026-07-12T16:21:27.8319844+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\git-status-after-validation.log"
+  },
+  {
+    "name": "head-commit",
+    "command": "git rev-parse HEAD",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:27.8322517+10:00",
+    "endedAt": "2026-07-12T16:21:27.9536702+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\head-commit.log"
+  },
+  {
+    "name": "pr-state",
+    "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefName,url",
+    "exitCode": 0,
+    "allowedFailure": false,
+    "startedAt": "2026-07-12T16:21:27.9539263+10:00",
+    "endedAt": "2026-07-12T16:21:28.7260393+10:00",
+    "log": ".work-agent\\logs\\issue-154-20260712-1617\\pr-state.log"
+  }
+]
