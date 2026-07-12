@@ -1,0 +1,11 @@
+git fetch origin --prune	0	git-fetch-origin-prune.log
+git diff --check	0	git-diff-check.log
+node scripts/generate-published-rules.js	0	generate-published-rules.log
+git diff --exit-code -- docs/published	0	published-rules-diff.log
+node .internal/bootstrap-validator/index.js --scenario bootstrap-gate	0	bootstrap-validator-bootstrap-gate.log
+node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap	0	bootstrap-validator-empty-repo-bootstrap.log
+npm run typecheck	0	npm-typecheck.log
+npm run build	0	npm-build.log
+gh pr checks 185 --repo governance-foundation/vibegov.io	1	gh-pr-checks.log
+gh pr view 185	0	pr-state.json
+git status --short --branch	0	git-status-after-validation.txt
