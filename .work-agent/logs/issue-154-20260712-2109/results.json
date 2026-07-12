@@ -1,0 +1,56 @@
+[
+  {
+    "name": "git-fetch.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "git-diff-check.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "generate-published-rules.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "published-rules-diff.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "npm-typecheck.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "npm-build.log",
+    "exitCode": 0,
+    "status": "passed",
+    "allowFailure": false
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "exitCode": 1,
+    "status": "nonblocking",
+    "allowFailure": true
+  }
+]
