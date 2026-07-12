@@ -1,0 +1,7 @@
+# published-rules-diff
+# Command: git diff --exit-code -- docs/published
+# Started: 2026-07-12T12:21:37.4454884+10:00
+
+
+# ExitCode: 0
+# Finished: 2026-07-12T12:21:38.6810064+10:00
