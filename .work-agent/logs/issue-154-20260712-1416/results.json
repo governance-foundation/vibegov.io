@@ -1,0 +1,80 @@
+[
+  {
+    "name": "project-status-update.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\project-status-update.log"
+  },
+  {
+    "name": "git-fetch.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\git-fetch.log"
+  },
+  {
+    "name": "git-diff-check.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\generate-published-rules.log"
+  },
+  {
+    "name": "published-rules-diff.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm-typecheck.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\npm-typecheck.log"
+  },
+  {
+    "name": "npm-build.log",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\npm-build.log"
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "exit": 1,
+    "allowFail": true,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\gh-pr-checks.log"
+  },
+  {
+    "name": "git-status-after-validation.txt",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\git-status-after-validation.txt"
+  },
+  {
+    "name": "head-commit.txt",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\head-commit.txt"
+  },
+  {
+    "name": "pr-state.json",
+    "exit": 0,
+    "allowFail": false,
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260712-1416\\pr-state.json"
+  }
+]
