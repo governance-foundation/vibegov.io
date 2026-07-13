@@ -1,0 +1,86 @@
+[
+  {
+    "name": "git-fetch-origin-prune.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:21.0554204+10:00",
+    "end": "2026-07-13T13:09:22.0388395+10:00"
+  },
+  {
+    "name": "git-diff-check.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:22.0464227+10:00",
+    "end": "2026-07-13T13:09:22.1587089+10:00"
+  },
+  {
+    "name": "generate-published-rules.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:22.1602202+10:00",
+    "end": "2026-07-13T13:09:22.2748108+10:00"
+  },
+  {
+    "name": "published-rules-diff.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:22.2765128+10:00",
+    "end": "2026-07-13T13:09:22.4416176+10:00"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:22.4427497+10:00",
+    "end": "2026-07-13T13:09:23.0693649+10:00"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:23.0760312+10:00",
+    "end": "2026-07-13T13:09:23.6485168+10:00"
+  },
+  {
+    "name": "npm-typecheck.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:23.6531173+10:00",
+    "end": "2026-07-13T13:09:33.3383797+10:00"
+  },
+  {
+    "name": "npm-build.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:33.3428379+10:00",
+    "end": "2026-07-13T13:09:57.3286314+10:00"
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "exit": 1,
+    "allowFailure": true,
+    "start": "2026-07-13T13:09:57.3328268+10:00",
+    "end": "2026-07-13T13:09:59.5460834+10:00"
+  },
+  {
+    "name": "gh-pr-view.log",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:09:59.5542459+10:00",
+    "end": "2026-07-13T13:10:00.5134286+10:00"
+  },
+  {
+    "name": "git-status-after-validation.txt",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:10:00.5172785+10:00",
+    "end": "2026-07-13T13:10:00.6603641+10:00"
+  },
+  {
+    "name": "head-commit-before-log.txt",
+    "exit": 0,
+    "allowFailure": false,
+    "start": "2026-07-13T13:10:00.6638877+10:00",
+    "end": "2026-07-13T13:10:00.9317510+10:00"
+  }
+]
