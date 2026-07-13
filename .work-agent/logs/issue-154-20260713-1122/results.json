@@ -1,0 +1,50 @@
+{
+  "project-status-update": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/project-status-update.log",
+    "exitCode": 0
+  },
+  "git-fetch": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/git-fetch.log",
+    "exitCode": 0
+  },
+  "git-diff-check": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/git-diff-check.log",
+    "exitCode": 0
+  },
+  "generate-published-rules": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/generate-published-rules.log",
+    "exitCode": 0
+  },
+  "published-rules-diff": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/published-rules-diff.log",
+    "exitCode": 0
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0
+  },
+  "npm-typecheck": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/npm-typecheck.log",
+    "exitCode": 0
+  },
+  "npm-build": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/npm-build.log",
+    "exitCode": 0
+  },
+  "gh-pr-checks": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/gh-pr-checks.log",
+    "exitCode": 1
+  },
+  "git-status-after": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/git-status-after.log",
+    "exitCode": 0
+  },
+  "pr-state": {
+    "log": ".work-agent/logs/issue-154-20260713-1122/pr-state.json",
+    "exitCode": 0
+  }
+}
