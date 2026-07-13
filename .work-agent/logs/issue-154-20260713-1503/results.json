@@ -1,0 +1,56 @@
+[
+  {
+    "name": "git fetch origin --prune",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "log": "git-fetch-origin-prune.log"
+  },
+  {
+    "name": "git diff --check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log"
+  },
+  {
+    "name": "node scripts/generate-published-rules.js",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": "generate-published-rules.log"
+  },
+  {
+    "name": "git diff --exit-code -- docs/published",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": "published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "log": "bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm run typecheck",
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "log": "npm-typecheck.log"
+  },
+  {
+    "name": "npm run build",
+    "command": "npm run build",
+    "exitCode": 0,
+    "log": "npm-build.log"
+  },
+  {
+    "name": "gh pr checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": "gh-pr-checks.log"
+  }
+]
