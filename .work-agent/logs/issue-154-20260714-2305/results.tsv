@@ -1,0 +1,12 @@
+command	result	notes
+gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4	pass	Re-applied In Progress on Governance Foundation Project #3.
+gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260714-2305/issue-resume-comment.md	pass	Posted durable resume comment.
+git fetch origin --prune	pass	Fetched origin before validation.
+git diff --check	pass	No whitespace errors.
+node scripts/generate-published-rules.js	pass	Published governance docs regenerated from canonical rules.
+git diff --exit-code -- docs/published	pass	No generated published-rule drift.
+node .internal/bootstrap-validator/index.js --scenario bootstrap-gate	pass	Score 100.
+node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap	pass	Score 100.
+npm run typecheck	pass	TypeScript check passed.
+npm run build	pass	Docusaurus production build passed.
+gh pr checks 185 --repo governance-foundation/vibegov.io	no-checks	GitHub reports no checks on the branch.
