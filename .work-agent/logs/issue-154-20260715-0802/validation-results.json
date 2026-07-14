@@ -1,0 +1,66 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedAt": "2026-07-15T08:02:00+10:00",
+  "projectStatus": {
+    "status": "In Progress",
+    "update": "passed",
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "reviewStatusNote": "Project #3 exposes Todo, In Progress, and Done; no In review option is available."
+  },
+  "commands": [
+    {
+      "command": "git fetch origin --prune",
+      "exitCode": 0,
+      "log": "git-fetch-origin-prune.log"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "log": "git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "exitCode": 0,
+      "log": "generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "exitCode": 0,
+      "log": "published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "exitCode": 0,
+      "passed": true,
+      "score": 100,
+      "log": "bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "exitCode": 0,
+      "passed": true,
+      "score": 100,
+      "log": "bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "npm-build.log"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "exitCode": 1,
+      "expectedNoChecks": true,
+      "log": "gh-pr-checks.log"
+    }
+  ],
+  "cleanupState": "pending proof log commit",
+  "proofCommit": "pending"
+}
