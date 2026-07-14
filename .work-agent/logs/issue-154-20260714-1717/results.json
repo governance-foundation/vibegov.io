@@ -1,0 +1,82 @@
+[
+  {
+    "name": "project-status-update",
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\project-status-update.log",
+    "started": "2026-07-14T17:20:13.1565167+10:00",
+    "ended": "2026-07-14T17:20:14.1706794+10:00"
+  },
+  {
+    "name": "git-fetch-origin-prune",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\git-fetch-origin-prune.log",
+    "started": "2026-07-14T17:20:14.1747095+10:00",
+    "ended": "2026-07-14T17:20:15.2772731+10:00"
+  },
+  {
+    "name": "git-diff-check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\git-diff-check.log",
+    "started": "2026-07-14T17:20:15.2824901+10:00",
+    "ended": "2026-07-14T17:20:15.3860887+10:00"
+  },
+  {
+    "name": "generate-published-rules",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\generate-published-rules.log",
+    "started": "2026-07-14T17:20:15.3890348+10:00",
+    "ended": "2026-07-14T17:20:15.5383151+10:00"
+  },
+  {
+    "name": "published-rules-diff",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\published-rules-diff.log",
+    "started": "2026-07-14T17:20:15.5402771+10:00",
+    "ended": "2026-07-14T17:20:15.6876462+10:00"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\bootstrap-validator-bootstrap-gate.log",
+    "started": "2026-07-14T17:20:15.6894261+10:00",
+    "ended": "2026-07-14T17:20:16.2610481+10:00"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\bootstrap-validator-empty-repo-bootstrap.log",
+    "started": "2026-07-14T17:20:16.2648964+10:00",
+    "ended": "2026-07-14T17:20:16.8482626+10:00"
+  },
+  {
+    "name": "npm-typecheck",
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\npm-typecheck.log",
+    "started": "2026-07-14T17:20:16.8516325+10:00",
+    "ended": "2026-07-14T17:20:21.2965951+10:00"
+  },
+  {
+    "name": "npm-build",
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\npm-build.log",
+    "started": "2026-07-14T17:20:21.2997642+10:00",
+    "ended": "2026-07-14T17:20:30.3055512+10:00"
+  },
+  {
+    "name": "gh-pr-checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": ".work-agent\\logs\\issue-154-20260714-1717\\gh-pr-checks.log",
+    "started": "2026-07-14T17:20:30.3075813+10:00",
+    "ended": "2026-07-14T17:20:31.9102810+10:00"
+  }
+]
