@@ -1,0 +1,77 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStarted": "2026-07-15T09:02:00+10:00",
+  "projectStatus": {
+    "attempted": true,
+    "result": "passed",
+    "status": "In Progress",
+    "project": "Governance Foundation Project #3",
+    "reviewStatusNote": "Project #3 exposes Todo, In Progress, and Done; no In review option is available."
+  },
+  "commands": [
+    {
+      "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+      "result": "passed",
+      "log": "project-status-update.log"
+    },
+    {
+      "command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260715-0902/issue-resume-comment.md",
+      "result": "passed"
+    },
+    {
+      "command": "git fetch origin --prune",
+      "result": "passed",
+      "log": "git-fetch-origin-prune.log"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed",
+      "log": "git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "result": "passed",
+      "log": "generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "result": "passed",
+      "log": "published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "result": "passed",
+      "score": 100,
+      "log": "bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "result": "passed",
+      "score": 100,
+      "log": "bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "result": "passed",
+      "log": "npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "result": "passed",
+      "log": "npm-build.log"
+    },
+    {
+      "command": "git diff --cached --check",
+      "result": "passed"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "result": "no-checks-reported",
+      "exitCode": 1,
+      "log": "gh-pr-checks.log"
+    }
+  ],
+  "nextAction": "validator review PR #185"
+}
