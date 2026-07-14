@@ -1,0 +1,47 @@
+{
+  "git-fetch": {
+    "exitCode": 0,
+    "command": "git fetch origin --prune",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\git-fetch.log"
+  },
+  "git-diff-check": {
+    "exitCode": 0,
+    "command": "git diff --check",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "exitCode": 0,
+    "command": "node scripts/generate-published-rules.js",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "exitCode": 0,
+    "command": "git diff --exit-code -- docs/published",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "exitCode": 0,
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "exitCode": 0,
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "exitCode": 0,
+    "command": "npm run typecheck",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\npm-typecheck.log"
+  },
+  "npm-build": {
+    "exitCode": 0,
+    "command": "npm run build",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\npm-build.log"
+  },
+  "gh-pr-checks": {
+    "exitCode": 1,
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260714-1328\\gh-pr-checks.log"
+  }
+}

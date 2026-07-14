@@ -1,0 +1,10 @@
+COMMAND: node .internal/bootstrap-validator/index.js --scenario bootstrap-gate
+START: 2026-07-14T13:31:11.4020719+10:00
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-14T03-31-12-349Z-bootstrap-gate"
+}
+END: 2026-07-14T13:31:12.3696980+10:00
+EXIT_CODE: 0

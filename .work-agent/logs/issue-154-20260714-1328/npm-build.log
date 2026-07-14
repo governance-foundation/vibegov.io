@@ -1,0 +1,18 @@
+COMMAND: npm run build
+START: 2026-07-14T13:31:19.5285126+10:00
+
+> website@0.0.0 build
+> docusaurus build
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+[INFO] [en] Creating an optimized production build...
+i Compiling Client
+i Compiling Server
+√ Client: Compiled successfully in 894.44ms
+√ Server: Compiled successfully in 16.30s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+END: 2026-07-14T13:31:43.4521432+10:00
+EXIT_CODE: 0
