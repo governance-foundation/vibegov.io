@@ -1,0 +1,8 @@
+## gh pr view 185
+Command: gh pr view 185 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,mergeable,reviewDecision,headRefName,baseRefName,statusCheckRollup,url
+Started: 2026-07-14T19:04:28.0480303+10:00
+
+{"baseRefName":"develop","headRefName":"issue-154-active-rule-set-alignment","isDraft":false,"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","number":185,"reviewDecision":"","state":"OPEN","statusCheckRollup":[],"title":"Align active governance rule set across bootstrap sources","url":"https://github.com/governance-foundation/vibegov.io/pull/185"}
+
+Exit: 0
+Finished: 2026-07-14T19:04:29.4594987+10:00
