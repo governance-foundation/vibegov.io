@@ -1,0 +1,94 @@
+[
+  {
+    "name": "project status In Progress",
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0,
+    "log": "project-status-update.log"
+  },
+  {
+    "name": "gh issue resume comment",
+    "command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260714-2001/issue-resume-comment.md",
+    "exitCode": 0,
+    "log": "issue-resume-comment-post.log"
+  },
+  {
+    "name": "git fetch origin --prune",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "log": "git-fetch.log"
+  },
+  {
+    "name": "git diff --check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log"
+  },
+  {
+    "name": "generate published rules",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": "generate-published-rules.log"
+  },
+  {
+    "name": "docs published diff",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": "published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap validator bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "log": "bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap validator empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm run typecheck",
+    "command": "npm.cmd run typecheck",
+    "exitCode": 0,
+    "log": "npm-typecheck.log"
+  },
+  {
+    "name": "npm run build",
+    "command": "npm.cmd run build",
+    "exitCode": 0,
+    "log": "npm-build.log"
+  },
+  {
+    "name": "git diff --cached --check",
+    "command": "git diff --cached --check",
+    "exitCode": 0,
+    "log": "git-diff-cached-check.log",
+    "note": "Passed after normalizing proof logs to LF and trimming terminal blank lines."
+  },
+  {
+    "name": "gh pr checks 185",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "log": "gh-pr-checks.log",
+    "note": "GitHub reports no checks on the branch."
+  },
+  {
+    "name": "gh pr view 185",
+    "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,mergeable,reviewDecision,headRefName,baseRefName,statusCheckRollup,url",
+    "exitCode": 0,
+    "log": "pr-state.json"
+  },
+  {
+    "name": "git status after validation",
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "log": "git-status-after-validation.txt"
+  },
+  {
+    "name": "head commit before log",
+    "command": "git rev-parse HEAD",
+    "exitCode": 0,
+    "log": "head-commit-before-log.txt"
+  }
+]
