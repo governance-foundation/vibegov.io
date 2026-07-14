@@ -1,0 +1,3 @@
+Initial validation wrapper failed before running validation commands.
+PowerShell parser error: Missing file specification after redirection operator for `2>>&1`.
+Resolution: reran validation with PowerShell `*>>` logging syntax.
