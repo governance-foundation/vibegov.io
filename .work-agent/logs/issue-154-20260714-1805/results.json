@@ -1,0 +1,44 @@
+{
+  "run": "issue-154-20260714-1805",
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "projectStatus": "In Progress",
+  "projectStatusUpdate": {
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "exitCode": 0
+  },
+  "validation": [
+    { "command": "git fetch origin --prune", "exitCode": 0 },
+    { "command": "git diff --check", "exitCode": 0 },
+    { "command": "node scripts/generate-published-rules.js", "exitCode": 0 },
+    { "command": "git diff --exit-code -- docs/published", "exitCode": 0 },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "exitCode": 0,
+      "score": 100,
+      "reportDir": ".internal/bootstrap-validator/reports/2026-07-14T08-08-41-233Z-bootstrap-gate"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "exitCode": 0,
+      "score": 100,
+      "reportDir": ".internal/bootstrap-validator/reports/2026-07-14T08-08-41-779Z-empty-repo-bootstrap"
+    },
+    { "command": "npm run typecheck", "exitCode": 0 },
+    { "command": "npm run build", "exitCode": 0 },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "exitCode": 1,
+      "note": "GitHub reports no checks on the branch."
+    }
+  ],
+  "prStateBeforeProofCommit": {
+    "state": "OPEN",
+    "isDraft": false,
+    "mergeStateStatus": "CLEAN",
+    "reviewDecision": "",
+    "headRefOid": "07cbc241313ee72ac720f25e853e74bd9c9f3222",
+    "statusCheckRollup": []
+  }
+}
