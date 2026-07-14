@@ -1,0 +1,72 @@
+[
+  {
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\project-status-update.log",
+    "exitCode": 0
+  },
+  {
+    "command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file '.work-agent\\logs\\issue-154-20260714-1612\\issue-resume-comment.md'",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\issue-resume-comment-post.log",
+    "exitCode": 0
+  },
+  {
+    "command": "git fetch origin --prune",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\git-fetch.log",
+    "exitCode": 0
+  },
+  {
+    "command": "git diff --check",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\git-diff-check.log",
+    "exitCode": 0
+  },
+  {
+    "command": "node scripts/generate-published-rules.js",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\generate-published-rules.log",
+    "exitCode": 0
+  },
+  {
+    "command": "git diff --exit-code -- docs/published",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\published-rules-diff.log",
+    "exitCode": 0
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0
+  },
+  {
+    "command": "npm run typecheck",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\npm-typecheck.log",
+    "exitCode": 0
+  },
+  {
+    "command": "npm run build",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\npm-build.log",
+    "exitCode": 0
+  },
+  {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\gh-pr-checks.log",
+    "exitCode": 1
+  },
+  {
+    "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,title,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefName,baseRefName,url",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\pr-state.json",
+    "exitCode": 0
+  },
+  {
+    "command": "git status --short --branch",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\git-status-after-validation.txt",
+    "exitCode": 0
+  },
+  {
+    "command": "git rev-parse HEAD",
+    "log": ".work-agent\\logs\\issue-154-20260714-1612\\head-commit-before-log.txt",
+    "exitCode": 0
+  }
+]
