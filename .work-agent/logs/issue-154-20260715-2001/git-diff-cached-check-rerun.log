@@ -1,0 +1,33 @@
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:1: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/npm-typecheck.log:4: new blank line at EOF.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:2: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/summary.md:28: trailing whitespace.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:3: trailing whitespace.
+++- 
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:4: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/summary.md:31: trailing whitespace.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:5: trailing whitespace.
+++- 
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:6: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/summary.md:33: trailing whitespace.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:7: trailing whitespace.
+++- 
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:8: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/summary.md:35: trailing whitespace.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:9: trailing whitespace.
+++- 
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:10: trailing whitespace.
++.work-agent/logs/issue-154-20260715-2001/summary.md:37: trailing whitespace.
+.work-agent/logs/issue-154-20260715-2001/git-diff-cached-check.log:11: trailing whitespace.
+++- 
+.work-agent/logs/issue-154-20260715-2001/npm-typecheck.log:4: new blank line at EOF.
+.work-agent/logs/issue-154-20260715-2001/summary.md:28: trailing whitespace.
++- 
+.work-agent/logs/issue-154-20260715-2001/summary.md:31: trailing whitespace.
++- 
+.work-agent/logs/issue-154-20260715-2001/summary.md:33: trailing whitespace.
++- 
+.work-agent/logs/issue-154-20260715-2001/summary.md:35: trailing whitespace.
++- 
+.work-agent/logs/issue-154-20260715-2001/summary.md:37: trailing whitespace.
++- 

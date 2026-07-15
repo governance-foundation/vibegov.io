@@ -1,0 +1,50 @@
+[
+  {
+    "name": "project-status-update.log",
+    "exit": 0
+  },
+  {
+    "name": "issue-resume-comment.log",
+    "exit": 0
+  },
+  {
+    "name": "git-fetch.log",
+    "exit": 0
+  },
+  {
+    "name": "git-diff-check.log",
+    "exit": 0
+  },
+  {
+    "name": "generate-published-rules.log",
+    "exit": 0
+  },
+  {
+    "name": "published-rules-diff.log",
+    "exit": 0
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate.log",
+    "exit": 0
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exit": 0
+  },
+  {
+    "name": "npm-typecheck.log",
+    "exit": 0
+  },
+  {
+    "name": "npm-build.log",
+    "exit": 0
+  },
+  {
+    "name": "gh-pr-checks.log",
+    "exit": 1
+  },
+  {
+    "name": "pr-state.json",
+    "exit": 0
+  }
+]
