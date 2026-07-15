@@ -1,0 +1,27 @@
+{
+  "issue": 154,
+  "pullRequest": 185,
+  "runStarted": "2026-07-15T17:01:00+10:00",
+  "branch": "issue-154-active-rule-set-alignment",
+  "headBeforeLogCommit": "3bdc5c786854fbaa0bb7bc39b269112776314646",
+  "projectStatus": {
+    "target": "In Progress",
+    "result": "passed",
+    "note": "Project #3 has Todo, In Progress, and Done; no In review option is available."
+  },
+  "commands": [
+    { "name": "gh project item-edit", "result": "passed", "log": "project-status-update.log" },
+    { "name": "gh issue comment 154 --body-file issue-resume-comment.md", "result": "passed", "log": "issue-resume-comment.log" },
+    { "name": "git fetch origin --prune", "result": "passed", "log": "git-fetch.log" },
+    { "name": "git diff --check", "result": "passed", "log": "git-diff-check.log" },
+    { "name": "node scripts/generate-published-rules.js", "result": "passed", "log": "generate-published-rules.log" },
+    { "name": "git diff --exit-code -- docs/published", "result": "passed", "log": "published-rules-diff.log" },
+    { "name": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "result": "passed", "score": 100, "log": "bootstrap-validator-bootstrap-gate.log" },
+    { "name": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "result": "passed", "score": 100, "log": "bootstrap-validator-empty-repo-bootstrap.log" },
+    { "name": "npm run typecheck", "result": "passed after direct rerun", "log": "npm-typecheck.log" },
+    { "name": "npm run build", "result": "passed after direct rerun", "log": "npm-build.log" },
+    { "name": "gh pr checks 185 --repo governance-foundation/vibegov.io", "result": "no checks reported", "exitCode": 1, "log": "gh-pr-checks.log" }
+  ],
+  "wrapperNote": "The first npm wrapper invocation failed because PowerShell passed the npm script arguments as a single token; those failures are preserved as wrapper-failure logs and direct reruns passed.",
+  "nextAction": "Validator review PR #185."
+}
