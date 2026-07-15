@@ -1,0 +1,13 @@
+# Command: npm run build
+# Started: 2026-07-15T10:04:29.6208884+10:00
+
+Unknown command: "run build"
+
+
+Did you mean this?
+  npm rebuild # Rebuild a package
+To see a list of supported npm commands, run:
+  npm help
+
+# Exit: 1
+# Finished: 2026-07-15T10:04:29.8743702+10:00

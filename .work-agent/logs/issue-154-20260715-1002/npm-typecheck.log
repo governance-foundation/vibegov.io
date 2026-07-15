@@ -1,0 +1,13 @@
+# Command: npm run typecheck
+# Started: 2026-07-15T10:04:29.3446381+10:00
+
+Unknown command: "run typecheck"
+
+
+Did you mean this?
+  npm run typecheck # run the "typecheck" package script
+To see a list of supported npm commands, run:
+  npm help
+
+# Exit: 1
+# Finished: 2026-07-15T10:04:29.6199699+10:00

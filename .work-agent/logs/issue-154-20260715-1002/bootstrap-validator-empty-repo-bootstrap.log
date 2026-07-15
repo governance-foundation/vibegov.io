@@ -1,0 +1,12 @@
+# Command: node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap
+# Started: 2026-07-15T10:04:28.8958195+10:00
+
+{
+  "scenarioId": "empty-repo-bootstrap",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-15T00-04-29-325Z-empty-repo-bootstrap"
+}
+
+# Exit: 0
+# Finished: 2026-07-15T10:04:29.3437088+10:00
