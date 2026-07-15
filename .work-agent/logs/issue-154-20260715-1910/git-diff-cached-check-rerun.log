@@ -1,0 +1,1 @@
+git diff --cached --check passed after normalizing proof logs to UTF-8/LF.
