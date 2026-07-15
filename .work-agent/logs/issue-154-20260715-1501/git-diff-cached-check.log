@@ -1,0 +1,75 @@
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:1: trailing whitespace.
++{
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:2: trailing whitespace.
++  "scenarioId": "bootstrap-gate",
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:3: trailing whitespace.
++  "passed": true,
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:4: trailing whitespace.
++  "score": 100,
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:5: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-15T05-05-19-898Z-bootstrap-gate"
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-bootstrap-gate.log:6: trailing whitespace.
++}
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:1: trailing whitespace.
++{
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:2: trailing whitespace.
++  "scenarioId": "empty-repo-bootstrap",
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:3: trailing whitespace.
++  "passed": true,
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:4: trailing whitespace.
++  "score": 100,
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:5: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-15T05-05-19-947Z-empty-repo-bootstrap"
+.work-agent/logs/issue-154-20260715-1501/bootstrap-validator-empty-repo-bootstrap.log:6: trailing whitespace.
++}
+.work-agent/logs/issue-154-20260715-1501/generate-published-rules.log:1: trailing whitespace.
++Published governance docs regenerated from canonical .mdc files.
+.work-agent/logs/issue-154-20260715-1501/gh-issue-comment-start.log:1: trailing whitespace.
++https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-4977044508
+.work-agent/logs/issue-154-20260715-1501/gh-pr-checks-exit-code.txt:1: trailing whitespace.
++exit code: 1
+.work-agent/logs/issue-154-20260715-1501/gh-pr-checks.log:1: trailing whitespace.
++no checks reported on the 'issue-154-active-rule-set-alignment' branch
+.work-agent/logs/issue-154-20260715-1501/git-diff-check.log:1: trailing whitespace.
++passed
+.work-agent/logs/issue-154-20260715-1501/git-diff-docs-published.log:1: trailing whitespace.
++passed
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:1: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:2: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:3: trailing whitespace.
++> docusaurus build
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:4: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:5: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:6: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:7: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:8: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:9: trailing whitespace.
++i Compiling Client
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:10: trailing whitespace.
++i Compiling Server
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:11: trailing whitespace.
++√ Client: Compiled successfully in 999.58ms
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:12: trailing whitespace.
++√ Server: Compiled successfully in 4.38s
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:13: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/issue-154-20260715-1501/npm-run-build.log:14: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/issue-154-20260715-1501/npm-run-typecheck.log:1: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-typecheck.log:2: trailing whitespace.
++> website@0.0.0 typecheck
+.work-agent/logs/issue-154-20260715-1501/npm-run-typecheck.log:3: trailing whitespace.
++> tsc
+.work-agent/logs/issue-154-20260715-1501/npm-run-typecheck.log:4: trailing whitespace.
++
+.work-agent/logs/issue-154-20260715-1501/npm-run-typecheck.log:4: new blank line at EOF.
+.work-agent/logs/issue-154-20260715-1501/project-status-in-progress.log:1: trailing whitespace.
++passed
