@@ -1,0 +1,59 @@
+[
+  {
+    "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260716-0901/issue-resume-comment.md",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "git diff --check",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "result": "passed",
+    "score": 100
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "result": "passed",
+    "score": 100
+  },
+  {
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "npm run build",
+    "exitCode": 0,
+    "result": "passed"
+  },
+  {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "result": "no GitHub checks reported on branch"
+  }
+]

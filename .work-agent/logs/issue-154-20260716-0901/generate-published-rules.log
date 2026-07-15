@@ -1,0 +1,5 @@
+PS> node scripts/generate-published-rules.js
+Published governance docs regenerated from canonical .mdc files.
+
+Exit code: 0
+Duration: 00:00:00.2469287

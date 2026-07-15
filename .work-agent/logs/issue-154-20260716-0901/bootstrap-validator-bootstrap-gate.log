@@ -1,0 +1,10 @@
+PS> node .internal/bootstrap-validator/index.js --scenario bootstrap-gate
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-15T23-03-52-468Z-bootstrap-gate"
+}
+
+Exit code: 0
+Duration: 00:00:00.5428991
