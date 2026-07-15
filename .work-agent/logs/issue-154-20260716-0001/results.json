@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "gh project item-edit status In Progress",
+    "File": "project-status-update.log",
+    "Exit": 0
+  },
+  {
+    "Name": "gh issue comment 154 start/resume note",
+    "File": "issue-start-comment.log",
+    "Exit": 0
+  },
+  {
+    "Name": "git fetch origin --prune",
+    "File": "git-fetch.log",
+    "Exit": 0
+  },
+  {
+    "Name": "git diff --check",
+    "File": "git-diff-check.log",
+    "Exit": 0
+  },
+  {
+    "Name": "node scripts/generate-published-rules.js",
+    "File": "generate-published-rules.log",
+    "Exit": 0
+  },
+  {
+    "Name": "git diff --exit-code -- docs/published",
+    "File": "published-rules-diff.log",
+    "Exit": 0
+  },
+  {
+    "Name": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "File": "bootstrap-validator-bootstrap-gate.log",
+    "Exit": 0
+  },
+  {
+    "Name": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "File": "bootstrap-validator-empty-repo-bootstrap.log",
+    "Exit": 0
+  },
+  {
+    "Name": "npm run typecheck",
+    "File": "npm-typecheck.log",
+    "Exit": 0
+  },
+  {
+    "Name": "npm run build",
+    "File": "npm-build.log",
+    "Exit": 0
+  },
+  {
+    "Name": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "File": "gh-pr-checks.log",
+    "Exit": 1
+  }
+]
