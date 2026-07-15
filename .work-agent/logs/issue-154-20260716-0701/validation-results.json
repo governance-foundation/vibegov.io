@@ -1,0 +1,62 @@
+[
+  {
+    "name": "project-status-update",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "issue-resume-comment-post",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "git-fetch",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "git-diff-check",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "generate-published-rules",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "published-rules-diff",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "npm-typecheck",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "npm-build",
+    "code": 0,
+    "allowFailure": false
+  },
+  {
+    "name": "gh-pr-checks",
+    "code": 1,
+    "allowFailure": true
+  },
+  {
+    "name": "gh-pr-view-after-validation",
+    "code": 0,
+    "allowFailure": false
+  }
+]
