@@ -1,0 +1,5 @@
+COMMAND: gh issue view 154 --repo governance-foundation/vibegov.io --json number,title,state,projectItems,url
+
+{"number":154,"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Vibegov"}],"state":"OPEN","title":"Align active governance rule set across bootstrap sources","url":"https://github.com/governance-foundation/vibegov.io/issues/154"}
+
+EXIT: 0
