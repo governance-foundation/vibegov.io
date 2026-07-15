@@ -1,0 +1,11 @@
+
+Name                                     Exit
+----                                     ----
+git-fetch                                   0
+git-diff-check                              0
+generate-published-rules                    0
+published-rules-diff                        0
+bootstrap-validator-bootstrap-gate          0
+bootstrap-validator-empty-repo-bootstrap    0
+npm-typecheck                               0
+npm-build                                   0

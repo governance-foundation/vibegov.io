@@ -1,0 +1,34 @@
+[
+  {
+    "Name": "git-fetch",
+    "Exit": 0
+  },
+  {
+    "Name": "git-diff-check",
+    "Exit": 0
+  },
+  {
+    "Name": "generate-published-rules",
+    "Exit": 0
+  },
+  {
+    "Name": "published-rules-diff",
+    "Exit": 0
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "Exit": 0
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap",
+    "Exit": 0
+  },
+  {
+    "Name": "npm-typecheck",
+    "Exit": 0
+  },
+  {
+    "Name": "npm-build",
+    "Exit": 0
+  }
+]
