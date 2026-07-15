@@ -1,0 +1,65 @@
+[
+  {
+    "command": "git fetch origin --prune",
+    "log": "git-fetch.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:42.3758979+10:00",
+    "endedAt": "2026-07-16T04:04:43.3548385+10:00"
+  },
+  {
+    "command": "git diff --check",
+    "log": "git-diff-check.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:43.3607207+10:00",
+    "endedAt": "2026-07-16T04:04:43.4547018+10:00"
+  },
+  {
+    "command": "node scripts/generate-published-rules.js",
+    "log": "generate-published-rules.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:43.4565676+10:00",
+    "endedAt": "2026-07-16T04:04:43.6163775+10:00"
+  },
+  {
+    "command": "git diff --exit-code -- docs/published",
+    "log": "published-rules-diff.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:43.6177861+10:00",
+    "endedAt": "2026-07-16T04:04:43.7533676+10:00"
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "log": "bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:43.7548840+10:00",
+    "endedAt": "2026-07-16T04:04:44.2311023+10:00"
+  },
+  {
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "log": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:44.2323309+10:00",
+    "endedAt": "2026-07-16T04:04:44.6914306+10:00"
+  },
+  {
+    "command": "npm run typecheck",
+    "log": "npm-typecheck.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:44.6963605+10:00",
+    "endedAt": "2026-07-16T04:04:56.4375734+10:00"
+  },
+  {
+    "command": "npm run build",
+    "log": "npm-build.log",
+    "exitCode": 0,
+    "startedAt": "2026-07-16T04:04:56.4417321+10:00",
+    "endedAt": "2026-07-16T04:05:24.8019763+10:00"
+  },
+  {
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "log": "gh-pr-checks.log",
+    "exitCode": 1,
+    "startedAt": "2026-07-16T04:05:24.8059062+10:00",
+    "endedAt": "2026-07-16T04:05:26.3123676+10:00"
+  }
+]
