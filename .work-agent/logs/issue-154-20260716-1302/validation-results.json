@@ -1,0 +1,62 @@
+{
+  "project-status-update": {
+    "exitCode": 0,
+    "required": true,
+    "log": "project-status-update.log"
+  },
+  "git-status-before-validation": {
+    "exitCode": 0,
+    "required": true,
+    "log": "git-status-before-validation.log"
+  },
+  "git-diff-check": {
+    "exitCode": 0,
+    "required": true,
+    "log": "git-diff-check.log"
+  },
+  "generate-published-rules": {
+    "exitCode": 0,
+    "required": true,
+    "log": "generate-published-rules.log"
+  },
+  "published-rules-diff": {
+    "exitCode": 0,
+    "required": true,
+    "log": "published-rules-diff.log"
+  },
+  "bootstrap-validator-bootstrap-gate": {
+    "exitCode": 0,
+    "required": true,
+    "log": "bootstrap-validator-bootstrap-gate.log"
+  },
+  "bootstrap-validator-empty-repo-bootstrap": {
+    "exitCode": 0,
+    "required": true,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  "npm-typecheck": {
+    "exitCode": 0,
+    "required": true,
+    "log": "npm-typecheck.log"
+  },
+  "npm-build": {
+    "exitCode": 0,
+    "required": true,
+    "log": "npm-build.log"
+  },
+  "gh-pr-checks": {
+    "exitCode": 1,
+    "required": false,
+    "log": "gh-pr-checks.log"
+  },
+  "gh-pr-view-after-validation": {
+    "exitCode": 0,
+    "required": true,
+    "log": "gh-pr-view-after-validation.log"
+  },
+  "git-status-after-validation": {
+    "exitCode": 0,
+    "required": true,
+    "log": "git-status-after-validation.log"
+  }
+}
