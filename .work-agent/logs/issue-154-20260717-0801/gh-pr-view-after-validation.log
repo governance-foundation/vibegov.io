@@ -1,0 +1,7 @@
+COMMAND: gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefOid,url
+START: 2026-07-17T08:04:37.7171091+10:00
+
+{"headRefOid":"ae1c6e1a8281acaa75040a92c52eb33de289fe68","isDraft":false,"mergeStateStatus":"CLEAN","number":185,"reviewDecision":"","state":"OPEN","statusCheckRollup":[],"url":"https://github.com/governance-foundation/vibegov.io/pull/185"}
+
+END: 2026-07-17T08:04:38.4467104+10:00
+EXIT: 0
