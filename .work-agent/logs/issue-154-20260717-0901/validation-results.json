@@ -1,0 +1,18 @@
+{
+  "projectStatus": "In Progress",
+  "runStart": "2026-07-17 09:01 Australia/Sydney",
+  "validation": {
+    "emptyRepoBootstrap": "passed score 100",
+    "githubChecks": "none reported (gh pr checks exit 1)",
+    "bootstrapGate": "passed score 100",
+    "typecheck": "passed",
+    "docsPublishedDiff": "passed",
+    "build": "passed",
+    "generatePublishedRules": "passed",
+    "gitDiffCheck": "passed"
+  },
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "nextAction": "validator review PR #185",
+  "issue": 154
+}
