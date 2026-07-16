@@ -1,0 +1,28 @@
+{
+  "run": "issue-154-20260716-2301",
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "projectStatus": "In Progress",
+  "projectStatusUpdate": "passed",
+  "commands": [
+    { "name": "gh project item-edit", "exitCode": 0 },
+    { "name": "gh issue comment start", "exitCode": 0 },
+    { "name": "git fetch origin --prune", "exitCode": 0 },
+    { "name": "git diff --check", "exitCode": 0 },
+    { "name": "node scripts/generate-published-rules.js", "exitCode": 0 },
+    { "name": "git diff --exit-code -- docs/published", "exitCode": 0 },
+    { "name": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "exitCode": 0, "score": 100 },
+    { "name": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "exitCode": 0, "score": 100 },
+    { "name": "npm run typecheck", "exitCode": 0 },
+    { "name": "npm run build", "exitCode": 0 },
+    { "name": "gh pr checks 185 --repo governance-foundation/vibegov.io", "exitCode": 1, "note": "no checks reported on the branch" }
+  ],
+  "prState": {
+    "state": "OPEN",
+    "isDraft": false,
+    "mergeStateStatus": "CLEAN",
+    "reviewDecision": "",
+    "statusCheckRollup": []
+  }
+}
