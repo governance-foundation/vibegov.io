@@ -1,0 +1,6 @@
+COMMAND: npm run typecheck
+EXIT: 0
+
+
+> website@0.0.0 typecheck
+> tsc
