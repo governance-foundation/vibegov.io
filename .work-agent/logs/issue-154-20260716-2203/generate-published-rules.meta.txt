@@ -1,0 +1,4 @@
+command=node scripts/generate-published-rules.js
+start=2026-07-16T22:05:56.4506738+10:00
+end=2026-07-16T22:05:56.5810503+10:00
+exit=0

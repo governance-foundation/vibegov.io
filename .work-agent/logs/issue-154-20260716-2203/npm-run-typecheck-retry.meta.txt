@@ -1,0 +1,5 @@
+command=npm run typecheck
+start=2026-07-16T22:06:25.1209087+10:00
+end=2026-07-16T22:06:31.7527202+10:00
+exit=0
+note=retry after initial local capture wrapper passed npm arguments incorrectly as a single token

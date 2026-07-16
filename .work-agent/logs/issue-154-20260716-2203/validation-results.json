@@ -1,0 +1,59 @@
+[
+  {
+    "name": "git-fetch-origin-prune",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\git-fetch-origin-prune.out.txt"
+  },
+  {
+    "name": "git-diff-check",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\git-diff-check.out.txt"
+  },
+  {
+    "name": "generate-published-rules",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\generate-published-rules.out.txt"
+  },
+  {
+    "name": "git-diff-exit-code-docs-published",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\git-diff-exit-code-docs-published.out.txt"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\bootstrap-validator-bootstrap-gate.out.txt"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\bootstrap-validator-empty-repo-bootstrap.out.txt"
+  },
+  {
+    "name": "npm-run-typecheck",
+    "exit": 1,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\npm-run-typecheck.out.txt"
+  },
+  {
+    "name": "npm-run-build",
+    "exit": 1,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\npm-run-build.out.txt"
+  },
+  {
+    "name": "gh-pr-checks-185",
+    "exit": 1,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\gh-pr-checks-185.out.txt"
+  },
+  {
+    "name": "npm-run-typecheck-retry",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\npm-run-typecheck-retry.out.txt",
+    "note": "retry after initial local capture wrapper passed npm arguments incorrectly as a single token"
+  },
+  {
+    "name": "npm-run-build-retry",
+    "exit": 0,
+    "out": ".work-agent\\logs\\issue-154-20260716-2203\\npm-run-build-retry.out.txt",
+    "note": "retry after initial local capture wrapper passed npm arguments incorrectly as a single token"
+  }
+]

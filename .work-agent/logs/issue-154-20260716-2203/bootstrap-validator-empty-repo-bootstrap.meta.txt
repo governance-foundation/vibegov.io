@@ -1,0 +1,4 @@
+command=node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap
+start=2026-07-16T22:05:57.1946103+10:00
+end=2026-07-16T22:05:57.5832559+10:00
+exit=0

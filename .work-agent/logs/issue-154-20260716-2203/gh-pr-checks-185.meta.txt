@@ -1,0 +1,4 @@
+command=gh pr checks 185 --repo governance-foundation/vibegov.io
+start=2026-07-16T22:05:58.1627378+10:00
+end=2026-07-16T22:05:59.6213394+10:00
+exit=1

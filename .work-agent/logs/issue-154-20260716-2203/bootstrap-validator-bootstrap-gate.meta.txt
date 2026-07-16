@@ -1,0 +1,4 @@
+command=node .internal/bootstrap-validator/index.js --scenario bootstrap-gate
+start=2026-07-16T22:05:56.6905285+10:00
+end=2026-07-16T22:05:57.1909457+10:00
+exit=0
