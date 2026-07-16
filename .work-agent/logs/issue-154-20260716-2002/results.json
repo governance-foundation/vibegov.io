@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "git-fetch-prune.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "git-diff-check.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "generate-published-rules.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "published-rules-diff.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "npm-typecheck.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "npm-build.log",
+    "ExitCode": 0
+  },
+  {
+    "Name": "gh-pr-checks.log",
+    "ExitCode": 1
+  }
+]

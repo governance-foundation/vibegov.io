@@ -1,0 +1,7 @@
+ExitCode: 0
+{
+  "scenarioId": "empty-repo-bootstrap",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-16T10-05-31-091Z-empty-repo-bootstrap"
+}
