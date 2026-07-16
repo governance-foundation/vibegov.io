@@ -1,0 +1,1 @@
+Initial capture wrapper used a reserved PowerShell argument variable, causing gh/git invocations without arguments; rerun corrected wrapper before validation and final proof.
