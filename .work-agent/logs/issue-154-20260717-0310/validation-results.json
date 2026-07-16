@@ -1,0 +1,37 @@
+{
+  "run": "issue-154-20260717-0310",
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "startTime": "2026-07-17 03:10 Australia/Sydney",
+  "startCommit": "7970aca8571227afd0ef3b07f8c48737a364af04",
+  "projectStatus": {
+    "status": "In Progress",
+    "updateExitCode": 0,
+    "note": "Project #3 exposes Todo, In Progress, and Done; no In review option is available."
+  },
+  "commands": [
+    { "command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json", "exitCode": 0 },
+    { "command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260717-0310/issue-resume-comment.md", "exitCode": 0 },
+    { "command": "git fetch origin --prune", "exitCode": 0 },
+    { "command": "git diff --check", "exitCode": 0 },
+    { "command": "node scripts/generate-published-rules.js", "exitCode": 0 },
+    { "command": "git diff --exit-code -- docs/published", "exitCode": 0 },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "exitCode": 0, "score": 100 },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "exitCode": 0, "score": 100 },
+    { "command": "npm run typecheck", "exitCode": 0 },
+    { "command": "npm run build", "exitCode": 0 },
+    { "command": "git diff --cached --check", "exitCode": 2, "note": "Initial staged proof-log check caught Windows line-ending/trailing-whitespace artifacts in captured command output; this run's log files were normalized to LF and trailing EOF blank lines were stripped." },
+    { "command": "git diff --cached --check", "exitCode": 0, "note": "Final staged proof-log check passed after normalization." },
+    { "command": "gh pr checks 185 --repo governance-foundation/vibegov.io", "exitCode": 1, "note": "GitHub reports no checks on the branch." },
+    { "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeable,mergeStateStatus,reviewDecision,statusCheckRollup,headRefName,baseRefName,url", "exitCode": 0 }
+  ],
+  "prStateAfterValidation": {
+    "state": "OPEN",
+    "isDraft": false,
+    "mergeable": "MERGEABLE",
+    "mergeStateStatus": "CLEAN",
+    "reviewDecision": "",
+    "statusCheckRollup": []
+  }
+}

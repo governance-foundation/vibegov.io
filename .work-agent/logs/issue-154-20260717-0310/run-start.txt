@@ -1,0 +1,6 @@
+Run started: 2026-07-17 03:10 Australia/Sydney / 2026-07-16 17:10 UTC
+Issue: #154 Align active governance rule set across bootstrap sources
+PR: #185 https://github.com/governance-foundation/vibegov.io/pull/185
+Branch: issue-154-active-rule-set-alignment
+Starting HEAD: 7970aca8571227afd0ef3b07f8c48737a364af04
+Resume reason: active issue branch and open PR exist; no new issue selection.

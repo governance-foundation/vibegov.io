@@ -1,0 +1,1 @@
+{"baseRefName":"develop","headRefName":"issue-154-active-rule-set-alignment","isDraft":false,"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","number":185,"reviewDecision":"","state":"OPEN","statusCheckRollup":[],"url":"https://github.com/governance-foundation/vibegov.io/pull/185"}

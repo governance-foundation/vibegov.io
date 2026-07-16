@@ -1,0 +1,14 @@
+.work-agent/logs/issue-154-20260717-0310/bootstrap-validator-bootstrap-gate.out.txt:7: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/bootstrap-validator-empty-repo-bootstrap.out.txt:7: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/generate-published-rules.out.txt:2: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/gh-issue-comment-start.out.txt:2: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/gh-pr-checks-185.out.txt:2: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/gh-pr-view-after-validation.out.txt:2: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/git-diff-cached-check.out.txt:80: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/git-status-after-validation.out.txt:3: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/git-status-before-validation.out.txt:3: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/issue-resume-comment.md:11: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/npm-run-build.out.txt:15: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/npm-run-typecheck.out.txt:4: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/project-status-update.out.txt:2: new blank line at EOF.
+.work-agent/logs/issue-154-20260717-0310/run-start.txt:7: new blank line at EOF.
