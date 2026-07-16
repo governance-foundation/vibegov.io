@@ -1,0 +1,1 @@
+{"check_suites":[{"app":"github-pages","conclusion":null,"head_sha":"49cea0036b82606b0a0bbd003f50bf4a3b54b1af","status":"queued"},{"app":"codacy-production","conclusion":null,"head_sha":"49cea0036b82606b0a0bbd003f50bf4a3b54b1af","status":"queued"},{"app":"codecov","conclusion":null,"head_sha":"49cea0036b82606b0a0bbd003f50bf4a3b54b1af","status":"queued"}],"total_count":3}
