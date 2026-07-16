@@ -1,0 +1,4 @@
+COMMAND: generate-published-rules.log
+EXIT: 0
+
+Published governance docs regenerated from canonical .mdc files.

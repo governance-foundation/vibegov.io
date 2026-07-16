@@ -1,0 +1,18 @@
+{
+    "issue":  154,
+    "pr":  185,
+    "branch":  "issue-154-active-rule-set-alignment",
+    "run":  "issue-154-20260716-1001",
+    "projectStatus":  "In Progress",
+    "baseCommitBeforeProofLog":  "0ae61e349847aa650ab11b98b5d091ab0e520593",
+    "validation":  {
+                       "gitDiffCheck":  "passed",
+                       "generatePublishedRules":  "passed",
+                       "publishedRulesDiff":  "passed",
+                       "bootstrapGate":  "passed score 100",
+                       "emptyRepoBootstrap":  "passed score 100",
+                       "npmTypecheck":  "passed",
+                       "npmBuild":  "passed",
+                       "ghPrChecksExit":  1
+                   }
+}

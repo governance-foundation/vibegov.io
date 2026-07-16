@@ -1,0 +1,4 @@
+COMMAND: git diff --cached --check
+EXIT: 0
+
+(no output)

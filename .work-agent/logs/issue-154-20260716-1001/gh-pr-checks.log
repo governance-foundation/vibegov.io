@@ -1,0 +1,9 @@
+COMMAND: gh pr checks 185 --repo governance-foundation/vibegov.io
+EXIT: 1
+
+gh : no checks reported on the 'issue-154-active-rule-set-alignment' branch
+At line:1 char:16
++ ... eckOutput = gh pr checks 185 --repo governance-foundation/vibegov.io  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (no checks repor...ignment' branch:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
