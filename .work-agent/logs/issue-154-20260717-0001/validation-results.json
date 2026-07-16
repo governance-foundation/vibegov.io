@@ -1,0 +1,20 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStart": "2026-07-17 00:01 Australia/Sydney / 2026-07-16 14:01 UTC",
+  "projectStatus": "In Progress",
+  "projectStatusUpdateExitCode": "0",
+  "validation": {
+    "gitFetchOriginPrune": "0",
+    "gitDiffCheck": "0",
+    "generatePublishedRules": "0",
+    "docsPublishedDiff": "0",
+    "bootstrapGate": "0",
+    "emptyRepoBootstrap": "0",
+    "npmRunTypecheck": "0",
+    "npmRunBuild": "0",
+    "ghPrChecks": "1",
+    "ghPrChecksNote": "no checks reported on the 'issue-154-active-rule-set-alignment' branch"
+  }
+}
