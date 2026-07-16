@@ -1,0 +1,2 @@
+COMMAND: git fetch origin --prune
+EXIT_CODE=0
