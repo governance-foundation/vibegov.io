@@ -1,0 +1,20 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedLocal": "2026-07-16 11:01 Australia/Sydney",
+  "projectStatus": "In Progress",
+  "projectReviewStatusNote": "Project #3 exposes only Todo, In Progress, and Done; no In review option is available.",
+  "validation": {
+    "gitFetch": "passed",
+    "gitDiffCheck": "passed",
+    "generatePublishedRules": "passed",
+    "publishedRulesDiff": "passed",
+    "bootstrapGate": { "passed": true, "score": 100 },
+    "emptyRepoBootstrap": { "passed": true, "score": 100 },
+    "typecheck": "passed",
+    "build": "passed",
+    "githubChecks": "no checks reported; gh pr checks exited 1"
+  },
+  "nextAction": "validator review PR #185"
+}
