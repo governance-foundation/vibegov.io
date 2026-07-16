@@ -1,0 +1,45 @@
+[issue-154-active-rule-set-alignment 1cc6a46] chore: refresh issue 154 proof at 0801
+ Date: Fri Jul 17 08:06:15 2026 +1000
+ 42 files changed, 255 insertions(+)
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/bootstrap-validator-bootstrap-gate.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/bootstrap-validator-bootstrap-gate.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/bootstrap-validator-empty-repo-bootstrap.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/bootstrap-validator-empty-repo-bootstrap.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/generate-published-rules.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/generate-published-rules.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/gh-issue-comment-start.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/gh-pr-checks-185.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/gh-pr-checks-185.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/gh-pr-view-after-validation.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/gh-pr-view-after-validation.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-commit-amend.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-commit-amend.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-commit.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-commit.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check-after-commit-metadata.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check-after-commit-metadata.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check-final.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check-final.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-cached-check.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-check.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-check.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-exit-code-docs-published.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-diff-exit-code-docs-published.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-fetch-origin-prune.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-fetch-origin-prune.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/git-status-after-validation.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/head-after-amend.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/head-after-log-commit.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/head-before-log-commit.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/issue-resume-comment-post.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/issue-resume-comment.md
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/npm-run-build.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/npm-run-build.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/npm-run-typecheck.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/npm-run-typecheck.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/project-status-update.exit-code.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/project-status-update.log
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/run-start.txt
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/summary.md
+ create mode 100644 .work-agent/logs/issue-154-20260717-0801/validation-results.json

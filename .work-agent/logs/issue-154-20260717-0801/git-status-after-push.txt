@@ -1,0 +1,6 @@
+## issue-154-active-rule-set-alignment...origin/issue-154-active-rule-set-alignment
+?? .work-agent/logs/issue-154-20260717-0801/git-commit-amend-final.exit-code.txt
+?? .work-agent/logs/issue-154-20260717-0801/git-commit-amend-final.log
+?? .work-agent/logs/issue-154-20260717-0801/git-push.exit-code.txt
+?? .work-agent/logs/issue-154-20260717-0801/git-push.log
+?? .work-agent/logs/issue-154-20260717-0801/head-after-final-amend.txt
