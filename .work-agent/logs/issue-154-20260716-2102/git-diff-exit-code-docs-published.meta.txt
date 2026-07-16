@@ -1,0 +1,4 @@
+name=git-diff-exit-code-docs-published
+exit=0
+start=2026-07-16T21:04:45.3923287+10:00
+end=2026-07-16T21:04:45.5020088+10:00

@@ -1,0 +1,4 @@
+name=bootstrap-validator-empty-repo-bootstrap
+exit=0
+start=2026-07-16T21:04:45.9864591+10:00
+end=2026-07-16T21:04:46.3962183+10:00
