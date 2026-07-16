@@ -1,0 +1,31 @@
+# Issue 154 Developer Resume Proof - 2026-07-16 17:02 Australia/Sydney
+
+## Scope
+
+- Resumed open PR #185 from branch `issue-154-active-rule-set-alignment`.
+- Re-applied Governance Foundation Project #3 status `In Progress` for issue #154.
+- Refreshed validation evidence for the active governance rule-set alignment changes.
+
+## Project Status
+
+- `gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json` passed.
+- Project #3 exposes only `Todo`, `In Progress`, and `Done`; no `In review` option is available, so PR #185 remains represented by `In Progress`.
+
+## Validation
+
+- `git fetch origin --prune` passed.
+- `git diff --check` passed.
+- `node scripts/generate-published-rules.js` passed.
+- `git diff --exit-code -- docs/published` passed.
+- `node .internal/bootstrap-validator/index.js --scenario bootstrap-gate` passed, score 100.
+- `node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap` passed, score 100.
+- `npm run typecheck` passed.
+- `npm run build` passed.
+- `gh pr checks 185 --repo governance-foundation/vibegov.io` exited 1 because GitHub reports no checks on the branch.
+
+## State
+
+- PR #185 is open, not draft, and mergeable.
+- No review decision is reported.
+- GitHub reports no status checks on the branch.
+- Next action: validator review PR #185.
