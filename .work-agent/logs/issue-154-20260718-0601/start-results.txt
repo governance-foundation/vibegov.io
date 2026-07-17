@@ -1,0 +1,2 @@
+project_exit=0
+issue_comment_exit=0

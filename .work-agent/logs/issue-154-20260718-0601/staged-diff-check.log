@@ -1,0 +1,222 @@
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:3: trailing whitespace.
++{
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:4: trailing whitespace.
++  "scenarioId": "bootstrap-gate",
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:5: trailing whitespace.
++  "passed": true,
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:6: trailing whitespace.
++  "score": 100,
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:7: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-17T20-03-43-070Z-bootstrap-gate"
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:8: trailing whitespace.
++}
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-bootstrap-gate.log:10: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:3: trailing whitespace.
++{
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:4: trailing whitespace.
++  "scenarioId": "empty-repo-bootstrap",
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:5: trailing whitespace.
++  "passed": true,
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:6: trailing whitespace.
++  "score": 100,
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:7: trailing whitespace.
++  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-17T20-03-43-479Z-empty-repo-bootstrap"
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:8: trailing whitespace.
++}
+.work-agent/logs/issue-154-20260718-0601/bootstrap-validator-empty-repo-bootstrap.log:10: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/generate-published-rules.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/generate-published-rules.log:3: trailing whitespace.
++Published governance docs regenerated from canonical .mdc files.
+.work-agent/logs/issue-154-20260718-0601/generate-published-rules.log:5: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/gh-pr-checks.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/gh-pr-checks.log:4: trailing whitespace.
++[exit:1]
+.work-agent/logs/issue-154-20260718-0601/git-diff-check.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/git-diff-check.log:4: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/git-fetch-origin-prune.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/git-fetch-origin-prune.log:4: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/issue-resume-comment-command.log:1: trailing whitespace.
++https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5007040911
+.work-agent/logs/issue-154-20260718-0601/issue-resume-comment.md:10: trailing whitespace.
++Next action: refresh validation evidence and update PR #185.
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:3: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:4: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:5: trailing whitespace.
++> docusaurus build
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:6: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:7: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:8: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:9: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:10: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:11: trailing whitespace.
++i Compiling Client
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:12: trailing whitespace.
++i Compiling Server
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:13: trailing whitespace.
++√ Client: Compiled successfully in 1.22s
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:14: trailing whitespace.
++√ Server: Compiled successfully in 4.26s
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:15: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:16: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/issue-154-20260718-0601/npm-build.log:18: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:3: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:4: trailing whitespace.
++> website@0.0.0 typecheck
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:5: trailing whitespace.
++> tsc
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:6: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/npm-typecheck.log:8: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/project-status-update.log:1: trailing whitespace.
++{"body":"## Problem\n\nThe active governance rule set is inconsistent across the public/bootstrap sources.\n\nFrom the site/repo review:\n\n- `bootstrap.json` appears to list active rules only through `gov-09-agent-continuity-bootstrap`.\n- `agent.txt` also refers to GOV-01 through GOV-09 as the active set.\n- The published governance documentation/sidebar includes GOV-01 through GOV-13.\n- Release history indicates GOV-10 through GOV-13 exist as harness-engineering governance rules.\n\nThis creates ambiguity for agents and users: should GOV-10 to GOV-13 be installed, ignored, treated as preview, or treated as optional extensions?\n\nBecause VibeGov is itself a governance source of truth, this mismatch undermines trust in the bootstrap contract.\n\n## Affected areas\n\nLikely affected files/outputs:\n\n- `static/bootstrap.json`\n- `static/agent.txt`\n- `docs/bootstrap` / bootstrap contract docs\n- published governance docs/sidebar\n- any bootstrap validation assumptions\n- release notes or rule index pages if they describe the active set\n\n## Recommended fix\n\nDecide one clear rule-set status:\n\n### Preferred option\n\nMake GOV-01 through GOV-13 the active published rule set everywhere.\n\nUpdate active rule references to include:\n\n- `gov-10-agent-state-closure-git-hygiene`\n- `gov-11-agent-legibility-in-repo-truth`\n- `gov-12-drift-control-garbage-collection`\n- `gov-13-review-loops-completion-discipline`\n\n### Alternative option\n\nIf GOV-10 to GOV-13 are not intended to be core yet, clearly label them as one of:\n\n- extended rules\n- preview rules\n- optional harness rules\n- experimental rules\n\nThen make the docs/sidebar reflect that status.\n\n## Acceptance criteria\n\n- [ ] `bootstrap.json` and `agent.txt` agree on the active rule set.\n- [ ] Bootstrap docs use the same rule range/status as the machine-readable sources.\n- [ ] Published docs/sidebar clearly distinguish active vs optional/preview rules if applicable.\n- [ ] A new user or agent can determine exactly which rules should be installed during bootstrap.\n- [ ] No public page implies GOV-10 to GOV-13 are active while machine-readable sources omit them, or vice versa.\n\n## Priority\n\nP0 — source-of-truth consistency.","id":"PVTI_lADOA_2mn84Bc1k8zgyJwBA","title":"Align active governance rule set across bootstrap sources","type":"Issue","url":"https://github.com/governance-foundation/vibegov.io/issues/154"}
+.work-agent/logs/issue-154-20260718-0601/published-rules-diff.log:2: trailing whitespace.
++
+.work-agent/logs/issue-154-20260718-0601/published-rules-diff.log:4: trailing whitespace.
++[exit:0]
+.work-agent/logs/issue-154-20260718-0601/results.json:1: trailing whitespace.
++[
+.work-agent/logs/issue-154-20260718-0601/results.json:2: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:3: trailing whitespace.
++    "name": "git-fetch-origin-prune",
+.work-agent/logs/issue-154-20260718-0601/results.json:4: trailing whitespace.
++    "command": "git fetch origin --prune",
+.work-agent/logs/issue-154-20260718-0601/results.json:5: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:6: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\git-fetch-origin-prune.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:7: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:8: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:9: trailing whitespace.
++    "name": "git-diff-check",
+.work-agent/logs/issue-154-20260718-0601/results.json:10: trailing whitespace.
++    "command": "git diff --check",
+.work-agent/logs/issue-154-20260718-0601/results.json:11: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:12: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\git-diff-check.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:13: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:14: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:15: trailing whitespace.
++    "name": "generate-published-rules",
+.work-agent/logs/issue-154-20260718-0601/results.json:16: trailing whitespace.
++    "command": "node scripts/generate-published-rules.js",
+.work-agent/logs/issue-154-20260718-0601/results.json:17: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:18: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\generate-published-rules.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:19: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:20: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:21: trailing whitespace.
++    "name": "published-rules-diff",
+.work-agent/logs/issue-154-20260718-0601/results.json:22: trailing whitespace.
++    "command": "git diff --exit-code -- docs/published",
+.work-agent/logs/issue-154-20260718-0601/results.json:23: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:24: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\published-rules-diff.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:25: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:26: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:27: trailing whitespace.
++    "name": "bootstrap-validator-bootstrap-gate",
+.work-agent/logs/issue-154-20260718-0601/results.json:28: trailing whitespace.
++    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+.work-agent/logs/issue-154-20260718-0601/results.json:29: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:30: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\bootstrap-validator-bootstrap-gate.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:31: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:32: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:33: trailing whitespace.
++    "name": "bootstrap-validator-empty-repo-bootstrap",
+.work-agent/logs/issue-154-20260718-0601/results.json:34: trailing whitespace.
++    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+.work-agent/logs/issue-154-20260718-0601/results.json:35: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:36: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\bootstrap-validator-empty-repo-bootstrap.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:37: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:38: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:39: trailing whitespace.
++    "name": "npm-typecheck",
+.work-agent/logs/issue-154-20260718-0601/results.json:40: trailing whitespace.
++    "command": "npm run typecheck",
+.work-agent/logs/issue-154-20260718-0601/results.json:41: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:42: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\npm-typecheck.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:43: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:44: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:45: trailing whitespace.
++    "name": "npm-build",
+.work-agent/logs/issue-154-20260718-0601/results.json:46: trailing whitespace.
++    "command": "npm run build",
+.work-agent/logs/issue-154-20260718-0601/results.json:47: trailing whitespace.
++    "exit": 0,
+.work-agent/logs/issue-154-20260718-0601/results.json:48: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\npm-build.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:49: trailing whitespace.
++  },
+.work-agent/logs/issue-154-20260718-0601/results.json:50: trailing whitespace.
++  {
+.work-agent/logs/issue-154-20260718-0601/results.json:51: trailing whitespace.
++    "name": "gh-pr-checks",
+.work-agent/logs/issue-154-20260718-0601/results.json:52: trailing whitespace.
++    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+.work-agent/logs/issue-154-20260718-0601/results.json:53: trailing whitespace.
++    "exit": 1,
+.work-agent/logs/issue-154-20260718-0601/results.json:54: trailing whitespace.
++    "log": ".work-agent\\logs\\issue-154-20260718-0601\\gh-pr-checks.log"
+.work-agent/logs/issue-154-20260718-0601/results.json:55: trailing whitespace.
++  }
+.work-agent/logs/issue-154-20260718-0601/results.json:56: trailing whitespace.
++]
+.work-agent/logs/issue-154-20260718-0601/start-results.txt:1: trailing whitespace.
++project_exit=0
+.work-agent/logs/issue-154-20260718-0601/start-results.txt:2: trailing whitespace.
++issue_comment_exit=0
+.work-agent/logs/issue-154-20260718-0601/summary.md:41: trailing whitespace.
++Validator review PR #185 at the new proof commit once pushed.

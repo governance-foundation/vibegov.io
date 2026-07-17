@@ -1,0 +1,4 @@
+> git diff --exit-code -- docs/published
+
+
+[exit:0]
