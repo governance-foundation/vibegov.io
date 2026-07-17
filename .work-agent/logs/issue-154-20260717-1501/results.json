@@ -1,0 +1,37 @@
+[
+  {
+    "name": "git diff --check",
+    "exitCode": 0,
+    "log": "git-diff-check.log"
+  },
+  {
+    "name": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "log": "generate-published-rules.log"
+  },
+  {
+    "name": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "log": "published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator bootstrap-gate",
+    "exitCode": 0,
+    "log": "bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": "bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm run typecheck",
+    "exitCode": 0,
+    "log": "npm-typecheck.log"
+  },
+  {
+    "name": "npm run build",
+    "exitCode": 0,
+    "log": "npm-build.log"
+  }
+]
