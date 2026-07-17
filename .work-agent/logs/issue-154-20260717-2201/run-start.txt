@@ -1,0 +1,5 @@
+Developer resume started for the 2026-07-17 22:01 Australia/Sydney cron run.
+UTC reference: 2026-07-17 12:01 UTC.
+Issue: #154 Align active governance rule set across bootstrap sources
+PR: #185 https://github.com/governance-foundation/vibegov.io/pull/185
+Branch: issue-154-active-rule-set-alignment

@@ -1,0 +1,1 @@
+Initial validation wrapper used PowerShell automatic variable $Args as a parameter name, so commands were not invoked. Validation rerun below used CommandArgs and captured real command output/exit codes.
