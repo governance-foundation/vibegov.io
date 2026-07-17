@@ -1,0 +1,35 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStarted": "2026-07-17T18:01:00+10:00",
+  "headBeforeProofCommit": "57728745ab8814b162b5531ae7e8a5def9dd3f05",
+  "projectStatus": {
+    "status": "In Progress",
+    "updateResult": "passed",
+    "itemId": "PVTI_lADOA_2mn84Bc1k8zgyJwBA",
+    "projectId": "PVT_kwDOA_2mn84Bc1k8",
+    "fieldId": "PVTSSF_lADOA_2mn84Bc1k8zhXbeDs",
+    "optionId": "47fc9ee4",
+    "inReviewAvailable": false
+  },
+  "startCommentUrl": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5000470511",
+  "validation": {
+    "gitFetch": "passed",
+    "gitDiffCheck": "passed",
+    "generatePublishedRules": "passed",
+    "publishedRulesDiff": "passed",
+    "bootstrapGate": {
+      "status": "passed",
+      "score": 100
+    },
+    "emptyRepoBootstrap": {
+      "status": "passed",
+      "score": 100
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "ghPrChecks": "no checks reported"
+  },
+  "nextAction": "validator review PR #185"
+}
