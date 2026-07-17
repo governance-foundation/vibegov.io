@@ -1,0 +1,10 @@
+git-fetch-origin-prune=0
+git-diff-check=0
+generate-published-rules=0
+git-diff-exit-code-docs-published=0
+bootstrap-validator-bootstrap-gate=0
+bootstrap-validator-empty-repo-bootstrap=0
+npm-run-typecheck-rerun=0
+npm-run-build=0
+gh-pr-checks-185=1
+gh-pr-view-after-validation=0
