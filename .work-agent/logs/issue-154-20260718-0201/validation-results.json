@@ -1,0 +1,56 @@
+[
+  {
+    "name": "git-fetch",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\git-fetch.log"
+  },
+  {
+    "name": "git-diff-check",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\generate-published-rules.log"
+  },
+  {
+    "name": "published-rules-diff",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm-typecheck",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\npm-typecheck.log"
+  },
+  {
+    "name": "npm-build",
+    "exitCode": 0,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\npm-build.log"
+  },
+  {
+    "name": "gh-pr-checks",
+    "exitCode": 1,
+    "ok": true,
+    "log": ".work-agent\\logs\\issue-154-20260718-0201\\gh-pr-checks.log"
+  }
+]
