@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "git-fetch-origin-prune",
+    "ExitCode": 0
+  },
+  {
+    "Name": "git-diff-check",
+    "ExitCode": 0
+  },
+  {
+    "Name": "generate-published-rules",
+    "ExitCode": 0
+  },
+  {
+    "Name": "git-diff-exit-code-docs-published",
+    "ExitCode": 0
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "ExitCode": 0
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap",
+    "ExitCode": 0
+  },
+  {
+    "Name": "npm-run-typecheck",
+    "ExitCode": 0
+  },
+  {
+    "Name": "npm-run-build",
+    "ExitCode": 0
+  },
+  {
+    "Name": "gh-pr-checks-185",
+    "ExitCode": 1
+  },
+  {
+    "Name": "gh-pr-view-after-validation",
+    "ExitCode": 0
+  }
+]

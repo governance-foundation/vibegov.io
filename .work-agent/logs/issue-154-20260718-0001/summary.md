@@ -1,0 +1,42 @@
+# Issue 154 Developer Resume Proof - 2026-07-18 00:01 Australia/Sydney
+
+## Scope
+
+- Resumed open PR #185 on branch `issue-154-active-rule-set-alignment`.
+- Re-applied Governance Foundation Project #3 status `In Progress` before validation refresh.
+- Refreshed validation evidence for the active GOV-01 through GOV-13 alignment change set.
+
+## Project Status
+
+- Project status: In Progress.
+- Project status update result: `gh project item-edit` succeeded for item `PVTI_lADOA_2mn84Bc1k8zgyJwBA`, field `PVTSSF_lADOA_2mn84Bc1k8zhXbeDs`, option `47fc9ee4`.
+- Project review-status note: Project #3 exposes Todo, In Progress, and Done; no In review option is available, so the item remains In Progress while PR #185 awaits validator review.
+
+## Validation Results
+
+- `git fetch origin --prune` passed.
+- `git diff --check` passed.
+- `node scripts/generate-published-rules.js` passed.
+- `git diff --exit-code -- docs/published` passed.
+- `node .internal/bootstrap-validator/index.js --scenario bootstrap-gate` passed, score 100.
+- `node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap` passed, score 100.
+- `npm run typecheck` passed.
+- `npm run build` passed.
+- `gh pr checks 185 --repo governance-foundation/vibegov.io` exited 1 because GitHub reports no checks on the branch.
+- `gh pr view 185 --repo governance-foundation/vibegov.io --json number,isDraft,mergeStateStatus,mergeable,reviewDecision,statusCheckRollup,headRefOid,url` passed.
+
+## PR State
+
+- PR: https://github.com/governance-foundation/vibegov.io/pull/185
+- Head before this proof-log commit: `f0179fb7959c3cb8f7cdfc61f828af97fdf4a546`.
+- State after validation: open, not draft, mergeable/MERGEABLE, merge state CLEAN.
+- Review decision: none reported.
+- Status checks: none reported.
+
+## Files Changed In This Run
+
+- `.work-agent/logs/issue-154-20260718-0001/*`
+
+## Next Action
+
+- Validator review PR #185 with this refreshed proof log.
