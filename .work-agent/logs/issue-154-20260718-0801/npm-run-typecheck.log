@@ -1,0 +1,9 @@
+COMMAND: npm run typecheck
+
+Unknown command: "run typecheck"
+
+
+Did you mean this?
+  npm run typecheck # run the "typecheck" package script
+To see a list of supported npm commands, run:
+  npm help
