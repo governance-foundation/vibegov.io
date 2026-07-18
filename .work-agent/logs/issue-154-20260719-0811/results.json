@@ -1,0 +1,82 @@
+[
+  {
+    "name": "git-fetch",
+    "command": "git fetch origin --prune",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:23.5919937+10:00",
+    "endedAt": "2026-07-19T08:14:25.6428419+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/git-fetch.log"
+  },
+  {
+    "name": "git-diff-check",
+    "command": "git diff --check",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:25.6481998+10:00",
+    "endedAt": "2026-07-19T08:14:26.7321863+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules",
+    "command": "node scripts/generate-published-rules.js",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:26.7339377+10:00",
+    "endedAt": "2026-07-19T08:14:27.5812877+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/generate-published-rules.log"
+  },
+  {
+    "name": "published-rules-diff",
+    "command": "git diff --exit-code -- docs/published",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:27.5823577+10:00",
+    "endedAt": "2026-07-19T08:14:28.4743615+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:28.4753214+10:00",
+    "endedAt": "2026-07-19T08:14:29.7011583+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:29.7021514+10:00",
+    "endedAt": "2026-07-19T08:14:31.1663573+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm-typecheck",
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:31.1673710+10:00",
+    "endedAt": "2026-07-19T08:14:37.4011954+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/npm-typecheck.log"
+  },
+  {
+    "name": "npm-build",
+    "command": "npm run build",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:37.4020830+10:00",
+    "endedAt": "2026-07-19T08:14:47.3065212+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/npm-build.log"
+  },
+  {
+    "name": "gh-pr-checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "exitCode": 1,
+    "startedAt": "2026-07-19T08:14:47.3073016+10:00",
+    "endedAt": "2026-07-19T08:14:49.7802352+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/gh-pr-checks.log"
+  },
+  {
+    "name": "git-status-after-validation",
+    "command": "git status --short --branch",
+    "exitCode": 0,
+    "startedAt": "2026-07-19T08:14:49.7808471+10:00",
+    "endedAt": "2026-07-19T08:14:50.6984223+10:00",
+    "log": ".work-agent/logs/issue-154-20260719-0811/git-status-after-validation.txt"
+  }
+]
