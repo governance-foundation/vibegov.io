@@ -1,0 +1,27 @@
+{
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedAtLocal": "2026-07-19T04:05:00+10:00",
+  "referenceUtc": "2026-07-18T18:05:00Z",
+  "startingCommit": "46945f4688bc53d82f2957c388a75055e93ec1c4",
+  "projectStatus": {
+    "status": "In Progress",
+    "updateResult": "explicitly re-applied In Progress on Governance Foundation Project #3"
+  },
+  "validation": [
+    { "command": "gh project item-edit", "status": "passed" },
+    { "command": "gh issue comment 154 --body-file issue-resume-comment.md", "status": "passed" },
+    { "command": "git fetch origin --prune", "status": "passed" },
+    { "command": "git diff --check", "status": "passed" },
+    { "command": "node scripts/generate-published-rules.js", "status": "passed" },
+    { "command": "git diff --exit-code -- docs/published", "status": "passed" },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "status": "passed", "score": 100 },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "status": "passed", "score": 100 },
+    { "command": "npm run typecheck", "status": "passed" },
+    { "command": "npm run build", "status": "passed" },
+    { "command": "git diff --cached --check", "status": "passed after normalizing proof logs to UTF-8/LF" }
+  ],
+  "evidenceLogPath": ".work-agent/logs/issue-154-20260719-0405/",
+  "nextAction": "validator review PR #185 after proof-refresh commit is pushed"
+}
