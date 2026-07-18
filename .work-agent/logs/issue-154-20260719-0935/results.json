@@ -1,0 +1,70 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedLocal": "2026-07-19 09:35 Australia/Sydney",
+  "referenceUtc": "2026-07-18 23:35 UTC",
+  "startingHead": "551315aa2e2d924eede953f3458df12dc4eaff8a",
+  "projectStatus": {
+    "attempted": true,
+    "result": "In Progress",
+    "commandExitCode": 0,
+    "reviewStatusAvailable": false,
+    "reviewStatusNote": "Project #3 exposes Todo, In Progress, and Done; no In review option is available."
+  },
+  "durableEvidence": {
+    "issueStartComment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5013368818",
+    "logPath": ".work-agent/logs/issue-154-20260719-0935/"
+  },
+  "validation": [
+    {
+      "command": "git fetch origin --prune",
+      "status": "passed",
+      "log": "git-fetch.log"
+    },
+    {
+      "command": "git diff --check",
+      "status": "passed",
+      "log": "git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "status": "passed",
+      "log": "generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "status": "passed",
+      "log": "published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "status": "passed",
+      "score": 100,
+      "log": "bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "status": "passed",
+      "score": 100,
+      "log": "bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "passed",
+      "log": "npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "status": "passed",
+      "log": "npm-build.log"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "status": "no checks reported",
+      "exitCode": 1,
+      "log": "gh-pr-checks.log"
+    }
+  ],
+  "nextAction": "validator review PR #185 after proof-log commit is pushed"
+}

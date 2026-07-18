@@ -1,0 +1,18 @@
+## issue-154-active-rule-set-alignment...origin/issue-154-active-rule-set-alignment
+AM .work-agent/logs/issue-154-20260719-0935/bootstrap-validator-bootstrap-gate.log
+AM .work-agent/logs/issue-154-20260719-0935/bootstrap-validator-empty-repo-bootstrap.log
+AM .work-agent/logs/issue-154-20260719-0935/generate-published-rules.log
+AM .work-agent/logs/issue-154-20260719-0935/gh-pr-checks.log
+A  .work-agent/logs/issue-154-20260719-0935/git-diff-cached-check-initial.log
+A  .work-agent/logs/issue-154-20260719-0935/git-status-before-validation.txt
+A  .work-agent/logs/issue-154-20260719-0935/head-before-proof-commit.txt
+A  .work-agent/logs/issue-154-20260719-0935/issue-resume-comment.md
+AM .work-agent/logs/issue-154-20260719-0935/npm-build.log
+AM .work-agent/logs/issue-154-20260719-0935/npm-typecheck.log
+AM .work-agent/logs/issue-154-20260719-0935/project-status-update.log
+A  .work-agent/logs/issue-154-20260719-0935/results.json
+A  .work-agent/logs/issue-154-20260719-0935/summary.md
+?? .work-agent/logs/issue-154-20260719-0935/git-diff-check.log
+?? .work-agent/logs/issue-154-20260719-0935/git-fetch.log
+?? .work-agent/logs/issue-154-20260719-0935/published-rules-diff.log
+exit_code=0
