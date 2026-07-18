@@ -1,0 +1,4 @@
+COMMAND: gh-pr-checks.log
+no checks reported on the 'issue-154-active-rule-set-alignment' branch
+exit_code=1
+duration_ms=1388

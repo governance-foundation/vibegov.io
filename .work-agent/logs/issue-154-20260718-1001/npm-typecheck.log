@@ -1,0 +1,7 @@
+COMMAND: npm-typecheck.log
+
+> website@0.0.0 typecheck
+> tsc
+
+exit_code=0
+duration_ms=4835
