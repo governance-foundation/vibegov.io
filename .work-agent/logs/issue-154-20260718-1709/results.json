@@ -1,0 +1,35 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "headBeforeProofLogCommit": "eaf346349415aef7f6713d9676e367f84b6715fa",
+  "runStartedLocal": "2026-07-18 17:09 Australia/Sydney",
+  "referenceUtc": "2026-07-18 07:09 UTC",
+  "projectStatus": "In Progress",
+  "projectStatusUpdate": "passed",
+  "projectReviewStatusNote": "Project #3 exposes Todo, In Progress, and Done; no In review option is available.",
+  "startCommentUrl": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5010362527",
+  "validation": {
+    "gitFetch": "passed",
+    "gitDiffCheck": "passed",
+    "generatePublishedRules": "passed",
+    "publishedRulesDiff": "passed",
+    "bootstrapGate": {
+      "passed": true,
+      "score": 100
+    },
+    "emptyRepoBootstrap": {
+      "passed": true,
+      "score": 100
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "initialCachedDiffCheck": "failed on generated command log CRLF artifacts; logs normalized",
+    "finalCachedDiffCheck": "passed",
+    "githubChecks": "none reported"
+  },
+  "filesChangedThisRun": [
+    ".work-agent/logs/issue-154-20260718-1709/*"
+  ],
+  "nextAction": "validator review PR #185 after this proof-log commit is pushed"
+}
