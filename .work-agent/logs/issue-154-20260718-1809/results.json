@@ -1,0 +1,74 @@
+[
+  {
+    "name": "git fetch origin --prune",
+    "command": "git fetch origin --prune",
+    "log": "git-fetch-origin-prune.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:15.4095983+10:00",
+    "finished": "2026-07-18T18:13:16.5002850+10:00"
+  },
+  {
+    "name": "git diff --check",
+    "command": "git diff --check",
+    "log": "git-diff-check.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:16.5061681+10:00",
+    "finished": "2026-07-18T18:13:16.7465794+10:00"
+  },
+  {
+    "name": "generate published rules",
+    "command": "node scripts/generate-published-rules.js",
+    "log": "generate-published-rules.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:16.7484303+10:00",
+    "finished": "2026-07-18T18:13:17.0206413+10:00"
+  },
+  {
+    "name": "published rules diff",
+    "command": "git diff --exit-code -- docs/published",
+    "log": "published-rules-diff.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:17.0221697+10:00",
+    "finished": "2026-07-18T18:13:17.5001323+10:00"
+  },
+  {
+    "name": "bootstrap validator bootstrap-gate",
+    "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "log": "bootstrap-validator-bootstrap-gate.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:17.5030183+10:00",
+    "finished": "2026-07-18T18:13:17.9851688+10:00"
+  },
+  {
+    "name": "bootstrap validator empty-repo-bootstrap",
+    "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "log": "bootstrap-validator-empty-repo-bootstrap.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:17.9865741+10:00",
+    "finished": "2026-07-18T18:13:18.5764948+10:00"
+  },
+  {
+    "name": "npm typecheck",
+    "command": "npm run typecheck",
+    "log": "npm-typecheck.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:18.5777064+10:00",
+    "finished": "2026-07-18T18:13:23.4419579+10:00"
+  },
+  {
+    "name": "npm build",
+    "command": "npm run build",
+    "log": "npm-build.log",
+    "exitCode": 0,
+    "started": "2026-07-18T18:13:23.4439241+10:00",
+    "finished": "2026-07-18T18:13:32.6145803+10:00"
+  },
+  {
+    "name": "gh pr checks",
+    "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "log": "gh-pr-checks.log",
+    "exitCode": 1,
+    "started": "2026-07-18T18:13:32.6157852+10:00",
+    "finished": "2026-07-18T18:13:34.3144036+10:00"
+  }
+]
