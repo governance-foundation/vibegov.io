@@ -1,0 +1,68 @@
+{
+  "run": "issue-154-20260719-0318",
+  "referenceUtc": "2026-07-18T17:18:00Z",
+  "localTime": "2026-07-19T03:18:00+10:00",
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "projectStatus": {
+    "status": "In Progress",
+    "update": "re-applied",
+    "log": ".work-agent/logs/issue-154-20260719-0318/project-status-update.log"
+  },
+  "durableEvidence": {
+    "resumeComment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5012198203",
+    "logPath": ".work-agent/logs/issue-154-20260719-0318/summary.md"
+  },
+  "validation": [
+    {
+      "command": "git fetch origin --prune",
+      "exitCode": 0,
+      "log": "git-fetch.log"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "log": "git-diff-check.log"
+    },
+    {
+      "command": "node scripts/generate-published-rules.js",
+      "exitCode": 0,
+      "log": "generate-published-rules.log"
+    },
+    {
+      "command": "git diff --exit-code -- docs/published",
+      "exitCode": 0,
+      "log": "published-rules-diff.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+      "exitCode": 0,
+      "score": 100,
+      "log": "bootstrap-validator-bootstrap-gate.log"
+    },
+    {
+      "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+      "exitCode": 0,
+      "score": 100,
+      "log": "bootstrap-validator-empty-repo-bootstrap.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "npm-typecheck.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "npm-build.log"
+    },
+    {
+      "command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+      "exitCode": 1,
+      "note": "GitHub reports no checks on the branch.",
+      "log": "gh-pr-checks.log"
+    }
+  ],
+  "nextAction": "validator review PR #185"
+}
