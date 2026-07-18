@@ -55,7 +55,8 @@ hard gate before product code:
   - repo access
   - branch-protection/admin capability when relevant
 - if any required capability is missing, record the exact remediation command or next action in INIT-TODO.md before proceeding
-- if GitHub automation is available, create, adopt, or normalize one canonical board target, explain canonical-board selection when multiple matches exist, link the repo, normalize the canonical fields, and report the final live board state
+- if GitHub automation is available, create, adopt, or normalize one canonical board target, prefer copying a configured canonical template for new boards, explain canonical-board selection when multiple matches exist, link the repo, normalize the canonical fields and default table view from bootstrap.json, and report the final live board state
+- if the available GitHub capability can create fields but cannot configure view visibility/order, record the exact manual remediation as blocked-with-tracked-issue instead of reporting the default view as configured
 - if GitHub automation is unavailable, report the exact missing capability and leave a tracked blocker or equivalent durable blocker note instead of silently treating bootstrap as complete
 - then stop
 
