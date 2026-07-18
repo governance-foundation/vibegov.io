@@ -29,6 +29,13 @@ Reference UTC: 2026-07-18 18:05 UTC.
 - `npm run typecheck` passed.
 - `npm run build` passed.
 - Initial staged proof-log check caught one Windows EOF whitespace artifact; logs were normalized to UTF-8/LF and final `git diff --cached --check` passed before commit.
+- `gh pr checks 185 --repo governance-foundation/vibegov.io` exited 1 because GitHub reports no checks on the branch; post-push statusCheckRollup is empty.
+
+## Post-Push PR State
+
+- Head commit: 07e3fb27012f501cdf9f4160f576c45e47d498ba
+- PR state: open, not draft, mergeable/CLEAN, no review decision reported.
+- GitHub checks: none reported.
 
 ## Files Changed In This Run
 

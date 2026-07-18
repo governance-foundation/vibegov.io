@@ -5,6 +5,8 @@
   "runStartedAtLocal": "2026-07-19T04:05:00+10:00",
   "referenceUtc": "2026-07-18T18:05:00Z",
   "startingCommit": "46945f4688bc53d82f2957c388a75055e93ec1c4",
+  "postPushHeadCommit": "07e3fb27012f501cdf9f4160f576c45e47d498ba",
+  "postPushPullRequestState": "open, not draft, mergeable/CLEAN, empty statusCheckRollup, no review decision reported",
   "projectStatus": {
     "status": "In Progress",
     "updateResult": "explicitly re-applied In Progress on Governance Foundation Project #3"
@@ -20,7 +22,8 @@
     { "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "status": "passed", "score": 100 },
     { "command": "npm run typecheck", "status": "passed" },
     { "command": "npm run build", "status": "passed" },
-    { "command": "git diff --cached --check", "status": "passed after normalizing proof logs to UTF-8/LF" }
+    { "command": "git diff --cached --check", "status": "passed after normalizing proof logs to UTF-8/LF" },
+    { "command": "gh pr checks 185 --repo governance-foundation/vibegov.io", "status": "exited 1 because GitHub reports no checks on the branch" }
   ],
   "evidenceLogPath": ".work-agent/logs/issue-154-20260719-0405/",
   "nextAction": "validator review PR #185 after proof-refresh commit is pushed"
