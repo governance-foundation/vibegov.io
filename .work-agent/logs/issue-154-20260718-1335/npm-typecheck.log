@@ -1,0 +1,6 @@
+START 2026-07-18T13:38:33.3567091+10:00
+COMMAND npm-typecheck
+EXIT 0
+
+> website@0.0.0 typecheck
+> tsc

@@ -1,0 +1,9 @@
+START 2026-07-18T13:38:32.5787877+10:00
+COMMAND bootstrap-validator-bootstrap-gate
+EXIT 0
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-18T03-38-32-948Z-bootstrap-gate"
+}

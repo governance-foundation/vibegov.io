@@ -1,0 +1,4 @@
+START 2026-07-18T13:38:32.4019877+10:00
+COMMAND generate-published-rules
+EXIT 0
+Published governance docs regenerated from canonical .mdc files.

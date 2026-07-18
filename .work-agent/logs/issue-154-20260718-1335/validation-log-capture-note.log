@@ -1,0 +1,1 @@
+Initial validation execution passed but log file writes failed because Resolve-Path was used before files existed; this rerun captured the authoritative logs.

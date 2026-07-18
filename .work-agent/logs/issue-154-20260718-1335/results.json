@@ -1,0 +1,77 @@
+{
+
+  "git-fetch-prune": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\git-fetch-prune.log"
+
+  },
+
+  "git-diff-check": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\git-diff-check.log"
+
+  },
+
+  "generate-published-rules": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\generate-published-rules.log"
+
+  },
+
+  "published-rules-diff": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\published-rules-diff.log"
+
+  },
+
+  "bootstrap-validator-bootstrap-gate": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\bootstrap-validator-bootstrap-gate.log"
+
+  },
+
+  "bootstrap-validator-empty-repo-bootstrap": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\bootstrap-validator-empty-repo-bootstrap.log"
+
+  },
+
+  "npm-typecheck": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\npm-typecheck.log"
+
+  },
+
+  "npm-build": {
+
+    "exitCode": 0,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\npm-build.log"
+
+  },
+
+  "gh-pr-checks": {
+
+    "exitCode": 1,
+
+    "log": ".work-agent\\logs\\issue-154-20260718-1335\\gh-pr-checks.log",
+
+    "note": "nonzero is acceptable when GitHub reports no checks"
+
+  }
+
+}
