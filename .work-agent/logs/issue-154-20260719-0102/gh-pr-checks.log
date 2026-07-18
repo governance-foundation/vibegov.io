@@ -1,0 +1,7 @@
+Command: gh pr checks 185 --repo governance-foundation/vibegov.io
+Started: 2026-07-19T01:05:39.3925276+10:00
+
+no checks reported on the 'issue-154-active-rule-set-alignment' branch
+
+Exit code: 1
+Finished: 2026-07-19T01:05:41.9164093+10:00
