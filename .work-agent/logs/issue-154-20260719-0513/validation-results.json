@@ -1,0 +1,57 @@
+[
+  {
+    "name": "git-fetch-origin-prune",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\git-fetch-origin-prune.log"
+  },
+  {
+    "name": "git-status-after-fetch",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\git-status-after-fetch.log"
+  },
+  {
+    "name": "git-diff-check",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\git-diff-check.log"
+  },
+  {
+    "name": "generate-published-rules",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\generate-published-rules.log"
+  },
+  {
+    "name": "git-diff-exit-code-docs-published",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\git-diff-exit-code-docs-published.log"
+  },
+  {
+    "name": "bootstrap-validator-bootstrap-gate",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "name": "bootstrap-validator-empty-repo-bootstrap",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "name": "npm-run-typecheck",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\npm-run-typecheck.log"
+  },
+  {
+    "name": "npm-run-build",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\npm-run-build.log"
+  },
+  {
+    "name": "gh-pr-checks-185",
+    "exitCode": 1,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\gh-pr-checks-185.log"
+  },
+  {
+    "name": "gh-pr-view-after-validation",
+    "exitCode": 0,
+    "log": ".work-agent\\logs\\issue-154-20260719-0513\\gh-pr-view-after-validation.log"
+  }
+]

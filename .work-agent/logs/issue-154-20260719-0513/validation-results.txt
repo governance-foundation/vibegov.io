@@ -1,0 +1,14 @@
+
+name                                     exitCode log
+----                                     -------- ---
+git-fetch-origin-prune                          0 .work-agent\logs\issue-154-20260719-0513\git-fetch-origin-prune.log
+git-status-after-fetch                          0 .work-agent\logs\issue-154-20260719-0513\git-status-after-fetch.log
+git-diff-check                                  0 .work-agent\logs\issue-154-20260719-0513\git-diff-check.log
+generate-published-rules                        0 .work-agent\logs\issue-154-20260719-0513\generate-published-rules.log
+git-diff-exit-code-docs-published               0 .work-agent\logs\issue-154-20260719-0513\git-diff-exit-code-docs-publ?
+bootstrap-validator-bootstrap-gate              0 .work-agent\logs\issue-154-20260719-0513\bootstrap-validator-bootstra?
+bootstrap-validator-empty-repo-bootstrap        0 .work-agent\logs\issue-154-20260719-0513\bootstrap-validator-empty-re?
+npm-run-typecheck                               0 .work-agent\logs\issue-154-20260719-0513\npm-run-typecheck.log
+npm-run-build                                   0 .work-agent\logs\issue-154-20260719-0513\npm-run-build.log
+gh-pr-checks-185                                1 .work-agent\logs\issue-154-20260719-0513\gh-pr-checks-185.log
+gh-pr-view-after-validation                     0 .work-agent\logs\issue-154-20260719-0513\gh-pr-view-after-validation.?
