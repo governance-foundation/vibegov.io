@@ -33,7 +33,6 @@ Reference UTC: 2026-07-18 18:05 UTC.
 
 ## Post-Push PR State
 
-- Head commit: 07e3fb27012f501cdf9f4160f576c45e47d498ba
 - PR state: open, not draft, mergeable/CLEAN, no review decision reported.
 - GitHub checks: none reported.
 

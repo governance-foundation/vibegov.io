@@ -5,7 +5,6 @@
   "runStartedAtLocal": "2026-07-19T04:05:00+10:00",
   "referenceUtc": "2026-07-18T18:05:00Z",
   "startingCommit": "46945f4688bc53d82f2957c388a75055e93ec1c4",
-  "postPushHeadCommit": "07e3fb27012f501cdf9f4160f576c45e47d498ba",
   "postPushPullRequestState": "open, not draft, mergeable/CLEAN, empty statusCheckRollup, no review decision reported",
   "projectStatus": {
     "status": "In Progress",
