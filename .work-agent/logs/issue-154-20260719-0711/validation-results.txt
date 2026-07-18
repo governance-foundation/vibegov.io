@@ -1,0 +1,16 @@
+Validation refreshed for issue 154 / PR 185 on 2026-07-19 07:11 Australia/Sydney.
+
+Passed:
+- gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json
+- gh issue comment 154 --repo governance-foundation/vibegov.io --body-file .work-agent/logs/issue-154-20260719-0711/issue-resume-comment.md
+- git fetch origin --prune
+- git diff --check
+- node scripts/generate-published-rules.js
+- git diff --exit-code -- docs/published
+- node .internal/bootstrap-validator/index.js --scenario bootstrap-gate: passed, score 100
+- node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap: passed, score 100
+- npm run typecheck
+- npm run build
+
+GitHub checks:
+- gh pr checks 185 --repo governance-foundation/vibegov.io exited 1 because GitHub reports no checks on the branch.
