@@ -1,0 +1,5 @@
+Issue 154 resume run
+Run start: 2026-07-18 16:01 Australia/Sydney
+Reference UTC: 2026-07-18 06:01 UTC
+Branch: issue-154-active-rule-set-alignment
+PR: https://github.com/governance-foundation/vibegov.io/pull/185
