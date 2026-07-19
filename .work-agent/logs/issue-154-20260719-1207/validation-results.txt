@@ -1,0 +1,9 @@
+git-fetch=0
+git-diff-check=0
+generate-published-rules=0
+published-rules-diff=0
+bootstrap-gate=0
+empty-repo-bootstrap=0
+typecheck=0
+build=0
+pr-checks=1
