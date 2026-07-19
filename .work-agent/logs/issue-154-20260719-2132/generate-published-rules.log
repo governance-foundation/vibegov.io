@@ -1,0 +1,5 @@
+COMMAND: node scripts/generate-published-rules.js
+START: 2026-07-19T21:32:59.0853949+10:00
+Published governance docs regenerated from canonical .mdc files.
+END: 2026-07-19T21:32:59.3438158+10:00
+EXIT_CODE: 0
