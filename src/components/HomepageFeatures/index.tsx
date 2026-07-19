@@ -12,23 +12,23 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Traceable Delivery',
+    title: 'Publish Increments',
     description:
-      'Keep intent, specs, issues, and evidence connected so work stays reviewable as it moves.',
+      'Release one governance page at a time while keeping a public, stable site online.',
     ctaLabel: 'Introduction',
     ctaTo: '/docs/intro',
   },
   {
-    title: 'Honest Completion',
+    title: 'Collect Signal Early',
     description:
-      'Treat done as proof-backed completion, not just generated output or partial review.',
+      'Every page has a feedback path to GitHub Issues so ambiguity gets resolved in public.',
     ctaLabel: 'Evidence Closing',
     ctaTo: '/docs/mode-selection-and-evidence-closing',
   },
   {
-    title: 'Portable Governance',
+    title: 'Build Durable Guidance',
     description:
-      'Use `.governance/` as the canonical source and adapt it across tools and providers.',
+      'Keep governance directional and reusable, while project-specific details evolve separately.',
     ctaLabel: 'Published Rules',
     ctaTo: '/docs/published/gov-01-instructions',
   },
