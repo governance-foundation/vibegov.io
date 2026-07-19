@@ -1,0 +1,40 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedLocal": "2026-07-19T11:13:00+10:00",
+  "referenceUtc": "2026-07-19T01:13:00Z",
+  "projectStatus": {
+    "target": "In Progress",
+    "result": "passed",
+    "note": "Project #3 has no In review option; item remains In Progress while PR #185 awaits validator review."
+  },
+  "validation": {
+    "gitDiffCheck": "passed",
+    "generatePublishedRules": "passed",
+    "publishedRulesDiff": "passed",
+    "bootstrapGate": {
+      "passed": true,
+      "score": 100
+    },
+    "emptyRepoBootstrap": {
+      "passed": true,
+      "score": 100
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "stagedDiffCheck": "passed after normalizing generated proof logs to UTF-8/LF",
+    "githubChecks": "none reported"
+  },
+  "prState": {
+    "state": "OPEN",
+    "isDraft": false,
+    "mergeStateStatus": "CLEAN",
+    "statusCheckRollup": []
+  },
+  "durableEvidence": {
+    "issueResumeComment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5013642346",
+    "logPath": ".work-agent/logs/issue-154-20260719-1113/"
+  },
+  "nextAction": "validator review PR #185"
+}
