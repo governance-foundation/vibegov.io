@@ -1,0 +1,15 @@
+Command:
+npm run build
+
+Exit code: 0
+
+Output:
+> website@0.0.0 build
+> docusaurus build
+
+[INFO] [en] Creating an optimized production build...
+i Compiling Client
+i Compiling Server
+Client: Compiled successfully in 3.13s
+Server: Compiled successfully in 10.30s
+[SUCCESS] Generated static files in "build".

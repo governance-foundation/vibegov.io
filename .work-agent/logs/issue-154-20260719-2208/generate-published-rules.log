@@ -1,0 +1,7 @@
+Command:
+node scripts/generate-published-rules.js
+
+Exit code: 0
+
+Output:
+Published governance docs regenerated from canonical .mdc files.

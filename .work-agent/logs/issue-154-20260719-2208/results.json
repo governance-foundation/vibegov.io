@@ -1,0 +1,29 @@
+{
+  "issue": 154,
+  "pullRequest": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedLocal": "2026-07-19 22:08 Australia/Sydney",
+  "referenceUtc": "2026-07-19 12:08 UTC",
+  "projectStatus": {
+    "status": "In Progress",
+    "updateResult": "passed",
+    "projectId": "PVT_kwDOA_2mn84Bc1k8",
+    "itemId": "PVTI_lADOA_2mn84Bc1k8zgyJwBA",
+    "fieldId": "PVTSSF_lADOA_2mn84Bc1k8zhXbeDs",
+    "optionId": "47fc9ee4",
+    "reviewStatusNote": "Project #3 exposes Todo, In Progress, and Done; no In review option is available."
+  },
+  "issueResumeComment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5015658099",
+  "validation": [
+    {"command": "git diff --check", "exitCode": 0, "result": "passed"},
+    {"command": "node scripts/generate-published-rules.js", "exitCode": 0, "result": "passed"},
+    {"command": "git diff --exit-code -- docs/published", "exitCode": 0, "result": "passed"},
+    {"command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "exitCode": 0, "result": "passed", "score": 100, "reportDir": ".internal/bootstrap-validator/reports/2026-07-19T12-10-55-160Z-bootstrap-gate"},
+    {"command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "exitCode": 0, "result": "passed", "score": 100, "reportDir": ".internal/bootstrap-validator/reports/2026-07-19T12-10-55-198Z-empty-repo-bootstrap"},
+    {"command": "npm run typecheck", "exitCode": 0, "result": "passed"},
+    {"command": "npm run build", "exitCode": 0, "result": "passed"},
+    {"command": "gh pr checks 185 --repo governance-foundation/vibegov.io", "exitCode": 1, "result": "no GitHub checks reported"}
+  ],
+  "cleanupState": "No source or docs drift was produced by validation; only this run proof files were added before commit.",
+  "nextAction": "validator review PR #185"
+}

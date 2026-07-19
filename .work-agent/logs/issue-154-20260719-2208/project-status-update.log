@@ -1,0 +1,7 @@
+Command:
+gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json
+
+Exit code: 0
+
+Output:
+{"body":"Issue #154 project item returned successfully from GitHub after re-applying In Progress.","id":"PVTI_lADOA_2mn84Bc1k8zgyJwBA","title":"Align active governance rule set across bootstrap sources","type":"Issue","url":"https://github.com/governance-foundation/vibegov.io/issues/154"}

@@ -1,0 +1,7 @@
+Command:
+git status --short --branch
+
+Exit code: 0
+
+Output:
+## issue-154-active-rule-set-alignment...origin/issue-154-active-rule-set-alignment
