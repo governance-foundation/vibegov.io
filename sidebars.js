@@ -38,6 +38,7 @@ const sidebars = {
         'faq/when-do-i-use-bootstrap-init',
         'faq/when-do-i-use-bootstrap-update',
         'faq/when-do-i-use-the-feedback-prompt',
+        'faq/when-do-i-use-bootstrap-review',
       ],
     },
     'branch-protection-checklist',

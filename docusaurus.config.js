@@ -12,7 +12,8 @@ const structuredData = [
     name: 'VibeGov',
     url: 'https://vibegov.io/',
     logo: 'https://vibegov.io/img/vibegov-icon-light.svg',
-    description: 'Governance for AI-assisted software delivery.',
+    description:
+      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
     sameAs: ['https://github.com/governance-foundation/vibegov.io'],
   },
   {
@@ -21,7 +22,8 @@ const structuredData = [
     '@id': 'https://vibegov.io/#website',
     url: 'https://vibegov.io/',
     name: 'VibeGov',
-    description: 'Governance for AI-assisted software delivery.',
+    description:
+      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
     inLanguage: 'en',
     publisher: {
       '@id': 'https://vibegov.io/#organization',
@@ -32,7 +34,8 @@ const structuredData = [
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VibeGov',
-  tagline: 'Governance for AI-assisted software delivery.',
+  tagline:
+    'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
   favicon: 'img/vibegov-icon-light.svg',
 
   // Set the production url of your site here
@@ -152,7 +155,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Start Here',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
             ],
@@ -184,7 +187,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} VibeGov. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} VibeGov.`,
       },
       prism: {
         theme: lightCodeTheme,
