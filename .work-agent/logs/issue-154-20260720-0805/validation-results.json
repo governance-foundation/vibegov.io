@@ -1,0 +1,68 @@
+[
+  {
+    "Name": "git-fetch-origin-prune",
+    "Command": "git fetch origin --prune",
+    "ExitCode": 0,
+    "Output": ""
+  },
+  {
+    "Name": "git-diff-check",
+    "Command": "git diff --check",
+    "ExitCode": 0,
+    "Output": ""
+  },
+  {
+    "Name": "generate-published-rules",
+    "Command": "node scripts/generate-published-rules.js",
+    "ExitCode": 0,
+    "Output": "Published governance docs regenerated from canonical .mdc files."
+  },
+  {
+    "Name": "docs-published-diff",
+    "Command": "git diff --exit-code -- docs/published",
+    "ExitCode": 0,
+    "Output": ""
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "Command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "ExitCode": 0,
+    "Output": "{\r\n  \"scenarioId\": \"bootstrap-gate\",\r\n  \"passed\": true,\r\n  \"score\": 100,\r\n  \"reportDir\": \"C:\\\\projects\\\\governance-foundation\\\\vibegov.io\\\\.internal\\\\bootstrap-validator\\\\reports\\\\2026-07-19T22-07-35-648Z-bootstrap-gate\"\r\n}"
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap",
+    "Command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "ExitCode": 0,
+    "Output": "{\r\n  \"scenarioId\": \"empty-repo-bootstrap\",\r\n  \"passed\": true,\r\n  \"score\": 100,\r\n  \"reportDir\": \"C:\\\\projects\\\\governance-foundation\\\\vibegov.io\\\\.internal\\\\bootstrap-validator\\\\reports\\\\2026-07-19T22-07-36-021Z-empty-repo-bootstrap\"\r\n}"
+  },
+  {
+    "Name": "npm-typecheck",
+    "Command": "npm run typecheck",
+    "ExitCode": 0,
+    "Output": "\r\n> website@0.0.0 typecheck\r\n> tsc"
+  },
+  {
+    "Name": "npm-build",
+    "Command": "npm run build",
+    "ExitCode": 0,
+    "Output": "\r\n> website@0.0.0 build\r\n> docusaurus build\r\n\r\n\r\n╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯\r\n\r\n[INFO] [en] Creating an optimized production build...\r\ni Compiling Client\r\ni Compiling Server\r\n√ Client: Compiled successfully in 1.59s\r\n√ Server: Compiled successfully in 6.04s\r\n[SUCCESS] Generated static files in \"build\".\r\n[INFO] Use `npm run serve` command to test your build locally."
+  },
+  {
+    "Name": "gh-pr-checks-185",
+    "Command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "ExitCode": 1,
+    "Output": ""
+  },
+  {
+    "Name": "gh-pr-view-after-validation",
+    "Command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefOid,url",
+    "ExitCode": 0,
+    "Output": "{\"headRefOid\":\"acc59de55b5acba05e702833649247ec45bc2ebf\",\"isDraft\":false,\"mergeStateStatus\":\"CLEAN\",\"number\":185,\"reviewDecision\":\"\",\"state\":\"OPEN\",\"statusCheckRollup\":[],\"url\":\"https://github.com/governance-foundation/vibegov.io/pull/185\"}"
+  },
+  {
+    "Name": "git-status-after-validation",
+    "Command": "git status --short --branch",
+    "ExitCode": 0,
+    "Output": "## issue-154-active-rule-set-alignment...origin/issue-154-active-rule-set-alignment\r\n?? .work-agent/logs/issue-154-20260720-0805/"
+  }
+]

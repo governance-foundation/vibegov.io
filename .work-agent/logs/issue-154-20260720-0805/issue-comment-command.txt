@@ -1,0 +1,1 @@
+gh issue comment 154 --repo governance-foundation/vibegov.io --body-file "C:\projects\governance-foundation\vibegov.io\.work-agent\logs\issue-154-20260720-0805\issue-resume-comment.md"
