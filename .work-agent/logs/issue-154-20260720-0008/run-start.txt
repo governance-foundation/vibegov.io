@@ -1,0 +1,5 @@
+Run start: 2026-07-20 00:08 Australia/Sydney
+Reference UTC: 2026-07-19 14:08 UTC
+Issue: #154
+Branch: issue-154-active-rule-set-alignment
+PR: #185
