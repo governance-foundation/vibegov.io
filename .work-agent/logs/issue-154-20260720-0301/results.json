@@ -1,0 +1,41 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "runStartedAustraliaSydney": "2026-07-20 03:01",
+  "referenceUtc": "2026-07-19 17:01 UTC",
+  "projectStatus": {
+    "name": "In Progress",
+    "update": "passed",
+    "itemId": "PVTI_lADOA_2mn84Bc1k8zgyJwBA",
+    "projectId": "PVT_kwDOA_2mn84Bc1k8",
+    "fieldId": "PVTSSF_lADOA_2mn84Bc1k8zhXbeDs",
+    "optionId": "47fc9ee4"
+  },
+  "validation": {
+    "gitFetchOriginPrune": "passed",
+    "gitDiffCheck": "passed",
+    "generatePublishedRules": "passed",
+    "publishedRulesDiff": "passed",
+    "bootstrapGate": {
+      "passed": true,
+      "score": 100
+    },
+    "emptyRepoBootstrap": {
+      "passed": true,
+      "score": 100
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "githubPrChecks": "no checks reported"
+  },
+  "prStateBeforeProofCommit": {
+    "state": "OPEN",
+    "draft": false,
+    "mergeState": "CLEAN",
+    "reviewDecision": "",
+    "head": "282e38ea063361edf7d68c09629fd30ba672a990"
+  },
+  "issueResumeComment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5016616828",
+  "nextAction": "validator review PR #185 after proof-log commit is pushed"
+}
