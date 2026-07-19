@@ -1,0 +1,5 @@
+COMMAND: generate-published-rules.log
+START: 2026-07-20T07:12:51.8922630+10:00
+Published governance docs regenerated from canonical .mdc files.
+EXIT_CODE: 0
+END: 2026-07-20T07:12:51.9690068+10:00
