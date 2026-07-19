@@ -22,8 +22,8 @@ const FeatureList: FeatureItem[] = [
     title: 'Collect Signal Early',
     description:
       'Every page has a feedback path to GitHub Issues so ambiguity gets resolved in public.',
-    ctaLabel: 'Evidence Closing',
-    ctaTo: '/docs/mode-selection-and-evidence-closing',
+    ctaLabel: 'Contribute',
+    ctaTo: '/docs/contribute',
   },
   {
     title: 'Build Durable Guidance',
