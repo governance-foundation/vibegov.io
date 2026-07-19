@@ -1,0 +1,16 @@
+{
+  "git-fetch.log": 0,
+  "git-status-before.txt": 0,
+  "head-commit.txt": 0,
+  "project-status-update.log": 0,
+  "git-diff-check.log": 0,
+  "generate-published-rules.log": 0,
+  "published-rules-diff.log": 0,
+  "bootstrap-validator-bootstrap-gate.log": 0,
+  "bootstrap-validator-empty-repo-bootstrap.log": 0,
+  "npm-typecheck.log": 0,
+  "npm-build.log": 0,
+  "gh-pr-checks.log": 1,
+  "pr-state.json": 0,
+  "git-status-after.txt": 0
+}
