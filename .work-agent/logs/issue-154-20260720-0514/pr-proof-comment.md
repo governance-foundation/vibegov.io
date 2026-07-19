@@ -5,7 +5,7 @@ Project status update result: explicitly re-applied In Progress on Governance Fo
 Project review-status note: Project #3 exposes only Todo, In Progress, and Done; no In review option is available, so the item remains In Progress while PR #185 awaits validator review.
 
 Branch: issue-154-active-rule-set-alignment
-Commit: TO_BE_FILLED_AFTER_COMMIT
+Commit: recorded in the live PR and issue proof comments after push
 PR: https://github.com/governance-foundation/vibegov.io/pull/185
 
 PR state after push: open, not draft, mergeable/CLEAN, with no GitHub checks reported and no review decision reported.
@@ -31,4 +31,4 @@ Validation refreshed:
 - gh pr checks 185 --repo governance-foundation/vibegov.io exited 1 because GitHub reports no checks on the branch; post-push statusCheckRollup is empty.
 
 Cleanup state: local branch is clean and pushed to origin.
-Next action: validator review PR #185 at commit TO_BE_FILLED_AFTER_COMMIT.
+Next action: validator review PR #185 at the final pushed commit from this run.
