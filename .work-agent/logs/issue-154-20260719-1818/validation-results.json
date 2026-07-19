@@ -1,0 +1,100 @@
+[
+  {
+    "Name": "project-status-update",
+    "Command": "gh project item-edit --id PVTI_lADOA_2mn84Bc1k8zgyJwBA --project-id PVT_kwDOA_2mn84Bc1k8 --field-id PVTSSF_lADOA_2mn84Bc1k8zhXbeDs --single-select-option-id 47fc9ee4 --format json",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\project-status-update.log"
+  },
+  {
+    "Name": "issue-resume-comment-post",
+    "Command": "gh issue comment 154 --repo governance-foundation/vibegov.io --body-file C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\issue-resume-comment.md",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\issue-resume-comment-post.log"
+  },
+  {
+    "Name": "git-fetch-origin-prune",
+    "Command": "git fetch origin --prune",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\git-fetch-origin-prune.log"
+  },
+  {
+    "Name": "git-status-before-validation",
+    "Command": "git status --short --branch",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\git-status-before-validation.log"
+  },
+  {
+    "Name": "git-diff-check",
+    "Command": "git diff --check",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\git-diff-check.log"
+  },
+  {
+    "Name": "generate-published-rules",
+    "Command": "node scripts/generate-published-rules.js",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\generate-published-rules.log"
+  },
+  {
+    "Name": "published-rules-diff",
+    "Command": "git diff --exit-code -- docs/published",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\published-rules-diff.log"
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "Command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap",
+    "Command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "Name": "npm-run-typecheck",
+    "Command": "npm run typecheck",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\npm-run-typecheck.log"
+  },
+  {
+    "Name": "npm-run-build",
+    "Command": "npm run build",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\npm-run-build.log"
+  },
+  {
+    "Name": "gh-pr-checks",
+    "Command": "gh pr checks 185 --repo governance-foundation/vibegov.io",
+    "ExitCode": 1,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\gh-pr-checks.log"
+  },
+  {
+    "Name": "gh-pr-view-after-validation",
+    "Command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefOid,url",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\gh-pr-view-after-validation.log"
+  },
+  {
+    "Name": "git-status-after-validation",
+    "Command": "git status --short --branch",
+    "ExitCode": 0,
+    "Allowed": true,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260719-1818\\git-status-after-validation.log"
+  }
+]
