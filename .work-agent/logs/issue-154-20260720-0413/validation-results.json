@@ -1,0 +1,11 @@
+{
+  "git-fetch-origin-prune": 0,
+  "git-diff-check": 0,
+  "generate-published-rules": 0,
+  "docs-published-diff": 0,
+  "bootstrap-validator-bootstrap-gate": 0,
+  "bootstrap-validator-empty-repo-bootstrap": 0,
+  "npm-typecheck": 0,
+  "npm-build": 0,
+  "gh-pr-checks-185": 1
+}
