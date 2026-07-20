@@ -1,0 +1,70 @@
+
+=== git fetch origin --prune ===
+2026-07-20T10:04:23.5262380+10:00
+Exit code: 0
+
+=== git diff --check ===
+2026-07-20T10:04:24.3892657+10:00
+Exit code: 0
+
+=== node scripts/generate-published-rules.js ===
+2026-07-20T10:04:24.4816728+10:00
+Published governance docs regenerated from canonical .mdc files.
+Exit code: 0
+
+=== git diff --exit-code -- docs/published ===
+2026-07-20T10:04:24.5531709+10:00
+Exit code: 0
+
+=== node .internal/bootstrap-validator/index.js --scenario bootstrap-gate ===
+2026-07-20T10:04:24.6456326+10:00
+{
+  "scenarioId": "bootstrap-gate",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-20T00-04-24-990Z-bootstrap-gate"
+}
+Exit code: 0
+
+=== node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap ===
+2026-07-20T10:04:25.0181411+10:00
+{
+  "scenarioId": "empty-repo-bootstrap",
+  "passed": true,
+  "score": 100,
+  "reportDir": "C:\\projects\\governance-foundation\\vibegov.io\\.internal\\bootstrap-validator\\reports\\2026-07-20T00-04-25-389Z-empty-repo-bootstrap"
+}
+Exit code: 0
+
+=== npm run typecheck ===
+2026-07-20T10:04:25.4139701+10:00
+
+> website@0.0.0 typecheck
+> tsc
+
+Exit code: 0
+
+=== npm run build ===
+2026-07-20T10:04:30.2159004+10:00
+
+> website@0.0.0 build
+> docusaurus build
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+[INFO] [en] Creating an optimized production build...
+i Compiling Client
+i Compiling Server
+√ Client: Compiled successfully in 1.48s
+√ Server: Compiled successfully in 5.29s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+Exit code: 0
+
+=== gh pr checks 185 --repo governance-foundation/vibegov.io ===
+2026-07-20T10:04:39.4240443+10:00
+no checks reported on the 'issue-154-active-rule-set-alignment' branch
+Exit code: 1
+
+Non-gating check state exit code: 1
