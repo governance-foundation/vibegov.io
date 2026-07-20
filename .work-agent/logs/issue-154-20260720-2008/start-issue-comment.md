@@ -1,0 +1,13 @@
+## Developer resume - issue #154
+
+Run: 2026-07-20 20:08 Australia/Sydney / 2026-07-20 10:08 UTC
+
+Resuming active branch issue-154-active-rule-set-alignment and open PR #185 before selecting new work, per VibeGov worker startup rules.
+
+Project status update failed: GraphQL: API rate limit already exceeded for user ID 170312.
+
+Project review-status note: Governance Foundation Project #3 previously exposed Todo, In Progress, and Done; no In review option was available in the latest proof, so this PR remains in the active progress state while awaiting validator review.
+
+GitHub API note: GraphQL rate limit was exhausted at startup and reset was reported for 2026-07-20 20:14:04 Australia/Sydney; REST issue/PR reads remained available.
+
+Proof refresh: git diff check, published rule generation/drift check, bootstrap validator scenarios, typecheck, build, and PR status check all ran. Logs saved under .work-agent/logs/issue-154-20260720-2008/.

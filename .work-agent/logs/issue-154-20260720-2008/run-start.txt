@@ -1,0 +1,4 @@
+Run: 2026-07-20 20:08 Australia/Sydney / 2026-07-20 10:08 UTC
+Issue: https://github.com/governance-foundation/vibegov.io/issues/154
+PR: https://github.com/governance-foundation/vibegov.io/pull/185
+Branch: issue-154-active-rule-set-alignment
