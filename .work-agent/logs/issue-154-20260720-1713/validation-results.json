@@ -1,0 +1,10 @@
+{
+  "git_fetch": 0,
+  "git_diff_check": 0,
+  "generate_published_rules": 0,
+  "docs_published_diff": 0,
+  "bootstrap_gate": 0,
+  "empty_repo_bootstrap": 0,
+  "typecheck": 0,
+  "build": 0
+}
