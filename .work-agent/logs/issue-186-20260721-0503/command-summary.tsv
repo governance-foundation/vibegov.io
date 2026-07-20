@@ -1,0 +1,10 @@
+command	result	log
+git diff --check	pass	.work-agent/logs/issue-186-20260721-0503/git-diff-check.log
+git diff --check origin/develop...HEAD	pass	.work-agent/logs/issue-186-20260721-0503/git-diff-check-origin-develop-head.log
+node --check scripts/validate-project-bootstrap-contract.js	pass	.work-agent/logs/issue-186-20260721-0503/node-check-validate-project-bootstrap-contract.log
+node scripts/generate-published-rules.js	pass	.work-agent/logs/issue-186-20260721-0503/generate-published-rules.log
+git diff --exit-code -- docs/published/gov-02-workflow.md	pass	.work-agent/logs/issue-186-20260721-0503/published-gov-02-diff-check.log
+npm run typecheck	pass	.work-agent/logs/issue-186-20260721-0503/npm-run-typecheck.log
+npm run build	pass	.work-agent/logs/issue-186-20260721-0503/npm-run-build.log
+npm run release:build	pass	.work-agent/logs/issue-186-20260721-0503/npm-run-release-build.log
+gh pr checks 187	no checks reported	.work-agent/logs/issue-186-20260721-0503/pr-checks.log

@@ -1,0 +1,8 @@
+
+> website@0.0.0 release:build
+> node scripts/build-release-artifact.js
+
+Created VibeGov release bundle: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.7.21-4797472\vibegov-2026.7.21-4797472.zip
+Prepared flat release assets: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.7.21-4797472\flat
+(node:28248) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+(Use `node --trace-deprecation ...` to show where the warning was created)

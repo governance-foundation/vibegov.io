@@ -1,0 +1,18 @@
+Issue: #186 Align canonical GitHub Project priority scale and table columns
+Branch: docs/186-project-board-columns
+PR: #187 https://github.com/governance-foundation/vibegov.io/pull/187
+Run started: 2026-07-21 02:07 Australia/Sydney
+Commit validated before evidence commit: ea7ba430eae38671366452ec7e25c5286fe32e21
+Project Status transition result: In Progress (GraphQL update mutation succeeded using option 47fc9ee4)
+In review transition: unavailable; VibeGov Project #3 Status options are Todo, In Progress, Done, Blocked.
+Remote checks: no checks reported on docs/186-project-board-columns.
+Validation passed:
+- git diff --check
+- node --check scripts/validate-project-bootstrap-contract.js
+- node scripts/generate-published-rules.js
+- git diff --exit-code -- docs/published/gov-02-workflow.md
+- npm run typecheck
+- npm run build
+- npm run release:build (passed with existing Node DEP0190 warning from release script child-process usage)
+Cleanup state before evidence commit: branch clean except this run's untracked evidence log directory.
+Next action: validator review for PR #187.

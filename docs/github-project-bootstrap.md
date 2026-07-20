@@ -62,19 +62,52 @@ Required workflow field:
 - `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
 
 Required planning fields:
-- `Project Priority`: `P0`, `P1`, `P2`, `P3`, `P4`, `P5`
+- `Project Priority`: `P0`, `P1`, `P2`, `P3`, `P4`
 - `Order`: number
 - `Priority`: `Urgent`, `High`, `Medium`, `Low`
 - `Size`: `XS`, `S`, `M`, `L`, `XL`
 
+Required default table view columns, in order:
+1. `Title`
+2. `Assignees`
+3. `Status`
+4. `Project Priority`
+5. `Order`
+6. `Priority`
+7. `Repository`
+
+`Size` remains canonical but may be hidden in the default table view. Additional fields may also exist as hidden fields.
+
+### Supported setup path
+
+For a new project, prefer copying a configured canonical project template with `gh project copy`. GitHub copies the template's views and custom fields together, which preserves the table layout without reconstructing it field by field. Repository links are not copied, so bootstrap must still link the target repository afterwards.
+
+For a newly created project without a template, use `gh project field-create` to create `Project Priority`, `Order`, `Priority`, and `Size`. The GitHub CLI supports field creation but does not expose a command for showing, hiding, or reordering fields in a project view.
+
+For an adopted board, configure the default table view through an available authenticated GitHub web/browser capability:
+1. open the default table view
+2. use **View -> Configuration -> Fields** to show only the required visible fields
+3. drag the field headers into the canonical order
+4. verify and report the final visible column sequence
+
+If no supported view-configuration capability is available, write the exact steps above to `INIT-TODO.md` as `blocked-with-tracked-issue`. Field creation alone does not satisfy the default-view requirement.
+
+References:
+- [GitHub CLI: create a project field](https://cli.github.com/manual/gh_project_field-create)
+- [GitHub CLI: copy a project](https://cli.github.com/manual/gh_project_copy)
+- [GitHub Docs: copying a project preserves views and custom fields](https://docs.github.com/en/issues/planning-and-tracking-with-projects/creating-projects/copying-an-existing-project)
+- [GitHub Docs: show, hide, and reorder table fields](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-table-layout)
+
 Backlog automation ordering rule:
-- use `Project Priority` to keep backlog groups explicit (`P0` is highest, `P5` is lowest)
+- use `Project Priority` to keep backlog groups explicit (`P0` is highest, `P4` is lowest)
 - use `Order` as the deterministic in-group sort value; lower numbers are picked first
 - do not depend on the GitHub project view's visual ordering as the automation source of truth
 - use `Priority` for human urgency/impact signalling, not as a replacement for `Project Priority` + `Order`
 
 Normalization rule:
 - update GitHub built-in `Status` in place when needed; do not assume create/delete replacement flows are available.
+- copy the canonical template for a new board when configured, or normalize the existing default table view when adopting a board.
+- verify both visible-column membership and order before reporting the view as configured.
 
 Repo linkage rule:
 - repository must be linked to the canonical board before bootstrap is complete.
@@ -106,6 +139,7 @@ For GitHub-hosted bootstrap, report:
 - why that board was selected when multiple matches existed
 - repo-link status
 - field/status normalization result, including `Project Priority`, `Order`, and `Priority`
+- default table-view normalization result, including visible columns and their order
 - backlog automation ordering result (`Project Priority` groups plus `Order` values)
 - issue import/attach result (or intentionally empty)
 - any blockers/missing capabilities

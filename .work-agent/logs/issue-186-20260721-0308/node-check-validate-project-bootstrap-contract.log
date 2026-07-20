@@ -1,0 +1,1 @@
+node --check scripts/validate-project-bootstrap-contract.js passed with no output.
