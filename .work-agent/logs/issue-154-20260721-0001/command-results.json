@@ -1,0 +1,47 @@
+[
+  {
+    "Name": "git-fetch-origin-prune",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\git-fetch-origin-prune.log"
+  },
+  {
+    "Name": "git-diff-check",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\git-diff-check.log"
+  },
+  {
+    "Name": "generate-published-rules",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\generate-published-rules.log"
+  },
+  {
+    "Name": "published-rules-diff",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\published-rules-diff.log"
+  },
+  {
+    "Name": "bootstrap-validator-bootstrap-gate",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\bootstrap-validator-bootstrap-gate.log"
+  },
+  {
+    "Name": "bootstrap-validator-empty-repo-bootstrap",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\bootstrap-validator-empty-repo-bootstrap.log"
+  },
+  {
+    "Name": "npm-typecheck",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\npm-typecheck.log"
+  },
+  {
+    "Name": "npm-build",
+    "ExitCode": 0,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\npm-build.log"
+  },
+  {
+    "Name": "gh-pr-checks-185",
+    "ExitCode": 1,
+    "Log": "C:\\projects\\governance-foundation\\vibegov.io\\.work-agent\\logs\\issue-154-20260721-0001\\gh-pr-checks-185.log"
+  }
+]
