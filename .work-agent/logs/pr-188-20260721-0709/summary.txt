@@ -1,0 +1,27 @@
+PR #188 resume run: 2026-07-21 07:09 Australia/Sydney
+
+Branch: cursor/homepage-copy-and-docs-cleanup
+Project status: update unavailable; PR #188 has no GitHub Project item and no linked issue/project item to transition.
+
+Actions:
+- Added durable PR resume comment: https://github.com/governance-foundation/vibegov.io/pull/188#issuecomment-5027333203
+- Merged origin/develop into the PR branch; merge commit before push: 24e3f34
+- Revalidated the branch after the base update.
+- Updated the PR test plan checkboxes after completing the remaining served-homepage checks.
+- Verified homepage content over http://127.0.0.1:3005/:
+  - FAQ article count: 5
+  - Hero subtitle, lead copy, Quick paths, and FAQ content checks passed.
+
+Validation:
+- git diff --check: pass
+- npm run typecheck: pass
+- npm run build: pass
+- CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e: pass, 1 spec / 1 test
+
+Log files:
+- .work-agent/logs/pr-188-20260721-0709/git-diff-check.log
+- .work-agent/logs/pr-188-20260721-0709/npm-run-typecheck.log
+- .work-agent/logs/pr-188-20260721-0709/npm-run-build.log
+- .work-agent/logs/pr-188-20260721-0709/npm-run-test-e2e-3005.log
+- .work-agent/logs/pr-188-20260721-0709/homepage-content-check.log
+- .work-agent/logs/pr-188-20260721-0709/homepage-faq-article-count.log

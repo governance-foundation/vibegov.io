@@ -1,0 +1,18 @@
+ .work-agent/logs/pr-188-20260721-0609/run-log.md |  40 +++++++++
+ docs/bootstrap-validation.md                     |   2 +-
+ docs/bootstrap.md                                |   4 +-
+ docs/faq/what-is-vibegov.md                      |   1 +
+ docs/faq/when-do-i-use-bootstrap-init.md         |   1 +
+ docs/faq/when-do-i-use-bootstrap-review.md       |   1 +
+ docs/faq/when-do-i-use-bootstrap-update.md       |   1 +
+ docs/faq/when-do-i-use-the-feedback-prompt.md    |   1 +
+ docs/intro.md                                    |   6 +-
+ docs/quickstart.md                               |   2 +-
+ docusaurus.config.js                             |  13 +--
+ sidebars.js                                      |   1 +
+ src/components/HomepageFeatures/index.tsx        |   3 +-
+ src/data/homepageFaq.ts                          |  60 ++++++++++++++
+ src/pages/index.tsx                              | 100 ++++++-----------------
+ src/pages/markdown-page.md                       |   7 --
+ src/types.d.ts                                   |  32 --------
+ 17 files changed, 151 insertions(+), 124 deletions(-)
