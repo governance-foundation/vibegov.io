@@ -1,4 +1,2 @@
-# git-diff-check.log
-# Started: 2026-07-21T04:06:06.2804597+10:00
-# ExitCode: 0
-# Finished: 2026-07-21T04:06:06.3748198+10:00
+.work-agent/logs/issue-186-20260721-0401/git-status-before-validation.log:1: trailing whitespace.
++## docs/186-project-board-columns...origin/docs/186-project-board-columns [ahead 1]

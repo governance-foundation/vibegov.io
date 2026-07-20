@@ -1,13 +1,14 @@
-git-status-before-validation.log	0
-pr-view-before-validation.json	0
-issue-view-before-validation.json	0
-git-diff-check.log	0
-git-diff-check-origin-develop-head.log	2
-node-check-validate-project-bootstrap-contract.log	0
-generate-published-rules.log	0
-published-gov-02-diff-check.log	0
-npm-run-typecheck.log	0
-npm-run-build.log	0
-npm-run-release-build.log	0
-pr-checks.log	1
-git-status-after-validation.log	0
+git-status-before-validation.log 0
+pr-view-before-validation.json 0
+issue-view-before-validation.json 0
+git-diff-check.log 0
+git-diff-check-origin-develop-head.log 0
+node-check-validate-project-bootstrap-contract.log 0
+generate-published-rules.log 0
+published-gov-02-diff-check.log 0
+npm-run-typecheck.log 0
+npm-run-build.log 0
+npm-run-release-build.log 0
+pr-checks.log 1 (no checks reported)
+issue-project-status-after-validation.log 0
+git-status-after-validation.log 0
