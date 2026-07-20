@@ -1,0 +1,1 @@
+PASS: git diff --exit-code -- docs/published/gov-02-workflow.md completed with exit code 0 and no output after regenerating published rules.

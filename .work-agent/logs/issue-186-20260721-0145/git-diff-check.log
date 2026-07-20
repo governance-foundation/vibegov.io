@@ -1,0 +1,1 @@
+PASS: git diff --check completed with exit code 0 and no output.
