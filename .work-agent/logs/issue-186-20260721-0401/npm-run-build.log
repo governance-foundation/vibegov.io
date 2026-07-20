@@ -1,0 +1,23 @@
+# npm-run-build.log
+# Started: 2026-07-21T04:06:12.1999269+10:00
+
+> website@0.0.0 build
+> npm run validate:project-bootstrap && docusaurus build
+
+
+> website@0.0.0 validate:project-bootstrap
+> node scripts/validate-project-bootstrap-contract.js
+
+GitHub Project bootstrap contract is valid.
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+[INFO] [en] Creating an optimized production build...
+i Compiling Client
+i Compiling Server
+√ Client: Compiled successfully in 1.28s
+√ Server: Compiled successfully in 5.44s
+[SUCCESS] Generated static files in "build".
+[INFO] Use `npm run serve` command to test your build locally.
+# ExitCode: 0
+# Finished: 2026-07-21T04:06:22.0822980+10:00
