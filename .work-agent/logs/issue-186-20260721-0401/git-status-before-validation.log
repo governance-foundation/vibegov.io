@@ -1,0 +1,16 @@
+# git-status-before-validation.log
+# Started: 2026-07-21T04:06:03.5701717+10:00
+## docs/186-project-board-columns...origin/docs/186-project-board-columns
+ M .work-agent/logs/issue-186-20260721-0308/generate-published-rules.log
+ M .work-agent/logs/issue-186-20260721-0308/git-status-after-validation.log
+ M .work-agent/logs/issue-186-20260721-0308/git-status-before-validation.log
+ M .work-agent/logs/issue-186-20260721-0308/issue-project-status-after-validation.log
+ M .work-agent/logs/issue-186-20260721-0308/issue-view-before-validation.json
+ M .work-agent/logs/issue-186-20260721-0308/npm-run-build.log
+ M .work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log
+ M .work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log
+ M .work-agent/logs/issue-186-20260721-0308/pr-checks.log
+ M .work-agent/logs/issue-186-20260721-0308/pr-view-before-validation.json
+?? .work-agent/logs/issue-186-20260721-0401/
+# ExitCode: 0
+# Finished: 2026-07-21T04:06:03.6760599+10:00
