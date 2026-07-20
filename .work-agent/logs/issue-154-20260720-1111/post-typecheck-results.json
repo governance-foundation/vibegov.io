@@ -1,0 +1,22 @@
+[
+  {
+    "name": "npm-build",
+    "exitCode": 0,
+    "accepted": true
+  },
+  {
+    "name": "gh-pr-checks-185",
+    "exitCode": 1,
+    "accepted": true
+  },
+  {
+    "name": "gh-pr-view-after-validation",
+    "exitCode": 0,
+    "accepted": true
+  },
+  {
+    "name": "git-status-after-validation",
+    "exitCode": 0,
+    "accepted": true
+  }
+]

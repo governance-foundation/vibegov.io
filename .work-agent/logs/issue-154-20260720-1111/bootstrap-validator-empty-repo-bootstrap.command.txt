@@ -1,0 +1,1 @@
+node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap
