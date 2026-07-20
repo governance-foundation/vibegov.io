@@ -17,14 +17,24 @@ export type HomepageFaqItem = {
   summary: string;
 };
 
-const faqContext = require.context(
-  '@site/docs/faq',
-  false,
-  /\.md$/,
-) as {
+type FaqRequireContext = {
   keys(): string[];
   (key: string): FaqDocModule;
 };
+
+const faqContext = (
+  require as unknown as {
+    context(
+      directory: string,
+      useSubdirectories: boolean,
+      regExp: RegExp,
+    ): FaqRequireContext;
+  }
+).context(
+  '@site/docs/faq',
+  false,
+  /\.md$/,
+);
 
 export function getHomepageFaqItems(): HomepageFaqItem[] {
   return faqContext
