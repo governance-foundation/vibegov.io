@@ -1,0 +1,36 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "run_started_local": "2026-07-20 16:04 Australia/Sydney",
+  "reference_utc": "2026-07-20 06:04 UTC",
+  "project_status": {
+    "target": "In Progress",
+    "result": "explicitly re-applied In Progress on Governance Foundation Project #3 before validation refresh",
+    "exit_code": 0,
+    "review_status_note": "Project #3 exposes only Todo, In Progress, and Done; no In review option is available."
+  },
+  "start_comment_url": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5019259090",
+  "validation": [
+    { "command": "git fetch origin --prune", "exit_code": 0 },
+    { "command": "git diff --check", "exit_code": 0 },
+    { "command": "node scripts/generate-published-rules.js", "exit_code": 0 },
+    { "command": "git diff --exit-code -- docs/published", "exit_code": 0 },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario bootstrap-gate", "exit_code": 0, "passed": true, "score": 100, "report_dir": ".internal/bootstrap-validator/reports/2026-07-20T06-06-52-455Z-bootstrap-gate" },
+    { "command": "node .internal/bootstrap-validator/index.js --scenario empty-repo-bootstrap", "exit_code": 0, "passed": true, "score": 100, "report_dir": ".internal/bootstrap-validator/reports/2026-07-20T06-06-53-618Z-empty-repo-bootstrap" },
+    { "command": "npm run typecheck", "exit_code": 0 },
+    { "command": "npm run build", "exit_code": 0 },
+    { "command": "git diff --cached --check", "exit_code": 0, "note": "passed after normalizing generated proof logs to LF and trimming the typecheck output EOF" },
+    { "command": "gh pr checks 185 --repo governance-foundation/vibegov.io", "exit_code": 1, "note": "GitHub reports no checks on the branch." },
+    { "command": "gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefOid,url", "exit_code": 0 }
+  ],
+  "pr_state_after_validation": {
+    "state": "OPEN",
+    "is_draft": false,
+    "merge_state_status": "CLEAN",
+    "review_decision": "",
+    "status_check_rollup": [],
+    "head_before_proof_commit": "c67e705021112030470cca77860bb5d37d047298"
+  },
+  "next_action": "validator review PR #185 after the proof-log commit for this run is pushed"
+}
