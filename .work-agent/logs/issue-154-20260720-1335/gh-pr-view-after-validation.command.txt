@@ -1,0 +1,1 @@
+gh pr view 185 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,statusCheckRollup,headRefOid,url
