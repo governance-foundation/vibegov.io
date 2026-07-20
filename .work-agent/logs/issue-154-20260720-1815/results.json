@@ -1,0 +1,27 @@
+{
+  "issue": 154,
+  "pr": 185,
+  "branch": "issue-154-active-rule-set-alignment",
+  "run_started_local": "2026-07-20 18:15 Australia/Sydney",
+  "run_started_utc": "2026-07-20 08:15 UTC",
+  "project_status": {
+    "target": "In Progress",
+    "result": "explicitly re-applied In Progress on Governance Foundation Project #3 before validation refresh",
+    "command_exit_code": 0,
+    "review_status_note": "Project #3 exposes only Todo, In Progress, and Done; no In review option is available."
+  },
+  "validation": {
+    "git_fetch_origin_prune": "passed",
+    "git_diff_check": "passed",
+    "generate_published_rules": "passed",
+    "docs_published_diff": "passed",
+    "bootstrap_gate": "passed, score 100",
+    "empty_repo_bootstrap": "passed, score 100",
+    "npm_typecheck": "passed",
+    "npm_build": "passed",
+    "git_diff_cached_check": "passed after normalizing generated proof logs to LF",
+    "gh_pr_checks": "exit 1 because GitHub reports no checks on the branch; statusCheckRollup is empty"
+  },
+  "start_resume_issue_comment": "https://github.com/governance-foundation/vibegov.io/issues/154#issuecomment-5020148990",
+  "cleanup_state": "only this run's proof logs are pending commit"
+}
