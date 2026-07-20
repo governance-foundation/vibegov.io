@@ -1,0 +1,65 @@
+{
+  "git-fetch-origin-prune": 0,
+  "git-diff-check": 0,
+  "generate-published-rules": [
+    "Published governance docs regenerated from canonical .mdc files.",
+    0
+  ],
+  "published-rules-diff": 0,
+  "bootstrap-validator-bootstrap-gate": [
+    "{",
+    "  \"scenarioId\": \"bootstrap-gate\",",
+    "  \"passed\": true,",
+    "  \"score\": 100,",
+    "  \"reportDir\": \"C:\\\\projects\\\\governance-foundation\\\\vibegov.io\\\\.internal\\\\bootstrap-validator\\\\reports\\\\2026-07-20T09-18-50-720Z-bootstrap-gate\"",
+    "}",
+    0
+  ],
+  "bootstrap-validator-empty-repo-bootstrap": [
+    "{",
+    "  \"scenarioId\": \"empty-repo-bootstrap\",",
+    "  \"passed\": true,",
+    "  \"score\": 100,",
+    "  \"reportDir\": \"C:\\\\projects\\\\governance-foundation\\\\vibegov.io\\\\.internal\\\\bootstrap-validator\\\\reports\\\\2026-07-20T09-18-52-364Z-empty-repo-bootstrap\"",
+    "}",
+    0
+  ],
+  "npm-typecheck": [
+    "",
+    "> website@0.0.0 typecheck",
+    "> tsc",
+    "",
+    0
+  ],
+  "npm-build": [
+    "",
+    "> website@0.0.0 build",
+    "> docusaurus build",
+    "",
+    "",
+    "╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯",
+    "",
+    "[INFO] [en] Creating an optimized production build...",
+    "i Compiling Client",
+    "i Compiling Server",
+    "√ Client: Compiled successfully in 2.58s",
+    "√ Server: Compiled successfully in 6.91s",
+    "[SUCCESS] Generated static files in \"build\".",
+    "[INFO] Use `npm run serve` command to test your build locally.",
+    0
+  ],
+  "gh-pr-checks": [
+    {
+      "Exception": "System.Management.Automation.RemoteException: no checks reported on the 'issue-154-active-rule-set-alignment' branch",
+      "TargetObject": "no checks reported on the 'issue-154-active-rule-set-alignment' branch",
+      "CategoryInfo": "NotSpecified: (no checks reported …t-alignment' branch:String) [], RemoteException",
+      "FullyQualifiedErrorId": "NativeCommandError",
+      "ErrorDetails": null,
+      "InvocationInfo": "System.Management.Automation.InvocationInfo",
+      "ScriptStackTrace": "at Run-Step, <No file>: line 8\r\nat <ScriptBlock>, <No file>: line 23",
+      "PipelineIterationInfo": "0 0 0",
+      "PSMessageDetails": null
+    },
+    1
+  ]
+}

@@ -1,0 +1,8 @@
+Command: npm run typecheck
+Started: 2026-07-20T19:18:52.8140066+10:00
+
+> website@0.0.0 typecheck
+> tsc
+
+Finished: 2026-07-20T19:19:00.1767252+10:00
+ExitCode: 0
