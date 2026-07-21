@@ -45,7 +45,7 @@ Do not fork or weaken the pass gate by mode.
 
 Before writing any product code (or before claiming bootstrap review is complete):
 1. Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/` as needed for the selected mode.
-2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-09`) is installed in `.governance/rules/`.
+2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-13`) is installed in `.governance/rules/`.
 3. Detect existing provider-native rules directories and mirror `.governance/rules/*.mdc` only when they already exist.
 4. Create or normalize `.governance/project/PROJECT_INTENT.md`.
 5. Create `SPEC-001` as either:
@@ -139,7 +139,7 @@ Then stop before product-code implementation.
 
 Continue only if all are true:
 
-- `.governance/rules/` exists with `GOV-01` through `GOV-09`
+- `.governance/rules/` exists with `GOV-01` through `GOV-13`
 - `.governance/project/PROJECT_INTENT.md` exists
 - `.governance/specs/` has `SPEC-001` (feature spec or bootstrap-setup spec for vague repos)
 - backlog maps to spec scope

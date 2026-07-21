@@ -2,6 +2,7 @@
 sidebar_position: 3
 homepage: true
 question: When do I use bootstrap update?
+homepage_summary: Use bootstrap update when a repo already has partial bootstrap state and needs repair or normalization.
 ---
 
 # When do I use bootstrap update?

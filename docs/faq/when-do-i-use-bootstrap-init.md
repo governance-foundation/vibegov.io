@@ -2,6 +2,7 @@
 sidebar_position: 2
 homepage: true
 question: When do I use bootstrap init?
+homepage_summary: Use bootstrap init for a repo that does not have VibeGov installed yet.
 ---
 
 # When do I use bootstrap init?

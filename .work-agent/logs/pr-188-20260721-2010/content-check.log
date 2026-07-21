@@ -1,0 +1,5 @@
+WriteError:
+Line |
+  24 |      $home = Invoke-WebRequest -Uri 'http://127.0.0.1:3005/' -UseBasic …
+     |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Cannot overwrite variable HOME because it is read-only or constant.

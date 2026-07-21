@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Publish Increments',
     description:
       'Release one governance page at a time while keeping a public, stable site online.',
-    ctaLabel: 'Start Here',
+    ctaLabel: 'Introduction',
     ctaTo: '/docs/intro',
   },
   {
@@ -61,4 +61,3 @@ export default function HomepageFeatures() {
     </section>
   );
 }
-

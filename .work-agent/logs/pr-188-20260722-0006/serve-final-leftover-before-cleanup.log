@@ -1,0 +1,4 @@
+
+LocalAddress LocalPort RemoteAddress RemotePort State  AppliedSetting OwningProcess
+------------ --------- ------------- ---------- -----  -------------- -------------
+::           3005      ::            0          Listen                25620

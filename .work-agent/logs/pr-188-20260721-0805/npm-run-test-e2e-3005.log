@@ -1,0 +1,63 @@
+## CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e
+
+> website@0.0.0 test:e2e
+> cypress run --spec cypress/e2e/site-smoke.cy.js
+
+
+[13560:0721/080937.533:ERROR:node_bindings.cc(305)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+System.Management.Automation.RemoteException
+DevTools listening on ws://127.0.0.1:63817/devtools/browser/255f9909-5ab0-49e2-81cc-036c8b425873
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.17.0                                                                        │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v24.15.0 (C:\nvm4w\nodejs\node.exe)                                            │
+  │ Specs:          1 found (site-smoke.cy.js)                                                     │
+  │ Searched:       C:\projects\governance-foundation\vibegov.io\cypress\e2e\site-smoke.cy.js      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  site-smoke.cy.js                                                                (1 of 1)
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+
+  VibeGov site smoke test
+    √ loads homepage and core docs links (515ms)
+
+
+  1 passing (562ms)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     0 seconds                                                                        │
+  │ Spec Ran:     site-smoke.cy.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  site-smoke.cy.js                         565ms        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        565ms        1        1        -        -        -

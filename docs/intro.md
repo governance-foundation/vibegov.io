@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Start Here
+title: Introduction
 description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
 ---
 
@@ -92,3 +92,7 @@ Canonical-source model:
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
 - [GOV-09: Agent Continuity Bootstrap](/docs/published/gov-09-agent-continuity-bootstrap)
+- [GOV-10: Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene)
+- [GOV-11: Agent Legibility and In-Repo Truth](/docs/published/gov-11-agent-legibility-in-repo-truth)
+- [GOV-12: Drift Control and Garbage Collection](/docs/published/gov-12-drift-control-garbage-collection)
+- [GOV-13: Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline)

@@ -4,23 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import {
-  frontMatter as whatIsFrontMatter,
-  metadata as whatIsMetadata,
-} from '@site/docs/faq/what-is-vibegov.md';
-import {
-  frontMatter as bootstrapInitFrontMatter,
-  metadata as bootstrapInitMetadata,
-} from '@site/docs/faq/when-do-i-use-bootstrap-init.md';
-import {
-  frontMatter as bootstrapUpdateFrontMatter,
-  metadata as bootstrapUpdateMetadata,
-} from '@site/docs/faq/when-do-i-use-bootstrap-update.md';
-import {
-  frontMatter as feedbackFrontMatter,
-  metadata as feedbackMetadata,
-} from '@site/docs/faq/when-do-i-use-the-feedback-prompt.md';
+import {getHomepageFaqItems} from '@site/src/data/homepageFaq';
 
 import styles from './index.module.css';
 
@@ -31,61 +15,42 @@ type PromptCard = {
   href: string;
 };
 
-type FaqItem = {
-  question: string;
-  href: string;
-  summary: string;
-  homepage: boolean;
-};
+const canonicalBootstrapSources = `Before doing anything else, fresh-read the latest live canonical bootstrap sources:
+- https://vibegov.io/agent.txt
+- https://vibegov.io/bootstrap.json
+- https://vibegov.io/docs/bootstrap/
+
+Treat those live sources as authoritative for this run. Do not rely on stale cached or earlier copied bootstrap text if it differs.`;
 
 const promptCards: PromptCard[] = [
   {
     title: 'Bootstrap Init Prompt (BI)',
     description: 'Use this when a repo does not have VibeGov installed yet.',
-    prompt: `Run VibeGov bootstrap in mode: init.\nRead and follow:\n- https://vibegov.io/docs/bootstrap\n\nThen stop before product-code implementation.`,
+    prompt: `Run VibeGov bootstrap in mode: init.\n\n${canonicalBootstrapSources}\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap',
   },
   {
     title: 'Bootstrap Update Prompt (BU)',
     description: 'Use this when a repo already has some bootstrap state.',
-    prompt: `Run VibeGov bootstrap in mode: update.\n\nBefore doing anything else, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen stop before product-code implementation.`,
+    prompt: `Run VibeGov bootstrap in mode: update.\n\n${canonicalBootstrapSources}\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap-update',
   },
   {
     title: 'Bootstrap Feedback Prompt (BF)',
     description:
       'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
-    prompt: `Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:\n- https://vibegov.io/agent.txt\n- https://vibegov.io/bootstrap.json\n- https://vibegov.io/docs/bootstrap/\n\nTreat those live sources as authoritative for this feedback run. Do not rely on stale cached or earlier copied bootstrap text if it differs.\n\nThen read and follow:\n- https://vibegov.io/docs/bootstrap-feedback-prompt`,
+    prompt: `Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:
+- https://vibegov.io/agent.txt
+- https://vibegov.io/bootstrap.json
+- https://vibegov.io/docs/bootstrap/
+
+Treat those live sources as authoritative for this feedback run. Do not rely on stale cached or earlier copied bootstrap text if it differs.
+
+Then read and follow:
+- https://vibegov.io/docs/bootstrap-feedback-prompt`,
     href: '/docs/bootstrap-feedback-prompt',
   },
 ];
-
-const faqSource = [
-  {
-    frontMatter: whatIsFrontMatter,
-    metadata: whatIsMetadata,
-    summary:
-      'VibeGov gives humans and AI coding agents a shared governance layer so software delivery is more traceable, reviewable, and honest about done.',
-  },
-  {
-    frontMatter: bootstrapInitFrontMatter,
-    metadata: bootstrapInitMetadata,
-    summary:
-      'Use bootstrap init for a repo that does not have VibeGov installed yet.',
-  },
-  {
-    frontMatter: bootstrapUpdateFrontMatter,
-    metadata: bootstrapUpdateMetadata,
-    summary:
-      'Use bootstrap update when a repo already has partial bootstrap state and needs repair or normalization.',
-  },
-  {
-    frontMatter: feedbackFrontMatter,
-    metadata: feedbackMetadata,
-    summary:
-      'Use the feedback prompt after bootstrap work, then raise a scrubbed GitHub issue with the result.',
-  },
-] as const;
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -95,8 +60,8 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.lead}>
-          Bootstrap a repo with clear rules, specs, and workflow guidance so AI
-          agents work in a more traceable, reviewable way.
+          VibeGov helps you set up shared project rules so your team and the AI
+          tools you use can work in a more organized, reviewable way.
         </p>
         <div className={styles.actions}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
@@ -128,8 +93,8 @@ function PromptSection() {
         <div className={styles.sectionHeader}>
           <h2>Quick paths</h2>
           <p>
-            Keep the homepage short. Jump to the right bootstrap entrypoint and
-            let the linked doc carry the detail.
+            Choose the bootstrap path that matches your repo state. Copy the
+            prompt, then open the linked doc for the full contract.
           </p>
         </div>
         <div className={styles.cardGrid}>
@@ -160,18 +125,7 @@ function PromptSection() {
 }
 
 function FaqSection() {
-  const faqItems = useMemo<FaqItem[]>(
-    () =>
-      faqSource
-        .map(({frontMatter, metadata, summary}) => ({
-          question: String(frontMatter.question ?? metadata.title),
-          href: metadata.permalink,
-          summary,
-          homepage: Boolean(frontMatter.homepage),
-        }))
-        .filter((item) => item.homepage),
-    [],
-  );
+  const faqItems = useMemo(() => getHomepageFaqItems(), []);
 
   return (
     <section className={styles.sectionAlt}>
@@ -179,8 +133,8 @@ function FaqSection() {
         <div className={styles.sectionHeader}>
           <h2>FAQ</h2>
           <p>
-            FAQ items live as docs pages. Mark them for homepage surfacing and
-            they appear here automatically.
+            Short answers to common adoption questions. Each item links to a
+            fuller doc page.
           </p>
         </div>
         <div className={styles.faqList}>
@@ -201,8 +155,8 @@ function FaqSection() {
 export default function Home() {
   return (
     <Layout
-      title="Governance for AI-assisted software delivery"
-      description="Governance for AI-assisted software delivery.">
+      title="VibeGov"
+      description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
       <HomepageHeader />
       <main>
         <PromptSection />

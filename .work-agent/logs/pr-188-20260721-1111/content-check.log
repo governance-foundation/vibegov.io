@@ -1,0 +1,19 @@
+Built content check for PR #188 validation refresh
+homepage hero lead present:
+True
+homepage quick paths heading present:
+True
+Bootstrap Init card present:
+True
+FAQ heading present:
+False
+Bootstrap Review FAQ present:
+False
+FAQ link count:
+5
+Introduction sidebar label present:
+True
+Start Here sidebar label present on intro page:
+True
+Start Here page title present:
+True

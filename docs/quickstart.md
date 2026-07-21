@@ -40,7 +40,7 @@ Do not fork or weaken the pass gate by mode.
 
 Fast contract summary:
 1) Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2) Install the active VibeGov rule set (`GOV-01` through `GOV-09`) in `.governance/rules/`.
+2) Install the active VibeGov rule set (`GOV-01` through `GOV-13`) in `.governance/rules/`.
 3) Detect existing provider-native rules dirs and mirror only when already present.
 4) Create/normalize `PROJECT_INTENT.md`.
 5) Create `SPEC-001` (feature spec, or bootstrap/governance-setup spec when product intent is still vague).

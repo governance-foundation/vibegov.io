@@ -2,6 +2,7 @@
 sidebar_position: 1
 homepage: true
 question: What is VibeGov?
+homepage_summary: VibeGov gives humans and AI coding agents a shared governance layer so software delivery is more traceable, reviewable, and honest about done.
 ---
 
 # What is VibeGov?
