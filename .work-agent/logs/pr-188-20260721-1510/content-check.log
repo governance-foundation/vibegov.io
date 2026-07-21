@@ -1,0 +1,7 @@
+PASS build/index.html contains "VibeGov helps you set up shared project rules"
+PASS build/index.html contains "Quick paths"
+PASS build/index.html contains "Bootstrap Init Prompt"
+PASS build/index.html contains "FAQ"
+PASS build/index.html contains "When do I use bootstrap review?"
+PASS build/docs/intro/index.html contains "Introduction"
+PASS build/docs/quickstart/index.html contains "Start Here"
