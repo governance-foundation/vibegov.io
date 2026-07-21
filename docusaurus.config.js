@@ -13,7 +13,7 @@ const structuredData = [
     url: 'https://vibegov.io/',
     logo: 'https://vibegov.io/img/vibegov-icon-light.svg',
     description:
-      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+      'Stop AI coding agents from drifting by installing repo-local governance before product-code implementation.',
     sameAs: ['https://github.com/governance-foundation/vibegov.io'],
   },
   {
@@ -23,7 +23,7 @@ const structuredData = [
     url: 'https://vibegov.io/',
     name: 'VibeGov',
     description:
-      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+      'Stop AI coding agents from drifting by installing repo-local governance before product-code implementation.',
     inLanguage: 'en',
     publisher: {
       '@id': 'https://vibegov.io/#organization',
@@ -34,8 +34,7 @@ const structuredData = [
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'VibeGov',
-  tagline:
-    'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+  tagline: 'Stop AI coding agents from drifting.',
   favicon: 'img/vibegov-icon-light.svg',
 
   // Set the production url of your site here

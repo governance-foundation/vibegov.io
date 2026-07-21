@@ -25,20 +25,22 @@ Treat those live sources as authoritative for this run. Do not rely on stale cac
 const promptCards: PromptCard[] = [
   {
     title: 'Bootstrap Init Prompt (BI)',
-    description: 'Use this when a repo does not have VibeGov installed yet.',
+    description:
+      'Install the governance contract before agents begin product-code implementation.',
     prompt: `Run VibeGov bootstrap in mode: init.\n\n${canonicalBootstrapSources}\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap',
   },
   {
     title: 'Bootstrap Update Prompt (BU)',
-    description: 'Use this when a repo already has some bootstrap state.',
+    description:
+      'Repair or normalize existing bootstrap state so the repo follows the current contract.',
     prompt: `Run VibeGov bootstrap in mode: update.\n\n${canonicalBootstrapSources}\n\nThen stop before product-code implementation.`,
     href: '/docs/bootstrap-update',
   },
   {
     title: 'Bootstrap Feedback Prompt (BF)',
     description:
-      'Use this after bootstrap/init or bootstrap/update, then raise a scrubbed GitHub issue with the feedback.',
+      'Turn bootstrap findings into a scrubbed GitHub issue without exposing private project detail.',
     prompt: `Before reviewing bootstrap feedback, fresh-read the latest live canonical bootstrap sources:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json
@@ -60,8 +62,9 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.lead}>
-          VibeGov helps you set up shared project rules so your team and the AI
-          tools you use can work in a more organized, reviewable way.
+          VibeGov installs repo-local governance so humans and AI coding agents
+          share intent, specs, workflow rules, evidence gates, blocker handling,
+          and traceable delivery state before implementation starts.
         </p>
         <div className={styles.actions}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
@@ -93,8 +96,9 @@ function PromptSection() {
         <div className={styles.sectionHeader}>
           <h2>Quick paths</h2>
           <p>
-            Choose the bootstrap path that matches your repo state. Copy the
-            prompt, then open the linked doc for the full contract.
+            Choose the entry point that matches your repo state. Copy the prompt,
+            then open the linked doc for the full contract agents must follow
+            before product-code implementation.
           </p>
         </div>
         <div className={styles.cardGrid}>
@@ -156,7 +160,7 @@ export default function Home() {
   return (
     <Layout
       title="VibeGov"
-      description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
+      description="Stop AI coding agents from drifting by installing repo-local governance before product-code implementation.">
       <HomepageHeader />
       <main>
         <PromptSection />
