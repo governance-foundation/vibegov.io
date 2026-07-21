@@ -6,3 +6,4 @@ content-check=1
 content-check-corrected=1
 content-check-final=0
 gh-pr-checks=1
+git-diff-check-origin-develop-head=0
