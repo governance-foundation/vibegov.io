@@ -33,3 +33,11 @@ Branch: issue-162-neutral-agent-topology
 - `git diff --check`: pass.
 - `npm run build`: pass. This included `npm run validate:project-bootstrap`, which reported `GitHub Project bootstrap contract is valid.`, and Docusaurus generated static files successfully.
 - `rg -n "agent-web-app|agent-api-service|agent-docs-site" AGENT_TOPOLOGY.md`: pass; confirms the neutral examples are present on lines 12-14.
+- `gh pr view 195`: PR is open and mergeable.
+- `gh pr checks 195`: no checks reported on the branch.
+
+## Final evidence
+
+- Commit: `1363cc77a6f2f801bde665367ba868a39de5e3e0` (`#162 neutralize agent topology examples`).
+- PR: https://github.com/governance-foundation/vibegov.io/pull/195
+- In review transition: unavailable because Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists. Issue #162 remains `In Progress` for review.
