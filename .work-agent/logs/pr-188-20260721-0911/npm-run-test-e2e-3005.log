@@ -21,7 +21,7 @@ DevTools listening on ws://127.0.0.1:55681/devtools/browser/5953802d-fa1c-42f4-8
 
 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
-                                                                                                    
+
   Running:  site-smoke.cy.js                                                                (1 of 1)
 Browserslist: caniuse-lite is outdated. Please run:
   npx update-browserslist-db@latest
@@ -55,9 +55,8 @@ Browserslist: caniuse-lite is outdated. Please run:
   (Run Finished)
 
 
-       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ √  site-smoke.cy.js                         751ms        1        1        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    √  All specs passed!                        751ms        1        1        -        -        -  
-
+    √  All specs passed!                        751ms        1        1        -        -        -

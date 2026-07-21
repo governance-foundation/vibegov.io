@@ -1,4 +1,4 @@
-﻿
+
 > website@0.0.0 test:e2e
 > cypress run --spec cypress/e2e/site-smoke.cy.js
 

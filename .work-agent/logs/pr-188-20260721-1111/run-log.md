@@ -1,4 +1,4 @@
-﻿# PR #188 developer cron run
+# PR #188 developer cron run
 
 Run timestamp: 2026-07-21 11:11 Australia/Sydney / 2026-07-21 01:11 UTC
 

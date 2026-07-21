@@ -1,4 +1,4 @@
-﻿
+
 > website@0.0.0 build
 > npm run validate:project-bootstrap && docusaurus build
 
