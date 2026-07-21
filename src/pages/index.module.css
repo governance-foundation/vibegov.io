@@ -69,6 +69,42 @@
   margin: 0;
 }
 
+.installGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.installItem {
+  border-top: 3px solid var(--ifm-color-primary);
+  padding-top: 1rem;
+}
+
+.installItem h3 {
+  margin-bottom: 0.75rem;
+}
+
+.installItem p {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
+.pathList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 0.9rem;
+  list-style: none;
+}
+
+.pathList code {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .cardGrid,
 .faqList {
   display: grid;

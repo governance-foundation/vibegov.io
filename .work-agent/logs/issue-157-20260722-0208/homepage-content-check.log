@@ -1,0 +1,17 @@
+
+Check                                     Present
+-----                                     -------
+What VibeGov installs                        True
+.governance/rules/                           True
+.governance/project/PROJECT_INTENT.md        True
+.governance/specs/SPEC-001-                  True
+AGENTS.md                                    True
+INIT-TODO.md                                 True
+.github/pull_request_template.md             True
+.github/branch-protection-checklist.md       True
+.governance/project/bootstrap/STATUS.md      True
+.governance/project/bootstrap/ANALYSIS.md    True
+.governance/project/bootstrap/FEEDBACK.md    True
+Quick paths                                  True
+
+

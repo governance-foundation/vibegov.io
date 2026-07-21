@@ -15,12 +15,65 @@ type PromptCard = {
   href: string;
 };
 
+type InstallItem = {
+  title: string;
+  paths: string[];
+  description: string;
+};
+
 const canonicalBootstrapSources = `Before doing anything else, fresh-read the latest live canonical bootstrap sources:
 - https://vibegov.io/agent.txt
 - https://vibegov.io/bootstrap.json
 - https://vibegov.io/docs/bootstrap/
 
 Treat those live sources as authoritative for this run. Do not rely on stale cached or earlier copied bootstrap text if it differs.`;
+
+const installItems: InstallItem[] = [
+  {
+    title: 'Governance rules',
+    paths: ['.governance/rules/'],
+    description:
+      'The active VibeGov rule set agents must follow, with provider-native mirrors only when the repo already uses them.',
+  },
+  {
+    title: 'Project intent and specs',
+    paths: [
+      '.governance/project/PROJECT_INTENT.md',
+      '.governance/specs/SPEC-001-...',
+      'backlog mapped to spec sections',
+    ],
+    description:
+      'Repo-local intent, feature or bootstrap setup specs, and backlog mapping that keep work tied to agreed scope.',
+  },
+  {
+    title: 'Workflow entrypoints',
+    paths: [
+      'AGENTS.md',
+      'INIT-TODO.md',
+      '.github/pull_request_template.md',
+      '.github/branch-protection-checklist.md',
+    ],
+    description:
+      'Agent instructions, setup/remediation tracking, pull request expectations, branch protection checks, and issue-pickup flow.',
+  },
+  {
+    title: 'Continuity guidance',
+    paths: ['session diary', 'checkpoint triggers', 'promotion flow'],
+    description:
+      'A lightweight continuity model for decisions, blockers, phase changes, compaction risk, and handoff between agents.',
+  },
+  {
+    title: 'Bootstrap reports',
+    paths: [
+      '.governance/project/bootstrap/STATUS.md',
+      '.governance/project/bootstrap/ANALYSIS.md',
+      '.governance/project/bootstrap/FEEDBACK.md',
+      'history/<timestamp>/',
+    ],
+    description:
+      'Current status, analysis, feedback, optional blockers, and historical run bundles that prove what changed.',
+  },
+];
 
 const promptCards: PromptCard[] = [
   {
@@ -75,6 +128,37 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
+  );
+}
+
+function InstallSection() {
+  return (
+    <section className={styles.sectionAlt}>
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2>What VibeGov installs</h2>
+          <p>
+            VibeGov installs or normalizes a repo-local governance layer so
+            humans and agents use the same sources of truth before coding.
+          </p>
+        </div>
+        <div className={styles.installGrid}>
+          {installItems.map((item) => (
+            <article key={item.title} className={styles.installItem}>
+              <h3>{item.title}</h3>
+              <ul className={styles.pathList}>
+                {item.paths.map((path) => (
+                  <li key={path}>
+                    <code>{path}</code>
+                  </li>
+                ))}
+              </ul>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -159,6 +243,7 @@ export default function Home() {
       description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
       <HomepageHeader />
       <main>
+        <InstallSection />
         <PromptSection />
         <FaqSection />
         <HomepageFeatures />
