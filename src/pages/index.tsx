@@ -64,7 +64,7 @@ function HomepageHeader() {
           tools you use can work in a more organized, reviewable way.
         </p>
         <div className={styles.actions}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
+          <Link className="button button--secondary button--lg" to="/docs/start-here">
             Read Docs
           </Link>
           <Link

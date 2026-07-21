@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: Introduction
+sidebar_position: 2
+title: Overview
 description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
 ---
 
@@ -48,8 +48,9 @@ Canonical-source model:
 
 ## Install
 
-- URL-first start: [Bootstrap](/docs/bootstrap)
-- Full setup details: [Quick Start](/docs/quickstart)
+- First decision path: [Start Here](/docs/start-here)
+- Short install path: [Quick Start](/docs/quickstart)
+- Canonical bootstrap contract: [Bootstrap](/docs/bootstrap)
 
 ## What changes when VibeGov is present
 
@@ -64,6 +65,7 @@ Canonical-source model:
 ## Best next reads
 
 - [Start Here](/docs/start-here)
+- [Quick Start](/docs/quickstart)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)

@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     title: 'Publish Increments',
     description:
       'Release one governance page at a time while keeping a public, stable site online.',
-    ctaLabel: 'Introduction',
+    ctaLabel: 'Overview',
     ctaTo: '/docs/intro',
   },
   {

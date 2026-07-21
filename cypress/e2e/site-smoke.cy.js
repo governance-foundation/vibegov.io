@@ -7,8 +7,8 @@ describe("VibeGov site smoke test", () => {
     cy.contains("Run VibeGov bootstrap in mode: init.")
       .should("be.visible");
     cy.contains("Read Docs").click();
-    cy.url().should("include", "/docs/intro");
-    cy.contains("Why VibeGov exists").should("be.visible");
+    cy.url().should("include", "/docs/start-here");
+    cy.contains("The smallest useful adoption path").should("be.visible");
     cy.contains("Contribute").should("be.visible");
   });
 });

@@ -8,7 +8,7 @@ description: Install VibeGov quickly with the hardened bootstrap contract and th
 
 Use this to install VibeGov quickly with the hardened bootstrap contract.
 
-If you are not sure whether Quick Start is the right entry point yet, read [Start Here](/docs/start-here) first.
+Quick Start is the action path. Use [Start Here](/docs/start-here) only when you still need to choose between orientation, install, operating guidance, and deeper governance reading.
 
 Bootstrap now uses one canonical contract with explicit modes:
 - `init`

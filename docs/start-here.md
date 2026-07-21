@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Start Here
 description: Get oriented in VibeGov quickly and choose the right next doc for bootstrap, execution modes, operator guidance, or the broader SDLC model.
 ---
@@ -14,7 +14,7 @@ This page is the shortest path to the smallest useful adoption step.
 
 ### 1. I want the fastest explanation of what VibeGov is
 Read:
-- [VibeGov](/docs/intro)
+- [Overview](/docs/intro)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ### 2. I want to install or bootstrap VibeGov in a repo
@@ -42,7 +42,7 @@ Read:
 
 If you only want the minimum useful path, do this:
 
-1. read [VibeGov](/docs/intro)
+1. read [Overview](/docs/intro)
 2. read [Execution Modes](/docs/execution-modes)
 3. read [Checkpoint Reporting](/docs/checkpoint-reporting)
 4. run [Quick Start](/docs/quickstart) when you are ready to bootstrap a repo
@@ -67,14 +67,14 @@ It is a governance layer that helps teams run AI-assisted delivery more legibly 
 
 Use this shortcut:
 
-- if you want **orientation**, start with [VibeGov](/docs/intro)
+- if you want **orientation**, start with [Overview](/docs/intro)
 - if you want **action**, start with [Quick Start](/docs/quickstart)
 - if you want **operator clarity**, start with [Execution Modes](/docs/execution-modes)
 - if you want **deeper doctrine**, start with [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ## Related docs
 
-- [VibeGov](/docs/intro)
+- [Overview](/docs/intro)
 - [Quick Start](/docs/quickstart)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

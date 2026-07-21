@@ -14,12 +14,12 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docsSidebar: [
-    'intro',
     'start-here',
+    'intro',
+    'quickstart',
     'bootstrap',
     'bootstrap-update',
     'bootstrap-review',
-    'quickstart',
     'bootstrap-feedback-prompt',
     {
       type: 'category',
