@@ -1,0 +1,8 @@
+homepage lead=False
+quick paths=True
+bootstrap init prompt=True
+faq heading=False
+bootstrap review faq=True
+intro page=True
+intro start here link=True
+start here doc=True
