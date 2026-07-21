@@ -1,0 +1,11 @@
+PR #188 validation refresh - 2026-07-21 22:12 Australia/Sydney
+
+PASS git diff --check
+PASS git diff --check origin/develop...HEAD
+PASS npm run typecheck
+PASS npm run build
+PASS CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e
+PASS served homepage content check: title, tagline, lead copy, Quick paths, Bootstrap Init Prompt, Bootstrap Update Prompt, FAQ heading, and 5 FAQ articles
+INFO gh pr checks: no checks reported on branch cursor/homepage-copy-and-docs-cleanup
+INFO project status: unavailable because PR #188 has no Project item and no linked issue/project item
+PASS cleanup: no port 3005 listener remains
