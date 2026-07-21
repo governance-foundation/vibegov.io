@@ -49,3 +49,13 @@ Branch: issue-166-entrypoint-docs
 - `npm run build`: pass, including `validate:project-bootstrap`.
 - `CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e`: pass, 1 spec / 1 test.
 - Local static serve for Cypress used `npm run serve:3005`; final port 3005 listener check found no listening process after cleanup.
+- `gh pr view 197`: pass; PR is open, non-draft, and mergeStateStatus `CLEAN`.
+- `gh pr checks 197`: no checks reported on the branch.
+
+## Final State
+
+- Commit: `2f9416df5f03efd4c8b8e6789d173d76cca562c2` - `#166 consolidate docs entrypoints`.
+- PR: #197 - https://github.com/governance-foundation/vibegov.io/pull/197
+- Project status: `In Progress`.
+- In review transition unavailable: VibeGov Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the issue item was left in the active progress state.
+- Branch cleanup state: clean and pushed to origin after final evidence commit.
