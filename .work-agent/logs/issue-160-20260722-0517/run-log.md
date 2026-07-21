@@ -43,3 +43,12 @@ Branch: `issue-160-governance-commentary`
 - `git diff --check`: pass.
 - `npm run typecheck`: pass.
 - `npm run build`: pass, including `validate:project-bootstrap`; static files generated in `build`.
+- `gh pr checks 193`: no checks reported on branch.
+
+## PR and handoff
+
+- Commit: `be890df82915210209682faceb3ce9a3aa291d17` - `#160 clean published rule commentary`
+- PR: https://github.com/governance-foundation/vibegov.io/pull/193
+- In review transition unavailable: VibeGov Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the item was left in the active progress state.
+- Current project status: `In Progress`.
+- Next action: validator review PR #193 for issue #160.
