@@ -37,6 +37,17 @@ Branch: issue-161-product-category
 - `CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e`: pass, 1 spec / 1 test.
 - Served-site process on port 3005 was stopped after Cypress; final port check returned `port 3005 clear`.
 - Category language scan found the repo-local governance framework wording in README, homepage, intro, bootstrap, SDLC, FAQ, Quick Start, and Start Here.
+- `gh pr checks 194`: no checks reported on the branch.
+
+## PR
+
+- PR: https://github.com/governance-foundation/vibegov.io/pull/194
+- Commits:
+  - `0a5eda2` - `#161 clarify product category`
+  - `3e6a59d` - `#161 record final run evidence`
+- Project status: `In Progress`.
+- In review transition unavailable: VibeGov Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the item was left in the active progress state.
+- Cleanup state: branch is clean and pushed to `origin/issue-161-product-category`.
 
 ## Notes
 
