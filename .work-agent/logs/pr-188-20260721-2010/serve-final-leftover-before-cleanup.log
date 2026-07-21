@@ -1,38 +1,37 @@
 
 State                    : Listen
-AppliedSetting           : 
+AppliedSetting           :
 OffloadState             : InHost
-Caption                  : 
-Description              : 
-ElementName              : 
+Caption                  :
+Description              :
+ElementName              :
 InstanceID               : ::++3005++::++0
-CommunicationStatus      : 
-DetailedStatus           : 
-HealthState              : 
-InstallDate              : 
-Name                     : 
-OperatingStatus          : 
-OperationalStatus        : 
-PrimaryStatus            : 
-Status                   : 
-StatusDescriptions       : 
-AvailableRequestedStates : 
+CommunicationStatus      :
+DetailedStatus           :
+HealthState              :
+InstallDate              :
+Name                     :
+OperatingStatus          :
+OperationalStatus        :
+PrimaryStatus            :
+Status                   :
+StatusDescriptions       :
+AvailableRequestedStates :
 EnabledDefault           : 2
-EnabledState             : 
-OtherEnabledState        : 
+EnabledState             :
+OtherEnabledState        :
 RequestedState           : 5
-TimeOfLastStateChange    : 
+TimeOfLastStateChange    :
 TransitioningToState     : 12
-AggregationBehavior      : 
-Directionality           : 
+AggregationBehavior      :
+Directionality           :
 CreationTime             : 21/07/2026 8:16:24 PM
 LocalAddress             : ::
 LocalPort                : 3005
 OwningProcess            : 15796
 RemoteAddress            : ::
 RemotePort               : 0
-PSComputerName           : 
+PSComputerName           :
 CimClass                 : ROOT/StandardCimv2:MSFT_NetTCPConnection
 CimInstanceProperties    : {Caption, Description, ElementName, InstanceID…}
 CimSystemProperties      : Microsoft.Management.Infrastructure.CimSystemProperties
-
