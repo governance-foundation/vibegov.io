@@ -1,0 +1,5 @@
+
+ProcessId       : 29036
+ParentProcessId : 61872
+Name            : node.exe
+CommandLine     : "node"   "C:\projects\governance-foundation\vibegov.io\node_modules\.bin\\..\@docusaurus\core\bin\docusaurus.mjs" serve --host localhost --port 3005

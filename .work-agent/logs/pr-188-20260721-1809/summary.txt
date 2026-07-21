@@ -1,0 +1,12 @@
+Validation result: pass
+Issue/PR: PR #188
+Branch: cursor/homepage-copy-and-docs-cleanup
+Project status update unavailable: PR #188 has no GitHub Project item and no linked issue/project item to transition.
+git diff --check: pass
+npm run typecheck: pass
+npm run build: pass, including validate:project-bootstrap
+CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e: pass, 1 spec / 1 test
+Corrected built-content check: homepage lead, Quick paths, Bootstrap Init Prompt, FAQ, Bootstrap Review, Introduction, and Start Here present.
+gh pr checks: no checks reported on this branch
+Note: initial content probe in this run used two stale strings; corrected probe matches current PR copy and passes.
+Cleanup note: stopped npm wrapper PID 43960, then stopped leftover Docusaurus child PID 29036. No port 3005 listener remains after cleanup.
