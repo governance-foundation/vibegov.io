@@ -7,11 +7,11 @@ sidebar_position: 4
 - Source rule: [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-04-quality.mdc)
 - Download raw file: [gov-04-quality.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-04-quality.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Quality
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+> Commentary: Frames quality as a governed delivery outcome, not subjective polish.
 
 ## Quality Gate Principle
 
@@ -22,7 +22,7 @@ Every meaningful change should satisfy:
 2. consistency (does it fit existing patterns/constraints?)
 3. maintainability (can another person safely evolve it?)
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+> Commentary: Requires every meaningful change to pass the checks that fit its risk and surface.
 
 ## Quality Scaffolding Principle
 
@@ -40,7 +40,7 @@ Typical quality scaffolding includes:
 
 AI should help teams maintain this scaffolding, not just accelerate implementation.
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+> Commentary: Requires missing safety rails to be added before high-risk changes depend on them.
 
 ## Minimum Quality Checklist
 
@@ -52,7 +52,7 @@ AI should help teams maintain this scaffolding, not just accelerate implementati
 - Known trade-offs are recorded
 - Missing completeness is captured as explicit follow-up work rather than left invisible
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+> Commentary: Defines the baseline review lens for scope, behavior, tests, docs, and maintainability.
 
 ## Change Hygiene
 
@@ -61,7 +61,7 @@ AI should help teams maintain this scaffolding, not just accelerate implementati
 - Keep naming and structure stable unless change is intentional
 - Preserve frontmatter and metadata in `.mdc` files
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Keeps diffs small, readable, and tied to the tracked reason for change.
 
 ## Verification Expectations
 
@@ -73,7 +73,7 @@ Run verification appropriate to work type and risk:
 
 Verification should be proportional, but never replaced by presentation quality or activity volume.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Links validation strength to the surfaces and risks touched by the change.
 
 ## Anti-Fake-Completion Principle
 
@@ -92,7 +92,7 @@ Verification review should also make explicit:
 - what remains unverified, blocked, or deferred
 - what follow-up artifact was created for missing completeness
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Blocks completion claims that rely on happy-path confidence or missing evidence.
 
 ## Definition of Done (Quality View)
 
@@ -103,4 +103,4 @@ Done means:
 - residual risks documented
 - missing completeness converted into tracked follow-up work where relevant
 
-> Commentary: Defines quality gates to reduce regressions and maintenance risk.
+> Commentary: Converts quality from a vague approval feeling into concrete done criteria.

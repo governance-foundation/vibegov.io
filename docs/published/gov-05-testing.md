@@ -7,11 +7,11 @@ sidebar_position: 5
 - Source rule: [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-05-testing.mdc)
 - Download raw file: [gov-05-testing.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-05-testing.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Testing
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Frames testing as the proof system for governed implementation.
 
 ## Core Testing Principle
 
@@ -19,7 +19,7 @@ Tests are proof of claims, not ceremony.
 
 Each important claim should map to verifiable evidence.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Requires tests to answer whether the intended behavior actually works.
 
 ## Test Design Standards
 
@@ -28,7 +28,7 @@ Each important claim should map to verifiable evidence.
 - include edge cases for high-risk logic
 - keep tests deterministic and repeatable
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Keeps tests focused on meaningful behavior, failure modes, and regression risk.
 
 ## Testing Layers (use what fits scope)
 
@@ -39,7 +39,7 @@ Each important claim should map to verifiable evidence.
 
 Not every change needs every layer, but critical paths must be covered.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Lets teams choose the right validation layer without pretending every change needs the same test shape.
 
 ## Unit-Test Expectations
 
@@ -57,7 +57,7 @@ Unit tests are not sufficient by themselves when the governed claim depends on:
 
 When unit tests are the right layer, they should be preferred over slower broad tests for proving isolated logic. When the claim extends beyond isolated logic, pair unit coverage with the higher-layer evidence the claim actually needs.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Defines when small focused tests should pin logic and edge-case behavior.
 
 ## Test-to-Intent Traceability
 
@@ -69,7 +69,7 @@ For governed delivery, link tests back to:
 OpenSpec-first rule:
 - if required behavior is not represented in OpenSpec, add/update requirement IDs before marking coverage complete.
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Connects tests back to requirements so passing checks prove the right thing.
 
 ## Test Execution Expectations
 
@@ -81,7 +81,7 @@ For each meaningful test run, explicitly consider:
 - whether the evidence directly proves the claim or only a proxy
 - what remains unverified and what follow-up artifact was created
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Requires test results to be captured honestly, including failures and skipped checks.
 
 ## Scenario Coverage Expectations
 
@@ -99,7 +99,7 @@ Consider these scenario classes where relevant:
 
 Not every change needs every scenario class, but the execution record should make coverage boundaries visible.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Pushes validation beyond the happy path into states users actually encounter.
 
 ## Result Classification
 
@@ -112,7 +112,7 @@ Meaningful test outcomes should be classifiable as:
 
 This helps prevent weak “green enough” reporting.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Makes validation outcomes explicit enough for a reviewer to trust or challenge.
 
 ## Proof Strength
 
@@ -123,7 +123,7 @@ Evidence should be judged honestly:
 
 Passing build output, a success toast, or a 200 response is not always direct proof of the intended behavior.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Ranks evidence quality so weak signals are not reported as strong proof.
 
 ## Persistence and Post-Action Proof
 
@@ -136,7 +136,7 @@ When work changes persisted, synced, deleted, or otherwise durable state, verifi
 
 UI-only success must not be treated as sufficient proof for mutation-heavy work.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Requires checks that state survives the action paths users rely on.
 
 ## Execution Expectations
 
@@ -150,7 +150,7 @@ UI-only success must not be treated as sufficient proof for mutation-heavy work.
 - passing tests are evidence only when the asserted behavior matches the governed claim
 - if meaningful coverage is missing, create follow-up work instead of silently treating the gap as acceptable
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines how test runs should be invoked, recorded, and explained during delivery.
 
 ## Test Quality Anti-Patterns
 
@@ -161,4 +161,4 @@ UI-only success must not be treated as sufficient proof for mutation-heavy work.
 - partial coverage reported as full validation
 - surrogate-only proof reported as direct proof
 
-> Commentary: Ensures implementation is validated by evidence, not assumptions.
+> Commentary: Calls out tests that inflate confidence without covering real behavior.
