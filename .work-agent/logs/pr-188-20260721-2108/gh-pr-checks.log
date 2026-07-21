@@ -1,0 +1,4 @@
+COMMAND: gh pr checks 188 --repo governance-foundation/vibegov.io
+START: 2026-07-21T21:16:25.0795995+10:00
+no checks reported on the 'cursor/homepage-copy-and-docs-cleanup' branch
+EXIT: 1

@@ -1,0 +1,4 @@
+COMMAND: git rev-list --left-right --count HEAD...origin/develop
+START: 2026-07-21T21:15:31.7804284+10:00
+24	0
+EXIT: 0

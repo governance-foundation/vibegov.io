@@ -1,0 +1,4 @@
+COMMAND: gh pr view 188 --repo governance-foundation/vibegov.io --json mergeStateStatus,mergeable,headRefOid,baseRefOid,projectItems,closingIssuesReferences,statusCheckRollup,reviewDecision
+START: 2026-07-21T21:16:26.4970510+10:00
+{"baseRefOid":"e07d312e66ade0309da6d47f37dfe6a3467abfee","closingIssuesReferences":[],"headRefOid":"676f85e365fe7a688276c079c4822e6b2ee21159","mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","projectItems":[],"reviewDecision":"","statusCheckRollup":[]}
+EXIT: 0
