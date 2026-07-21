@@ -41,3 +41,13 @@ Branch: issue-157-what-gets-installed
 
 - Served build on `127.0.0.1:3005` for Cypress and content probing.
 - Initial stop of the parent `npm.cmd` process left a node listener on 3005; stopped the listener process and confirmed no final `LISTEN` state on port 3005.
+
+## Final
+
+- Work commit: `b1bb1633559737a4c4deb3e9d195036e889a4d6c`.
+- Final evidence commit: PR branch head after this log update.
+- PR: https://github.com/governance-foundation/vibegov.io/pull/190
+- PR merge state: `CLEAN`.
+- `gh pr checks 190`: no checks reported on the branch.
+- In review transition unavailable: VibeGov Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the item remains `In Progress`.
+- Branch is clean and pushed to `origin/issue-157-what-gets-installed`.
