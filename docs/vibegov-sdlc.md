@@ -6,7 +6,7 @@ description: See the governed VibeGov SDLC from bootstrap through issue/spec bin
 
 # The VibeGov SDLC
 
-VibeGov is a governed SDLC for AI-assisted software delivery. It starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
+VibeGov is a repo-local governance framework for AI-assisted software delivery. Its SDLC starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
 
 Its default posture is also simplicity-first: use the smallest coherent workflow that can do the job, keep ownership singular as long as possible, and add orchestration only when the need is real and visible.
 

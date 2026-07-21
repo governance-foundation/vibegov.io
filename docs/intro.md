@@ -4,7 +4,7 @@ title: Introduction
 description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
 ---
 
-VibeGov is a practical governance layer for AI-assisted software delivery.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
 
 It helps teams ship fast **without losing control** of intent, quality, evidence, and traceability.
 

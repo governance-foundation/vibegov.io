@@ -13,7 +13,7 @@ const structuredData = [
     url: 'https://vibegov.io/',
     logo: 'https://vibegov.io/img/vibegov-icon-light.svg',
     description:
-      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+      'Repo-local governance framework for AI-assisted software delivery.',
     sameAs: ['https://github.com/governance-foundation/vibegov.io'],
   },
   {
@@ -23,7 +23,7 @@ const structuredData = [
     url: 'https://vibegov.io/',
     name: 'VibeGov',
     description:
-      'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+      'Repo-local governance framework for AI-assisted software delivery.',
     inLanguage: 'en',
     publisher: {
       '@id': 'https://vibegov.io/#organization',
@@ -35,7 +35,7 @@ const structuredData = [
 const config = {
   title: 'VibeGov',
   tagline:
-    'Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.',
+    'Repo-local governance framework for AI-assisted software delivery.',
   favicon: 'img/vibegov-icon-light.svg',
 
   // Set the production url of your site here

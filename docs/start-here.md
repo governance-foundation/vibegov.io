@@ -8,7 +8,7 @@ description: Get oriented in VibeGov quickly and choose the right next doc for b
 
 If you are new to VibeGov, start here.
 
-This page is the shortest path to the smallest useful adoption step.
+VibeGov is a repo-local governance framework for AI-assisted software delivery. This page is the shortest path to the smallest useful adoption step.
 
 ## First: what are you trying to do?
 
@@ -61,7 +61,7 @@ VibeGov is not:
 - a replacement for engineering judgment
 - a license to add process everywhere
 
-It is a governance layer that helps teams run AI-assisted delivery more legibly and more reliably.
+It is a repo-local governance framework that helps teams run AI-assisted delivery more legibly and more reliably.
 
 ## If you are still unsure
 

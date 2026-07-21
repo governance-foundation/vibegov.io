@@ -6,7 +6,9 @@ description: Use the canonical VibeGov bootstrap contract to install or normaliz
 
 # Bootstrap
 
-This is the **canonical bootstrap contract** for VibeGov.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
+
+This is its **canonical bootstrap contract**.
 
 Shorthand refs used in docs and chat:
 - `BI` = bootstrap init

@@ -60,8 +60,9 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className={styles.lead}>
-          VibeGov helps you set up shared project rules so your team and the AI
-          tools you use can work in a more organized, reviewable way.
+          VibeGov is a repo-local governance framework for AI-assisted software
+          delivery. It helps your team and AI tools work in a more organized,
+          reviewable way.
         </p>
         <div className={styles.actions}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
@@ -156,7 +157,7 @@ export default function Home() {
   return (
     <Layout
       title="VibeGov"
-      description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
+      description="Repo-local governance framework for AI-assisted software delivery.">
       <HomepageHeader />
       <main>
         <PromptSection />

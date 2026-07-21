@@ -2,12 +2,12 @@
 sidebar_position: 1
 homepage: true
 question: What is VibeGov?
-homepage_summary: VibeGov gives humans and AI coding agents a shared governance layer so software delivery is more traceable, reviewable, and honest about done.
+homepage_summary: VibeGov is a repo-local governance framework for AI-assisted software delivery that keeps work traceable, reviewable, and honest about done.
 ---
 
 # What is VibeGov?
 
-VibeGov gives humans and AI coding agents a shared governance layer for software delivery.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
 
 The goal is simple: move fast **without faking done**.
 
