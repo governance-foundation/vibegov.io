@@ -43,6 +43,7 @@ const sidebars = {
     },
     'branch-protection-checklist',
     'vibegov-sdlc',
+    'governed-delivery-example',
     'agent-continuity-bootstrap',
     'contribute',
     {

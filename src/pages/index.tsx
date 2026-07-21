@@ -52,6 +52,17 @@ Then read and follow:
   },
 ];
 
+const governedDeliverySteps = [
+  'Capture the intent behind the request.',
+  'Create or update the governing spec.',
+  'Track the work in a GitHub issue.',
+  'Define acceptance criteria and evidence.',
+  'Implement against the agreed scope.',
+  'Run the validation that proves the claim.',
+  'Attach proof to the issue or pull request.',
+  'Update traceability and delivery state.',
+];
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -75,6 +86,47 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
+  );
+}
+
+function WorkedExampleSection() {
+  return (
+    <section className={styles.sectionAlt}>
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2>Governed delivery in practice</h2>
+          <p>
+            See how VibeGov turns a vague implementation request into a scoped,
+            reviewable delivery path.
+          </p>
+        </div>
+        <div className={styles.exampleGrid}>
+          <article className={styles.examplePanel}>
+            <span className={styles.exampleLabel}>Before VibeGov</span>
+            <h3>&quot;Add Google login.&quot;</h3>
+            <p>
+              An agent may start coding immediately, before anyone has clarified
+              intent, acceptance criteria, security constraints, issue
+              traceability, or what evidence will prove the change is complete.
+            </p>
+          </article>
+          <article className={styles.examplePanel}>
+            <span className={styles.exampleLabel}>After VibeGov</span>
+            <h3>The same request becomes a governed path.</h3>
+            <ol className={styles.stepList}>
+              {governedDeliverySteps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ol>
+          </article>
+        </div>
+        <p className={styles.exampleLinks}>
+          Follow the full loop in <Link to="/docs/vibegov-sdlc">The VibeGov SDLC</Link>,
+          then use <Link to="/docs/bootstrap">Bootstrap</Link> before product-code
+          implementation.
+        </p>
+      </div>
+    </section>
   );
 }
 
@@ -159,6 +211,7 @@ export default function Home() {
       description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
       <HomepageHeader />
       <main>
+        <WorkedExampleSection />
         <PromptSection />
         <FaqSection />
         <HomepageFeatures />
