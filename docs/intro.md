@@ -16,6 +16,20 @@ The model is simple:
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
 
+## Content status
+
+VibeGov separates canonical contracts from evolving guidance.
+
+Use the [Content Status Model](/docs/content-status-model) when you need to know whether a surface is:
+- a canonical contract,
+- a published governance rule,
+- an operational guide,
+- a role pack,
+- a runtime-specific profile, or
+- blog/commentary.
+
+Canonical bootstrap surfaces such as [`agent.txt`](/agent.txt), [`bootstrap.json`](/bootstrap.json), and [Bootstrap](/docs/bootstrap) stay authoritative when other pages summarize or explain them.
+
 ## Why VibeGov exists
 
 AI-assisted delivery makes it easy to generate code quickly.

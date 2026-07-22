@@ -367,6 +367,11 @@ export default function RolesPage() {
             can fresh-read their entrypoint, manifest, common policy, squad
             operating model, templates, and overlays.
           </p>
+          <p className={styles.status}>
+            Status: <strong>Role pack</strong>. These machine-readable assets help
+            specialize agents, but they do not replace the canonical bootstrap
+            contract or published GOV rules.
+          </p>
         </div>
       </header>
       <main>
@@ -385,6 +390,10 @@ export default function RolesPage() {
             <div className={styles.note}>
               Machine catalog:{' '}
               <Link to="/roles/index.json">https://vibegov.io/roles/index.json</Link>
+            </div>
+            <div className={styles.note}>
+              Authority model:{' '}
+              <Link to="/docs/content-status-model">Content Status Model</Link>
             </div>
             <div className={styles.note}>
               Operating model: <strong>Ready is the contract.</strong> <strong>Develop is the truth.</strong> <strong>Automation is the gate.</strong> No wild forks.

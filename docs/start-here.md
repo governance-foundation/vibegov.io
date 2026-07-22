@@ -10,11 +10,18 @@ If you are new to VibeGov, start here.
 
 This page is the shortest path to the smallest useful adoption step.
 
+## First: know the authority level
+
+VibeGov has canonical contracts, published rules, operational guides, role packs, runtime profiles, and commentary.
+
+If you are deciding what an agent or repo must obey, check the [Content Status Model](/docs/content-status-model) before treating a supporting guide, role pack, runtime profile, or blog post as the current contract.
+
 ## First: what are you trying to do?
 
 ### 1. I want the fastest explanation of what VibeGov is
 Read:
 - [VibeGov](/docs/intro)
+- [Content Status Model](/docs/content-status-model)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ### 2. I want to install or bootstrap VibeGov in a repo

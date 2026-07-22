@@ -18,6 +18,17 @@
   color: rgba(226, 232, 240, 0.94);
 }
 
+.status {
+  max-width: 54rem;
+  margin: 1rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(226, 232, 240, 0.28);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.42);
+  color: rgba(248, 250, 252, 0.96);
+  line-height: 1.55;
+}
+
 .section {
   padding: 3rem 0;
 }

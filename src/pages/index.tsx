@@ -63,6 +63,10 @@ function HomepageHeader() {
           VibeGov helps you set up shared project rules so your team and the AI
           tools you use can work in a more organized, reviewable way.
         </p>
+        <p className={styles.lead}>
+          Canonical bootstrap sources stay separate from evolving guides, role
+          packs, runtime profiles, and commentary.
+        </p>
         <div className={styles.actions}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
             Read Docs

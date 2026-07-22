@@ -8,6 +8,8 @@ description: Use the canonical VibeGov bootstrap contract to install or normaliz
 
 This is the **canonical bootstrap contract** for VibeGov.
 
+Status: **Canonical contract**. Treat this page, [`agent.txt`](/agent.txt), and [`bootstrap.json`](/bootstrap.json) as authoritative bootstrap sources. Supporting docs can explain or extend usage, but they do not weaken this contract.
+
 Shorthand refs used in docs and chat:
 - `BI` = bootstrap init
 - `BU` = bootstrap update
