@@ -159,9 +159,9 @@ export default function Home() {
       description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
       <HomepageHeader />
       <main>
+        <HomepageFeatures />
         <PromptSection />
         <FaqSection />
-        <HomepageFeatures />
       </main>
     </Layout>
   );

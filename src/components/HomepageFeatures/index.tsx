@@ -12,25 +12,25 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Publish Increments',
+    title: 'Keep Intent Visible',
     description:
-      'Release one governance page at a time while keeping a public, stable site online.',
-    ctaLabel: 'Introduction',
-    ctaTo: '/docs/intro',
+      'Tie work to project intent, specs, issues and acceptance criteria before implementation starts.',
+    ctaLabel: 'Start Here',
+    ctaTo: '/docs/start-here',
   },
   {
-    title: 'Collect Signal Early',
+    title: 'Make Done Evidence-Based',
     description:
-      'Every page has a feedback path to GitHub Issues so ambiguity gets resolved in public.',
-    ctaLabel: 'Contribute',
-    ctaTo: '/docs/contribute',
+      'Close work with proof that matches the mode, from focused checks to release-ready validation.',
+    ctaLabel: 'Evidence Guide',
+    ctaTo: '/docs/mode-selection-and-evidence-closing',
   },
   {
-    title: 'Build Durable Guidance',
+    title: 'Carry Context Between Agents',
     description:
-      'Keep governance directional and reusable, while project-specific details evolve separately.',
-    ctaLabel: 'Published Rules',
-    ctaTo: '/docs/published/gov-01-instructions',
+      'Keep repo-local guidance, continuity notes and traceability available for the next contributor.',
+    ctaLabel: 'Continuity',
+    ctaTo: '/docs/agent-continuity-bootstrap',
   },
 ];
 
@@ -52,6 +52,14 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.header}>
+          <h2>Governed delivery outcomes</h2>
+          <p>
+            VibeGov gives teams a shared operating layer for AI-assisted
+            software work: clear intent, honest completion evidence and durable
+            context that survives handoffs.
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
