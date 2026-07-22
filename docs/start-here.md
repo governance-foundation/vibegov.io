@@ -10,6 +10,8 @@ If you are new to VibeGov, start here.
 
 This page is the shortest path to the smallest useful adoption step.
 
+If you already know the job you want done, use [Choose Your Path](/docs/choose-your-path) for a compact route to install, review, feedback intake, delivery, PR readiness, role-pack use, or messy-repo hardening.
+
 ## First: what are you trying to do?
 
 ### 1. I want the fastest explanation of what VibeGov is
@@ -19,6 +21,7 @@ Read:
 
 ### 2. I want to install or bootstrap VibeGov in a repo
 Read:
+- [Choose Your Path](/docs/choose-your-path)
 - [Quick Start](/docs/quickstart)
 - [Bootstrap](/docs/bootstrap)
 
@@ -30,6 +33,7 @@ Read:
 
 ### 4. I want the shortest practical operating guide
 Read:
+- [Choose Your Path](/docs/choose-your-path)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 
@@ -68,6 +72,7 @@ It is a governance layer that helps teams run AI-assisted delivery more legibly 
 Use this shortcut:
 
 - if you want **orientation**, start with [VibeGov](/docs/intro)
+- if you know your **job-to-be-done**, start with [Choose Your Path](/docs/choose-your-path)
 - if you want **action**, start with [Quick Start](/docs/quickstart)
 - if you want **operator clarity**, start with [Execution Modes](/docs/execution-modes)
 - if you want **deeper doctrine**, start with [The VibeGov SDLC](/docs/vibegov-sdlc)
@@ -75,6 +80,7 @@ Use this shortcut:
 ## Related docs
 
 - [VibeGov](/docs/intro)
+- [Choose Your Path](/docs/choose-your-path)
 - [Quick Start](/docs/quickstart)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

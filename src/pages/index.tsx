@@ -64,8 +64,8 @@ function HomepageHeader() {
           tools you use can work in a more organized, reviewable way.
         </p>
         <div className={styles.actions}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
-            Read Docs
+          <Link className="button button--secondary button--lg" to="/docs/choose-your-path">
+            Choose Your Path
           </Link>
           <Link
             className="button button--outline button--lg"
@@ -94,7 +94,8 @@ function PromptSection() {
           <h2>Quick paths</h2>
           <p>
             Choose the bootstrap path that matches your repo state. Copy the
-            prompt, then open the linked doc for the full contract.
+            prompt, then open the linked doc for the full contract. For other
+            common jobs, start with <Link to="/docs/choose-your-path">Choose Your Path</Link>.
           </p>
         </div>
         <div className={styles.cardGrid}>
