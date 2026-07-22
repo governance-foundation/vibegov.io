@@ -45,6 +45,7 @@ const sidebars = {
     'vibegov-sdlc',
     'agent-continuity-bootstrap',
     'contribute',
+    'content-style-guide',
     {
       type: 'category',
       label: 'Operational Guides',

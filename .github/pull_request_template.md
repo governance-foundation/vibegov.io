@@ -20,6 +20,12 @@
 - Evidence:
   - 
 
+## Public Content Review
+- [ ] Public-facing wording avoids internal-only notes unless clearly labelled as an example.
+- [ ] VibeGov-specific terms are defined before heavy use.
+- [ ] Authority level is clear where relevant: contract, guide, example, or commentary.
+- [ ] Evidence claims point to concrete proof or state the remaining limitation.
+
 ## Promotion / Hotfix Notes
 - Promotion scope or hotfix reason:
 - Back-merge into `develop` (required for hotfixes):

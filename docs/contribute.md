@@ -14,6 +14,8 @@ Feedback is managed in GitHub Issues so decisions stay public, reviewable, and t
 4. Describe the current problem, the expected improvement, and why it matters.
 5. If relevant, include a concrete wording proposal.
 
+For public docs, homepage copy, FAQs, examples, or blog posts, use the [Content Style Guide](/docs/content-style-guide) as the review standard for voice, terminology, authority level, and evidence language.
+
 ## Branching and pull requests
 
 1. Start from a GitHub issue or clearly linked governed task.
@@ -76,6 +78,9 @@ Especially useful contributions include:
 - Preserve intent over surface wording.
 - Keep governance reusable across projects and providers.
 - Avoid project-specific tool lock-in in core rules.
+- Keep public wording distinct from local implementation notes.
+- Define VibeGov-specific terminology before leaning on it.
+- Label authority level clearly: contract, guide, example, or commentary.
 - Use issue-scoped branches and pull requests rather than bypassing protected branches.
 - Prefer guidance that is hard to misread and hard to execute badly.
 - If a rule sounds good but is easy to game, keep improving it.
