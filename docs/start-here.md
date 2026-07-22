@@ -10,6 +10,23 @@ If you are new to VibeGov, start here.
 
 This page is the shortest path to the smallest useful adoption step.
 
+## Who VibeGov is for
+
+VibeGov is for teams and solo developers using AI coding agents on real repositories where delivery state needs to remain inspectable after the chat scrolls away.
+
+It is strongest for:
+- teams using AI coding agents on production-bound or maintained software
+- solo developers who want agent speed without losing traceability
+- technical founders and consultants coordinating multiple AI-assisted delivery threads
+- maintainers who want issue, spec, and evidence discipline without heavyweight process tooling
+- teams building agent harnesses that need repo-local operating rules
+
+It is probably overkill for:
+- throwaway scripts with no maintenance horizon
+- teams that do not want evidence before completion claims
+- projects that do not care about traceability, backlog quality, or long-term change safety
+- users looking for a hosted SaaS or magical autonomous runtime
+
 ## First: what are you trying to do?
 
 ### 1. I want the fastest explanation of what VibeGov is

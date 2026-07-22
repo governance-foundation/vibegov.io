@@ -52,6 +52,21 @@ Then read and follow:
   },
 ];
 
+const audienceItems = [
+  'Teams using AI coding agents on real repositories.',
+  'Solo developers who want agent speed without losing traceability.',
+  'Technical founders and consultants managing multiple AI-assisted delivery threads.',
+  'Maintainers who want issue, spec, and evidence discipline without heavyweight process tooling.',
+  'Teams building agent harnesses that need repo-local operating rules.',
+];
+
+const poorFitItems = [
+  'Throwaway scripts with no maintenance horizon.',
+  'Teams that do not want evidence before completion claims.',
+  'Projects that do not care about traceability or long-term change safety.',
+  'Users looking for a hosted SaaS or magical autonomous runtime.',
+];
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -75,6 +90,40 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
+  );
+}
+
+function AudienceSection() {
+  return (
+    <section className={styles.section}>
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2>Who VibeGov is for</h2>
+          <p>
+            VibeGov is for people using AI-assisted delivery where intent,
+            evidence, and traceability need to survive beyond the current chat.
+          </p>
+        </div>
+        <div className={styles.fitGrid}>
+          <article className={styles.fitPanel}>
+            <h3>Good fit</h3>
+            <ul>
+              {audienceItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+          <article className={styles.fitPanel}>
+            <h3>Probably overkill</h3>
+            <ul>
+              {poorFitItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -159,6 +208,7 @@ export default function Home() {
       description="Clearer goals, better proof and fewer loose ends for your AI-assisted software projects.">
       <HomepageHeader />
       <main>
+        <AudienceSection />
         <PromptSection />
         <FaqSection />
         <HomepageFeatures />

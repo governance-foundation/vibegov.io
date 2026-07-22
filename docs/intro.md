@@ -16,6 +16,23 @@ The model is simple:
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
 
+## Who VibeGov is for
+
+VibeGov is for people using AI coding agents on real repositories where delivery intent, evidence, and traceability matter.
+
+It is a good fit for:
+- teams using AI coding agents on production-bound or maintained software
+- solo developers who want agent speed without losing traceability
+- technical founders and consultants managing multiple AI-assisted delivery threads
+- maintainers who want issue, spec, and evidence discipline without heavyweight process tooling
+- teams building agent harnesses that need repo-local operating rules
+
+It is probably overkill for:
+- throwaway scripts with no maintenance horizon
+- teams unwilling to require evidence for completion claims
+- projects that do not need traceability, backlog quality, or long-term change safety
+- users looking for a hosted SaaS or magical autonomous runtime
+
 ## Why VibeGov exists
 
 AI-assisted delivery makes it easy to generate code quickly.
