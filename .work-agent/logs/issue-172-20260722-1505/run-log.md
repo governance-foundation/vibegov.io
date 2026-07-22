@@ -47,3 +47,18 @@ Branch: `issue-172-job-based-navigation`
 - `npm run build`: pass, including `validate:project-bootstrap`; rerun after link fix had no unresolved-link warning.
 - `CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e`: pass, 1 spec / 1 test.
 - Temporary static serve on port 3005 was stopped; final port check reported no listeners on 3005.
+
+## PR
+
+- Commit: `c8076571feea4a04052be9abba9a21c652d841c1` (`#172 add job-based navigation paths`).
+- Pushed branch `issue-172-job-based-navigation` to origin.
+- Opened PR #203: https://github.com/governance-foundation/vibegov.io/pull/203
+- `gh pr view 203`: open, non-draft, base `develop`, mergeStateStatus `CLEAN`.
+- `gh pr checks 203`: no checks reported on branch.
+- In review transition unavailable: Governance Foundation Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the issue item remains in `In Progress` for validator review.
+
+## Final State
+
+- Branch is clean and pushed.
+- No blocker.
+- Next action: validator review PR #203 for issue #172.
