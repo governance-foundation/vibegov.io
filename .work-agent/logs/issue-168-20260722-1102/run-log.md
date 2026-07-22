@@ -42,9 +42,11 @@ Branch: issue-168-audience-use-cases
 ## Final handoff
 
 - Implementation commit: `810c74a` (`#168 add audience fit guidance`).
-- Evidence commit: pending when this log section was written.
+- Evidence commit: `861b8e9` (`#168 record PR evidence`).
 - PR: https://github.com/governance-foundation/vibegov.io/pull/199
 - Project status: `In Progress`.
 - In review transition: unavailable. Governance Foundation Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the issue item was left in the active progress state.
 - Cleanup: branch pushed; working tree expected clean after evidence commit.
 - Next action: validator review PR #199 for issue #168.
+
+Post-push correction: this log was updated after `861b8e9` to replace the pending evidence-commit placeholder with the actual commit id.
