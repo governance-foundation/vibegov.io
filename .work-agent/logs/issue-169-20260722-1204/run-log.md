@@ -59,9 +59,10 @@ Run: 2026-07-22 12:04 Australia/Sydney
 
 ## Final State
 
-- Commit: `ea063ec40f5f98d6b28ff71ec360813e1823e80c`
+- Implementation commit: `ea063ec40f5f98d6b28ff71ec360813e1823e80c`
+- Evidence log was updated after PR creation and pushed to the issue branch.
 - Branch: `issue-169-glossary-terminology`
 - PR: https://github.com/governance-foundation/vibegov.io/pull/200
 - In review transition unavailable: Governance Foundation Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the issue item remains in `In Progress`.
 - Branch pushed to origin.
-- Working tree cleanup pending final evidence commit.
+- Branch pushed to origin.
