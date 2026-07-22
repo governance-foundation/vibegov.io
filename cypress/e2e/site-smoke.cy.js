@@ -9,6 +9,10 @@ describe("VibeGov site smoke test", () => {
     cy.contains("Read Docs").click();
     cy.url().should("include", "/docs/intro");
     cy.contains("Why VibeGov exists").should("be.visible");
+    cy.contains("Glossary").click();
+    cy.url().should("include", "/docs/glossary");
+    cy.contains("Core delivery terms").should("be.visible");
+    cy.contains("Spec binding").should("be.visible");
     cy.contains("Contribute").should("be.visible");
   });
 });

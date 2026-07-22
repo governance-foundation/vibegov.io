@@ -15,6 +15,7 @@ This page is the shortest path to the smallest useful adoption step.
 ### 1. I want the fastest explanation of what VibeGov is
 Read:
 - [VibeGov](/docs/intro)
+- [Glossary](/docs/glossary)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ### 2. I want to install or bootstrap VibeGov in a repo
@@ -53,6 +54,8 @@ That is enough to understand the basic shape:
 - report clearly
 - bootstrap governance before trying to scale the workflow
 
+If a term is unclear while reading, keep the [Glossary](/docs/glossary) open beside the deeper docs.
+
 ## What VibeGov is not
 
 VibeGov is not:
@@ -75,6 +78,7 @@ Use this shortcut:
 ## Related docs
 
 - [VibeGov](/docs/intro)
+- [Glossary](/docs/glossary)
 - [Quick Start](/docs/quickstart)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

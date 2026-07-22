@@ -172,6 +172,7 @@ That answer should determine the work shape.
 
 ## Related docs
 
+- [Glossary](/docs/glossary)
 - [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Feedback Intake](/docs/feedback-intake)
 - [Quick Decisions](/docs/quick-decisions)

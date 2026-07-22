@@ -16,6 +16,7 @@ const sidebars = {
   docsSidebar: [
     'intro',
     'start-here',
+    'glossary',
     'bootstrap',
     'bootstrap-update',
     'bootstrap-review',

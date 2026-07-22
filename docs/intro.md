@@ -16,6 +16,8 @@ The model is simple:
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
 
+If terms like evidence, traceability, bootstrap, or blocker are new to you, use the [Glossary](/docs/glossary) as a companion reference while reading the deeper docs.
+
 ## Why VibeGov exists
 
 AI-assisted delivery makes it easy to generate code quickly.
@@ -64,6 +66,7 @@ Canonical-source model:
 ## Best next reads
 
 - [Start Here](/docs/start-here)
+- [Glossary](/docs/glossary)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
