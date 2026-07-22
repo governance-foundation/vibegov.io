@@ -58,11 +58,6 @@ const sidebars = {
         'output-quality-and-anti-slop',
         'feedback-assimilation-pattern',
         'evaluation-pattern',
-        'harness-profile-minimal-claude',
-        'harness-profile-codex',
-        'codex-prompting-through-vibegov',
-        'harness-builder-checklist',
-        'minimal-vibegov-execution-profile-snippet',
         'exploratory-review-mode',
         'checkpoint-reporting',
         'blocker-escalation',
@@ -77,6 +72,18 @@ const sidebars = {
       items: [
         'test-execution-expectations',
         'quality-scaffolding-and-completeness-rubric',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Runtime and Harness Profiles',
+      items: [
+        'runtime-and-harness-profiles',
+        'minimal-vibegov-execution-profile-snippet',
+        'harness-profile-codex',
+        'harness-profile-minimal-claude',
+        'harness-builder-checklist',
+        'codex-prompting-through-vibegov',
       ],
     },
     {

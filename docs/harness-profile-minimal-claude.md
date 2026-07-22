@@ -10,11 +10,18 @@ Use this when you want autonomous multi-session delivery with explicit quality g
 
 It should be adopted with a simplicity-first bias: do not add harness layers faster than the real failure modes justify.
 
+It is an adapter profile, not a VibeGov requirement. VibeGov does not require Claude, a generator/evaluator harness, or any specific provider.
+
+Read this after the canonical VibeGov surfaces:
+- [Bootstrap](/docs/bootstrap)
+- [Execution Modes](/docs/execution-modes)
+- [Published GOV Rules](/docs/published/gov-01-instructions)
+
 ## Why this is a profile, not the core runtime
 
 VibeGov governs behavior and evidence standards across tools.
 
-The minimal harness implementation is one concrete way to satisfy those standards. It should be treated as a reference profile, not as the only valid execution engine.
+The minimal harness implementation is one concrete way to satisfy those standards. It should be treated as a reference profile, not as the only valid execution engine. If this profile conflicts with the bootstrap contract or published GOV rules, the canonical VibeGov surface wins and the profile should be updated.
 
 ## Profile boundaries
 
@@ -109,6 +116,8 @@ Prefer:
 
 ## Related docs
 
+- [Runtime and Harness Profiles](/docs/runtime-and-harness-profiles)
+- [Bootstrap](/docs/bootstrap)
 - [Execution Modes](/docs/execution-modes)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Simplicity-First Guidance](/docs/simplicity-first)
