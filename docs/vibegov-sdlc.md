@@ -10,6 +10,20 @@ VibeGov is a governed SDLC for AI-assisted software delivery. It starts by shapi
 
 Its default posture is also simplicity-first: use the smallest coherent workflow that can do the job, keep ownership singular as long as possible, and add orchestration only when the need is real and visible.
 
+## TLDR
+
+Use this page when you need the whole VibeGov delivery loop at a glance.
+
+Minimum takeaway:
+- VibeGov turns intent into issue/spec-bound work before implementation.
+- Work must choose the right mode, produce mode-appropriate evidence, and report a real checkpoint.
+- Findings and blockers feed back into backlog, specs, traceability, and release decisions so the next run starts from better repo truth.
+
+Next action:
+- If the repo is not bootstrapped yet, start with [Bootstrap](/docs/bootstrap).
+- If the work shape is unclear, use [Execution Modes](/docs/execution-modes).
+- If a change is ready to close, report proof with [Checkpoint Reporting](/docs/checkpoint-reporting).
+
 ## Lifecycle flow
 
 ```text

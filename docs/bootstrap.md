@@ -8,6 +8,20 @@ description: Use the canonical VibeGov bootstrap contract to install or normaliz
 
 This is the **canonical bootstrap contract** for VibeGov.
 
+## TLDR
+
+Use this page when you need to install, normalize, or audit the full VibeGov bootstrap contract.
+
+Minimum takeaway:
+- Bootstrap has one canonical contract, used through explicit `init`, `update`, or `review` modes.
+- The repo must have governance rules, project intent, specs, backlog linkage, workflow artifacts, continuity guidance, and durable reporting before product-code implementation.
+- This TLDR is orientation only; it is not a substitute for the canonical contract below.
+
+Next action:
+- If you want the shortest install path, use [Quick Start](/docs/quickstart).
+- If you need the full contract, follow the [canonical bootstrap prompt](#canonical-bootstrap-prompt).
+- If you are repairing an existing repo, read [Bootstrap Update](/docs/bootstrap-update).
+
 Shorthand refs used in docs and chat:
 - `BI` = bootstrap init
 - `BU` = bootstrap update

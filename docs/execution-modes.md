@@ -10,6 +10,20 @@ VibeGov works best when teams stop treating all work as the same kind of work.
 
 A review pass and a delivery pass are not interchangeable. They need different outputs, different evidence, and different completion criteria.
 
+## TLDR
+
+Use this page when you need to decide what kind of work is being done before someone claims progress or completion.
+
+Minimum takeaway:
+- Development changes reality and must end with delivery evidence.
+- Exploration discovers reality and should create findings, issues, specs, or confidence limits.
+- Feedback Intake converts human feedback into ready backlog/spec work without implementing by default.
+
+Next action:
+- If you are choosing a mode for a specific issue, read [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing).
+- If you are reviewing a surface without implementing, use [Exploratory Review Mode](/docs/exploratory-review-mode).
+- If you are closing a development change, use [Checkpoint Reporting](/docs/checkpoint-reporting) to report evidence and next action.
+
 ## The two operating modes
 
 VibeGov still keeps two primary operating modes: **Exploration** and **Development**.
