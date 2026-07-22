@@ -162,6 +162,8 @@ Mode selection keeps the workflow honest.
 - residual risk notes
 - release-readiness or shipping evidence when applicable
 
+For copyable weak-vs-strong reporting patterns, use [Evidence Examples](/docs/evidence-examples).
+
 ## Fast rule of thumb
 
 Ask one question before you start:
@@ -176,6 +178,7 @@ That answer should determine the work shape.
 - [Feedback Intake](/docs/feedback-intake)
 - [Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Evidence Examples](/docs/evidence-examples)
 - [Evaluation Pattern](/docs/evaluation-pattern)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

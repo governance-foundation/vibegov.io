@@ -54,6 +54,7 @@ const sidebars = {
         'feedback-intake',
         'quick-decisions',
         'mode-selection-and-evidence-closing',
+        'evidence-examples',
         'simplicity-first',
         'output-quality-and-anti-slop',
         'feedback-assimilation-pattern',

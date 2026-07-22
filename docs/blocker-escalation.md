@@ -51,6 +51,8 @@ When work is blocked:
 - redirected next step
 - recovery condition
 
+For a short copyable blocker checkpoint, see [Evidence Examples](/docs/evidence-examples).
+
 ## What not to do
 
 - keep retrying forever without creating an artifact
@@ -74,3 +76,4 @@ Formal blocker escalation gives you:
 - [GOV 02 Workflow](/docs/published/gov-02-workflow)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Evidence Examples](/docs/evidence-examples)

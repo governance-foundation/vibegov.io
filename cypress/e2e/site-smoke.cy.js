@@ -10,6 +10,10 @@ describe("VibeGov site smoke test", () => {
     cy.url().should("include", "/docs/intro");
     cy.contains("Why VibeGov exists").should("be.visible");
     cy.contains("Contribute").should("be.visible");
+    cy.visit("/docs/evidence-examples");
+    cy.contains("Weak vs strong evidence").should("be.visible");
+    cy.contains("Feedback Intake evidence").should("be.visible");
+    cy.contains("Release-readiness evidence").should("be.visible");
   });
 });
 
