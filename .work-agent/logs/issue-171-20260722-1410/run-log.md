@@ -46,16 +46,23 @@ Branch: `issue-171-role-selection-guidance`
 - `git diff --check`: pass.
 - `npm run typecheck`: pass.
 - `npm run build`: pass, including `validate:project-bootstrap`.
-- Initial `CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e`: command returned success, but `serve-3005.*.log` stayed empty because another process was already listening on port 3005, so this was not used as primary evidence.
+- Initial `CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e`: command returned success, but `serve-3005.out.log` was written late by a lingering Docusaurus child process, so this was not used as primary evidence.
 - Fresh explicit validation server:
   - Confirmed port 3006 was free before start.
   - `npm run serve -- --host localhost --port 3006`: served `build` at `http://localhost:3006/`; log: `.work-agent/logs/issue-171-20260722-1410/serve-3006.out.log`.
   - Updated roles page readiness probe confirmed `Start with the smallest useful role set` on `http://127.0.0.1:3006/roles`.
   - `CYPRESS_baseUrl=http://127.0.0.1:3006 npm run test:e2e`: pass, 2 tests / 2 passing; log: `.work-agent/logs/issue-171-20260722-1410/cypress-3006.log`.
-- Cleanup: stopped the port 3006 Docusaurus child process; final port 3006 check returned no listener.
+- Cleanup:
+  - Stopped the port 3005 Docusaurus child process after detecting late log output.
+  - Stopped the port 3006 Docusaurus child process.
+  - Final port 3005 and 3006 checks returned no listeners.
 
 ## Current state before PR
 
 - Branch: `issue-171-role-selection-guidance`.
 - Project status: `In Progress`.
-- Planned PR target: `develop`.
+- PR: https://github.com/governance-foundation/vibegov.io/pull/202.
+- PR target: `develop`.
+- PR state after creation: open, non-draft, mergeStateStatus `CLEAN`.
+- `gh pr checks 202`: no checks reported on the `issue-171-role-selection-guidance` branch.
+- In review transition unavailable: VibeGov Project #3 Status options are `Todo`, `In Progress`, `Done`, and `Blocked`; no `In review` option exists, so the issue item remains in `In Progress` for validator review.
