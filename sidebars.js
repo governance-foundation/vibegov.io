@@ -35,6 +35,11 @@ const sidebars = {
       label: 'FAQ',
       items: [
         'faq/what-is-vibegov',
+        'faq/is-vibegov-a-tool-or-framework',
+        'faq/how-is-vibegov-different-from-agent-rules',
+        'faq/do-i-need-a-specific-ai-provider',
+        'faq/can-i-use-vibegov-in-an-existing-repo',
+        'faq/what-is-the-smallest-useful-adoption-step',
         'faq/when-do-i-use-bootstrap-init',
         'faq/when-do-i-use-bootstrap-update',
         'faq/when-do-i-use-the-feedback-prompt',
