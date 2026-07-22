@@ -15,6 +15,7 @@ This page is the shortest path to the smallest useful adoption step.
 ### 1. I want the fastest explanation of what VibeGov is
 Read:
 - [VibeGov](/docs/intro)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ### 2. I want to install or bootstrap VibeGov in a repo
@@ -63,6 +64,8 @@ VibeGov is not:
 
 It is a governance layer that helps teams run AI-assisted delivery more legibly and more reliably.
 
+For a practical category comparison, read [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules).
+
 ## If you are still unsure
 
 Use this shortcut:
@@ -75,6 +78,7 @@ Use this shortcut:
 ## Related docs
 
 - [VibeGov](/docs/intro)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [Quick Start](/docs/quickstart)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

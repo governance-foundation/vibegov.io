@@ -16,6 +16,7 @@ const sidebars = {
   docsSidebar: [
     'intro',
     'start-here',
+    'vibegov-vs-agent-rules',
     'bootstrap',
     'bootstrap-update',
     'bootstrap-review',

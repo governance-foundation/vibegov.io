@@ -64,6 +64,7 @@ Canonical-source model:
 ## Best next reads
 
 - [Start Here](/docs/start-here)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)

@@ -20,3 +20,5 @@ VibeGov helps teams keep:
 
 It is not a replacement for judgement.
 It is a way to make delivery judgement more explicit and reusable.
+
+If you are comparing it with `AGENTS.md`, provider rules, prompt libraries, agent frameworks, project management, or compliance tooling, read [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules).
