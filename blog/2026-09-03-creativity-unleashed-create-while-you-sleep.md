@@ -3,10 +3,10 @@ slug: creativity-unleashed-create-while-you-sleep
 title: "Creativity Unleashed: Create While You Sleep"
 authors: [VibeGov_team]
 tags: [governance, ai-agents, orchestration, enterprise-delivery, creativity]
-description: How the Creative Architect-Conductor is rewriting the rules of enterprise execution.
+description: How the Architect-Conductor is rewriting the rules of enterprise execution.
 ---
 
-*How the Creative Architect-Conductor is rewriting the rules of enterprise execution.*
+*How the Architect-Conductor is rewriting the rules of enterprise execution.*
 
 A line famously attributed to Warren Buffett says you need to get your portfolio making money while you sleep.
 
