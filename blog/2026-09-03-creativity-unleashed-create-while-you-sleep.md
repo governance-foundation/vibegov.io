@@ -4,7 +4,10 @@ title: "Creativity Unleashed: Create While You Sleep"
 authors: [VibeGov_team]
 tags: [governance, ai-agents, orchestration, enterprise-delivery, creativity]
 description: How the Architect-Conductor is rewriting the rules of enterprise execution.
+image: /img/blog/creativity-unleashed-create-while-you-sleep-hero.png
 ---
+
+![A creator sleeping while a governed network of AI agents continues building overnight](/img/blog/creativity-unleashed-create-while-you-sleep-hero.png)
 
 *How the Architect-Conductor is rewriting the rules of enterprise execution.*
 
