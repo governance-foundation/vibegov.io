@@ -15,6 +15,8 @@ A good checkpoint tells the next reader:
 
 If you are not sure which checkpoint shape matches the work, use [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing) first.
 
+If you need short copyable examples before drafting your checkpoint, use [Evidence Examples](/docs/evidence-examples).
+
 ## Exploratory checkpoint template
 
 Use this when the pass is analysis-first.
@@ -133,6 +135,7 @@ When checkpoint/reporting feedback is materially edited by a human or reviewer, 
 
 - [Execution Modes](/docs/execution-modes)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Evidence Examples](/docs/evidence-examples)
 - [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
 - [Blocker Escalation](/docs/blocker-escalation)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)

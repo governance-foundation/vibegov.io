@@ -6,9 +6,23 @@ description: Install VibeGov quickly with the hardened bootstrap contract and th
 
 # Quick Start
 
-Use this to install VibeGov quickly with the hardened bootstrap contract.
+Use this to install VibeGov, a repo-local governance framework for AI-assisted software delivery, quickly with the hardened bootstrap contract.
 
-If you are not sure whether Quick Start is the right entry point yet, read [Start Here](/docs/start-here) first.
+Quick Start is the action path. Use [Start Here](/docs/start-here) only when you still need to choose between orientation, install, operating guidance, and deeper governance reading.
+
+## TLDR
+
+Use this page when you want the fastest practical path to bootstrap a repo with VibeGov.
+
+Minimum takeaway:
+- Quick Start is a compressed path into the same bootstrap contract, not a separate weaker contract.
+- Choose `init`, `update`, or `review` before running the prompt.
+- Stop before product-code implementation once governance, specs, workflow, continuity, and reporting surfaces are ready.
+
+Next action:
+- Copy the [bootstrap prompt](#copy-paste-bootstrap-prompt) for a fast run.
+- Use [Bootstrap](/docs/bootstrap) when any detail matters.
+- Use [GitHub Project Bootstrap](/docs/github-project-bootstrap) when project-board setup or GitHub preflight becomes the hard part.
 
 Bootstrap now uses one canonical contract with explicit modes:
 - `init`

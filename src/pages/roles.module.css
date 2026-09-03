@@ -18,6 +18,17 @@
   color: rgba(226, 232, 240, 0.94);
 }
 
+.status {
+  max-width: 54rem;
+  margin: 1rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(226, 232, 240, 0.28);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.42);
+  color: rgba(248, 250, 252, 0.96);
+  line-height: 1.55;
+}
+
 .section {
   padding: 3rem 0;
 }
@@ -37,12 +48,89 @@
   gap: 1.25rem;
 }
 
+.guidance {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1.75rem 0 2rem;
+}
+
+.guidance h3 {
+  margin: 0 0 0.85rem;
+}
+
+.starterGrid,
+.modeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.85rem;
+}
+
+.starterItem,
+.modeItem {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.starterItem h4,
+.modeItem h4 {
+  margin: 0 0 0.35rem;
+}
+
+.starterItem p,
+.modeItem p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.starterItem p + p,
+.modeItem p + p {
+  margin-top: 0.55rem;
+}
+
+.starterItem .roleLine,
+.modeItem .shape {
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.selectionTable {
+  width: 100%;
+  min-width: 760px;
+  margin: 0;
+  display: table;
+}
+
+.selectionTable th,
+.selectionTable td {
+  vertical-align: top;
+}
+
+.selectionTable th {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.warning {
+  border-left: 4px solid #0f766e;
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(15, 118, 110, 0.08);
+  color: var(--ifm-color-emphasis-800);
+}
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 1.25rem;
   background: var(--ifm-background-surface-color);
   box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
@@ -63,7 +151,7 @@
   min-height: 190px;
   margin: 0;
   padding: 0.85rem;
-  border-radius: 12px;
+  border-radius: 8px;
   background: var(--ifm-color-emphasis-100);
   font-size: 0.82rem;
   line-height: 1.45;
@@ -95,7 +183,7 @@
 
 .note {
   border-left: 4px solid var(--ifm-color-primary);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1rem;
   background: var(--ifm-color-emphasis-100);
 }

@@ -10,6 +10,8 @@ That means keeping the useful execution patterns that help agents move cleanly f
 
 It also means being explicit about scope.
 
+This is runtime-profile guidance, not a provider requirement. VibeGov remains tool-agnostic.
+
 The canonical bootstrap contract is still about installing governed repo structure, continuity, issue/spec discipline, and reporting surfaces.
 
 The second-pass Codex lessons mostly improve the execution and harness layer around that contract: tool surface design, output shaping, commentary mechanics, instruction layering, and governed self-improvement.
@@ -141,6 +143,8 @@ That combination is the point.
 
 ## Recommended reading path
 
+- [Runtime and Harness Profiles](/docs/runtime-and-harness-profiles)
+- [Bootstrap](/docs/bootstrap)
 - [Harness Profile: Codex](/docs/harness-profile-codex)
 - [Minimal VibeGov Execution Profile Snippet](/docs/minimal-vibegov-execution-profile-snippet)
 - [Harness Profile: Minimal Claude Harness](/docs/harness-profile-minimal-claude)

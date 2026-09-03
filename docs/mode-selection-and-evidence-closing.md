@@ -119,6 +119,8 @@ Minimum closure:
 
 ## 5. Which checkpoint/report shape should I use?
 
+For short examples you can copy and adapt, see [Evidence Examples](/docs/evidence-examples).
+
 | Situation | Report shape |
 | --- | --- |
 | route, page, workflow, or surface review | **Exploratory checkpoint** |
@@ -168,6 +170,7 @@ If the answers are blurry, the mode is probably blurry too.
 
 - [Quick Decisions](/docs/quick-decisions)
 - [Execution Modes](/docs/execution-modes)
+- [Evidence Examples](/docs/evidence-examples)
 - [Feedback Intake](/docs/feedback-intake)
 - [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Evaluation Pattern](/docs/evaluation-pattern)

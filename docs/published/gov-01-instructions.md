@@ -7,13 +7,13 @@ sidebar_position: 1
 - Source rule: [gov-01-instructions.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-01-instructions.mdc)
 - Download raw file: [gov-01-instructions.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-01-instructions.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Instructions Entrypoint
 
 This file is the root index for VibeGov governance behavior.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Frames GOV-01 as the index that tells agents where rule authority starts.
 
 ## Rule Loading Order
 
@@ -32,7 +32,7 @@ Apply these files in order:
 11. `gov-12-drift-control-garbage-collection.mdc` (continuous cleanup and drift-control governance)
 12. `gov-13-review-loops-completion-discipline.mdc` (review-loop closure and completion semantics)
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Makes the rule stack explicit so agents load workflow, quality, and continuity guidance in a predictable sequence.
 
 ## Source-of-Truth Layout
 
@@ -46,7 +46,7 @@ If a target project already contains a provider-native rules directory, detect i
 
 Do not use placeholder paths. If no provider-native rules directory exists, continue with `.governance/rules/` only.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Separates canonical rule, project, and spec locations so teams do not scatter governance across hidden files.
 
 ## Instruction Precedence
 
@@ -57,7 +57,7 @@ Do not use placeholder paths. If no provider-native rules directory exists, cont
 
 If guidance conflicts, choose the most specific project-scoped instruction and document the decision.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines how to resolve conflicts when human requests, specs, rules, and tool defaults disagree.
 
 ## Operating Principle
 
@@ -67,4 +67,4 @@ Intent should outlive implementation:
 - keep decisions reviewable
 - maintain traceability between intent, change, verification, and outcomes
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Keeps the rule set anchored on intent, traceability, and reviewable decisions instead of raw output volume.

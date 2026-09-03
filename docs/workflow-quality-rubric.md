@@ -7,6 +7,7 @@ sidebar_position: 10
 When this rubric points to weak testing evidence or fake completeness risk, continue with:
 - [Test Execution Expectations](/docs/test-execution-expectations)
 - [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
+- [Evidence Examples](/docs/evidence-examples)
 
 This rubric exists for one reason:
 
@@ -136,6 +137,7 @@ A 10/10 workflow:
 - [Execution Modes](/docs/execution-modes)
 - [Test Execution Expectations](/docs/test-execution-expectations)
 - [Quality Scaffolding and Completeness Rubric](/docs/quality-scaffolding-and-completeness-rubric)
+- [Evidence Examples](/docs/evidence-examples)
 - [Exploratory Review Mode](/docs/exploratory-review-mode)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [Blocker Escalation](/docs/blocker-escalation)

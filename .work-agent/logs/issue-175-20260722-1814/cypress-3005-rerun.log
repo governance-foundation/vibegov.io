@@ -1,0 +1,78 @@
+
+> website@0.0.0 test:e2e
+> cypress run --spec cypress/e2e/site-smoke.cy.js
+
+
+[54920:0722/181638.565:ERROR:node_bindings.cc(305)] Most NODE_OPTIONs are not supported in packaged apps. See documentation for more details.
+
+DevTools listening on ws://127.0.0.1:51624/devtools/browser/c46481e1-2379-4406-81f6-95819a4e9ce6
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        13.17.0                                                                        │
+  │ Browser:        Electron 118 (headless)                                                        │
+  │ Node Version:   v24.15.0 (C:\nvm4w\nodejs\node.exe)                                            │
+  │ Specs:          1 found (site-smoke.cy.js)                                                     │
+  │ Searched:       C:\projects\governance-foundation\vibegov.io\cypress\e2e\site-smoke.cy.js      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Running:  site-smoke.cy.js                                                                (1 of 1)
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+
+  VibeGov site smoke test
+    1) loads homepage and core docs links
+
+
+  0 passing (5s)
+  1 failing
+
+  1) VibeGov site smoke test
+       loads homepage and core docs links:
+     AssertionError: Timed out retrying after 4000ms: expected '<a.menu__link>' to be 'visible'
+
+This element `<a.menu__link>` is not visible because its ancestor has `position: fixed` CSS property and it is overflowed by other elements. How about scrolling to the element with `cy.scrollIntoView()`?
+      at Context.eval (webpack://website/./cypress/e2e/site-smoke.cy.js:17:42)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     site-smoke.cy.js                                                                 │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\projects\governance-foundation\vibegov.io\cypress\screenshots\site-smoke.cy.j     (1280x720)
+     s\VibeGov site smoke test -- loads homepage and core docs links (failed).png
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  site-smoke.cy.js                         00:04        1        -        1        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  1 of 1 failed (100%)                     00:04        1        -        1        -        -

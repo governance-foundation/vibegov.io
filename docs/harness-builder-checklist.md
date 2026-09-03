@@ -10,6 +10,8 @@ This is not a full governance system.
 
 It is a practical checklist for the harness layer.
 
+It is runtime-profile guidance, not a replacement for the canonical bootstrap contract or published GOV rules.
+
 ## What this checklist is for
 
 A good coding-agent harness is not only a prompt.
@@ -92,6 +94,8 @@ It helps reduce:
 
 ## Related docs
 
+- [Runtime and Harness Profiles](/docs/runtime-and-harness-profiles)
+- [Bootstrap](/docs/bootstrap)
 - [Harness Profile: Codex](/docs/harness-profile-codex)
 - [Execution Sharpness and Governed Closure](/docs/codex-prompting-through-vibegov)
 - [Minimal VibeGov Execution Profile Snippet](/docs/minimal-vibegov-execution-profile-snippet)

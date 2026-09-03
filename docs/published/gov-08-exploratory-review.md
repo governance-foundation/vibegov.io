@@ -7,11 +7,11 @@ sidebar_position: 8
 - Source rule: [gov-08-exploratory-review.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc)
 - Download raw file: [gov-08-exploratory-review.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## GOV-08 — Exploratory Review
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Frames GOV-08 as the rule for turning exploratory review into usable delivery input.
 
 ## Purpose
 
@@ -24,7 +24,7 @@ Its job is to continuously:
 
 Exploratory review is not a substitute for implementation or release verification. Its primary output is evidence-backed backlog hydration.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Explains why exploration must create evidence and backlog signal, not just impressions.
 
 ## Execution constraints
 
@@ -42,7 +42,7 @@ During exploratory execution:
 
 Exploratory output feeds normal delivery flow for implementation, automated validation, and release decisions.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Sets boundaries so exploratory review does not mutate product state or drift into coding.
 
 ## Operating model
 
@@ -51,7 +51,7 @@ Exploratory output feeds normal delivery flow for implementation, automated vali
 - It is parallel to normal delivery behavior, not a replacement lifecycle.
 - A review unit can be a route, page, feature slice, API surface, or operational workflow, but the scope must be explicit.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines how exploratory passes are scoped, observed, and translated into findings.
 
 ## Review anti-patterns to prevent
 
@@ -61,7 +61,7 @@ Exploratory output feeds normal delivery flow for implementation, automated vali
 - Do not report findings without backlog/spec/traceability artifacts.
 - Do not allow a local blocker to freeze a whole review queue.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Calls out browsing and opinion patterns that produce weak discovery evidence.
 
 ## Review posture
 
@@ -103,7 +103,7 @@ For each scenario:
    - `Blocked`
    - `Uncovered-spec-gap`
 
-> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
+> Commentary: Requires explicit scenario coverage so reviewers know what was and was not exercised.
 
 ## Persistence and mutation verification rule
 
@@ -111,7 +111,7 @@ Any action that claims to save, mutate, delete, sync, submit, import, connect, o
 
 Acceptable verification includes refresh checks, downstream-state checks, source-of-truth checks, or other evidence that the claimed mutation actually took effect.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Checks whether changes survive reloads, transitions, and follow-up actions when persistence matters.
 
 ## Classification rules
 
@@ -123,7 +123,7 @@ Use these classifications precisely:
 
 A scenario that is only partially exercised must still end in one of the classifications above, with the evidence note explaining the limit.
 
-> Commentary: Standardizes outcomes so exploratory findings can be triaged and acted on consistently.
+> Commentary: Standardizes finding outcomes so triage can distinguish validated behavior, gaps, and blockers.
 
 ## Surface and state coverage (mandatory)
 
@@ -134,7 +134,7 @@ A page, route, or feature review is incomplete until all meaningful elements, co
 - Do not batch unrelated uncovered contracts into one vague finding.
 - Do not report completion while any explored surface remains unclassified or untracked.
 
-> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
+> Commentary: Expands review beyond default screens into empty, loading, error, permission, and post-action states.
 
 ## Required follow-up artifacts
 
@@ -147,7 +147,7 @@ Required follow-up by classification:
 
 If multiple scenarios expose different contracts, create or link separate artifacts for each distinct contract.
 
-> Commentary: Turns each finding into tracked engineering work so exploration actually hydrates the backlog.
+> Commentary: Turns discovered issues into tracked artifacts with enough context for delivery.
 
 ## Blocker severity model
 
@@ -159,7 +159,7 @@ Classify blockers before deciding how to respond:
 
 The response should scale with the blocker, but the default remains: make it visible, bound its impact, and keep unaffected work moving.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Separates hard blockers from lower-severity findings so escalation matches impact.
 
 ## Route-order heuristic
 
@@ -176,7 +176,7 @@ When reviewing many routes and no stronger product-specific dependency exists, u
 
 If a product-specific dependency order is stronger, use that instead — but make the ordering logic explicit.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Prioritizes review paths by user value and risk instead of arbitrary navigation order.
 
 ## Required exploratory output (per review unit)
 
@@ -190,7 +190,7 @@ If a product-specific dependency order is stronger, use that instead — but mak
 
 For single-route or single-URL review, prefer the dedicated exploratory route report template so checkpoints remain uniform, artifact-complete, and comparable across runs.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines the report fields needed for exploration to feed planning and delivery.
 
 ## Artifact completeness rule
 
@@ -198,7 +198,7 @@ Findings without tracked artifacts are incomplete.
 
 A note, screenshot, or verbal summary is not a completed exploratory result unless the corresponding follow-up work is linked in the backlog and its spec/traceability impact is recorded.
 
-> Commentary: Blocks ceremonial reporting by requiring every finding to be linked to follow-up artifacts.
+> Commentary: Blocks ceremonial reports by requiring each finding to link to usable follow-up state.
 
 ## Review completeness rubric
 
@@ -208,7 +208,7 @@ Every review unit should end with one explicit completeness label:
 - `Partial` — intentionally stopped; residual scope listed
 - `Invalid-review` — insufficient coverage/evidence; must be redone
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Gives reviewers a quality bar for judging whether the exploration was deep enough.
 
 ## Done criteria
 
@@ -219,7 +219,7 @@ Exploratory work is complete for a review unit only when:
 - the next recommended backlog action is stated,
 - the final completeness label is recorded honestly.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines when an exploratory slice has enough evidence, findings, and follow-up to stop.
 
 ## Self-check before claiming completion
 
@@ -229,4 +229,4 @@ Exploratory work is complete for a review unit only when:
 - Did I record confidence limits honestly?
 - Did I move on from blockers correctly?
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Forces a final coverage and evidence review before exploration is reported as complete.

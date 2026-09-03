@@ -1,0 +1,22 @@
+
+> website@0.0.0 build
+> npm run validate:project-bootstrap && docusaurus build
+
+
+> website@0.0.0 validate:project-bootstrap
+> node scripts/validate-project-bootstrap-contract.js
+
+GitHub Project bootstrap contract is valid.
+
+╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+
+[INFO] [en] Creating an optimized production build...
+[ERROR] Error while parsing Markdown front matter.
+This can happen if you use special characters in front matter values (try using double quotes around that value).
+[ERROR] Loading of version failed for version current
+[ERROR] Unable to build website for locale en.
+[ERROR] Error: Can't process doc metadata for doc at path path=C:\projects\governance-foundation\vibegov.io\docs\faq\is-vibegov-a-tool-or-framework.md in version name=current
+    at processDocMetadata (C:\projects\governance-foundation\vibegov.io\node_modules\@docusaurus\plugin-content-docs\lib\docs.js:200:15)
+    at async Promise.all (index 42)
+[INFO] Docusaurus version: 2.4.3
+Node version: v24.15.0

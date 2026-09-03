@@ -6,9 +6,23 @@ description: See the governed VibeGov SDLC from bootstrap through issue/spec bin
 
 # The VibeGov SDLC
 
-VibeGov is a governed SDLC for AI-assisted software delivery. It starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
+VibeGov is a repo-local governance framework for AI-assisted software delivery. Its SDLC starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
 
 Its default posture is also simplicity-first: use the smallest coherent workflow that can do the job, keep ownership singular as long as possible, and add orchestration only when the need is real and visible.
+
+## TLDR
+
+Use this page when you need the whole VibeGov delivery loop at a glance.
+
+Minimum takeaway:
+- VibeGov turns intent into issue/spec-bound work before implementation.
+- Work must choose the right mode, produce mode-appropriate evidence, and report a real checkpoint.
+- Findings and blockers feed back into backlog, specs, traceability, and release decisions so the next run starts from better repo truth.
+
+Next action:
+- If the repo is not bootstrapped yet, start with [Bootstrap](/docs/bootstrap).
+- If the work shape is unclear, use [Execution Modes](/docs/execution-modes).
+- If a change is ready to close, report proof with [Checkpoint Reporting](/docs/checkpoint-reporting).
 
 ## Lifecycle flow
 
@@ -117,6 +131,7 @@ When teams skip that progression, they often create systems that look advanced b
 - [Bootstrap](/docs/bootstrap)
 - [Execution Modes](/docs/execution-modes)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Evidence Examples](/docs/evidence-examples)
 - [Simplicity-First Guidance](/docs/simplicity-first)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 - [GOV 02 Workflow](/docs/published/gov-02-workflow)
