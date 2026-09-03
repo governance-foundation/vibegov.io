@@ -1,0 +1,62 @@
+[
+  {
+    "Command": "git fetch origin --prune",
+    "Exit": 0,
+    "Log": "git-fetch-origin.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "git status --short --branch",
+    "Exit": 0,
+    "Log": "git-status-before-validation.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "gh issue view 155 --repo governance-foundation/vibegov.io --json title,state,projectItems,url",
+    "Exit": 0,
+    "Log": "issue-project-items.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "gh pr view 182 --repo governance-foundation/vibegov.io --json number,title,state,headRefName,baseRefName,isDraft,mergeStateStatus,reviewDecision,url,commits",
+    "Exit": 0,
+    "Log": "pr-state.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "gh pr checks 182 --repo governance-foundation/vibegov.io",
+    "Exit": 1,
+    "Log": "pr-checks.log",
+    "AllowFailure": true
+  },
+  {
+    "Command": "gh api repos/governance-foundation/vibegov.io/commits/9eec24a8c764e2433d70c7e6cb45fb201d108b29/status",
+    "Exit": 0,
+    "Log": "combined-status.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "git diff --check",
+    "Exit": 0,
+    "Log": "git-diff-check.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "git diff --check origin/develop...HEAD",
+    "Exit": 0,
+    "Log": "git-diff-check-pr-range.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "npm run build",
+    "Exit": 0,
+    "Log": "npm-run-build.log",
+    "AllowFailure": false
+  },
+  {
+    "Command": "rg -n \"roles//BOOTSTRAP|roles/\\{role\\}/BOOTSTRAP|roles/<role>/BOOTSTRAP\" static\\agent.txt static\\bootstrap.json",
+    "Exit": 0,
+    "Log": "role-url-pattern-check.log",
+    "AllowFailure": false
+  }
+]

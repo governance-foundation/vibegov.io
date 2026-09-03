@@ -1,0 +1,4 @@
+COMMAND: git status --short --branch
+## issue-139-ignore-windows-cache-artifacts...origin/issue-139-ignore-windows-cache-artifacts
+?? .work-agent/logs/issue-139-20260705-0508/
+exit=0

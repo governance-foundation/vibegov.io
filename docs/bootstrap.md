@@ -6,7 +6,25 @@ description: Use the canonical VibeGov bootstrap contract to install or normaliz
 
 # Bootstrap
 
-This is the **canonical bootstrap contract** for VibeGov.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
+
+This is its **canonical bootstrap contract**.
+
+## TLDR
+
+Use this page when you need to install, normalize, or audit the full VibeGov bootstrap contract.
+
+Minimum takeaway:
+- Bootstrap has one canonical contract, used through explicit `init`, `update`, or `review` modes.
+- The repo must have governance rules, project intent, specs, backlog linkage, workflow artifacts, continuity guidance, and durable reporting before product-code implementation.
+- This TLDR is orientation only; it is not a substitute for the canonical contract below.
+
+Next action:
+- If you want the shortest install path, use [Quick Start](/docs/quickstart).
+- If you need the full contract, follow the [canonical bootstrap prompt](#canonical-bootstrap-prompt).
+- If you are repairing an existing repo, read [Bootstrap Update](/docs/bootstrap-update).
+
+Status: **Canonical contract**. Treat this page, [`agent.txt`](/agent.txt), and [`bootstrap.json`](/bootstrap.json) as authoritative bootstrap sources. Supporting docs can explain or extend usage, but they do not weaken this contract.
 
 Shorthand refs used in docs and chat:
 - `BI` = bootstrap init
@@ -45,7 +63,7 @@ Do not fork or weaken the pass gate by mode.
 
 Before writing any product code (or before claiming bootstrap review is complete):
 1. Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/` as needed for the selected mode.
-2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-09`) is installed in `.governance/rules/`.
+2. Ensure the active VibeGov rule set (`GOV-01` through `GOV-13`) is installed in `.governance/rules/`.
 3. Detect existing provider-native rules directories and mirror `.governance/rules/*.mdc` only when they already exist.
 4. Create or normalize `.governance/project/PROJECT_INTENT.md`.
 5. Create `SPEC-001` as either:
@@ -64,14 +82,20 @@ Before writing any product code (or before claiming bootstrap review is complete
    - checkpoint trigger guidance for instructions, decisions, blockers, phase changes, and compaction risk
    - session-diary guidance for recurring threads/contexts
    - promotion guidance between continuity layers
-9. Classify starting repo state before edits or review conclusions:
+9. Before broader bootstrap mutation, classify git/repo preflight state:
+   - is `git` available
+   - is the current folder already an initialized git repo
+   - if not initialized but `git` is available, run `git init` first as a repo-preservation pre-step
+   - record pre-init local state before continuing (at minimum: folder context plus notable existing files/bootstrap-relevant artifacts)
+   - remote setup is **not** required for this pre-step
+10. Classify starting repo state before edits or review conclusions:
    - current branch
    - clean/dirty working tree
    - untracked files
    - uncommitted changes
-10. Run with explicit commit policy: `required`, `allowed`, or `forbidden`.
-11. If repo is dirty, do exactly one: resolve first, stop blocked, or continue in explicit review mode.
-12. If GitHub-hosted, run preflight before board mutation:
+11. Run with explicit commit policy: `required`, `allowed`, or `forbidden`.
+12. If repo is dirty, do exactly one: resolve first, stop blocked, or continue in explicit review mode.
+13. If GitHub-hosted, run preflight before board mutation:
    - `git` available
    - `gh` available
    - GitHub auth
@@ -81,17 +105,24 @@ Before writing any product code (or before claiming bootstrap review is complete
    - branch-protection/admin capability when relevant
    - if any required capability is missing, record it in `INIT-TODO.md` with the exact remediation command or next action before proceeding
    - if branch-protection verification is unavailable only because of a known hosted-feature/private-repo limitation, record it as degraded verification with exact evidence and next action rather than pretending the repo normalization failed
-13. If GitHub automation is available, create/adopt/normalize one canonical board target:
+14. If GitHub automation is available, create/adopt/normalize one canonical board target:
    - if multiple matching boards exist, choose one canonical target explicitly and report why it was chosen
+   - for a new board, prefer copying a configured canonical template so views and custom fields are reproduced together
    - normalize `Status`: `Backlog`, `Ready`, `In progress`, `In review`, `Done`, `Blocked`
-   - normalize `Priority`: `P0`, `P1`, `P2`
+   - normalize `Project Priority`: `P0`, `P1`, `P2`, `P3`, `P4`
+   - normalize `Order`: number
+   - normalize `Priority`: `Urgent`, `High`, `Medium`, `Low`
    - normalize `Size`: `XS`, `S`, `M`, `L`, `XL`
+   - create or normalize the default table view with visible columns in this exact order: `Title`, `Assignees`, `Status`, `Project Priority`, `Order`, `Priority`, `Repository`
+   - permit additional fields such as `Size` to remain hidden in the default table view
+   - if the available capability can create fields but cannot configure view visibility/order, record the exact manual remediation as `blocked-with-tracked-issue`; do not report the view as configured
+   - document backlog automation ordering as `Project Priority` group then `Order` inside the group
    - link the repo
    - import/attach existing issues
    - if no issues exist, report board as intentionally empty
    - clean accidental duplicate empty boards and report cleanup
-14. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
-15. Write durable local bootstrap reporting artifacts using a two-surface layout:
+15. If GitHub automation is unavailable, report exact missing capability and leave a tracked blocker artifact.
+16. Write durable local bootstrap reporting artifacts using a two-surface layout:
    - current reporting surface: `.governance/project/bootstrap/`
      - `STATUS.md`
      - `ANALYSIS.md`
@@ -104,9 +135,9 @@ Before writing any product code (or before claiming bootstrap review is complete
      - optional `blockers.md`
    - current files should act as the latest current reporting surface
    - history folders should preserve the per-run bundle as historical evidence
-16. Reconcile generated docs against final live git/GitHub state before claiming completion.
-17. Distinguish final current state from historical evidence gathered earlier in the run.
-18. If migrating a repo from the older flat layout (`BOOTSTRAP_*.md` and `bootstrap-runs/<timestamp>-*.md`), normalize it into the current-surface plus historical-run-bundle structure instead of extending the legacy shape.
+17. Reconcile generated docs against final live git/GitHub state before claiming completion.
+18. Distinguish final current state from historical evidence gathered earlier in the run.
+19. If migrating a repo from the older flat layout (`BOOTSTRAP_*.md` and `bootstrap-runs/<timestamp>-*.md`), normalize it into the current-surface plus historical-run-bundle structure instead of extending the legacy shape.
 
 Support docs for this contract:
 - use [GitHub Project Bootstrap](/docs/github-project-bootstrap) when the repo is GitHub-hosted and board/project setup is in scope
@@ -126,7 +157,7 @@ Then stop before product-code implementation.
 
 Continue only if all are true:
 
-- `.governance/rules/` exists with `GOV-01` through `GOV-09`
+- `.governance/rules/` exists with `GOV-01` through `GOV-13`
 - `.governance/project/PROJECT_INTENT.md` exists
 - `.governance/specs/` has `SPEC-001` (feature spec or bootstrap-setup spec for vague repos)
 - backlog maps to spec scope
@@ -134,9 +165,10 @@ Continue only if all are true:
 - `INIT-TODO.md` exists for bootstrap/adoption/remediation work and records any missing prerequisite with exact remediation when relevant
 - strict Git workflow artifacts exist
 - continuity structure and continuity operating guidance exist
+- git/repo preflight state is reported, including repo-initialization action when bootstrap had to initialize git first
 - starting repo state and commit-policy mode are reported
 - for GitHub repos, preflight results are reported with explicit state (`configured`, `blocked-with-tracked-issue`, `not-applicable`), and known hosted-feature verification limits are distinguished from core bootstrap failure
-- for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, and multiple-match selection is explained when relevant
+- for GitHub repos with automation, canonical board target is adopted/created/normalized, repo-link status is reported, multiple-match selection is explained when relevant, the required default table view is normalized, and backlog ordering is documented through `Project Priority` plus `Order`
 - current bootstrap reporting artifacts exist under `.governance/project/bootstrap/`
 - historical bootstrap run bundles are written under `.governance/project/bootstrap/history/<timestamp>/`
 - if update cannot complete all gaps or only reaches degraded verification, blocker reporting makes the incomplete state explicit with exact next actions

@@ -1,0 +1,5 @@
+COMMAND: gh run list --repo governance-foundation/vibegov.io --commit 0bf2aea4e75ef0e475bda3ee7a51b1012abe54ac --limit 20
+START: 2026-07-03T19:11:13.2986194+10:00
+
+
+EXIT: 0

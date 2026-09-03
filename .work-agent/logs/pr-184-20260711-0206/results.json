@@ -1,0 +1,37 @@
+[
+  {
+    "Key": "bootstrap-gate",
+    "Value": 0,
+    "Name": "bootstrap-gate"
+  },
+  {
+    "Key": "empty-repo-bootstrap",
+    "Value": 0,
+    "Name": "empty-repo-bootstrap"
+  },
+  {
+    "Key": "git-diff-check-origin-develop-head",
+    "Value": 0,
+    "Name": "git-diff-check-origin-develop-head"
+  },
+  {
+    "Key": "git-status-short",
+    "Value": 0,
+    "Name": "git-status-short"
+  },
+  {
+    "Key": "npm-build",
+    "Value": 0,
+    "Name": "npm-build"
+  },
+  {
+    "Key": "published-rules-diff",
+    "Value": 0,
+    "Name": "published-rules-diff"
+  },
+  {
+    "Key": "published-rules-generate",
+    "Value": 0,
+    "Name": "published-rules-generate"
+  }
+]

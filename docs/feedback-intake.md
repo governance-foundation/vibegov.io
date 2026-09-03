@@ -63,6 +63,8 @@ Feedback Intake is honestly complete when it leaves:
 - readiness/blocker/dependency notes captured
 - no false implication that the product change itself was delivered
 
+For a copyable checkpoint shape, see the Feedback Intake example in [Evidence Examples](/docs/evidence-examples).
+
 ## Relationship to other work shapes
 
 ### Feedback Intake vs Development
@@ -96,5 +98,6 @@ Use Feedback Intake when the real question is:
 - [Execution Modes](/docs/execution-modes)
 - [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
+- [Evidence Examples](/docs/evidence-examples)
 - [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern)
 - [Quick Decisions](/docs/quick-decisions)

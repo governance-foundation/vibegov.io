@@ -1,0 +1,8 @@
+[issue-138-bootstrap-git-init-preflight 9a1cbff] #138 record current validation evidence
+ 6 files changed, 41 insertions(+)
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/git-diff-check-origin-develop.log
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/git-diff-check.log
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/git-fetch.log
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/git-status.log
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/npm-run-build.log
+ create mode 100644 .work-agent/logs/issue-138-20260626-0613/summary.txt

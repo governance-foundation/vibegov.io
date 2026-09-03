@@ -1,0 +1,4 @@
+Command: git status --short --branch
+
+## issue-138-bootstrap-git-init-preflight...origin/issue-138-bootstrap-git-init-preflight
+?? .work-agent/logs/issue-138-20260626-2017/

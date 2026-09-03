@@ -30,7 +30,7 @@ When work is blocked:
    - State the recovery condition clearly.
 
 5. **Redirect flow**
-   - Continue with the next highest-priority unblocked item unless a true stop condition applies.
+   - Continue with the next unblocked item by `Project Priority` group and `Order` when those board fields are available, unless a true stop condition applies.
 
 ## Common blocker types
 
@@ -50,6 +50,8 @@ When work is blocked:
 - confidence limits
 - redirected next step
 - recovery condition
+
+For a short copyable blocker checkpoint, see [Evidence Examples](/docs/evidence-examples).
 
 ## What not to do
 
@@ -74,3 +76,4 @@ Formal blocker escalation gives you:
 - [GOV 02 Workflow](/docs/published/gov-02-workflow)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
+- [Evidence Examples](/docs/evidence-examples)

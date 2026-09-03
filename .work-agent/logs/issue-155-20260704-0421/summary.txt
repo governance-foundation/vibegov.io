@@ -1,0 +1,31 @@
+Issue: #155
+PR: #182
+Run: 2026-07-04 04:21 Australia/Sydney
+Branch: issue-155-agent-txt-role-url
+Head before evidence commit: c6063c735c50f599a8e553d4fdddc4da10f34546
+
+Outcome:
+- Resumed the active issue branch and open PR instead of selecting new backlog work.
+- Re-applied Project Status `In Progress` to the existing `Governance Foundation Work` project #2 item with `gh project item-edit`.
+- Confirmed issue #155 project item status via `gh issue view 155 --json projectItems`.
+- Confirmed PR #182 is open, mergeable, non-draft, and CLEAN with no status check rollup entries.
+- No source changes were required beyond refreshed evidence logs for this run.
+
+Validation:
+- `git fetch origin --prune` passed before this run's validation refresh.
+- `gh pr view 182` passed and reported PR open, mergeable, non-draft, `mergeStateStatus` CLEAN.
+- `gh pr checks 182` reported no checks for this branch (exit 1).
+- GitHub combined status for head `c6063c735c50f599a8e553d4fdddc4da10f34546` reported no statuses.
+- GitHub workflow runs for head `c6063c735c50f599a8e553d4fdddc4da10f34546` reported none.
+- PR reviews and review comments are empty.
+- `git diff --check` passed.
+- `git diff --check origin/develop...HEAD` passed.
+- `npm run build` passed.
+- Role URL pattern check passed, returning only expected `{role}` entries in `static/agent.txt` and `static/bootstrap.json`.
+
+Project Status:
+- Project status: In Progress.
+- `In review` remains unavailable because project #2 only has `Todo`, `In Progress`, and `Done`.
+
+Next action:
+- Validator review PR #182 at the pushed head for this run.

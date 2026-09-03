@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
-title: Start Here
+sidebar_position: 2
+title: Overview
 description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
 ---
 
-VibeGov is a practical governance layer for AI-assisted software delivery.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
 
 It helps teams ship fast **without losing control** of intent, quality, evidence, and traceability.
 
@@ -15,6 +15,39 @@ The model is simple:
 - keep `.governance/` as the canonical source of delivery guidance.
 
 This site is published incrementally so guidance can evolve in the open with real team feedback.
+
+## Who VibeGov is for
+
+VibeGov is for people using AI coding agents on real repositories where delivery intent, evidence, and traceability matter.
+
+It is a good fit for:
+- teams using AI coding agents on production-bound or maintained software
+- solo developers who want agent speed without losing traceability
+- technical founders and consultants managing multiple AI-assisted delivery threads
+- maintainers who want issue, spec, and evidence discipline without heavyweight process tooling
+- teams building agent harnesses that need repo-local operating rules
+
+It is probably overkill for:
+- throwaway scripts with no maintenance horizon
+- teams unwilling to require evidence for completion claims
+- projects that do not need traceability, backlog quality, or long-term change safety
+- users looking for a hosted SaaS or magical autonomous runtime
+
+If terms like evidence, traceability, bootstrap, or blocker are new to you, use the [Glossary](/docs/glossary) as a companion reference while reading the deeper docs.
+
+## Content status
+
+VibeGov separates canonical contracts from evolving guidance.
+
+Use the [Content Status Model](/docs/content-status-model) when you need to know whether a surface is:
+- a canonical contract,
+- a published governance rule,
+- an operational guide,
+- a role pack,
+- a runtime-specific profile, or
+- blog/commentary.
+
+Canonical bootstrap surfaces such as [`agent.txt`](/agent.txt), [`bootstrap.json`](/bootstrap.json), and [Bootstrap](/docs/bootstrap) stay authoritative when other pages summarize or explain them.
 
 ## Why VibeGov exists
 
@@ -48,8 +81,9 @@ Canonical-source model:
 
 ## Install
 
-- URL-first start: [Bootstrap](/docs/bootstrap)
-- Full setup details: [Quick Start](/docs/quickstart)
+- First decision path: [Start Here](/docs/start-here)
+- Short install path: [Quick Start](/docs/quickstart)
+- Canonical bootstrap contract: [Bootstrap](/docs/bootstrap)
 
 ## What changes when VibeGov is present
 
@@ -64,6 +98,9 @@ Canonical-source model:
 ## Best next reads
 
 - [Start Here](/docs/start-here)
+- [Quick Start](/docs/quickstart)
+- [Glossary](/docs/glossary)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 - [VibeGov Quick Decisions](/docs/quick-decisions)
 - [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing)
@@ -92,3 +129,7 @@ Canonical-source model:
 - [GOV-07: Tasks](/docs/published/gov-07-tasks)
 - [GOV-08: Exploratory Review](/docs/published/gov-08-exploratory-review)
 - [GOV-09: Agent Continuity Bootstrap](/docs/published/gov-09-agent-continuity-bootstrap)
+- [GOV-10: Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene)
+- [GOV-11: Agent Legibility and In-Repo Truth](/docs/published/gov-11-agent-legibility-in-repo-truth)
+- [GOV-12: Drift Control and Garbage Collection](/docs/published/gov-12-drift-control-garbage-collection)
+- [GOV-13: Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline)

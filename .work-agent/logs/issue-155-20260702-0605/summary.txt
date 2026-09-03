@@ -1,0 +1,19 @@
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+Branch: issue-155-agent-txt-role-url
+Run time: 2026-07-02 06:05 Australia/Sydney
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Commit under validation: d1ed3226f91cfb96b20e091a6728ac29c33af875
+
+Resume state:
+- PR #182 was open, mergeable, non-draft, with no review threads, no reviews, and no commit statuses/workflow runs reported for the head commit.
+- Local branch was clean and tracking origin/issue-155-agent-txt-role-url before refreshed validation.
+
+Validation refresh:
+- git diff --check: exit 0
+- npm run build: exit 0
+- role URL pattern check: exit 0
+
+Result:
+- Refreshed developer-side validation evidence for PR #182.
+- No code changes were required in this resume run.
+- Next action: validator review PR #182.

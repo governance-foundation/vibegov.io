@@ -1,0 +1,14 @@
+{
+  "project-status-update": 1,
+  "issue-project-items": 1,
+  "git-fetch-origin": 0,
+  "git-status-before-validation": 0,
+  "git-diff-check": 0,
+  "git-diff-check-pr-range": 0,
+  "npm-run-build": 0,
+  "role-url-pattern-check": 0,
+  "pr-state": 1,
+  "pr-checks": 1,
+  "combined-status": 0,
+  "connector-workflow-runs": 0
+}

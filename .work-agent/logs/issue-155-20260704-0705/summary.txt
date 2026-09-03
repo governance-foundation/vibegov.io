@@ -1,0 +1,23 @@
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-04 07:05 Australia/Sydney
+Head before closure evidence commit: 435e35a6af5b58e04aba2a0cf06564e71c152452
+
+Project status:
+- Project status: In Progress; re-applied to Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+- In review transition unavailable: project #2 has Todo, In Progress, and Done only.
+
+Validation before merge:
+- git fetch origin --prune: see validation-exits.json
+- gh pr view 182: see validation-exits.json and pr-state.log
+- gh pr checks 182: see validation-exits.json and pr-checks.log; no checks are configured for this branch, so gh exits 1 with no checks.
+- GitHub combined status and workflow runs: see combined-status.log and workflow-runs.log.
+- PR review state: see pr-reviews.log.
+- git diff --check: see validation-exits.json
+- git diff --check origin/develop...HEAD: see validation-exits.json
+- npm run build: see validation-exits.json
+- role URL pattern check: expected {role} entries only; bad-pattern check exits 1 when no broken patterns are present.
+
+Planned closure:
+- Commit these closure evidence logs, push the branch, merge PR #182 into develop if post-commit validation remains clean, then return local repo to clean develop and delete the merged work branch where possible.

@@ -1,0 +1,6 @@
+COMMAND: gh run list --repo governance-foundation/vibegov.io --branch issue-155-agent-txt-role-url --commit f977b8228da7f43062fedfb8855b8bc71b7ef206 --limit 10
+START: 2026-07-03T18:10:56.3569244+10:00
+
+
+
+EXIT: 0

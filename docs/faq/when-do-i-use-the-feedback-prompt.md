@@ -1,7 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 9
 homepage: true
 question: When do I use the feedback prompt?
+homepage_summary: Use the feedback prompt after bootstrap work, then raise a scrubbed GitHub issue with the result.
 ---
 
 # When do I use the feedback prompt?

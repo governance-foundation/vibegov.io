@@ -1,7 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 10
 homepage: true
 question: When do I use bootstrap review?
+homepage_summary: Use bootstrap review to audit a repo against the canonical bootstrap contract without claiming missing work was completed.
 ---
 
 # When do I use bootstrap review?

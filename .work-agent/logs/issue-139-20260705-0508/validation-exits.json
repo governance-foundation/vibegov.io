@@ -1,0 +1,67 @@
+[
+  {
+    "name": "git-fetch",
+    "exit": 0,
+    "log": "git-fetch.log"
+  },
+  {
+    "name": "git-status-before",
+    "exit": 0,
+    "log": "git-status-before.log"
+  },
+  {
+    "name": "project-status-update",
+    "exit": 0,
+    "log": "project-status-update.log"
+  },
+  {
+    "name": "issue-project-items",
+    "exit": 0,
+    "log": "issue-project-items.log"
+  },
+  {
+    "name": "pr-status",
+    "exit": 0,
+    "log": "pr-status.json"
+  },
+  {
+    "name": "review-threads",
+    "exit": 0,
+    "log": "review-threads.json"
+  },
+  {
+    "name": "workflow-runs",
+    "exit": 0,
+    "log": "gh-run-list.log"
+  },
+  {
+    "name": "pr-checks",
+    "exit": 1,
+    "log": "pr-checks.log"
+  },
+  {
+    "name": "git-diff-check",
+    "exit": 0,
+    "log": "git-diff-check.log"
+  },
+  {
+    "name": "git-diff-develop-check",
+    "exit": 0,
+    "log": "git-diff-develop-check.log"
+  },
+  {
+    "name": "git-check-ignore",
+    "exit": 0,
+    "log": "git-check-ignore.log"
+  },
+  {
+    "name": "npm-run-build",
+    "exit": 0,
+    "log": "npm-run-build.log"
+  },
+  {
+    "name": "git-status-after",
+    "exit": 0,
+    "log": "git-status-after.log"
+  }
+]

@@ -1,0 +1,10 @@
+
+LocalAddress LocalPort    State OwningProcess
+------------ ---------    ----- -------------
+::1               3005 FinWait2         53748
+::1               3005 FinWait2         53748
+::1               3005 FinWait2         53748
+::1               3005 FinWait2         53748
+::1               3005 FinWait2         53748
+::1               3005 FinWait2         53748
+::                3005   Listen         53748

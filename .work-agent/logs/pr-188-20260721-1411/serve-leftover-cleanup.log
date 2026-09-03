@@ -1,0 +1,5 @@
+
+ProcessId Name     CommandLine
+--------- ----     -----------
+    57192 cmd.exe  C:\WINDOWS\system32\cmd.exe /d /s /c docusaurus serve --host localhost --port 3005
+    30716 node.exe "node"   "C:\projects\governance-foundation\vibegov.io\node_modules\.bin\\..\@docusaurus\core\bin\do…

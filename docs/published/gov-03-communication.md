@@ -7,11 +7,11 @@ sidebar_position: 3
 - Source rule: [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc)
 - Download raw file: [gov-03-communication.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-03-communication.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Communication
 
-> Commentary: Makes delivery communication actionable, concise, and consistent.
+> Commentary: Positions communication as delivery control rather than decorative status chatter.
 
 ## Default Style
 
@@ -19,7 +19,7 @@ This page embeds the canonical rule text and adds commentary after each section 
 - decision-oriented over status-noise
 - explicit about assumptions, risks, and blockers
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Sets the tone for short, evidence-oriented updates that help people act.
 
 ## Required Communication Events
 
@@ -30,7 +30,7 @@ Communicate clearly when:
 4. completing verification,
 5. handing off.
 
-> Commentary: Makes delivery communication actionable, concise, and consistent.
+> Commentary: Identifies the moments when silence would hide decisions, risk, or completion claims.
 
 ## Good Update Format
 
@@ -41,7 +41,7 @@ Use compact, auditable updates:
 - **Risk/Gap**: what remains uncertain
 - **Next**: recommended follow-up
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Gives updates a repeatable shape around state, evidence, blockers, and next action.
 
 ## Escalation Communication
 
@@ -52,7 +52,7 @@ Escalation must include:
 - impact
 - concrete decision/options needed
 
-> Commentary: Makes delivery communication actionable, concise, and consistent.
+> Commentary: Ensures blockers include proof, impact, and the exact help needed.
 
 ## Anti-Patterns to Avoid
 
@@ -61,7 +61,7 @@ Escalation must include:
 - silent behavior changes not reflected in docs/specs
 - repetitive low-value chatter
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Names the update habits that make agent work harder to trust or review.
 
 ## Documentation Communication
 
@@ -70,6 +70,4 @@ When changing governance/project docs:
 - link related files changed
 - note migration or compatibility impact
 
-> Commentary: Makes delivery communication actionable, concise, and consistent.
-
-For a more operator-facing practical guide on reducing generic AI writing habits, see [Output Quality and Anti-Slop Guidance](/docs/output-quality-and-anti-slop).
+> Commentary: Moves durable delivery context into repo artifacts instead of leaving it in chat.

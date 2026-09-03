@@ -2,11 +2,12 @@
 sidebar_position: 1
 homepage: true
 question: What is VibeGov?
+homepage_summary: VibeGov is a repo-local governance framework for AI-assisted software delivery that keeps work traceable, reviewable, and honest about done.
 ---
 
 # What is VibeGov?
 
-VibeGov gives humans and AI coding agents a shared governance layer for software delivery.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
 
 The goal is simple: move fast **without faking done**.
 
@@ -19,3 +20,5 @@ VibeGov helps teams keep:
 
 It is not a replacement for judgement.
 It is a way to make delivery judgement more explicit and reusable.
+
+If you are comparing it with `AGENTS.md`, provider rules, prompt libraries, agent frameworks, project management, or compliance tooling, read [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules).

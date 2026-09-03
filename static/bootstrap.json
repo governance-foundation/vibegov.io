@@ -127,9 +127,20 @@
       "mustExplainCanonicalSelectionWhenMultipleMatchesExist": true,
       "allowedActions": [
         "adopt",
+        "copy_template",
         "create",
         "normalize"
       ],
+      "fieldTypes": {
+        "Title": "built_in",
+        "Assignees": "built_in",
+        "Status": "single_select",
+        "Project Priority": "single_select",
+        "Order": "number",
+        "Priority": "single_select",
+        "Repository": "built_in",
+        "Size": "single_select"
+      },
       "requiredFields": {
         "Status": [
           "Backlog",
@@ -139,10 +150,19 @@
           "Done",
           "Blocked"
         ],
-        "Priority": [
+        "Project Priority": [
           "P0",
           "P1",
-          "P2"
+          "P2",
+          "P3",
+          "P4"
+        ],
+        "Order": "number",
+        "Priority": [
+          "Urgent",
+          "High",
+          "Medium",
+          "Low"
         ],
         "Size": [
           "XS",
@@ -151,6 +171,35 @@
           "L",
           "XL"
         ]
+      },
+      "defaultTableView": {
+        "layout": "table",
+        "visibleColumns": [
+          "Title",
+          "Assignees",
+          "Status",
+          "Project Priority",
+          "Order",
+          "Priority",
+          "Repository"
+        ],
+        "columnOrderMustMatch": true,
+        "allowAdditionalHiddenFields": true,
+        "normalizeOnAdopt": true,
+        "newBoardStrategy": "copy_configured_canonical_template_when_available",
+        "adoptedBoardFallback": "track_exact_manual_remediation_when_no_supported_view_configuration_capability",
+        "mustNotClaimConfiguredWhenViewIsUnverified": true
+      },
+      "automationOrdering": {
+        "sourceOfTruth": [
+          "Project Priority",
+          "Order"
+        ],
+        "projectPriorityHighest": "P0",
+        "projectPriorityLowest": "P4",
+        "orderDirection": "ascending",
+        "doNotUseVisualProjectOrder": true,
+        "priorityFieldPurpose": "human_urgency_signal"
       },
       "normalizeBuiltInStatusFieldInPlace": true,
       "mustLinkRepo": true,

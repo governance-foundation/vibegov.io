@@ -1,0 +1,9 @@
+COMMAND: git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini
+START: 2026-07-04T20:12:04.1937135+10:00
+.gitignore:13:Thumbs.db	Thumbs.db
+.gitignore:13:Thumbs.db	static/img/Thumbs.db
+.gitignore:14:ehthumbs.db	ehthumbs.db
+.gitignore:15:Desktop.ini	Desktop.ini
+
+EXIT: 0
+END: 2026-07-04T20:12:04.2882092+10:00

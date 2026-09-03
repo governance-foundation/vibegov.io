@@ -1,0 +1,7 @@
+git-fetch.log exit=0
+git-status-before-validation.log exit=0
+git-head-before-validation.log exit=0
+git-origin-develop.log exit=0
+git-diff-check.log exit=0
+git-diff-check-origin-develop.log exit=0
+npm-run-build.log exit=0

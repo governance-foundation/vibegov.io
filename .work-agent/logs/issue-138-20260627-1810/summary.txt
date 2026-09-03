@@ -1,0 +1,26 @@
+Issue: #138 Bootstrap should initialize git early and preserve pre-init state
+PR: #181 https://github.com/governance-foundation/vibegov.io/pull/181
+Branch: issue-138-bootstrap-git-init-preflight
+Run started: 2026-06-27 18:10 Australia/Sydney
+
+Resume state:
+- Local checkout was already on issue-138-bootstrap-git-init-preflight and clean.
+- GitHub reported PR #181 open, non-draft, mergeable, and targeting develop.
+- No reviews, review threads, commit statuses, or workflow runs were present for the PR head.
+
+Current head before proof commit:
+- HEAD: 4a22b60c68b15846f5a7f148c7859863a4caef20
+- origin/develop: a3d7657158e578118d7d7609a4b0e3ee166b2388
+
+Validation:
+- git fetch origin develop issue-138-bootstrap-git-init-preflight passed.
+- git diff --check passed.
+- git diff --check origin/develop...HEAD passed.
+- npm run build passed after rerunning with the correct PowerShell argument shape.
+
+Note:
+- The first local build invocation in this run incorrectly passed "run build" as one npm argument and produced "Unknown command: run build".
+- The npm-run-build.log file records the corrected, passing npm run build command output.
+
+Next action:
+- Validator review of PR #181.

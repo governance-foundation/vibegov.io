@@ -9,9 +9,9 @@ A practical default for running multiple AI agents across multiple projects with
   - Owns prioritization, approvals, and final quality bar
   - Dispatches work to project agents
 - **1 Persistent agent per project**
-  - `agent-cabinet`
-  - `agent-scheduling-assistant`
-  - `agent-vibegov`
+  - `agent-web-app`
+  - `agent-api-service`
+  - `agent-docs-site`
 - **Optional specialist run-agents** (ephemeral)
   - `spec-hardener`
   - `contract-tester`

@@ -1,0 +1,8 @@
+exit=0 log=git-fetch.log command=git fetch origin develop issue-138-bootstrap-git-init-preflight
+exit=0 log=git-status-before-validation.log command=git status --short --branch
+exit=0 log=git-head.log command=git rev-parse HEAD
+exit=0 log=git-origin-develop.log command=git rev-parse origin/develop
+exit=0 log=git-diff-check.log command=git diff --check
+exit=0 log=git-diff-check-origin-develop.log command=git diff --check origin/develop...HEAD
+exit=0 log=npm-run-build.log command=npm run build
+exit=0 log=git-status-after-validation.log command=git status --short --branch

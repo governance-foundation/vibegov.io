@@ -1,0 +1,2 @@
+## git-diff-develop-check
+Command: git diff origin/develop...HEAD --check

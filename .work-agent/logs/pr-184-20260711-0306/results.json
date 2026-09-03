@@ -1,0 +1,37 @@
+[
+  {
+    "name": "git-status-short.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\git-status-short.log"
+  },
+  {
+    "name": "git-diff-check-origin-develop-head.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\git-diff-check-origin-develop-head.log"
+  },
+  {
+    "name": "npm-build.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\npm-build.log"
+  },
+  {
+    "name": "published-rules-generate.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\published-rules-generate.log"
+  },
+  {
+    "name": "published-rules-diff.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\published-rules-diff.log"
+  },
+  {
+    "name": "bootstrap-gate.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\bootstrap-gate.log"
+  },
+  {
+    "name": "empty-repo-bootstrap.log",
+    "exitCode": 0,
+    "path": ".work-agent\\logs\\pr-184-20260711-0306\\empty-repo-bootstrap.log"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "command": "git-status-before-validation.log",
+    "exit": 0
+  },
+  {
+    "command": "git-diff-check.log",
+    "exit": 0
+  },
+  {
+    "command": "git-diff-develop-check.log",
+    "exit": 0
+  },
+  {
+    "command": "git-diff-cached-check.log",
+    "exit": 0
+  },
+  {
+    "command": "git-check-ignore.log",
+    "exit": 0
+  },
+  {
+    "command": "gh-pr-view.log",
+    "exit": 0
+  },
+  {
+    "command": "gh-pr-checks.log",
+    "exit": 1
+  },
+  {
+    "command": "gh-workflow-runs.log",
+    "exit": 0
+  },
+  {
+    "command": "npm-run-build.log",
+    "exit": 0
+  },
+  {
+    "command": "git-status-after-validation.log",
+    "exit": 0
+  }
+]

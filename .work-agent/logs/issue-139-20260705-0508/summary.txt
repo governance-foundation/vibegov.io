@@ -1,0 +1,22 @@
+Issue: #139
+PR: #183
+Branch: issue-139-ignore-windows-cache-artifacts
+Run timestamp: 2026-07-05 05:08 Australia/Sydney
+
+Resume result:
+- Re-applied Governance Foundation Work project #2 Status In Progress to item PVTI_lADOA_2mn84BW-uRzgxtN2M.
+- PR #183 remains open, non-draft, mergeable/CLEAN, with no reviews, review requests, review threads, status-check rollup entries, commit statuses, or workflow runs reported for head 4381d561bdc86e00518d3a2f433f2a1cb96bfa7f.
+- In review remains unavailable because project #2 only has Todo, In Progress, and Done.
+
+Validation:
+- git fetch origin: passed
+- git diff --check: passed
+- git diff origin/develop...HEAD --check: passed
+- git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini: passed
+- gh pr view 183 --repo governance-foundation/vibegov.io --json statusCheckRollup,mergeStateStatus,isDraft,reviewDecision,latestReviews,headRefOid,baseRefOid,changedFiles,reviewRequests: passed
+- gh api graphql reviewThreads query: passed; returned no review threads
+- gh run list --repo governance-foundation/vibegov.io --branch issue-139-ignore-windows-cache-artifacts --limit 10: passed; returned no runs
+- gh pr checks 183 --repo governance-foundation/vibegov.io: exit 1 with no checks reported on the branch, matching the empty status rollup rather than a failing check
+- npm run build: passed
+
+Next action: validator review PR #183.

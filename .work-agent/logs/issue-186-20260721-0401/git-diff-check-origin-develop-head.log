@@ -1,0 +1,83 @@
+# git-diff-check-origin-develop-head.log
+# Started: 2026-07-21T04:06:06.3760022+10:00
+.work-agent/logs/issue-186-20260721-0308/generate-published-rules.log:1: trailing whitespace.
++Published governance docs regenerated from canonical .mdc files.
+.work-agent/logs/issue-186-20260721-0308/git-status-after-validation.log:1: trailing whitespace.
++## docs/186-project-board-columns...origin/docs/186-project-board-columns
+.work-agent/logs/issue-186-20260721-0308/git-status-after-validation.log:2: trailing whitespace.
++?? .work-agent/logs/issue-186-20260721-0308/
+.work-agent/logs/issue-186-20260721-0308/git-status-before-validation.log:1: trailing whitespace.
++## docs/186-project-board-columns...origin/docs/186-project-board-columns
+.work-agent/logs/issue-186-20260721-0308/issue-project-status-after-validation.log:1: trailing whitespace.
++In Progress
+.work-agent/logs/issue-186-20260721-0308/issue-view-before-validation.json:1: trailing whitespace.
++{"number":186,"projectItems":[{"status":{"optionId":"47fc9ee4","name":"In Progress"},"title":"Vibegov"}],"state":"OPEN","title":"Align canonical GitHub Project priority scale and table columns","updatedAt":"2026-07-20T17:12:11Z","url":"https://github.com/governance-foundation/vibegov.io/issues/186"}
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:1: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:2: trailing whitespace.
++> website@0.0.0 build
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:3: trailing whitespace.
++> npm run validate:project-bootstrap && docusaurus build
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:4: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:5: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:6: trailing whitespace.
++> website@0.0.0 validate:project-bootstrap
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:7: trailing whitespace.
++> node scripts/validate-project-bootstrap-contract.js
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:8: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:9: trailing whitespace.
++GitHub Project bootstrap contract is valid.
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:10: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:11: trailing whitespace.
++╭──────────────────────────────────────────────────────────────────────────────╮│                                                                              ││                       Update available 2.4.3 → 3.10.2                        ││                                                                              ││       To upgrade Docusaurus packages with the latest version, run the        ││                             following command:                               ││       `npm i @docusaurus/core@latest @docusaurus/preset-classic@latest       ││                   @docusaurus/module-type-aliases@latest`                    ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:12: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:13: trailing whitespace.
++[INFO] [en] Creating an optimized production build...
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:14: trailing whitespace.
++i Compiling Client
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:15: trailing whitespace.
++i Compiling Server
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:16: trailing whitespace.
++√ Client: Compiled successfully in 3.02s
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:17: trailing whitespace.
++√ Server: Compiled successfully in 10.34s
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:18: trailing whitespace.
++[SUCCESS] Generated static files in "build".
+.work-agent/logs/issue-186-20260721-0308/npm-run-build.log:19: trailing whitespace.
++[INFO] Use `npm run serve` command to test your build locally.
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:1: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:2: trailing whitespace.
++> website@0.0.0 release:build
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:3: trailing whitespace.
++> node scripts/build-release-artifact.js
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:4: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:5: trailing whitespace.
++Created VibeGov release bundle: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.7.21-39d77b6\vibegov-2026.7.21-39d77b6.zip
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:6: trailing whitespace.
++Prepared flat release assets: C:\projects\governance-foundation\vibegov.io\artifacts\release\2026.7.21-39d77b6\flat
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:7: trailing whitespace.
++(node:46216) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.
+.work-agent/logs/issue-186-20260721-0308/npm-run-release-build.log:8: trailing whitespace.
++(Use `node --trace-deprecation ...` to show where the warning was created)
+.work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log:1: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log:2: trailing whitespace.
++> website@0.0.0 typecheck
+.work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log:3: trailing whitespace.
++> tsc
+.work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log:4: trailing whitespace.
++
+.work-agent/logs/issue-186-20260721-0308/npm-run-typecheck.log:4: new blank line at EOF.
+.work-agent/logs/issue-186-20260721-0308/pr-checks.log:1: trailing whitespace.
++no checks reported on the 'docs/186-project-board-columns' branch
+.work-agent/logs/issue-186-20260721-0308/pr-view-before-validation.json:1: trailing whitespace.
++{"baseRefName":"develop","commits":[{"authoredDate":"2026-07-18T12:42:59Z","authors":[{"email":"max.barrass@gmail.com","id":"MDQ6VXNlcjE3MDMxMg==","login":"wildone","name":"Max Barrass"}],"committedDate":"2026-07-18T12:42:59Z","messageBody":"","messageHeadline":"docs: align project board fields and view","oid":"479747276f11b283185f4723839fda19a8524fd1"},{"authoredDate":"2026-07-20T15:52:12Z","authors":[{"email":"max.barrass@gmail.com","id":"MDQ6VXNlcjE3MDMxMg==","login":"wildone","name":"wildone"}],"committedDate":"2026-07-20T15:52:12Z","messageBody":"","messageHeadline":"chore: record issue 186 validation evidence","oid":"ea7ba430eae38671366452ec7e25c5286fe32e21"},{"authoredDate":"2026-07-20T16:14:38Z","authors":[{"email":"max.barrass@gmail.com","id":"MDQ6VXNlcjE3MDMxMg==","login":"wildone","name":"wildone"}],"committedDate":"2026-07-20T16:14:38Z","messageBody":"","messageHeadline":"chore: refresh issue 186 validation evidence","oid":"308e2eedd3e898e6885c7c6db522b2cdc325ea3f"},{"authoredDate":"2026-07-20T16:16:05Z","authors":[{"email":"max.barrass@gmail.com","id":"MDQ6VXNlcjE3MDMxMg==","login":"wildone","name":"wildone"}],"committedDate":"2026-07-20T16:16:05Z","messageBody":"","messageHeadline":"chore: normalize issue 186 validation logs","oid":"39d77b6704a48812a5d9e3f1f732e524065d03c5"}],"headRefName":"docs/186-project-board-columns","isDraft":false,"mergeStateStatus":"CLEAN","number":187,"projectItems":[],"reviewDecision":"","state":"OPEN","statusCheckRollup":[],"title":"docs: align project board fields and view","updatedAt":"2026-07-20T16:17:14Z","url":"https://github.com/governance-foundation/vibegov.io/pull/187"}
+# ExitCode: 2
+# Finished: 2026-07-21T04:06:06.5138921+10:00

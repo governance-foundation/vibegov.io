@@ -1,0 +1,57 @@
+[
+  {
+    "step": "gh issue view projectItems after",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git status before",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git diff --check",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git diff origin/develop...HEAD --check",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git diff --cached --check",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git check-ignore",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "gh pr view",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "gh run list",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "gh pr checks",
+    "exit": 1,
+    "allowFailure": true
+  },
+  {
+    "step": "npm run build",
+    "exit": 0,
+    "allowFailure": false
+  },
+  {
+    "step": "git status after",
+    "exit": 0,
+    "allowFailure": false
+  }
+]

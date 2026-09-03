@@ -1,0 +1,5 @@
+COMMAND: gh pr view 183 --repo governance-foundation/vibegov.io --json number,state,isDraft,mergeStateStatus,reviewDecision,latestReviews,statusCheckRollup,headRefOid,headRefName,baseRefName
+START: 2026-07-04T22:10:46.4265631+10:00
+{"baseRefName":"develop","headRefName":"issue-139-ignore-windows-cache-artifacts","headRefOid":"b0699e880edb0971f5a381a46f5c2fa6e9a22a58","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","number":183,"reviewDecision":"","state":"OPEN","statusCheckRollup":[]}
+EXIT: 0
+END: 2026-07-04T22:10:47.9663407+10:00

@@ -6,9 +6,23 @@ description: Install VibeGov quickly with the hardened bootstrap contract and th
 
 # Quick Start
 
-Use this to install VibeGov quickly with the hardened bootstrap contract.
+Use this to install VibeGov, a repo-local governance framework for AI-assisted software delivery, quickly with the hardened bootstrap contract.
 
-If you are not sure whether Quick Start is the right entry point yet, read [Start Here](/docs/start-here) first.
+Quick Start is the action path. Use [Start Here](/docs/start-here) only when you still need to choose between orientation, install, operating guidance, and deeper governance reading.
+
+## TLDR
+
+Use this page when you want the fastest practical path to bootstrap a repo with VibeGov.
+
+Minimum takeaway:
+- Quick Start is a compressed path into the same bootstrap contract, not a separate weaker contract.
+- Choose `init`, `update`, or `review` before running the prompt.
+- Stop before product-code implementation once governance, specs, workflow, continuity, and reporting surfaces are ready.
+
+Next action:
+- Copy the [bootstrap prompt](#copy-paste-bootstrap-prompt) for a fast run.
+- Use [Bootstrap](/docs/bootstrap) when any detail matters.
+- Use [GitHub Project Bootstrap](/docs/github-project-bootstrap) when project-board setup or GitHub preflight becomes the hard part.
 
 Bootstrap now uses one canonical contract with explicit modes:
 - `init`
@@ -40,7 +54,7 @@ Do not fork or weaken the pass gate by mode.
 
 Fast contract summary:
 1) Create/normalize `.governance/rules/`, `.governance/project/`, and `.governance/specs/`.
-2) Install the active VibeGov rule set (`GOV-01` through `GOV-09`) in `.governance/rules/`.
+2) Install the active VibeGov rule set (`GOV-01` through `GOV-13`) in `.governance/rules/`.
 3) Detect existing provider-native rules dirs and mirror only when already present.
 4) Create/normalize `PROJECT_INTENT.md`.
 5) Create `SPEC-001` (feature spec, or bootstrap/governance-setup spec when product intent is still vague).
@@ -57,12 +71,13 @@ Fast contract summary:
    - checkpoint trigger guidance
    - session-diary guidance for recurring contexts
    - promotion guidance between continuity layers
-9) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
-10) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
-11) If GitHub automation is available, adopt/create/normalize one canonical board target, normalize `Status`/`Priority`/`Size`, link the repo, and report intentionally empty boards or duplicate-board cleanup explicitly when relevant.
-12) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
-13) Reconcile docs/artifacts against final live git/GitHub state.
-14) Then stop before product-code implementation.
+9) If `git` is available but the current folder is not yet an initialized repo, run `git init` first and record the pre-init local state you are preserving; remote setup is not required for that pre-step.
+10) Classify repo start state (branch, clean/dirty, untracked, uncommitted) and declare commit policy (`required|allowed|forbidden`).
+11) For GitHub repos, run preflight before board mutation; if required capability is missing, record exact remediation in `INIT-TODO.md`.
+12) If GitHub automation is available, adopt/create/normalize one canonical board target; prefer copying a configured template for new boards; normalize `Status`/`Project Priority`/`Order`/`Priority`/`Size`; normalize the default table view to `Title`, `Assignees`, `Status`, `Project Priority`, `Order`, `Priority`, `Repository`; document backlog pickup as `Project Priority` group then `Order` inside the group; link the repo; and report intentionally empty boards, view-capability blockers, or duplicate-board cleanup explicitly when relevant.
+13) Write durable bootstrap reporting artifacts under `.governance/project/bootstrap/` plus a historical run bundle under `.governance/project/bootstrap/history/<timestamp>/`.
+14) Reconcile docs/artifacts against final live git/GitHub state.
+15) Then stop before product-code implementation.
 
 Use [Bootstrap](/docs/bootstrap) as the canonical full contract when any detail matters.
 ```

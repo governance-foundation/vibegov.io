@@ -1,0 +1,33 @@
+Developer follow-up for PR #181 / issue #138.
+
+Run: 2026-06-27 09:07 Australia/Sydney
+Branch: issue-138-bootstrap-git-init-preflight
+Head before evidence commit: e5f4636c7302b9873478596e31b9949f3fe24175
+Base: origin/develop a3d7657158e578118d7d7609a4b0e3ee166b2388
+
+Action:
+- Resumed open PR #181 before selecting new backlog work.
+- Revalidated current PR head after fetching origin/develop and origin/issue-138-bootstrap-git-init-preflight.
+- Reran npm build directly after the local logging wrapper initially passed 'run build' as one npm argument.
+- Normalized current-run proof logs to LF before committing evidence.
+
+Validation exits:
+git-fetch.log exit=0
+git-status-before-validation.log exit=0
+git-head-before-validation.log exit=0
+git-origin-develop.log exit=0
+git-diff-check.log exit=0
+git-diff-check-origin-develop.log exit=0
+npm-run-build.log exit=0 (direct rerun after wrapper passed 'run build' as one argument)
+
+Cleanup state before committing evidence:
+## issue-138-bootstrap-git-init-preflight...origin/issue-138-bootstrap-git-init-preflight
+A  .work-agent/logs/issue-138-20260627-0907/git-diff-check-origin-develop.log
+A  .work-agent/logs/issue-138-20260627-0907/git-diff-check.log
+A  .work-agent/logs/issue-138-20260627-0907/git-fetch.log
+A  .work-agent/logs/issue-138-20260627-0907/git-head-before-validation.log
+A  .work-agent/logs/issue-138-20260627-0907/git-origin-develop.log
+A  .work-agent/logs/issue-138-20260627-0907/git-status-before-validation.log
+A  .work-agent/logs/issue-138-20260627-0907/npm-run-build.log
+A  .work-agent/logs/issue-138-20260627-0907/summary.txt
+A  .work-agent/logs/issue-138-20260627-0907/validation-exits.log

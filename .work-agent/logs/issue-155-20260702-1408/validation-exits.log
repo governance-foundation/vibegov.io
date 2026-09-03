@@ -1,0 +1,8 @@
+git-status-before-validation.log: exit 0
+project-items-after-status-update.log: exit 0
+pr-state.log: exit 0
+pr-checks.log: exit 1
+git-diff-check.log: exit 0
+git-diff-check-pr-range.log: exit 0
+npm-run-build.log: exit 0
+role-url-pattern-check.log: exit 0

@@ -1,0 +1,22 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 22:10 Australia/Sydney
+
+Project status: In Progress. Re-applied to the existing Governance Foundation Work project #2 item before validation. In review is unavailable because the project only has Todo, In Progress, and Done.
+
+Head at resume: e8f263fb97f28560f61f97b45f33917f9a510a02
+
+Validation:
+- git fetch origin: passed
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed; only expected roles/{role}/BOOTSTRAP entries were returned
+- gh pr checks 182: no checks reported for this branch
+
+State:
+- PR #182 is open, mergeable, non-draft, and merge state is CLEAN.
+- Local branch was clean before adding this evidence log bundle.
+
+Next action: validator review PR #182 after this evidence bundle is committed and pushed.

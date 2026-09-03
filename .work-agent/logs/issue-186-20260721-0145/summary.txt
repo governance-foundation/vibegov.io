@@ -1,0 +1,20 @@
+Issue: #186 Align canonical GitHub Project priority scale and table columns
+PR: #187 docs: align project board fields and view
+Branch: docs/186-project-board-columns
+Run start: 2026-07-21 01:45 Australia/Sydney
+
+Project status:
+- Issue project item moved from Todo to In Progress.
+- In review transition unavailable: VibeGov Project #3 Status options are Todo, In Progress, Done, Blocked; no In review option exists.
+
+Validation:
+- git diff --check: pass
+- node --check scripts/validate-project-bootstrap-contract.js: pass
+- npm run typecheck: pass
+- node scripts/generate-published-rules.js plus git diff --exit-code -- docs/published/gov-02-workflow.md: pass
+- npm run build: pass
+- npm run release:build: pass; produced artifacts/release/2026.7.21-4797472/vibegov-2026.7.21-4797472.zip and emitted Node DEP0190 warning from release script child-process usage
+
+Notes:
+- gh pr checks reported no remote checks configured/reported for the branch.
+- No code/spec changes were needed in this run; this commit records fresh validation evidence for the existing PR.

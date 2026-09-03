@@ -1,0 +1,3 @@
+PS> git status --short --branch
+## issue-155-agent-txt-role-url...origin/issue-155-agent-txt-role-url
+?? .work-agent/logs/issue-155-20260703-0107/

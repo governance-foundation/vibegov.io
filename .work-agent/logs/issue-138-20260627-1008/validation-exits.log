@@ -1,0 +1,7 @@
+git fetch origin develop issue-138-bootstrap-git-init-preflight: 0
+git status --short --branch: 0
+git rev-parse HEAD: 0
+git rev-parse origin/develop: 0
+git diff --check: 0
+git diff --check origin/develop...HEAD: 0
+npm run build: 0

@@ -1,0 +1,16 @@
+VibeGov developer resume summary
+Run: 2026-07-05 10:09 Australia/Sydney (2026-07-05 00:09 UTC)
+Issue: #139
+PR: #183
+Branch: issue-139-ignore-windows-cache-artifacts
+Head before evidence commit: bc47627c79da2b00610981c054717656fd49131b
+
+Project status: In Progress. Initial mutation failed with stale field id PVTSSF_lADOA_2mn84BW-uRzgskg2k; retry with live Status field PVTSSF_lADOA_2mn84BW-uRzhSOz5g succeeded for item PVTI_lADOA_2mn84BW-uRzgxtN2M. Project item query confirmed In Progress.
+In review status: unavailable because Governance Foundation Work project #2 has Todo, In Progress, and Done only.
+
+PR state before evidence commit: open, non-draft, mergeable/CLEAN; no review requests or review submissions; reviewThreads query returned no nodes.
+GitHub checks: no status check rollup entries. Combined commit status total_count=0. gh pr checks exited 1 with no checks reported, matching empty status rollup rather than a failing check.
+
+Validation passed: git fetch origin; git diff --check; git diff origin/develop...HEAD --check; git diff --cached --check; git check-ignore for Thumbs.db, static/img/Thumbs.db, ehthumbs.db, Desktop.ini; gh run list; PR status inspection; reviewThreads query; npm run build.
+
+Next action: validator review PR #183. No new issue selected while active PR #183 remains open.

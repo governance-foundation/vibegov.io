@@ -1,0 +1,7 @@
+Run: issue #155 / PR #182 at 2026-07-02 12:13 Australia/Sydney
+git status --short --branch exit 0
+git diff --check exit 0
+git diff --check origin/develop...HEAD exit 0
+npm run build exit 0
+role URL pattern check exit 0
+gh issue view 155 --json projectItems exit 0

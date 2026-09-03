@@ -1,0 +1,32 @@
+Issue: #155 Fix agent.txt formatting and role bootstrap URL
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 12:13 Australia/Sydney
+
+Resume state:
+- Local branch was already issue-155-agent-txt-role-url and tracking origin/issue-155-agent-txt-role-url.
+- PR #182 was open, mergeable, non-draft, and had no review submissions, review threads, commit statuses, or workflow runs reported for head 191e188edf73000858802307a65eda031a85442f.
+- Issue #155 was already on Governance Foundation Work project #2 with Status In Progress.
+
+Project status:
+- Re-applied Status In Progress via gh project item-edit for item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+- Project status: In Progress.
+- In review transition unavailable: project #2 has Status options Todo, In Progress, and Done; no In review option exists.
+
+Validation:
+- git diff --check: passed
+- git diff --check origin/develop...HEAD: passed
+- npm run build: passed
+- role URL pattern check: passed; static/agent.txt and static/bootstrap.json contain the expected https://vibegov.io/roles/{role}/BOOTSTRAP.md entries and no roles//BOOTSTRAP.md.
+
+Evidence logs:
+- .work-agent/logs/issue-155-20260702-1213/git-status-before-validation.log
+- .work-agent/logs/issue-155-20260702-1213/git-diff-check.log
+- .work-agent/logs/issue-155-20260702-1213/git-diff-check-pr-range.log
+- .work-agent/logs/issue-155-20260702-1213/npm-run-build.log
+- .work-agent/logs/issue-155-20260702-1213/role-url-pattern-check.log
+- .work-agent/logs/issue-155-20260702-1213/project-items-after-status-update.log
+- .work-agent/logs/issue-155-20260702-1213/validation-exits.log
+
+Next action:
+- Validator review PR #182 at the pushed 12:13 evidence head.

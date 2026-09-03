@@ -1,0 +1,3 @@
+npm run build exit=0
+Docusaurus build compiled client and server successfully.
+Generated static files in build/.

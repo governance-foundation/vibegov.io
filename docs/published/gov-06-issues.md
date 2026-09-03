@@ -7,17 +7,17 @@ sidebar_position: 6
 - Source rule: [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-06-issues.mdc)
 - Download raw file: [gov-06-issues.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-06-issues.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Issues
 
-> Commentary: Provides traceability and scope control so changes remain auditable.
+> Commentary: Frames issues as the traceability anchor for governed delivery.
 
 ## Purpose
 
 Issues are the durable record of intent, decisions, and outcomes.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Explains why issue records need enough context to survive beyond the initiating chat.
 
 ## When to Use an Issue
 
@@ -29,7 +29,7 @@ Create/update an issue for:
 
 Small typo-only docs fixes can be grouped where appropriate.
 
-> Commentary: Provides traceability and scope control so changes remain auditable.
+> Commentary: Clarifies which work deserves a tracked issue instead of a transient note.
 
 ## Minimum Issue Quality
 
@@ -50,7 +50,7 @@ For exploratory findings, issues should also include:
 - lightweight evidence notes
 - planned spec/traceability/test follow-up
 
-> Commentary: Provides traceability and scope control so changes remain auditable.
+> Commentary: Defines the information needed before an issue is safe to execute.
 
 ## One-liner issue handling (mandatory)
 
@@ -64,7 +64,7 @@ Before execution, the agent must first:
 
 Only after review/confirmation can the issue enter active implementation.
 
-> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
+> Commentary: Prevents vague one-line requests from entering delivery without clarification.
 
 ## Lifecycle Expectations
 
@@ -73,7 +73,7 @@ Only after review/confirmation can the issue enter active implementation.
 3. review outcomes and risks
 4. close with traceable resolution
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Keeps issue state aligned with real work state from intake through closure.
 
 ## Active Work Visibility (mandatory)
 
@@ -98,7 +98,7 @@ Preferred behavior:
 
 Goal: someone reading only the issue should be able to see what was planned, what happened, what evidence exists, and what remains.
 
-> Commentary: Marks non-optional behavior to reduce ambiguity during execution.
+> Commentary: Requires current branch, PR, blocker, and evidence state to stay visible.
 
 ## Closure Standard
 
@@ -109,7 +109,7 @@ Before closing, ensure:
 - follow-up items are captured (if any)
 - missing completeness is converted into explicit follow-up work rather than silently carried forward
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Stops issues from closing before acceptance criteria and evidence are recorded.
 
 ## Anti-Patterns
 
@@ -118,4 +118,4 @@ Before closing, ensure:
 - silent scope expansion without issue update
 - treating issue text as optional or disposable
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Names the issue habits that break traceability and make follow-up unreliable.

@@ -1,0 +1,7 @@
+git diff --check: pass
+git diff --check origin/develop...HEAD: pass
+npm run typecheck: pass
+npm run build: pass, including validate:project-bootstrap
+CYPRESS_baseUrl=http://127.0.0.1:3005 npm run test:e2e: pass, 1 spec / 1 test
+served content check: pass
+gh pr checks: no checks reported on this branch

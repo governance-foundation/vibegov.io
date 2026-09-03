@@ -1,0 +1,9 @@
+
+git status --short --branch => 0
+git diff --check => 0
+git diff origin/develop...HEAD --check => 0
+git diff --cached --check => 0
+git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini => 0
+gh pr view 183 status/review => 0
+npm run build => 0
+git status --short --branch => 0

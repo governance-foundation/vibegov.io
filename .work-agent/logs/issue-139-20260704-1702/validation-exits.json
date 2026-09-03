@@ -1,0 +1,42 @@
+[
+  {
+    "Command": "git status --short --branch",
+    "ExitCode": 0,
+    "Log": "git-status-before-validation.log"
+  },
+  {
+    "Command": "git diff --check",
+    "ExitCode": 0,
+    "Log": "git-diff-check.log"
+  },
+  {
+    "Command": "git diff origin/develop...HEAD --check",
+    "ExitCode": 0,
+    "Log": "git-diff-develop-check.log"
+  },
+  {
+    "Command": "git check-ignore -v -- Thumbs.db static/img/Thumbs.db ehthumbs.db Desktop.ini",
+    "ExitCode": 0,
+    "Log": "git-check-ignore.log"
+  },
+  {
+    "Command": "gh pr view 183 --repo governance-foundation/vibegov.io --json statusCheckRollup,mergeStateStatus,isDraft,reviewDecision,latestReviews,headRefOid",
+    "ExitCode": 0,
+    "Log": "gh-pr-view-status.log"
+  },
+  {
+    "Command": "gh pr checks 183 --repo governance-foundation/vibegov.io",
+    "ExitCode": 1,
+    "Log": "gh-pr-checks.log"
+  },
+  {
+    "Command": "npm run build",
+    "ExitCode": 0,
+    "Log": "npm-run-build.log"
+  },
+  {
+    "Command": "git status --short --branch",
+    "ExitCode": 0,
+    "Log": "git-status-after-validation.log"
+  }
+]

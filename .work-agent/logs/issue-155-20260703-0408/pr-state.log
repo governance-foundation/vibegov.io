@@ -1,0 +1,2 @@
+PS> gh pr view 182 --json number,state,isDraft,mergeable,mergeStateStatus,headRefOid,baseRefName,headRefName,url,reviewDecision
+{"baseRefName":"develop","headRefName":"issue-155-agent-txt-role-url","headRefOid":"e643e97614ed3f5c902cf5152d5b960cbc583ad3","isDraft":false,"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","number":182,"reviewDecision":"","state":"OPEN","url":"https://github.com/governance-foundation/vibegov.io/pull/182"}

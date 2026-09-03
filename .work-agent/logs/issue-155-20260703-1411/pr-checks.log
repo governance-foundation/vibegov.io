@@ -1,0 +1,6 @@
+COMMAND: gh pr checks 182 --repo governance-foundation/vibegov.io
+START: 2026-07-03T14:11:11.1720821+10:00
+
+no checks reported on the 'issue-155-agent-txt-role-url' branch
+
+EXIT: 1

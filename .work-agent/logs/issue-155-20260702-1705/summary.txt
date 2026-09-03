@@ -1,0 +1,21 @@
+Issue #155 / PR #182 resume pass for 2026-07-02 17:05 Australia/Sydney.
+
+Project status:
+- Re-applied Status In Progress via gh project item-edit for Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+- Status field option: In Progress, option id 47fc9ee4.
+- In review is unavailable on project #2; available status options are Todo, In Progress, and Done.
+
+Validation:
+- git fetch origin passed.
+- git diff --check passed.
+- git diff --check origin/develop...HEAD passed before this evidence commit.
+- npm run build passed.
+- role URL pattern check returned only the expected {role} entries in static/agent.txt and static/bootstrap.json.
+- gh pr checks 182 reported no checks for this branch; this is recorded in pr-checks.log and treated as GitHub check absence, not a local validation failure.
+
+State:
+- PR #182 is open, mergeable, non-draft, and still points at branch issue-155-agent-txt-role-url.
+- No source changes were required in this run beyond refreshed evidence for the already-open PR.
+
+Next action:
+- Commit and push this evidence, then request validator review at the new head.

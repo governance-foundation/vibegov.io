@@ -1,0 +1,29 @@
+Issue: #186 Align canonical GitHub Project priority scale and table columns
+PR: #187 docs: align project board fields and view
+Branch: docs/186-project-board-columns
+Base: develop
+Run: 2026-07-21 05:03 Australia/Sydney
+
+Outcome:
+- Resumed open PR #187 before selecting new work.
+- Re-applied VibeGov Project #3 Status to In Progress for item PVTI_lADOA_2mn84Bc1k8zgzRlGI.
+- Confirmed VibeGov Project #3 Status options are Todo, In Progress, Done, and Blocked; no In review option exists.
+- PR #187 remains open, non-draft, mergeStateStatus CLEAN, with no GitHub checks reported.
+- No source/spec/docs changes were made in this run; this commit records refreshed validation evidence only.
+
+Validation commands passed:
+- git diff --check
+- git diff --check origin/develop...HEAD
+- node --check scripts/validate-project-bootstrap-contract.js
+- node scripts/generate-published-rules.js
+- git diff --exit-code -- docs/published/gov-02-workflow.md
+- npm run typecheck
+- npm run build
+- npm run release:build
+
+Notes:
+- npm run release:build passed and emitted the existing Node DEP0190 warning from release script child-process usage.
+- gh pr checks 187 reported no checks configured/reported for the branch.
+
+Next action:
+- Validator review for PR #187.

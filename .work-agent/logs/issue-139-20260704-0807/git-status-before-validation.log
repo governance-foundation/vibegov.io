@@ -1,0 +1,3 @@
+## issue-139-ignore-windows-cache-artifacts
+ M .gitignore
+?? .work-agent/logs/issue-139-20260704-0807/

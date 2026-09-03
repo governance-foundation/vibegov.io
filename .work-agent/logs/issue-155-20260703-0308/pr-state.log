@@ -1,0 +1,2 @@
+PS> gh pr view 182 --json number,title,state,isDraft,headRefName,baseRefName,headRefOid,mergeStateStatus,mergeable,statusCheckRollup,url,reviewDecision,latestReviews
+{"baseRefName":"develop","headRefName":"issue-155-agent-txt-role-url","headRefOid":"a3cad941d91a14db0fb40b31c5f2d53e2a274e0a","isDraft":false,"latestReviews":[],"mergeStateStatus":"CLEAN","mergeable":"MERGEABLE","number":182,"reviewDecision":"","state":"OPEN","statusCheckRollup":[],"title":"#155 Fix agent.txt role bootstrap URL pattern","url":"https://github.com/governance-foundation/vibegov.io/pull/182"}

@@ -1,0 +1,20 @@
+Issue: #155
+PR: #182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-02 13:02 Australia/Sydney
+Head before evidence commit: 0d5776f7921f496705169d5bda7d9c82aa185cf9
+
+Project status:
+- Re-applied In Progress to the existing Governance Foundation Work project #2 item.
+- In review transition unavailable: project #2 has Status options Todo, In Progress, and Done; no In review option exists.
+
+Validation:
+- git diff --check: see validation-exits.log
+- git diff --check origin/develop...HEAD: see validation-exits.log
+- npm run build: see validation-exits.log
+- role URL pattern check: see validation-exits.log
+
+Outcome:
+- No source changes were required in this resume run.
+- Added refreshed local evidence logs for PR #182.
+- Next action: validator review PR #182 at the pushed head.

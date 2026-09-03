@@ -1,0 +1,9 @@
+Issue: #155
+PR: #182 https://github.com/governance-foundation/vibegov.io/pull/182
+Branch: issue-155-agent-txt-role-url
+Run: 2026-07-04 06:12 Australia/Sydney
+Checked head before evidence commit: 65a45a78ef1988433b36d5eaff02d2690c6cd6f7
+Project status: In Progress reapplied on Governance Foundation Work project #2 item PVTI_lADOA_2mn84BW-uRzgxeXa8.
+In review status: unavailable; project #2 Status options are Todo, In Progress, Done.
+Outcome: validation refreshed for open PR; no source changes required beyond evidence logs.
+Post-commit validation recorded in post-commit-validation.log at head baf5f4d653e6263fdac402a22dad9d1837f22277
