@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: Start Here
 description: Get oriented in VibeGov quickly and choose the right next doc for bootstrap, execution modes, operator guidance, or the broader SDLC model.
 ---
@@ -8,17 +8,46 @@ description: Get oriented in VibeGov quickly and choose the right next doc for b
 
 If you are new to VibeGov, start here.
 
-This page is the shortest path to the smallest useful adoption step.
+VibeGov is a repo-local governance framework for AI-assisted software delivery. This page is the shortest path to the smallest useful adoption step.
+
+## Who VibeGov is for
+
+VibeGov is for teams and solo developers using AI coding agents on real repositories where delivery state needs to remain inspectable after the chat scrolls away.
+
+It is strongest for:
+- teams using AI coding agents on production-bound or maintained software
+- solo developers who want agent speed without losing traceability
+- technical founders and consultants coordinating multiple AI-assisted delivery threads
+- maintainers who want issue, spec, and evidence discipline without heavyweight process tooling
+- teams building agent harnesses that need repo-local operating rules
+
+It is probably overkill for:
+- throwaway scripts with no maintenance horizon
+- teams that do not want evidence before completion claims
+- projects that do not care about traceability, backlog quality, or long-term change safety
+- users looking for a hosted SaaS or magical autonomous runtime
+
+If you already know the job you want done, use [Choose Your Path](/docs/choose-your-path) for a compact route to install, review, feedback intake, delivery, PR readiness, role-pack use, or messy-repo hardening.
+
+## First: know the authority level
+
+VibeGov has canonical contracts, published rules, operational guides, role packs, runtime profiles, and commentary.
+
+If you are deciding what an agent or repo must obey, check the [Content Status Model](/docs/content-status-model) before treating a supporting guide, role pack, runtime profile, or blog post as the current contract.
 
 ## First: what are you trying to do?
 
 ### 1. I want the fastest explanation of what VibeGov is
 Read:
-- [VibeGov](/docs/intro)
+- [Overview](/docs/intro)
+- [Glossary](/docs/glossary)
+- [Content Status Model](/docs/content-status-model)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ### 2. I want to install or bootstrap VibeGov in a repo
 Read:
+- [Choose Your Path](/docs/choose-your-path)
 - [Quick Start](/docs/quickstart)
 - [Bootstrap](/docs/bootstrap)
 
@@ -30,6 +59,7 @@ Read:
 
 ### 4. I want the shortest practical operating guide
 Read:
+- [Choose Your Path](/docs/choose-your-path)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)
 
@@ -42,7 +72,7 @@ Read:
 
 If you only want the minimum useful path, do this:
 
-1. read [VibeGov](/docs/intro)
+1. read [Overview](/docs/intro)
 2. read [Execution Modes](/docs/execution-modes)
 3. read [Checkpoint Reporting](/docs/checkpoint-reporting)
 4. run [Quick Start](/docs/quickstart) when you are ready to bootstrap a repo
@@ -53,6 +83,8 @@ That is enough to understand the basic shape:
 - report clearly
 - bootstrap governance before trying to scale the workflow
 
+If a term is unclear while reading, keep the [Glossary](/docs/glossary) open beside the deeper docs.
+
 ## What VibeGov is not
 
 VibeGov is not:
@@ -61,20 +93,26 @@ VibeGov is not:
 - a replacement for engineering judgment
 - a license to add process everywhere
 
-It is a governance layer that helps teams run AI-assisted delivery more legibly and more reliably.
+It is a repo-local governance framework that helps teams run AI-assisted delivery more legibly and more reliably.
+
+For a practical category comparison, read [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules).
 
 ## If you are still unsure
 
 Use this shortcut:
 
-- if you want **orientation**, start with [VibeGov](/docs/intro)
+- if you want **orientation**, start with [Overview](/docs/intro)
+- if you know your **job-to-be-done**, start with [Choose Your Path](/docs/choose-your-path)
 - if you want **action**, start with [Quick Start](/docs/quickstart)
 - if you want **operator clarity**, start with [Execution Modes](/docs/execution-modes)
 - if you want **deeper doctrine**, start with [The VibeGov SDLC](/docs/vibegov-sdlc)
 
 ## Related docs
 
-- [VibeGov](/docs/intro)
+- [Overview](/docs/intro)
+- [Glossary](/docs/glossary)
+- [Choose Your Path](/docs/choose-your-path)
+- [VibeGov vs Agent Rules, Prompts, and Frameworks](/docs/vibegov-vs-agent-rules)
 - [Quick Start](/docs/quickstart)
 - [Execution Modes](/docs/execution-modes)
 - [Checkpoint Reporting](/docs/checkpoint-reporting)

@@ -7,17 +7,17 @@ sidebar_position: 7
 - Source rule: [gov-07-tasks.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-07-tasks.mdc)
 - Download raw file: [gov-07-tasks.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-07-tasks.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Tasks
 
-> Commentary: Keeps execution state visible and prioritized across ongoing work.
+> Commentary: Frames tasks as the execution-level breakdown under governed issues and specs.
 
 ## Task Principle
 
 Tasks should make work reviewable, verifiable, and low-risk.
 
-> Commentary: Keeps execution state visible and prioritized across ongoing work.
+> Commentary: Keeps tasks small enough to complete, verify, and hand off cleanly.
 
 ## Good Task Characteristics
 
@@ -26,7 +26,7 @@ Tasks should make work reviewable, verifiable, and low-risk.
 - testable acceptance check
 - realistic size for one focused execution pass
 
-> Commentary: Keeps execution state visible and prioritized across ongoing work.
+> Commentary: Defines what makes a task executable instead of merely descriptive.
 
 ## Decomposition Guidance
 
@@ -37,7 +37,7 @@ Prefer:
 over
 - "edit 5 files"
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Shows how to split work without losing ownership or acceptance criteria.
 
 ## Backlog Hygiene
 
@@ -48,7 +48,7 @@ over
 - record blockers with required decisions
 - avoid duplicate or stale tasks
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Keeps task lists ordered, current, and useful for the next worker.
 
 ## Execution Discipline
 
@@ -57,7 +57,7 @@ over
 - move to the next unblocked item by `Project Priority` group and `Order` when those fields are available
 - stop only for blockers, empty backlog, or defined limits
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Prevents task churn by tying action to scope, evidence, and status.
 
 ## Task Completion Evidence
 
@@ -66,4 +66,4 @@ A task marked done should reference:
 - verification run(s)
 - residual risks or follow-up tasks
 
-> Commentary: Keeps execution state visible and prioritized across ongoing work.
+> Commentary: Requires each task to leave proof that its intended slice actually finished.

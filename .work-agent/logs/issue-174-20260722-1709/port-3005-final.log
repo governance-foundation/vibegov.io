@@ -1,0 +1,9 @@
+
+LocalAddress LocalPort    State OwningProcess
+------------ ---------    ----- -------------
+::1               3005 TimeWait             0
+::1               3005 TimeWait             0
+::1               3005 TimeWait             0
+::1               3005 TimeWait             0
+::1               3005 TimeWait             0
+::1               3005 TimeWait             0

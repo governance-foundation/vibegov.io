@@ -10,6 +10,8 @@ It is intentionally small.
 
 Add repo-specific verifier commands, evaluator contracts, issue/spec paths, and deployment/release rules around it.
 
+This is a portable runtime-profile snippet, not the core VibeGov contract. Use it only after the repo's canonical bootstrap contract and published GOV rules are understood.
+
 ## Minimal snippet
 
 ```text
@@ -81,6 +83,8 @@ If the repo has meaningful delivery machinery, release rules, review gates, or i
 
 ## Related docs
 
+- [Runtime and Harness Profiles](/docs/runtime-and-harness-profiles)
+- [Bootstrap](/docs/bootstrap)
 - [Execution Sharpness and Governed Closure](/docs/codex-prompting-through-vibegov)
 - [Harness Profile: Codex](/docs/harness-profile-codex)
 - [Harness Builder Checklist](/docs/harness-builder-checklist)

@@ -1,6 +1,6 @@
 # VibeGov
 
-Governed delivery bootstrap for AI-assisted teams.
+Repo-local governance framework for AI-assisted software delivery.
 
 VibeGov helps teams move fast **without faking done**.
 
@@ -45,12 +45,14 @@ Then review the operational docs on the site:
 
 ## What VibeGov is for
 
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
+
 VibeGov is for teams using AI agents for real software delivery who want:
 - faster execution without losing traceability
 - better issue/spec/test discipline
 - clearer completion standards
 - less shallow review and less fake confidence
-- a portable governance layer that works across tools and providers
+- a portable governance framework that works across tools and providers
 
 ## What it is not for
 

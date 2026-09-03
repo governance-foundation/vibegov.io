@@ -6,7 +6,12 @@ sidebar_position: 13
 
 This profile shows how to run a Codex-centered delivery loop inside VibeGov without letting runtime speed become the whole governance model.
 
-It is a profile, not a core-governance replacement.
+It is an adapter profile, not a core-governance replacement. VibeGov does not require Codex or any specific AI provider.
+
+Read this after the canonical VibeGov surfaces:
+- [Bootstrap](/docs/bootstrap)
+- [Execution Modes](/docs/execution-modes)
+- [Published GOV Rules](/docs/published/gov-01-instructions)
 
 ## What this profile is for
 
@@ -185,10 +190,12 @@ Avoid these:
 
 VibeGov core remains tool-agnostic.
 
-This Codex profile is an adapter layer that helps teams apply the same governance controls in Codex-centered workflows.
+This Codex profile is an adapter layer that helps teams apply the same governance controls in Codex-centered workflows. If this profile conflicts with the bootstrap contract or published GOV rules, the canonical VibeGov surface wins and the profile should be updated.
 
 ## Related docs
 
+- [Runtime and Harness Profiles](/docs/runtime-and-harness-profiles)
+- [Bootstrap](/docs/bootstrap)
 - [Execution Sharpness and Governed Closure](/docs/codex-prompting-through-vibegov)
 - [Minimal VibeGov Execution Profile Snippet](/docs/minimal-vibegov-execution-profile-snippet)
 - [Harness Profile: Minimal Claude Harness](/docs/harness-profile-minimal-claude)

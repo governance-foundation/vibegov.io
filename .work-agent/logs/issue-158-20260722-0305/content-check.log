@@ -1,0 +1,13 @@
+homepage section heading: src\pages\index.tsx => True
+homepage section heading: build\index.html => True
+example request: src\pages\index.tsx => True
+example request: docs\governed-delivery-example.md => True
+example request: build\index.html => True
+example request: build\docs\governed-delivery-example\index.html => True
+docs page title: docs\governed-delivery-example.md => True
+docs page title: build\docs\governed-delivery-example\index.html => True
+governed path sentence: docs\governed-delivery-example.md => True
+governed path sentence: build\docs\governed-delivery-example\index.html => True
+SDLC link text: src\pages\index.tsx => True
+SDLC link text: docs\governed-delivery-example.md => True
+SDLC link text: build\docs\governed-delivery-example\index.html => True

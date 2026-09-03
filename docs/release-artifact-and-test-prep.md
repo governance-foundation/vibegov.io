@@ -122,6 +122,8 @@ That means agents can either:
 
 ## Test prep
 
+For an example of a release-readiness checkpoint that names the candidate, covered scope, checks, decision, and known risk, see [Evidence Examples](/docs/evidence-examples).
+
 ### Prepare a release test run
 
 ```bash

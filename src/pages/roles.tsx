@@ -297,6 +297,90 @@ const roles: RoleCatalogItem[] = [
   }
 ];
 
+const starterPaths = [
+  {
+    label: 'Solo or simple repo',
+    roles: 'Developer plus a human operator',
+    guidance:
+      'Start here when issues are already clear and the main need is governed implementation evidence.',
+  },
+  {
+    label: 'Planning-heavy repo',
+    roles: 'Planner, then Developer',
+    guidance:
+      'Use Planner first when requests need intake, scoping, acceptance criteria, or priority before delivery.',
+  },
+  {
+    label: 'Quality-sensitive repo',
+    roles: 'Planner, Developer, Verifier, Maintainer',
+    guidance:
+      'Add independent validation and release stewardship when merges, evidence, or branch hygiene carry risk.',
+  },
+  {
+    label: 'Explicit specialist need',
+    roles: 'Add one specialist role',
+    guidance:
+      'Use Designer, Security, Researcher, Explorer, Architect, Operator, or Documenter only for a bounded need.',
+  },
+];
+
+const selectionRows = [
+  {
+    goal: 'Turn intent into ready work',
+    role: 'Planner',
+    output: 'Issue/spec shape, acceptance criteria, priority, and Developer handoff.',
+    avoid: 'Direct implementation or vague status chasing.',
+  },
+  {
+    goal: 'Ship a ready issue',
+    role: 'Developer',
+    output: 'Code/docs delta, branch, PR, validation evidence, and cleanup state.',
+    avoid: 'Unscoped discovery, product decisions, or work without acceptance criteria.',
+  },
+  {
+    goal: 'Prove the change works',
+    role: 'Verifier',
+    output: 'Independent acceptance, regression, and release-confidence evidence.',
+    avoid: 'Owning the original implementation or redefining the product contract.',
+  },
+  {
+    goal: 'Keep releases and branches clean',
+    role: 'Maintainer',
+    output: 'Release readiness, changelog/version notes, stale-work cleanup, and repo hygiene.',
+    avoid: 'Feature delivery that belongs in a ready Developer issue.',
+  },
+  {
+    goal: 'Understand unknown behavior',
+    role: 'Explorer or Researcher',
+    output: 'Exploration reports, cited findings, spec gaps, risks, and recommended next work.',
+    avoid: 'Merging fixes before the work is turned into a ready implementation issue.',
+  },
+  {
+    goal: 'Add bounded expertise',
+    role: 'Architect, Designer, Security, Operator, or Documenter',
+    output: 'Specific design, risk, cadence, communication, or architecture artifacts.',
+    avoid: 'Adding a standing role just because more agents are available.',
+  },
+];
+
+const modeRows = [
+  {
+    mode: 'Development',
+    roles: 'Developer leads; Verifier and Maintainer support when proof or release risk is material.',
+    shape: 'Ready issue in, implemented and validated PR out.',
+  },
+  {
+    mode: 'Exploration',
+    roles: 'Explorer or Researcher leads; Architect, Designer, or Security may bound specialist questions.',
+    shape: 'Evidence, findings, spec gaps, and follow-up issues out.',
+  },
+  {
+    mode: 'Feedback Intake',
+    roles: 'Planner leads; Documenter or specialist roles clarify wording, audience, or constraints as needed.',
+    shape: 'Human feedback becomes triaged source-of-truth backlog, not immediate coding.',
+  },
+];
+
 function bootstrapPrompt(role: RoleCatalogItem) {
   return `Bootstrap yourself as the ${role.id} agent for <PROJECT_PATH_OR_REPO_URL>.
 
@@ -367,6 +451,11 @@ export default function RolesPage() {
             can fresh-read their entrypoint, manifest, common policy, squad
             operating model, templates, and overlays.
           </p>
+          <p className={styles.status}>
+            Status: <strong>Role pack</strong>. These machine-readable assets help
+            specialize agents, but they do not replace the canonical bootstrap
+            contract or published GOV rules.
+          </p>
         </div>
       </header>
       <main>
@@ -375,11 +464,9 @@ export default function RolesPage() {
             <div className={styles.sectionHeader}>
               <h2>Bootstrap a role-specific agent</h2>
               <p>
-                These roles are designed to be composable. Planner turns intent
-                into source-of-truth work, Developer implements, Verifier proves,
-                Maintainer keeps release/repo hygiene, Designer owns UI/DLS intent,
-                and specialist roles cover research, exploration, architecture,
-                security, operations, and docs.
+                Roles clarify ownership. Start with the smallest set that can move
+                the work safely, then add specialist roles only when the issue,
+                evidence need, or risk calls for them.
               </p>
             </div>
             <div className={styles.note}>
@@ -387,7 +474,68 @@ export default function RolesPage() {
               <Link to="/roles/index.json">https://vibegov.io/roles/index.json</Link>
             </div>
             <div className={styles.note}>
+              Authority model:{' '}
+              <Link to="/docs/content-status-model">Content Status Model</Link>
+            </div>
+            <div className={styles.note}>
               Operating model: <strong>Ready is the contract.</strong> <strong>Develop is the truth.</strong> <strong>Automation is the gate.</strong> No wild forks.
+            </div>
+            <div className={styles.guidance}>
+              <div>
+                <h3>Start with the smallest useful role set</h3>
+                <div className={styles.starterGrid}>
+                  {starterPaths.map((path) => (
+                    <article className={styles.starterItem} key={path.label}>
+                      <h4>{path.label}</h4>
+                      <p className={styles.roleLine}>{path.roles}</p>
+                      <p>{path.guidance}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3>Choose by job, not by team size</h3>
+                <div className={styles.tableWrap}>
+                  <table className={styles.selectionTable}>
+                    <thead>
+                      <tr>
+                        <th>Goal</th>
+                        <th>Use this role</th>
+                        <th>Output expected</th>
+                        <th>Do not use it for</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {selectionRows.map((row) => (
+                        <tr key={row.goal}>
+                          <td>{row.goal}</td>
+                          <td>{row.role}</td>
+                          <td>{row.output}</td>
+                          <td>{row.avoid}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h3>Map roles to work shapes</h3>
+                <div className={styles.modeGrid}>
+                  {modeRows.map((row) => (
+                    <article className={styles.modeItem} key={row.mode}>
+                      <h4>{row.mode}</h4>
+                      <p>{row.roles}</p>
+                      <p className={styles.shape}>{row.shape}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+              <div className={styles.warning}>
+                <strong>Role composition warning:</strong> add roles to clarify
+                accountability, not to create process theater. When one Developer
+                plus a human operator can produce the required evidence, keep the
+                operating model that small.
+              </div>
             </div>
             <div className={styles.grid}>
               {roles.map((role) => (

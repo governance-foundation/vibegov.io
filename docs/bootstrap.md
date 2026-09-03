@@ -6,7 +6,25 @@ description: Use the canonical VibeGov bootstrap contract to install or normaliz
 
 # Bootstrap
 
-This is the **canonical bootstrap contract** for VibeGov.
+VibeGov is a repo-local governance framework for AI-assisted software delivery.
+
+This is its **canonical bootstrap contract**.
+
+## TLDR
+
+Use this page when you need to install, normalize, or audit the full VibeGov bootstrap contract.
+
+Minimum takeaway:
+- Bootstrap has one canonical contract, used through explicit `init`, `update`, or `review` modes.
+- The repo must have governance rules, project intent, specs, backlog linkage, workflow artifacts, continuity guidance, and durable reporting before product-code implementation.
+- This TLDR is orientation only; it is not a substitute for the canonical contract below.
+
+Next action:
+- If you want the shortest install path, use [Quick Start](/docs/quickstart).
+- If you need the full contract, follow the [canonical bootstrap prompt](#canonical-bootstrap-prompt).
+- If you are repairing an existing repo, read [Bootstrap Update](/docs/bootstrap-update).
+
+Status: **Canonical contract**. Treat this page, [`agent.txt`](/agent.txt), and [`bootstrap.json`](/bootstrap.json) as authoritative bootstrap sources. Supporting docs can explain or extend usage, but they do not weaken this contract.
 
 Shorthand refs used in docs and chat:
 - `BI` = bootstrap init

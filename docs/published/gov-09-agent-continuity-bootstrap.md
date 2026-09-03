@@ -7,7 +7,7 @@ sidebar_position: 9
 - Source rule: [gov-09-agent-continuity-bootstrap.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-09-agent-continuity-bootstrap.mdc)
 - Download raw file: [gov-09-agent-continuity-bootstrap.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-09-agent-continuity-bootstrap.mdc)
 
-This page embeds the canonical rule text and adds commentary after each section to explain why the section exists.
+This page embeds the canonical rule text and adds rule-specific commentary to explain why each section exists.
 
 ## Governance: Agent Continuity Bootstrap
 
@@ -15,7 +15,7 @@ Continuity is part of execution, not cleanup after execution.
 
 Governed projects should bootstrap agents with durable continuity structure and explicit checkpoint behavior early, before long-running work depends on live chat context.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Frames continuity as bootstrap infrastructure rather than optional memory hygiene.
 
 ## Continuity Layers
 
@@ -23,7 +23,7 @@ Governed projects should bootstrap agents with durable continuity structure and 
 - `GOV-09-CONT-002` The continuity model should define what belongs in each layer, where it lives, and how information is promoted between layers.
 - `GOV-09-CONT-003` Projects should prefer concise factual continuity artifacts over transcript dumps or undocumented chat memory.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Defines the layers that preserve project context across sessions, tools, and agents.
 
 ## Checkpoint Triggers
 
@@ -31,7 +31,7 @@ Governed projects should bootstrap agents with durable continuity structure and 
 - `GOV-09-CONT-005` Required checkpoint triggers should include new instructions or corrections, decisions made, blockers or open loops discovered, task phase changes, prolonged multi-step execution, and likely compaction or handoff risk.
 - `GOV-09-CONT-006` When several meaningful turns occur without a checkpoint, the agent should write a compact continuity update before proceeding.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Names the moments when a checkpoint should be written before context disappears.
 
 ## Session Diaries and Promotion
 
@@ -39,7 +39,7 @@ Governed projects should bootstrap agents with durable continuity structure and 
 - `GOV-09-CONT-008` Session diaries should not be treated as raw transcript archives; they should preserve substance needed for future resumption.
 - `GOV-09-CONT-009` Continuity information should flow upward deliberately: session or recent notes into project continuity when they become durable project context, and into global/operator continuity only when they are truly cross-project and safe for that scope.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Separates short-lived diary notes from durable repo truth that future runs should inherit.
 
 ## Bootstrap Expectations
 
@@ -47,7 +47,7 @@ Governed projects should bootstrap agents with durable continuity structure and 
 - `GOV-09-CONT-011` Bootstrap/adoption guidance should create or normalize repo-local continuity scaffolding, recommended continuity paths, and agent operating instructions for checkpointing and promotion.
 - `GOV-09-CONT-012` Bootstrap completion should not be claimed when continuity artifacts or continuity operating rules expected by the project contract are still missing.
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Requires continuity structure to exist before teams rely on long-running agent work.
 
 ## Anti-Patterns
 
@@ -58,4 +58,4 @@ Avoid these failure modes:
 - relying on transcript archaeology instead of structured continuity artifacts
 - importing person-specific wording into generic bootstrap semantics when the rule is meant to be reusable
 
-> Commentary: Captures a specific delivery control so contributors and agents apply this rule consistently.
+> Commentary: Calls out the memory and handoff habits that make resumed agent work fragile.

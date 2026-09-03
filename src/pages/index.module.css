@@ -69,15 +69,60 @@
   margin: 0;
 }
 
+.installGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.installItem {
+  border-top: 3px solid var(--ifm-color-primary);
+  padding-top: 1rem;
+}
+
+.installItem h3 {
+  margin-bottom: 0.75rem;
+}
+
+.installItem p {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
+.pathList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0 0 0.9rem;
+  list-style: none;
+}
+
+.pathList code {
+  display: inline-block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
 .cardGrid,
-.faqList {
+.faqList,
+.fitGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.25rem;
 }
 
+.exampleGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
 .card,
-.faqItem {
+.faqItem,
+.examplePanel {
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 16px;
   padding: 1.25rem;
@@ -85,14 +130,62 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
+.fitPanel {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
 .card h3,
-.faqItem h3 {
+.faqItem h3,
+.examplePanel h3,
+.fitPanel h3 {
   margin-bottom: 0.75rem;
 }
 
 .card p,
-.faqItem p {
+.faqItem p,
+.examplePanel p,
+.fitPanel li {
   color: var(--ifm-color-emphasis-700);
+}
+
+.exampleLabel {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stepList {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.stepList li::marker {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.exampleLinks {
+  margin: 1.25rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.fitPanel ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.fitPanel li + li {
+  margin-top: 0.6rem;
 }
 
 .cardActions {
@@ -130,5 +223,10 @@
 
   .cardActions {
     justify-content: center;
+  }
+
+  .exampleGrid {
+    grid-template-columns: 1fr;
+    text-align: left;
   }
 }
