@@ -133,3 +133,4 @@ Canonical-source model:
 - [GOV-11: Agent Legibility and In-Repo Truth](/docs/published/gov-11-agent-legibility-in-repo-truth)
 - [GOV-12: Drift Control and Garbage Collection](/docs/published/gov-12-drift-control-garbage-collection)
 - [GOV-13: Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline)
+- [GOV-14: Architect-Conductor Boundaries](/docs/published/gov-14-architect-conductor-boundaries)
