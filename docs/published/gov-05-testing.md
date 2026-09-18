@@ -71,6 +71,18 @@ OpenSpec-first rule:
 
 > Commentary: Connects tests back to requirements so passing checks prove the right thing.
 
+## Protected Acceptance Evidence
+
+Requirement-bound acceptance, integration, end-to-end, regression, and release-gate tests are protected evidence.
+
+- An implementing agent must not weaken, delete, skip, narrow, or rewrite protected evidence merely to make its implementation pass.
+- A material change to protected evidence requires an explicit requirement or acceptance-criteria change, documented justification, and review separate from the implementation claim.
+- New tests written by the implementing agent may support completion, but they must not be the sole proof when an existing protected gate covers the claim.
+- If implementation and protected evidence disagree, treat the disagreement as a failed gate or requirement ambiguity; do not silently redefine success.
+- Record relevant baseline results before mutation-heavy work so introduced regressions can be distinguished from pre-existing failures.
+
+> Commentary: Prevents an implementing agent from weakening the evidence that defines success.
+
 ## Test Execution Expectations
 
 For each meaningful test run, explicitly consider:
@@ -158,6 +170,8 @@ UI-only success must not be treated as sufficient proof for mutation-heavy work.
 - broad snapshot assertions without intent
 - coverage metrics used without behavioral relevance
 - tests that pass but do not prove the requirement
+- tests weakened or rewritten to match broken output
+- implementation-authored tests used as the sole proof while protected acceptance evidence is failing
 - partial coverage reported as full validation
 - surrogate-only proof reported as direct proof
 

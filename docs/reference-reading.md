@@ -33,7 +33,7 @@ A practical reading order is:
 | exploration vs evaluation separation | [Execution Modes](/docs/execution-modes), [Evaluation Pattern](/docs/evaluation-pattern), [Mode Selection and Evidence Closing](/docs/mode-selection-and-evidence-closing) |
 | in-repo truth, harness engineering, drift control | [Published GOV 10 Agent State Closure and Git Hygiene](/docs/published/gov-10-agent-state-closure-git-hygiene), [Published GOV 11 Agent Legibility and In-Repo Truth](/docs/published/gov-11-agent-legibility-in-repo-truth), [Published GOV 12 Drift Control and Garbage Collection](/docs/published/gov-12-drift-control-garbage-collection) |
 | human feedback as a first-class loop | [Feedback Assimilation Pattern](/docs/feedback-assimilation-pattern), [Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking](/docs/build-exploratory-human-feedback-loops) |
-| bounded skeptical judgment | [Evaluation Pattern](/docs/evaluation-pattern), [Published GOV 13 Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline) |
+| bounded skeptical judgment and architectural escalation | [Evaluation Pattern](/docs/evaluation-pattern), [Published GOV 13 Review Loops and Completion Discipline](/docs/published/gov-13-review-loops-completion-discipline), [Published GOV 14 Architect-Conductor Boundaries](/docs/published/gov-14-architect-conductor-boundaries) |
 
 ## Current reading set
 

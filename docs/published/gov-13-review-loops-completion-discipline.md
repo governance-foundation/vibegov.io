@@ -67,6 +67,11 @@ Governed agent work should close the loop through review, evidence, and feedback
 
 - `GOV-13-REV-017` When repeated review/fix loops stop producing clear progress, the agent should escalate the blocker, ambiguity, or missing capability instead of performing aimless churn.
 - `GOV-13-REV-018` When judgment is required beyond the current governance and evidence, the agent should make the decision boundary visible instead of silently guessing.
+- `GOV-13-REV-019` Review/fix progress must be judged by evidence movement, not mutation count, token use, lines changed, commits, or confident status prose.
+- `GOV-13-REV-020` Equivalent failures should be classified by stable failure signature so superficial message changes do not reset the circuit-breaker count.
+- `GOV-13-REV-021` A repeated attempt counts as progress only when it narrows the hypothesis, adds diagnostic evidence, restores a regressed gate, or improves direct verification against the governed claim.
+- `GOV-13-REV-022` When a circuit breaker triggers, the current work unit must enter scoped blocking and produce the incident evidence required by `gov-02` before another implementation attempt begins.
+- `GOV-13-REV-023` A fresh session, worker, or prompt does not itself satisfy a resume condition; materially new evidence or constraints must change the recovery path.
 
 > Commentary: Prevents endless churn loops and forces explicit escalation boundaries.
 
@@ -78,6 +83,9 @@ Avoid these failure modes:
 - leaving review comments or feedback themes unincorporated without explicit state change
 - treating approved edits as one-off fixes with no learning loop when they reveal a reusable pattern
 - adding duplicate learned rules without contradiction checking
+- resetting a failed-loop counter because the same failure was reworded
+- treating more code, commits, tokens, or tests as proof of progress
+- restarting the same blocked approach in a fresh session without new evidence
 - using a summary as a substitute for a real review loop
 - moving on while material review debt remains hidden
 

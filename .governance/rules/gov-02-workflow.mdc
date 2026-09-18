@@ -214,6 +214,28 @@ Prefer scoped blocking over global blocking:
 - unrelated exploratory work may continue,
 - and the blocked boundary should be made explicit in checkpoints or handoffs.
 
+### Execution circuit breakers
+
+Before a mutation-heavy autonomous work unit begins, capture enough baseline state to distinguish an introduced regression from a pre-existing failure. The baseline should include the governing issue and requirements, branch and commit, relevant verification results, known failures, and permitted scope.
+
+Trigger a circuit breaker when any of these conditions is met:
+- three consecutive mutation attempts reproduce the same material failure class without narrowing the hypothesis, producing new diagnostic evidence, or improving the verification result,
+- a previously passing required gate regresses and the regression cannot be corrected by the next bounded attempt,
+- the agent weakens protected acceptance evidence without an approved requirement change,
+- the change crosses a protected architectural boundary outside the approved scope,
+- or the diff continues to grow while verified behavior does not materially improve.
+
+When a circuit breaker triggers:
+- stop further mutations in the affected work unit and cancel its delegated workers where the runtime supports that action,
+- preserve the last verified checkpoint and classify all current repository state under `gov-10`,
+- set the issue or work unit to `Blocked` using reason `LOCAL_MINIMUM` when supported,
+- record the baseline, attempts, failure signature, regressions, affected boundaries, last verified checkpoint, and recovery options in a governed incident artifact,
+- and continue only unrelated ready work that can proceed safely.
+
+Do not purge useful history. Replace noisy conversational state with a concise incident summary that preserves facts, failed hypotheses, and evidence for a fresh recovery work unit.
+
+The blocked work unit may resume only when a materially new input changes the next attempt, such as new diagnostic evidence, a corrected requirement, an approved architectural decision, a smaller reproduction, a resolved dependency, a narrowed scope, or a distinct verified implementation strategy. Rephrasing the same prompt is not an unblock condition.
+
 ## Scope Discipline
 
 - Stay inside the agreed directories and task boundaries.
