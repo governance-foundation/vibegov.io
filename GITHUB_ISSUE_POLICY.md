@@ -65,7 +65,10 @@ Close an issue only when all are true:
 - commit is pushed and linked
 
 ## 7) Branch/PR hygiene
-- Use issue-linked branch names (example: `issue-312-provider-sync`).
+- Use only the governed Git Flow branch prefixes: `feature/`, `fix/`, `docs/`, `chore/`, and `hotfix/`.
+- Normal work branches MUST use `feature/<issue-number>-<short-kebab-slug>`, `fix/<issue-number>-<short-kebab-slug>`, `docs/<issue-number>-<short-kebab-slug>`, or `chore/<issue-number>-<short-kebab-slug>` and start from `develop`.
+- Urgent production work MUST use `hotfix/<issue-number>-<short-kebab-slug>` and start from `main`.
+- Do not use untyped or ad-hoc branch names such as `issue-312-provider-sync`, `refactor/...`, names, dates, or session IDs.
 - Follow repo PR/main rules; if PR-first, do not bypass with direct main push.
 
 ## 8) Continuous loop behavior
@@ -83,4 +86,3 @@ Close an issue only when all are true:
 - `commandsRun[]`
 - `keyResults[]`
 - `blockers[]`
-
