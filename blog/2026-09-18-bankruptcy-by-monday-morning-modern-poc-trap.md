@@ -2,191 +2,159 @@
 slug: bankruptcy-by-monday-morning-modern-poc-trap
 title: "Bankruptcy by Monday Morning: Surviving the Modern POC Trap"
 authors: [VibeGov_team]
-tags: [governance, ai-agents, vibe-coding, technical-debt, orchestration]
-description: How unmanaged AI coding turns rapid prototypes into codebase bankruptcy—and how governed orchestration keeps speed aligned with delivery.
+tags: [governance, ai-agents, orchestration, technical-debt, software-architecture]
+description: How ungoverned AI agents accelerate the classic prototype trap—and the circuit breakers that stop prompt churn becoming codebase collapse.
 ---
 
-*How unmanaged AI coding turns rapid prototypes into codebase bankruptcy—and how governed orchestration provides an escape route.*
+*How to stop autonomous execution from turning speed into structural debt.*
 
-In [Creativity Unleashed: Create While You Sleep](/blog/creativity-unleashed-create-while-you-sleep), I described the **Creative Architect-Conductor**: someone who defines the intent, establishes the orchestration layer, and lets autonomous agents compound progress while they are offline.
-
-The premise is intoxicating. You close your laptop on Friday evening imagining a complete feature suite waiting for you in the morning.
+In [Creativity Unleashed: Create While You Sleep](/blog/creativity-unleashed-create-while-you-sleep), I described the opportunity: establish the intent, design the orchestration layer, and let governed agents continue building after you step away.
 
 But there is a shadow side to that leverage.
 
-You can reopen the project to millions of spent tokens, hundreds of commits, looping agents, isolated tests that pass, and an application that no longer boots. The codebase is technically alive but architecturally dead.
+You close your laptop on Friday imagining a finished feature suite. On Monday morning, you find hundreds of mutations, a swollen repository, locally passing tests—and an application that no longer boots.
+
+The agents were active. The codebase did not progress.
 
 ## The first three prompts
 
-The trap begins with euphoria. You provide a loosely framed prompt and the agent produces hundreds of lines of syntactically crisp, functional code in seconds. It connects the database, creates an API endpoint, and renders a polished interface.
+The trap begins with euphoria. A loosely framed prompt produces an API, a database connection and a polished interface in minutes. The friction of boilerplate and syntax disappears, so it is easy to assume that the same trajectory will continue as the system grows.
 
-The friction of typing, syntax recall, and boilerplate configuration vanishes. You move from idea to working prototype at a speed that makes traditional development feel glacial.
+It rarely does.
 
-That early success creates a dangerous illusion: because the first three prompts produced a working interface, the same trajectory must continue.
+As the prototype becomes a multi-module system, every change begins touching more boundaries. A new form field disrupts authentication. Repairing authentication breaks persistence. Local tests remain green because the assertions have gradually shifted to match the implementation instead of protecting the original requirement.
 
-It will not.
+The software is still running in places, but its structure is becoming harder to reason about and more expensive to change.
 
-As the application grows from a single-file prototype into a multi-module system, a silent wall emerges. Adding a form field breaks authentication. Fixing authentication damages the database schema. The CI pipeline stays green because the agent rewrites assertions to match its broken output.
+## The modern POC trap
 
-You have reached the wall of unmanaged abstraction.
+Software teams have always known the proof-of-concept trap: a useful demonstration is mistaken for a production foundation and then stretched beyond the assumptions that made it quick to build.
 
-## The AI particle accelerator
+AI did not create this failure. It compressed the timeline.
 
-The software industry has spent decades warning about the **proof-of-concept trap**: an organisation mistakes a fragile, hard-coded prototype for a production foundation, then watches it collapse under real users, scale, and edge cases.
+Agents remove much of the physical and cognitive friction involved in producing code. That is extraordinary leverage when intent, boundaries and verification are strong. Without those controls, the same leverage accelerates tight coupling, duplicated utilities, global-state abuse, swallowed errors and patches layered over misunderstood contracts.
 
-Vibe coding has not removed that trap. It has accelerated it.
+What once accumulated over months can now arrive in a weekend.
 
-```mermaid
-flowchart TB
-    START["Promising prototype"]
+> If a human team can bankrupt a codebase through years of short-term patches, an ungoverned agent network can reproduce the pattern before Monday morning.
 
-    START --> CLASSICAL
-    START --> AI
+## Prompt churn and the local minimum
 
-    subgraph CLASSICAL["Classical delivery"]
-        C1["Manual shortcuts"] --> C2["Debt accumulates over months"] --> C3["Codebase bankruptcy"]
-    end
+A local minimum appears when the current structure is good enough to resist replacement but too compromised to support clean improvement. Each small patch treats the visible symptom while increasing the cost of the next change.
 
-    subgraph AI["Ungoverned AI delivery"]
-        A1["Rapid generation"] --> A2["Prompt-churn loops"] --> A3["Codebase bankruptcy by Monday"]
-    end
-```
+The human response is often prompt churn:
 
-Agents remove the physical and cognitive friction of producing code. That means they can build enormous, profoundly unstable prototypes in a fraction of the time. The journey from working demo to unmaintainable system no longer requires months of human shortcuts. It can happen over a weekend.
+1. Paste the latest error into the agent.
+2. Apply the proposed fix.
+3. Receive a different error.
+4. Paste that error back into the same conversation.
+5. Repeat until the context is full and the repository is worse.
 
-Generative AI does not need to invent new software engineering failures. It acts as a particle accelerator for familiar ones: tight coupling, global state, missing boundaries, copy-and-paste duplication, and tests that prove the implementation rather than the requirement.
+The danger is not simply token consumption. Tokens are an input cost, not a delivery metric. The real warning is **mutation without evidence movement**: more code, more tests and more commits while no governed requirement becomes more convincingly verified.
 
-Code generation may be abundant. Software engineering is not.
+## The signs of structural debt
 
-> **If a human team can bankrupt a codebase through years of short-sighted fixes, an ungoverned agent network can compress the same systemic decay into a weekend.**
+Codebase insolvency is not one failed build. It is a sustained condition in which the system's obligations exceed the team's ability to change it safely.
 
-Humans naturally slow down. They become tired, argue about trade-offs, and hesitate before adding the fifth nested conditional. Agents have no such resistance. They can produce technical debt continuously, faster than conventional review and management systems can absorb it.
+Common signals include:
 
-## Mapping the local minimum
+- defensive `try/catch` blocks that hide errors rather than resolve them;
+- repetitive null checks masking an unresolved type or lifecycle problem;
+- duplicate utilities created because repository-wide patterns were not inspected;
+- locally generated tests passing while boot, integration or end-to-end gates fail;
+- acceptance tests being weakened to agree with broken output;
+- widening diffs that do not improve verified behaviour;
+- repeated reversals between variations of the same failed patch;
+- completion claims supported by polished summaries instead of direct evidence.
 
-In optimisation, a local minimum is a point where every nearby move appears worse, even though the solution is still far from the best possible outcome.
+These signals matter more than lines of code, commit counts or the number of agents running in parallel. Activity is not progress.
 
-The same thing happens in AI-assisted delivery. A project reaches a state that works just well enough to discourage a rewrite, while every local fix creates another failure. The agent can patch the visible symptom, but it cannot escape the architecture that produces it.
+## Why isolated green tests are not enough
 
-![Line graph showing architectural quality rising during prototyping before falling sharply as coupling and prompt churn increase](/img/blog/prompt-churn-local-minimum.svg)
+An implementation agent can generate both the code and the test that approves it. That is useful for development, but it creates an obvious conflict: the agent can accidentally redefine success around its own output.
 
-The peak is the initial vibe-coding success: the prototype appears coherent and velocity feels extraordinary. As context and coupling grow, local fixes stop improving the whole system. The project descends into a prompt-churn valley.
+Requirement-bound acceptance evidence must therefore be protected. An agent should not weaken, delete, skip or narrow an acceptance, integration, end-to-end, regression or release-gate test merely to obtain a green result.
 
-### The token-burn loop
+If the test is wrong, change the requirement deliberately, document why, and review the evidence change separately from the implementation claim.
 
-When an agent reaches this point, the usual response is to prompt harder.
+The principle is simple:
 
-You paste the error into the chat. The agent apologises, rewrites a function, and returns a new patch. A different error appears. You paste that one back. The agent apologises again and produces a variation of the first broken state.
+> The implementation must satisfy the governed evidence. The evidence must not quietly move to accommodate the implementation.
 
-The cycle consumes context and compute without producing durable progress:
+## Install a circuit breaker
 
-```mermaid
-flowchart LR
-    ERROR["Paste error"] --> PATCH["Generate local patch"]
-    PATCH --> BREAK["Create a new break"]
-    BREAK --> CONTEXT["Add more context"]
-    CONTEXT --> ERROR
-```
+The defence is not to stop agents after an arbitrary number of messages. A turn may contain no mutation, while a single mutation may cross a major architectural boundary.
 
-The problem is not a weak prompt. The problem is that the requested change cannot be solved reliably inside the existing structural constraints.
+VibeGov instead treats three **equivalent failed mutation attempts** as a circuit-breaker threshold when they produce no material progress. Progress means at least one of the following:
 
-### Accidental obfuscation
+- the hypothesis has been narrowed;
+- new diagnostic evidence has been produced;
+- a regressed gate has been restored;
+- direct verification against the requirement has improved.
 
-If a developer validates only inputs and outputs without understanding the generated logic, the codebase gradually becomes a black box.
+The circuit breaker should also trigger when protected tests are weakened, an unapproved architectural boundary is crossed, or the diff keeps growing without verified behaviour improving.
 
-Agents can generate repetitive, over-abstracted code that satisfies an immediate compiler or test requirement while undermining readability. Once the system becomes difficult for a human to reason about, manual intervention becomes slower and riskier. The developer is no longer directing the codebase; they are negotiating with it through another model.
+When it triggers, stop mutations in the affected work unit. Do not freeze every unrelated lane, and do not let the blocked worker continue digging.
 
-## Signs of codebase bankruptcy
+## Preserve evidence, not noise
 
-Like financial insolvency, codebase bankruptcy tends to arrive slowly and then all at once. Several warning signs appear before total collapse.
+A failed loop should not be carried forward as an enormous conversational transcript. But deleting all history throws away the very evidence needed for recovery.
 
-### The slop-code cascade
+The correct response is to compress the useful state into a durable incident artifact:
 
-When an agent cannot locate the root cause of a defect, it often surrounds the problem with defensive code:
+- baseline branch, commit and verification state;
+- governing requirements and permitted scope;
+- stable failure signature;
+- attempted approaches and their outcomes;
+- regressions and architectural boundaries touched;
+- last verified checkpoint;
+- recovery options and explicit resume conditions.
 
-- try-catch blocks that swallow meaningful failures;
-- repeated null checks and assertions that patch symptoms rather than types;
-- duplicate utilities because the wider repository was not inspected;
-- compatibility layers around compatibility layers;
-- tests rewritten to approve the latest output rather than protect the original intent.
+Then start a fresh recovery work unit from the last verified checkpoint. The new agent receives the facts and failed hypotheses without inheriting the conversational noise.
 
-Each layer makes the next task harder to understand, which increases the chance that the next agent adds another layer.
+## A longer prompt is not a recovery strategy
 
-### Context-window exhaustion
+A blocked work unit should resume only when something material changes. Valid unblock conditions include:
 
-Every model has a finite working context. As an ungoverned agent expands the repository, the system becomes harder to inspect as a whole.
+- new diagnostic evidence;
+- a corrected or clarified requirement;
+- an approved architecture decision;
+- a smaller reproduction;
+- a resolved dependency;
+- a narrowed scope;
+- a genuinely different, verifiable implementation strategy.
 
-The agent sees fragments. It loses the macro intent, misses established patterns, and introduces dependencies that conflict with code outside its current view. The codebase begins to suffocate under the volume of its own output.
+Rephrasing the same instruction or moving it into a fresh chat does not change the solution space. It only restarts the bill.
 
-### Confidence without competence
+## The Architect-Conductor boundary
 
-An agent caught in structural insolvency rarely stops itself. It can still produce clean Markdown, mark the ticket complete, and state confidently that the defect is resolved.
+The answer is not to require human approval for every internal abstraction. That would turn governance into paralysis.
 
-If its validation is local, self-authored, or detached from the real integration surface, that confidence proves very little. The result is high automated certainty with low system-level competence.
+Agents should remain autonomous inside an approved architecture. Human blueprint review becomes necessary when work would:
 
-## Typing speed is not delivery speed
+- create or replace a system-wide boundary;
+- introduce shared global state;
+- change persistence semantics;
+- alter a public contract;
+- move a security or trust boundary;
+- create an irreversible migration;
+- materially replace the approved architecture.
 
-Engineering teams learned long ago that lines of code and commits per day are poor measures of success. They reward output volume rather than working software.
+At that point, the Architect-Conductor is not being asked to type the solution. They are being asked to make the decision the implementation cannot safely make for itself.
 
-AI delivery has resurrected the same mistake under new names: prompt throughput, token volume, parallel agent count, and files changed overnight.
+## Velocity is not delivery
 
-```mermaid
-flowchart TB
-    VELOCITY["High execution velocity<br/>5,000 lines generated"]
-    GATE{"Governed verification?"}
-    PROGRESS["Architectural progress<br/>Integrated, tested, traceable"]
-    INSOLVENCY["Systemic insolvency<br/>More output, less control"]
+Typing speed was never delivery speed. Token throughput is not delivery speed either.
 
-    VELOCITY --> GATE
-    GATE -->|"Yes"| PROGRESS
-    GATE -->|"No"| INSOLVENCY
-```
+Real progress is a governed state transition: an agreed requirement moves from intended, to implemented, to directly verified, reviewed and safely integrated. The code is only one artifact in that transition.
 
-An agent network can create servers, tests, migrations, and components at extraordinary speed while making no progress towards a deployable system. Velocity without direction is noise. Sprinting into an architectural dead end only reaches bankruptcy sooner.
+This is why governance is not the brake on AI leverage. It is the control system that makes sustained acceleration possible.
 
-The scarce asset is no longer the individual line of code. It is the blueprint: the architecture, boundaries, quality gates, evidence, and shared source of truth that make generated code useful.
+Without baselines, protected evidence, circuit breakers and recovery checkpoints, autonomous execution can manufacture technical debt faster than a human can inspect it. With them, a blocked lane stops before it contaminates the wider system, useful evidence survives, and unrelated work continues.
 
-## The VibeGov escape route
+Do not measure how loudly the engine is running.
 
-Surviving this shift requires moving from passive prompter to **Creative Architect-Conductor**.
-
-You do not need to manage every line. You do need to manage the environment, constraints, context, and verification system in which those lines are produced.
-
-### Enforce scoped blocking
-
-The first defence is **scoped blocking**. The orchestration system must recognise when an agent is no longer converging.
-
-If repeated attempts do not produce clean compilation, a passing integration test, or evidence against the governing requirement, stop that lane. Preserve the evidence, prevent more speculative changes, and route the blocker for review.
-
-Crucially, blocking one lane should not freeze unrelated work. A failed authentication task can pause while a bounded documentation or interface task continues. Governance defines exactly what stops and what remains safe to execute.
-
-### Replace prompt history with tangible artefacts
-
-When an agent is trapped in a local minimum, a longer conversational prompt is rarely the answer. Reset the working context and anchor the next attempt to durable repository artefacts:
-
-1. Stop the failing prompt loop.
-2. Preserve the errors and failed approaches as evidence.
-3. Restate the target in a specification or architecture document.
-4. Define boundaries, invariants, and acceptance tests.
-5. Relaunch the work against that source of truth.
-
-An architectural file survives context resets. It can be reviewed by humans, shared across agents, versioned with the code, and checked against the implementation. Chat history cannot reliably do that job.
-
-### Make evidence the definition of done
-
-An agent saying *complete* is not completion.
-
-Completion requires evidence that connects the change to its intent: requirement coverage, integration results, expected failure behaviour, review of the actual diff, and a clean repository state. This changes the system from one that rewards confident output to one that rewards governed closure.
-
-## The governed creator's edge
-
-The barriers to building software have fallen, but new constraints have taken their place. The modern bottleneck is **context, coordination, and verification**.
-
-Tokens are fuel. If agents burn them inside ungoverned loops, the project can reach codebase bankruptcy by Monday morning. If intent, state, boundaries, and evidence are managed well, that same capacity becomes genuine leverage.
-
-Governance is not the brake on AI development. It is what allows speed to compound without losing control.
-
-Do not let agents drift into shallow local minima. Define the blueprint. Establish the quality gates. Give every agent durable artefacts and bounded work. Stop failing lanes before they fracture the system.
+Measure whether the system is moving.
 
 Do not just prompt the machine.
 

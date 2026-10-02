@@ -1,0 +1,21 @@
+{
+  "issue_id": "ISSUE-000",
+  "state": "BLOCKED_LOCAL_MINIMUM",
+  "recorded_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "baseline": {
+    "branch": "feature/issue-id-short-slug",
+    "commit": "BASELINE_COMMIT_SHA",
+    "requirements": ["REQ-001"],
+    "permitted_scope": ["path/to/scope"],
+    "verification": [],
+    "known_failures": []
+  },
+  "failure_signature": "STABLE_FAILURE_CLASS",
+  "attempts": [],
+  "regressions": [],
+  "protected_boundaries_touched": [],
+  "last_verified_checkpoint": "COMMIT_SHA",
+  "recovery_options": [],
+  "resume_conditions": [],
+  "unrelated_work_may_continue": true
+}
