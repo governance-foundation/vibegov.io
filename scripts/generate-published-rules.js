@@ -15,6 +15,7 @@ const files = [
   { file: "gov-07-tasks.mdc", out: "gov-07-tasks.md", pos: 7 },
   { file: "gov-08-exploratory-review.mdc", out: "gov-08-exploratory-review.md", pos: 8 },
   { file: "gov-09-agent-continuity-bootstrap.mdc", out: "gov-09-agent-continuity-bootstrap.md", pos: 9 },
+  { file: "gov-14-architect-conductor-boundaries.mdc", out: "gov-14-architect-conductor-boundaries.md", pos: 14 },
 ];
 
 function stripFrontmatter(text) {
@@ -91,6 +92,7 @@ const commentaryBySection = new Map([
   ["gov-05-testing:testing layers (use what fits scope)", "Lets teams choose the right validation layer without pretending every change needs the same test shape."],
   ["gov-05-testing:unit-test expectations", "Defines when small focused tests should pin logic and edge-case behavior."],
   ["gov-05-testing:test-to-intent traceability", "Connects tests back to requirements so passing checks prove the right thing."],
+  ["gov-05-testing:protected acceptance evidence", "Prevents an implementing agent from weakening the evidence that defines success."],
   ["gov-05-testing:test execution expectations", "Requires test results to be captured honestly, including failures and skipped checks."],
   ["gov-05-testing:scenario coverage expectations", "Pushes validation beyond the happy path into states users actually encounter."],
   ["gov-05-testing:result classification", "Makes validation outcomes explicit enough for a reviewer to trust or challenge."],
@@ -98,6 +100,12 @@ const commentaryBySection = new Map([
   ["gov-05-testing:persistence and post-action proof", "Requires checks that state survives the action paths users rely on."],
   ["gov-05-testing:execution expectations", "Defines how test runs should be invoked, recorded, and explained during delivery."],
   ["gov-05-testing:test quality anti-patterns", "Calls out tests that inflate confidence without covering real behavior."],
+
+  ["gov-14-architect-conductor-boundaries:governance: architect-conductor boundaries", "Separates autonomous implementation choices from architectural decisions that require durable human intent."],
+  ["gov-14-architect-conductor-boundaries:autonomous implementation boundary", "Keeps routine implementation moving inside established contracts and repository patterns."],
+  ["gov-14-architect-conductor-boundaries:decisions requiring escalation", "Defines the structural changes that must pause for an explicit blueprint decision."],
+  ["gov-14-architect-conductor-boundaries:evidence and completion", "Requires system-level claims to be supported by repository-level evidence."],
+  ["gov-14-architect-conductor-boundaries:anti-patterns", "Prevents both architectural drift and approval-heavy paralysis."],
 
   ["gov-06-issues:governance: issues", "Frames issues as the traceability anchor for governed delivery."],
   ["gov-06-issues:purpose", "Explains why issue records need enough context to survive beyond the initiating chat."],

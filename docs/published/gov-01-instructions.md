@@ -31,6 +31,7 @@ Apply these files in order:
 10. `gov-11-agent-legibility-in-repo-truth.mdc` (in-repo truth and durable knowledge promotion)
 11. `gov-12-drift-control-garbage-collection.mdc` (continuous cleanup and drift-control governance)
 12. `gov-13-review-loops-completion-discipline.mdc` (review-loop closure and completion semantics)
+13. `gov-14-architect-conductor-boundaries.mdc` (architectural decision boundaries and escalation thresholds)
 
 > Commentary: Makes the rule stack explicit so agents load workflow, quality, and continuity guidance in a predictable sequence.
 

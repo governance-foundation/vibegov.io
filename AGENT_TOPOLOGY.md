@@ -63,6 +63,15 @@ Agents must stop and escalate when:
 - requirement intent conflicts
 - security-sensitive behavior is unclear
 
+## Operational Boundaries and Circuit Breakers
+
+- Record the issue, requirements, baseline commit, relevant gate results, known failures, and permitted scope before mutation-heavy autonomous work.
+- Checkpoint after coherent milestones and before architectural boundary changes. Commit count and token volume are not evidence of progress.
+- Trigger scoped blocking when three equivalent failed mutation attempts produce no new diagnostic evidence, narrowed hypothesis, restored gate, or improved direct verification.
+- Stop only the affected lane, preserve its last verified checkpoint, and emit the governed incident artifact.
+- Resume only when materially new evidence, constraints, dependency state, scope, or strategy changes the next attempt.
+- Require Architect-Conductor review for system-wide boundaries, shared global state, persistence semantics, public contracts, trust boundaries, irreversible migrations, or material architectural replacement.
+
 ## Why this works
 
 - Keeps context small and stable
