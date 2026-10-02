@@ -5,11 +5,12 @@
 - Spec:
 
 ## Workflow Route
-- Branch type: `feature` / `fix` / `docs` / `chore` / `hotfix` / `promotion`
+- Branch type: `feature` / `fix` / `docs` / `chore` / `hotfix` / `promotion` (`promotion` is a direct `develop` -> `main` PR, not a branch-name prefix)
 - Source branch:
 - Target branch:
 - Branch name:
 - [ ] This branch name includes the governing issue ID.
+- [ ] This source branch uses only an allowed Git Flow prefix and the required `<issue-number>-<short-kebab-slug>` format (not applicable to a direct `develop` -> `main` promotion).
 - [ ] No direct agent commits were made to `main` or `develop`.
 - [ ] Normal work targets `develop`; only explicit promotion or hotfix flow targets `main`.
 
