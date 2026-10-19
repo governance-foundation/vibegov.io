@@ -1,8 +1,11 @@
 ---
 sidebar_position: 6
+image: /img/heroes/docs/gov-06-issues-hero.jpg
 ---
 
 # GOV 06 ISSUES
+
+<img className="page-hero" src="/img/heroes/docs/gov-06-issues-hero.jpg" srcSet="/img/heroes/docs/gov-06-issues-hero-640.webp 640w, /img/heroes/docs/gov-06-issues-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A sturdy small metal anchor secures a transparent rectangular evidence tag to two short fine chains that lead toward understated glass intent and outcome tokens."} decoding="async" />
 
 - Source rule: [gov-06-issues.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-06-issues.mdc)
 - Download raw file: [gov-06-issues.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-06-issues.mdc)

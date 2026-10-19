@@ -3,7 +3,10 @@ slug: company-governed-ai-runtime
 title: "Company Work Should Run on Company-Governed AI"
 authors: [VibeGov_team]
 tags: [governance, ai, security, accountability]
+image: /img/heroes/blog/company-governed-ai-runtime-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/company-governed-ai-runtime-hero.jpg" srcSet="/img/heroes/blog/company-governed-ai-runtime-hero-640.webp 640w, /img/heroes/blog/company-governed-ai-runtime-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cyan energy core is contained within a transparent, controllable industrial enclosure."} decoding="async" />
 
 This is the governance-control extension of the series: once an organization admits AI is part of delivery capacity and starts budgeting for it, the next question is who actually controls the runtime producing company work.
 

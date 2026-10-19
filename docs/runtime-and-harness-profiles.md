@@ -2,9 +2,12 @@
 sidebar_position: 14
 title: Runtime and Harness Profiles
 description: Understand how VibeGov runtime and harness profiles relate to the canonical bootstrap contract and GOV rules.
+image: /img/heroes/docs/runtime-and-harness-profiles-hero.jpg
 ---
 
 # Runtime and Harness Profiles
+
+<img className="page-hero" src="/img/heroes/docs/runtime-and-harness-profiles-hero.jpg" srcSet="/img/heroes/docs/runtime-and-harness-profiles-hero-640.webp 640w, /img/heroes/docs/runtime-and-harness-profiles-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"one universal dark metal socket surrounded by three small distinct glass adapter heads that all share the same base fitting, runtime profiles"} decoding="async" />
 
 These pages translate VibeGov into specific agent, runtime, or harness shapes.
 

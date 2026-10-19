@@ -1,8 +1,11 @@
 ---
 sidebar_position: 11
+image: /img/heroes/docs/agents-template-hero.jpg
 ---
 
 # AGENTS.md Template
+
+<img className="page-hero" src="/img/heroes/docs/agents-template-hero.jpg" srcSet="/img/heroes/docs/agents-template-hero-640.webp 640w, /img/heroes/docs/agents-template-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"single precision metal stencil with ordered geometric cutouts hovering just above an empty dark glass plate, a repeatable starter template"} decoding="async" />
 
 Use this as the repo-local `AGENTS.md` starting point during bootstrap.
 

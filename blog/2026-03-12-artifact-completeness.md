@@ -3,7 +3,10 @@ slug: artifact-completeness-beats-chat-memory
 title: "If It Matters Enough to Mention, It Must Become an Artifact"
 authors: [VibeGov_team]
 tags: [governance, backlog, evidence, exploratory]
+image: /img/heroes/blog/artifact-completeness-beats-chat-memory-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/artifact-completeness-beats-chat-memory-hero.jpg" srcSet="/img/heroes/blog/artifact-completeness-beats-chat-memory-hero-640.webp 640w, /img/heroes/blog/artifact-completeness-beats-chat-memory-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Fleeting light condenses into durable glass records secured in a slate evidence case."} decoding="async" />
 
 One of the easiest ways teams lose quality is by discovering something real and then leaving it trapped in a weak form:
 - chat

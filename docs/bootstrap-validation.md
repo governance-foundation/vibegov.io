@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
+image: /img/heroes/docs/bootstrap-validation-hero.jpg
 ---
 
 # Bootstrap Validation
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-validation-hero.jpg" srcSet="/img/heroes/docs/bootstrap-validation-hero-640.webp 640w, /img/heroes/docs/bootstrap-validation-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A transparent foundation tile secured in a precision metal testing jig."} decoding="async" />
 
 If VibeGov bootstrap cannot be tested, it cannot be trusted.
 

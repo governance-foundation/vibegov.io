@@ -1,8 +1,11 @@
 ---
 sidebar_position: 11
+image: /img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero.jpg
 ---
 
 # Quality Scaffolding and Completeness Rubric
+
+<img className="page-hero" src="/img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero.jpg" srcSet="/img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero-640.webp 640w, /img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glass lattice sample held in a low rectangular inspection jig; every cell contains a fitted teal piece except one clearly visible empty cell, honesty about completeness."} decoding="async" />
 
 This is a testing/completeness support page.
 Use it when you need a practical way to judge whether work is genuinely complete or only looks complete.

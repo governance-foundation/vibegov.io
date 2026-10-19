@@ -3,7 +3,10 @@ slug: handling-one-liner-issues
 title: "Handling One-Liner Issues Without Losing Delivery Speed"
 authors: [VibeGov_team]
 tags: [issues, governance, backlog, specs, execution]
+image: /img/heroes/blog/handling-one-liner-issues-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/handling-one-liner-issues-hero.jpg" srcSet="/img/heroes/blog/handling-one-liner-issues-hero-640.webp 640w, /img/heroes/blog/handling-one-liner-issues-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A thin wire sketch becomes a fully defined glass component inside a precision drafting jig."} decoding="async" />
 
 One-liner issues are common in fast-moving teams.
 

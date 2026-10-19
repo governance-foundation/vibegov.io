@@ -3,7 +3,10 @@ slug: ai-budgets-delivery-infrastructure
 title: "AI Budgets Are Part of Delivery Infrastructure"
 authors: [VibeGov_team]
 tags: [governance, ai, budget, delivery]
+image: /img/heroes/blog/ai-budgets-delivery-infrastructure-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/ai-budgets-delivery-infrastructure-hero.jpg" srcSet="/img/heroes/blog/ai-budgets-delivery-infrastructure-hero-640.webp 640w, /img/heroes/blog/ai-budgets-delivery-infrastructure-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A regulated energy reservoir beneath a delivery platform powers its rails through controlled pipes."} decoding="async" />
 
 This is the economic follow-up to the throughput model: once tokens are treated as fuel and governed movement is treated as throughput, budgeting stops looking like a side conversation and starts looking like delivery design.
 

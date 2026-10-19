@@ -3,7 +3,10 @@ slug: gov-02-workflow-release
 title: "Two Operating Modes Keep Delivery Moving Without Faking Done"
 authors: [VibeGov_team]
 tags: [workflow, gov-02, evidence, blockers, backlog]
+image: /img/heroes/blog/gov-02-workflow-release-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/gov-02-workflow-release-hero.jpg" srcSet="/img/heroes/blog/gov-02-workflow-release-hero-640.webp 640w, /img/heroes/blog/gov-02-workflow-release-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Exploration prisms and verified metal components move through two distinct bays on one shared delivery track."} decoding="async" />
 
 The biggest delivery mistake is not forgetting the workflow loop.
 It is pretending every kind of work closes the same way.

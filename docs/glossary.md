@@ -2,9 +2,12 @@
 sidebar_position: 3
 title: Glossary
 description: Plain-language definitions for common VibeGov terms, with links to the deeper docs that define the operating model.
+image: /img/heroes/docs/glossary-hero.jpg
 ---
 
 # Glossary
+
+<img className="page-hero" src="/img/heroes/docs/glossary-hero.jpg" srcSet="/img/heroes/docs/glossary-hero-640.webp 640w, /img/heroes/docs/glossary-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A minimalist physical index cabinet with a few transparent glass divider tabs and geometric sample tokens in tidy shallow slots; no characters."} decoding="async" />
 
 Use this page when VibeGov language starts to feel dense.
 

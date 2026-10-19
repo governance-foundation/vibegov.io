@@ -6,14 +6,14 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start --host localhost",
     "start:3005": "docusaurus start --host localhost --port 3005",
-    "build": "npm run validate:project-bootstrap && docusaurus build",
+    "build": "npm run validate:project-bootstrap && docusaurus build && npm run validate:page-heroes",
     "validate:project-bootstrap": "node scripts/validate-project-bootstrap-contract.js",
     "release:version": "node scripts/print-release-version.js",
     "release:build": "node scripts/build-release-artifact.js",
     "test:prepare": "node scripts/prepare-test-run.js",
     "serve:test": "docusaurus serve --host localhost --port 3000",
     "serve:3005": "docusaurus serve --host localhost --port 3005",
-    "test:e2e": "cypress run --spec cypress/e2e/site-smoke.cy.js",
+    "test:e2e": "cypress run --spec \"cypress/e2e/site-smoke.cy.js,cypress/e2e/page-heroes.cy.js\"",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -21,7 +21,8 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "bootstrap-validator": "node .internal/bootstrap-validator/index.js"
+    "bootstrap-validator": "node .internal/bootstrap-validator/index.js",
+    "validate:page-heroes": "node scripts/validate-page-heroes.js"
   },
   "dependencies": {
     "@docusaurus/core": "2.4.3",

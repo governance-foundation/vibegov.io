@@ -2,9 +2,12 @@
 sidebar_position: 3
 title: VibeGov vs Agent Rules
 description: Compare VibeGov with AGENTS.md, provider rules, prompt libraries, coding-agent frameworks, project management, and compliance tooling.
+image: /img/heroes/docs/vibegov-vs-agent-rules-hero.jpg
 ---
 
 # VibeGov vs Agent Rules, Prompts, and Frameworks
+
+<img className="page-hero" src="/img/heroes/docs/vibegov-vs-agent-rules-hero.jpg" srcSet="/img/heroes/docs/vibegov-vs-agent-rules-hero-640.webp 640w, /img/heroes/docs/vibegov-vs-agent-rules-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A small instruction tile connects to a larger framed glass delivery mechanism."} decoding="async" />
 
 VibeGov is a repo-local governance framework for AI-assisted software delivery.
 

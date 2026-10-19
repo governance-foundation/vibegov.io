@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+image: /img/heroes/docs/gov-01-instructions-hero.jpg
 ---
 
 # GOV 01 INSTRUCTIONS
+
+<img className="page-hero" src="/img/heroes/docs/gov-01-instructions-hero.jpg" srcSet="/img/heroes/docs/gov-01-instructions-hero-640.webp 640w, /img/heroes/docs/gov-01-instructions-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A central metal instruction hub distributes light toward five glass tabs."} decoding="async" />
 
 - Source rule: [gov-01-instructions.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-01-instructions.mdc)
 - Download raw file: [gov-01-instructions.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-01-instructions.mdc)

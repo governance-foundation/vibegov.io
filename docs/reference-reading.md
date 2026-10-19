@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
+image: /img/heroes/docs/reference-reading-hero.jpg
 ---
 
 # Reference Reading
+
+<img className="page-hero" src="/img/heroes/docs/reference-reading-hero.jpg" srcSet="/img/heroes/docs/reference-reading-hero-640.webp 640w, /img/heroes/docs/reference-reading-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Three closed slim unmarked glass-and-metal reference volumes on a low slate reading stand, one softly opened with blank translucent pages and a small bookmark."} decoding="async" />
 
 This page collects external reading that materially shaped or sharpened VibeGov thinking.
 

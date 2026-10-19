@@ -1,8 +1,11 @@
 ---
 sidebar_position: 12
+image: /img/heroes/docs/gov-12-drift-control-garbage-collection-hero.jpg
 ---
 
 # GOV 12 DRIFT CONTROL AND GARBAGE COLLECTION
+
+<img className="page-hero" src="/img/heroes/docs/gov-12-drift-control-garbage-collection-hero.jpg" srcSet="/img/heroes/docs/gov-12-drift-control-garbage-collection-hero-640.webp 640w, /img/heroes/docs/gov-12-drift-control-garbage-collection-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A precision alignment comb straightens a short row of translucent glass slats; a few dull discarded fragments are isolated in a shallow side tray."} decoding="async" />
 
 - Source rule: [gov-12-drift-control-garbage-collection.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-12-drift-control-garbage-collection.mdc)
 - Download raw file: [gov-12-drift-control-garbage-collection.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-12-drift-control-garbage-collection.mdc)

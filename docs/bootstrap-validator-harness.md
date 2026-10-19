@@ -1,8 +1,11 @@
 ---
 sidebar_position: 5
+image: /img/heroes/docs/bootstrap-validator-harness-hero.jpg
 ---
 
 # Bootstrap Validator Harness
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-validator-harness-hero.jpg" srcSet="/img/heroes/docs/bootstrap-validator-harness-hero-640.webp 640w, /img/heroes/docs/bootstrap-validator-harness-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a compact mechanical testing jig holding a small glass cartridge between adjustable metal clamps, repeatable governance validation fixture"} decoding="async" />
 
 This doc turns [Bootstrap Validation](/docs/bootstrap-validation) into an implementable system design.
 

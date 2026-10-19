@@ -3,7 +3,10 @@ slug: blockers-should-redirect-work
 title: "Blockers Should Redirect Work, Not Freeze It"
 authors: [VibeGov_team]
 tags: [workflow, blockers, backlog, governance]
+image: /img/heroes/blog/blockers-should-redirect-work-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/blockers-should-redirect-work-hero.jpg" srcSet="/img/heroes/blog/blockers-should-redirect-work-hero-640.webp 640w, /img/heroes/blog/blockers-should-redirect-work-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cyan stream bypasses a closed amber sluice and continues powering a turbine."} decoding="async" />
 
 Most delivery stalls are not caused by impossible engineering problems.
 They are caused by weak blocker handling.

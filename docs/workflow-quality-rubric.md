@@ -1,8 +1,11 @@
 ---
 sidebar_position: 10
+image: /img/heroes/docs/workflow-quality-rubric-hero.jpg
 ---
 
 # Workflow Quality Rubric
+
+<img className="page-hero" src="/img/heroes/docs/workflow-quality-rubric-hero.jpg" srcSet="/img/heroes/docs/workflow-quality-rubric-hero-640.webp 640w, /img/heroes/docs/workflow-quality-rubric-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A brushed-metal caliper inspects a joint connecting cyan glass beams."} decoding="async" />
 
 When this rubric points to weak testing evidence or fake completeness risk, continue with:
 - [Test Execution Expectations](/docs/test-execution-expectations)

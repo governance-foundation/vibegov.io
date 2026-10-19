@@ -1,8 +1,11 @@
 ---
 sidebar_position: 12
+image: /img/heroes/docs/harness-profile-minimal-claude-hero.jpg
 ---
 
 # Harness Profile: Minimal Claude Harness
+
+<img className="page-hero" src="/img/heroes/docs/harness-profile-minimal-claude-hero.jpg" srcSet="/img/heroes/docs/harness-profile-minimal-claude-hero-640.webp 640w, /img/heroes/docs/harness-profile-minimal-claude-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A minimal metal adapter connects two cyan-lit glass tubes."} decoding="async" />
 
 This profile integrates a minimal generator/evaluator harness pattern into VibeGov without making a single runtime mandatory.
 

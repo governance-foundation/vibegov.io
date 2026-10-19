@@ -2,9 +2,12 @@
 sidebar_position: 6
 title: Execution Modes
 description: Learn when to use Development, Exploration, Feedback Intake, and evaluation patterns so AI-assisted delivery stays mode-correct and evidence-honest.
+image: /img/heroes/docs/execution-modes-hero.jpg
 ---
 
 # Execution Modes
+
+<img className="page-hero" src="/img/heroes/docs/execution-modes-hero.jpg" srcSet="/img/heroes/docs/execution-modes-hero-640.webp 640w, /img/heroes/docs/execution-modes-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a brushed metal rotary selector with four distinct unmarked glass inserts around its circumference, each insert a different geometric shape, selecting the appropriate execution mode"} decoding="async" />
 
 VibeGov works best when teams stop treating all work as the same kind of work.
 

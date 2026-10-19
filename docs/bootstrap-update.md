@@ -1,8 +1,11 @@
 ---
 sidebar_position: 3
+image: /img/heroes/docs/bootstrap-update-hero.jpg
 ---
 
 # Bootstrap Update
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-update-hero.jpg" srcSet="/img/heroes/docs/bootstrap-update-hero-640.webp 640w, /img/heroes/docs/bootstrap-update-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A low modular metal foundation plate with several fitted translucent glass tiles; one worn tile is lifted beside a pristine replacement above its slot, all other tiles intact."} decoding="async" />
 
 `bootstrap update` is **bootstrap run in `update` mode**.
 

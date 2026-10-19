@@ -3,7 +3,10 @@ slug: acp-setup-needs-parent-supervision
 title: "ACP Setup Is Not Enough: The Parent Must Keep Supervising"
 authors: [VibeGov_team]
 tags: [governance, acp, multi-agent, supervision, workflow]
+image: /img/heroes/blog/acp-setup-needs-parent-supervision-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/acp-setup-needs-parent-supervision-hero.jpg" srcSet="/img/heroes/blog/acp-setup-needs-parent-supervision-hero-640.webp 640w, /img/heroes/blog/acp-setup-needs-parent-supervision-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A harbor observatory keeps connected to three vessels, including one paused at an amber checkpoint."} decoding="async" />
 
 A multi-agent system can look healthy for exactly the wrong reason:
 

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 15
+image: /img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero.jpg
 ---
 
 # Minimal VibeGov Execution Profile Snippet
+
+<img className="page-hero" src="/img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero.jpg" srcSet="/img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero-640.webp 640w, /img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glowing glass cartridge sits in a compact metal socket."} decoding="async" />
 
 Use this when you want a compact execution-profile seed for a harness, session bootstrap, or repo-local agent prompt.
 

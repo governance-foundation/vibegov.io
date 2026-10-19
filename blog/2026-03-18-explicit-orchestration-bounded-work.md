@@ -3,7 +3,10 @@ slug: explicit-orchestration-bounded-work
 title: "Explicit Orchestration Beats Hidden Agent Pyramids"
 authors: [VibeGov_team]
 tags: [governance, multi-agent, workflow, accountability]
+image: /img/heroes/blog/explicit-orchestration-bounded-work-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/explicit-orchestration-bounded-work-hero.jpg" srcSet="/img/heroes/blog/explicit-orchestration-bounded-work-hero-640.webp 640w, /img/heroes/blog/explicit-orchestration-bounded-work-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A visible central hub connects directly to five separate glass work pods at one level."} decoding="async" />
 
 A lot of multi-agent failure is not caused by weak models.
 It is caused by weak structure.

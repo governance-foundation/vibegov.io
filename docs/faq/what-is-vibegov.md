@@ -3,9 +3,12 @@ sidebar_position: 1
 homepage: true
 question: What is VibeGov?
 homepage_summary: VibeGov is a repo-local governance framework for AI-assisted software delivery that keeps work traceable, reviewable, and honest about done.
+image: /img/heroes/docs/what-is-vibegov-hero.jpg
 ---
 
 # What is VibeGov?
+
+<img className="page-hero" src="/img/heroes/docs/what-is-vibegov-hero.jpg" srcSet="/img/heroes/docs/what-is-vibegov-hero-640.webp 640w, /img/heroes/docs/what-is-vibegov-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A circular metal frame holds interlocking translucent governance components."} decoding="async" />
 
 VibeGov is a repo-local governance framework for AI-assisted software delivery.
 

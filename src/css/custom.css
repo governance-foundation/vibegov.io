@@ -29,3 +29,13 @@
   --ifm-color-primary-lightest: #ccfbf1;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Authored-page artwork: preserve composition and reserve intrinsic space. */
+.page-hero {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: auto;
+  margin: 1rem 0 1.5rem;
+  border-radius: 12px;
+}
