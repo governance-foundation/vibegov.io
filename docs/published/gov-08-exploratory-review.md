@@ -1,8 +1,11 @@
 ---
 sidebar_position: 8
+image: /img/heroes/docs/gov-08-exploratory-review-hero.jpg
 ---
 
 # GOV 08 EXPLORATORY REVIEW
+
+<img className="page-hero" src="/img/heroes/docs/gov-08-exploratory-review-hero.jpg" srcSet="/img/heroes/docs/gov-08-exploratory-review-hero-640.webp 640w, /img/heroes/docs/gov-08-exploratory-review-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a small polished exploration lens revealing a hidden fissure in a single dark glass terrain sample, actionable discovery"} decoding="async" />
 
 - Source rule: [gov-08-exploratory-review.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-08-exploratory-review.mdc)
 - Download raw file: [gov-08-exploratory-review.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-08-exploratory-review.mdc)

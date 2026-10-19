@@ -1,8 +1,11 @@
 ---
 sidebar_position: 7
+image: /img/heroes/docs/exploratory-review-mode-hero.jpg
 ---
 
 # Exploratory Review Mode
+
+<img className="page-hero" src="/img/heroes/docs/exploratory-review-mode-hero.jpg" srcSet="/img/heroes/docs/exploratory-review-mode-hero-640.webp 640w, /img/heroes/docs/exploratory-review-mode-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A low glass terrain specimen under a floating magnifying lens on a simple articulated arm; two subtle violet fracture details are visible through the lens."} decoding="async" />
 
 Exploratory Review Mode is a parallel quality loop used to find delivery gaps before they become release defects.
 

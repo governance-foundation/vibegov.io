@@ -2,9 +2,12 @@
 sidebar_position: 1
 title: Start Here
 description: Get oriented in VibeGov quickly and choose the right next doc for bootstrap, execution modes, operator guidance, or the broader SDLC model.
+image: /img/heroes/docs/start-here-hero.jpg
 ---
 
 # Start Here
+
+<img className="page-hero" src="/img/heroes/docs/start-here-hero.jpg" srcSet="/img/heroes/docs/start-here-hero-640.webp 640w, /img/heroes/docs/start-here-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cyan stepping tile leads through a glass threshold on a slate slab."} decoding="async" />
 
 If you are new to VibeGov, start here.
 

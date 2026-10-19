@@ -2,9 +2,12 @@
 sidebar_position: 2
 title: Bootstrap
 description: Use the canonical VibeGov bootstrap contract to install or normalize governance, specs, workflow rules, and reporting before product-code implementation.
+image: /img/heroes/docs/bootstrap-hero.jpg
 ---
 
 # Bootstrap
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-hero.jpg" srcSet="/img/heroes/docs/bootstrap-hero-640.webp 640w, /img/heroes/docs/bootstrap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A compact open precision toolkit containing a foundation plate and neatly arranged glass rule plates ready to fit into its slots; visual metaphor for installing a coherent governance contract."} decoding="async" />
 
 VibeGov is a repo-local governance framework for AI-assisted software delivery.
 

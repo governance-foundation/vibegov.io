@@ -3,7 +3,10 @@ slug: progress-over-perfection-ai-delivery
 title: "Progress Over Perfection in AI Delivery"
 authors: [VibeGov_team]
 tags: [governance, ai, delivery, workflow]
+image: /img/heroes/blog/progress-over-perfection-ai-delivery-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/progress-over-perfection-ai-delivery-hero.jpg" srcSet="/img/heroes/blog/progress-over-perfection-ai-delivery-hero-640.webp 640w, /img/heroes/blog/progress-over-perfection-ai-delivery-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Rough cyan-lit stepping stones form a completed crossing while a polished glass block remains unused."} decoding="async" />
 
 This is the operating-discipline piece in the series. Once throughput, budget, and runtime control are all in view, teams still need a practical rule for day-to-day execution: reward governed movement, not polished activity.
 

@@ -2,9 +2,12 @@
 sidebar_position: 4
 title: The VibeGov SDLC
 description: See the governed VibeGov SDLC from bootstrap through issue/spec binding, execution mode selection, validation, reporting, and backlog feedback loops.
+image: /img/heroes/docs/vibegov-sdlc-hero.jpg
 ---
 
 # The VibeGov SDLC
+
+<img className="page-hero" src="/img/heroes/docs/vibegov-sdlc-hero.jpg" srcSet="/img/heroes/docs/vibegov-sdlc-hero-640.webp 640w, /img/heroes/docs/vibegov-sdlc-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A low continuous oval production rail with five distinct small glass-and-metal stations embedded along it, a small teal evidence capsule travels the route and a subtle return spur rejoins the start."} decoding="async" />
 
 VibeGov is a repo-local governance framework for AI-assisted software delivery. Its SDLC starts by shaping intent before coding, binds work to issues and specs, forces explicit mode selection between Development and Exploration, requires evidence before completion claims, keeps blockers visible, treats delegation as supervised orchestration instead of fire-and-forget, and feeds discoveries back into backlog, specs, traceability, and release decisions so the system keeps getting more reliable instead of more confusing.
 

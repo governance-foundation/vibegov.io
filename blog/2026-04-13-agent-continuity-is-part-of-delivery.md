@@ -3,7 +3,10 @@ slug: agent-continuity-is-part-of-delivery
 title: "Agent Continuity Is Part of Delivery"
 authors: [VibeGov_team]
 tags: [agents, continuity, governance, delivery]
+image: /img/heroes/blog/agent-continuity-is-part-of-delivery-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/agent-continuity-is-part-of-delivery-hero.jpg" srcSet="/img/heroes/blog/agent-continuity-is-part-of-delivery-hero-640.webp 640w, /img/heroes/blog/agent-continuity-is-part-of-delivery-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A durable glass cartridge bridges two rail segments and preserves a continuous cyan filament."} decoding="async" />
 
 A lot of teams still treat agent continuity as an implementation detail.
 If the agent forgets context, they assume the answer is a better model, a longer context window, or a bigger transcript.

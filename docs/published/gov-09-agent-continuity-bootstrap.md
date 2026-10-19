@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/gov-09-agent-continuity-bootstrap-hero.jpg
 ---
 
 # GOV 09 AGENT CONTINUITY BOOTSTRAP
+
+<img className="page-hero" src="/img/heroes/docs/gov-09-agent-continuity-bootstrap-hero.jpg" srcSet="/img/heroes/docs/gov-09-agent-continuity-bootstrap-hero-640.webp 640w, /img/heroes/docs/gov-09-agent-continuity-bootstrap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glass relay baton seated across two adjacent precision cradles, a continuous cyan glow inside it persists from one cradle to the next."} decoding="async" />
 
 - Source rule: [gov-09-agent-continuity-bootstrap.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-09-agent-continuity-bootstrap.mdc)
 - Download raw file: [gov-09-agent-continuity-bootstrap.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-09-agent-continuity-bootstrap.mdc)

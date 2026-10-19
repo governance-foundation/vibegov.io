@@ -1,8 +1,11 @@
 ---
 sidebar_position: 7
+image: /img/heroes/docs/gov-07-tasks-hero.jpg
 ---
 
 # GOV 07 TASKS
+
+<img className="page-hero" src="/img/heroes/docs/gov-07-tasks-hero.jpg" srcSet="/img/heroes/docs/gov-07-tasks-hero-640.webp 640w, /img/heroes/docs/gov-07-tasks-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Four differently shaped glass parts sit in separate compartments of a work tray."} decoding="async" />
 
 - Source rule: [gov-07-tasks.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-07-tasks.mdc)
 - Download raw file: [gov-07-tasks.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-07-tasks.mdc)

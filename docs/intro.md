@@ -2,7 +2,10 @@
 sidebar_position: 2
 title: Overview
 description: Learn what VibeGov is, why it exists, and where to start with its governance model for AI-assisted software delivery.
+image: /img/heroes/docs/intro-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/docs/intro-hero.jpg" srcSet="/img/heroes/docs/intro-hero-640.webp 640w, /img/heroes/docs/intro-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A low oval metal governance frame holds a simple teal glass path and two distinct inset lanes, one solid and one lightly etched, joined by a small evidence prism."} decoding="async" />
 
 VibeGov is a repo-local governance framework for AI-assisted software delivery.
 

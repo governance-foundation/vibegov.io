@@ -3,7 +3,10 @@ slug: exploratory-review-mode-parallel-flow
 title: "Exploratory Review Is Structured Backlog Hydration"
 authors: [VibeGov_team]
 tags: [governance, quality, exploratory, backlog, review]
+image: /img/heroes/blog/exploratory-review-mode-parallel-flow-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/exploratory-review-mode-parallel-flow-hero.jpg" srcSet="/img/heroes/blog/exploratory-review-mode-parallel-flow-hero-640.webp 640w, /img/heroes/blog/exploratory-review-mode-parallel-flow-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A survey lens reveals hidden gaps beneath a finished pathway and routes findings into organized trays."} decoding="async" />
 
 Most teams only optimize build speed and miss the quality signal: continuous discovery.
 

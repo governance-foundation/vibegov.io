@@ -1,8 +1,11 @@
 ---
 sidebar_position: 13
+image: /img/heroes/docs/gov-13-review-loops-completion-discipline-hero.jpg
 ---
 
 # GOV 13 REVIEW LOOPS AND COMPLETION DISCIPLINE
+
+<img className="page-hero" src="/img/heroes/docs/gov-13-review-loops-completion-discipline-hero.jpg" srcSet="/img/heroes/docs/gov-13-review-loops-completion-discipline-hero-640.webp 640w, /img/heroes/docs/gov-13-review-loops-completion-discipline-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glass puck reaches the closure seam of a circular metal inspection track."} decoding="async" />
 
 - Source rule: [gov-13-review-loops-completion-discipline.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-13-review-loops-completion-discipline.mdc)
 - Download raw file: [gov-13-review-loops-completion-discipline.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-13-review-loops-completion-discipline.mdc)

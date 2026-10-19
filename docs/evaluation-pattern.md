@@ -1,8 +1,11 @@
 ---
 sidebar_position: 10
+image: /img/heroes/docs/evaluation-pattern-hero.jpg
 ---
 
 # Evaluation Pattern
+
+<img className="page-hero" src="/img/heroes/docs/evaluation-pattern-hero.jpg" srcSet="/img/heroes/docs/evaluation-pattern-hero-640.webp 640w, /img/heroes/docs/evaluation-pattern-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A precision go/no-go inspection gauge checking a single teal glass component against a matching machined aperture; tiny neutral reference pieces on the surface, no numbers."} decoding="async" />
 
 Evaluation is a real VibeGov control, but it is **not** a third peer operating mode.
 

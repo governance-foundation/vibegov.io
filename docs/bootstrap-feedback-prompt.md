@@ -1,8 +1,11 @@
 ---
 sidebar_position: 5
+image: /img/heroes/docs/bootstrap-feedback-prompt-hero.jpg
 ---
 
 # Bootstrap Feedback Prompt
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-feedback-prompt-hero.jpg" srcSet="/img/heroes/docs/bootstrap-feedback-prompt-hero-640.webp 640w, /img/heroes/docs/bootstrap-feedback-prompt-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal reflector directs cyan light into a glass feedback tray."} decoding="async" />
 
 Use this after a bootstrap or bootstrap-update run when you want deeper, standalone durable feedback.
 

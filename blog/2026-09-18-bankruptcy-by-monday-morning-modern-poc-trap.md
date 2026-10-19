@@ -4,7 +4,10 @@ title: "Bankruptcy by Monday Morning: Surviving the Modern POC Trap"
 authors: [VibeGov_team]
 tags: [governance, ai-agents, orchestration, technical-debt, software-architecture]
 description: How ungoverned AI agents accelerate the classic prototype trap—and the circuit breakers that stop prompt churn becoming codebase collapse.
+image: /img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero.jpg" srcSet="/img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero-640.webp 640w, /img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A fragile amber-lit prototype fragments beside a stable teal-lit modular structure protected by a circuit-breaker gate."} decoding="async" />
 
 *How to stop autonomous execution from turning speed into structural debt.*
 

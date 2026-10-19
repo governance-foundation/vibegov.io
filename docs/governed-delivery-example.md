@@ -2,9 +2,12 @@
 sidebar_position: 5
 title: Governed Delivery Example
 description: See how VibeGov turns a vague implementation request into intent, spec, issue, evidence, verification, and traceable delivery state.
+image: /img/heroes/docs/governed-delivery-example-hero.jpg
 ---
 
 # Governed Delivery Example
+
+<img className="page-hero" src="/img/heroes/docs/governed-delivery-example-hero.jpg" srcSet="/img/heroes/docs/governed-delivery-example-hero-640.webp 640w, /img/heroes/docs/governed-delivery-example-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glass component follows a metal delivery track through checkpoints to a finished tray."} decoding="async" />
 
 This example shows the practical difference VibeGov is designed to create.
 

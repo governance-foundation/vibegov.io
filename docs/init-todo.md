@@ -1,8 +1,11 @@
 ---
 sidebar_position: 12
+image: /img/heroes/docs/init-todo-hero.jpg
 ---
 
 # INIT-TODO.md
+
+<img className="page-hero" src="/img/heroes/docs/init-todo-hero.jpg" srcSet="/img/heroes/docs/init-todo-hero-640.webp 640w, /img/heroes/docs/init-todo-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a durable metal slotted board holding several unmarked glass task tabs, two seated and one waiting beside an empty slot, honest outstanding setup work"} decoding="async" />
 
 Use `INIT-TODO.md` as the durable setup/remediation scratchpad during bootstrap and major adoption/update work.
 

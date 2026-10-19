@@ -3,7 +3,10 @@ slug: unbudgeted-ai-unmanaged-production-capacity
 title: "Unbudgeted AI Is Unmanaged Production Capacity"
 authors: [VibeGov_team]
 tags: [governance, ai, management, risk]
+image: /img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero.jpg" srcSet="/img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero-640.webp 640w, /img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A small visible production belt is powered by a much larger hidden mechanism beneath the floor."} decoding="async" />
 
 This is the management conclusion of the series. If throughput is real, budgets are real, runtimes need governance, and progress should be measured through governed movement, then unofficial AI capacity stops looking experimental and starts looking operationally risky.
 

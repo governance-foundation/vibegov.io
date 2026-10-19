@@ -3,7 +3,10 @@ slug: execution-sharpness-and-governed-closure
 title: "Execution Sharpness and Governed Closure"
 authors: [VibeGov_team]
 tags: [agents, execution, governance, harness, delivery]
+image: /img/heroes/blog/execution-sharpness-and-governed-closure-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/execution-sharpness-and-governed-closure-hero.jpg" srcSet="/img/heroes/blog/execution-sharpness-and-governed-closure-hero-640.webp 640w, /img/heroes/blog/execution-sharpness-and-governed-closure-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal shuttle follows a verified cyan path into a precisely sealed receiving dock."} decoding="async" />
 
 A lot of agent systems now know how to move fast.
 

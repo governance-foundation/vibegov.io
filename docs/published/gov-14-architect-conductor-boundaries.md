@@ -1,8 +1,11 @@
 ---
 sidebar_position: 14
+image: /img/heroes/docs/gov-14-architect-conductor-boundaries-hero.jpg
 ---
 
 # GOV 14 ARCHITECT CONDUCTOR BOUNDARIES
+
+<img className="page-hero" src="/img/heroes/docs/gov-14-architect-conductor-boundaries-hero.jpg" srcSet="/img/heroes/docs/gov-14-architect-conductor-boundaries-hero-640.webp 640w, /img/heroes/docs/gov-14-architect-conductor-boundaries-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a pair of metal drafting dividers resting on one side of a low transparent glass boundary, a separate execution mechanism on the other side, clear role boundaries"} decoding="async" />
 
 - Source rule: [gov-14-architect-conductor-boundaries.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-14-architect-conductor-boundaries.mdc)
 - Download raw file: [gov-14-architect-conductor-boundaries.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-14-architect-conductor-boundaries.mdc)

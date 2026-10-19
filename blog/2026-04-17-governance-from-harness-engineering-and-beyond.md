@@ -3,7 +3,10 @@ slug: governance-from-harness-engineering-and-beyond
 title: "Governance from Harness Engineering and Beyond"
 authors: [VibeGov_team]
 tags: [governance, harness-engineering, agents, delivery, quality]
+image: /img/heroes/blog/governance-from-harness-engineering-and-beyond-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/governance-from-harness-engineering-and-beyond-hero.jpg" srcSet="/img/heroes/blog/governance-from-harness-engineering-and-beyond-hero-640.webp 640w, /img/heroes/blog/governance-from-harness-engineering-and-beyond-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A restrained glass core in a testing rig connects to a broader system of gates and protected pathways."} decoding="async" />
 
 Harness engineering gave teams a practical breakthrough:
 stop treating agent output as magic, and start treating it as a controlled system.

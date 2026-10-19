@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
+image: /img/heroes/docs/branch-protection-checklist-hero.jpg
 ---
 
 # Branch Protection Checklist
+
+<img className="page-hero" src="/img/heroes/docs/branch-protection-checklist-hero.jpg" srcSet="/img/heroes/docs/branch-protection-checklist-hero-640.webp 640w, /img/heroes/docs/branch-protection-checklist-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A protective glass gate guards a branching metal rail junction."} decoding="async" />
 
 Use this during bootstrap or repo adoption when you want agents to inherit the strict VibeGov Git workflow before implementation starts.
 

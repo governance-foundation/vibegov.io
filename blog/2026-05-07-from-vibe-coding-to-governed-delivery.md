@@ -3,7 +3,10 @@ slug: from-vibe-coding-to-governed-delivery
 title: From Vibe Coding to Governed Delivery
 authors: [VibeGov_team]
 tags: [governance, ai-agents, execution, backlog, specs, delivery]
+image: /img/heroes/blog/from-vibe-coding-to-governed-delivery-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/from-vibe-coding-to-governed-delivery-hero.jpg" srcSet="/img/heroes/blog/from-vibe-coding-to-governed-delivery-hero-640.webp 640w, /img/heroes/blog/from-vibe-coding-to-governed-delivery-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Loose glowing strands pass through a precision loom and emerge as a coherent woven delivery ribbon."} decoding="async" />
 
 AI coding agents are getting good enough that the old question, "Can they write code?", is becoming less interesting.
 

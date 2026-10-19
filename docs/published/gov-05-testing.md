@@ -1,8 +1,11 @@
 ---
 sidebar_position: 5
+image: /img/heroes/docs/gov-05-testing-hero.jpg
 ---
 
 # GOV 05 TESTING
+
+<img className="page-hero" src="/img/heroes/docs/gov-05-testing-hero.jpg" srcSet="/img/heroes/docs/gov-05-testing-hero-640.webp 640w, /img/heroes/docs/gov-05-testing-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a transparent glass sample secured in a load-testing press with a calibrated metal spring, tests provide physical proof of claims"} decoding="async" />
 
 - Source rule: [gov-05-testing.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-05-testing.mdc)
 - Download raw file: [gov-05-testing.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-05-testing.mdc)

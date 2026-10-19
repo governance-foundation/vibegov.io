@@ -2,9 +2,12 @@
 sidebar_position: 8
 title: Evidence Examples
 description: Copyable examples of weak and strong VibeGov evidence for Development, Exploration, Feedback Intake, blockers, PRs, releases, and traceability.
+image: /img/heroes/docs/evidence-examples-hero.jpg
 ---
 
 # Evidence Examples
+
+<img className="page-hero" src="/img/heroes/docs/evidence-examples-hero.jpg" srcSet="/img/heroes/docs/evidence-examples-hero-640.webp 640w, /img/heroes/docs/evidence-examples-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"An optical loupe inspects a crystalline sample in a metal tray."} decoding="async" />
 
 Evidence is only useful when the next reader can tell what changed, what was checked, what remains uncertain, and what should happen next.
 

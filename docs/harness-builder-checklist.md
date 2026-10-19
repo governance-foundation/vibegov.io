@@ -1,8 +1,11 @@
 ---
 sidebar_position: 16
+image: /img/heroes/docs/harness-builder-checklist-hero.jpg
 ---
 
 # Harness Builder Checklist
+
+<img className="page-hero" src="/img/heroes/docs/harness-builder-checklist-hero.jpg" srcSet="/img/heroes/docs/harness-builder-checklist-hero-640.webp 640w, /img/heroes/docs/harness-builder-checklist-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a neatly arranged open metal tool roll containing three calibrated glass-and-metal gauge attachments, a compact harness builder readiness kit"} decoding="async" />
 
 Use this when you are building or refining a coding-agent harness and want a compact checklist that sits between high-level governance and low-level prompt tinkering.
 

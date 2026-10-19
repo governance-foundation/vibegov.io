@@ -3,7 +3,10 @@ slug: strict-branch-pr-bootstrap
 title: "Bootstrap Is Not Finished Until the Branch Workflow Is Governed"
 authors: [VibeGov_team]
 tags: [workflow, bootstrap, git, pull-requests, governance]
+image: /img/heroes/blog/strict-branch-pr-bootstrap-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/strict-branch-pr-bootstrap-hero.jpg" srcSet="/img/heroes/blog/strict-branch-pr-bootstrap-hero-640.webp 640w, /img/heroes/blog/strict-branch-pr-bootstrap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Branching cyan canals carry glass cargo through controlled lock gates toward a protected reservoir."} decoding="async" />
 
 Teams often bootstrap the governance folders and stop there.
 

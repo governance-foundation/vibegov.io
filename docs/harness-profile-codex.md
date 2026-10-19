@@ -1,8 +1,11 @@
 ---
 sidebar_position: 13
+image: /img/heroes/docs/harness-profile-codex-hero.jpg
 ---
 
 # Harness Profile: Codex
+
+<img className="page-hero" src="/img/heroes/docs/harness-profile-codex-hero.jpg" srcSet="/img/heroes/docs/harness-profile-codex-hero-640.webp 640w, /img/heroes/docs/harness-profile-codex-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A single custom machined adapter collar connecting a clear universal glass core to a distinct metal tool coupling, precise and quiet."} decoding="async" />
 
 This profile shows how to run a Codex-centered delivery loop inside VibeGov without letting runtime speed become the whole governance model.
 

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 11
+image: /img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero.jpg
 ---
 
 # GOV 11 AGENT LEGIBILITY AND IN-REPO TRUTH
+
+<img className="page-hero" src="/img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero.jpg" srcSet="/img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero-640.webp 640w, /img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a transparent glass archive cassette with visible orderly internal layers and a single bright central truth spine, legible durable repository knowledge"} decoding="async" />
 
 - Source rule: [gov-11-agent-legibility-in-repo-truth.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-11-agent-legibility-in-repo-truth.mdc)
 - Download raw file: [gov-11-agent-legibility-in-repo-truth.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-11-agent-legibility-in-repo-truth.mdc)

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 7
+image: /img/heroes/docs/quick-decisions-hero.jpg
 ---
 
 # VibeGov Quick Decisions
+
+<img className="page-hero" src="/img/heroes/docs/quick-decisions-hero.jpg" srcSet="/img/heroes/docs/quick-decisions-hero-640.webp 640w, /img/heroes/docs/quick-decisions-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal selector lever illuminates one of three decision channels."} decoding="async" />
 
 This page is the fast path.
 

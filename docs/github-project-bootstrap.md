@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/github-project-bootstrap-hero.jpg
 ---
 
 # GitHub Project Bootstrap
+
+<img className="page-hero" src="/img/heroes/docs/github-project-bootstrap-hero.jpg" srcSet="/img/heroes/docs/github-project-bootstrap-hero-640.webp 640w, /img/heroes/docs/github-project-bootstrap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a compact three-pronged metal branching fixture anchored to a dark glass repository slab, each branch ending in a small clear organized tray, project bootstrap"} decoding="async" />
 
 Use this when adopting VibeGov in a GitHub-hosted repository.
 

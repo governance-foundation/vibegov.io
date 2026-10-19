@@ -1,8 +1,11 @@
 ---
 sidebar_position: 10
+image: /img/heroes/docs/agent-continuity-bootstrap-hero.jpg
 ---
 
 # Agent Continuity Bootstrap
+
+<img className="page-hero" src="/img/heroes/docs/agent-continuity-bootstrap-hero.jpg" srcSet="/img/heroes/docs/agent-continuity-bootstrap-hero-640.webp 640w, /img/heroes/docs/agent-continuity-bootstrap-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Glass memory rings connected by a cyan filament on a metal spindle."} decoding="async" />
 
 Agents should not rely on live chat context as their only continuity system.
 

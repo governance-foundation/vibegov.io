@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/exploratory-route-report-template-hero.jpg
 ---
 
 # Exploratory Route Report Template
+
+<img className="page-hero" src="/img/heroes/docs/exploratory-route-report-template-hero.jpg" srcSet="/img/heroes/docs/exploratory-route-report-template-hero-640.webp 640w, /img/heroes/docs/exploratory-route-report-template-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cyan route winds between metal waypoints across a slate survey tile."} decoding="async" />
 
 Use this at the end of each single-route or single-URL exploratory review.
 

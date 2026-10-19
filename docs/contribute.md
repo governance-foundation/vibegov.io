@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
+image: /img/heroes/docs/contribute-hero.jpg
 ---
 
 # Contribute
+
+<img className="page-hero" src="/img/heroes/docs/contribute-hero.jpg" srcSet="/img/heroes/docs/contribute-hero-640.webp 640w, /img/heroes/docs/contribute-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"one small frosted glass puzzle piece poised above its matching gap in a larger flat assembly, careful traceable contribution"} decoding="async" />
 
 Feedback is managed in GitHub Issues so decisions stay public, reviewable, and traceable. Code and content changes should move through the strict branch and pull-request workflow.
 
