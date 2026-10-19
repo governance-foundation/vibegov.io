@@ -45,7 +45,7 @@ describe("VibeGov site smoke test", () => {
     cy.visit("/docs/bootstrap");
     cy.contains("TLDR").should("be.visible");
     cy.contains("This TLDR is orientation only").should("be.visible");
-    cy.contains("Runtime and Harness Profiles").should("be.visible");
+    cy.contains("Runtime and Harness Profiles").scrollIntoView().should("be.visible");
     cy.visit("/docs/runtime-and-harness-profiles");
     cy.contains("They are adapters and examples").should("be.visible");
     cy.get("main").contains("Harness Profile: Codex").should("be.visible");

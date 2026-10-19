@@ -20,3 +20,6 @@ Branch from develop, scoped PR into develop, then explicit promotion to main onl
 
 ## Verification record
 Implemented all 104 mappings. Clean production build, typecheck and all-page emitted HTML validation passed. Independent review verified all supplied mappings, correct artwork, 312 decodable assets, preserved prose and existing heroes. Local Cypress download returned Site Unavailable HTML; local Chromium launch was blocked by sandbox sockets. PR CI browser suites remain required before merge. CLI push authentication unavailable; using the authorised GitHub connector. GitHub project-board automation is unavailable in the connector, so issue/PR state is the workflow record for this slice.
+
+## Browser evidence refinement
+First PR CI passed the production build, typecheck and all ten responsive hero cases. It exposed two selector defects: the existing smoke test targeted a fixed, scrolled-out sidebar category; the new existing-artwork check assumed raw paths instead of Docusaurus fingerprinted paths. Reveal the same sidebar target with scrollIntoView before retaining its visibility assertion; verify the unchanged existing artwork by exact alt text, fingerprinted filename, visibility and loaded pixels. No acceptance behavior is removed or skipped. Independent review is required for this test correction before publication.

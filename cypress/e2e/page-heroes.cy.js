@@ -22,9 +22,19 @@ describe('Authored-page artwork (PAGE-HERO-001..004)', () => {
     }
   }
   it('preserves the existing article heroes', () => {
-    cy.visit('/blog/creativity-unleashed-create-while-you-sleep');
-    cy.get('img[src="/img/blog/creativity-unleashed-create-while-you-sleep-hero.png"]').should('be.visible');
-    cy.visit('/blog/how-to-avoid-death-by-1000-prompts');
-    cy.get('img[src="/img/blog/death-by-1000-prompts-hero.png"]').should('be.visible');
+    const existing = [
+      {route: '/blog/creativity-unleashed-create-while-you-sleep', stem: 'creativity-unleashed-create-while-you-sleep-hero', alt: 'A creator sleeping while a governed network of AI agents continues building overnight'},
+      {route: '/blog/how-to-avoid-death-by-1000-prompts', stem: 'death-by-1000-prompts-hero', alt: 'Death by 1000 prompts hero image'},
+    ];
+    for (const hero of existing) {
+      cy.visit(hero.route);
+      // Markdown images are fingerprinted by Docusaurus; verify the original artwork and loaded pixels.
+      cy.get(`article img[alt="${hero.alt}"]`).should('be.visible').and($images => {
+        const image = $images[0];
+        expect(image.getAttribute('src')).to.match(new RegExp(`/assets/images/${hero.stem}-[a-f0-9]+\\.png$`));
+        expect(image.complete).to.equal(true);
+        expect(image.naturalWidth).to.be.greaterThan(0);
+      });
+    }
   });
 });
