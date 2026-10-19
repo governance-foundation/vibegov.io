@@ -3,7 +3,10 @@ slug: bootstrap-should-leave-a-settled-state
 title: "Bootstrap Should Leave a Repo in a Settled State"
 authors: [VibeGov_team]
 tags: [bootstrap, governance, delivery, operations]
+image: /img/heroes/blog/bootstrap-should-leave-a-settled-state-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/bootstrap-should-leave-a-settled-state-hero.jpg" srcSet="/img/heroes/blog/bootstrap-should-leave-a-settled-state-hero-640.webp 640w, /img/heroes/blog/bootstrap-should-leave-a-settled-state-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A fitted instrument case holds securely connected components with a continuous cyan circuit."} decoding="async" />
 
 Bootstrap is often treated like setup theater.
 A repo gets some folders, a few templates, maybe a checklist, and everyone moves on as if the system is now ready.

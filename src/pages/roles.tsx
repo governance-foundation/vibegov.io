@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
+import Head from '@docusaurus/Head';
 import clsx from 'clsx';
 
 import styles from './roles.module.css';
@@ -441,9 +442,14 @@ export default function RolesPage() {
     <Layout
       title="Agent Roles"
       description="Bootstrap VibeGov role-specific agents from stable role-pack entrypoints and manifests.">
+      <Head>
+        <meta property="og:image" content="https://vibegov.io/img/heroes/pages/roles-hero.jpg" />
+        <meta name="twitter:image" content="https://vibegov.io/img/heroes/pages/roles-hero.jpg" />
+      </Head>
       <header className={styles.hero}>
         <div className="container">
           <h1>Agent Roles</h1>
+          <img className="page-hero" src="/img/heroes/pages/roles-hero.jpg" srcSet="/img/heroes/pages/roles-hero-640.webp 640w, /img/heroes/pages/roles-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Specialist engineering stations connect through teal pathways around a shared transparent architectural model."} decoding="async" />
           <p className={styles.lead}>
             Pick a role, copy the bootstrap prompt, and give it to an agent with
             the target project path or repo URL. Each card links to stable

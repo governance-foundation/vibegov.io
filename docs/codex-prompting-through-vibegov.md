@@ -1,8 +1,11 @@
 ---
 sidebar_position: 14
+image: /img/heroes/docs/codex-prompting-through-vibegov-hero.jpg
 ---
 
 # Execution Sharpness and Governed Closure
+
+<img className="page-hero" src="/img/heroes/docs/codex-prompting-through-vibegov-hero.jpg" srcSet="/img/heroes/docs/codex-prompting-through-vibegov-hero-640.webp 640w, /img/heroes/docs/codex-prompting-through-vibegov-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a precise metal latch closing two perfectly aligned glass plates with a small cyan proof bead seated securely in its final socket"} decoding="async" />
 
 VibeGov should encode strong execution behavior directly into its own rules, docs, and harness profiles.
 

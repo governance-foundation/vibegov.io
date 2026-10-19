@@ -3,7 +3,10 @@ slug: multi-agent-build-validate-loop
 title: "Getting Other Agents to Help Your Project (Without Losing Quality)"
 authors: [VibeGov_team]
 tags: [multi-agent, execution, validation, backlog, specs]
+image: /img/heroes/blog/multi-agent-build-validate-loop-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/multi-agent-build-validate-loop-hero.jpg" srcSet="/img/heroes/blog/multi-agent-build-validate-loop-hero-640.webp 640w, /img/heroes/blog/multi-agent-build-validate-loop-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Independent assembly and optical validation workbenches share a rail leading to a release gate."} decoding="async" />
 
 A pattern that works well in real project delivery is splitting responsibilities across agents with clear contracts.
 

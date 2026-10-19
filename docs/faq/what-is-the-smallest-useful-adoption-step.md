@@ -3,9 +3,12 @@ sidebar_position: 6
 homepage: true
 question: "What is the smallest useful adoption step?"
 homepage_summary: "Start by reading the orientation docs, choosing the right mode, then running the quick bootstrap path when the repo is ready."
+image: /img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero.jpg
 ---
 
 # What is the smallest useful adoption step?
+
+<img className="page-hero" src="/img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero.jpg" srcSet="/img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero-640.webp 640w, /img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A single small teal glass stepping stone beginning a short pathway on a spacious navy slate surface, the next two understated metal stones receding softly."} decoding="async" />
 
 The smallest useful path is:
 

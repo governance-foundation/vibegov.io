@@ -3,7 +3,10 @@ slug: ai-should-raise-the-standard-for-done
 title: "AI Should Raise the Standard for Done"
 authors: [VibeGov_team]
 tags: [governance, ai, quality, delivery]
+image: /img/heroes/blog/ai-should-raise-the-standard-for-done-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/ai-should-raise-the-standard-for-done-hero.jpg" srcSet="/img/heroes/blog/ai-should-raise-the-standard-for-done-hero-640.webp 640w, /img/heroes/blog/ai-should-raise-the-standard-for-done-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"An elevated measuring caliper frames a complete illuminated engine module above unfinished alternatives."} decoding="async" />
 
 This is the opening piece in a new VibeGov series about AI, quality, and completeness.
 

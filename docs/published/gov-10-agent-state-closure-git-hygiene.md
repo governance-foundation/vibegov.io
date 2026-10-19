@@ -1,8 +1,11 @@
 ---
 sidebar_position: 10
+image: /img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero.jpg
 ---
 
 # GOV 10 AGENT STATE CLOSURE AND GIT HYGIENE
+
+<img className="page-hero" src="/img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero.jpg" srcSet="/img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero-640.webp 640w, /img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A closed transparent-lidded case holds a secured component and neatly coiled filament."} decoding="async" />
 
 - Source rule: [gov-10-agent-state-closure-git-hygiene.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-10-agent-state-closure-git-hygiene.mdc)
 - Download raw file: [gov-10-agent-state-closure-git-hygiene.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-10-agent-state-closure-git-hygiene.mdc)

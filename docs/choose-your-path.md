@@ -2,9 +2,12 @@
 sidebar_position: 3
 title: Choose Your Path
 description: Pick the shortest VibeGov path for common visitor goals such as install, review, feedback intake, delivery, role packs, PR readiness, or messy-repo hardening.
+image: /img/heroes/docs/choose-your-path-hero.jpg
 ---
 
 # Choose Your Path
+
+<img className="page-hero" src="/img/heroes/docs/choose-your-path-hero.jpg" srcSet="/img/heroes/docs/choose-your-path-hero-640.webp 640w, /img/heroes/docs/choose-your-path-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Three glass pathways diverge from a metal route selector."} decoding="async" />
 
 Use this page when you know the job you want VibeGov to help with, but you do not yet know the right VibeGov concept or doc name.
 

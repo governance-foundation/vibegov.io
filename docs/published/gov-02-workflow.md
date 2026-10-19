@@ -1,8 +1,11 @@
 ---
 sidebar_position: 2
+image: /img/heroes/docs/gov-02-workflow-hero.jpg
 ---
 
 # GOV 02 WORKFLOW
+
+<img className="page-hero" src="/img/heroes/docs/gov-02-workflow-hero.jpg" srcSet="/img/heroes/docs/gov-02-workflow-hero-640.webp 640w, /img/heroes/docs/gov-02-workflow-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Three cyan glass spheres at successive transparent gates along a curved metal workflow channel."} decoding="async" />
 
 - Source rule: [gov-02-workflow.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-02-workflow.mdc)
 - Download raw file: [gov-02-workflow.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-02-workflow.mdc)

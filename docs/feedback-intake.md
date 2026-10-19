@@ -1,8 +1,11 @@
 ---
 sidebar_position: 8
+image: /img/heroes/docs/feedback-intake-hero.jpg
 ---
 
 # Feedback Intake
+
+<img className="page-hero" src="/img/heroes/docs/feedback-intake-hero.jpg" srcSet="/img/heroes/docs/feedback-intake-hero-640.webp 640w, /img/heroes/docs/feedback-intake-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal funnel turns irregular glass fragments into three orderly tiles."} decoding="async" />
 
 Feedback Intake is the VibeGov work shape for turning human feedback into governed ready work without implementing immediately.
 

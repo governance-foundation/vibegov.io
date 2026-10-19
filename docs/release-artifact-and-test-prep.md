@@ -1,8 +1,11 @@
 ---
 sidebar_position: 10
+image: /img/heroes/docs/release-artifact-and-test-prep-hero.jpg
 ---
 
 # Release Artifact and Test Prep
+
+<img className="page-hero" src="/img/heroes/docs/release-artifact-and-test-prep-hero.jpg" srcSet="/img/heroes/docs/release-artifact-and-test-prep-hero-640.webp 640w, /img/heroes/docs/release-artifact-and-test-prep-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"An open release case holds fitted glass modules beside an inspection gauge."} decoding="async" />
 
 When this page pushes you into deeper test-review or completeness-review questions, continue with:
 - [Test Execution Expectations](/docs/test-execution-expectations)

@@ -1,8 +1,11 @@
 ---
 sidebar_position: 7
+image: /img/heroes/docs/mode-selection-and-evidence-closing-hero.jpg
 ---
 
 # Mode Selection and Evidence Closing
+
+<img className="page-hero" src="/img/heroes/docs/mode-selection-and-evidence-closing-hero.jpg" srcSet="/img/heroes/docs/mode-selection-and-evidence-closing-hero-640.webp 640w, /img/heroes/docs/mode-selection-and-evidence-closing-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a forked precision metal channel converging into one evidence gate, only a matching glass token fits the chosen final socket"} decoding="async" />
 
 Use this when you need to answer two practical questions fast:
 

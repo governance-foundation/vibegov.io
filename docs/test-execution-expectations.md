@@ -1,8 +1,11 @@
 ---
 sidebar_position: 11
+image: /img/heroes/docs/test-execution-expectations-hero.jpg
 ---
 
 # Test Execution Expectations
+
+<img className="page-hero" src="/img/heroes/docs/test-execution-expectations-hero.jpg" srcSet="/img/heroes/docs/test-execution-expectations-hero-640.webp 640w, /img/heroes/docs/test-execution-expectations-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal probe observes a dark sample inside a transparent glass test chamber."} decoding="async" />
 
 This is a testing/completeness support page.
 Use it from the normal operational path when you need to make test evidence more legible and harder to overclaim.

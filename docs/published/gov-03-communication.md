@@ -1,8 +1,11 @@
 ---
 sidebar_position: 3
+image: /img/heroes/docs/gov-03-communication-hero.jpg
 ---
 
 # GOV 03 COMMUNICATION
+
+<img className="page-hero" src="/img/heroes/docs/gov-03-communication-hero.jpg" srcSet="/img/heroes/docs/gov-03-communication-hero-640.webp 640w, /img/heroes/docs/gov-03-communication-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Two small machined metal relay dishes connected by one crisp luminous teal glass pulse bar, clear directed communication without clutter."} decoding="async" />
 
 - Source rule: [gov-03-communication.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-03-communication.mdc)
 - Download raw file: [gov-03-communication.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-03-communication.mdc)

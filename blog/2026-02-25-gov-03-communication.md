@@ -3,7 +3,10 @@ slug: gov-03-communication-release
 title: "Communication Rules That Make AI Agent Execution Clearer"
 authors: [VibeGov_team]
 tags: [communication, gov-03, execution, reporting]
+image: /img/heroes/blog/gov-03-communication-release-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/gov-03-communication-release-hero.jpg" srcSet="/img/heroes/blog/gov-03-communication-release-hero-640.webp 640w, /img/heroes/blog/gov-03-communication-release-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glass routing prism turns tangled amber signals into clear cyan connections to three receiving docks."} decoding="async" />
 
 Most AI delivery teams don’t fail from lack of output.
 They fail from unclear status, hidden blockers, and weak handoffs.

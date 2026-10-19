@@ -3,7 +3,10 @@ slug: ai-should-increase-completeness-not-just-speed
 title: "AI Should Increase Completeness, Not Just Speed"
 authors: [VibeGov_team]
 tags: [governance, ai, quality, delivery]
+image: /img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero.jpg" srcSet="/img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero-640.webp 640w, /img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Six interlocking sections form a complete illuminated seal with visible supporting layers."} decoding="async" />
 
 This is the second piece in the VibeGov series about AI, quality, and completeness.
 

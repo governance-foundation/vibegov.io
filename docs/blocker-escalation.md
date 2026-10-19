@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/blocker-escalation-hero.jpg
 ---
 
 # Blocker Escalation
+
+<img className="page-hero" src="/img/heroes/docs/blocker-escalation-hero.jpg" srcSet="/img/heroes/docs/blocker-escalation-hero-640.webp 640w, /img/heroes/docs/blocker-escalation-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A precise miniature railway switch on a slate tabletop; one short track is stopped by a small barrier while a teal glass routing rail curves around it and continues. One raised signal prism marks the blockage."} decoding="async" />
 
 A blocker is not a command to freeze.
 

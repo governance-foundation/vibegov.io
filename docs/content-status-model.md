@@ -2,9 +2,12 @@
 sidebar_position: 3
 title: Content Status Model
 description: Understand which VibeGov surfaces are canonical contracts, published rules, operational guidance, role packs, runtime profiles, or commentary.
+image: /img/heroes/docs/content-status-model-hero.jpg
 ---
 
 # Content Status Model
+
+<img className="page-hero" src="/img/heroes/docs/content-status-model-hero.jpg" srcSet="/img/heroes/docs/content-status-model-hero-640.webp 640w, /img/heroes/docs/content-status-model-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Six slim translucent reference plates of varying thickness arranged horizontally in a graded metal catalog rack, the foremost canonical plate held by a more substantial metal frame."} decoding="async" />
 
 VibeGov content has different authority levels.
 

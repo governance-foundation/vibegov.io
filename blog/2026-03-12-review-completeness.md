@@ -3,7 +3,10 @@ slug: review-completeness-and-persistence-proof
 title: "Why Review Completeness and Persistence Proof Matter"
 authors: [VibeGov_team]
 tags: [governance, exploratory, evidence, workflow]
+image: /img/heroes/blog/review-completeness-and-persistence-proof-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/review-completeness-and-persistence-proof-hero.jpg" srcSet="/img/heroes/blog/review-completeness-and-persistence-proof-hero-640.webp 640w, /img/heroes/blog/review-completeness-and-persistence-proof-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cutaway inspection reveals a glowing crystal securely anchored beneath a reflective glass surface."} decoding="async" />
 
 A lot of weak review culture comes down to two mistakes:
 

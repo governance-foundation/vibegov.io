@@ -3,9 +3,12 @@ sidebar_position: 4
 homepage: true
 question: "Do I need Codex or a specific AI provider?"
 homepage_summary: "No. VibeGov is provider-neutral guidance that can be adapted to agents and IDEs that read repo instructions."
+image: /img/heroes/docs/do-i-need-a-specific-ai-provider-hero.jpg
 ---
 
 # Do I need Codex or a specific AI provider?
+
+<img className="page-hero" src="/img/heroes/docs/do-i-need-a-specific-ai-provider-hero.jpg" srcSet="/img/heroes/docs/do-i-need-a-specific-ai-provider-hero-640.webp 640w, /img/heroes/docs/do-i-need-a-specific-ai-provider-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Three differently shaped metal connector plugs converge on one universal teal glass adapter socket, a precise provider-neutral interoperability metaphor."} decoding="async" />
 
 No.
 

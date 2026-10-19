@@ -1,8 +1,11 @@
 ---
 sidebar_position: 8
+image: /img/heroes/docs/checkpoint-reporting-hero.jpg
 ---
 
 # Checkpoint Reporting
+
+<img className="page-hero" src="/img/heroes/docs/checkpoint-reporting-hero.jpg" srcSet="/img/heroes/docs/checkpoint-reporting-hero-640.webp 640w, /img/heroes/docs/checkpoint-reporting-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A small archival checkpoint station: a glass evidence capsule rests securely in a machined tray beside a single short trail of three route markers, one glowing teal for current progress."} decoding="async" />
 
 VibeGov reporting should reduce ambiguity, not create it.
 

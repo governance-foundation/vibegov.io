@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
+image: /img/heroes/docs/gov-04-quality-hero.jpg
 ---
 
 # GOV 04 QUALITY
+
+<img className="page-hero" src="/img/heroes/docs/gov-04-quality-hero.jpg" srcSet="/img/heroes/docs/gov-04-quality-hero-640.webp 640w, /img/heroes/docs/gov-04-quality-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A cyan glass sphere fits precisely within a metal quality gauge."} decoding="async" />
 
 - Source rule: [gov-04-quality.mdc](https://github.com/governance-foundation/vibegov.io/blob/main/.governance/rules/gov-04-quality.mdc)
 - Download raw file: [gov-04-quality.mdc](https://raw.githubusercontent.com/governance-foundation/vibegov.io/main/.governance/rules/gov-04-quality.mdc)

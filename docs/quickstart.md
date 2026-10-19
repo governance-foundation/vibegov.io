@@ -2,9 +2,12 @@
 sidebar_position: 3
 title: Quick Start
 description: Install VibeGov quickly with the hardened bootstrap contract and the shortest practical path into governed AI-assisted delivery.
+image: /img/heroes/docs/quickstart-hero.jpg
 ---
 
 # Quick Start
+
+<img className="page-hero" src="/img/heroes/docs/quickstart-hero.jpg" srcSet="/img/heroes/docs/quickstart-hero-640.webp 640w, /img/heroes/docs/quickstart-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a short three-step cyan glass ramp leading directly into a single precision metal docking socket, quick dependable start"} decoding="async" />
 
 Use this to install VibeGov, a repo-local governance framework for AI-assisted software delivery, quickly with the hardened bootstrap contract.
 

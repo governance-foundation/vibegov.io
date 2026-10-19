@@ -3,7 +3,10 @@ slug: harness-engineering-what-we-do-with-it
 title: "Harness Engineering and What VibeGov Does With It"
 authors: [VibeGov_team]
 tags: [harness-engineering, agents, governance, quality, delivery]
+image: /img/heroes/blog/harness-engineering-what-we-do-with-it-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/harness-engineering-what-we-do-with-it-hero.jpg" srcSet="/img/heroes/blog/harness-engineering-what-we-do-with-it-hero-640.webp 640w, /img/heroes/blog/harness-engineering-what-we-do-with-it-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glowing turbine is held within a precision gimbal with inspection optics and a recovery cradle."} decoding="async" />
 
 Harness engineering is not mainly about making agents type faster.
 It is about making agent work **controllable, verifiable, and recoverable**.

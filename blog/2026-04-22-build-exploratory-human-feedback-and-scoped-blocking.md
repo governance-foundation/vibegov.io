@@ -3,7 +3,10 @@ slug: build-exploratory-human-feedback-and-scoped-blocking
 title: "Build Loop, Exploratory Loop, Human Feedback Loop, and Scoped Blocking"
 authors: [VibeGov_team]
 tags: [governance, workflow, exploratory, human-feedback, blockers]
+image: /img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero.jpg" srcSet="/img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero-640.webp 640w, /img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"Three connected cyan, violet, and amber work loops continue independently around a localized barrier."} decoding="async" />
 
 A lot of agent discussions still assume there is one loop.
 

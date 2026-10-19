@@ -1,8 +1,11 @@
 ---
 sidebar_position: 8
+image: /img/heroes/docs/simplicity-first-hero.jpg
 ---
 
 # Simplicity-First Guidance
+
+<img className="page-hero" src="/img/heroes/docs/simplicity-first-hero.jpg" srcSet="/img/heroes/docs/simplicity-first-hero-640.webp 640w, /img/heroes/docs/simplicity-first-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A single elegant closed teal glass loop on a flat metal base, flawlessly simple, generous empty space, no additional machinery."} decoding="async" />
 
 VibeGov is not anti-agent.
 

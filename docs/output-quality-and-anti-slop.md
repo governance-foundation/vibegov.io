@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/output-quality-and-anti-slop-hero.jpg
 ---
 
 # Output Quality and Anti-Slop Guidance
+
+<img className="page-hero" src="/img/heroes/docs/output-quality-and-anti-slop-hero.jpg" srcSet="/img/heroes/docs/output-quality-and-anti-slop-hero-640.webp 640w, /img/heroes/docs/output-quality-and-anti-slop-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A precise optical filter separates scattered pale fragments from one clean focused cyan beam, one simple apparatus in spacious dark studio."} decoding="async" />
 
 Good governed output is not just correct.
 

@@ -3,7 +3,10 @@ slug: token-burn-to-governed-throughput
 title: "From Token Burn to Governed Throughput"
 authors: [VibeGov_team]
 tags: [governance, ai, throughput, metrics]
+image: /img/heroes/blog/token-burn-to-governed-throughput-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/token-burn-to-governed-throughput-hero.jpg" srcSet="/img/heroes/blog/token-burn-to-governed-throughput-hero-640.webp 640w, /img/heroes/blog/token-burn-to-governed-throughput-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"An amber energy chamber powers a mill that releases finished glass tiles through cyan checkpoints."} decoding="async" />
 
 AI is producing a weird measurement problem.
 

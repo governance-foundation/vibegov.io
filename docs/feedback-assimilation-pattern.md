@@ -1,8 +1,11 @@
 ---
 sidebar_position: 9
+image: /img/heroes/docs/feedback-assimilation-pattern-hero.jpg
 ---
 
 # Feedback Assimilation Pattern
+
+<img className="page-hero" src="/img/heroes/docs/feedback-assimilation-pattern-hero.jpg" srcSet="/img/heroes/docs/feedback-assimilation-pattern-hero-640.webp 640w, /img/heroes/docs/feedback-assimilation-pattern-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A translucent loop ribbon feeds through one small precision shaping die and emerges cleaner and more orderly, with one small violet correction marker incorporated in the loop."} decoding="async" />
 
 Feedback incorporation fixes the current output.
 

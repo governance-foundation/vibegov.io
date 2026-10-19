@@ -1,8 +1,11 @@
 ---
 sidebar_position: 5
+image: /img/heroes/docs/content-style-guide-hero.jpg
 ---
 
 # Content Style Guide
+
+<img className="page-hero" src="/img/heroes/docs/content-style-guide-hero.jpg" srcSet="/img/heroes/docs/content-style-guide-hero-640.webp 640w, /img/heroes/docs/content-style-guide-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A metal drafting guide aligns three blank glass sheets."} decoding="async" />
 
 Use this guide when writing or reviewing public VibeGov pages: docs, homepage copy, role pages, FAQs, examples, and blog posts.
 

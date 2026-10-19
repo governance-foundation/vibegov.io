@@ -1,0 +1,1250 @@
+[
+  {
+    "source": "blog/2026-02-23-launch-gov-01.md",
+    "route": "/blog/launch-gov-01",
+    "image": "/img/heroes/blog/launch-gov-01-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/launch-gov-01-hero-640.webp",
+      "/img/heroes/blog/launch-gov-01-hero-1280.webp"
+    ],
+    "alt": "A precision alignment jig preserves a cyan beam through glass components.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-02-26-gov-04-quality.md",
+    "route": "/blog/gov-04-quality-release",
+    "image": "/img/heroes/blog/gov-04-quality-release-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-04-quality-release-hero-640.webp",
+      "/img/heroes/blog/gov-04-quality-release-hero-1280.webp"
+    ],
+    "alt": "A glass component passes through illuminated inspection gates while a cracked piece is held aside.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-01-gov-07-tasks-and-week-1.md",
+    "route": "/blog/gov-07-tasks-week-1",
+    "image": "/img/heroes/blog/gov-07-tasks-week-1-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-07-tasks-week-1-hero-640.webp",
+      "/img/heroes/blog/gov-07-tasks-week-1-hero-1280.webp"
+    ],
+    "alt": "An orderly glass-workpiece queue advances through a priority junction on a continuous mechanical conveyor.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-10-handling-one-liner-issues.md",
+    "route": "/blog/handling-one-liner-issues",
+    "image": "/img/heroes/blog/handling-one-liner-issues-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/handling-one-liner-issues-hero-640.webp",
+      "/img/heroes/blog/handling-one-liner-issues-hero-1280.webp"
+    ],
+    "alt": "A thin wire sketch becomes a fully defined glass component inside a precision drafting jig.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-12-review-completeness.md",
+    "route": "/blog/review-completeness-and-persistence-proof",
+    "image": "/img/heroes/blog/review-completeness-and-persistence-proof-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/review-completeness-and-persistence-proof-hero-640.webp",
+      "/img/heroes/blog/review-completeness-and-persistence-proof-hero-1280.webp"
+    ],
+    "alt": "A cutaway inspection reveals a glowing crystal securely anchored beneath a reflective glass surface.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-20-vibegov-sdlc.md",
+    "route": "/blog/vibegov-sdlc",
+    "image": "/img/heroes/blog/vibegov-sdlc-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/vibegov-sdlc-hero-640.webp",
+      "/img/heroes/blog/vibegov-sdlc-hero-1280.webp"
+    ],
+    "alt": "A continuous cyan channel links six distinct precision stations in a closed delivery loop.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-28-company-governed-ai-runtime.md",
+    "route": "/blog/company-governed-ai-runtime",
+    "image": "/img/heroes/blog/company-governed-ai-runtime-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/company-governed-ai-runtime-hero-640.webp",
+      "/img/heroes/blog/company-governed-ai-runtime-hero-1280.webp"
+    ],
+    "alt": "A cyan energy core is contained within a transparent, controllable industrial enclosure.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-28-unbudgeted-ai-unmanaged-production-capacity.md",
+    "route": "/blog/unbudgeted-ai-unmanaged-production-capacity",
+    "image": "/img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero-640.webp",
+      "/img/heroes/blog/unbudgeted-ai-unmanaged-production-capacity-hero-1280.webp"
+    ],
+    "alt": "A small visible production belt is powered by a much larger hidden mechanism beneath the floor.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-13-agent-continuity-is-part-of-delivery.md",
+    "route": "/blog/agent-continuity-is-part-of-delivery",
+    "image": "/img/heroes/blog/agent-continuity-is-part-of-delivery-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/agent-continuity-is-part-of-delivery-hero-640.webp",
+      "/img/heroes/blog/agent-continuity-is-part-of-delivery-hero-1280.webp"
+    ],
+    "alt": "A durable glass cartridge bridges two rail segments and preserves a continuous cyan filament.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-17-harness-engineering-what-we-do-with-it.md",
+    "route": "/blog/harness-engineering-what-we-do-with-it",
+    "image": "/img/heroes/blog/harness-engineering-what-we-do-with-it-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/harness-engineering-what-we-do-with-it-hero-640.webp",
+      "/img/heroes/blog/harness-engineering-what-we-do-with-it-hero-1280.webp"
+    ],
+    "alt": "A glowing turbine is held within a precision gimbal with inspection optics and a recovery cradle.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-05-07-from-vibe-coding-to-governed-delivery.md",
+    "route": "/blog/from-vibe-coding-to-governed-delivery",
+    "image": "/img/heroes/blog/from-vibe-coding-to-governed-delivery-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/from-vibe-coding-to-governed-delivery-hero-640.webp",
+      "/img/heroes/blog/from-vibe-coding-to-governed-delivery-hero-1280.webp"
+    ],
+    "alt": "Loose glowing strands pass through a precision loom and emerge as a coherent woven delivery ribbon.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-02-24-gov-02-workflow.md",
+    "route": "/blog/gov-02-workflow-release",
+    "image": "/img/heroes/blog/gov-02-workflow-release-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-02-workflow-release-hero-640.webp",
+      "/img/heroes/blog/gov-02-workflow-release-hero-1280.webp"
+    ],
+    "alt": "Exploration prisms and verified metal components move through two distinct bays on one shared delivery track.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-02-27-gov-05-testing.md",
+    "route": "/blog/gov-05-testing-release",
+    "image": "/img/heroes/blog/gov-05-testing-release-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-05-testing-release-hero-640.webp",
+      "/img/heroes/blog/gov-05-testing-release-hero-1280.webp"
+    ],
+    "alt": "A precision testing cradle probes a glass component beside rejected cracked and verified intact examples.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-04-multi-agent-build-validate-loop.md",
+    "route": "/blog/multi-agent-build-validate-loop",
+    "image": "/img/heroes/blog/multi-agent-build-validate-loop-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/multi-agent-build-validate-loop-hero-640.webp",
+      "/img/heroes/blog/multi-agent-build-validate-loop-hero-1280.webp"
+    ],
+    "alt": "Independent assembly and optical validation workbenches share a rail leading to a release gate.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-11-blockers-should-redirect-work.md",
+    "route": "/blog/blockers-should-redirect-work",
+    "image": "/img/heroes/blog/blockers-should-redirect-work-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/blockers-should-redirect-work-hero-640.webp",
+      "/img/heroes/blog/blockers-should-redirect-work-hero-1280.webp"
+    ],
+    "alt": "A cyan stream bypasses a closed amber sluice and continues powering a turbine.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-18-explicit-orchestration-bounded-work.md",
+    "route": "/blog/explicit-orchestration-bounded-work",
+    "image": "/img/heroes/blog/explicit-orchestration-bounded-work-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/explicit-orchestration-bounded-work-hero-640.webp",
+      "/img/heroes/blog/explicit-orchestration-bounded-work-hero-1280.webp"
+    ],
+    "alt": "A visible central hub connects directly to five separate glass work pods at one level.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-26-strict-branch-pr-bootstrap.md",
+    "route": "/blog/strict-branch-pr-bootstrap",
+    "image": "/img/heroes/blog/strict-branch-pr-bootstrap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/strict-branch-pr-bootstrap-hero-640.webp",
+      "/img/heroes/blog/strict-branch-pr-bootstrap-hero-1280.webp"
+    ],
+    "alt": "Branching cyan canals carry glass cargo through controlled lock gates toward a protected reservoir.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-28-progress-over-perfection-ai-delivery.md",
+    "route": "/blog/progress-over-perfection-ai-delivery",
+    "image": "/img/heroes/blog/progress-over-perfection-ai-delivery-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/progress-over-perfection-ai-delivery-hero-640.webp",
+      "/img/heroes/blog/progress-over-perfection-ai-delivery-hero-1280.webp"
+    ],
+    "alt": "Rough cyan-lit stepping stones form a completed crossing while a polished glass block remains unused.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-29-ai-should-raise-the-standard-for-done.md",
+    "route": "/blog/ai-should-raise-the-standard-for-done",
+    "image": "/img/heroes/blog/ai-should-raise-the-standard-for-done-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/ai-should-raise-the-standard-for-done-hero-640.webp",
+      "/img/heroes/blog/ai-should-raise-the-standard-for-done-hero-1280.webp"
+    ],
+    "alt": "An elevated measuring caliper frames a complete illuminated engine module above unfinished alternatives.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-13-bootstrap-should-leave-a-settled-state.md",
+    "route": "/blog/bootstrap-should-leave-a-settled-state",
+    "image": "/img/heroes/blog/bootstrap-should-leave-a-settled-state-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/bootstrap-should-leave-a-settled-state-hero-640.webp",
+      "/img/heroes/blog/bootstrap-should-leave-a-settled-state-hero-1280.webp"
+    ],
+    "alt": "A fitted instrument case holds securely connected components with a continuous cyan circuit.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-22-build-exploratory-human-feedback-and-scoped-blocking.md",
+    "route": "/blog/build-exploratory-human-feedback-and-scoped-blocking",
+    "image": "/img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero-640.webp",
+      "/img/heroes/blog/build-exploratory-human-feedback-and-scoped-blocking-hero-1280.webp"
+    ],
+    "alt": "Three connected cyan, violet, and amber work loops continue independently around a localized barrier.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-02-25-gov-03-communication.md",
+    "route": "/blog/gov-03-communication-release",
+    "image": "/img/heroes/blog/gov-03-communication-release-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-03-communication-release-hero-640.webp",
+      "/img/heroes/blog/gov-03-communication-release-hero-1280.webp"
+    ],
+    "alt": "A glass routing prism turns tangled amber signals into clear cyan connections to three receiving docks.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-02-28-gov-06-issues.md",
+    "route": "/blog/gov-06-issues-release",
+    "image": "/img/heroes/blog/gov-06-issues-release-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/gov-06-issues-release-hero-640.webp",
+      "/img/heroes/blog/gov-06-issues-release-hero-1280.webp"
+    ],
+    "alt": "A precision frame aligns a glass component into a clearly bounded, traceable assembly.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-10-exploratory-review-mode.md",
+    "route": "/blog/exploratory-review-mode-parallel-flow",
+    "image": "/img/heroes/blog/exploratory-review-mode-parallel-flow-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/exploratory-review-mode-parallel-flow-hero-640.webp",
+      "/img/heroes/blog/exploratory-review-mode-parallel-flow-hero-1280.webp"
+    ],
+    "alt": "A survey lens reveals hidden gaps beneath a finished pathway and routes findings into organized trays.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-12-artifact-completeness.md",
+    "route": "/blog/artifact-completeness-beats-chat-memory",
+    "image": "/img/heroes/blog/artifact-completeness-beats-chat-memory-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/artifact-completeness-beats-chat-memory-hero-640.webp",
+      "/img/heroes/blog/artifact-completeness-beats-chat-memory-hero-1280.webp"
+    ],
+    "alt": "Fleeting light condenses into durable glass records secured in a slate evidence case.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-19-acp-setup-needs-parent-supervision.md",
+    "route": "/blog/acp-setup-needs-parent-supervision",
+    "image": "/img/heroes/blog/acp-setup-needs-parent-supervision-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/acp-setup-needs-parent-supervision-hero-640.webp",
+      "/img/heroes/blog/acp-setup-needs-parent-supervision-hero-1280.webp"
+    ],
+    "alt": "A harbor observatory keeps connected to three vessels, including one paused at an amber checkpoint.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-28-ai-budget-delivery-infrastructure.md",
+    "route": "/blog/ai-budgets-delivery-infrastructure",
+    "image": "/img/heroes/blog/ai-budgets-delivery-infrastructure-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/ai-budgets-delivery-infrastructure-hero-640.webp",
+      "/img/heroes/blog/ai-budgets-delivery-infrastructure-hero-1280.webp"
+    ],
+    "alt": "A regulated energy reservoir beneath a delivery platform powers its rails through controlled pipes.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-03-28-token-burn-governed-throughput.md",
+    "route": "/blog/token-burn-to-governed-throughput",
+    "image": "/img/heroes/blog/token-burn-to-governed-throughput-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/token-burn-to-governed-throughput-hero-640.webp",
+      "/img/heroes/blog/token-burn-to-governed-throughput-hero-1280.webp"
+    ],
+    "alt": "An amber energy chamber powers a mill that releases finished glass tiles through cyan checkpoints.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-05-ai-should-increase-completeness-not-just-speed.md",
+    "route": "/blog/ai-should-increase-completeness-not-just-speed",
+    "image": "/img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero-640.webp",
+      "/img/heroes/blog/ai-should-increase-completeness-not-just-speed-hero-1280.webp"
+    ],
+    "alt": "Six interlocking sections form a complete illuminated seal with visible supporting layers.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-17-governance-from-harness-engineering-and-beyond.md",
+    "route": "/blog/governance-from-harness-engineering-and-beyond",
+    "image": "/img/heroes/blog/governance-from-harness-engineering-and-beyond-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/governance-from-harness-engineering-and-beyond-hero-640.webp",
+      "/img/heroes/blog/governance-from-harness-engineering-and-beyond-hero-1280.webp"
+    ],
+    "alt": "A restrained glass core in a testing rig connects to a broader system of gates and protected pathways.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-04-24-execution-sharpness-and-governed-closure.md",
+    "route": "/blog/execution-sharpness-and-governed-closure",
+    "image": "/img/heroes/blog/execution-sharpness-and-governed-closure-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/execution-sharpness-and-governed-closure-hero-640.webp",
+      "/img/heroes/blog/execution-sharpness-and-governed-closure-hero-1280.webp"
+    ],
+    "alt": "A metal shuttle follows a verified cyan path into a precisely sealed receiving dock.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "blog/2026-09-18-bankruptcy-by-monday-morning-modern-poc-trap.md",
+    "route": "/blog/bankruptcy-by-monday-morning-modern-poc-trap",
+    "image": "/img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero-640.webp",
+      "/img/heroes/blog/bankruptcy-by-monday-morning-modern-poc-trap-hero-1280.webp"
+    ],
+    "alt": "A fragile amber-lit prototype fragments beside a stable teal-lit modular structure protected by a circuit-breaker gate.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "src/pages/roles.tsx",
+    "route": "/roles",
+    "image": "/img/heroes/pages/roles-hero.jpg",
+    "srcSet": [
+      "/img/heroes/pages/roles-hero-640.webp",
+      "/img/heroes/pages/roles-hero-1280.webp"
+    ],
+    "alt": "Specialist engineering stations connect through teal pathways around a shared transparent architectural model.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/agent-continuity-bootstrap.md",
+    "route": "/docs/agent-continuity-bootstrap",
+    "image": "/img/heroes/docs/agent-continuity-bootstrap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/agent-continuity-bootstrap-hero-640.webp",
+      "/img/heroes/docs/agent-continuity-bootstrap-hero-1280.webp"
+    ],
+    "alt": "Glass memory rings connected by a cyan filament on a metal spindle.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap-feedback-prompt.md",
+    "route": "/docs/bootstrap-feedback-prompt",
+    "image": "/img/heroes/docs/bootstrap-feedback-prompt-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-feedback-prompt-hero-640.webp",
+      "/img/heroes/docs/bootstrap-feedback-prompt-hero-1280.webp"
+    ],
+    "alt": "A metal reflector directs cyan light into a glass feedback tray.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap-validation.md",
+    "route": "/docs/bootstrap-validation",
+    "image": "/img/heroes/docs/bootstrap-validation-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-validation-hero-640.webp",
+      "/img/heroes/docs/bootstrap-validation-hero-1280.webp"
+    ],
+    "alt": "A transparent foundation tile secured in a precision metal testing jig.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/branch-protection-checklist.md",
+    "route": "/docs/branch-protection-checklist",
+    "image": "/img/heroes/docs/branch-protection-checklist-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/branch-protection-checklist-hero-640.webp",
+      "/img/heroes/docs/branch-protection-checklist-hero-1280.webp"
+    ],
+    "alt": "A protective glass gate guards a branching metal rail junction.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/choose-your-path.md",
+    "route": "/docs/choose-your-path",
+    "image": "/img/heroes/docs/choose-your-path-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/choose-your-path-hero-640.webp",
+      "/img/heroes/docs/choose-your-path-hero-1280.webp"
+    ],
+    "alt": "Three glass pathways diverge from a metal route selector.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/content-style-guide.md",
+    "route": "/docs/content-style-guide",
+    "image": "/img/heroes/docs/content-style-guide-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/content-style-guide-hero-640.webp",
+      "/img/heroes/docs/content-style-guide-hero-1280.webp"
+    ],
+    "alt": "A metal drafting guide aligns three blank glass sheets.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/evidence-examples.md",
+    "route": "/docs/evidence-examples",
+    "image": "/img/heroes/docs/evidence-examples-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/evidence-examples-hero-640.webp",
+      "/img/heroes/docs/evidence-examples-hero-1280.webp"
+    ],
+    "alt": "An optical loupe inspects a crystalline sample in a metal tray.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/exploratory-route-report-template.md",
+    "route": "/docs/exploratory-route-report-template",
+    "image": "/img/heroes/docs/exploratory-route-report-template-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/exploratory-route-report-template-hero-640.webp",
+      "/img/heroes/docs/exploratory-route-report-template-hero-1280.webp"
+    ],
+    "alt": "A cyan route winds between metal waypoints across a slate survey tile.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/how-is-vibegov-different-from-agent-rules.md",
+    "route": "/docs/faq/how-is-vibegov-different-from-agent-rules",
+    "image": "/img/heroes/docs/how-is-vibegov-different-from-agent-rules-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/how-is-vibegov-different-from-agent-rules-hero-640.webp",
+      "/img/heroes/docs/how-is-vibegov-different-from-agent-rules-hero-1280.webp"
+    ],
+    "alt": "One metal source projects cyan light through three different glass adapters.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/what-is-vibegov.md",
+    "route": "/docs/faq/what-is-vibegov",
+    "image": "/img/heroes/docs/what-is-vibegov-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/what-is-vibegov-hero-640.webp",
+      "/img/heroes/docs/what-is-vibegov-hero-1280.webp"
+    ],
+    "alt": "A circular metal frame holds interlocking translucent governance components.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/when-do-i-use-bootstrap-update.md",
+    "route": "/docs/faq/when-do-i-use-bootstrap-update",
+    "image": "/img/heroes/docs/when-do-i-use-bootstrap-update-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/when-do-i-use-bootstrap-update-hero-640.webp",
+      "/img/heroes/docs/when-do-i-use-bootstrap-update-hero-1280.webp"
+    ],
+    "alt": "A replacement glass segment hovers over a gap in an intact metal ring.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/feedback-intake.md",
+    "route": "/docs/feedback-intake",
+    "image": "/img/heroes/docs/feedback-intake-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/feedback-intake-hero-640.webp",
+      "/img/heroes/docs/feedback-intake-hero-1280.webp"
+    ],
+    "alt": "A metal funnel turns irregular glass fragments into three orderly tiles.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/governed-delivery-example.md",
+    "route": "/docs/governed-delivery-example",
+    "image": "/img/heroes/docs/governed-delivery-example-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/governed-delivery-example-hero-640.webp",
+      "/img/heroes/docs/governed-delivery-example-hero-1280.webp"
+    ],
+    "alt": "A glass component follows a metal delivery track through checkpoints to a finished tray.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/harness-profile-minimal-claude.md",
+    "route": "/docs/harness-profile-minimal-claude",
+    "image": "/img/heroes/docs/harness-profile-minimal-claude-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/harness-profile-minimal-claude-hero-640.webp",
+      "/img/heroes/docs/harness-profile-minimal-claude-hero-1280.webp"
+    ],
+    "alt": "A minimal metal adapter connects two cyan-lit glass tubes.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/minimal-vibegov-execution-profile-snippet.md",
+    "route": "/docs/minimal-vibegov-execution-profile-snippet",
+    "image": "/img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero-640.webp",
+      "/img/heroes/docs/minimal-vibegov-execution-profile-snippet-hero-1280.webp"
+    ],
+    "alt": "A glowing glass cartridge sits in a compact metal socket.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-01-instructions.md",
+    "route": "/docs/published/gov-01-instructions",
+    "image": "/img/heroes/docs/gov-01-instructions-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-01-instructions-hero-640.webp",
+      "/img/heroes/docs/gov-01-instructions-hero-1280.webp"
+    ],
+    "alt": "A central metal instruction hub distributes light toward five glass tabs.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-04-quality.md",
+    "route": "/docs/published/gov-04-quality",
+    "image": "/img/heroes/docs/gov-04-quality-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-04-quality-hero-640.webp",
+      "/img/heroes/docs/gov-04-quality-hero-1280.webp"
+    ],
+    "alt": "A cyan glass sphere fits precisely within a metal quality gauge.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-07-tasks.md",
+    "route": "/docs/published/gov-07-tasks",
+    "image": "/img/heroes/docs/gov-07-tasks-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-07-tasks-hero-640.webp",
+      "/img/heroes/docs/gov-07-tasks-hero-1280.webp"
+    ],
+    "alt": "Four differently shaped glass parts sit in separate compartments of a work tray.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-10-agent-state-closure-git-hygiene.md",
+    "route": "/docs/published/gov-10-agent-state-closure-git-hygiene",
+    "image": "/img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero-640.webp",
+      "/img/heroes/docs/gov-10-agent-state-closure-git-hygiene-hero-1280.webp"
+    ],
+    "alt": "A closed transparent-lidded case holds a secured component and neatly coiled filament.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-13-review-loops-completion-discipline.md",
+    "route": "/docs/published/gov-13-review-loops-completion-discipline",
+    "image": "/img/heroes/docs/gov-13-review-loops-completion-discipline-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-13-review-loops-completion-discipline-hero-640.webp",
+      "/img/heroes/docs/gov-13-review-loops-completion-discipline-hero-1280.webp"
+    ],
+    "alt": "A glass puck reaches the closure seam of a circular metal inspection track.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/quick-decisions.md",
+    "route": "/docs/quick-decisions",
+    "image": "/img/heroes/docs/quick-decisions-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/quick-decisions-hero-640.webp",
+      "/img/heroes/docs/quick-decisions-hero-1280.webp"
+    ],
+    "alt": "A metal selector lever illuminates one of three decision channels.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/release-artifact-and-test-prep.md",
+    "route": "/docs/release-artifact-and-test-prep",
+    "image": "/img/heroes/docs/release-artifact-and-test-prep-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/release-artifact-and-test-prep-hero-640.webp",
+      "/img/heroes/docs/release-artifact-and-test-prep-hero-1280.webp"
+    ],
+    "alt": "An open release case holds fitted glass modules beside an inspection gauge.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/start-here.md",
+    "route": "/docs/start-here",
+    "image": "/img/heroes/docs/start-here-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/start-here-hero-640.webp",
+      "/img/heroes/docs/start-here-hero-1280.webp"
+    ],
+    "alt": "A cyan stepping tile leads through a glass threshold on a slate slab.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/vibegov-vs-agent-rules.md",
+    "route": "/docs/vibegov-vs-agent-rules",
+    "image": "/img/heroes/docs/vibegov-vs-agent-rules-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/vibegov-vs-agent-rules-hero-640.webp",
+      "/img/heroes/docs/vibegov-vs-agent-rules-hero-1280.webp"
+    ],
+    "alt": "A small instruction tile connects to a larger framed glass delivery mechanism.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/agents-template.md",
+    "route": "/docs/agents-template",
+    "image": "/img/heroes/docs/agents-template-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/agents-template-hero-640.webp",
+      "/img/heroes/docs/agents-template-hero-1280.webp"
+    ],
+    "alt": "single precision metal stencil with ordered geometric cutouts hovering just above an empty dark glass plate, a repeatable starter template",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap-review.md",
+    "route": "/docs/bootstrap-review",
+    "image": "/img/heroes/docs/bootstrap-review-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-review-hero-640.webp",
+      "/img/heroes/docs/bootstrap-review-hero-1280.webp"
+    ],
+    "alt": "a precision inspection lens suspended above a partially fitted glass assembly; the empty socket remains visibly empty, an honest audit of existing setup",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap-validator-harness.md",
+    "route": "/docs/bootstrap-validator-harness",
+    "image": "/img/heroes/docs/bootstrap-validator-harness-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-validator-harness-hero-640.webp",
+      "/img/heroes/docs/bootstrap-validator-harness-hero-1280.webp"
+    ],
+    "alt": "a compact mechanical testing jig holding a small glass cartridge between adjustable metal clamps, repeatable governance validation fixture",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/build-exploratory-human-feedback-loops.md",
+    "route": "/docs/build-exploratory-human-feedback-loops",
+    "image": "/img/heroes/docs/build-exploratory-human-feedback-loops-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/build-exploratory-human-feedback-loops-hero-640.webp",
+      "/img/heroes/docs/build-exploratory-human-feedback-loops-hero-1280.webp"
+    ],
+    "alt": "three separate low horizontal glass racetracks intertwined without merging, a small gate blocks just one track while the other two flow freely",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/codex-prompting-through-vibegov.md",
+    "route": "/docs/codex-prompting-through-vibegov",
+    "image": "/img/heroes/docs/codex-prompting-through-vibegov-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/codex-prompting-through-vibegov-hero-640.webp",
+      "/img/heroes/docs/codex-prompting-through-vibegov-hero-1280.webp"
+    ],
+    "alt": "a precise metal latch closing two perfectly aligned glass plates with a small cyan proof bead seated securely in its final socket",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/contribute.md",
+    "route": "/docs/contribute",
+    "image": "/img/heroes/docs/contribute-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/contribute-hero-640.webp",
+      "/img/heroes/docs/contribute-hero-1280.webp"
+    ],
+    "alt": "one small frosted glass puzzle piece poised above its matching gap in a larger flat assembly, careful traceable contribution",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/execution-modes.md",
+    "route": "/docs/execution-modes",
+    "image": "/img/heroes/docs/execution-modes-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/execution-modes-hero-640.webp",
+      "/img/heroes/docs/execution-modes-hero-1280.webp"
+    ],
+    "alt": "a brushed metal rotary selector with four distinct unmarked glass inserts around its circumference, each insert a different geometric shape, selecting the appropriate execution mode",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/can-i-use-vibegov-in-an-existing-repo.md",
+    "route": "/docs/faq/can-i-use-vibegov-in-an-existing-repo",
+    "image": "/img/heroes/docs/can-i-use-vibegov-in-an-existing-repo-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/can-i-use-vibegov-in-an-existing-repo-hero-640.webp",
+      "/img/heroes/docs/can-i-use-vibegov-in-an-existing-repo-hero-1280.webp"
+    ],
+    "alt": "a mature flat mosaic of dark glass tiles with one new teal tile being carefully inserted into an existing empty space, preserving the surrounding assembly",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/is-vibegov-a-tool-or-framework.md",
+    "route": "/docs/faq/is-vibegov-a-tool-or-framework",
+    "image": "/img/heroes/docs/is-vibegov-a-tool-or-framework-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/is-vibegov-a-tool-or-framework-hero-640.webp",
+      "/img/heroes/docs/is-vibegov-a-tool-or-framework-hero-1280.webp"
+    ],
+    "alt": "a small open metal framework cage surrounding a single coherent glass mechanism, a local governance framework rather than an application screen",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/when-do-i-use-bootstrap-init.md",
+    "route": "/docs/faq/when-do-i-use-bootstrap-init",
+    "image": "/img/heroes/docs/when-do-i-use-bootstrap-init-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/when-do-i-use-bootstrap-init-hero-640.webp",
+      "/img/heroes/docs/when-do-i-use-bootstrap-init-hero-1280.webp"
+    ],
+    "alt": "an empty shallow metal foundation tray receiving its first precisely fitted cyan glass cornerstone, clean initialization",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/when-do-i-use-the-feedback-prompt.md",
+    "route": "/docs/faq/when-do-i-use-the-feedback-prompt",
+    "image": "/img/heroes/docs/when-do-i-use-the-feedback-prompt-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/when-do-i-use-the-feedback-prompt-hero-640.webp",
+      "/img/heroes/docs/when-do-i-use-the-feedback-prompt-hero-1280.webp"
+    ],
+    "alt": "a translucent glass funnel passing a few rough geometric fragments through a fine metal mesh into one polished cyan bead, scrubbed durable feedback",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/github-project-bootstrap.md",
+    "route": "/docs/github-project-bootstrap",
+    "image": "/img/heroes/docs/github-project-bootstrap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/github-project-bootstrap-hero-640.webp",
+      "/img/heroes/docs/github-project-bootstrap-hero-1280.webp"
+    ],
+    "alt": "a compact three-pronged metal branching fixture anchored to a dark glass repository slab, each branch ending in a small clear organized tray, project bootstrap",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/harness-builder-checklist.md",
+    "route": "/docs/harness-builder-checklist",
+    "image": "/img/heroes/docs/harness-builder-checklist-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/harness-builder-checklist-hero-640.webp",
+      "/img/heroes/docs/harness-builder-checklist-hero-1280.webp"
+    ],
+    "alt": "a neatly arranged open metal tool roll containing three calibrated glass-and-metal gauge attachments, a compact harness builder readiness kit",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/init-todo.md",
+    "route": "/docs/init-todo",
+    "image": "/img/heroes/docs/init-todo-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/init-todo-hero-640.webp",
+      "/img/heroes/docs/init-todo-hero-1280.webp"
+    ],
+    "alt": "a durable metal slotted board holding several unmarked glass task tabs, two seated and one waiting beside an empty slot, honest outstanding setup work",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/mode-selection-and-evidence-closing.md",
+    "route": "/docs/mode-selection-and-evidence-closing",
+    "image": "/img/heroes/docs/mode-selection-and-evidence-closing-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/mode-selection-and-evidence-closing-hero-640.webp",
+      "/img/heroes/docs/mode-selection-and-evidence-closing-hero-1280.webp"
+    ],
+    "alt": "a forked precision metal channel converging into one evidence gate, only a matching glass token fits the chosen final socket",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-02-workflow.md",
+    "route": "/docs/published/gov-02-workflow",
+    "image": "/img/heroes/docs/gov-02-workflow-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-02-workflow-hero-640.webp",
+      "/img/heroes/docs/gov-02-workflow-hero-1280.webp"
+    ],
+    "alt": "Three cyan glass spheres at successive transparent gates along a curved metal workflow channel.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-05-testing.md",
+    "route": "/docs/published/gov-05-testing",
+    "image": "/img/heroes/docs/gov-05-testing-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-05-testing-hero-640.webp",
+      "/img/heroes/docs/gov-05-testing-hero-1280.webp"
+    ],
+    "alt": "a transparent glass sample secured in a load-testing press with a calibrated metal spring, tests provide physical proof of claims",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-08-exploratory-review.md",
+    "route": "/docs/published/gov-08-exploratory-review",
+    "image": "/img/heroes/docs/gov-08-exploratory-review-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-08-exploratory-review-hero-640.webp",
+      "/img/heroes/docs/gov-08-exploratory-review-hero-1280.webp"
+    ],
+    "alt": "a small polished exploration lens revealing a hidden fissure in a single dark glass terrain sample, actionable discovery",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-11-agent-legibility-in-repo-truth.md",
+    "route": "/docs/published/gov-11-agent-legibility-in-repo-truth",
+    "image": "/img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero-640.webp",
+      "/img/heroes/docs/gov-11-agent-legibility-in-repo-truth-hero-1280.webp"
+    ],
+    "alt": "a transparent glass archive cassette with visible orderly internal layers and a single bright central truth spine, legible durable repository knowledge",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-14-architect-conductor-boundaries.md",
+    "route": "/docs/published/gov-14-architect-conductor-boundaries",
+    "image": "/img/heroes/docs/gov-14-architect-conductor-boundaries-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-14-architect-conductor-boundaries-hero-640.webp",
+      "/img/heroes/docs/gov-14-architect-conductor-boundaries-hero-1280.webp"
+    ],
+    "alt": "a pair of metal drafting dividers resting on one side of a low transparent glass boundary, a separate execution mechanism on the other side, clear role boundaries",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/quickstart.md",
+    "route": "/docs/quickstart",
+    "image": "/img/heroes/docs/quickstart-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/quickstart-hero-640.webp",
+      "/img/heroes/docs/quickstart-hero-1280.webp"
+    ],
+    "alt": "a short three-step cyan glass ramp leading directly into a single precision metal docking socket, quick dependable start",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/runtime-and-harness-profiles.md",
+    "route": "/docs/runtime-and-harness-profiles",
+    "image": "/img/heroes/docs/runtime-and-harness-profiles-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/runtime-and-harness-profiles-hero-640.webp",
+      "/img/heroes/docs/runtime-and-harness-profiles-hero-1280.webp"
+    ],
+    "alt": "one universal dark metal socket surrounded by three small distinct glass adapter heads that all share the same base fitting, runtime profiles",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/test-execution-expectations.md",
+    "route": "/docs/test-execution-expectations",
+    "image": "/img/heroes/docs/test-execution-expectations-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/test-execution-expectations-hero-640.webp",
+      "/img/heroes/docs/test-execution-expectations-hero-1280.webp"
+    ],
+    "alt": "A metal probe observes a dark sample inside a transparent glass test chamber.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/workflow-quality-rubric.md",
+    "route": "/docs/workflow-quality-rubric",
+    "image": "/img/heroes/docs/workflow-quality-rubric-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/workflow-quality-rubric-hero-640.webp",
+      "/img/heroes/docs/workflow-quality-rubric-hero-1280.webp"
+    ],
+    "alt": "A brushed-metal caliper inspects a joint connecting cyan glass beams.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/blocker-escalation.md",
+    "route": "/docs/blocker-escalation",
+    "image": "/img/heroes/docs/blocker-escalation-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/blocker-escalation-hero-640.webp",
+      "/img/heroes/docs/blocker-escalation-hero-1280.webp"
+    ],
+    "alt": "A precise miniature railway switch on a slate tabletop; one short track is stopped by a small barrier while a teal glass routing rail curves around it and continues. One raised signal prism marks the blockage.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap-update.md",
+    "route": "/docs/bootstrap-update",
+    "image": "/img/heroes/docs/bootstrap-update-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-update-hero-640.webp",
+      "/img/heroes/docs/bootstrap-update-hero-1280.webp"
+    ],
+    "alt": "A low modular metal foundation plate with several fitted translucent glass tiles; one worn tile is lifted beside a pristine replacement above its slot, all other tiles intact.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/bootstrap.md",
+    "route": "/docs/bootstrap",
+    "image": "/img/heroes/docs/bootstrap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/bootstrap-hero-640.webp",
+      "/img/heroes/docs/bootstrap-hero-1280.webp"
+    ],
+    "alt": "A compact open precision toolkit containing a foundation plate and neatly arranged glass rule plates ready to fit into its slots; visual metaphor for installing a coherent governance contract.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/checkpoint-reporting.md",
+    "route": "/docs/checkpoint-reporting",
+    "image": "/img/heroes/docs/checkpoint-reporting-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/checkpoint-reporting-hero-640.webp",
+      "/img/heroes/docs/checkpoint-reporting-hero-1280.webp"
+    ],
+    "alt": "A small archival checkpoint station: a glass evidence capsule rests securely in a machined tray beside a single short trail of three route markers, one glowing teal for current progress.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/content-status-model.md",
+    "route": "/docs/content-status-model",
+    "image": "/img/heroes/docs/content-status-model-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/content-status-model-hero-640.webp",
+      "/img/heroes/docs/content-status-model-hero-1280.webp"
+    ],
+    "alt": "Six slim translucent reference plates of varying thickness arranged horizontally in a graded metal catalog rack, the foremost canonical plate held by a more substantial metal frame.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/evaluation-pattern.md",
+    "route": "/docs/evaluation-pattern",
+    "image": "/img/heroes/docs/evaluation-pattern-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/evaluation-pattern-hero-640.webp",
+      "/img/heroes/docs/evaluation-pattern-hero-1280.webp"
+    ],
+    "alt": "A precision go/no-go inspection gauge checking a single teal glass component against a matching machined aperture; tiny neutral reference pieces on the surface, no numbers.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/exploratory-review-mode.md",
+    "route": "/docs/exploratory-review-mode",
+    "image": "/img/heroes/docs/exploratory-review-mode-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/exploratory-review-mode-hero-640.webp",
+      "/img/heroes/docs/exploratory-review-mode-hero-1280.webp"
+    ],
+    "alt": "A low glass terrain specimen under a floating magnifying lens on a simple articulated arm; two subtle violet fracture details are visible through the lens.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/do-i-need-a-specific-ai-provider.md",
+    "route": "/docs/faq/do-i-need-a-specific-ai-provider",
+    "image": "/img/heroes/docs/do-i-need-a-specific-ai-provider-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/do-i-need-a-specific-ai-provider-hero-640.webp",
+      "/img/heroes/docs/do-i-need-a-specific-ai-provider-hero-1280.webp"
+    ],
+    "alt": "Three differently shaped metal connector plugs converge on one universal teal glass adapter socket, a precise provider-neutral interoperability metaphor.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/what-is-the-smallest-useful-adoption-step.md",
+    "route": "/docs/faq/what-is-the-smallest-useful-adoption-step",
+    "image": "/img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero-640.webp",
+      "/img/heroes/docs/what-is-the-smallest-useful-adoption-step-hero-1280.webp"
+    ],
+    "alt": "A single small teal glass stepping stone beginning a short pathway on a spacious navy slate surface, the next two understated metal stones receding softly.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/faq/when-do-i-use-bootstrap-review.md",
+    "route": "/docs/faq/when-do-i-use-bootstrap-review",
+    "image": "/img/heroes/docs/when-do-i-use-bootstrap-review-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/when-do-i-use-bootstrap-review-hero-640.webp",
+      "/img/heroes/docs/when-do-i-use-bootstrap-review-hero-1280.webp"
+    ],
+    "alt": "A flat modular foundation plate under a clear circular inspection lens, one empty slot remains visible and untouched; audit rather than repair.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/feedback-assimilation-pattern.md",
+    "route": "/docs/feedback-assimilation-pattern",
+    "image": "/img/heroes/docs/feedback-assimilation-pattern-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/feedback-assimilation-pattern-hero-640.webp",
+      "/img/heroes/docs/feedback-assimilation-pattern-hero-1280.webp"
+    ],
+    "alt": "A translucent loop ribbon feeds through one small precision shaping die and emerges cleaner and more orderly, with one small violet correction marker incorporated in the loop.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/glossary.md",
+    "route": "/docs/glossary",
+    "image": "/img/heroes/docs/glossary-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/glossary-hero-640.webp",
+      "/img/heroes/docs/glossary-hero-1280.webp"
+    ],
+    "alt": "A minimalist physical index cabinet with a few transparent glass divider tabs and geometric sample tokens in tidy shallow slots; no characters.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/harness-profile-codex.md",
+    "route": "/docs/harness-profile-codex",
+    "image": "/img/heroes/docs/harness-profile-codex-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/harness-profile-codex-hero-640.webp",
+      "/img/heroes/docs/harness-profile-codex-hero-1280.webp"
+    ],
+    "alt": "A single custom machined adapter collar connecting a clear universal glass core to a distinct metal tool coupling, precise and quiet.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/intro.md",
+    "route": "/docs/intro",
+    "image": "/img/heroes/docs/intro-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/intro-hero-640.webp",
+      "/img/heroes/docs/intro-hero-1280.webp"
+    ],
+    "alt": "A low oval metal governance frame holds a simple teal glass path and two distinct inset lanes, one solid and one lightly etched, joined by a small evidence prism.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/output-quality-and-anti-slop.md",
+    "route": "/docs/output-quality-and-anti-slop",
+    "image": "/img/heroes/docs/output-quality-and-anti-slop-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/output-quality-and-anti-slop-hero-640.webp",
+      "/img/heroes/docs/output-quality-and-anti-slop-hero-1280.webp"
+    ],
+    "alt": "A precise optical filter separates scattered pale fragments from one clean focused cyan beam, one simple apparatus in spacious dark studio.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-03-communication.md",
+    "route": "/docs/published/gov-03-communication",
+    "image": "/img/heroes/docs/gov-03-communication-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-03-communication-hero-640.webp",
+      "/img/heroes/docs/gov-03-communication-hero-1280.webp"
+    ],
+    "alt": "Two small machined metal relay dishes connected by one crisp luminous teal glass pulse bar, clear directed communication without clutter.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-06-issues.md",
+    "route": "/docs/published/gov-06-issues",
+    "image": "/img/heroes/docs/gov-06-issues-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-06-issues-hero-640.webp",
+      "/img/heroes/docs/gov-06-issues-hero-1280.webp"
+    ],
+    "alt": "A sturdy small metal anchor secures a transparent rectangular evidence tag to two short fine chains that lead toward understated glass intent and outcome tokens.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-09-agent-continuity-bootstrap.md",
+    "route": "/docs/published/gov-09-agent-continuity-bootstrap",
+    "image": "/img/heroes/docs/gov-09-agent-continuity-bootstrap-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-09-agent-continuity-bootstrap-hero-640.webp",
+      "/img/heroes/docs/gov-09-agent-continuity-bootstrap-hero-1280.webp"
+    ],
+    "alt": "A glass relay baton seated across two adjacent precision cradles, a continuous cyan glow inside it persists from one cradle to the next.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/published/gov-12-drift-control-garbage-collection.md",
+    "route": "/docs/published/gov-12-drift-control-garbage-collection",
+    "image": "/img/heroes/docs/gov-12-drift-control-garbage-collection-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/gov-12-drift-control-garbage-collection-hero-640.webp",
+      "/img/heroes/docs/gov-12-drift-control-garbage-collection-hero-1280.webp"
+    ],
+    "alt": "A precision alignment comb straightens a short row of translucent glass slats; a few dull discarded fragments are isolated in a shallow side tray.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/quality-scaffolding-and-completeness-rubric.md",
+    "route": "/docs/quality-scaffolding-and-completeness-rubric",
+    "image": "/img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero-640.webp",
+      "/img/heroes/docs/quality-scaffolding-and-completeness-rubric-hero-1280.webp"
+    ],
+    "alt": "A glass lattice sample held in a low rectangular inspection jig; every cell contains a fitted teal piece except one clearly visible empty cell, honesty about completeness.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/reference-reading.md",
+    "route": "/docs/reference-reading",
+    "image": "/img/heroes/docs/reference-reading-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/reference-reading-hero-640.webp",
+      "/img/heroes/docs/reference-reading-hero-1280.webp"
+    ],
+    "alt": "Three closed slim unmarked glass-and-metal reference volumes on a low slate reading stand, one softly opened with blank translucent pages and a small bookmark.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/simplicity-first.md",
+    "route": "/docs/simplicity-first",
+    "image": "/img/heroes/docs/simplicity-first-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/simplicity-first-hero-640.webp",
+      "/img/heroes/docs/simplicity-first-hero-1280.webp"
+    ],
+    "alt": "A single elegant closed teal glass loop on a flat metal base, flawlessly simple, generous empty space, no additional machinery.",
+    "width": 1280,
+    "height": 720
+  },
+  {
+    "source": "docs/vibegov-sdlc.md",
+    "route": "/docs/vibegov-sdlc",
+    "image": "/img/heroes/docs/vibegov-sdlc-hero.jpg",
+    "srcSet": [
+      "/img/heroes/docs/vibegov-sdlc-hero-640.webp",
+      "/img/heroes/docs/vibegov-sdlc-hero-1280.webp"
+    ],
+    "alt": "A low continuous oval production rail with five distinct small glass-and-metal stations embedded along it, a small teal evidence capsule travels the route and a subtle return spur rejoins the start.",
+    "width": 1280,
+    "height": 720
+  }
+]

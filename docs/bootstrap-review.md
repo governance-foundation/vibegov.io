@@ -1,8 +1,11 @@
 ---
 sidebar_position: 4
+image: /img/heroes/docs/bootstrap-review-hero.jpg
 ---
 
 # Bootstrap Review
+
+<img className="page-hero" src="/img/heroes/docs/bootstrap-review-hero.jpg" srcSet="/img/heroes/docs/bootstrap-review-hero-640.webp 640w, /img/heroes/docs/bootstrap-review-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"a precision inspection lens suspended above a partially fitted glass assembly; the empty socket remains visibly empty, an honest audit of existing setup"} decoding="async" />
 
 Use this when a repo already has some bootstrap state and you want to **audit it against the same canonical bootstrap contract** without pretending missing work was completed.
 

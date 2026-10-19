@@ -3,7 +3,10 @@ slug: gov-07-tasks-week-1
 title: "How to Keep AI Agents Moving Through Backlog Work"
 authors: [VibeGov_team]
 tags: [tasks, gov-07, backlog, github-issues, scheduling]
+image: /img/heroes/blog/gov-07-tasks-week-1-hero.jpg
 ---
+
+<img className="page-hero" src="/img/heroes/blog/gov-07-tasks-week-1-hero.jpg" srcSet="/img/heroes/blog/gov-07-tasks-week-1-hero-640.webp 640w, /img/heroes/blog/gov-07-tasks-week-1-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"An orderly glass-workpiece queue advances through a priority junction on a continuous mechanical conveyor."} decoding="async" />
 
 Most teams do not have an "AI quality" problem.
 They have a **backlog behavior** problem.
