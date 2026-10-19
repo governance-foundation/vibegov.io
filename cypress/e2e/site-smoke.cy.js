@@ -54,8 +54,8 @@ describe("VibeGov site smoke test", () => {
     cy.contains("Feedback Intake evidence").should("be.visible");
     cy.contains("Release-readiness evidence").should("be.visible");
     cy.visit("/docs/content-style-guide");
-    cy.contains("Content Style Guide").should("be.visible");
-    cy.contains("PR Review Checklist").should("be.visible");
+    cy.contains("Content Style Guide").scrollIntoView().should("be.visible");
+    cy.contains("PR Review Checklist").scrollIntoView().should("be.visible");
   });
 
   it("shows role-selection guidance without hiding role bootstrap cards", () => {
