@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 5rem 0 4rem;
+  padding: 3rem 0;
   text-align: left;
   position: relative;
   overflow: hidden;
@@ -69,129 +69,56 @@
   margin: 0;
 }
 
-.installGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
-}
-
-.installItem {
-  border-top: 3px solid var(--ifm-color-primary);
-  padding-top: 1rem;
-}
-
-.installItem h3 {
-  margin-bottom: 0.75rem;
-}
-
-.installItem p {
-  color: var(--ifm-color-emphasis-700);
-  margin-bottom: 0;
-}
-
-.pathList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0;
-  margin: 0 0 0.9rem;
-  list-style: none;
-}
-
-.pathList code {
-  display: inline-block;
-  max-width: 100%;
-  white-space: normal;
-  overflow-wrap: anywhere;
-}
 
 .cardGrid,
-.faqList,
-.fitGrid {
+.faqList {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
-}
-
-.exampleGrid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 1.25rem;
-  align-items: stretch;
 }
 
 .card,
-.faqItem,
-.examplePanel {
+.faqItem {
+  min-width: 0;
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 16px;
-  padding: 1.25rem;
+  padding: 1.5rem;
   background: var(--ifm-background-surface-color);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
-.fitPanel {
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 8px;
-  padding: 1.25rem;
-  background: var(--ifm-background-surface-color);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .card h3,
-.faqItem h3,
-.examplePanel h3,
-.fitPanel h3 {
-  margin-bottom: 0.75rem;
+.faqItem h3 {
+  font-size: 1.2rem;
 }
 
 .card p,
-.faqItem p,
-.examplePanel p,
-.fitPanel li {
+.faqItem p {
   color: var(--ifm-color-emphasis-700);
 }
 
-.exampleLabel {
-  display: inline-block;
-  margin-bottom: 0.75rem;
+.faqItem p {
+  margin-bottom: 0;
+}
+
+.promptDetails {
+  margin: 0 0 1.25rem;
+}
+
+.promptDetails summary {
+  cursor: pointer;
   color: var(--ifm-color-primary);
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.stepList {
-  display: grid;
-  gap: 0.55rem;
-  margin: 0;
-  padding-left: 1.25rem;
-  color: var(--ifm-color-emphasis-700);
-}
-
-.stepList li::marker {
-  color: var(--ifm-color-primary);
-  font-weight: 700;
-}
-
-.exampleLinks {
-  margin: 1.25rem 0 0;
-  color: var(--ifm-color-emphasis-700);
-}
-
-.fitPanel ul {
-  margin: 0;
-  padding-left: 1.2rem;
-}
-
-.fitPanel li + li {
-  margin-top: 0.6rem;
 }
 
 .cardActions {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .copyButton {
@@ -199,34 +126,67 @@
 }
 
 .codeBlock {
-  min-height: 112px;
+  max-width: 100%;
+  overflow-x: auto;
   white-space: pre-wrap;
-  word-break: break-word;
+  word-break: normal;
+  overflow-wrap: normal;
   background: var(--ifm-color-emphasis-100);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 0.9rem;
-  margin: 1rem 0;
-  font-size: 0.9rem;
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+}
+
+.detailsLink {
+  margin: 1.5rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.exampleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.examplePanel {
+  min-width: 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.exampleLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.examplePanel p,
+.examplePanel ol {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem;
-    text-align: center;
+    padding: 2.5rem 0;
+  }
+
+  .cardGrid,
+  .faqList,
+  .exampleGrid {
+    grid-template-columns: 1fr;
   }
 
   .actions {
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
   }
 
-  .cardActions {
-    justify-content: center;
-  }
-
-  .exampleGrid {
-    grid-template-columns: 1fr;
-    text-align: left;
+  .section,
+  .sectionAlt {
+    padding: 2.5rem 0;
   }
 }

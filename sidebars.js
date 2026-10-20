@@ -18,6 +18,7 @@ const sidebars = {
     'intro',
     'quickstart',
     'bootstrap',
+    'what-your-agent-adopts',
     'choose-your-path',
     'glossary',
     'content-status-model',
