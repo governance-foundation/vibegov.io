@@ -2,17 +2,22 @@ describe("VibeGov site smoke test", () => {
   it("loads homepage and core docs links", () => {
     cy.visit("/");
     cy.contains("VibeGov").should("be.visible");
-    cy.contains("Governed delivery in practice").should("be.visible");
-    cy.contains('"Add Google login."').should("be.visible");
-    cy.contains("repo-local governance framework").should("be.visible");
-    cy.contains("Who VibeGov is for").should("be.visible");
-    cy.contains("Teams using AI coding agents on real repositories.")
-      .should("be.visible");
-    cy.contains("Probably overkill").should("be.visible");
+    cy.contains("VibeGov handles the delivery details").should("be.visible");
     cy.contains("Quick paths").should("be.visible");
-    cy.contains("Bootstrap Init Prompt (BI)").should("be.visible");
+    cy.contains("Start with VibeGov").should("be.visible");
+    cy.get("#quick-paths article").first().contains("View agent prompt").click();
     cy.contains("Run VibeGov bootstrap in mode: init.")
       .should("be.visible");
+    cy.contains("See how VibeGov works").click();
+    cy.url().should("include", "/docs/what-vibegov-installs");
+    cy.contains("Governed delivery in practice").scrollIntoView().should("be.visible");
+    cy.contains('"Add Google login."').scrollIntoView().should("be.visible");
+    cy.contains("repo-local governance layer").scrollIntoView().should("be.visible");
+    cy.contains("Who VibeGov is for").scrollIntoView().should("be.visible");
+    cy.contains("Teams using AI coding agents on real repositories.")
+      .scrollIntoView().should("be.visible");
+    cy.contains("Probably overkill").scrollIntoView().should("be.visible");
+    cy.visit("/");
     cy.contains("Choose Your Path").click();
     cy.url().should("include", "/docs/choose-your-path");
     cy.contains("I want to install VibeGov in a repo").should("be.visible");
@@ -57,6 +62,48 @@ describe("VibeGov site smoke test", () => {
     cy.contains("Content Style Guide").scrollIntoView().should("be.visible");
     cy.contains("PR Review Checklist").scrollIntoView().should("be.visible");
   });
+
+  for (const width of [390, 1440]) {
+    it(`puts simple actions first and preserves detail at ${width}px (HOME-PATH-001..004)`, () => {
+      cy.viewport(width, 1000);
+      cy.visit("/");
+      cy.get("header.hero").should("be.visible");
+      cy.get("main > section h2").then($headings => {
+        expect([...$headings].map(el => el.textContent)).to.deep.equal(["Quick paths", "FAQ"]);
+      });
+      cy.contains("What VibeGov installs").should("not.exist");
+      cy.get("#quick-paths article").should("have.length", 3);
+      cy.get("#quick-paths details").should("not.have.attr", "open");
+      cy.get("#quick-paths article").first().within(() => {
+        cy.get("summary").focus().type("{enter}");
+        cy.contains("Run VibeGov bootstrap in mode: init.").should("be.visible");
+        cy.get("pre").should("have.css", "word-break", "normal");
+      });
+      cy.window().then(win => {
+        cy.stub(win.navigator.clipboard, "writeText").resolves().as("writeClipboard");
+      });
+      cy.get('button[aria-label="Copy prompt: Start with VibeGov"]').click().should("have.text", "Copied");
+      cy.get("@writeClipboard").should("have.been.calledOnce").its("firstCall.args.0")
+        .should("contain", "https://vibegov.io/agent.txt")
+        .and("contain", "https://vibegov.io/bootstrap.json")
+        .and("contain", "Then stop before product-code implementation.");
+      cy.document().then(doc => expect(doc.documentElement.scrollWidth).to.be.at.most(width));
+      cy.reload();
+      cy.get("main > section").first().should("have.attr", "id", "quick-paths");
+      cy.screenshot(`homepage-${width}`, {capture: "fullPage"});
+      cy.contains("See how VibeGov works").click();
+      for (const title of ["Governance rules", "Project intent and specs", "Workflow entrypoints", "Continuity guidance", "Bootstrap reports"]) {
+        cy.contains("h3", title).scrollIntoView().should("be.visible");
+      }
+      cy.get("article pre").should("have.length", 4).each($pre => {
+        expect($pre.css("white-space")).to.equal("pre");
+        expect($pre.css("overflow-x")).to.equal("auto");
+      });
+      cy.document().then(doc => expect(doc.documentElement.scrollWidth).to.be.at.most(width));
+      cy.scrollTo("top");
+      cy.screenshot(`homepage-details-${width}`, {capture: "fullPage"});
+    });
+  }
 
   it("shows role-selection guidance without hiding role bootstrap cards", () => {
     cy.visit("/roles");
