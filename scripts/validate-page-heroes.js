@@ -6,7 +6,7 @@ const assert = require('assert');
 const cheerio = require('cheerio');
 const heroes = require('../src/data/page-heroes.json');
 const root = path.resolve(__dirname, '..');
-assert.strictEqual(heroes.length, 104);
+assert.strictEqual(heroes.length, 105);
 assert.strictEqual(new Set(heroes.map(h => h.route)).size, heroes.length);
 for (const hero of heroes) {
   const file = path.join(root, 'build', hero.route, 'index.html');
