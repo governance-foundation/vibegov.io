@@ -2,9 +2,12 @@
 slug: stop-keeping-your-ai-agents-alive
 title: "Stop Keeping Your AI Agents Alive"
 authors: [VibeGov_team]
+image: /img/heroes/blog/stop-keeping-your-ai-agents-alive-hero.jpg
 tags: [governance, ai-agents, orchestration, software-architecture, workflow]
 description: Why autonomous delivery needs persistent coordination, one-shot workers and durable evidence—not a growing history of repeated tokens.
 ---
+
+<img className="page-hero" src="/img/heroes/blog/stop-keeping-your-ai-agents-alive-hero.jpg" srcSet="/img/heroes/blog/stop-keeping-your-ai-agents-alive-hero-640.webp 640w, /img/heroes/blog/stop-keeping-your-ai-agents-alive-hero-1280.webp 1280w" sizes="(max-width: 640px) 100vw, (max-width: 996px) 90vw, 960px" width="1280" height="720" alt={"A glowing cyan coordinator connects bounded worker pods to a durable evidence repository in a dark architectural workspace."} decoding="async" />
 
 *Persistent coordination. Ephemeral execution. Durable evidence.*
 

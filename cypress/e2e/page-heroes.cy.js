@@ -1,5 +1,5 @@
 const heroes = require('../../src/data/page-heroes.json');
-const routes = ['/blog/launch-gov-01', '/docs/intro', '/docs/published/gov-01-instructions', '/docs/faq/do-i-need-a-specific-ai-provider', '/roles'];
+const routes = ['/blog/launch-gov-01', '/blog/stop-keeping-your-ai-agents-alive', '/docs/intro', '/docs/published/gov-01-instructions', '/docs/faq/do-i-need-a-specific-ai-provider', '/roles'];
 
 describe('Authored-page artwork (PAGE-HERO-001..004)', () => {
   for (const viewport of [[390, 844], [1440, 1000]]) {
