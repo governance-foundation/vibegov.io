@@ -1,19 +1,19 @@
 ---
-title: How VibeGov works
-description: The details behind focused AI agents, shared intent and trustworthy delivery.
+title: What your agent adopts
+description: The knowledge, rules and workflows your agent adopts to keep delivery focused and trustworthy.
 ---
 
-# How VibeGov works
+# What your agent adopts
 
-VibeGov is a repo-local governance framework for AI-assisted software delivery. It keeps AI-assisted work focused, reviewable and easier to hand over. Start with the [Quick paths](/#quick-paths) when you are ready to use it. This page explains the details behind those actions.
+VibeGov is knowledge your agent adopts: shared rules, intent and ways of working that keep AI-assisted delivery focused, reviewable and easier to hand over. Start with the [Quick paths](/#quick-paths) when you are ready to use it.
 
-## What VibeGov installs
+## Knowledge that stays with the project
 
-VibeGov installs or normalizes a repo-local governance layer so humans and agents use the same sources of truth before coding.
+Your agent reads and follows VibeGov's guidance; there is no VibeGov application to install. When you ask it to bootstrap a repository, the agent can create or normalise files that carry this knowledge so humans and agents share the same sources of truth before coding.
 
 ### Governance rules
 
-The active VibeGov rule set agents must follow, with provider-native mirrors only when the repo already uses them.
+The agent adopts the active VibeGov rule set, with provider-native mirrors only when the repo already uses them.
 
 ```text
 .governance/rules/
@@ -56,7 +56,7 @@ Current status, analysis, feedback, optional blockers, and historical run bundle
 history/<timestamp>/
 ```
 
-For the full installation contract, read [Bootstrap](/docs/bootstrap).
+For the full adoption workflow and file requirements, read [Bootstrap](/docs/bootstrap).
 
 ## Governed delivery outcomes
 

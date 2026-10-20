@@ -3,16 +3,19 @@ describe("VibeGov site smoke test", () => {
     cy.visit("/");
     cy.contains("VibeGov").should("be.visible");
     cy.contains("VibeGov handles the delivery details").should("be.visible");
+    cy.contains("h2", "Who VibeGov is for").scrollIntoView().should("be.visible");
+    cy.contains("h2", "Governed delivery in practice").scrollIntoView().should("be.visible");
+    cy.contains('"Add Google login."').should("be.visible");
     cy.contains("Quick paths").should("be.visible");
     cy.contains("Start with VibeGov").should("be.visible");
     cy.get("#quick-paths article").first().contains("View agent prompt").click();
     cy.contains("Run VibeGov bootstrap in mode: init.")
       .should("be.visible");
-    cy.contains("See how VibeGov works").click();
-    cy.url().should("include", "/docs/what-vibegov-installs");
+    cy.contains("See what your agent adopts").click();
+    cy.url().should("include", "/docs/what-your-agent-adopts");
     cy.contains("Governed delivery in practice").scrollIntoView().should("be.visible");
     cy.contains('"Add Google login."').scrollIntoView().should("be.visible");
-    cy.contains("repo-local governance layer").scrollIntoView().should("be.visible");
+    cy.contains("shared rules, intent and ways of working").scrollIntoView().should("be.visible");
     cy.contains("Who VibeGov is for").scrollIntoView().should("be.visible");
     cy.contains("Teams using AI coding agents on real repositories.")
       .scrollIntoView().should("be.visible");
@@ -69,7 +72,7 @@ describe("VibeGov site smoke test", () => {
       cy.visit("/");
       cy.get("header.hero").should("be.visible");
       cy.get("main > section h2").then($headings => {
-        expect([...$headings].map(el => el.textContent)).to.deep.equal(["Quick paths", "FAQ"]);
+        expect([...$headings].map(el => el.textContent)).to.deep.equal(["Quick paths", "Who VibeGov is for", "Governed delivery in practice", "FAQ"]);
       });
       cy.contains("What VibeGov installs").should("not.exist");
       cy.get("#quick-paths article").should("have.length", 3);
@@ -91,7 +94,7 @@ describe("VibeGov site smoke test", () => {
       cy.reload();
       cy.get("main > section").first().should("have.attr", "id", "quick-paths");
       cy.screenshot(`homepage-${width}`, {capture: "fullPage"});
-      cy.contains("See how VibeGov works").click();
+      cy.contains("See what your agent adopts").click();
       for (const title of ["Governance rules", "Project intent and specs", "Workflow entrypoints", "Continuity guidance", "Bootstrap reports"]) {
         cy.contains("h3", title).scrollIntoView().should("be.visible");
       }

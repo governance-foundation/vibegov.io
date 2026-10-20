@@ -69,7 +69,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--outline button--lg"
-            to="/docs/what-vibegov-installs">
+            to="/docs/what-your-agent-adopts">
             How it works
           </Link>
         </div>
@@ -124,8 +124,57 @@ function PromptSection() {
           ))}
         </div>
         <p className={styles.detailsLink}>
-          Curious about the details? <Link to="/docs/what-vibegov-installs">See how VibeGov works</Link>.
+          Curious about the details? <Link to="/docs/what-your-agent-adopts">See what your agent adopts</Link>.
           For more options, <Link to="/docs/choose-your-path">Choose Your Path</Link>.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function AudienceSection() {
+  return (
+    <section aria-labelledby="audience-title" className={styles.sectionAlt}>
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2 id="audience-title">Who VibeGov is for</h2>
+          <p>
+            For solo developers and teams using AI agents to build real software.
+            Keep work focused, handoffs clear and progress easy to trust.
+          </p>
+        </div>
+        <Link to="/docs/what-your-agent-adopts#who-vibegov-is-for">See if it fits your project</Link>
+      </div>
+    </section>
+  );
+}
+
+function WorkedExampleSection() {
+  return (
+    <section aria-labelledby="example-title" className={styles.section}>
+      <div className="container">
+        <div className={styles.sectionHeader}>
+          <h2 id="example-title">Governed delivery in practice</h2>
+          <p>Turn a vague request into work you can review and trust.</p>
+        </div>
+        <div className={styles.exampleGrid}>
+          <article className={styles.examplePanel}>
+            <span className={styles.exampleLabel}>Before VibeGov</span>
+            <h3>&quot;Add Google login.&quot;</h3>
+            <p>The agent starts coding. Scope and proof come later.</p>
+          </article>
+          <article className={styles.examplePanel}>
+            <span className={styles.exampleLabel}>With VibeGov</span>
+            <h3>A clear plan. A result you can check.</h3>
+            <ol>
+              <li>Agree what a good result looks like.</li>
+              <li>Give the agent a focused task.</li>
+              <li>Review the evidence before calling it done.</li>
+            </ol>
+          </article>
+        </div>
+        <p className={styles.detailsLink}>
+          <Link to="/docs/what-your-agent-adopts#governed-delivery-in-practice">Walk through the full example</Link>.
         </p>
       </div>
     </section>
@@ -168,6 +217,8 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <PromptSection />
+        <AudienceSection />
+        <WorkedExampleSection />
         <FaqSection />
       </main>
     </Layout>

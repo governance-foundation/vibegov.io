@@ -143,13 +143,41 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+.exampleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.examplePanel {
+  min-width: 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.exampleLabel {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.examplePanel p,
+.examplePanel ol {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2.5rem 0;
   }
 
   .cardGrid,
-  .faqList {
+  .faqList,
+  .exampleGrid {
     grid-template-columns: 1fr;
   }
 
