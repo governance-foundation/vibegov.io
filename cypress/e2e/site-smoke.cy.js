@@ -48,7 +48,7 @@ describe("VibeGov site smoke test", () => {
     cy.contains("Provider rules are tool-specific.").should("be.visible");
     cy.contains("Contribute").should("be.visible");
     cy.visit("/docs/governed-delivery-example");
-    cy.contains("Governed Delivery Example").should("be.visible");
+    cy.contains("Governed Delivery Example").scrollIntoView().should("be.visible");
     cy.contains("The same request becomes a governed delivery path").should("be.visible");
     cy.visit("/docs/bootstrap");
     cy.contains("TLDR").should("be.visible");
@@ -78,7 +78,7 @@ describe("VibeGov site smoke test", () => {
       cy.get("#quick-paths article").should("have.length", 3);
       cy.get("#quick-paths details").should("not.have.attr", "open");
       cy.get("#quick-paths article").first().within(() => {
-        cy.get("summary").focus().type("{enter}");
+        cy.get("summary").click();
         cy.contains("Run VibeGov bootstrap in mode: init.").should("be.visible");
         cy.get("pre").should("have.css", "word-break", "normal");
       });
@@ -93,7 +93,10 @@ describe("VibeGov site smoke test", () => {
       cy.document().then(doc => expect(doc.documentElement.scrollWidth).to.be.at.most(width));
       cy.reload();
       cy.get("main > section").first().should("have.attr", "id", "quick-paths");
-      cy.screenshot(`homepage-${width}`, {capture: "fullPage"});
+      cy.scrollTo("top");
+      cy.screenshot(`homepage-${width}`, {capture: "viewport", scale: true});
+      cy.get('[aria-labelledby="example-title"]').scrollIntoView();
+      cy.screenshot(`homepage-example-${width}`, {capture: "viewport", scale: true});
       cy.contains("See what your agent adopts").click();
       for (const title of ["Governance rules", "Project intent and specs", "Workflow entrypoints", "Continuity guidance", "Bootstrap reports"]) {
         cy.contains("h3", title).scrollIntoView().should("be.visible");
@@ -104,7 +107,7 @@ describe("VibeGov site smoke test", () => {
       });
       cy.document().then(doc => expect(doc.documentElement.scrollWidth).to.be.at.most(width));
       cy.scrollTo("top");
-      cy.screenshot(`homepage-details-${width}`, {capture: "fullPage"});
+      cy.screenshot(`homepage-details-${width}`, {capture: "viewport", scale: true});
     });
   }
 
