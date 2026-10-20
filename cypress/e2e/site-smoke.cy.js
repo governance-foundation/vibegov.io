@@ -93,9 +93,10 @@ describe("VibeGov site smoke test", () => {
       cy.document().then(doc => expect(doc.documentElement.scrollWidth).to.be.at.most(width));
       cy.reload();
       cy.get("main > section").first().should("have.attr", "id", "quick-paths");
-      cy.scrollTo("top");
+      cy.window().then(win => win.scrollTo({top: 0, behavior: "instant"}));
+      cy.window().its("scrollY").should("equal", 0);
       cy.screenshot(`homepage-${width}`, {capture: "viewport", scale: true});
-      cy.get('[aria-labelledby="example-title"]').scrollIntoView();
+      cy.get('[aria-labelledby="example-title"]').scrollIntoView({offset: {top: -80, left: 0}});
       cy.screenshot(`homepage-example-${width}`, {capture: "viewport", scale: true});
       cy.contains("See what your agent adopts").click();
       for (const title of ["Governance rules", "Project intent and specs", "Workflow entrypoints", "Continuity guidance", "Bootstrap reports"]) {
