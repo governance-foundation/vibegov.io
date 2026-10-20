@@ -1,0 +1,39 @@
+---
+name: gov-11-ephemeral-subagent-execution
+description: Govern coordinator-owned one-shot subagent execution, verification, archival, and recovery.
+alwaysApply: true
+---
+
+# GOV-11: Persistent Coordination, Ephemeral Execution, Durable Evidence
+
+## Normative requirements
+
+1. **Single owner.** Every governed EPIC or objective MUST have exactly one logical coordinator at a time. The coordinator owns priority, dependency decisions, delegation, integration, verification, and durable state. Session replacement does not transfer authority to a subagent.
+2. **One bounded assignment per subagent.** Coordinators MUST dispatch subagents as one-shot execution workers with a single task contract. A worker MAY make multiple tool calls, commits, and test runs to fulfil that assignment; it MUST NOT accept unrelated work, maintain a recurring goal or schedule, take over coordination, or silently expand scope.
+3. **Dispatch contract.** Before dispatch, record a stable task ID and execution ID, parent EPIC/issue, objective, permitted repository and paths, baseline revision, dependencies, acceptance criteria, validation commands, expected outputs, resource/time bounds, and escalation conditions. Declare write ownership to avoid concurrent conflicting mutations.
+4. **Durable state, not conversation memory.** Canonical progress and decisions MUST be maintained in the governed EPIC/issues and referenced repository artifacts. Chat/session state MUST NOT be the sole record of work or authority. Every execution MUST return its resulting commit SHA(s), modified files, test/evidence references, known risks, blockers and disposition.
+5. **Verification is separate from execution.** A worker's completion report is not acceptance. The coordinator MUST validate evidence against acceptance criteria or dispatch an independent bounded verification task. Failed validation produces a recorded rejection/remediation decision and, if needed, a NEW execution ID; do not keep an old worker alive indefinitely.
+6. **Archive and terminate.** After a worker returns or fails, capture its outputs, logs/evidence references and final outcome durably, then archive/close/terminate the worker session where supported. Do not retain idle subagent sessions as ongoing collaborators. An archived worker MUST NOT be reactivated to execute another assignment; dispatch a fresh worker instead. Archival means preserving audit records, not deleting evidence.
+7. **Retries and leases.** Each execution MUST have a unique ID, bounded lifetime or expiry policy, and recorded ownership. A retry or replacement MUST check persisted status and prior side effects before mutation, so a delayed/duplicate worker cannot apply the same change twice. Expired workers MUST lose write authority. If the platform cannot enforce leases mechanically, coordinators MUST enforce the equivalent through exclusive branch/path ownership and explicit status checks, and record the limitation.
+8. **Coordinator continuity.** Before coordinator session handoff, persist the EPIC state, outstanding executions and their owners, dependencies, decisions, evidence and next actions. The successor MUST reconcile in-flight executions before redispatch. There MUST NOT be two active logical coordinators for the same EPIC.
+9. **Escalation and circuit breakers.** Subagents MUST stop and report out-of-scope edits, ambiguous requirements, unsafe changes, or repeated equivalent failures according to scoped-blocking governance. They MUST NOT evade a circuit breaker by launching a fresh subagent with the same failed strategy.
+10. **No phantom authority.** Subagents can report technical readiness but cannot accept residual risk, declare GA, promote or deploy without the release owner's explicit authorisation.
+
+## Required lifecycle
+
+`DISPATCHED -> RUNNING -> RETURNED|FAILED|EXPIRED -> VERIFIED|REJECTED -> ARCHIVED`
+
+- A failed or expired worker can be archived with an unsuccessful disposition.
+- Verification status belongs to the coordinator, not the worker.
+- Archive promptly once durable evidence is captured; do not wait for a successful result.
+
+## Compliance checks
+
+- Every worker has one bounded task with an EPIC/issue reference and unique execution ID.
+- Every worker's final state has persistent evidence and a recorded coordinator decision.
+- No worker has recurring coordination goals or schedules, unrelated task ownership, or unbounded continuation.
+- No archived or expired worker is authorised to mutate project state.
+- Retries identify previous attempts, idempotency safeguards and any changed hypothesis.
+- Coordinator handoff reconciles running/unknown workers and preserves exactly one owner.
+
+Where a runtime cannot directly archive or terminate workers, the coordinator MUST record that limitation, revoke task authority, mark the worker closed in durable state, and avoid assigning it further work. Do not claim mechanical enforcement that the runtime does not provide.

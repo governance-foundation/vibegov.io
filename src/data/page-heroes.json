@@ -1,5 +1,17 @@
 [
   {
+    "source": "blog/2026-10-20-stop-keeping-your-ai-agents-alive.md",
+    "route": "/blog/stop-keeping-your-ai-agents-alive",
+    "image": "/img/heroes/blog/stop-keeping-your-ai-agents-alive-hero.jpg",
+    "srcSet": [
+      "/img/heroes/blog/stop-keeping-your-ai-agents-alive-hero-640.webp",
+      "/img/heroes/blog/stop-keeping-your-ai-agents-alive-hero-1280.webp"
+    ],
+    "alt": "A glowing cyan coordinator connects bounded worker pods to a durable evidence repository in a dark architectural workspace.",
+    "width": 1280,
+    "height": 720
+  },
+  {
     "source": "blog/2026-02-23-launch-gov-01.md",
     "route": "/blog/launch-gov-01",
     "image": "/img/heroes/blog/launch-gov-01-hero.jpg",

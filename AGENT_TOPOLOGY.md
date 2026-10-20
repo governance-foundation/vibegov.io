@@ -12,10 +12,17 @@ A practical default for running multiple AI agents across multiple projects with
   - `agent-web-app`
   - `agent-api-service`
   - `agent-docs-site`
-- **Optional specialist run-agents** (ephemeral)
+- **One-shot specialist subagents** (ephemeral; one bounded assignment per session)
   - `spec-hardener`
   - `contract-tester`
   - `release-checker`
+  - Return verifiable evidence and close/archive; never accumulate unrelated tasks or own recurring goals/schedules.
+
+## Coordinator and subagent execution protocol
+
+**Persistent coordination. Ephemeral execution. Durable evidence.** The persistent project agent is a *logical coordinator*, not a persistent implementation worker. Coordinator sessions may be replaced; authoritative workflow state remains in EPICs/issues and governed artifacts. Every subagent is a one-shot execution worker, dispatched under a bounded contract, then closed/archived after evidence capture even if it fails. The coordinator verifies the result independently and dispatches a fresh worker for remediation. Do not preserve idle workers as collaborators.
+
+Follow [GOV-11](.governance/rules/gov-11-ephemeral-subagent-execution.mdc) for the normative dispatch contract, unique execution IDs, side-effect-safe retries, worker expiry, verification, archival, and coordinator handoff. One-shot means one assignment, not one tool call.
 
 ## Boundaries per project agent
 
@@ -43,9 +50,9 @@ Every autonomous run must produce:
 
 1. Orchestrator sets queue (3-5 tasks max active)
 2. Project agent executes autonomously within scope
-3. Project agent writes handoff artifacts
-4. Orchestrator reviews + accepts/rejects
-5. Merge or send remediation
+3. One-shot subagents return durable outputs and evidence, then are archived/closed
+4. Project coordinator verifies and accepts/rejects each result
+5. Merge accepted work or dispatch a fresh bounded remediation task
 
 ## Governance Rules to Enforce Everywhere
 
